@@ -3,16 +3,24 @@ import argparse
 from dataclasses import asdict
 import hashlib
 import json
+import os
 from pathlib import Path
+import re
+import signal
 import sqlite3
 import subprocess
 import sys
+import tempfile
+import time
 
 from .gold_v2 import PACKAGE_DIR, load_gold, local_path
+from .git_identity_worker import _create_job, _stop_job
 from .scope_v2 import Source, assemble_scope, resolve_scope
 from .source_mapping_v2 import audit_chroma, map_text
 
 ROOT = Path(__file__).resolve().parents[2]
+GIT_IDENTITY_TIMEOUT_SECONDS = 15.0
+GIT_IDENTITY_CLEANUP_SECONDS = 2.0
 
 
 def check_package(root):
@@ -52,19 +60,85 @@ def _integrity(root, expected):
             'interpretation': 'On-disk hash comparison only, not loaded runtime identity.'}
 
 
-def _git_identity(root):
-    def run(*args):
-        return subprocess.run(['git', '-C', str(root), *args], capture_output=True, check=True).stdout
+def _stop_identity_worker(process, job):
+    """Reap only our worker's process tree, with a separate bounded budget."""
+    deadline = time.monotonic() + GIT_IDENTITY_CLEANUP_SECONDS
+    stopped = True
     try:
-        commit = run('rev-parse', 'HEAD').decode('ascii').strip()
-        # Sensitive diff contents are hashed in memory and never emitted.
-        dirty = run('diff', '--binary', 'HEAD')
-        status = run('status', '--porcelain', '--untracked-files=all')
-        return {'commit': commit, 'tracked_diff_sha256': hashlib.sha256(dirty).hexdigest(),
-                'status_inventory_sha256': hashlib.sha256(status).hexdigest(),
-                'untracked_content_in_diff_hash': False, 'loaded_runtime_identity': 'UNKNOWN'}
-    except (OSError, subprocess.CalledProcessError):
-        return {'status': 'GIT_IDENTITY_UNAVAILABLE', 'loaded_runtime_identity': 'UNKNOWN'}
+        if job is not None:
+            stopped = _stop_job(job, deadline)
+        else:
+            try:
+                os.killpg(process.pid, signal.SIGKILL)
+            except OSError:
+                pass
+    except OSError:
+        stopped = False
+    finally:
+        # A Job API error must not bypass bounded reaping of our immediate
+        # worker. Keep using this cleanup's original deadline.
+        if process.poll() is None:
+            try:
+                process.kill()
+            except OSError:
+                stopped = False
+        try:
+            process.wait(timeout=max(0.001, deadline - time.monotonic()))
+        except (OSError, subprocess.TimeoutExpired):
+            stopped = False
+    return stopped
+
+
+def _git_identity(root):
+    unavailable = {'status': 'GIT_IDENTITY_UNAVAILABLE', 'loaded_runtime_identity': 'UNKNOWN'}
+    deadline = time.monotonic() + GIT_IDENTITY_TIMEOUT_SECONDS
+    process = None
+    job = None
+    result = unavailable
+    try:
+        # Only the fixed trusted worker's small, sanitized JSON reaches this
+        # private auto-deleted file. Raw Git stdout/stderr stay in worker memory.
+        # No parent PIPE/read thread can be held open by a Git descendant.
+        with tempfile.TemporaryFile() as output:
+            command = [sys.executable, '-B', str(Path(__file__).with_name('git_identity_worker.py').resolve()), str(root)]
+            if os.name == 'nt':
+                job, name = _create_job()
+                command.append(name)
+            process = subprocess.Popen(
+                command,
+                stdin=subprocess.DEVNULL, stdout=output, stderr=subprocess.DEVNULL,
+                close_fds=True, start_new_session=os.name != 'nt')
+            process.wait(timeout=max(0.001, deadline - time.monotonic()))
+            if process.returncode != 0 or time.monotonic() > deadline:
+                return unavailable
+            output.seek(0)
+            raw = output.read(4097)
+            if len(raw) > 4096:
+                return unavailable
+            result = json.loads(raw)
+            keys = {'commit', 'tracked_diff_sha256', 'status_inventory_sha256',
+                    'untracked_content_in_diff_hash', 'loaded_runtime_identity'}
+            if (not isinstance(result, dict) or set(result) != keys
+                    or not isinstance(result['commit'], str)
+                    or re.fullmatch(r'(?:[0-9a-f]{40}|[0-9a-f]{64})', result['commit']) is None
+                    or result['untracked_content_in_diff_hash'] is not False
+                    or result['loaded_runtime_identity'] != 'UNKNOWN'
+                    or any(not isinstance(result[key], str) or len(result[key]) != 64
+                           or any(c not in '0123456789abcdef' for c in result[key])
+                           for key in ('tracked_diff_sha256', 'status_inventory_sha256'))):
+                return unavailable
+    except (OSError, ValueError, subprocess.TimeoutExpired):
+        return unavailable
+    finally:
+        try:
+            if process is not None:
+                if not _stop_identity_worker(process, job):
+                    result = unavailable
+            elif job is not None:
+                _stop_job(job, time.monotonic() + GIT_IDENTITY_CLEANUP_SECONDS)
+        except OSError:
+            result = unavailable
+    return result
 
 
 def _artifact_metadata(root):
@@ -111,12 +185,17 @@ def prepare_b0(root):
     tools = {f'backend/research/{name}.py': hashlib.sha256(local_path(root,
              f'backend/research/{name}.py').read_bytes()).hexdigest()
              for name in ('gold_v2', 'scope_v2', 'source_mapping_v2', 'local_scope_v2')}
+    collector_sources = {
+        f'backend/research/{name}.py': hashlib.sha256(Path(__file__).with_name(name + '.py').read_bytes()).hexdigest()
+        for name in ('local_scope_v2', 'git_identity_worker')}
     return {
         'status': 'BLOCKED_NOT_EXECUTED', 'api_execution': 'NOT_EXECUTED',
         'scientific_stage': 'M2_OPEN', 'gold_version': '2.0',
         'gold_sha256': package.gold_sha256, 'human_certified': False,
         'arms': ['B0_NATIVE', 'C_NATIVE_CONTEXT', 'C_AUTO_SCOPE', 'C_ORACLE_SCOPE'],
         'git': _git_identity(root), 'adapter_sha256': tools,
+        'collector_source_sha256': collector_sources,
+        'collector_source_basis': 'CURRENT_MODULE_DIRECTORY_ON_DISK_NOT_LOADED_IDENTITY',
         'production_integrity': production, 'source_integrity': _integrity(root, source_files),
         'historical_integrity': _integrity(root, historical_files),
         'local_artifact_metadata': _artifact_metadata(root),

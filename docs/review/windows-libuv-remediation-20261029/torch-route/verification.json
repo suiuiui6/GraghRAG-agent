@@ -1,0 +1,58 @@
+[
+  {
+    "file": "README.md",
+    "hash_matches": true
+  },
+  {
+    "file": "pyproject.toml",
+    "hash_matches": true
+  },
+  {
+    "file": "CMakeLists.txt",
+    "hash_matches": true
+  },
+  {
+    "file": "cmake__Dependencies.cmake",
+    "hash_matches": true
+  },
+  {
+    "file": "build_variables.bzl",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\REPORT.md",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\.ci__pytorch__windows__build_env_setup.py",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\.ci__pytorch__windows__build_install_deps.py",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\.ci__pytorch__windows__build_wheel.py",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\caffe2__CMakeLists.txt",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\torch__CMakeLists.txt",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\torch__csrc__distributed__c10d__store__TCPStoreLibUvBackend.cpp",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\fetch2.json",
+    "hash_matches": true
+  },
+  {
+    "file": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\fetch3.json",
+    "hash_matches": true
+  }
+]

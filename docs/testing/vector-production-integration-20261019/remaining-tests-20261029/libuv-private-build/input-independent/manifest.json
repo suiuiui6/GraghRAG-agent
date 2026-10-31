@@ -1,0 +1,126 @@
+{
+  "utc": "2026-10-29T12:45:40.853007+00:00",
+  "decision": "PASS_STAGE_A_DELEGATED_INPUTS_ONLY",
+  "source_gpg_exit": 0,
+  "tools_container_exit": 0,
+  "deb_count": 27,
+  "deb_bytes": 80210796,
+  "limits": [
+    "No compilation",
+    "No DLL loading",
+    "No cross ABI approval",
+    "No production approval"
+  ],
+  "files": [
+    {
+      "file": "finalize.py",
+      "bytes": 2801,
+      "sha256": "16e42a0b701cd08a53baa71b34e425913e1011dd664736f033abba4083ae5680"
+    },
+    {
+      "file": "fingerprint.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "fingerprint.stdout",
+      "bytes": 405,
+      "sha256": "68f901830b1a1520fe8d1a6c08dd36b84ac81b03f0218e517cde64c45ddc211e"
+    },
+    {
+      "file": "import-initial.stderr",
+      "bytes": 488,
+      "sha256": "b97b66b75130c0dd51a3c4ab8ea2f3b6ab6833e02ffdf24fb968908509aa94f7"
+    },
+    {
+      "file": "import.stderr",
+      "bytes": 389,
+      "sha256": "67bc38f9cce55a2416fdbed33897140c7dcc9398e1457c06e5b6283baacb9532"
+    },
+    {
+      "file": "import.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 3622,
+      "sha256": "e1efeb4b8b1d9452ab0872ae48524f141b0ff2144b0b553ddc09e03364d144b9"
+    },
+    {
+      "file": "run_tools.py",
+      "bytes": 1107,
+      "sha256": "5bfe555714b797b7bf3414244bddd1b1e0e5c08466dcc88eabf212821a12c604"
+    },
+    {
+      "file": "source-receipt.json",
+      "bytes": 1413,
+      "sha256": "83fc852d84eed79461dac1d5069a3b981cf164fbea7f530d7267ce6afbe15dec"
+    },
+    {
+      "file": "static-receipt.json",
+      "bytes": 4899,
+      "sha256": "dce0ee532cd05066feece08e8342caa5d14183024b9ad70f47d1b163694d82a6"
+    },
+    {
+      "file": "tools-initial.stderr",
+      "bytes": 224,
+      "sha256": "e9133cf10b02b0b91c8b119848513db0ac541e7c3c19681266939e4b9952f7cc"
+    },
+    {
+      "file": "tools-readonly-tmp.stderr",
+      "bytes": 1419,
+      "sha256": "db69474ecc3fd148f6c6af50365c6fef717059d757e9ce4d0c15dc9b6f62a4aa"
+    },
+    {
+      "file": "tools-run-initial.json",
+      "bytes": 901,
+      "sha256": "fabb288262a576f7120dd0400a5c5564aaf129ec2a7c765e3d960beee19b3191"
+    },
+    {
+      "file": "tools-run.json",
+      "bytes": 956,
+      "sha256": "d44df447fb8191f6319ba9c413ab76db1d088e29ea85aae8f90ef1e82b4de36f"
+    },
+    {
+      "file": "tools-second.stderr",
+      "bytes": 694,
+      "sha256": "3ead4cb896a8b643638fff8c98907c95b687913d9d8c6dec7117c201bf8a4d52"
+    },
+    {
+      "file": "tools.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "tools.stdout.json",
+      "bytes": 14154,
+      "sha256": "1bc8bb6d63368f38ee49e8ba70c130f6eea9e14ec87a22f3ce6020dcdc0bc07d"
+    },
+    {
+      "file": "verify.stderr",
+      "bytes": 435,
+      "sha256": "9441e8188d89656faf6d9f3e60890df3e233706995d05f00f2cc3d31a89cde61"
+    },
+    {
+      "file": "verify.stdout",
+      "bytes": 404,
+      "sha256": "633a2d5b5afe7457ff8d25f0d11a03ead46ace93d7cca29a1f4c468f2f30b5ca"
+    },
+    {
+      "file": "verify_source.py",
+      "bytes": 1630,
+      "sha256": "5c1130a24d06015c6126aae5670d45cc1205a9737412b0d567f43d83d338b030"
+    },
+    {
+      "file": "verify_static.py",
+      "bytes": 2339,
+      "sha256": "29170828fd11ae3ace145af6081afd64b7c5cdf57aa111ae963c8401db607522"
+    },
+    {
+      "file": "verify_tools.py",
+      "bytes": 2531,
+      "sha256": "d5c72408805757ec1876492acc73370f8def692bbbb8a1433d24a444eef744f6"
+    }
+  ]
+}

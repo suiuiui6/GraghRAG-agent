@@ -1,0 +1,65 @@
+{
+  "summary_sha256": "b091b1a360c5c3d0a3c55b085c596f74f3d4db412942dc1e40dac2084cf4c502",
+  "source_before_after_equal": true,
+  "runtime_before_after_equal": true,
+  "source_snapshot_count": 258,
+  "runtime_snapshot_count": 3426,
+  "current_source_drift": [],
+  "current_selected_runtime_drift": [],
+  "production_count": 120,
+  "measured_count": 120,
+  "missing": [],
+  "extra": [],
+  "worker_in_python_denominator": true,
+  "current_production_set_independently_matches": true,
+  "full_collected_and_junit_identity_counters_match": true,
+  "fixed_model_http_cases": [
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_fresh_process_http_reopen_after_update_and_after_delete",
+      "time": "10.316",
+      "failed": false
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_fixed_local_model_http_upload_update_delete_restart",
+      "time": "44.041",
+      "failed": false
+    },
+    {
+      "classname": "tests.test_vector_pinned_embedding",
+      "name": "test_real_offline_fixed_model_encodes_synthetic_input",
+      "time": "0.304",
+      "failed": false
+    }
+  ],
+  "native_main_in_python_denominator": false,
+  "raw_totals_recomputed": {
+    "covered_lines": 16624,
+    "num_statements": 17802,
+    "covered_branches": 5481,
+    "num_branches": 6086
+  },
+  "line_percent": 93.38276598135042,
+  "branch_percent": 90.0591521524811,
+  "branch_required_integer": 5478,
+  "branch_additional_required": -3,
+  "junit_cases": 2201,
+  "collected_nodes": 2201,
+  "unique_nodes": 2201,
+  "failures_errors_skips": {
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "baseline_cases": 2187,
+  "missing_baseline": [],
+  "original_2157_retained": true,
+  "baseline_hash_matches": true,
+  "command_exits": [
+    0,
+    0,
+    0
+  ],
+  "expected_backend_gate": true
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "path": "backend/research/local_scope_v2.py",
+    "expected": "70ab4227fbfa4583b7ad11bbc5406f12dffd85c2f708af8acd2ff955688be6d4",
+    "candidate": "70ab4227fbfa4583b7ad11bbc5406f12dffd85c2f708af8acd2ff955688be6d4",
+    "target": "70ab4227fbfa4583b7ad11bbc5406f12dffd85c2f708af8acd2ff955688be6d4",
+    "match": true
+  },
+  {
+    "path": "backend/research/git_identity_worker.py",
+    "expected": "915ffed9ef4ba8f6dfd57024f0bcdc2d6d373f3df8b6c1ceb5b2da3cde4580d1",
+    "candidate": "915ffed9ef4ba8f6dfd57024f0bcdc2d6d373f3df8b6c1ceb5b2da3cde4580d1",
+    "target": "915ffed9ef4ba8f6dfd57024f0bcdc2d6d373f3df8b6c1ceb5b2da3cde4580d1",
+    "match": true
+  },
+  {
+    "path": "backend/tests/test_git_identity_deadline.py",
+    "expected": "9bec72304edf58e3b64acf6717f7dbd93264d4271b896ed81bc4e6c4b24e8d12",
+    "candidate": "9bec72304edf58e3b64acf6717f7dbd93264d4271b896ed81bc4e6c4b24e8d12",
+    "target": "9bec72304edf58e3b64acf6717f7dbd93264d4271b896ed81bc4e6c4b24e8d12",
+    "match": true
+  },
+  {
+    "path": "backend/tests/test_error_handling_policy.py",
+    "expected": "878c25ceb3e52501436db369591de4aa85da3ae6d3e0399cb9a0a8a0baade2bf",
+    "candidate": "878c25ceb3e52501436db369591de4aa85da3ae6d3e0399cb9a0a8a0baade2bf",
+    "target": "878c25ceb3e52501436db369591de4aa85da3ae6d3e0399cb9a0a8a0baade2bf",
+    "match": true
+  },
+  {
+    "path": "backend/research/LOCAL_SCOPE_V2.md",
+    "expected": "5c738d376724d9544133e935c2c2048b5a8a4ba4202e886d436ae0aec548a06f",
+    "candidate": "5c738d376724d9544133e935c2c2048b5a8a4ba4202e886d436ae0aec548a06f",
+    "target": "5c738d376724d9544133e935c2c2048b5a8a4ba4202e886d436ae0aec548a06f",
+    "match": true
+  }
+]

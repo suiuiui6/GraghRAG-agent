@@ -1,0 +1,52 @@
+[
+  {
+    "file": "build_variables.bzl",
+    "bytes": 79151,
+    "sha256": "A3C52DAD0A60E532B379813245D1CD3D7D93BBCEE47A74C5063EEEBCC524B424"
+  },
+  {
+    "file": "cmake__Dependencies.cmake",
+    "bytes": 67957,
+    "sha256": "385ED64146DA313CCB4A9FB149B536E14186670E3260BB077F0F4834D09F18C9"
+  },
+  {
+    "file": "CMakeLists.txt",
+    "bytes": 59103,
+    "sha256": "61BCD1B3B1D00A8FB32A6E7FA22B454E348D9F24B5D3AE0374A98F1E48B7D7BD"
+  },
+  {
+    "file": "pyproject.toml",
+    "bytes": 26084,
+    "sha256": "8BA6DC482D955267F9EAD956B8B5A9F1DD6442A026D7F0B8EBF516BF989F9069"
+  },
+  {
+    "file": "README.md",
+    "bytes": 30323,
+    "sha256": "6F993564B6D153B2ADF82D9D434E57374766DA4BF398269F4FE358FCF9DD4115"
+  },
+  {
+    "file": "REPORT.md",
+    "bytes": 11238,
+    "sha256": "C9DFDC10021710906F57A3FCA2A8B175D39185635E04102B637C27F7915775E3"
+  },
+  {
+    "file": "reused-input-receipts.json",
+    "bytes": 3687,
+    "sha256": "7DD1F85B9C9DF4E98BDCAC1273423ECCB3435098AB750C8689FECB097AB3F441"
+  },
+  {
+    "file": "source-fetch-escalated.json",
+    "bytes": 2313,
+    "sha256": "27FE0E1DDB8D1C5B2F8586399015E3F315DB5559A6C8AED2C1C36FCCDF1D7C9E"
+  },
+  {
+    "file": "source-receipts.json",
+    "bytes": 2297,
+    "sha256": "43115AF72A6AC7316976847C78F362E7AA4E626E833FC91ED990E214958E934F"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 1884,
+    "sha256": "F6C11CC84E57031736A899A701229396B92B22F7AE0D7D983EBC4A077AF74E8D"
+  }
+]

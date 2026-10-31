@@ -1,0 +1,85 @@
+{
+  "indexes": [
+    {
+      "file": "snapshot.debian.org_archive_debian-security_20261020T213255Z_dists_bookworm-security_InRelease",
+      "gpgv": {
+        "argv": [
+          "gpgv",
+          "--keyring",
+          "/usr/share/keyrings/debian-archive-keyring.gpg",
+          "/lists/snapshot.debian.org_archive_debian-security_20261020T213255Z_dists_bookworm-security_InRelease"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "gpgv: Signature made Tue Oct 20 21:32:30 2026 UTC\ngpgv:                using RSA key ED541312A33F1128F10B1C6C54404762BBB6E853\ngpgv: Good signature from \"Debian Security Archive Automatic Signing Key (11/bullseye) <ftpmaster@debian.org>\"\ngpgv: Signature made Tue Oct 20 21:32:30 2026 UTC\ngpgv:                using RSA key B0CAB9266E8C3929798B3EEEBDE6D2B9216EC7A8\ngpgv: Good signature from \"Debian Security Archive Automatic Signing Key (12/bookworm) <ftpmaster@debian.org>\"\n"
+      },
+      "bytes": 2344804,
+      "sha256": "8e44798d4f6434fb8f2a77190e0adc5eeb1bf51ec8949711b3ec4498b0e00cd2"
+    },
+    {
+      "file": "snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm-updates_InRelease",
+      "gpgv": {
+        "argv": [
+          "gpgv",
+          "--keyring",
+          "/usr/share/keyrings/debian-archive-keyring.gpg",
+          "/lists/snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm-updates_InRelease"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "gpgv: Signature made Tue Oct 20 20:11:27 2026 UTC\ngpgv:                using RSA key 4CB50190207B4758A3F73A796ED0E7B82643E131\ngpgv: Good signature from \"Debian Archive Automatic Signing Key (12/bookworm) <ftpmaster@debian.org>\"\ngpgv: Signature made Tue Oct 20 20:11:39 2026 UTC\ngpgv:                using RSA key B8E5F13176D2A7A75220028078DBA3BC47EF2265\ngpgv: Good signature from \"Debian Archive Automatic Signing Key (13/trixie) <ftpmaster@debian.org>\"\n"
+      },
+      "bytes": 32757,
+      "sha256": "80a1f6ee524222c49f230fc5700d00f946d0a47eb5258180106dd03df126e16a"
+    },
+    {
+      "file": "snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm_InRelease",
+      "gpgv": {
+        "argv": [
+          "gpgv",
+          "--keyring",
+          "/usr/share/keyrings/debian-archive-keyring.gpg",
+          "/lists/snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm_InRelease"
+        ],
+        "exit": 0,
+        "stdout": "",
+        "stderr": "gpgv: Signature made Sat Jul 11 10:17:11 2026 UTC\ngpgv:                using RSA key 4CB50190207B4758A3F73A796ED0E7B82643E131\ngpgv: Good signature from \"Debian Archive Automatic Signing Key (12/bookworm) <ftpmaster@debian.org>\"\ngpgv: Signature made Sat Jul 11 10:17:12 2026 UTC\ngpgv:                using RSA key B8E5F13176D2A7A75220028078DBA3BC47EF2265\ngpgv: Good signature from \"Debian Archive Automatic Signing Key (13/trixie) <ftpmaster@debian.org>\"\ngpgv: Signature made Sat Jul 11 10:19:01 2026 UTC\ngpgv:                using EDDSA key 4D64FEC119C2029067D6E791F8D2585B8783D481\ngpgv: Good signature from \"Debian Stable Release Key (12/bookworm) <debian-release@lists.debian.org>\"\n"
+      },
+      "bytes": 50060337,
+      "sha256": "515e692f2c4121c6fcec444ef100cc18f79a991910615f3a88c8b7becfc94d2f"
+    }
+  ],
+  "dpkg": {
+    "argv": [
+      "dpkg-query",
+      "-W",
+      "-f=${binary:Package}\t${Version}\t${Architecture}\n"
+    ],
+    "exit": 0,
+    "stdout": "adduser\t3.134\tall\napt\t2.6.1\tamd64\nbase-files\t12.4+deb12u15\tamd64\nbase-passwd\t3.6.1\tamd64\nbash\t5.2.15-2+b13\tamd64\nbinutils\t2.40-2\tamd64\nbinutils-common:amd64\t2.40-2\tamd64\nbinutils-x86-64-linux-gnu\t2.40-2\tamd64\nbsdutils\t1:2.38.1-5+deb12u3\tamd64\nca-certificates\t20250419~deb12u2\tall\ncoreutils\t9.1-1\tamd64\ncpp\t4:12.2.0-3\tamd64\ncpp-12\t12.2.0-14+deb12u1\tamd64\ndash\t0.5.12-2\tamd64\ndebconf\t1.5.82\tall\ndebian-archive-keyring\t2023.3+deb12u2\tall\ndebianutils\t5.7-0.5~deb12u1\tamd64\ndiffutils\t1:3.8-4\tamd64\ndpkg\t1.21.23\tamd64\ne2fsprogs\t1.47.0-2+b2\tamd64\nfindutils\t4.9.0-4\tamd64\ngcc\t4:12.2.0-3\tamd64\ngcc-12\t12.2.0-14+deb12u1\tamd64\ngcc-12-base:amd64\t12.2.0-14+deb12u1\tamd64\ngpgv\t2.2.40-1.1+deb12u2\tamd64\ngrep\t3.8-5\tamd64\ngzip\t1.12-1\tamd64\nhostname\t3.23+nmu1\tamd64\ninit-system-helpers\t1.65.2+deb12u1\tall\nlibacl1:amd64\t2.3.1-3\tamd64\nlibapt-pkg6.0:amd64\t2.6.1\tamd64\nlibasan8:amd64\t12.2.0-14+deb12u1\tamd64\nlibatomic1:amd64\t12.2.0-14+deb12u1\tamd64\nlibattr1:amd64\t1:2.5.1-4\tamd64\nlibaudit-common\t1:3.0.9-1\tall\nlibaudit1:amd64\t1:3.0.9-1\tamd64\nlibbinutils:amd64\t2.40-2\tamd64\nlibblkid1:amd64\t2.38.1-5+deb12u3\tamd64\nlibbz2-1.0:amd64\t1.0.8-5+b1\tamd64\nlibc-bin\t2.36-9+deb12u14\tamd64\nlibc-dev-bin\t2.36-9+deb12u14\tamd64\nlibc6:amd64\t2.36-9+deb12u14\tamd64\nlibc6-dev:amd64\t2.36-9+deb12u14\tamd64\nlibcap-ng0:amd64\t0.8.3-1+b3\tamd64\nlibcap2:amd64\t1:2.66-4+deb12u3+b1\tamd64\nlibcc1-0:amd64\t12.2.0-14+deb12u1\tamd64\nlibcom-err2:amd64\t1.47.0-2+b2\tamd64\nlibcrypt-dev:amd64\t1:4.4.33-2\tamd64\nlibcrypt1:amd64\t1:4.4.33-2\tamd64\nlibctf-nobfd0:amd64\t2.40-2\tamd64\nlibctf0:amd64\t2.40-2\tamd64\nlibdb5.3:amd64\t5.3.28+dfsg2-1\tamd64\nlibdebconfclient0:amd64\t0.270\tamd64\nlibext2fs2:amd64\t1.47.0-2+b2\tamd64\nlibffi8:amd64\t3.4.4-1\tamd64\nlibgcc-12-dev:amd64\t12.2.0-14+deb12u1\tamd64\nlibgcc-s1:amd64\t12.2.0-14+deb12u1\tamd64\nlibgcrypt20:amd64\t1.10.1-3+deb12u1\tamd64\nlibgdbm6:amd64\t1.23-3\tamd64\nlibgmp10:amd64\t2:6.2.1+dfsg1-1.1\tamd64\nlibgnutls30:amd64\t3.7.9-2+deb12u7\tamd64\nlibgomp1:amd64\t12.2.0-14+deb12u1\tamd64\nlibgpg-error0:amd64\t1.46-1\tamd64\nlibgprofng0:amd64\t2.40-2\tamd64\nlibgssapi-krb5-2:amd64\t1.20.1-2+deb12u5\tamd64\nlibhogweed6:amd64\t3.8.1-2\tamd64\nlibidn2-0:amd64\t2.3.3-1+b1\tamd64\nlibisl23:amd64\t0.25-1.1\tamd64\nlibitm1:amd64\t12.2.0-14+deb12u1\tamd64\nlibjansson4:amd64\t2.14-2\tamd64\nlibk5crypto3:amd64\t1.20.1-2+deb12u5\tamd64\nlibkeyutils1:amd64\t1.6.3-2\tamd64\nlibkrb5-3:amd64\t1.20.1-2+deb12u5\tamd64\nlibkrb5support0:amd64\t1.20.1-2+deb12u5\tamd64\nliblsan0:amd64\t12.2.0-14+deb12u1\tamd64\nliblz4-1:amd64\t1.9.4-1\tamd64\nliblzma5:amd64\t5.4.1-1+deb12u2\tamd64\nlibmd0:amd64\t1.0.4-2\tamd64\nlibmount1:amd64\t2.38.1-5+deb12u3\tamd64\nlibmpc3:amd64\t1.3.1-1\tamd64\nlibmpfr6:amd64\t4.2.0-1\tamd64\nlibncursesw6:amd64\t6.4-4\tamd64\nlibnettle8:amd64\t3.8.1-2\tamd64\nlibnsl-dev:amd64\t1.3.0-2\tamd64\nlibnsl2:amd64\t1.3.0-2\tamd64\nlibp11-kit0:amd64\t0.24.1-2\tamd64\nlibpam-modules:amd64\t1.5.2-6+deb12u2\tamd64\nlibpam-modules-bin\t1.5.2-6+deb12u2\tamd64\nlibpam-runtime\t1.5.2-6+deb12u2\tall\nlibpam0g:amd64\t1.5.2-6+deb12u2\tamd64\nlibpcre2-8-0:amd64\t10.42-1+deb12u2\tamd64\nlibquadmath0:amd64\t12.2.0-14+deb12u1\tamd64\nlibreadline8:amd64\t8.2-1.3\tamd64\nlibseccomp2:amd64\t2.5.4-1+deb12u1\tamd64\nlibselinux1:amd64\t3.4-1+b6\tamd64\nlibsemanage-common\t3.4-1\tall\nlibsemanage2:amd64\t3.4-1+b5\tamd64\nlibsepol2:amd64\t3.4-2.1\tamd64\nlibsmartcols1:amd64\t2.38.1-5+deb12u3\tamd64\nlibsqlite3-0:amd64\t3.40.1-2+deb12u2\tamd64\nlibss2:amd64\t1.47.0-2+b2\tamd64\nlibssl3:amd64\t3.0.22-1~deb12u2\tamd64\nlibstdc++6:amd64\t12.2.0-14+deb12u1\tamd64\nlibsystemd0:amd64\t252.39-1~deb12u2\tamd64\nlibtasn1-6:amd64\t4.19.0-2+deb12u1\tamd64\nlibtinfo6:amd64\t6.4-4\tamd64\nlibtirpc-common\t1.3.3+ds-1\tall\nlibtirpc-dev:amd64\t1.3.3+ds-1\tamd64\nlibtirpc3:amd64\t1.3.3+ds-1\tamd64\nlibtsan2:amd64\t12.2.0-14+deb12u1\tamd64\nlibubsan1:amd64\t12.2.0-14+deb12u1\tamd64\nlibudev1:amd64\t252.39-1~deb12u2\tamd64\nlibunistring2:amd64\t1.0-2\tamd64\nlibuuid1:amd64\t2.38.1-5+deb12u3\tamd64\nlibxxhash0:amd64\t0.8.1-1\tamd64\nlibzstd1:amd64\t1.5.4+dfsg2-5\tamd64\nlinux-libc-dev:amd64\t6.1.190-1\tamd64\nlogin\t1:4.13+dfsg1-1+deb12u2\tamd64\nlogsave\t1.47.0-2+b2\tamd64\nmawk\t1.3.4.20200120-3.1\tamd64\nmount\t2.38.1-5+deb12u3\tamd64\nncurses-base\t6.4-4\tall\nncurses-bin\t6.4-4\tamd64\nnetbase\t6.4\tall\nopenssl\t3.0.22-1~deb12u2\tamd64\npasswd\t1:4.13+dfsg1-1+deb12u2\tamd64\nperl-base\t5.36.0-7+deb12u4\tamd64\nreadline-common\t8.2-1.3\tall\nrpcsvc-proto\t1.4.3-1\tamd64\nsed\t4.9-1+deb12u1\tamd64\nsysvinit-utils\t3.06-4\tamd64\ntar\t1.34+dfsg-1.2+deb12u1\tamd64\ntzdata\t2026e-0+deb12u1\tall\nusr-is-merged\t37~deb12u1\tall\nutil-linux\t2.38.1-5+deb12u3\tamd64\nutil-linux-extra\t2.38.1-5+deb12u3\tamd64\nzlib1g:amd64\t1:1.2.13.dfsg-1\tamd64\n",
+    "stderr": ""
+  },
+  "simulate": {
+    "argv": [
+      "apt-get",
+      "--simulate",
+      "--no-install-recommends",
+      "-o",
+      "Dir::State::lists=/lists",
+      "-o",
+      "Dir::Etc::sourcelist=/sources.sources",
+      "-o",
+      "Dir::Etc::sourceparts=-",
+      "-o",
+      "Debug::NoLocking=1",
+      "install",
+      "gcc-mingw-w64-x86-64-win32",
+      "cmake",
+      "make"
+    ],
+    "exit": 0,
+    "stdout": "NOTE: This is only a simulation!\n      apt-get needs root privileges for real execution.\n      Keep also in mind that locking is deactivated,\n      so don't depend on the relevance to the real current situation!\nReading package lists...\nBuilding dependency tree...\nReading state information...\nThe following additional packages will be installed:\n  binutils-mingw-w64-x86-64 cmake-data gcc-mingw-w64-base\n  gcc-mingw-w64-x86-64-win32-runtime libarchive13 libbrotli1 libcurl4\n  libexpat1 libicu72 libjsoncpp25 libldap-2.5-0 libnghttp2-14 libproc2-0\n  libpsl5 librhash0 librtmp1 libsasl2-2 libsasl2-modules-db libssh2-1 libuv1\n  libxml2 mingw-w64-common mingw-w64-x86-64-dev procps\nSuggested packages:\n  cmake-doc cmake-format elpa-cmake-mode ninja-build gcc-12-locales lrzip\n  make-doc wine64\nRecommended packages:\n  libldap-common publicsuffix libsasl2-modules psmisc\nThe following NEW packages will be installed:\n  binutils-mingw-w64-x86-64 cmake cmake-data gcc-mingw-w64-base\n  gcc-mingw-w64-x86-64-win32 gcc-mingw-w64-x86-64-win32-runtime libarchive13\n  libbrotli1 libcurl4 libexpat1 libicu72 libjsoncpp25 libldap-2.5-0\n  libnghttp2-14 libproc2-0 libpsl5 librhash0 librtmp1 libsasl2-2\n  libsasl2-modules-db libssh2-1 libuv1 libxml2 make mingw-w64-common\n  mingw-w64-x86-64-dev procps\n0 upgraded, 27 newly installed, 0 to remove and 0 not upgraded.\nInst libproc2-0 (2:4.0.2-3 Debian:12.15/oldstable [amd64])\nInst procps (2:4.0.2-3 Debian:12.15/oldstable [amd64])\nInst binutils-mingw-w64-x86-64 (2.40-2+10.4 Debian:12.15/oldstable [amd64])\nInst libicu72 (72.1-3+deb12u1 Debian:12.15/oldstable, Debian-Security:12/oldstable-security [amd64])\nInst libxml2 (2.9.14+dfsg-1.3~deb12u6 Debian:12.15/oldstable [amd64])\nInst libarchive13 (3.6.2-1+deb12u5 Debian-Security:12/oldstable-security [amd64])\nInst libbrotli1 (1.0.9-2+b6 Debian:12.15/oldstable [amd64])\nInst libsasl2-modules-db (2.1.28+dfsg-10 Debian:12.15/oldstable [amd64])\nInst libsasl2-2 (2.1.28+dfsg-10 Debian:12.15/oldstable [amd64])\nInst libldap-2.5-0 (2.5.13+dfsg-5 Debian:12.15/oldstable [amd64])\nInst libnghttp2-14 (1.52.0-1+deb12u3 Debian:12.15/oldstable, Debian-Security:12/oldstable-security [amd64])\nInst libpsl5 (0.21.2-1 Debian:12.15/oldstable [amd64])\nInst librtmp1 (2.4+20151223.gitfa8646d.1-2+b2 Debian:12.15/oldstable [amd64])\nInst libssh2-1 (1.10.0-3+deb12u1 Debian-Security:12/oldstable-security [amd64])\nInst libcurl4 (7.88.1-10+deb12u15 Debian:12.15/oldstable [amd64])\nInst libexpat1 (2.5.0-1+deb12u4 Debian-Security:12/oldstable-security [amd64])\nInst libjsoncpp25 (1.9.5-4 Debian:12.15/oldstable [amd64])\nInst librhash0 (1.4.3-3 Debian:12.15/oldstable [amd64])\nInst libuv1 (1.44.2-1+deb12u1 Debian:12.15/oldstable, Debian-Security:12/oldstable-security [amd64])\nInst cmake-data (3.25.1-1 Debian:12.15/oldstable [all])\nInst cmake (3.25.1-1 Debian:12.15/oldstable [amd64])\nInst gcc-mingw-w64-base (12.2.0-14+deb12u1+25.2+b1 Debian:12.15/oldstable [amd64])\nInst mingw-w64-common (10.0.0-3 Debian:12.15/oldstable [all])\nInst mingw-w64-x86-64-dev (10.0.0-3 Debian:12.15/oldstable [all])\nInst gcc-mingw-w64-x86-64-win32-runtime (12.2.0-14+deb12u1+25.2+b1 Debian:12.15/oldstable [amd64])\nInst gcc-mingw-w64-x86-64-win32 (12.2.0-14+deb12u1+25.2+b1 Debian:12.15/oldstable [amd64])\nInst make (4.3-4.1 Debian:12.15/oldstable [amd64])\nConf libproc2-0 (2:4.0.2-3 Debian:12.15/oldstable [amd64])\nConf procps (2:4.0.2-3 Debian:12.15/oldstable [amd64])\nConf binutils-mingw-w64-x86-64 (2.40-2+10.4 Debian:12.15/oldstable [amd64])\nConf libicu72 (72.1-3+deb12u1 Debian:12.15/oldstable, Debian-Security:12/oldstable-security [amd64])\nConf libxml2 (2.9.14+dfsg-1.3~deb12u6 Debian:12.15/oldstable [amd64])\nConf libarchive13 (3.6.2-1+deb12u5 Debian-Security:12/oldstable-security [amd64])\nConf libbrotli1 (1.0.9-2+b6 Debian:12.15/oldstable [amd64])\nConf libsasl2-modules-db (2.1.28+dfsg-10 Debian:12.15/oldstable [amd64])\nConf libsasl2-2 (2.1.28+dfsg-10 Debian:12.15/oldstable [amd64])\nConf libldap-2.5-0 (2.5.13+dfsg-5 Debian:12.15/oldstable [amd64])\nConf libnghttp2-14 (1.52.0-1+deb12u3 Debian:12.15/oldstable, Debian-Security:12/oldstable-security [amd64])\nConf libpsl5 (0.21.2-1 Debian:12.15/oldstable [amd64])\nConf librtmp1 (2.4+20151223.gitfa8646d.1-2+b2 Debian:12.15/oldstable [amd64])\nConf libssh2-1 (1.10.0-3+deb12u1 Debian-Security:12/oldstable-security [amd64])\nConf libcurl4 (7.88.1-10+deb12u15 Debian:12.15/oldstable [amd64])\nConf libexpat1 (2.5.0-1+deb12u4 Debian-Security:12/oldstable-security [amd64])\nConf libjsoncpp25 (1.9.5-4 Debian:12.15/oldstable [amd64])\nConf librhash0 (1.4.3-3 Debian:12.15/oldstable [amd64])\nConf libuv1 (1.44.2-1+deb12u1 Debian:12.15/oldstable, Debian-Security:12/oldstable-security [amd64])\nConf cmake-data (3.25.1-1 Debian:12.15/oldstable [all])\nConf cmake (3.25.1-1 Debian:12.15/oldstable [amd64])\nConf gcc-mingw-w64-base (12.2.0-14+deb12u1+25.2+b1 Debian:12.15/oldstable [amd64])\nConf mingw-w64-common (10.0.0-3 Debian:12.15/oldstable [all])\nConf mingw-w64-x86-64-dev (10.0.0-3 Debian:12.15/oldstable [all])\nConf gcc-mingw-w64-x86-64-win32-runtime (12.2.0-14+deb12u1+25.2+b1 Debian:12.15/oldstable [amd64])\nConf gcc-mingw-w64-x86-64-win32 (12.2.0-14+deb12u1+25.2+b1 Debian:12.15/oldstable [amd64])\nConf make (4.3-4.1 Debian:12.15/oldstable [amd64])\n",
+    "stderr": ""
+  },
+  "result": "PASS"
+}

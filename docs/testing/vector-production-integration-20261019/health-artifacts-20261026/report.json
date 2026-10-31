@@ -1,0 +1,892 @@
+{
+  "time_utc": "2026-10-26T10:40:30.974282+00:00",
+  "commands": [
+    {
+      "name": "tests",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "run",
+        "--rcfile=C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\backend.coverage",
+        "-m",
+        "pytest",
+        "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\test_health_artifact_counts.py",
+        "backend/tests/test_vector_runtime_health.py",
+        "-vv",
+        "-ra",
+        "--tb=short",
+        "-p",
+        "no:cacheprovider",
+        "--import-mode=importlib",
+        "--rootdir=D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026",
+        "--confcutdir=D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026",
+        "--basetemp=D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\test-temp",
+        "--junitxml=D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\junit.xml"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "export",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "json",
+        "--rcfile=C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\backend.coverage",
+        "-o",
+        "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\coverage.json"
+      ],
+      "exit": 0
+    }
+  ],
+  "before": {
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\routes\\health.py": "f8b4d22c17f3046167ae263b86e28c3355df97edc068abd9b7194c89d534d97e",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_runtime_health.py": "87ca5895c63df28b544e487f342c2cd805aff55b6c36b4bfe199ca1333a8def5",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\document_publication.py": "5fd35f970a18abd55da2efe76f3745b9e135697eea2733b97b06d3c6d7153de5",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\vector_startup.py": "7ce0852214b6264194a925ad333ef59421a3c78fb09550155c6d72cf3cc76259",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\uv.lock": "3a3ce015f3660e03d3b6d39983b47fee921b443b8740de9a39a9c28cf5e846df",
+    "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\test_health_artifact_counts.py": "662470e09b493ce307c0cf0218759ed30783ccaf4b4f9d0ff0070bc09250e92d"
+  },
+  "after": {
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\routes\\health.py": "f8b4d22c17f3046167ae263b86e28c3355df97edc068abd9b7194c89d534d97e",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_runtime_health.py": "87ca5895c63df28b544e487f342c2cd805aff55b6c36b4bfe199ca1333a8def5",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\document_publication.py": "5fd35f970a18abd55da2efe76f3745b9e135697eea2733b97b06d3c6d7153de5",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\vector_startup.py": "7ce0852214b6264194a925ad333ef59421a3c78fb09550155c6d72cf3cc76259",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\uv.lock": "3a3ce015f3660e03d3b6d39983b47fee921b443b8740de9a39a9c28cf5e846df",
+    "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\test_health_artifact_counts.py": "662470e09b493ce307c0cf0218759ed30783ccaf4b4f9d0ff0070bc09250e92d"
+  },
+  "inputs_stable": true,
+  "scope": "targeted real HTTP artifact behavior only; not full backend acceptance",
+  "health_coverage": {
+    "executed_lines": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15,
+      16,
+      18,
+      19,
+      21,
+      22,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      73,
+      74,
+      75,
+      76,
+      77,
+      81,
+      82,
+      84,
+      85,
+      86,
+      90,
+      91,
+      93,
+      100,
+      101,
+      103,
+      104,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      120,
+      121,
+      122,
+      125,
+      126,
+      128,
+      134,
+      135,
+      136,
+      139,
+      141,
+      145,
+      174,
+      175,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186
+    ],
+    "summary": {
+      "covered_lines": 102,
+      "num_statements": 113,
+      "percent_covered": 90.64748201438849,
+      "percent_covered_display": "91",
+      "missing_lines": 11,
+      "excluded_lines": 0,
+      "num_branches": 26,
+      "num_partial_branches": 2,
+      "covered_branches": 24,
+      "missing_branches": 2
+    },
+    "missing_lines": [
+      78,
+      79,
+      87,
+      88,
+      94,
+      95,
+      113,
+      117,
+      118,
+      137,
+      176
+    ],
+    "excluded_lines": [],
+    "executed_branches": [
+      [
+        28,
+        29
+      ],
+      [
+        28,
+        47
+      ],
+      [
+        29,
+        30
+      ],
+      [
+        29,
+        39
+      ],
+      [
+        32,
+        29
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        39,
+        40
+      ],
+      [
+        39,
+        47
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        41,
+        47
+      ],
+      [
+        52,
+        53
+      ],
+      [
+        52,
+        70
+      ],
+      [
+        53,
+        54
+      ],
+      [
+        53,
+        62
+      ],
+      [
+        56,
+        53
+      ],
+      [
+        56,
+        57
+      ],
+      [
+        62,
+        63
+      ],
+      [
+        62,
+        70
+      ],
+      [
+        64,
+        65
+      ],
+      [
+        64,
+        70
+      ],
+      [
+        112,
+        120
+      ],
+      [
+        134,
+        135
+      ],
+      [
+        134,
+        136
+      ],
+      [
+        136,
+        139
+      ]
+    ],
+    "missing_branches": [
+      [
+        112,
+        113
+      ],
+      [
+        136,
+        137
+      ]
+    ],
+    "functions": {
+      "_count_kg_nodes": {
+        "executed_lines": [
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "summary": {
+          "covered_lines": 22,
+          "num_statements": 22,
+          "percent_covered": 100.0,
+          "percent_covered_display": "100",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "num_branches": 10,
+          "num_partial_branches": 0,
+          "covered_branches": 10,
+          "missing_branches": 0
+        },
+        "missing_lines": [],
+        "excluded_lines": [],
+        "executed_branches": [
+          [
+            28,
+            29
+          ],
+          [
+            28,
+            47
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            29,
+            39
+          ],
+          [
+            32,
+            29
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            39,
+            40
+          ],
+          [
+            39,
+            47
+          ],
+          [
+            41,
+            42
+          ],
+          [
+            41,
+            47
+          ]
+        ],
+        "missing_branches": []
+      },
+      "_count_kg_edges": {
+        "executed_lines": [
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70
+        ],
+        "summary": {
+          "covered_lines": 20,
+          "num_statements": 20,
+          "percent_covered": 100.0,
+          "percent_covered_display": "100",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "num_branches": 10,
+          "num_partial_branches": 0,
+          "covered_branches": 10,
+          "missing_branches": 0
+        },
+        "missing_lines": [],
+        "excluded_lines": [],
+        "executed_branches": [
+          [
+            52,
+            53
+          ],
+          [
+            52,
+            70
+          ],
+          [
+            53,
+            54
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            56,
+            53
+          ],
+          [
+            56,
+            57
+          ],
+          [
+            62,
+            63
+          ],
+          [
+            62,
+            70
+          ],
+          [
+            64,
+            65
+          ],
+          [
+            64,
+            70
+          ]
+        ],
+        "missing_branches": []
+      },
+      "health_check": {
+        "executed_lines": [
+          75,
+          76,
+          77,
+          81,
+          82,
+          84,
+          85,
+          86,
+          90,
+          91,
+          93,
+          100,
+          101,
+          103,
+          104,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          120,
+          121,
+          122,
+          125,
+          126,
+          128,
+          134,
+          135,
+          136,
+          139,
+          141,
+          145
+        ],
+        "summary": {
+          "covered_lines": 33,
+          "num_statements": 43,
+          "percent_covered": 75.51020408163265,
+          "percent_covered_display": "76",
+          "missing_lines": 10,
+          "excluded_lines": 0,
+          "num_branches": 6,
+          "num_partial_branches": 2,
+          "covered_branches": 4,
+          "missing_branches": 2
+        },
+        "missing_lines": [
+          78,
+          79,
+          87,
+          88,
+          94,
+          95,
+          113,
+          117,
+          118,
+          137
+        ],
+        "excluded_lines": [],
+        "executed_branches": [
+          [
+            112,
+            120
+          ],
+          [
+            134,
+            135
+          ],
+          [
+            134,
+            136
+          ],
+          [
+            136,
+            139
+          ]
+        ],
+        "missing_branches": [
+          [
+            112,
+            113
+          ],
+          [
+            136,
+            137
+          ]
+        ]
+      },
+      "capabilities": {
+        "executed_lines": [],
+        "summary": {
+          "covered_lines": 0,
+          "num_statements": 1,
+          "percent_covered": 0.0,
+          "percent_covered_display": "0",
+          "missing_lines": 1,
+          "excluded_lines": 0,
+          "num_branches": 0,
+          "num_partial_branches": 0,
+          "covered_branches": 0,
+          "missing_branches": 0
+        },
+        "missing_lines": [
+          176
+        ],
+        "excluded_lines": [],
+        "executed_branches": [],
+        "missing_branches": []
+      },
+      "readiness": {
+        "executed_lines": [
+          183,
+          184,
+          185,
+          186
+        ],
+        "summary": {
+          "covered_lines": 4,
+          "num_statements": 4,
+          "percent_covered": 100.0,
+          "percent_covered_display": "100",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "num_branches": 0,
+          "num_partial_branches": 0,
+          "covered_branches": 0,
+          "missing_branches": 0
+        },
+        "missing_lines": [],
+        "excluded_lines": [],
+        "executed_branches": [],
+        "missing_branches": []
+      },
+      "": {
+        "executed_lines": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          25,
+          50,
+          73,
+          74,
+          174,
+          175,
+          181,
+          182
+        ],
+        "summary": {
+          "covered_lines": 23,
+          "num_statements": 23,
+          "percent_covered": 100.0,
+          "percent_covered_display": "100",
+          "missing_lines": 0,
+          "excluded_lines": 0,
+          "num_branches": 0,
+          "num_partial_branches": 0,
+          "covered_branches": 0,
+          "missing_branches": 0
+        },
+        "missing_lines": [],
+        "excluded_lines": [],
+        "executed_branches": [],
+        "missing_branches": []
+      }
+    },
+    "classes": {
+      "": {
+        "executed_lines": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          11,
+          13,
+          15,
+          16,
+          18,
+          19,
+          21,
+          22,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          73,
+          74,
+          75,
+          76,
+          77,
+          81,
+          82,
+          84,
+          85,
+          86,
+          90,
+          91,
+          93,
+          100,
+          101,
+          103,
+          104,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          120,
+          121,
+          122,
+          125,
+          126,
+          128,
+          134,
+          135,
+          136,
+          139,
+          141,
+          145,
+          174,
+          175,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
+        ],
+        "summary": {
+          "covered_lines": 102,
+          "num_statements": 113,
+          "percent_covered": 90.64748201438849,
+          "percent_covered_display": "91",
+          "missing_lines": 11,
+          "excluded_lines": 0,
+          "num_branches": 26,
+          "num_partial_branches": 2,
+          "covered_branches": 24,
+          "missing_branches": 2
+        },
+        "missing_lines": [
+          78,
+          79,
+          87,
+          88,
+          94,
+          95,
+          113,
+          117,
+          118,
+          137,
+          176
+        ],
+        "excluded_lines": [],
+        "executed_branches": [
+          [
+            28,
+            29
+          ],
+          [
+            28,
+            47
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            29,
+            39
+          ],
+          [
+            32,
+            29
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            39,
+            40
+          ],
+          [
+            39,
+            47
+          ],
+          [
+            41,
+            42
+          ],
+          [
+            41,
+            47
+          ],
+          [
+            52,
+            53
+          ],
+          [
+            52,
+            70
+          ],
+          [
+            53,
+            54
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            56,
+            53
+          ],
+          [
+            56,
+            57
+          ],
+          [
+            62,
+            63
+          ],
+          [
+            62,
+            70
+          ],
+          [
+            64,
+            65
+          ],
+          [
+            64,
+            70
+          ],
+          [
+            112,
+            120
+          ],
+          [
+            134,
+            135
+          ],
+          [
+            134,
+            136
+          ],
+          [
+            136,
+            139
+          ]
+        ],
+        "missing_branches": [
+          [
+            112,
+            113
+          ],
+          [
+            136,
+            137
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "audit-lock.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit-lock.stdout": "c49c925a8215953f3eb3fa4820251fd77592bf4c241e5bb2e45f03cc5ab03948",
+    "audit-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit-version.stdout": "8748580845bee726903e69bc4543958fb01e2594317e6c68bf80114bff13d541",
+    "cargo-audit-api.zip": "0a7316540862c13d954f648917ceacca593747baed6eec180fafa590be2710ab",
+    "chroma-Cargo.lock": "ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a",
+    "chroma-metadata-api.rs": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "chroma-metadata-commit.rs": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "chroma-tag.json": "612d70401daee9655c09ea55006006468d671828321b1bbf2d8e0f1bd9377c98",
+    "review-results.json": "17f0f292ae53ac7a7285b7c6dfbbe2d73e624393fc12e0937b0891a47efcb201",
+    "review.exit": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "review.log": "779cddffc6f466225ae2e2d222555bf911ff5dbae1415c02bfb8017f25b34f0b",
+    "REVIEW.md": "9568821bbe46267f135e8cad0543f181550a00b4fc619daafd8acb8e87790bec",
+    "review.py": "f7e2d38cda791c17d6d052c139c7b1535275f23df947fde05e6bb5846316319d",
+    "serde-derive-de.rs": "08fc2db0db3e7263ccfb8999ecc6249e5a8c3d9d3a3b85ea3b8995e865f08c83",
+    "serde-derive-enum-untagged.rs": "b66ad3cea36ee786d50270f6648f1075c1e615b5f04173b47f034a251df5220e",
+    "serde-private-de.rs": "68ee17774d3bbc693d9f19803747fa2c3afdb7046482e6d94ac6cf7db5a4fe20"
+  },
+  "chroma_commit": "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+  "chroma_metadata_url": "https://api.github.com/repos/chroma-core/chroma/contents/rust/types/src/metadata.rs?ref=11f3c7435e71024aa0a2b53710a28d3289d922d1",
+  "serde_ref": "v1.0.228",
+  "review_exit": 0
+}

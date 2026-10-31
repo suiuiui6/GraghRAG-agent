@@ -1,0 +1,165 @@
+{
+  "phase": 1,
+  "pid": 7,
+  "uid": 65534,
+  "checks": [
+    {
+      "action": "publish-A-v1",
+      "result": {
+        "filename": "same.docx",
+        "owner_id": "accept-owner",
+        "document_id": "accept-A",
+        "active_revision": 1,
+        "assets": [
+          {
+            "path": "publish-A-v1.txt",
+            "sha256": "7d6cd6624a044314b5bf94c18bc673f07449a9a372118fc50bb0e2c017c482ae"
+          }
+        ],
+        "model_profile": {
+          "dimension": 512,
+          "files_sha256": {
+            "1_Pooling/config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6",
+            "README.md": "c48a4eeea77f6b1d38b48ec1c5b8d4f86d5550cc43fa345a0db1b2ca1d082369",
+            "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+            "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+            "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+            "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+            "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+            "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+            "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+            "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+            "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c"
+          },
+          "model": "BAAI/bge-small-zh-v1.5",
+          "normalize": true,
+          "revision": "7999e1d3359715c523056ef9478215996d62a620"
+        },
+        "collection_name": "document_6baebbed9aa1301a10c900dbec0768623164b81f351e90d8bee9457cede58170"
+      }
+    },
+    {
+      "action": "publish-B",
+      "result": {
+        "filename": "same.docx",
+        "owner_id": "accept-owner",
+        "document_id": "accept-B",
+        "active_revision": 1,
+        "assets": [
+          {
+            "path": "publish-B.txt",
+            "sha256": "cb8c1f26b92fc6f84d52a27b9fbf2cc61eec92f8859a043aa6f3d69a7ef9001b"
+          }
+        ],
+        "model_profile": {
+          "dimension": 512,
+          "files_sha256": {
+            "1_Pooling/config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6",
+            "README.md": "c48a4eeea77f6b1d38b48ec1c5b8d4f86d5550cc43fa345a0db1b2ca1d082369",
+            "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+            "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+            "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+            "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+            "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+            "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+            "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+            "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+            "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c"
+          },
+          "model": "BAAI/bge-small-zh-v1.5",
+          "normalize": true,
+          "revision": "7999e1d3359715c523056ef9478215996d62a620"
+        },
+        "collection_name": "document_b3ba1512a5e555160e7a16b1450648f08c6efbe68428ecdc3bef207f9cda8760"
+      }
+    },
+    {
+      "action": "query",
+      "document": "accept-A",
+      "expected": "A1",
+      "actual_texts": [
+        "第一版独有标识：锅炉检修负责人张三。"
+      ]
+    },
+    {
+      "action": "query",
+      "document": "accept-B",
+      "expected": "B",
+      "actual_texts": [
+        "独立文档乙：变压器巡检负责人王五。"
+      ]
+    },
+    {
+      "action": "update-A-v2",
+      "result": {
+        "filename": "same.docx",
+        "owner_id": "accept-owner",
+        "document_id": "accept-A",
+        "active_revision": 2,
+        "assets": [
+          {
+            "path": "update-A-v2.txt",
+            "sha256": "18bf7dd4ec2973b56162b29c97db672dbf74490f5724cbc980ff25a025219730"
+          }
+        ],
+        "model_profile": {
+          "dimension": 512,
+          "files_sha256": {
+            "1_Pooling/config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6",
+            "README.md": "c48a4eeea77f6b1d38b48ec1c5b8d4f86d5550cc43fa345a0db1b2ca1d082369",
+            "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+            "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+            "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+            "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+            "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+            "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+            "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+            "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+            "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c"
+          },
+          "model": "BAAI/bge-small-zh-v1.5",
+          "normalize": true,
+          "revision": "7999e1d3359715c523056ef9478215996d62a620"
+        },
+        "collection_name": "document_19691aa1eaffb25b718737bd64e080d677bddba3dbdce253530ea0ae9d86e73c"
+      }
+    },
+    {
+      "action": "query",
+      "document": "accept-A",
+      "expected": "A2",
+      "actual_texts": [
+        "第二版独有标识：汽轮机维护负责人李四。"
+      ]
+    },
+    {
+      "action": "query",
+      "document": "accept-B",
+      "expected": "B",
+      "actual_texts": [
+        "独立文档乙：变压器巡检负责人王五。"
+      ]
+    }
+  ],
+  "seconds": 18.4501452879922,
+  "profile": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "dimension": 512,
+    "normalize": true,
+    "files_sha256": {
+      "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+      "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+      "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+      "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "README.md": "c48a4eeea77f6b1d38b48ec1c5b8d4f86d5550cc43fa345a0db1b2ca1d082369",
+      "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+      "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+      "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+      "1_Pooling/config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6"
+    }
+  },
+  "root": "/fixtures/graphrag-synthetic-g4pteu0n"
+}

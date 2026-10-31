@@ -1,0 +1,159 @@
+--- original/backend/native/vector_numeric/build.py
++++ candidate/backend/native/vector_numeric/build.py
+@@ -1,65 +1,108 @@
+-"""Rebuild locked release and emit a review receipt; explicit SHA approval installs.
+-
+-Run build.py build, review build-receipt.json and source/audit evidence, then
+-build.py install <sha256>. A receipt alone is never accepted by the runtime.
+-No network, arbitrary target, external command or environment override options.
+-"""
++"""Fixed offline release build; reviewed SHA installs into fresh staging only."""
+ import hashlib
+ import json
+ import os
+ from pathlib import Path
++import platform
++import re
+ import shutil
+ import subprocess
+ import sys
+ 
+-ROOT = Path(__file__).resolve().parent
+-TARGET = 'x86_64-pc-windows-msvc'
+-NAME = 'vector-numeric-bridge.exe'
+-FILES = ('Cargo.toml', 'Cargo.lock', 'rust-toolchain.toml', 'src/main.rs')
++ROOT=Path(__file__).resolve().parent
++TARGET='x86_64-pc-windows-msvc'
++NAME='vector-numeric-bridge.exe'
++FILES=('Cargo.toml','Cargo.lock','rust-toolchain.toml','src/main.rs')
++LABELS=['serde_json/std','zmij/default']  # Legacy requested labels, not compiled cfg.
++GRAPH={'serde_json':['std'],'serde_core':['result','std'],'zmij':[],
++       'memchr':['alloc','std'],'itoa':[],'vector-numeric-bridge':[]}
++COMPILED={'serde_json':['std'],'serde_core':['std'],'zmij':[]}
++COMMANDS=[]
+ 
++def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
+ 
+-def sha(path):
+-    return hashlib.sha256(path.read_bytes()).hexdigest()
++def platform_identity():
++    if platform.machine().lower() not in ('amd64','x86_64'): raise SystemExit('unsupported architecture')
++    if sys.platform=='win32': return TARGET,NAME
++    if sys.platform=='linux': return 'x86_64-unknown-linux-gnu','vector-numeric-bridge'
++    raise SystemExit('unsupported platform')
+ 
++def check_overrides():
++    keys=('RUSTFLAGS','CARGO_ENCODED_RUSTFLAGS','RUSTC_WRAPPER','RUSTC_WORKSPACE_WRAPPER',
++          'RUSTUP_TOOLCHAIN','CARGO_BUILD_TARGET','CARGO_BUILD_RUSTC','CARGO_BUILD_RUSTFLAGS',
++          'CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER','CARGO_TARGET_X86_64_PC_WINDOWS_MSVC_LINKER')
++    if any(os.environ.get(k) for k in keys): raise SystemExit('unsupported build override')
++
++def run(args):
++    try:
++        value=subprocess.run(args,cwd=ROOT,check=True,capture_output=True,text=True,encoding='utf-8')
++    except subprocess.CalledProcessError as error:
++        (ROOT/'failed-command.json').write_text(json.dumps(dict(argv=args,exit_code=error.returncode,stdout=error.stdout,stderr=error.stderr),indent=2),encoding='utf-8')
++        raise
++    COMMANDS.append(dict(argv=args,exit_code=value.returncode,stdout=value.stdout,stderr=value.stderr))
++    return value.stdout
++
++def compiler_valid(value,target):
++    return isinstance(value,str) and 'release: 1.94.0\n' in value and 'host: '+target+'\n' in value
+ 
+ def build():
+-    if os.name != 'nt':
+-        raise SystemExit('Linux release build and validation are not yet approved')
+-    subprocess.run(['cargo', '+stable', 'build', '--offline', '--locked', '--release', '--target', TARGET], cwd=ROOT, check=True)
+-    compiler = subprocess.run(['rustc', '+stable', '--version', '--verbose'], cwd=ROOT, check=True, capture_output=True, text=True, encoding="utf-8").stdout
+-    if 'release: 1.94.0\n' not in compiler or 'host: ' + TARGET not in compiler:
+-        raise SystemExit('unexpected compiler identity')
+-    features = subprocess.run(['cargo', '+stable', 'tree', '--offline', '--locked', '-e', 'features'], cwd=ROOT, check=True, capture_output=True, text=True, encoding="utf-8").stdout
+-    if 'float_roundtrip' in features or 'arbitrary_precision' in features:
+-        raise SystemExit('unsupported parser features')
+-    receipt = dict(schema=1, approved=False, target=TARGET, profile='release',
+-                   features=['serde_json/std', 'zmij/default'],
+-                   toolchain=compiler, feature_tree=features,
+-                   files={file: sha(ROOT / file) for file in FILES})
+-    receipt['files'][NAME] = sha(ROOT / 'target' / TARGET / 'release' / NAME)
+-    (ROOT / 'build-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
+-    return receipt['files'][NAME]
+-
++    target,name=platform_identity();check_overrides()
++    receipt_path=ROOT/'build-receipt.json'
++    if receipt_path.exists(): raise SystemExit('use a fresh build staging directory')
++    before={f:sha(ROOT/f) for f in FILES}
++    compiler=run(['rustc','+1.94.0','--version','--verbose'])
++    if not compiler_valid(compiler,target): raise SystemExit('unexpected compiler identity')
++    cargo=run(['cargo','+1.94.0','--version'])
++    if not cargo.startswith('cargo 1.94.0 '): raise SystemExit('unexpected cargo identity')
++    tree=run(['cargo','+1.94.0','tree','--offline','--locked','--target',target,'-e','features'])
++    if 'float_roundtrip' in tree or 'arbitrary_precision' in tree: raise SystemExit('unsupported parser features')
++    metadata=json.loads(run(['cargo','+1.94.0','metadata','--offline','--locked','--filter-platform',target,'--format-version','1']))
++    names={p['id']:p['name'] for p in metadata['packages']}
++    graph={names[n['id']]:sorted(n['features']) for n in metadata['resolve']['nodes']}
++    if graph!=GRAPH: raise SystemExit('unexpected feature graph')
++    run(['cargo','+1.94.0','build','--offline','--locked','--release','--target',target,'--verbose'])
++    compiled={};fingerprints={}
++    for crate in COMPILED:
++        paths=list((ROOT/'target'/target/'release'/'.fingerprint').glob(crate+'-*/lib-'+crate+'.json'))
++        if len(paths)!=1: raise SystemExit('unexpected release fingerprint')
++        value=json.loads(paths[0].read_text());compiled[crate]=json.loads(value['features'])
++        fingerprints[crate]={'sha256':sha(paths[0]),'value':value}
++    if compiled!=COMPILED: raise SystemExit('unexpected compiled features')
++    if before!={f:sha(ROOT/f) for f in FILES}: raise SystemExit('source changed during build')
++    receipt=dict(schema=1,approved=False,target=target,profile='release',features=LABELS,
++                 toolchain=compiler,files={**before,name:sha(ROOT/'target'/target/'release'/name)})
++    evidence=dict(compiler=compiler,cargo=cargo,feature_tree=tree,graph=graph,compiled=compiled,
++                  fingerprints=fingerprints,commands=COMMANDS,build_script_sha256=sha(Path(__file__)))
++    (ROOT/'build-evidence.json').write_text(json.dumps(evidence,indent=2)+'\n',encoding='utf-8')
++    receipt_path.write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
++    return receipt['files'][name]
+ 
+ def install(approval):
+-    receipt = json.loads((ROOT / 'build-receipt.json').read_text(encoding='utf-8'))
+-    binary = ROOT / 'target' / TARGET / 'release' / NAME
+-    if (approval != receipt['files'][NAME] or sha(binary) != approval
+-            or any(sha(ROOT / file) != receipt['files'][file] for file in FILES)):
++    target,name=platform_identity()
++    receipt=json.loads((ROOT/'build-receipt.json').read_text(encoding='utf-8'))
++    binary=ROOT/'target'/target/'release'/name
++    valid=(isinstance(receipt,dict) and receipt.get('schema')==1 and receipt.get('approved') is False
++           and receipt.get('target')==target and receipt.get('profile')=='release'
++           and receipt.get('features')==LABELS and compiler_valid(receipt.get('toolchain'),target)
++           and isinstance(receipt.get('files'),dict) and set(receipt['files'])==set((*FILES,name))
++           and re.fullmatch('[0-9a-f]{64}',approval) is not None)
++    if not valid: raise SystemExit('reviewed build identity does not match')
++    if approval!=receipt['files'][name] or sha(binary)!=approval or any(sha(ROOT/f)!=receipt['files'][f] for f in FILES):
+         raise SystemExit('reviewed build identity does not match')
+-    destination = ROOT / 'bin' / TARGET
+-    destination.mkdir(parents=True, exist_ok=True)
+-    shutil.copyfile(binary, destination / NAME)
+-    receipt['approved'] = True
+-    (destination / 'approved-build.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
++    receipt['approved']=True
++    serialized=json.dumps(receipt,indent=2)+'\n'
++    if len(serialized.encode('utf-8'))>8192: raise SystemExit('manifest too large')
++    destination=ROOT/'bin'/target
++    if destination.exists(): raise SystemExit('fresh non-serving destination required')
++    destination.mkdir(parents=True)
++    shutil.copyfile(binary,destination/name)
++    (destination/'approved-build.json').write_text(serialized,encoding='utf-8')
++    if sys.platform=='linux':
++        (destination/name).chmod(0o555)
++        (destination/'approved-build.json').chmod(0o444)
++        destination.chmod(0o555)
+ 
+-
+-if __name__ == '__main__':
+-    if sys.argv[1:] == ['build']:
+-        build()
+-    elif len(sys.argv) == 3 and sys.argv[1] == 'install':
+-        install(sys.argv[2])
+-    else:
+-        raise SystemExit('usage: build.py build | build.py install <reviewed-sha256>')
+-
+-
++if __name__=='__main__':
++    if sys.argv[1:]==['build']:build()
++    elif len(sys.argv)==3 and sys.argv[1]=='install':install(sys.argv[2])
++    else:raise SystemExit('usage: build.py build | build.py install <reviewed-sha256>')

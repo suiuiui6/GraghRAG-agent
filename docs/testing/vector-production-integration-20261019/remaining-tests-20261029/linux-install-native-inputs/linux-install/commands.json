@@ -1,0 +1,193 @@
+[
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "graphrag-numeric-installed-good:20261029"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09299999999348074
+  },
+  {
+    "argv": [
+      "docker",
+      "run",
+      "--name",
+      "numeric-install-good-20261029",
+      "--network",
+      "none",
+      "--read-only",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges",
+      "--user",
+      "65534:65534",
+      "--cpus",
+      "1",
+      "--memory",
+      "256m",
+      "--pids-limit",
+      "64",
+      "--mount",
+      "type=bind,source=D:\\graghRAG-agent\\.tmp\\linux-build-isolated-candidate-20261029\\install-acceptance\\probe.py,target=/probe.py,readonly",
+      "--env",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "--entrypoint",
+      "/usr/local/bin/python3.12",
+      "sha256:c0ecd87f1987e9749a162d014e5e6ace0aac42845357c2ed28601685e1855ae8",
+      "/probe.py",
+      "good"
+    ],
+    "exit_code": 0,
+    "seconds": 0.5
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "numeric-install-good-20261029"
+    ],
+    "exit_code": 0,
+    "seconds": 0.07800000000861473
+  },
+  {
+    "argv": [
+      "docker",
+      "build",
+      "--network",
+      "none",
+      "--pull=false",
+      "--target",
+      "noexec",
+      "-t",
+      "graphrag-numeric-installed-noexec:20261029",
+      "D:\\graghRAG-agent\\.tmp\\linux-build-isolated-candidate-20261029\\install-acceptance\\context"
+    ],
+    "exit_code": 0,
+    "seconds": 1.25
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "graphrag-numeric-installed-noexec:20261029"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09399999999732245
+  },
+  {
+    "argv": [
+      "docker",
+      "run",
+      "--name",
+      "numeric-install-noexec-20261029",
+      "--network",
+      "none",
+      "--read-only",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges",
+      "--user",
+      "65534:65534",
+      "--cpus",
+      "1",
+      "--memory",
+      "256m",
+      "--pids-limit",
+      "64",
+      "--mount",
+      "type=bind,source=D:\\graghRAG-agent\\.tmp\\linux-build-isolated-candidate-20261029\\install-acceptance\\probe.py,target=/probe.py,readonly",
+      "--env",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "--entrypoint",
+      "/usr/local/bin/python3.12",
+      "sha256:b9b0ee1780e1e57ea705ef51f34a509a3e9f9c5710d4bc78356b92ab190432ed",
+      "/probe.py",
+      "noexec"
+    ],
+    "exit_code": 0,
+    "seconds": 0.48399999999674037
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "numeric-install-noexec-20261029"
+    ],
+    "exit_code": 0,
+    "seconds": 0.0629999999946449
+  },
+  {
+    "argv": [
+      "docker",
+      "build",
+      "--network",
+      "none",
+      "--pull=false",
+      "--target",
+      "missing",
+      "-t",
+      "graphrag-numeric-installed-missing:20261029",
+      "D:\\graghRAG-agent\\.tmp\\linux-build-isolated-candidate-20261029\\install-acceptance\\context"
+    ],
+    "exit_code": 0,
+    "seconds": 1.2030000000086147
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "graphrag-numeric-installed-missing:20261029"
+    ],
+    "exit_code": 0,
+    "seconds": 0.11000000000058208
+  },
+  {
+    "argv": [
+      "docker",
+      "run",
+      "--name",
+      "numeric-install-missing-20261029",
+      "--network",
+      "none",
+      "--read-only",
+      "--cap-drop",
+      "ALL",
+      "--security-opt",
+      "no-new-privileges",
+      "--user",
+      "65534:65534",
+      "--cpus",
+      "1",
+      "--memory",
+      "256m",
+      "--pids-limit",
+      "64",
+      "--mount",
+      "type=bind,source=D:\\graghRAG-agent\\.tmp\\linux-build-isolated-candidate-20261029\\install-acceptance\\probe.py,target=/probe.py,readonly",
+      "--env",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "--entrypoint",
+      "/usr/local/bin/python3.12",
+      "sha256:472e3ce3ba3fae7cce4c3dc0c2cf224bc27f35cb30d13e079ba1f2b50a78df19",
+      "/probe.py",
+      "missing"
+    ],
+    "exit_code": 0,
+    "seconds": 0.46899999999732245
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "numeric-install-missing-20261029"
+    ],
+    "exit_code": 0,
+    "seconds": 0.09399999999732245
+  }
+]

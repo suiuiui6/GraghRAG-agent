@@ -1,0 +1,119 @@
+{
+  "original_private_sha256": "049c38fd999cddd608e058fc5ad4f7b7a64d11978a932a38c4a9a772d069a797",
+  "scope": "Complete existing HTTP lifecycle test file, real fixed model opt-in; excludes captured stdout/properties/hostnames",
+  "cases": [
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_revision_wire_contract",
+      "time": "0.027"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_catalog_authority_and_owner_filter",
+      "time": "0.735"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data0]",
+      "time": "0.065"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data1]",
+      "time": "0.019"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data2]",
+      "time": "0.045"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data3]",
+      "time": "0.019"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data4]",
+      "time": "0.016"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_stale_update_and_cross_owner_are_rejected_before_processing",
+      "time": "0.028"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_authenticated_vector_update_delete_and_reopen",
+      "time": "1.007"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_legacy_deleted_catalog_tombstone_survives_retained_json",
+      "time": "0.023"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_vector_embedding_revision_mismatch_is_unavailable",
+      "time": "0.510"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_real_docx_upload_update_publish_receipt_and_download",
+      "time": "1.188"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_completed_receipt_replay_skips_worker_providers",
+      "time": "0.554"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_background_cas_conflict_is_failed_status_200_with_409_detail",
+      "time": "0.554"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_generation_final_check_discards_changed_scope[delete-404]",
+      "time": "0.527"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_generation_final_check_discards_changed_scope[update-200]",
+      "time": "0.531"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_generation_final_check_discards_changed_scope[revoke-404]",
+      "time": "0.538"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_fresh_process_http_reopen_after_update_and_after_delete",
+      "time": "6.710"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_catalog_storage_corruption_returns_503_not_success_empty",
+      "time": "0.024"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_status_recovers_committed_receipt_when_task_json_lags",
+      "time": "0.540"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_embedding_failure_never_publishes_done",
+      "time": "0.506"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_fixed_local_model_http_upload_update_delete_restart",
+      "time": "25.797"
+    }
+  ],
+  "failure": 0,
+  "error": 0,
+  "skipped": 0
+}

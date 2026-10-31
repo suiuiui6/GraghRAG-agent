@@ -1,0 +1,56 @@
+{
+  "candidate_sha256": {
+    "pyproject.toml": "e9e1c26db6e42966f9bbea3b9274d95d065919c3931c88a57bcf3d37c8b420a8",
+    "requirements.txt": "a2f13bc4eb914c602cc9b45294340ecdc55334d99f5b585d78d006f6f9f50688",
+    "uv.lock": "50bb993c6aff56335edd92875d764013d4d91339140c548a79111b1cc2d69a30"
+  },
+  "lock_changed_packages": {
+    "filelock": {
+      "old": "3.32.7",
+      "new": "4.2.1"
+    },
+    "graphrag-agent-backend": {
+      "old": "0.1.0",
+      "new": "0.1.0"
+    },
+    "opentelemetry-api": {
+      "old": "1.44.0",
+      "new": "1.45.1"
+    },
+    "setuptools": {
+      "old": "84.0.0",
+      "new": "84.1.0"
+    }
+  },
+  "registry_count": 179,
+  "installed_count": 159,
+  "patch_RECORD_sha256_checked": {
+    "filelock": 29,
+    "opentelemetry-api": 48,
+    "setuptools": 344
+  },
+  "copied_unchanged_verified_both_sources": 32706,
+  "patch_paths_copied_overlap": 0,
+  "audit_lock_exact_set": 179,
+  "audit_installed_exact_set": 159,
+  "audit_installed_registry_count": 158,
+  "junit_cases": 54,
+  "pth": {
+    "distutils-precedence.pth": "import os; var = 'SETUPTOOLS_USE_DISTUTILS'; enabled = os.environ.get(var, 'local') == 'local'; enabled and __import__('_distutils_hack').add_shim(); \n",
+    "_virtualenv.pth": "import _virtualenv",
+    "__editable__.langextract-1.5.0.pth": "import __editable___langextract_1_5_0_finder; __editable___langextract_1_5_0_finder.install()"
+  },
+  "sys_path": [
+    "D:\\graghRAG-agent\\.tmp\\security-patch-review-20261026",
+    "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python\\python312.zip",
+    "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python\\DLLs",
+    "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python\\Lib",
+    "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python",
+    "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv",
+    "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Lib\\site-packages"
+  ],
+  "limitations": [
+    "No clean full reinstall: initial network and two offline attempts failed; cloned unchanged payload verified",
+    "Windows only; no full project coverage or commit approval"
+  ]
+}

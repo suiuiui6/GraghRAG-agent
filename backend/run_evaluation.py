@@ -475,6 +475,13 @@ class ComprehensiveEvaluator:
 # Main
 # ═══════════════════════════════════════════════════════════════════════════════
 
+def build_optional_indices(vector_store, bm25_index=None, table_index=None):
+    from build_indices import build_indices
+    if bm25_index is not None and table_index is not None:
+        return bm25_index, table_index
+    return build_indices(vector_store, bm25_index, table_index)
+
+
 def main():
     print("=" * 60)
     print("RAG 系统综合评估 — §3.2 评估框架")
@@ -526,32 +533,11 @@ def main():
     table_index = None
     try:
         from index_registry import (
-            get_bm25_index, get_table_index, set_bm25_index, set_table_index,
-            build_bm25_from_chunks, build_table_index_from_chunks,
+            get_bm25_index, get_table_index,
         )
-        from doc_processor import Chunk
-        bm25_index = get_bm25_index()
-        table_index = get_table_index()
-        if not bm25_index or not table_index:
-            print("  Building BM25 + TableIndex from existing chunks...")
-            all_data = vector_store._collection.get(include=["documents", "metadatas"])
-            all_chunks = []
-            for i, cid in enumerate(all_data.get("ids", [])):
-                text = all_data["documents"][i] if all_data.get("documents") else ""
-                meta = all_data["metadatas"][i] if all_data.get("metadatas") else {}
-                all_chunks.append(Chunk(
-                    chunk_id=cid, text=text,
-                    content_type=meta.get("content_type", "text"),
-                ))
-            if not bm25_index:
-                bm25_index = build_bm25_from_chunks(all_chunks)
-                if bm25_index:
-                    set_bm25_index(bm25_index)
-            if not table_index:
-                table_chunks = [c for c in all_chunks if c.content_type == "table" or "<table>" in c.text.lower()]
-                table_index = build_table_index_from_chunks(table_chunks if table_chunks else all_chunks)
-                if table_index:
-                    set_table_index(table_index)
+        bm25_index, table_index = build_optional_indices(
+            vector_store, get_bm25_index(), get_table_index()
+        )
         print(f"  BM25: {'ready' if bm25_index else 'not built'}")
         print(f"  TableIndex: {'ready' if table_index else 'not built'} ({table_index.count() if table_index else 0} rows)")
     except Exception as e:

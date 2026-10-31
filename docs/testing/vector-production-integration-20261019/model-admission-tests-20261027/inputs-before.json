@@ -1,0 +1,13 @@
+{
+  "backend/services/document_runtime.py": "1ee407ee0db7e650d169c999ebe1e3df8f6a2e30347a0c964efc0cfd2c6830ee",
+  "backend/sqlite_vector_store.py": "238c0836f9db011596fb610497e4a3829a350d1b68164abc5dd479ea0ac90b9f",
+  "test_vector_model_admission_failures.py": "a42428da3cdbe848fa9cfbf40cdcb6e74916f87a4fd90d8533f5b26de91195ac",
+  "backend/vector_runtime.py": "b473e571bea0f4c33c0dff5f29c5d097716e72d0a726a49405247fdbb7234540",
+  "backend/vector_errors.py": "35cfb42038b1839ae2e7da7ee2fcb24d0f8c1098c354c456cea7d4edec6ffdda",
+  "backend/sqlite_vector_payload.py": "e38deeb935a8dc6740b1719cebaa0baa3feee0bb5066f93c0b33e03f32c764b3",
+  "backend/services/document_catalog.py": "0b9a7ccdef00de6cf2452ef6aab55afdac5fc22658c30772d4a80fe90aae3baa",
+  "backend/services/document_publication.py": "5fd35f970a18abd55da2efe76f3745b9e135697eea2733b97b06d3c6d7153de5",
+  "backend/vector_store.py": "83653abca52d0572c91e76f395f5f1dc762878e8a2af301bba19d61dcc514e9d",
+  "backend/services/vector_startup.py": "7ce0852214b6264194a925ad333ef59421a3c78fb09550155c6d72cf3cc76259",
+  "backend/services/document_catalog_schema.py": "4ef9a280cb8ad7608d1065c4fc5e4aa56f2693f4d6311e9b6575a95cfe4641ba"
+}

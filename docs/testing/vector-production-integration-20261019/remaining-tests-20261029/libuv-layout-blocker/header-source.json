@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/include/uv.h",
+    "sha256": "253cfea345971c78dbb15853fe0c1df960bbef6af8eeb78c85525bc9ff1553bf",
+    "bytes": 65703
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/include/uv/win.h",
+    "sha256": "7f378fa6d8fce51b4999344818731b40b7cac7a3d84d9ba60a9629dfece2ebab",
+    "bytes": 32541
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/include/uv/errno.h",
+    "sha256": "dc50a23835d17d35ba55883f0c6dd97c548138901ff528fe9971a04e2246152a",
+    "bytes": 10359
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/include/uv/version.h",
+    "sha256": "fe7334383a3d862f87e9e45e8799aa814b19070ef3d46d4068dffc8e4cf6ae1e",
+    "bytes": 1831
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/include/uv/threadpool.h",
+    "sha256": "43cb2c06d4e30e08126d6aa92441ab18f360e38fe768211ce1bcde499bb2c103",
+    "bytes": 1497
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/include/uv/tree.h",
+    "sha256": "8c9e0f530202b3011a0f67c3f169de6552338674c2c524843dd7e04e01d15280",
+    "bytes": 52889
+  }
+]

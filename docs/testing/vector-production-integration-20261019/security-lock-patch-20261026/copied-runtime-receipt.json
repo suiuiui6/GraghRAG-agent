@@ -1,0 +1,14 @@
+{
+  "source": "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Lib\\site-packages",
+  "destination": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Lib\\site-packages",
+  "copied_verified_files": 32706,
+  "excluded_distributions": [
+    "filelock",
+    "langextract",
+    "opentelemetry-api",
+    "setuptools"
+  ],
+  "pyc": "not copied",
+  "elapsed": 164.0580780506134,
+  "limitation": "Verified copy of existing installed payload, not a clean complete reinstall"
+}

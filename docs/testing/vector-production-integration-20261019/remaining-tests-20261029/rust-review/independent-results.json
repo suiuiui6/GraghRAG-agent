@@ -1,0 +1,715 @@
+{
+  "author": {
+    "original49": {
+      "physical_lines_total": 60,
+      "physical_lines_covered": 58,
+      "llvm_line_instances_total": 62,
+      "llvm_line_instances_covered": 60,
+      "branch_total": 24,
+      "branch_covered": 21,
+      "mapped_functions": [
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge4mains_0B3_",
+          "count": 48
+        },
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge6handle0B3_",
+          "count": 256
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge4main",
+          "count": 49
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge6handle",
+          "count": 48
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge8response",
+          "count": 38
+        }
+      ],
+      "uncovered_physical_lines": [
+        40,
+        12
+      ],
+      "raw_branch_arrays": [
+        [
+          38,
+          30,
+          38,
+          48,
+          171,
+          85,
+          0,
+          0,
+          4
+        ],
+        [
+          70,
+          21,
+          70,
+          38,
+          1,
+          48,
+          0,
+          0,
+          4
+        ],
+        [
+          30,
+          8,
+          30,
+          30,
+          2,
+          46,
+          0,
+          0,
+          4
+        ],
+        [
+          35,
+          16,
+          35,
+          35,
+          0,
+          16,
+          0,
+          0,
+          4
+        ],
+        [
+          36,
+          20,
+          38,
+          79,
+          0,
+          16,
+          0,
+          0,
+          4
+        ],
+        [
+          44,
+          16,
+          44,
+          30,
+          3,
+          13,
+          0,
+          0,
+          4
+        ],
+        [
+          53,
+          16,
+          53,
+          40,
+          1,
+          5,
+          0,
+          0,
+          4
+        ],
+        [
+          6,
+          9,
+          6,
+          42,
+          34,
+          2,
+          0,
+          0,
+          4
+        ],
+        [
+          9,
+          8,
+          9,
+          23,
+          22,
+          12,
+          0,
+          0,
+          4
+        ],
+        [
+          11,
+          12,
+          11,
+          26,
+          0,
+          22,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          15,
+          15,
+          21,
+          5,
+          7,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          25,
+          15,
+          47,
+          2,
+          5,
+          0,
+          0,
+          4
+        ]
+      ],
+      "physical_line_gate": true,
+      "instance_line_gate": true,
+      "branch_gate": false
+    },
+    "final61": {
+      "physical_lines_total": 60,
+      "physical_lines_covered": 59,
+      "llvm_line_instances_total": 62,
+      "llvm_line_instances_covered": 61,
+      "branch_total": 24,
+      "branch_covered": 23,
+      "mapped_functions": [
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge4mains_0B3_",
+          "count": 57
+        },
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge6handle0B3_",
+          "count": 274
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge4main",
+          "count": 61
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge6handle",
+          "count": 57
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge8response",
+          "count": 41
+        }
+      ],
+      "uncovered_physical_lines": [
+        12
+      ],
+      "raw_branch_arrays": [
+        [
+          38,
+          30,
+          38,
+          48,
+          187,
+          87,
+          0,
+          0,
+          4
+        ],
+        [
+          70,
+          21,
+          70,
+          38,
+          2,
+          58,
+          0,
+          0,
+          4
+        ],
+        [
+          30,
+          8,
+          30,
+          30,
+          2,
+          52,
+          0,
+          0,
+          4
+        ],
+        [
+          35,
+          16,
+          35,
+          35,
+          1,
+          18,
+          0,
+          0,
+          4
+        ],
+        [
+          36,
+          20,
+          38,
+          79,
+          2,
+          16,
+          0,
+          0,
+          4
+        ],
+        [
+          44,
+          16,
+          44,
+          30,
+          3,
+          13,
+          0,
+          0,
+          4
+        ],
+        [
+          53,
+          16,
+          53,
+          40,
+          1,
+          5,
+          0,
+          0,
+          4
+        ],
+        [
+          6,
+          9,
+          6,
+          42,
+          37,
+          2,
+          0,
+          0,
+          4
+        ],
+        [
+          9,
+          8,
+          9,
+          23,
+          22,
+          15,
+          0,
+          0,
+          4
+        ],
+        [
+          11,
+          12,
+          11,
+          26,
+          0,
+          22,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          15,
+          15,
+          21,
+          5,
+          10,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          25,
+          15,
+          47,
+          2,
+          8,
+          0,
+          0,
+          4
+        ]
+      ],
+      "physical_line_gate": true,
+      "instance_line_gate": true,
+      "branch_gate": true
+    }
+  },
+  "independent": {
+    "original49": {
+      "physical_lines_total": 60,
+      "physical_lines_covered": 58,
+      "llvm_line_instances_total": 62,
+      "llvm_line_instances_covered": 60,
+      "branch_total": 24,
+      "branch_covered": 21,
+      "mapped_functions": [
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge4mains_0B3_",
+          "count": 48
+        },
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge6handle0B3_",
+          "count": 256
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge4main",
+          "count": 49
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge6handle",
+          "count": 48
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge8response",
+          "count": 38
+        }
+      ],
+      "uncovered_physical_lines": [
+        40,
+        12
+      ],
+      "raw_branch_arrays": [
+        [
+          38,
+          30,
+          38,
+          48,
+          171,
+          85,
+          0,
+          0,
+          4
+        ],
+        [
+          70,
+          21,
+          70,
+          38,
+          1,
+          48,
+          0,
+          0,
+          4
+        ],
+        [
+          30,
+          8,
+          30,
+          30,
+          2,
+          46,
+          0,
+          0,
+          4
+        ],
+        [
+          35,
+          16,
+          35,
+          35,
+          0,
+          16,
+          0,
+          0,
+          4
+        ],
+        [
+          36,
+          20,
+          38,
+          79,
+          0,
+          16,
+          0,
+          0,
+          4
+        ],
+        [
+          44,
+          16,
+          44,
+          30,
+          3,
+          13,
+          0,
+          0,
+          4
+        ],
+        [
+          53,
+          16,
+          53,
+          40,
+          1,
+          5,
+          0,
+          0,
+          4
+        ],
+        [
+          6,
+          9,
+          6,
+          42,
+          34,
+          2,
+          0,
+          0,
+          4
+        ],
+        [
+          9,
+          8,
+          9,
+          23,
+          22,
+          12,
+          0,
+          0,
+          4
+        ],
+        [
+          11,
+          12,
+          11,
+          26,
+          0,
+          22,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          15,
+          15,
+          21,
+          5,
+          7,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          25,
+          15,
+          47,
+          2,
+          5,
+          0,
+          0,
+          4
+        ]
+      ],
+      "physical_line_gate": true,
+      "instance_line_gate": true,
+      "branch_gate": false
+    },
+    "final61": {
+      "physical_lines_total": 60,
+      "physical_lines_covered": 59,
+      "llvm_line_instances_total": 62,
+      "llvm_line_instances_covered": 61,
+      "branch_total": 24,
+      "branch_covered": 23,
+      "mapped_functions": [
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge4mains_0B3_",
+          "count": 57
+        },
+        {
+          "name": "_RNCNvCsfSArRj7EodY_21vector_numeric_bridge6handle0B3_",
+          "count": 274
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge4main",
+          "count": 61
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge6handle",
+          "count": 57
+        },
+        {
+          "name": "_RNvCsfSArRj7EodY_21vector_numeric_bridge8response",
+          "count": 41
+        }
+      ],
+      "uncovered_physical_lines": [
+        12
+      ],
+      "raw_branch_arrays": [
+        [
+          38,
+          30,
+          38,
+          48,
+          187,
+          87,
+          0,
+          0,
+          4
+        ],
+        [
+          70,
+          21,
+          70,
+          38,
+          2,
+          58,
+          0,
+          0,
+          4
+        ],
+        [
+          30,
+          8,
+          30,
+          30,
+          2,
+          52,
+          0,
+          0,
+          4
+        ],
+        [
+          35,
+          16,
+          35,
+          35,
+          1,
+          18,
+          0,
+          0,
+          4
+        ],
+        [
+          36,
+          20,
+          38,
+          79,
+          2,
+          16,
+          0,
+          0,
+          4
+        ],
+        [
+          44,
+          16,
+          44,
+          30,
+          3,
+          13,
+          0,
+          0,
+          4
+        ],
+        [
+          53,
+          16,
+          53,
+          40,
+          1,
+          5,
+          0,
+          0,
+          4
+        ],
+        [
+          6,
+          9,
+          6,
+          42,
+          37,
+          2,
+          0,
+          0,
+          4
+        ],
+        [
+          9,
+          8,
+          9,
+          23,
+          22,
+          15,
+          0,
+          0,
+          4
+        ],
+        [
+          11,
+          12,
+          11,
+          26,
+          0,
+          22,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          15,
+          15,
+          21,
+          5,
+          10,
+          0,
+          0,
+          4
+        ],
+        [
+          15,
+          25,
+          15,
+          47,
+          2,
+          8,
+          0,
+          0,
+          4
+        ]
+      ],
+      "physical_line_gate": true,
+      "instance_line_gate": true,
+      "branch_gate": true
+    }
+  },
+  "dead_scope_limitation": {
+    "summary_branch_total": 0,
+    "raw_branch_total": 2,
+    "raw_branches": [
+      [
+        1,
+        36,
+        1,
+        45,
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "note": "Actual all5 functions execute; cannot assume summary covers dormant branch denominator in future."
+  },
+  "source_before_after": {
+    "Cargo.toml": "02105d1df940431d92ff91bb536eb65aee8e2ba3a7fc19f21e9e0ee624842c2c",
+    "Cargo.lock": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+    "rust-toolchain.toml": "4cb550734bd94d0591c8a84b561c654dd58ddc3b0d67464c2ddeb2962a4cd826",
+    "src/main.rs": "eee79631cc3e7ee8acd2d48485be9a811374d7d04426a49f1368e7b260f65dfe"
+  },
+  "vendor_files_rechecked": 447,
+  "instrumented_sha": "19f638b1ed0595121a67e272be46b72fec0202a646c56df142bdc707d7c14666",
+  "release_sha": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0"
+}

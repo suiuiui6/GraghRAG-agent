@@ -1,0 +1,21 @@
+# V2 independent review — PASS, bounded source-publication clearance
+
+2026-10-29. Reviewed candidate build script SHA256 `27242d74c351a6d25ed2163d626e7afd3728692df30dfd739a6c2a9c5b8e5082` in `linux-build-isolated-candidate-20261029-v2`. This closes the prior rustup auto-install release blocker. This precise v2 source is locally cleared for publication with respect to this Linux offline-build change. Publication itself is not performed or authorized by this review; native-component admission, production gate, C integration, R12/full regression and both 90% coverage gates are not cleared.
+
+## Findings
+
+No remaining blocking finding in the requested scope. Actual code and supplied diff agree: all five compiler/Cargo subprocesses, including identity probes, use `rustup run 1.94.0`, with no `--install`; all dependency operations retain `--offline --locked`. Explicit rustup/preinstalled toolchain prerequisite is documented. The previous official rustup source review establishes missing-toolchain failure semantics for this explicit run path.
+
+Installer AST is identical to v1. Source diff changes only module documentation and five command prefixes; policy fixture changes follow that prefix and add a behavioral assertion over all five actual build launches. The added test does not merely search strings: it captures the commands on the exercised build path. Existing installer and oversize assertions remain. V1 complete install/execution evidence and root's newer install checks may therefore support the unchanged installer path; this report does not describe those old runs as full v2 validation.
+
+R2 raw real-build evidence binds the new script SHA and new approved=false receipt to the unchanged binary SHA `20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0`. Five internal build command records exit 0, the external identity/build records exit 0, and the frozen source-stability record is equal. Actual container inspection confirms network none, uid 1000:1000, read-only root and source/runner/config/vendor mounts. Image is the specified existing fixed cf1d89f5… digest. I inspected these actual records; I did not execute another Docker build or installation.
+
+The empty-RUSTUP_HOME raw negative exits 1 with the specific missing 1.94.0 GNU-toolchain error and records only settings.toml. The first entrypoint error and r1 overstrict harness failure remain in the 52-file manifest. Allowing settings.toml bootstrap is appropriate: the contract forbids automatic toolchain/download/install fallback, not rustup's local settings initialization. R2 still explicitly rejects a toolchains directory and every non-settings file. This is a correction to a newly introduced harness assumption, not weakening an old functional/build assertion. The evidence does not assert a generic filesystem sandbox; the specific failure and network-none execution establish the narrow intended condition.
+
+## Independent verification
+
+Executed `backend/.venv/Scripts/python.exe -m pytest .tmp/linux-build-isolated-candidate-20261029-v2/backend/tests -q -p no:cacheprovider --basetemp=.tmp/linux-numeric-candidate-independent-review-20261029/review-addendum/v2-review/pytest`, with PYTHONDONTWRITEBYTECODE=1: exit 0, **32 passed in 1.93s**. Cache/temporary output is confined to this owned review directory; no full backend or coverage run was made.
+
+Executed `backend/.venv/Scripts/python.exe .tmp/linux-numeric-candidate-independent-review-20261029/review-addendum/v2-review/verify.py`: exit 0. Independent assertions verify all 52 manifest hashes, all 258 frozen C R11 inputs, all 447 vendor file hashes and bound manifest/config hashes, four Rust input hashes against C/v1/new receipt, five AST command constructions, unchanged installer AST, sidecar/script SHA, receipt/binary SHA, successful internal command exits, compiled feature identities, source stability, negative raw evidence and actual container isolation fields. Result/log/exit and verification source are adjacent.
+
+All writes in this turn are under this new v2-review directory. Candidate, C worktree/R11, sealed prior reports, runtime and original evidence were not modified. No Windows libuv Docker build, network package download, commit, push, deployment, or source publication was performed. Parent owns project memory updates outside this review-only boundary.

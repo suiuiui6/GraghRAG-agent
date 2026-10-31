@@ -1,0 +1,189 @@
+{
+  "torch": "2.14.0+cpu",
+  "source_library_sha256": "cc3d0101c16504ba021abe6794c98122f744ec8cf077bd0178f630f320b24aeb",
+  "signature": "ssize_t(char const*,char const*,char*,char*)",
+  "network_functions_invoked": false,
+  "cases": [
+    {
+      "name": "ascii-1",
+      "input_bytes": 1,
+      "expected_output_bytes": 1,
+      "capacity": 256,
+      "return": 2,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "ascii-254",
+      "input_bytes": 254,
+      "expected_output_bytes": 254,
+      "capacity": 256,
+      "return": 255,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "ascii-255",
+      "input_bytes": 255,
+      "expected_output_bytes": 255,
+      "capacity": 256,
+      "return": 256,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "ascii-256",
+      "input_bytes": 256,
+      "expected_output_bytes": 256,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "ascii-257",
+      "input_bytes": 257,
+      "expected_output_bytes": 257,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "ascii-512",
+      "input_bytes": 512,
+      "expected_output_bytes": 512,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "numeric-host-with-suffix",
+      "input_bytes": 268,
+      "expected_output_bytes": 268,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "unicode-output-254",
+      "input_bytes": 249,
+      "expected_output_bytes": 254,
+      "capacity": 256,
+      "return": 255,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "unicode-output-255",
+      "input_bytes": 250,
+      "expected_output_bytes": 255,
+      "capacity": 256,
+      "return": 256,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "unicode-output-256",
+      "input_bytes": 251,
+      "expected_output_bytes": 256,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "unicode-output-257",
+      "input_bytes": 252,
+      "expected_output_bytes": 257,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "separator-0x3002",
+      "input_bytes": 10,
+      "expected_output_bytes": 13,
+      "capacity": 256,
+      "return": 14,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "separator-0xff0e",
+      "input_bytes": 10,
+      "expected_output_bytes": 13,
+      "capacity": 256,
+      "return": 14,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "separator-0xff61",
+      "input_bytes": 10,
+      "expected_output_bytes": 13,
+      "capacity": 256,
+      "return": 14,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "utf8-invalid",
+      "input_bytes": 1,
+      "expected_output_bytes": null,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "empty",
+      "input_bytes": 0,
+      "expected_output_bytes": null,
+      "capacity": 256,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "small-cap-success",
+      "input_bytes": 1,
+      "expected_output_bytes": 1,
+      "capacity": 2,
+      "return": 2,
+      "expected_success": true,
+      "canary_unchanged": true,
+      "pass": true
+    },
+    {
+      "name": "small-cap-insufficient",
+      "input_bytes": 2,
+      "expected_output_bytes": 2,
+      "capacity": 2,
+      "return": -22,
+      "expected_success": false,
+      "canary_unchanged": true,
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

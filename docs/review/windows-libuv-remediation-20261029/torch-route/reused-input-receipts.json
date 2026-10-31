@@ -1,0 +1,65 @@
+[
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\REPORT.md",
+    "sha256": "DD9C1EB239E5050173BB1223D7C6BBDCE8ED3D91FF523E5E47F17BFD79E653D6",
+    "bytes": 5533,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\.ci__pytorch__windows__build_env_setup.py",
+    "sha256": "CCB9F1A9C95AA78D5D4346FC46E63DC687B8B80A0F684B2547443E286BDF677D",
+    "bytes": 17673,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\.ci__pytorch__windows__build_install_deps.py",
+    "sha256": "2178F85B8502B9D2FB949BC1B3513D3F029DF1B29217CF18A397CCAAC8B57EC0",
+    "bytes": 4375,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\.ci__pytorch__windows__build_wheel.py",
+    "sha256": "782553EF8A6AD4D0B563CA6B7BD6E56718636C060587530FD64C8AEF9C0A028C",
+    "bytes": 1343,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\caffe2__CMakeLists.txt",
+    "sha256": "F1CDB8800A7FF2ECB1B61A3E9EDAA9E674EDB7679465B365AFC588843C96CC96",
+    "bytes": 93143,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\torch__CMakeLists.txt",
+    "sha256": "9CB2A6439B146F00A51B61A68CACDD8E1EA930A7454C3C59961B04FEBE437DD2",
+    "bytes": 20917,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\torch__csrc__distributed__c10d__store__TCPStoreLibUvBackend.cpp",
+    "sha256": "C7E4DDDB05699EE8145A8C03805604EA59F8610F50D052CE136125361687A12E",
+    "bytes": 43787,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\fetch2.json",
+    "sha256": "A0AADD4F3A6B8D19DC2C86F8E9497DFACDD2163921241D823754067C26CC4B87",
+    "bytes": 1626,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  },
+  {
+    "source": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\fetch3.json",
+    "sha256": "1BD86795C5198C26740B3A873BAE7A71F8B2FE36A43D828D1E5E4DDDC3688172",
+    "bytes": 894,
+    "mode": "read-only existing evidence",
+    "official_base": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/"
+  }
+]

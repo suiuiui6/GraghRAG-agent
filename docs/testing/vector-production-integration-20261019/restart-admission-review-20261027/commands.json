@@ -1,0 +1,20 @@
+{
+  "cwd": "D:/graghRAG-agent",
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent;C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent/backend",
+    "GRAPHRAG_RUNTIME_ARTIFACTS_DIR": "D:/graghRAG-agent/.tmp/restart-admission-review-20261027/artifacts"
+  },
+  "argv": [
+    "D:/graghRAG-agent/.tmp/security-lock-patch-20261026/.venv/Scripts/python.exe", "-B", "-c",
+    "import sys; sys.path.insert(0,'C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent'); import pytest; raise SystemExit(pytest.main(sys.argv[1:]))",
+    "D:/graghRAG-agent/.tmp/model-admission-tests-20261027/test_vector_model_admission_failures.py",
+    "D:/graghRAG-agent/.tmp/model-restart-debug-20261027/test_restart_credential_transport.py",
+    "--noconftest", "--import-mode=importlib", "--rootdir=D:/graghRAG-agent/.tmp", "-q", "-p", "no:cacheprovider",
+    "--basetemp=D:/graghRAG-agent/.tmp/restart-admission-review-20261027/temp3",
+    "--junitxml=D:/graghRAG-agent/.tmp/restart-admission-review-20261027/junit3.xml"
+  ],
+  "exit_code": 0,
+  "result": "4 passed, 1 warning in 1.78s",
+  "receipt": "pytest.log; pytest.exit; junit3.xml; post-run review_inputs.py exit0"
+}

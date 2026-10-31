@@ -1,0 +1,1474 @@
+{
+  "old_named_count": 288,
+  "torch_import_count": 25,
+  "new_named_count": 319,
+  "old_missing": [],
+  "torch_missing": [],
+  "added": [
+    "uv_available_parallelism",
+    "uv_clock_gettime",
+    "uv_cpumask_size",
+    "uv_get_available_memory",
+    "uv_getrusage_thread",
+    "uv_ip_name",
+    "uv_metrics_info",
+    "uv_os_free_group",
+    "uv_os_get_group",
+    "uv_os_get_passwd2",
+    "uv_pipe",
+    "uv_pipe_bind2",
+    "uv_pipe_connect2",
+    "uv_socketpair",
+    "uv_tcp_keepalive_ex",
+    "uv_thread_detach",
+    "uv_thread_getaffinity",
+    "uv_thread_getcpu",
+    "uv_thread_getname",
+    "uv_thread_getpriority",
+    "uv_thread_setaffinity",
+    "uv_thread_setname",
+    "uv_thread_setpriority",
+    "uv_try_write2",
+    "uv_udp_open_ex",
+    "uv_udp_try_send2",
+    "uv_utf16_length_as_wtf8",
+    "uv_utf16_to_wtf8",
+    "uv_write_nwritten",
+    "uv_wtf8_length_as_utf16",
+    "uv_wtf8_to_utf16"
+  ],
+  "unknown_dependencies": [],
+  "old_ordinal_forwarder_delay_evidence": "Direct read-only original PE parse bound fa569e SHA; ordinal changes reported, not declared equivalent",
+  "ordinal_changes": [
+    {
+      "name": "uv_backend_fd",
+      "old": 4,
+      "new": 5
+    },
+    {
+      "name": "uv_backend_timeout",
+      "old": 5,
+      "new": 6
+    },
+    {
+      "name": "uv_barrier_destroy",
+      "old": 6,
+      "new": 7
+    },
+    {
+      "name": "uv_barrier_init",
+      "old": 7,
+      "new": 8
+    },
+    {
+      "name": "uv_barrier_wait",
+      "old": 8,
+      "new": 9
+    },
+    {
+      "name": "uv_buf_init",
+      "old": 9,
+      "new": 10
+    },
+    {
+      "name": "uv_cancel",
+      "old": 10,
+      "new": 11
+    },
+    {
+      "name": "uv_chdir",
+      "old": 11,
+      "new": 12
+    },
+    {
+      "name": "uv_check_init",
+      "old": 12,
+      "new": 13
+    },
+    {
+      "name": "uv_check_start",
+      "old": 13,
+      "new": 14
+    },
+    {
+      "name": "uv_check_stop",
+      "old": 14,
+      "new": 15
+    },
+    {
+      "name": "uv_close",
+      "old": 15,
+      "new": 17
+    },
+    {
+      "name": "uv_cond_broadcast",
+      "old": 16,
+      "new": 18
+    },
+    {
+      "name": "uv_cond_destroy",
+      "old": 17,
+      "new": 19
+    },
+    {
+      "name": "uv_cond_init",
+      "old": 18,
+      "new": 20
+    },
+    {
+      "name": "uv_cond_signal",
+      "old": 19,
+      "new": 21
+    },
+    {
+      "name": "uv_cond_timedwait",
+      "old": 20,
+      "new": 22
+    },
+    {
+      "name": "uv_cond_wait",
+      "old": 21,
+      "new": 23
+    },
+    {
+      "name": "uv_cpu_info",
+      "old": 22,
+      "new": 24
+    },
+    {
+      "name": "uv_cwd",
+      "old": 23,
+      "new": 26
+    },
+    {
+      "name": "uv_default_loop",
+      "old": 24,
+      "new": 27
+    },
+    {
+      "name": "uv_disable_stdio_inheritance",
+      "old": 25,
+      "new": 28
+    },
+    {
+      "name": "uv_dlclose",
+      "old": 26,
+      "new": 29
+    },
+    {
+      "name": "uv_dlerror",
+      "old": 27,
+      "new": 30
+    },
+    {
+      "name": "uv_dlopen",
+      "old": 28,
+      "new": 31
+    },
+    {
+      "name": "uv_dlsym",
+      "old": 29,
+      "new": 32
+    },
+    {
+      "name": "uv_err_name",
+      "old": 30,
+      "new": 33
+    },
+    {
+      "name": "uv_err_name_r",
+      "old": 31,
+      "new": 34
+    },
+    {
+      "name": "uv_exepath",
+      "old": 32,
+      "new": 35
+    },
+    {
+      "name": "uv_fileno",
+      "old": 33,
+      "new": 36
+    },
+    {
+      "name": "uv_free_cpu_info",
+      "old": 34,
+      "new": 37
+    },
+    {
+      "name": "uv_free_interface_addresses",
+      "old": 35,
+      "new": 38
+    },
+    {
+      "name": "uv_freeaddrinfo",
+      "old": 36,
+      "new": 39
+    },
+    {
+      "name": "uv_fs_access",
+      "old": 37,
+      "new": 40
+    },
+    {
+      "name": "uv_fs_chmod",
+      "old": 38,
+      "new": 41
+    },
+    {
+      "name": "uv_fs_chown",
+      "old": 39,
+      "new": 42
+    },
+    {
+      "name": "uv_fs_close",
+      "old": 40,
+      "new": 43
+    },
+    {
+      "name": "uv_fs_closedir",
+      "old": 41,
+      "new": 44
+    },
+    {
+      "name": "uv_fs_copyfile",
+      "old": 42,
+      "new": 45
+    },
+    {
+      "name": "uv_fs_event_getpath",
+      "old": 43,
+      "new": 46
+    },
+    {
+      "name": "uv_fs_event_init",
+      "old": 44,
+      "new": 47
+    },
+    {
+      "name": "uv_fs_event_start",
+      "old": 45,
+      "new": 48
+    },
+    {
+      "name": "uv_fs_event_stop",
+      "old": 46,
+      "new": 49
+    },
+    {
+      "name": "uv_fs_fchmod",
+      "old": 47,
+      "new": 50
+    },
+    {
+      "name": "uv_fs_fchown",
+      "old": 48,
+      "new": 51
+    },
+    {
+      "name": "uv_fs_fdatasync",
+      "old": 49,
+      "new": 52
+    },
+    {
+      "name": "uv_fs_fstat",
+      "old": 50,
+      "new": 53
+    },
+    {
+      "name": "uv_fs_fsync",
+      "old": 51,
+      "new": 54
+    },
+    {
+      "name": "uv_fs_ftruncate",
+      "old": 52,
+      "new": 55
+    },
+    {
+      "name": "uv_fs_futime",
+      "old": 53,
+      "new": 56
+    },
+    {
+      "name": "uv_fs_get_path",
+      "old": 54,
+      "new": 57
+    },
+    {
+      "name": "uv_fs_get_ptr",
+      "old": 55,
+      "new": 58
+    },
+    {
+      "name": "uv_fs_get_result",
+      "old": 56,
+      "new": 59
+    },
+    {
+      "name": "uv_fs_get_statbuf",
+      "old": 57,
+      "new": 60
+    },
+    {
+      "name": "uv_fs_get_system_error",
+      "old": 58,
+      "new": 61
+    },
+    {
+      "name": "uv_fs_get_type",
+      "old": 59,
+      "new": 62
+    },
+    {
+      "name": "uv_fs_lchown",
+      "old": 60,
+      "new": 63
+    },
+    {
+      "name": "uv_fs_link",
+      "old": 61,
+      "new": 64
+    },
+    {
+      "name": "uv_fs_lstat",
+      "old": 62,
+      "new": 65
+    },
+    {
+      "name": "uv_fs_lutime",
+      "old": 63,
+      "new": 66
+    },
+    {
+      "name": "uv_fs_mkdir",
+      "old": 64,
+      "new": 67
+    },
+    {
+      "name": "uv_fs_mkdtemp",
+      "old": 65,
+      "new": 68
+    },
+    {
+      "name": "uv_fs_mkstemp",
+      "old": 66,
+      "new": 69
+    },
+    {
+      "name": "uv_fs_open",
+      "old": 67,
+      "new": 70
+    },
+    {
+      "name": "uv_fs_opendir",
+      "old": 68,
+      "new": 71
+    },
+    {
+      "name": "uv_fs_poll_getpath",
+      "old": 69,
+      "new": 72
+    },
+    {
+      "name": "uv_fs_poll_init",
+      "old": 70,
+      "new": 73
+    },
+    {
+      "name": "uv_fs_poll_start",
+      "old": 71,
+      "new": 74
+    },
+    {
+      "name": "uv_fs_poll_stop",
+      "old": 72,
+      "new": 75
+    },
+    {
+      "name": "uv_fs_read",
+      "old": 73,
+      "new": 76
+    },
+    {
+      "name": "uv_fs_readdir",
+      "old": 74,
+      "new": 77
+    },
+    {
+      "name": "uv_fs_readlink",
+      "old": 75,
+      "new": 78
+    },
+    {
+      "name": "uv_fs_realpath",
+      "old": 76,
+      "new": 79
+    },
+    {
+      "name": "uv_fs_rename",
+      "old": 77,
+      "new": 80
+    },
+    {
+      "name": "uv_fs_req_cleanup",
+      "old": 78,
+      "new": 81
+    },
+    {
+      "name": "uv_fs_rmdir",
+      "old": 79,
+      "new": 82
+    },
+    {
+      "name": "uv_fs_scandir",
+      "old": 80,
+      "new": 83
+    },
+    {
+      "name": "uv_fs_scandir_next",
+      "old": 81,
+      "new": 84
+    },
+    {
+      "name": "uv_fs_sendfile",
+      "old": 82,
+      "new": 85
+    },
+    {
+      "name": "uv_fs_stat",
+      "old": 83,
+      "new": 86
+    },
+    {
+      "name": "uv_fs_statfs",
+      "old": 84,
+      "new": 87
+    },
+    {
+      "name": "uv_fs_symlink",
+      "old": 85,
+      "new": 88
+    },
+    {
+      "name": "uv_fs_unlink",
+      "old": 86,
+      "new": 89
+    },
+    {
+      "name": "uv_fs_utime",
+      "old": 87,
+      "new": 90
+    },
+    {
+      "name": "uv_fs_write",
+      "old": 88,
+      "new": 91
+    },
+    {
+      "name": "uv_get_constrained_memory",
+      "old": 89,
+      "new": 93
+    },
+    {
+      "name": "uv_get_free_memory",
+      "old": 90,
+      "new": 94
+    },
+    {
+      "name": "uv_get_osfhandle",
+      "old": 91,
+      "new": 95
+    },
+    {
+      "name": "uv_get_process_title",
+      "old": 92,
+      "new": 96
+    },
+    {
+      "name": "uv_get_total_memory",
+      "old": 93,
+      "new": 97
+    },
+    {
+      "name": "uv_getaddrinfo",
+      "old": 94,
+      "new": 98
+    },
+    {
+      "name": "uv_getnameinfo",
+      "old": 95,
+      "new": 99
+    },
+    {
+      "name": "uv_getrusage",
+      "old": 96,
+      "new": 100
+    },
+    {
+      "name": "uv_gettimeofday",
+      "old": 97,
+      "new": 102
+    },
+    {
+      "name": "uv_guess_handle",
+      "old": 98,
+      "new": 103
+    },
+    {
+      "name": "uv_handle_get_data",
+      "old": 99,
+      "new": 104
+    },
+    {
+      "name": "uv_handle_get_loop",
+      "old": 100,
+      "new": 105
+    },
+    {
+      "name": "uv_handle_get_type",
+      "old": 101,
+      "new": 106
+    },
+    {
+      "name": "uv_handle_set_data",
+      "old": 102,
+      "new": 107
+    },
+    {
+      "name": "uv_handle_size",
+      "old": 103,
+      "new": 108
+    },
+    {
+      "name": "uv_handle_type_name",
+      "old": 104,
+      "new": 109
+    },
+    {
+      "name": "uv_has_ref",
+      "old": 105,
+      "new": 110
+    },
+    {
+      "name": "uv_hrtime",
+      "old": 106,
+      "new": 111
+    },
+    {
+      "name": "uv_idle_init",
+      "old": 107,
+      "new": 112
+    },
+    {
+      "name": "uv_idle_start",
+      "old": 108,
+      "new": 113
+    },
+    {
+      "name": "uv_idle_stop",
+      "old": 109,
+      "new": 114
+    },
+    {
+      "name": "uv_if_indextoiid",
+      "old": 110,
+      "new": 115
+    },
+    {
+      "name": "uv_if_indextoname",
+      "old": 111,
+      "new": 116
+    },
+    {
+      "name": "uv_inet_ntop",
+      "old": 112,
+      "new": 117
+    },
+    {
+      "name": "uv_inet_pton",
+      "old": 113,
+      "new": 118
+    },
+    {
+      "name": "uv_interface_addresses",
+      "old": 114,
+      "new": 119
+    },
+    {
+      "name": "uv_ip4_addr",
+      "old": 115,
+      "new": 120
+    },
+    {
+      "name": "uv_ip4_name",
+      "old": 116,
+      "new": 121
+    },
+    {
+      "name": "uv_ip6_addr",
+      "old": 117,
+      "new": 122
+    },
+    {
+      "name": "uv_ip6_name",
+      "old": 118,
+      "new": 123
+    },
+    {
+      "name": "uv_is_active",
+      "old": 119,
+      "new": 125
+    },
+    {
+      "name": "uv_is_closing",
+      "old": 120,
+      "new": 126
+    },
+    {
+      "name": "uv_is_readable",
+      "old": 121,
+      "new": 127
+    },
+    {
+      "name": "uv_is_writable",
+      "old": 122,
+      "new": 128
+    },
+    {
+      "name": "uv_key_create",
+      "old": 123,
+      "new": 129
+    },
+    {
+      "name": "uv_key_delete",
+      "old": 124,
+      "new": 130
+    },
+    {
+      "name": "uv_key_get",
+      "old": 125,
+      "new": 131
+    },
+    {
+      "name": "uv_key_set",
+      "old": 126,
+      "new": 132
+    },
+    {
+      "name": "uv_kill",
+      "old": 127,
+      "new": 133
+    },
+    {
+      "name": "uv_library_shutdown",
+      "old": 128,
+      "new": 134
+    },
+    {
+      "name": "uv_listen",
+      "old": 129,
+      "new": 135
+    },
+    {
+      "name": "uv_loadavg",
+      "old": 130,
+      "new": 136
+    },
+    {
+      "name": "uv_loop_alive",
+      "old": 131,
+      "new": 137
+    },
+    {
+      "name": "uv_loop_close",
+      "old": 132,
+      "new": 138
+    },
+    {
+      "name": "uv_loop_configure",
+      "old": 133,
+      "new": 139
+    },
+    {
+      "name": "uv_loop_delete",
+      "old": 134,
+      "new": 140
+    },
+    {
+      "name": "uv_loop_fork",
+      "old": 135,
+      "new": 141
+    },
+    {
+      "name": "uv_loop_get_data",
+      "old": 136,
+      "new": 142
+    },
+    {
+      "name": "uv_loop_init",
+      "old": 137,
+      "new": 143
+    },
+    {
+      "name": "uv_loop_new",
+      "old": 138,
+      "new": 144
+    },
+    {
+      "name": "uv_loop_set_data",
+      "old": 139,
+      "new": 145
+    },
+    {
+      "name": "uv_loop_size",
+      "old": 140,
+      "new": 146
+    },
+    {
+      "name": "uv_metrics_idle_time",
+      "old": 141,
+      "new": 147
+    },
+    {
+      "name": "uv_mutex_destroy",
+      "old": 142,
+      "new": 149
+    },
+    {
+      "name": "uv_mutex_init",
+      "old": 143,
+      "new": 150
+    },
+    {
+      "name": "uv_mutex_init_recursive",
+      "old": 144,
+      "new": 151
+    },
+    {
+      "name": "uv_mutex_lock",
+      "old": 145,
+      "new": 152
+    },
+    {
+      "name": "uv_mutex_trylock",
+      "old": 146,
+      "new": 153
+    },
+    {
+      "name": "uv_mutex_unlock",
+      "old": 147,
+      "new": 154
+    },
+    {
+      "name": "uv_now",
+      "old": 148,
+      "new": 155
+    },
+    {
+      "name": "uv_once",
+      "old": 149,
+      "new": 156
+    },
+    {
+      "name": "uv_open_osfhandle",
+      "old": 150,
+      "new": 157
+    },
+    {
+      "name": "uv_os_environ",
+      "old": 151,
+      "new": 158
+    },
+    {
+      "name": "uv_os_free_environ",
+      "old": 152,
+      "new": 159
+    },
+    {
+      "name": "uv_os_free_passwd",
+      "old": 153,
+      "new": 161
+    },
+    {
+      "name": "uv_os_get_passwd",
+      "old": 154,
+      "new": 163
+    },
+    {
+      "name": "uv_os_getenv",
+      "old": 155,
+      "new": 165
+    },
+    {
+      "name": "uv_os_gethostname",
+      "old": 156,
+      "new": 166
+    },
+    {
+      "name": "uv_os_getpid",
+      "old": 157,
+      "new": 167
+    },
+    {
+      "name": "uv_os_getppid",
+      "old": 158,
+      "new": 168
+    },
+    {
+      "name": "uv_os_getpriority",
+      "old": 159,
+      "new": 169
+    },
+    {
+      "name": "uv_os_homedir",
+      "old": 160,
+      "new": 170
+    },
+    {
+      "name": "uv_os_setenv",
+      "old": 161,
+      "new": 171
+    },
+    {
+      "name": "uv_os_setpriority",
+      "old": 162,
+      "new": 172
+    },
+    {
+      "name": "uv_os_tmpdir",
+      "old": 163,
+      "new": 173
+    },
+    {
+      "name": "uv_os_uname",
+      "old": 164,
+      "new": 174
+    },
+    {
+      "name": "uv_os_unsetenv",
+      "old": 165,
+      "new": 175
+    },
+    {
+      "name": "uv_pipe_bind",
+      "old": 166,
+      "new": 177
+    },
+    {
+      "name": "uv_pipe_chmod",
+      "old": 167,
+      "new": 179
+    },
+    {
+      "name": "uv_pipe_connect",
+      "old": 168,
+      "new": 180
+    },
+    {
+      "name": "uv_pipe_getpeername",
+      "old": 169,
+      "new": 182
+    },
+    {
+      "name": "uv_pipe_getsockname",
+      "old": 170,
+      "new": 183
+    },
+    {
+      "name": "uv_pipe_init",
+      "old": 171,
+      "new": 184
+    },
+    {
+      "name": "uv_pipe_open",
+      "old": 172,
+      "new": 185
+    },
+    {
+      "name": "uv_pipe_pending_count",
+      "old": 173,
+      "new": 186
+    },
+    {
+      "name": "uv_pipe_pending_instances",
+      "old": 174,
+      "new": 187
+    },
+    {
+      "name": "uv_pipe_pending_type",
+      "old": 175,
+      "new": 188
+    },
+    {
+      "name": "uv_poll_init",
+      "old": 176,
+      "new": 189
+    },
+    {
+      "name": "uv_poll_init_socket",
+      "old": 177,
+      "new": 190
+    },
+    {
+      "name": "uv_poll_start",
+      "old": 178,
+      "new": 191
+    },
+    {
+      "name": "uv_poll_stop",
+      "old": 179,
+      "new": 192
+    },
+    {
+      "name": "uv_prepare_init",
+      "old": 180,
+      "new": 193
+    },
+    {
+      "name": "uv_prepare_start",
+      "old": 181,
+      "new": 194
+    },
+    {
+      "name": "uv_prepare_stop",
+      "old": 182,
+      "new": 195
+    },
+    {
+      "name": "uv_print_active_handles",
+      "old": 183,
+      "new": 196
+    },
+    {
+      "name": "uv_print_all_handles",
+      "old": 184,
+      "new": 197
+    },
+    {
+      "name": "uv_process_get_pid",
+      "old": 185,
+      "new": 198
+    },
+    {
+      "name": "uv_process_kill",
+      "old": 186,
+      "new": 199
+    },
+    {
+      "name": "uv_queue_work",
+      "old": 187,
+      "new": 200
+    },
+    {
+      "name": "uv_random",
+      "old": 188,
+      "new": 201
+    },
+    {
+      "name": "uv_read_start",
+      "old": 189,
+      "new": 202
+    },
+    {
+      "name": "uv_read_stop",
+      "old": 190,
+      "new": 203
+    },
+    {
+      "name": "uv_recv_buffer_size",
+      "old": 191,
+      "new": 204
+    },
+    {
+      "name": "uv_ref",
+      "old": 192,
+      "new": 205
+    },
+    {
+      "name": "uv_replace_allocator",
+      "old": 193,
+      "new": 206
+    },
+    {
+      "name": "uv_req_get_data",
+      "old": 194,
+      "new": 207
+    },
+    {
+      "name": "uv_req_get_type",
+      "old": 195,
+      "new": 208
+    },
+    {
+      "name": "uv_req_set_data",
+      "old": 196,
+      "new": 209
+    },
+    {
+      "name": "uv_req_size",
+      "old": 197,
+      "new": 210
+    },
+    {
+      "name": "uv_req_type_name",
+      "old": 198,
+      "new": 211
+    },
+    {
+      "name": "uv_resident_set_memory",
+      "old": 199,
+      "new": 212
+    },
+    {
+      "name": "uv_run",
+      "old": 200,
+      "new": 213
+    },
+    {
+      "name": "uv_rwlock_destroy",
+      "old": 201,
+      "new": 214
+    },
+    {
+      "name": "uv_rwlock_init",
+      "old": 202,
+      "new": 215
+    },
+    {
+      "name": "uv_rwlock_rdlock",
+      "old": 203,
+      "new": 216
+    },
+    {
+      "name": "uv_rwlock_rdunlock",
+      "old": 204,
+      "new": 217
+    },
+    {
+      "name": "uv_rwlock_tryrdlock",
+      "old": 205,
+      "new": 218
+    },
+    {
+      "name": "uv_rwlock_trywrlock",
+      "old": 206,
+      "new": 219
+    },
+    {
+      "name": "uv_rwlock_wrlock",
+      "old": 207,
+      "new": 220
+    },
+    {
+      "name": "uv_rwlock_wrunlock",
+      "old": 208,
+      "new": 221
+    },
+    {
+      "name": "uv_sem_destroy",
+      "old": 209,
+      "new": 222
+    },
+    {
+      "name": "uv_sem_init",
+      "old": 210,
+      "new": 223
+    },
+    {
+      "name": "uv_sem_post",
+      "old": 211,
+      "new": 224
+    },
+    {
+      "name": "uv_sem_trywait",
+      "old": 212,
+      "new": 225
+    },
+    {
+      "name": "uv_sem_wait",
+      "old": 213,
+      "new": 226
+    },
+    {
+      "name": "uv_send_buffer_size",
+      "old": 214,
+      "new": 227
+    },
+    {
+      "name": "uv_set_process_title",
+      "old": 215,
+      "new": 228
+    },
+    {
+      "name": "uv_setup_args",
+      "old": 216,
+      "new": 229
+    },
+    {
+      "name": "uv_shutdown",
+      "old": 217,
+      "new": 230
+    },
+    {
+      "name": "uv_signal_init",
+      "old": 218,
+      "new": 231
+    },
+    {
+      "name": "uv_signal_start",
+      "old": 219,
+      "new": 232
+    },
+    {
+      "name": "uv_signal_start_oneshot",
+      "old": 220,
+      "new": 233
+    },
+    {
+      "name": "uv_signal_stop",
+      "old": 221,
+      "new": 234
+    },
+    {
+      "name": "uv_sleep",
+      "old": 222,
+      "new": 235
+    },
+    {
+      "name": "uv_spawn",
+      "old": 223,
+      "new": 237
+    },
+    {
+      "name": "uv_stop",
+      "old": 224,
+      "new": 238
+    },
+    {
+      "name": "uv_stream_get_write_queue_size",
+      "old": 225,
+      "new": 239
+    },
+    {
+      "name": "uv_stream_set_blocking",
+      "old": 226,
+      "new": 240
+    },
+    {
+      "name": "uv_strerror",
+      "old": 227,
+      "new": 241
+    },
+    {
+      "name": "uv_strerror_r",
+      "old": 228,
+      "new": 242
+    },
+    {
+      "name": "uv_tcp_bind",
+      "old": 229,
+      "new": 243
+    },
+    {
+      "name": "uv_tcp_close_reset",
+      "old": 230,
+      "new": 244
+    },
+    {
+      "name": "uv_tcp_connect",
+      "old": 231,
+      "new": 245
+    },
+    {
+      "name": "uv_tcp_getpeername",
+      "old": 232,
+      "new": 246
+    },
+    {
+      "name": "uv_tcp_getsockname",
+      "old": 233,
+      "new": 247
+    },
+    {
+      "name": "uv_tcp_init",
+      "old": 234,
+      "new": 248
+    },
+    {
+      "name": "uv_tcp_init_ex",
+      "old": 235,
+      "new": 249
+    },
+    {
+      "name": "uv_tcp_keepalive",
+      "old": 236,
+      "new": 250
+    },
+    {
+      "name": "uv_tcp_nodelay",
+      "old": 237,
+      "new": 252
+    },
+    {
+      "name": "uv_tcp_open",
+      "old": 238,
+      "new": 253
+    },
+    {
+      "name": "uv_tcp_simultaneous_accepts",
+      "old": 239,
+      "new": 254
+    },
+    {
+      "name": "uv_thread_create",
+      "old": 240,
+      "new": 255
+    },
+    {
+      "name": "uv_thread_create_ex",
+      "old": 241,
+      "new": 256
+    },
+    {
+      "name": "uv_thread_equal",
+      "old": 242,
+      "new": 258
+    },
+    {
+      "name": "uv_thread_join",
+      "old": 243,
+      "new": 263
+    },
+    {
+      "name": "uv_thread_self",
+      "old": 244,
+      "new": 264
+    },
+    {
+      "name": "uv_timer_again",
+      "old": 245,
+      "new": 268
+    },
+    {
+      "name": "uv_timer_get_due_in",
+      "old": 246,
+      "new": 269
+    },
+    {
+      "name": "uv_timer_get_repeat",
+      "old": 247,
+      "new": 270
+    },
+    {
+      "name": "uv_timer_init",
+      "old": 248,
+      "new": 271
+    },
+    {
+      "name": "uv_timer_set_repeat",
+      "old": 249,
+      "new": 272
+    },
+    {
+      "name": "uv_timer_start",
+      "old": 250,
+      "new": 273
+    },
+    {
+      "name": "uv_timer_stop",
+      "old": 251,
+      "new": 274
+    },
+    {
+      "name": "uv_translate_sys_error",
+      "old": 252,
+      "new": 275
+    },
+    {
+      "name": "uv_try_write",
+      "old": 253,
+      "new": 276
+    },
+    {
+      "name": "uv_tty_get_vterm_state",
+      "old": 254,
+      "new": 278
+    },
+    {
+      "name": "uv_tty_get_winsize",
+      "old": 255,
+      "new": 279
+    },
+    {
+      "name": "uv_tty_init",
+      "old": 256,
+      "new": 280
+    },
+    {
+      "name": "uv_tty_reset_mode",
+      "old": 257,
+      "new": 281
+    },
+    {
+      "name": "uv_tty_set_mode",
+      "old": 258,
+      "new": 282
+    },
+    {
+      "name": "uv_tty_set_vterm_state",
+      "old": 259,
+      "new": 283
+    },
+    {
+      "name": "uv_udp_bind",
+      "old": 260,
+      "new": 284
+    },
+    {
+      "name": "uv_udp_connect",
+      "old": 261,
+      "new": 285
+    },
+    {
+      "name": "uv_udp_get_send_queue_count",
+      "old": 262,
+      "new": 286
+    },
+    {
+      "name": "uv_udp_get_send_queue_size",
+      "old": 263,
+      "new": 287
+    },
+    {
+      "name": "uv_udp_getpeername",
+      "old": 264,
+      "new": 288
+    },
+    {
+      "name": "uv_udp_getsockname",
+      "old": 265,
+      "new": 289
+    },
+    {
+      "name": "uv_udp_init",
+      "old": 266,
+      "new": 290
+    },
+    {
+      "name": "uv_udp_init_ex",
+      "old": 267,
+      "new": 291
+    },
+    {
+      "name": "uv_udp_open",
+      "old": 268,
+      "new": 292
+    },
+    {
+      "name": "uv_udp_recv_start",
+      "old": 269,
+      "new": 294
+    },
+    {
+      "name": "uv_udp_recv_stop",
+      "old": 270,
+      "new": 295
+    },
+    {
+      "name": "uv_udp_send",
+      "old": 271,
+      "new": 296
+    },
+    {
+      "name": "uv_udp_set_broadcast",
+      "old": 272,
+      "new": 297
+    },
+    {
+      "name": "uv_udp_set_membership",
+      "old": 273,
+      "new": 298
+    },
+    {
+      "name": "uv_udp_set_multicast_interface",
+      "old": 274,
+      "new": 299
+    },
+    {
+      "name": "uv_udp_set_multicast_loop",
+      "old": 275,
+      "new": 300
+    },
+    {
+      "name": "uv_udp_set_multicast_ttl",
+      "old": 276,
+      "new": 301
+    },
+    {
+      "name": "uv_udp_set_source_membership",
+      "old": 277,
+      "new": 302
+    },
+    {
+      "name": "uv_udp_set_ttl",
+      "old": 278,
+      "new": 303
+    },
+    {
+      "name": "uv_udp_try_send",
+      "old": 279,
+      "new": 304
+    },
+    {
+      "name": "uv_udp_using_recvmmsg",
+      "old": 280,
+      "new": 306
+    },
+    {
+      "name": "uv_unref",
+      "old": 281,
+      "new": 307
+    },
+    {
+      "name": "uv_update_time",
+      "old": 282,
+      "new": 308
+    },
+    {
+      "name": "uv_uptime",
+      "old": 283,
+      "new": 309
+    },
+    {
+      "name": "uv_version",
+      "old": 284,
+      "new": 312
+    },
+    {
+      "name": "uv_version_string",
+      "old": 285,
+      "new": 313
+    },
+    {
+      "name": "uv_walk",
+      "old": 286,
+      "new": 314
+    },
+    {
+      "name": "uv_write",
+      "old": 287,
+      "new": 315
+    },
+    {
+      "name": "uv_write2",
+      "old": 288,
+      "new": 316
+    }
+  ],
+  "original_forwarders": [],
+  "candidate_forwarders": [],
+  "system_api_sets": [
+    "api-ms-win-core-synch-l1-2-0.dll"
+  ]
+}

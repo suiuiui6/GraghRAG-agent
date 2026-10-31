@@ -1,0 +1,105 @@
+{
+  "uid": 65534,
+  "python": "3.12.16 (main, Oct 28 2026, 02:01:35) [GCC 12.2.0]",
+  "prefix": "/opt/graphrag-cpu/venv",
+  "distributions": 158,
+  "sqlite": {
+    "sqlite_version": "3.54.0",
+    "hardening": true
+  },
+  "openssl": "OpenSSL 3.0.22 25 Aug 2026",
+  "expat": "expat_2.9.0",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "msgpack": "1.2.3",
+  "torch": "2.14.0+cpu",
+  "torch_git": "08187d9e0fba026dc8217405802ab5381dc88d90",
+  "cuda": null,
+  "tensor_test": true,
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "model_files": 11,
+  "dimension": 512,
+  "norms": [
+    1.000000046338035,
+    1.000000031484033
+  ],
+  "query_matches_identical_document": true,
+  "model_profile": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "dimension": 512,
+    "normalize": true,
+    "files_sha256": {
+      "config.json": "3853a7979202c348751b753e36f579c41d8da7d36af617d3d907e1fc9b441f2a",
+      "config_sentence_transformers.json": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56",
+      "model.safetensors": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+      "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+      "README.md": "c48a4eeea77f6b1d38b48ec1c5b8d4f86d5550cc43fa345a0db1b2ca1d082369",
+      "sentence_bert_config.json": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf",
+      "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "tokenizer.json": "48cea5d44424912a6fd1ea647bf4fe50b55ab8b1e5879c3275f80e339e8fae26",
+      "tokenizer_config.json": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+      "vocab.txt": "45bbac6b341c319adc98a532532882e91a9cefc0329aa57bac9ae761c27b291c",
+      "1_Pooling/config.json": "aaa8861589f80c961a03cc86c7eeaef7605c1676b9ab55329d33a304738769c6"
+    }
+  },
+  "torch_libraries": [
+    {
+      "name": "libaoti_custom_ops.so",
+      "bytes": 370488,
+      "sha256": "2ad7760f3067c3e9f5daa1374c9e766742aa1ee29f8f698d939e29afe3893864"
+    },
+    {
+      "name": "libbackend_with_compiler.so",
+      "bytes": 261384,
+      "sha256": "2d9b142b3a23fa5b27b0e0e0685e4d3fb089b0512f3928fa4fc830733be5e68d"
+    },
+    {
+      "name": "libc10.so",
+      "bytes": 1553824,
+      "sha256": "9c142dbe5f1c5291e57605586bf22eaa07cd27da720825b1cf02fc2f6eb8047e"
+    },
+    {
+      "name": "libgomp.so.1",
+      "bytes": 2115417,
+      "sha256": "dcb9bd5cc517b0a23cf5923864abeee11ee00ba11abe9b3089388f50f7ba4628"
+    },
+    {
+      "name": "libjitbackend_test.so",
+      "bytes": 213776,
+      "sha256": "c9abfe6eabdf5e70e9d8f0e8a83395a5d79b8dfe7d94379f68bcfa1666fbc91e"
+    },
+    {
+      "name": "libshm.so",
+      "bytes": 41328,
+      "sha256": "7846821a00be2750f0c718c69396bd3c3e54924d52ecce347ab610ee9079149a"
+    },
+    {
+      "name": "libtorch.so",
+      "bytes": 8032,
+      "sha256": "28b3d3926e0674eda7dcdf26c27dfd05cb455d681d11cb84fdbf7e0df72f3f7b"
+    },
+    {
+      "name": "libtorch_cpu.so",
+      "bytes": 438232064,
+      "sha256": "cc3d0101c16504ba021abe6794c98122f744ec8cf077bd0178f630f320b24aeb"
+    },
+    {
+      "name": "libtorch_global_deps.so",
+      "bytes": 8264,
+      "sha256": "2e5d497259a62960d95f4a7719abaeb24745429b49ffdf58e67672140205eb99"
+    },
+    {
+      "name": "libtorch_python.so",
+      "bytes": 32676952,
+      "sha256": "0282680cad07d1e92d92a586caf2563280072dbc4d2283759a5fce63f01a500f"
+    },
+    {
+      "name": "libtorchbind_test.so",
+      "bytes": 918152,
+      "sha256": "f9bc71ab25c48b9e38de2523e40a7c31f989d9ddd09d6777116572eefff4e141"
+    }
+  ],
+  "seconds": 17.00917920700158,
+  "scope": "Private CPU runtime/model I/O only; not vector contract, app lifecycle or production approval"
+}

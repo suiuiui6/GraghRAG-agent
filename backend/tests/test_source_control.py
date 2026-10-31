@@ -1,4 +1,4 @@
-from tests.request_helpers import admin_request
+from tests.request_helpers import admin_request, registered_compat_admin
 """M4-P1 contract tests. Synthetic fixtures are software tests, not paper results."""
 
 import asyncio

@@ -1,0 +1,126 @@
+--- backend/tests/frozen_input_helpers.py
++++ backend/tests/frozen_input_helpers.py
+@@ -2,7 +2,9 @@
+ 
+ GRAPHRAG_FROZEN_TEST_ROOT must explicitly name an existing absolute directory.
+ Absent configuration means the current checkout; missing inputs fail normally.
+-External Python files are parsed as frozen fixture text only, never imported.
++Gold/source inspection treats external Python as fixture text. The separately
++registered native SDK mock preflight deliberately executes a hash-verified frozen
++runtime in a fresh process; it does not provide current production coverage.
+ """
+ from contextlib import contextmanager
+ import hashlib
+@@ -92,3 +94,26 @@
+     for name, digest in registration['path_proof']['source_sha256'].items():
+         verified_file(root, 'backend/' + name, digest)
+     return root
++
++
++def frozen_prompt_root():
++    """Bind historical SDK fixture to permanent receipts and the full verifier."""
++    relative = 'docs/review/simple-output-20261016'
++    receipt = json.loads((CODE_ROOT / relative / 'registration-receipt.json').read_text(encoding='utf-8'))
++    root = data_root() / '.tmp/simple-output-20261016'
++    registered = verified_file(root, 'registration.json', receipt['registration_sha256'])
++    registration = json.loads(registered.read_text(encoding='utf-8'))
++    assert registration['runtime_snapshot_sha256'] == receipt['runtime_snapshot_sha256']
++    assert registration['governance_sha256'][str(data_root() / relative / 'derived-inputs.json')] == receipt['new_inputs_sha256']
++    prompt_path = data_root() / relative / 'prompts.v1.json'
++    expected = registration['governance_sha256'][str(prompt_path)]
++    actual_prompt = verified_file(data_root(), relative + '/prompts.v1.json', expected)
++    permanent = json.loads((CODE_ROOT / relative / 'prompts.v1.json').read_text(encoding='utf-8'))
++    assert json.loads(actual_prompt.read_text(encoding='utf-8')) == permanent, 'FROZEN_PROMPT_SEMANTIC_MISMATCH'
++    for key, value in permanent.items():
++        assert registration[key] == value, 'FROZEN_PROMPT_REGISTRATION_MISMATCH'
++    # No replacement verifier: current code checks all source, KG, runtime,
++    # environment and governance hashes before this fixture is executed.
++    verified = current_module('common_three_arm', namespace='research').verify_registration(root)
++    assert verified == registration
++    return root
+--- backend/tests/test_new_document_pilot.py
++++ backend/tests/test_new_document_pilot.py
+@@ -5,6 +5,7 @@
+ import pytest
+ import httpx
+ from research import new_document_pilot as pilot
++from backend.tests.frozen_input_helpers import assert_current_module, frozen_p0_root, frozen_prompt_root
+ 
+ 
+ @pytest.mark.parametrize('mode',['unknown','oversize','known_over_token','two_attempts'])
+@@ -66,10 +67,10 @@
+ 
+ 
+ def test_native_sdk_mock_preflight_and_registration_real_frozen_snapshot(tmp_path):
+-    repo=Path(__file__).resolve().parents[2]
+-    frozen=repo/'.tmp/public-dev-budget-20261015-r2'
+-    prompt=repo/'.tmp/simple-output-20261016'
+-    if not frozen.exists() or not prompt.exists():pytest.skip('需要已登记本地研究快照')
++    assert_current_module(pilot, 'new_document_pilot')
++    assert_current_module(pilot.common, 'common_three_arm')
++    frozen=frozen_p0_root()
++    prompt=frozen_prompt_root()
+     data=tmp_path/'data';data.mkdir()
+     # Synthetic parser fixture: PDF bytes are an identity placeholder only;
+     # the actual native bridge consumes canonical page map and Poppler XML.
+--- backend/tests/test_frozen_prompt_contract.py
++++ backend/tests/test_frozen_prompt_contract.py
+@@ -0,0 +1,58 @@
++"""Historical SDK inputs fail closed before any frozen runtime execution."""
++import json
++import hashlib
++from pathlib import Path
++import pytest
++from backend.tests import frozen_input_helpers as inputs
++
++
++def copy_registration(tmp_path):
++    source=inputs.data_root()
++    root=tmp_path/'.tmp/simple-output-20261016'
++    root.mkdir(parents=True)
++    (root/'registration.json').write_bytes((source/'.tmp/simple-output-20261016/registration.json').read_bytes())
++    return root
++
++
++def test_missing_historical_profile_fails_without_skip(tmp_path,monkeypatch):
++    monkeypatch.setenv('GRAPHRAG_FROZEN_TEST_ROOT',str(tmp_path))
++    with pytest.raises(FileNotFoundError):inputs.frozen_prompt_root()
++
++
++def test_changed_historical_registration_fails_before_runtime(tmp_path,monkeypatch):
++    root=copy_registration(tmp_path)
++    (root/'registration.json').write_bytes(b'{}')
++    monkeypatch.setenv('GRAPHRAG_FROZEN_TEST_ROOT',str(tmp_path))
++    with pytest.raises(ValueError,match='FROZEN_TEST_INPUT_HASH_MISMATCH'):inputs.frozen_prompt_root()
++
++
++def test_prompt_bytes_drift_fails_before_full_verifier(tmp_path,monkeypatch):
++    # An independently registered temporary fixture verifies the entire helper
++    # path against modified prompt bytes without touching historical evidence.
++    root=copy_registration(tmp_path)
++    prompt=tmp_path/'docs/review/simple-output-20261016/prompts.v1.json'
++    prompt.parent.mkdir(parents=True)
++    prompt.write_bytes(b'{}')
++    registration=json.loads((root/'registration.json').read_text(encoding='utf-8'))
++    original=inputs.data_root()
++    governance=registration['governance_sha256']
++    governance[str(prompt)]=governance[str(original/'docs/review/simple-output-20261016/prompts.v1.json')]
++    governance[str(prompt.parent/'derived-inputs.json')]=governance[str(original/'docs/review/simple-output-20261016/derived-inputs.json')]
++    (root/'registration.json').write_text(json.dumps(registration),encoding='utf-8')
++    receipt=json.loads((inputs.CODE_ROOT/'docs/review/simple-output-20261016/registration-receipt.json').read_text(encoding='utf-8'))
++    receipt['registration_sha256']=hashlib.sha256((root/'registration.json').read_bytes()).hexdigest()
++    (prompt.parent/'registration-receipt.json').write_text(json.dumps(receipt),encoding='utf-8')
++    monkeypatch.setenv('GRAPHRAG_FROZEN_TEST_ROOT',str(tmp_path))
++    monkeypatch.setattr(inputs,'CODE_ROOT',tmp_path)
++    with pytest.raises(ValueError,match='FROZEN_TEST_INPUT_HASH_MISMATCH'):
++        inputs.frozen_prompt_root()
++
++
++def test_permanent_prompt_semantic_drift_rejected(tmp_path,monkeypatch):
++    original=inputs.CODE_ROOT/'docs/review/simple-output-20261016'
++    permanent=tmp_path/'docs/review/simple-output-20261016'
++    permanent.mkdir(parents=True)
++    (permanent/'registration-receipt.json').write_bytes((original/'registration-receipt.json').read_bytes())
++    (permanent/'prompts.v1.json').write_text('{}',encoding='utf-8')
++    monkeypatch.setattr(inputs,'CODE_ROOT',tmp_path)
++    with pytest.raises(AssertionError,match='FROZEN_PROMPT_SEMANTIC_MISMATCH'):inputs.frozen_prompt_root()

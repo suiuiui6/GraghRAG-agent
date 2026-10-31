@@ -1,0 +1,8 @@
+{
+  "private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\tests.log",
+  "sha256": "b9add694f99b1320be749ceb2879e848d04bcc5f3ab65770c9857e5a06c4d06d",
+  "bytes": 92973,
+  "raw_log_archived": false,
+  "reason": "Automatic approval rejected persistence of raw test log due to possible sensitive content. Only hash and size are archived.",
+  "meaning": "Failure evidence identity only; no coverage or full-suite success inferred."
+}

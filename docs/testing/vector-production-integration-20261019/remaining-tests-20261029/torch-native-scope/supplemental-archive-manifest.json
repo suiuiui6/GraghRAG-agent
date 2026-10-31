@@ -1,0 +1,47 @@
+[
+  {
+    "file": "build-mapping/REPORT.md",
+    "bytes": 2870,
+    "sha256": "57ea6ab7991361881270b6b73ed786831a79886095e5b43383c70b100f4473fc"
+  },
+  {
+    "file": "build-mapping/fetch.json",
+    "bytes": 2390,
+    "sha256": "e2f924d6c1a0b872a90fa654bd30b01092d44948c7bd08de5c37215c350ec50e"
+  },
+  {
+    "file": "build-mapping/fetch-final.json",
+    "bytes": 1751,
+    "sha256": "265fbd846f151921c0ef3522fdb533a9f8f0613fd1811524f6a469a82c1d6357"
+  },
+  {
+    "file": "pure-conversion/REPORT.md",
+    "bytes": 3613,
+    "sha256": "352cc1bf36e36603e43b0cad91ee283874c20e80195d1304b0b5af93511ee7a2"
+  },
+  {
+    "file": "pure-conversion/probe.py",
+    "bytes": 2283,
+    "sha256": "5402516cabd9e4586559f77f98d6dd63b7121e8282fa758d657876d920c77f27"
+  },
+  {
+    "file": "pure-conversion/run.py",
+    "bytes": 1233,
+    "sha256": "2366c081396dcf2b48228c58a2304ee858d00eb791c1426a26ee244ff58b1de8"
+  },
+  {
+    "file": "pure-conversion/command.json",
+    "bytes": 835,
+    "sha256": "126c604dee2c1dca79e5de1b26aa20d59e1bf59eeabe8fcc6f13553e7d82fbd7"
+  },
+  {
+    "file": "pure-conversion/stdout.json",
+    "bytes": 4451,
+    "sha256": "74a808cbb7136a292b85f41328506c7ce2f6f85184fcdad1c30be301317c7c42"
+  },
+  {
+    "file": "pure-conversion/inspect.json",
+    "bytes": 7893,
+    "sha256": "2cb2d221223e2bc4d609d5b91eadddd69de34ec4f4f94e7847b87b9d8415f5e4"
+  }
+]

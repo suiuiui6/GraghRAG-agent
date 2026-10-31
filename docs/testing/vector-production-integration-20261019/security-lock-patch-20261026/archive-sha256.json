@@ -1,0 +1,147 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "8121ddb304ed0b8d020afddfb2ce091094cacd8f552aeee455d040fd416d9e2d",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\report.md"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "8d27896dc54c7eeb92a3e644628cc5df83aff9086cfbce34f6d7d8b2c628b199",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\commands.json"
+  },
+  {
+    "file": "runtime-receipt.json",
+    "sha256": "cbf9366b2c3e43e304e5fbd4f0710a2e690b311f1af21ff4fbac20276c3cc1aa",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\runtime-receipt.json"
+  },
+  {
+    "file": "copied-runtime-receipt.json",
+    "sha256": "c1a2d057f370dc4ad0f4ead3874eb9ae4c18860548757024aff894edc36058b1",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\copied-runtime-receipt.json"
+  },
+  {
+    "file": "copied-unchanged-files.json",
+    "sha256": "5fb76a43a114fc2c2a4864df0e37af971c50cdce47b3adc3faf9a54000fabfbb",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\copied-unchanged-files.json"
+  },
+  {
+    "file": "original-findings.json",
+    "sha256": "9766e94449f551c311fa741f3bce221704ba2867d13584b6898c284f5aaf61c1",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\original-findings.json"
+  },
+  {
+    "file": "pip-audit-all-lock.json",
+    "sha256": "272bef31f9d238bf5d30319937d5a6856f1373fcf257d776989bd69d3abe1cce",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-audit-all-lock.json"
+  },
+  {
+    "file": "pip-audit-all-lock.log",
+    "sha256": "e82148c0c30269ca5a2c35420ece6af011a4faf5a375325d750e243ffdb10625",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-audit-all-lock.log"
+  },
+  {
+    "file": "pip-audit-installed.json",
+    "sha256": "b8255615d895a678b4b538edfe9c02c24c651f623b1c73a550c31e5e43f87cc5",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-audit-installed.json"
+  },
+  {
+    "file": "pip-audit-installed.log",
+    "sha256": "4e4757ff226a44b5c448b1c4624619419c22d5272463dc19510b4754871a72f9",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-audit-installed.log"
+  },
+  {
+    "file": "pip-check.log",
+    "sha256": "0bb27b75fc056e98d0371bee44fe8c3216da171103d7ad6c7b633f09ce742dcf",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-check.log"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "a628e340160fb7a2b48d4f0b7665d70f16d60f56988bdaa1882eabfb929af8d7",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\junit.xml"
+  },
+  {
+    "file": "filelock-real-regression.log",
+    "sha256": "c808747364fbbca56760bdf2023137ad7f475523ea2014add6404e87e2e5011d",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\filelock-real-regression.log"
+  },
+  {
+    "file": "lock-probe.log",
+    "sha256": "4414649921a8a63b060d0bcbd8665531a7eb8091c7de8266e661a0b717b8b35a",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\lock-probe.log"
+  },
+  {
+    "file": "lock-probe.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\lock-probe.exit"
+  },
+  {
+    "file": "install.log",
+    "sha256": "b984694546c403b28192b7270fafff3d3d70be1c2a262f01dafd7d82ddc16d2d",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\install.log"
+  },
+  {
+    "file": "install-offline.log",
+    "sha256": "087e15dac5bdc882645ac1e4fb8f85c13300e52525e515f4c1997554b6314672",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\install-offline.log"
+  },
+  {
+    "file": "install-offline-r8.log",
+    "sha256": "79c4cf55defb8bf239c18c6bf382b484c629b7eab9a6751d8daf37acc7c33d58",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\install-offline-r8.log"
+  },
+  {
+    "file": "install-three.log",
+    "sha256": "b554c1e57bd0b7364a895416cf791e3f17cff5d086fb3470c922606eed24ad24",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\install-three.log"
+  },
+  {
+    "file": "install-three.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\install-three.exit"
+  },
+  {
+    "file": "runtime-receipt.log",
+    "sha256": "1bfe920dcae3965881246274f2806ef9f77766ae0f80696ef73a7e7c09ef50a7",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\runtime-receipt.log"
+  },
+  {
+    "file": "runtime-receipt.exit",
+    "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\runtime-receipt.exit"
+  },
+  {
+    "file": "runtime-receipt-r2.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\runtime-receipt-r2.exit"
+  },
+  {
+    "file": "compileall.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\compileall.exit"
+  },
+  {
+    "file": "compileall.log",
+    "sha256": "7f94be77880452aa4f3d2d1f7c651bfd51f74bf3b8533a5d974482d8169dd303",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\compileall.log"
+  },
+  {
+    "file": "all-lock-requirements.txt",
+    "sha256": "e376bf50860a7a07b7d85a3c619bb5f37893389cacb11ff03f59a754c9840061",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\all-lock-requirements.txt"
+  },
+  {
+    "file": "final_receipt.py",
+    "sha256": "7ce3023abd22898962b796d79c0c3cba953de349d17ee17d09537e909432d0fb",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\final_receipt.py"
+  },
+  {
+    "file": "clone_verified.py",
+    "sha256": "993c9969cf3f39452be6e097406d970593b359d8dfa8957e853835f1af810587",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\clone_verified.py"
+  },
+  {
+    "file": "resume_validate.py",
+    "sha256": "4de41bc31dedb613cde788a53e39d90a3282e8a9f0f0277667007f16e9700df3",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\resume_validate.py"
+  }
+]

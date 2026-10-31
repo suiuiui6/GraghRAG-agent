@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "D:/graghRAG-agent/.tmp/backend-runtime-20261028/.venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "pip_audit",
+    "-r",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\audit-all157-versions.txt",
+    "--disable-pip",
+    "--no-deps",
+    "--timeout",
+    "20",
+    "--format",
+    "json",
+    "--output",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\audit-all157.json",
+    "--cache-dir",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\audit-cache",
+    "--progress-spinner",
+    "off"
+  ],
+  "exit": 1,
+  "elapsed_seconds": 46.01600000000326,
+  "lock_sha256": "d1434b9b8b46f3d9c061098e15ddaada44e8d0a2d3dfb55d4db4c425a8f60b36",
+  "requirements_sha256": "8f21069c18e24ecff9070acd6c216571785979e3dd01e7712443056a60a72973",
+  "scope": "157 remote lock packages; excludes1 local firstparty LangExtract and virtual backend; not installed audit or native SBOM",
+  "reported": 157,
+  "vulnerabilities": 1,
+  "skipped": [
+    "torch"
+  ],
+  "scope_complete": false
+}

@@ -1,0 +1,164 @@
+{
+  "uid": 1000,
+  "python": "3.12.16 (main, Oct 28 2026, 02:01:35) [GCC 12.2.0]",
+  "commands": [
+    {
+      "label": "venv",
+      "argv": [
+        "/usr/local/bin/python",
+        "-m",
+        "venv",
+        "/work/venv"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "pip-version",
+      "argv": [
+        "/work/venv/bin/python",
+        "-m",
+        "pip",
+        "--version"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "tool-install",
+      "argv": [
+        "/work/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "--no-compile",
+        "--require-hashes",
+        "-r",
+        "/work/tools.txt"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "tool-visibility",
+      "argv": [
+        "/work/venv/bin/python",
+        "-c",
+        "import importlib.metadata as m,json,pathlib; before={};\nfor n in ['setuptools','wheel','packaging']:\n try:\n  d=m.distribution(n);before[n]={'version':d.version,'path':str(d._path)}\n except m.PackageNotFoundError: before[n]=None\nimport setuptools, setuptools.build_meta, setuptools.command.bdist_wheel, wheel, packaging;after={};\nfor n in ['setuptools','wheel','packaging']:\n try:\n  d=m.distribution(n);after[n]={'version':d.version,'path':str(d._path)}\n except m.PackageNotFoundError: after[n]=None\nprint(json.dumps({'before_setuptools_import':before,'after_setuptools_import':after,'module_paths':{x.__name__:x.__file__ for x in [setuptools,wheel,packaging]},'top_level_wheel_dist_info':[str(x) for x in pathlib.Path('/work/venv/lib/python3.12/site-packages').glob('wheel-*.dist-info')]}))"
+      ],
+      "exit": 0
+    },
+    {
+      "label": "langextract-build",
+      "argv": [
+        "/work/venv/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "--no-cache-dir",
+        "--wheel-dir",
+        "/work/dist",
+        "/work/source"
+      ],
+      "exit": 0
+    }
+  ],
+  "source_files": 49,
+  "source_manifest_sha256": "d49efe7782cfd2becddfe0be7cc8bed09dc81e06c30bba86703c590d108af02f",
+  "tool_visibility": {
+    "before_setuptools_import": {
+      "setuptools": {
+        "version": "84.1.0",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools-84.1.0.dist-info"
+      },
+      "wheel": null,
+      "packaging": null
+    },
+    "after_setuptools_import": {
+      "setuptools": {
+        "version": "84.1.0",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools-84.1.0.dist-info"
+      },
+      "wheel": {
+        "version": "0.46.3",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info"
+      },
+      "packaging": {
+        "version": "26.0",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-26.0.dist-info"
+      }
+    },
+    "module_paths": {
+      "setuptools": "/work/venv/lib/python3.12/site-packages/setuptools/__init__.py",
+      "wheel": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/__init__.py",
+      "packaging": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/__init__.py"
+    },
+    "top_level_wheel_dist_info": []
+  },
+  "wheel": {
+    "name": "langextract-1.5.0-py3-none-any.whl",
+    "bytes": 143060,
+    "sha256": "c91f2345b54de57233d70709c3649ac414252a478a6910ed0bfbe5bf9287bc72",
+    "WHEEL": "Wheel-Version: 1.0\nGenerator: setuptools (84.1.0)\nRoot-Is-Purelib: true\nTag: py3-none-any\n\n",
+    "METADATA": "Metadata-Version: 2.4\nName: langextract\nVersion: 1.5.0\nSummary: LangExtract: A library for extracting structured data from language models\nAuthor-email: Akshay Goel <goelak@google.com>\nLicense-Expression: Apache-2.0\nProject-URL: Homepage, https://github.com/google/langextract\nProject-URL: Repository, https://github.com/google/langextract\nProject-URL: Documentation, https://github.com/google/langextract/blob/main/README.md\nProject-URL: Bug Tracker, https://github.com/google/langextract/issues\nProject-URL: Changelog, https://github.com/google/langextract/releases\nProject-URL: DOI, https://doi.org/10.5281/zenodo.17015089\nRequires-Python: >=3.10\nDescription-Content-Type: text/markdown\nLicense-File: LICENSE\nRequires-Dist: absl-py>=1.0.0\nRequires-Dist: aiohttp>=3.8.0\nRequires-Dist: async_timeout>=4.0.0\nRequires-Dist: exceptiongroup>=1.1.0\nRequires-Dist: google-genai>=1.39.0\nRequires-Dist: google-cloud-storage>=2.14.0\nRequires-Dist: ml-collections>=0.1.0\nRequires-Dist: more-itertools>=8.0.0\nRequires-Dist: numpy>=1.20.0\nRequires-Dist: pandas>=1.3.0\nRequires-Dist: pydantic>=1.8.0\nRequires-Dist: python-dotenv>=0.19.0\nRequires-Dist: PyYAML>=6.0\nRequires-Dist: regex>=2023.0.0\nRequires-Dist: requests>=2.25.0\nRequires-Dist: tqdm>=4.64.0\nRequires-Dist: typing-extensions>=4.0.0\nProvides-Extra: openai\nRequires-Dist: openai>=1.50.0; extra == \"openai\"\nProvides-Extra: all\nRequires-Dist: openai>=1.50.0; extra == \"all\"\nProvides-Extra: dev\nRequires-Dist: pyink==24.3.0; extra == \"dev\"\nRequires-Dist: isort==5.13.2; extra == \"dev\"\nRequires-Dist: pylint>=3.0.0; extra == \"dev\"\nRequires-Dist: pytype>=2024.10.11; extra == \"dev\"\nRequires-Dist: tox>=4.0.0; extra == \"dev\"\nRequires-Dist: import-linter>=2.0; extra == \"dev\"\nRequires-Dist: pre-commit>=3.5.0; extra == \"dev\"\nRequires-Dist: types-regex>=2023.0.0; extra == \"dev\"\nProvides-Extra: test\nRequires-Dist: pytest>=7.4.0; extra == \"test\"\nRequires-Dist: tomli>=2.0.0; extra == \"test\"\nProvides-Extra: notebook\nRequires-Dist: ipython>=7.0.0; extra == \"notebook\"\nRequires-Dist: notebook>=6.0.0; extra == \"notebook\"\nDynamic: license-file\n\n<p align=\"center\">\n  <a href=\"https://github.com/google/langextract\">\n    <img src=\"https://raw.githubusercontent.com/google/langextract/main/docs/_static/logo.svg\" alt=\"LangExtract Logo\" width=\"128\" />\n  </a>\n</p>\n\n# LangExtract\n\n[![PyPI version](https://img.shields.io/pypi/v/langextract.svg)](https://pypi.org/project/langextract/)\n[![GitHub stars](https://img.shields.io/github/stars/google/langextract.svg?style=social&label=Star)](https://github.com/google/langextract)\n![Tests](https://github.com/google/langextract/actions/workflows/ci.yaml/badge.svg)\n[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17015089.svg)](https://doi.org/10.5281/zenodo.17015089)\n\n## Table of Contents\n\n- [Introduction](#introduction)\n- [Why LangExtract?](#why-langextract)\n- [Quick Start](#quick-start)\n- [Installation](#installation)\n- [API Key Setup for Cloud Models](#api-key-setup-for-cloud-models)\n- [Adding Custom Model Providers](#adding-custom-model-providers)\n- [Using OpenAI Models](#using-openai-models)\n- [Using Local LLMs with Ollama](#using-local-llms-with-ollama)\n- [More Examples](#more-examples)\n  - [*Romeo and Juliet* Full Text Extraction](#romeo-and-juliet-full-text-extraction)\n  - [Medication Extraction](#medication-extraction)\n  - [Radiology Report Structuring: RadExtract](#radiology-report-structuring-radextract)\n- [Community Providers](#community-providers)\n- [Contributing](#contributing)\n- [Testing](#testing)\n- [Disclaimer](#disclaimer)\n\n## Introduction\n\nLangExtract is a Python library that uses LLMs to extract structured information from unstructured text documents based on user-defined instructions. It processes materials such as clinical notes or reports, identifying and organizing key details while ensuring the extracted data corresponds to the source text.\n\n## Why LangExtract?\n\n1.  **Precise Source Grounding:** Maps every extraction to its exact location in the source text, enabling visual highlighting for easy traceability and verification.\n2.  **Reliable Structured Outputs:** Enforces a consistent output schema based on your few-shot examples, leveraging controlled generation in supported models like Gemini to guarantee robust, structured results.\n3.  **Optimized for Long Documents:** Overcomes the \"needle-in-a-haystack\" challenge of large document extraction by using an optimized strategy of text chunking, parallel processing, and multiple passes for higher recall.\n4.  **Interactive Visualization:** Instantly generates a self-contained, interactive HTML file to visualize and review thousands of extracted entities in their original context.\n5.  **Flexible LLM Support:** Supports your preferred models, from cloud-based LLMs like the Google Gemini family to local open-source models via the built-in Ollama interface.\n6.  **Adaptable to Any Domain:** Define extraction tasks for any domain using just a few examples. LangExtract adapts to your needs without requiring any model fine-tuning.\n7.  **Leverages LLM World Knowledge:** Utilize precise prompt wording and few-shot examples to influence how the extraction task may utilize LLM knowledge. The accuracy of any inferred information and its adherence to the task specification are contingent upon the selected LLM, the complexity of the task, the clarity of the prompt instructions, and the nature of the prompt examples.\n\n## Quick Start\n\n> **Note:** Using cloud-hosted models like Gemini requires an API key. See the [API Key Setup](#api-key-setup-for-cloud-models) section for instructions on how to get and configure your key.\n\nExtract structured information with just a few lines of code.\n\n### 1. Define Your Extraction Task\n\nFirst, create a prompt that clearly describes what you want to extract. Then, provide a high-quality example to guide the model.\n\n```python\nimport langextract as lx\nimport textwrap\n\n# 1. Define the prompt and extraction rules\nprompt = textwrap.dedent(\"\"\"\\\n    Extract characters, emotions, and relationships in order of appearance.\n    Use exact text for extractions. Do not paraphrase or overlap entities.\n    Provide meaningful attributes for each entity to add context.\"\"\")\n\n# 2. Provide a high-quality example to guide the model\nexamples = [\n    lx.data.ExampleData(\n        text=\"ROMEO. But soft! What light through yonder window breaks? It is the east, and Juliet is the sun.\",\n        extractions=[\n            lx.data.Extraction(\n                extraction_class=\"character\",\n                extraction_text=\"ROMEO\",\n                attributes={\"emotional_state\": \"wonder\"}\n            ),\n            lx.data.Extraction(\n                extraction_class=\"emotion\",\n                extraction_text=\"But soft!\",\n                attributes={\"feeling\": \"gentle awe\"}\n            ),\n            lx.data.Extraction(\n                extraction_class=\"relationship\",\n                extraction_text=\"Juliet is the sun\",\n                attributes={\"type\": \"metaphor\"}\n            ),\n        ]\n    )\n]\n```\n\n> **Note:** Examples drive model behavior. Each `extraction_text` should ideally be verbatim from the example's `text` (no paraphrasing), listed in order of appearance. LangExtract raises `Prompt alignment` warnings by default if examples don't follow this pattern\u2014resolve these for best results.\n>\n> **Grounding:** LLMs may occasionally extract content from few-shot examples rather than the input text. LangExtract automatically detects this: extractions that cannot be located in the source text will have `char_interval = None`. Filter these out with `[e for e in result.extractions if e.char_interval]` to keep only grounded results.\n\n### 2. Run the Extraction\n\nProvide your input text and the prompt materials to the `lx.extract` function.\n\n```python\n# The input text to be processed\ninput_text = \"Lady Juliet gazed longingly at the stars, her heart aching for Romeo\"\n\n# Run the extraction\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=prompt,\n    examples=examples,\n    model_id=\"gemini-3.5-flash\",\n)\n```\n\n> **Model Selection**: `gemini-3.5-flash` is the recommended default, offering strong extraction quality for LangExtract's schema-constrained workflows. For high-volume or cost-sensitive workloads, consider the current stable Flash-Lite model, `gemini-3.1-flash-lite`; for highly complex tasks requiring deeper reasoning, evaluate a current Gemini Pro model from the official model documentation. For large-scale or production use, a paid Gemini tier is suggested to increase throughput and avoid rate limits. See the [rate-limit documentation](https://ai.google.dev/gemini-api/docs/rate-limits#usage-tiers) for details.\n>\n> **Model Lifecycle**: Note that Gemini models have a lifecycle with defined retirement dates. Users should consult the [official model version documentation](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions) to stay informed about the latest stable and legacy versions.\n\n### 3. Visualize the Results\n\nThe extractions can be saved to a `.jsonl` file, a popular format for working with language model data. LangExtract can then generate an interactive HTML visualization from this file to review the entities in context.\n\n```python\n# Save the results to a JSONL file\nlx.io.save_annotated_documents([result], output_name=\"extraction_results.jsonl\", output_dir=\".\")\n\n# Generate the visualization from the file\nhtml_content = lx.visualize(\"extraction_results.jsonl\")\nwith open(\"visualization.html\", \"w\") as f:\n    if hasattr(html_content, 'data'):\n        f.write(html_content.data)  # For Jupyter/Colab\n    else:\n        f.write(html_content)\n```\n\nThis creates an animated and interactive HTML file:\n\n![Romeo and Juliet Basic Visualization ](https://raw.githubusercontent.com/google/langextract/main/docs/_static/romeo_juliet_basic.gif)\n\n> **Note on LLM Knowledge Utilization:** This example demonstrates extractions that stay close to the text evidence - extracting \"longing\" for Lady Juliet's emotional state and identifying \"yearning\" from \"gazed longingly at the stars.\" The task could be modified to generate attributes that draw more heavily from the LLM's world knowledge (e.g., adding `\"identity\": \"Capulet family daughter\"` or `\"literary_context\": \"tragic heroine\"`). The balance between text-evidence and knowledge-inference is controlled by your prompt instructions and example attributes.\n\n### Scaling to Longer Documents\n\nFor larger texts, you can process entire documents directly from URLs with parallel processing and enhanced sensitivity:\n\n```python\n# Process Romeo & Juliet directly from Project Gutenberg\nresult = lx.extract(\n    text_or_documents=\"https://www.gutenberg.org/files/1513/1513-0.txt\",\n    prompt_description=prompt,\n    examples=examples,\n    model_id=\"gemini-3.5-flash\",\n    extraction_passes=3,    # Improves recall through multiple passes\n    max_workers=20,         # Parallel processing for speed\n    max_char_buffer=1000    # Smaller contexts for better accuracy\n)\n```\n\nThis approach can extract hundreds of entities from full novels while maintaining high accuracy. The interactive visualization seamlessly handles large result sets, making it easy to explore hundreds of entities from the output JSONL file. **[See the full *Romeo and Juliet* extraction example \u2192](https://github.com/google/langextract/blob/main/docs/examples/longer_text_example.md)** for detailed results and performance insights.\n\n### Vertex AI Batch Processing\n\nSave costs on large-scale tasks by enabling Vertex AI Batch API: `language_model_params={\"vertexai\": True, \"batch\": {\"enabled\": True}}`.\n\nSee an example of the Vertex AI Batch API usage in [this example](docs/examples/batch_api_example.md).\n\n## Installation\n\n### From PyPI\n\n```bash\npip install langextract\n```\n\n*Recommended for most users. For isolated environments, consider using a virtual environment:*\n\n```bash\npython -m venv langextract_env\nsource langextract_env/bin/activate  # On Windows: langextract_env\\Scripts\\activate\npip install langextract\n```\n\n### From Source\n\nLangExtract uses modern Python packaging with `pyproject.toml` for dependency management:\n\n*Installing with `-e` puts the package in development mode, allowing you to modify the code without reinstalling.*\n\n\n```bash\ngit clone https://github.com/google/langextract.git\ncd langextract\n\n# For basic installation:\npip install -e .\n\n# For development (includes linting tools):\npip install -e \".[dev]\"\n\n# For testing (includes pytest):\npip install -e \".[test]\"\n```\n\n### Docker\n\n```bash\ndocker build -t langextract .\ndocker run --rm -e LANGEXTRACT_API_KEY=\"your-api-key\" langextract python your_script.py\n```\n\n## API Key Setup for Cloud Models\n\nWhen using LangExtract with cloud-hosted models (like Gemini or OpenAI), you'll need to\nset up an API key. On-device models don't require an API key. For developers\nusing local LLMs, LangExtract offers built-in support for Ollama and can be\nextended to other third-party APIs by updating the inference endpoints.\n\n### API Key Sources\n\nGet API keys from:\n\n*   [AI Studio](https://aistudio.google.com/app/apikey) for Gemini models\n*   [Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/sdks/overview) for enterprise use\n*   [OpenAI Platform](https://platform.openai.com/api-keys) for OpenAI models\n\n### Setting up API key in your environment\n\n**Option 1: Environment Variable**\n\n```bash\nexport LANGEXTRACT_API_KEY=\"your-api-key-here\"\n```\n\n**Option 2: .env File (Recommended)**\n\nAdd your API key to a `.env` file:\n\n```bash\n# Add API key to .env file\ncat >> .env << 'EOF'\nLANGEXTRACT_API_KEY=your-api-key-here\nEOF\n\n# Keep your API key secure\necho '.env' >> .gitignore\n```\n\nIn your Python code:\n```python\nimport langextract as lx\n\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=\"Extract information...\",\n    examples=[...],\n    model_id=\"gemini-3.5-flash\"\n)\n```\n\n**Option 3: Direct API Key (Not Recommended for Production)**\n\nYou can also provide the API key directly in your code, though this is not recommended for production use:\n\n```python\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=\"Extract information...\",\n    examples=[...],\n    model_id=\"gemini-3.5-flash\",\n    api_key=\"your-api-key-here\"  # Only use this for testing/development\n)\n```\n\n**Option 4: Vertex AI (Service Accounts)**\n\nUse [Vertex AI](https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform) for authentication with service accounts:\n\n```python\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=\"Extract information...\",\n    examples=[...],\n    model_id=\"gemini-3.5-flash\",\n    language_model_params={\n        \"vertexai\": True,\n        \"project\": \"your-project-id\",\n        \"location\": \"global\"  # or regional endpoint\n    }\n)\n```\n\n## Adding Custom Model Providers\n\nLangExtract supports custom LLM providers via a lightweight plugin system. You can add support for new models without changing core code.\n\n- Add new model support independently of the core library\n- Distribute your provider as a separate Python package\n- Keep custom dependencies isolated\n- Override or extend built-in providers via priority-based resolution\n\nSee the detailed guide in [Provider System Documentation](langextract/providers/README.md) to learn how to:\n\n- Register a provider with `@router.register(...)` from `langextract.providers`\n- Publish an entry point for discovery\n- Optionally provide a schema with `get_schema_class()` for structured output\n- Integrate with the factory via `create_model(...)`\n\n## Using OpenAI Models\n\nLangExtract supports OpenAI models (requires optional dependency: `pip install langextract[openai]`):\n\n```python\nimport langextract as lx\n\n# OPENAI_API_KEY in the environment is picked up automatically; pass\n# api_key=... explicitly only if you need to override it.\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=prompt,\n    examples=examples,\n    model_id=\"gpt-4o\",  # Automatically selects OpenAI provider\n)\n```\n\nThe OpenAI provider uses JSON mode and auto-determines fence and schema behavior \u2014 leave `fence_output` and `use_schema_constraints` unset.\n\nFor large, non-latency-sensitive OpenAI workloads, enable the OpenAI Batch API\nwith `language_model_params`. Batch mode is opt-in and falls back to realtime\ncalls when the prompt count is below the configured threshold.\n\n```python\nresult = lx.extract(\n    text_or_documents=documents,\n    prompt_description=prompt,\n    examples=examples,\n    model_id=\"gpt-4o-mini\",\n    language_model_params={\n        \"batch\": {\n            \"enabled\": True,\n            \"threshold\": 50,\n            \"poll_interval\": 10,\n        }\n    },\n)\n```\n\nFor OpenAI-compatible endpoints or non-GPT model IDs (which skip auto-routing), use `ModelConfig` with an explicit provider:\n\n```python\nfrom langextract.factory import ModelConfig\n\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=prompt,\n    examples=examples,\n    config=ModelConfig(\n        model_id=\"my-openai-compatible-model\",\n        provider=\"openai\",\n        provider_kwargs={\"api_key\": \"sk-...\", \"base_url\": \"https://...\"},\n    ),\n)\n```\n\n## Using Local LLMs with Ollama\nLangExtract supports local inference using Ollama, allowing you to run models without API keys:\n\n```python\nimport langextract as lx\n\nresult = lx.extract(\n    text_or_documents=input_text,\n    prompt_description=prompt,\n    examples=examples,\n    model_id=\"gemma2:2b\",  # Automatically selects Ollama provider\n    model_url=\"http://localhost:11434\",\n)\n```\n\nThe Ollama provider exposes `FormatModeSchema` for JSON mode. Leave `fence_output` and `use_schema_constraints` unset so the factory auto-configures from the provider's schema.\n\n**Quick setup:** Install Ollama from [ollama.com](https://ollama.com/), run `ollama pull gemma2:2b`, then `ollama serve`.\n\nFor detailed installation, Docker setup, and examples, see [`examples/ollama/`](examples/ollama/).\n\n## More Examples\n\nAdditional examples of LangExtract in action:\n\n### *Romeo and Juliet* Full Text Extraction\n\nLangExtract can process complete documents directly from URLs. This example demonstrates extraction from the full text of *Romeo and Juliet* from Project Gutenberg (147,843 characters), showing parallel processing, sequential extraction passes, and performance optimization for long document processing.\n\n**[View *Romeo and Juliet* Full Text Example \u2192](https://github.com/google/langextract/blob/main/docs/examples/longer_text_example.md)**\n\n### Medication Extraction\n\n> **Disclaimer:** This demonstration is for illustrative purposes of LangExtract's baseline capability only. It does not represent a finished or approved product, is not intended to diagnose or suggest treatment of any disease or condition, and should not be used for medical advice.\n\nLangExtract excels at extracting structured medical information from clinical text. These examples demonstrate both basic entity recognition (medication names, dosages, routes) and relationship extraction (connecting medications to their attributes), showing LangExtract's effectiveness for healthcare applications.\n\n**[View Medication Examples \u2192](https://github.com/google/langextract/blob/main/docs/examples/medication_examples.md)**\n\n### Radiology Report Structuring: RadExtract\n\nExplore RadExtract, a live interactive demo on HuggingFace Spaces that shows how LangExtract can automatically structure radiology reports. Try it directly in your browser with no setup required.\n\n**[View RadExtract Demo \u2192](https://huggingface.co/spaces/google/radextract)**\n\n## Community Providers\n\nExtend LangExtract with custom model providers! Check out our [Community Provider Plugins](COMMUNITY_PROVIDERS.md) registry to discover providers created by the community or add your own.\n\nFor detailed instructions on creating a provider plugin, see the [Custom Provider Plugin Example](examples/custom_provider_plugin/).\n\n## Contributing\n\nContributions are welcome! See [CONTRIBUTING.md](https://github.com/google/langextract/blob/main/CONTRIBUTING.md) to get started\nwith development, testing, and pull requests. You must sign a\n[Contributor License Agreement](https://cla.developers.google.com/about)\nbefore submitting patches.\n\n\n\n## Testing\n\nTo run tests locally from the source:\n\n```bash\n# Clone the repository\ngit clone https://github.com/google/langextract.git\ncd langextract\n\n# Install with test dependencies\npip install -e \".[test]\"\n\n# Run all tests\npytest tests\n```\n\nOr reproduce the full CI matrix locally with tox:\n\n```bash\ntox  # runs pylint + pytest on Python 3.10 and 3.11\n```\n\n### Ollama Integration Testing\n\nIf you have Ollama installed locally, you can run integration tests:\n\n```bash\n# Test Ollama integration (requires Ollama running with gemma2:2b model)\ntox -e ollama-integration\n```\n\nThis test will automatically detect if Ollama is available and run real inference tests.\n\n## Development\n\n### Code Formatting\n\nThis project uses automated formatting tools to maintain consistent code style:\n\n```bash\n# Auto-format all code\n./autoformat.sh\n\n# Or run formatters separately\nisort langextract tests --profile google --line-length 80\npyink langextract tests --config pyproject.toml\n```\n\n### Pre-commit Hooks\n\nFor automatic formatting checks:\n```bash\npre-commit install  # One-time setup\npre-commit run --all-files  # Manual run\n```\n\n### Linting\n\nRun linting before submitting PRs:\n\n```bash\npylint --rcfile=.pylintrc langextract tests\n```\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for full development guidelines.\n\n## Disclaimer\n\nThis is not an officially supported Google product. If you use\nLangExtract in production or publications, please cite accordingly and\nacknowledge usage. Use is subject to the [Apache 2.0 License](https://github.com/google/langextract/blob/main/LICENSE).\nFor health-related applications, use of LangExtract is also subject to the\n[Health AI Developer Foundations Terms of Use](https://developers.google.com/health-ai-developer-foundations/terms).\n\n---\n\n**Happy Extracting!**\n",
+    "RECORD_checked": 51,
+    "source_python_modules_byte_identical": 45,
+    "members": [
+      "langextract/__init__.py",
+      "langextract/annotation.py",
+      "langextract/chunking.py",
+      "langextract/data.py",
+      "langextract/data_lib.py",
+      "langextract/exceptions.py",
+      "langextract/extraction.py",
+      "langextract/factory.py",
+      "langextract/inference.py",
+      "langextract/io.py",
+      "langextract/plugins.py",
+      "langextract/progress.py",
+      "langextract/prompt_validation.py",
+      "langextract/prompting.py",
+      "langextract/py.typed",
+      "langextract/registry.py",
+      "langextract/resolver.py",
+      "langextract/schema.py",
+      "langextract/tokenizer.py",
+      "langextract/visualization.py",
+      "langextract/_compat/__init__.py",
+      "langextract/_compat/exceptions.py",
+      "langextract/_compat/inference.py",
+      "langextract/_compat/registry.py",
+      "langextract/_compat/schema.py",
+      "langextract/core/__init__.py",
+      "langextract/core/base_model.py",
+      "langextract/core/data.py",
+      "langextract/core/debug_utils.py",
+      "langextract/core/exceptions.py",
+      "langextract/core/format_handler.py",
+      "langextract/core/schema.py",
+      "langextract/core/tokenizer.py",
+      "langextract/core/types.py",
+      "langextract/providers/__init__.py",
+      "langextract/providers/builtin_registry.py",
+      "langextract/providers/gemini.py",
+      "langextract/providers/gemini_batch.py",
+      "langextract/providers/ollama.py",
+      "langextract/providers/openai.py",
+      "langextract/providers/openai_batch.py",
+      "langextract/providers/patterns.py",
+      "langextract/providers/router.py",
+      "langextract/providers/schemas/__init__.py",
+      "langextract/providers/schemas/gemini.py",
+      "langextract/providers/schemas/openai.py",
+      "langextract-1.5.0.dist-info/licenses/LICENSE",
+      "langextract-1.5.0.dist-info/METADATA",
+      "langextract-1.5.0.dist-info/WHEEL",
+      "langextract-1.5.0.dist-info/entry_points.txt",
+      "langextract-1.5.0.dist-info/top_level.txt",
+      "langextract-1.5.0.dist-info/RECORD"
+    ]
+  },
+  "status": "LANGEXTRACT_WHEEL_BUILT_AND_VERIFIED"
+}

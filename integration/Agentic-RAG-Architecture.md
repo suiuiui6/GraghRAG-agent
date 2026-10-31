@@ -1,5 +1,7 @@
 # Agentic-RAG 完整技术架构方案
 
+> 2026-10-25维护说明：本文Chroma/Milvus向量伪代码及部署示意保留为历史架构背景，不是当前向量运行规范。当前SQLite＋NumPy、文档发布目录、授权快照和默认关闭的生产准入，以[已确认集成设计](../docs/design/2026-10-19-vector-production-integration.md)及[API修订](backend-api-architecture-v1.0.md#2026-10-25-向量生命周期集成补充)为准。合成验收进度不表示已部署或已迁移。
+
 > **版本**: v1.0 | **日期**: 2026-05-24
 >
 > 基于 BridgePipeline (MinerU → LangExtract → KG) 输出，

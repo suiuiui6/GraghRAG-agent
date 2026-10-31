@@ -215,6 +215,9 @@ def _recover_sparse_runtime_table_index() -> dict | None:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
+    from services.vector_startup import initialize_vector_runtime
+    app.state.vector_runtime = initialize_vector_runtime()
+    logger.info("vector_runtime_startup", **app.state.vector_runtime)
     scheduler = None
     try:
         from index_registry import restore_runtime_indexes

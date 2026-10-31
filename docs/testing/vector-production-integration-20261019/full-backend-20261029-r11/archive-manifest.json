@@ -1,0 +1,62 @@
+[
+  {
+    "file": "summary.json",
+    "bytes": 3312,
+    "sha256": "0b948779b9ca212aeebd2491f9e5f84e1714007331e6ff42829984131ae4c923"
+  },
+  {
+    "file": "commands.json",
+    "bytes": 1922,
+    "sha256": "dde5a707bbb230a005a09893af01e78d5fcbbf990e2809998e4a6946f86de409"
+  },
+  {
+    "file": "before.json",
+    "bytes": 28773,
+    "sha256": "6ba3faaca61530d75bf8243f68f47b139d5d42d25b19a0ecd66babfb00e6967f"
+  },
+  {
+    "file": "after.json",
+    "bytes": 28773,
+    "sha256": "6ba3faaca61530d75bf8243f68f47b139d5d42d25b19a0ecd66babfb00e6967f"
+  },
+  {
+    "file": "runtime-before.json",
+    "bytes": 7304333,
+    "sha256": "4601d7a50f61aa0869d1794767b71f2dc8a83a325c267d2b86456208a44bf9b2"
+  },
+  {
+    "file": "runtime-after.json",
+    "bytes": 7304333,
+    "sha256": "4601d7a50f61aa0869d1794767b71f2dc8a83a325c267d2b86456208a44bf9b2"
+  },
+  {
+    "file": "collected-nodeids.json",
+    "bytes": 254337,
+    "sha256": "38451b44109aa9b5ce1da4e0bbb00629fe50bfde465eea99fbf89c9189a4f323"
+  },
+  {
+    "file": "coverage.json",
+    "bytes": 1172502,
+    "sha256": "dcb1ffd96cdaa8c345b6895d2a0ab539d55f8e445f0e9b39359055c426cddd22"
+  },
+  {
+    "file": "final-receipt.json",
+    "bytes": 2088,
+    "sha256": "cb5e70017141503bdd5df105ae55a6c1697e887307a0cfd1fee988c59dfd0e08"
+  },
+  {
+    "file": "REPORT.md",
+    "bytes": 1712,
+    "sha256": "1b593b91c5942764d593a876e09da3f04396d6266983cb28e25e6b39d00f7170"
+  },
+  {
+    "file": "root-recomputed.json",
+    "bytes": 668,
+    "sha256": "fb3675d402fa3244cfbcea7ed89ae28b7aec9693f25b3ab31d218d0b49f4e835"
+  },
+  {
+    "file": "run_backend_20261029_r11.py",
+    "bytes": 10293,
+    "sha256": "49dbb57b1a9ace2e5b8b910cf8ecf08f3d277181d485f43bbd0d25b1caade500"
+  }
+]

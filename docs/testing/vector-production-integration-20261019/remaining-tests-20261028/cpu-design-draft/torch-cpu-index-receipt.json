@@ -1,0 +1,16 @@
+{
+  "index_url": "https://download.pytorch.org/whl/cpu/torch/",
+  "index_sha256": "afbb7e04f36d5c3d8b7141bcf10682954f05bb4d5f0297876127ffbb93f015f8",
+  "wheel_name": "torch-2.14.0+cpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+  "official_wheel_url": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl",
+  "official_wheel_sha256": "a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260",
+  "metadata_url": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl.metadata",
+  "metadata_hash_attribute": "sha256=6e6cbfdc8067a91fe9fa5068191574caef6d04c743da805707b849396a8834f6",
+  "link_attributes": {
+    "href": "https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260",
+    "data-dist-info-metadata": "sha256=6e6cbfdc8067a91fe9fa5068191574caef6d04c743da805707b849396a8834f6",
+    "data-core-metadata": "sha256=6e6cbfdc8067a91fe9fa5068191574caef6d04c743da805707b849396a8834f6",
+    "data-upload-time": "2026-09-02T18:31:42Z"
+  },
+  "stage": "index only; metadata/wheel not yet retrieved"
+}

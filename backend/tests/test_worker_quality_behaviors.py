@@ -319,6 +319,9 @@ def test_pdf_stage_failures_report_terminal_error_and_preserve_cause(monkeypatch
 
     if stage == "bridge":
         (directory / "full.md").unlink()
+    elif stage == 'grounding':
+        import grounding
+        monkeypatch.setattr(grounding, 'resolve_grounding', fail)
     else:
         monkeypatch.setattr(worker, {"extraction": "_run_langextract", "grounding": "resolve_grounding", "kg_build": "serialize_kg"}[stage], fail)
     transitions = []

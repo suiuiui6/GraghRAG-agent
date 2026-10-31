@@ -1,0 +1,22 @@
+[
+  {
+    "file": "receipt.json",
+    "sha256": "adbda067fdf10040310b9b9b01d89e5fb0351787c53766c8f144b8336ccfff6b",
+    "source": "D:\\graghRAG-agent\\.tmp\\git-status-diagnostic-20261027\\receipt.json"
+  },
+  {
+    "file": "focused.log",
+    "sha256": "b7234959bc5e48864873fd0561a40d9696490904ea3ef3c19a360b51ed2e5015",
+    "source": "D:\\graghRAG-agent\\.tmp\\git-status-diagnostic-20261027\\focused.log"
+  },
+  {
+    "file": "focused.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "source": "D:\\graghRAG-agent\\.tmp\\git-status-diagnostic-20261027\\focused.exit"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "96b4363902489361181b99b8bc2775f038a77125890f9f6647e0997d644ccbae",
+    "source": "D:\\graghRAG-agent\\.tmp\\git-status-diagnostic-20261027\\junit.xml"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\frozen_input_helpers.py",
+    "Hash": "5A086CF7CC1DAB969852E14D9639C88AB9F17AFC60C623389931BDE856DE97FD"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_frozen_input_helpers.py",
+    "Hash": "47E1FD90A482DD0A2801B5D62F1C750DEAAD4C6A6AFCBFF363706DF096D9ABA9"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_common_three_arm.py",
+    "Hash": "97D8B03AEE93D9FDD8A6F81BFCB540536E21BB354D0B4DA7D371461AFFA980A1"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_gold_v2.py",
+    "Hash": "9A3DB7A8CB66E6C4546D6D48E5E267DD9A7FF0CC65833CDCDA4F7AC66AC8CC89"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_local_scope_v2.py",
+    "Hash": "E7DA3BD3BC573535215B0C0FDFD3F1D7AD98BC8E28FDD8D6318172F12287AE87"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_scope_v2.py",
+    "Hash": "68EB0DA64B3FBB3478A72F3AB45991ED34D445ECCEAAB697B6667C389C8645BE"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_source_mapping_v2.py",
+    "Hash": "DCC40BBD7BD477C518C415D33A3197C5F8D10CD39415B00BA7893EEB94AB08B1"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_runtime_recovery.py",
+    "Hash": "AA297F8C37612F8C685016C0FDBD2FEC90BDFAE3F792F31B0A34B42FA57AA2DE"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_store_resilience.py",
+    "Hash": "91ECDA3A45C650EBE4FC2A2EDB99692BFF7F961BBA298F44F1E5F20CCA12DBCC"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_hybrid_retrieval_trimming.py",
+    "Hash": "E4E245FDEDA705789DCEEF9138E82AC9F93D211EE7782921C248AD24587B4F42"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_source_control_integration.py",
+    "Hash": "8E8A55FBFA3549D6E62BAB03F77505E7FF8189E7773C9F8120E3D372E3D9EB71"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_worker_extraction_outcome.py",
+    "Hash": "581C57C9517790F2DF76312B11286D5166077D61EEED94C994596046AD93538F"
+  },
+  {
+    "Path": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_worker_quality_behaviors.py",
+    "Hash": "D2096BF2E733C284AA48F45A8C9996E46B5A108AECBD09BFCA1755084F8DE250"
+  }
+]

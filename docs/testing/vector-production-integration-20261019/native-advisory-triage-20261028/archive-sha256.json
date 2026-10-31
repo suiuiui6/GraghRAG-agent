@@ -1,0 +1,18 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "2d58c78677624d4303db6f144ebc2161fce452ea3560723995434ac8a8d7ed19"
+  },
+  {
+    "file": "actual-metadata.json",
+    "sha256": "9d05641d66efab260799ee6c983ced098685139f06889e82dbb3efa95dde5108"
+  },
+  {
+    "file": "probe_metadata.py",
+    "sha256": "4b5af60e8a0e5d606c47665d680f5f1a56e0645076c5afa459756f7e7ab36c8c"
+  },
+  {
+    "file": "pbs-expanded-assets-excerpt.txt",
+    "sha256": "45e156ff00e5b368cb517edaaa184e3d657650993a06faf57a2f3c319d624d4d"
+  }
+]

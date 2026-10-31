@@ -1,0 +1,5308 @@
+[
+  {
+    "file": "libuv.dll",
+    "sha256": "6f91cea90646d077b1bcb6372433ea048bac344e8eeb5e5c8ee4b163f02edf96",
+    "machine": "0x8664",
+    "imports": [
+      {
+        "dll": "ADVAPI32.dll",
+        "symbols": [
+          {
+            "name": "AllocateAndInitializeSid"
+          },
+          {
+            "name": "FreeSid"
+          },
+          {
+            "name": "GetSecurityInfo"
+          },
+          {
+            "name": "GetTokenInformation"
+          },
+          {
+            "name": "GetUserNameW"
+          },
+          {
+            "name": "OpenProcessToken"
+          },
+          {
+            "name": "RegCloseKey"
+          },
+          {
+            "name": "RegGetValueW"
+          },
+          {
+            "name": "RegOpenKeyExW"
+          },
+          {
+            "name": "RegQueryValueExW"
+          },
+          {
+            "name": "SetEntriesInAclA"
+          },
+          {
+            "name": "SetSecurityInfo"
+          },
+          {
+            "name": "SystemFunction036"
+          }
+        ]
+      },
+      {
+        "dll": "dbghelp.dll",
+        "symbols": [
+          {
+            "name": "MiniDumpWriteDump"
+          },
+          {
+            "name": "SymGetOptions"
+          },
+          {
+            "name": "SymSetOptions"
+          }
+        ]
+      },
+      {
+        "dll": "IPHLPAPI.DLL",
+        "symbols": [
+          {
+            "name": "ConvertInterfaceIndexToLuid"
+          },
+          {
+            "name": "ConvertInterfaceLuidToNameW"
+          },
+          {
+            "name": "GetAdaptersAddresses"
+          }
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          {
+            "name": "AssignProcessToJobObject"
+          },
+          {
+            "name": "CancelIo"
+          },
+          {
+            "name": "CancelIoEx"
+          },
+          {
+            "name": "CancelSynchronousIo"
+          },
+          {
+            "name": "CloseHandle"
+          },
+          {
+            "name": "CompareStringOrdinal"
+          },
+          {
+            "name": "ConnectNamedPipe"
+          },
+          {
+            "name": "CopyFileW"
+          },
+          {
+            "name": "CreateDirectoryW"
+          },
+          {
+            "name": "CreateFileA"
+          },
+          {
+            "name": "CreateFileMappingA"
+          },
+          {
+            "name": "CreateFileW"
+          },
+          {
+            "name": "CreateHardLinkW"
+          },
+          {
+            "name": "CreateIoCompletionPort"
+          },
+          {
+            "name": "CreateJobObjectW"
+          },
+          {
+            "name": "CreateNamedPipeA"
+          },
+          {
+            "name": "CreateNamedPipeW"
+          },
+          {
+            "name": "CreateProcessW"
+          },
+          {
+            "name": "CreateSemaphoreA"
+          },
+          {
+            "name": "CreateSymbolicLinkW"
+          },
+          {
+            "name": "DebugBreak"
+          },
+          {
+            "name": "DeleteProcThreadAttributeList"
+          },
+          {
+            "name": "DeviceIoControl"
+          },
+          {
+            "name": "DuplicateHandle"
+          },
+          {
+            "name": "FileTimeToSystemTime"
+          },
+          {
+            "name": "FillConsoleOutputAttribute"
+          },
+          {
+            "name": "FillConsoleOutputCharacterW"
+          },
+          {
+            "name": "FindClose"
+          },
+          {
+            "name": "FindFirstFileW"
+          },
+          {
+            "name": "FindNextFileW"
+          },
+          {
+            "name": "FlushFileBuffers"
+          },
+          {
+            "name": "FlushViewOfFile"
+          },
+          {
+            "name": "FormatMessageA"
+          },
+          {
+            "name": "FreeEnvironmentStringsW"
+          },
+          {
+            "name": "FreeLibrary"
+          },
+          {
+            "name": "GetConsoleCursorInfo"
+          },
+          {
+            "name": "GetConsoleMode"
+          },
+          {
+            "name": "GetConsoleScreenBufferInfo"
+          },
+          {
+            "name": "GetCurrentDirectoryW"
+          },
+          {
+            "name": "GetCurrentProcess"
+          },
+          {
+            "name": "GetCurrentProcessId"
+          },
+          {
+            "name": "GetCurrentProcessorNumber"
+          },
+          {
+            "name": "GetCurrentThread"
+          },
+          {
+            "name": "GetEnvironmentStringsW"
+          },
+          {
+            "name": "GetEnvironmentVariableW"
+          },
+          {
+            "name": "GetExitCodeProcess"
+          },
+          {
+            "name": "GetExitCodeThread"
+          },
+          {
+            "name": "GetFileAttributesW"
+          },
+          {
+            "name": "GetFileInformationByHandle"
+          },
+          {
+            "name": "GetFileInformationByHandleEx"
+          },
+          {
+            "name": "GetFileSizeEx"
+          },
+          {
+            "name": "GetFileType"
+          },
+          {
+            "name": "GetFinalPathNameByHandleW"
+          },
+          {
+            "name": "GetLastError"
+          },
+          {
+            "name": "GetLongPathNameW"
+          },
+          {
+            "name": "GetModuleFileNameW"
+          },
+          {
+            "name": "GetModuleHandleW"
+          },
+          {
+            "name": "GetNamedPipeClientProcessId"
+          },
+          {
+            "name": "GetNamedPipeHandleStateA"
+          },
+          {
+            "name": "GetNamedPipeServerProcessId"
+          },
+          {
+            "name": "GetNativeSystemInfo"
+          },
+          {
+            "name": "GetNumberOfConsoleInputEvents"
+          },
+          {
+            "name": "GetOverlappedResult"
+          },
+          {
+            "name": "GetPriorityClass"
+          },
+          {
+            "name": "GetProcAddress"
+          },
+          {
+            "name": "GetProcessAffinityMask"
+          },
+          {
+            "name": "GetProcessId"
+          },
+          {
+            "name": "GetProcessIoCounters"
+          },
+          {
+            "name": "GetProcessTimes"
+          },
+          {
+            "name": "GetQueuedCompletionStatusEx"
+          },
+          {
+            "name": "GetShortPathNameW"
+          },
+          {
+            "name": "GetStartupInfoW"
+          },
+          {
+            "name": "GetStdHandle"
+          },
+          {
+            "name": "GetSystemInfo"
+          },
+          {
+            "name": "GetSystemTimeAsFileTime"
+          },
+          {
+            "name": "GetSystemTimePreciseAsFileTime"
+          },
+          {
+            "name": "GetTempPathW"
+          },
+          {
+            "name": "GetThreadPriority"
+          },
+          {
+            "name": "GetThreadTimes"
+          },
+          {
+            "name": "GetTickCount64"
+          },
+          {
+            "name": "GlobalMemoryStatusEx"
+          },
+          {
+            "name": "InitializeProcThreadAttributeList"
+          },
+          {
+            "name": "IsDBCSLeadByteEx"
+          },
+          {
+            "name": "K32GetModuleBaseNameW"
+          },
+          {
+            "name": "K32GetProcessMemoryInfo"
+          },
+          {
+            "name": "LoadLibraryExA"
+          },
+          {
+            "name": "LoadLibraryExW"
+          },
+          {
+            "name": "LocalFree"
+          },
+          {
+            "name": "MapViewOfFile"
+          },
+          {
+            "name": "MoveFileExW"
+          },
+          {
+            "name": "MultiByteToWideChar"
+          },
+          {
+            "name": "NeedCurrentDirectoryForExePathW"
+          },
+          {
+            "name": "OpenProcess"
+          },
+          {
+            "name": "PeekNamedPipe"
+          },
+          {
+            "name": "PostQueuedCompletionStatus"
+          },
+          {
+            "name": "QueryPerformanceCounter"
+          },
+          {
+            "name": "QueryPerformanceFrequency"
+          },
+          {
+            "name": "QueueUserWorkItem"
+          },
+          {
+            "name": "ReOpenFile"
+          },
+          {
+            "name": "ReadConsoleInputW"
+          },
+          {
+            "name": "ReadConsoleW"
+          },
+          {
+            "name": "ReadDirectoryChangesW"
+          },
+          {
+            "name": "ReadFile"
+          },
+          {
+            "name": "RegisterWaitForSingleObject"
+          },
+          {
+            "name": "RemoveDirectoryW"
+          },
+          {
+            "name": "ResumeThread"
+          },
+          {
+            "name": "SetConsoleCtrlHandler"
+          },
+          {
+            "name": "SetConsoleCursorInfo"
+          },
+          {
+            "name": "SetConsoleCursorPosition"
+          },
+          {
+            "name": "SetConsoleMode"
+          },
+          {
+            "name": "SetConsoleTextAttribute"
+          },
+          {
+            "name": "SetConsoleTitleW"
+          },
+          {
+            "name": "SetCurrentDirectoryW"
+          },
+          {
+            "name": "SetEnvironmentVariableW"
+          },
+          {
+            "name": "SetErrorMode"
+          },
+          {
+            "name": "SetFileCompletionNotificationModes"
+          },
+          {
+            "name": "SetFileInformationByHandle"
+          },
+          {
+            "name": "SetFilePointerEx"
+          },
+          {
+            "name": "SetFileTime"
+          },
+          {
+            "name": "SetHandleInformation"
+          },
+          {
+            "name": "SetInformationJobObject"
+          },
+          {
+            "name": "SetLastError"
+          },
+          {
+            "name": "SetNamedPipeHandleState"
+          },
+          {
+            "name": "SetPriorityClass"
+          },
+          {
+            "name": "SetThreadAffinityMask"
+          },
+          {
+            "name": "SetThreadPriority"
+          },
+          {
+            "name": "SwitchToThread"
+          },
+          {
+            "name": "TerminateProcess"
+          },
+          {
+            "name": "TlsAlloc"
+          },
+          {
+            "name": "TlsFree"
+          },
+          {
+            "name": "TlsGetValue"
+          },
+          {
+            "name": "TlsSetValue"
+          },
+          {
+            "name": "UnmapViewOfFile"
+          },
+          {
+            "name": "UnregisterWait"
+          },
+          {
+            "name": "UnregisterWaitEx"
+          },
+          {
+            "name": "UpdateProcThreadAttribute"
+          },
+          {
+            "name": "VirtualProtect"
+          },
+          {
+            "name": "VirtualQuery"
+          },
+          {
+            "name": "WaitNamedPipeW"
+          },
+          {
+            "name": "WideCharToMultiByte"
+          },
+          {
+            "name": "WriteConsoleInputW"
+          },
+          {
+            "name": "WriteConsoleW"
+          },
+          {
+            "name": "WriteFile"
+          }
+        ]
+      },
+      {
+        "dll": "msvcrt.dll",
+        "symbols": [
+          {
+            "name": "___lc_codepage_func"
+          },
+          {
+            "name": "___mb_cur_max_func"
+          },
+          {
+            "name": "__doserrno"
+          },
+          {
+            "name": "__iob_func"
+          },
+          {
+            "name": "_amsg_exit"
+          },
+          {
+            "name": "_beginthreadex"
+          },
+          {
+            "name": "_close"
+          },
+          {
+            "name": "_errno"
+          },
+          {
+            "name": "_get_osfhandle"
+          },
+          {
+            "name": "_initterm"
+          },
+          {
+            "name": "_lock"
+          },
+          {
+            "name": "_lseeki64"
+          },
+          {
+            "name": "_open_osfhandle"
+          },
+          {
+            "name": "_read"
+          },
+          {
+            "name": "_snwprintf"
+          },
+          {
+            "name": "_snwprintf_s"
+          },
+          {
+            "name": "_umask"
+          },
+          {
+            "name": "_unlock"
+          },
+          {
+            "name": "_wchmod"
+          },
+          {
+            "name": "_wcsdup"
+          },
+          {
+            "name": "_wcsnicmp"
+          },
+          {
+            "name": "_wcsrev"
+          },
+          {
+            "name": "_write"
+          },
+          {
+            "name": "abort"
+          },
+          {
+            "name": "atoi"
+          },
+          {
+            "name": "calloc"
+          },
+          {
+            "name": "fputc"
+          },
+          {
+            "name": "free"
+          },
+          {
+            "name": "fwrite"
+          },
+          {
+            "name": "localeconv"
+          },
+          {
+            "name": "malloc"
+          },
+          {
+            "name": "memchr"
+          },
+          {
+            "name": "memcpy"
+          },
+          {
+            "name": "memset"
+          },
+          {
+            "name": "qsort"
+          },
+          {
+            "name": "realloc"
+          },
+          {
+            "name": "strchr"
+          },
+          {
+            "name": "strerror"
+          },
+          {
+            "name": "strlen"
+          },
+          {
+            "name": "strncmp"
+          },
+          {
+            "name": "strncpy"
+          },
+          {
+            "name": "strstr"
+          },
+          {
+            "name": "vfprintf"
+          },
+          {
+            "name": "wcschr"
+          },
+          {
+            "name": "wcscpy"
+          },
+          {
+            "name": "wcslen"
+          },
+          {
+            "name": "wcsncmp"
+          },
+          {
+            "name": "wcsncpy"
+          },
+          {
+            "name": "wcspbrk"
+          },
+          {
+            "name": "wcsrchr"
+          },
+          {
+            "name": "wcsstr"
+          },
+          {
+            "name": "wcstombs"
+          }
+        ]
+      },
+      {
+        "dll": "ole32.dll",
+        "symbols": [
+          {
+            "name": "CoTaskMemFree"
+          }
+        ]
+      },
+      {
+        "dll": "SHELL32.dll",
+        "symbols": [
+          {
+            "name": "SHGetKnownFolderPath"
+          }
+        ]
+      },
+      {
+        "dll": "api-ms-win-core-synch-l1-2-0.dll",
+        "symbols": [
+          {
+            "name": "AcquireSRWLockExclusive"
+          },
+          {
+            "name": "AcquireSRWLockShared"
+          },
+          {
+            "name": "CreateEventA"
+          },
+          {
+            "name": "DeleteCriticalSection"
+          },
+          {
+            "name": "EnterCriticalSection"
+          },
+          {
+            "name": "InitOnceExecuteOnce"
+          },
+          {
+            "name": "InitializeConditionVariable"
+          },
+          {
+            "name": "InitializeCriticalSection"
+          },
+          {
+            "name": "InitializeSRWLock"
+          },
+          {
+            "name": "LeaveCriticalSection"
+          },
+          {
+            "name": "ReleaseSRWLockExclusive"
+          },
+          {
+            "name": "ReleaseSRWLockShared"
+          },
+          {
+            "name": "ReleaseSemaphore"
+          },
+          {
+            "name": "ResetEvent"
+          },
+          {
+            "name": "SetEvent"
+          },
+          {
+            "name": "Sleep"
+          },
+          {
+            "name": "SleepConditionVariableCS"
+          },
+          {
+            "name": "TryAcquireSRWLockExclusive"
+          },
+          {
+            "name": "TryAcquireSRWLockShared"
+          },
+          {
+            "name": "TryEnterCriticalSection"
+          },
+          {
+            "name": "WaitForSingleObject"
+          },
+          {
+            "name": "WaitOnAddress"
+          },
+          {
+            "name": "WakeAllConditionVariable"
+          },
+          {
+            "name": "WakeByAddressSingle"
+          },
+          {
+            "name": "WakeConditionVariable"
+          }
+        ]
+      },
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          {
+            "name": "DispatchMessageA"
+          },
+          {
+            "name": "GetMessageA"
+          },
+          {
+            "name": "GetSystemMetrics"
+          },
+          {
+            "name": "MapVirtualKeyW"
+          },
+          {
+            "name": "TranslateMessage"
+          }
+        ]
+      },
+      {
+        "dll": "USERENV.dll",
+        "symbols": [
+          {
+            "name": "GetUserProfileDirectoryW"
+          }
+        ]
+      },
+      {
+        "dll": "WS2_32.dll",
+        "symbols": [
+          {
+            "name": "FreeAddrInfoW"
+          },
+          {
+            "name": "GetAddrInfoW"
+          },
+          {
+            "name": "GetNameInfoW"
+          },
+          {
+            "name": "WSADuplicateSocketW"
+          },
+          {
+            "name": "WSAGetLastError"
+          },
+          {
+            "name": "WSAGetOverlappedResult"
+          },
+          {
+            "name": "WSAIoctl"
+          },
+          {
+            "name": "WSARecv"
+          },
+          {
+            "name": "WSARecvFrom"
+          },
+          {
+            "name": "WSASend"
+          },
+          {
+            "name": "WSASendTo"
+          },
+          {
+            "name": "WSASetLastError"
+          },
+          {
+            "name": "WSASocketW"
+          },
+          {
+            "name": "WSAStartup"
+          },
+          {
+            "name": "bind"
+          },
+          {
+            "name": "closesocket"
+          },
+          {
+            "name": "connect"
+          },
+          {
+            "name": "getpeername"
+          },
+          {
+            "name": "getsockname"
+          },
+          {
+            "name": "getsockopt"
+          },
+          {
+            "name": "htonl"
+          },
+          {
+            "name": "htons"
+          },
+          {
+            "name": "ioctlsocket"
+          },
+          {
+            "name": "listen"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "setsockopt"
+          },
+          {
+            "name": "shutdown"
+          }
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "exports": [
+      {
+        "ordinal": 1,
+        "name": "uv_accept",
+        "rva": 136688,
+        "forwarder": null
+      },
+      {
+        "ordinal": 2,
+        "name": "uv_async_init",
+        "rva": 34816,
+        "forwarder": null
+      },
+      {
+        "ordinal": 3,
+        "name": "uv_async_send",
+        "rva": 32688,
+        "forwarder": null
+      },
+      {
+        "ordinal": 4,
+        "name": "uv_available_parallelism",
+        "rva": 185776,
+        "forwarder": null
+      },
+      {
+        "ordinal": 5,
+        "name": "uv_backend_fd",
+        "rva": 38704,
+        "forwarder": null
+      },
+      {
+        "ordinal": 6,
+        "name": "uv_backend_timeout",
+        "rva": 38800,
+        "forwarder": null
+      },
+      {
+        "ordinal": 7,
+        "name": "uv_barrier_destroy",
+        "rva": 14624,
+        "forwarder": null
+      },
+      {
+        "ordinal": 8,
+        "name": "uv_barrier_init",
+        "rva": 14336,
+        "forwarder": null
+      },
+      {
+        "ordinal": 9,
+        "name": "uv_barrier_wait",
+        "rva": 14448,
+        "forwarder": null
+      },
+      {
+        "ordinal": 10,
+        "name": "uv_buf_init",
+        "rva": 20768,
+        "forwarder": null
+      },
+      {
+        "ordinal": 11,
+        "name": "uv_cancel",
+        "rva": 16960,
+        "forwarder": null
+      },
+      {
+        "ordinal": 12,
+        "name": "uv_chdir",
+        "rva": 183920,
+        "forwarder": null
+      },
+      {
+        "ordinal": 13,
+        "name": "uv_check_init",
+        "rva": 93696,
+        "forwarder": null
+      },
+      {
+        "ordinal": 14,
+        "name": "uv_check_start",
+        "rva": 93760,
+        "forwarder": null
+      },
+      {
+        "ordinal": 15,
+        "name": "uv_check_stop",
+        "rva": 93856,
+        "forwarder": null
+      },
+      {
+        "ordinal": 16,
+        "name": "uv_clock_gettime",
+        "rva": 184960,
+        "forwarder": null
+      },
+      {
+        "ordinal": 17,
+        "name": "uv_close",
+        "rva": 92752,
+        "forwarder": null
+      },
+      {
+        "ordinal": 18,
+        "name": "uv_cond_broadcast",
+        "rva": 118272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 19,
+        "name": "uv_cond_destroy",
+        "rva": 118240,
+        "forwarder": null
+      },
+      {
+        "ordinal": 20,
+        "name": "uv_cond_init",
+        "rva": 118208,
+        "forwarder": null
+      },
+      {
+        "ordinal": 21,
+        "name": "uv_cond_signal",
+        "rva": 118256,
+        "forwarder": null
+      },
+      {
+        "ordinal": 22,
+        "name": "uv_cond_timedwait",
+        "rva": 118320,
+        "forwarder": null
+      },
+      {
+        "ordinal": 23,
+        "name": "uv_cond_wait",
+        "rva": 118288,
+        "forwarder": null
+      },
+      {
+        "ordinal": 24,
+        "name": "uv_cpu_info",
+        "rva": 185872,
+        "forwarder": null
+      },
+      {
+        "ordinal": 25,
+        "name": "uv_cpumask_size",
+        "rva": 40096,
+        "forwarder": null
+      },
+      {
+        "ordinal": 26,
+        "name": "uv_cwd",
+        "rva": 183744,
+        "forwarder": null
+      },
+      {
+        "ordinal": 27,
+        "name": "uv_default_loop",
+        "rva": 32512,
+        "forwarder": null
+      },
+      {
+        "ordinal": 28,
+        "name": "uv_disable_stdio_inheritance",
+        "rva": 130624,
+        "forwarder": null
+      },
+      {
+        "ordinal": 29,
+        "name": "uv_dlclose",
+        "rva": 41136,
+        "forwarder": null
+      },
+      {
+        "ordinal": 30,
+        "name": "uv_dlerror",
+        "rva": 41328,
+        "forwarder": null
+      },
+      {
+        "ordinal": 31,
+        "name": "uv_dlopen",
+        "rva": 40880,
+        "forwarder": null
+      },
+      {
+        "ordinal": 32,
+        "name": "uv_dlsym",
+        "rva": 41200,
+        "forwarder": null
+      },
+      {
+        "ordinal": 33,
+        "name": "uv_err_name",
+        "rva": 23040,
+        "forwarder": null
+      },
+      {
+        "ordinal": 34,
+        "name": "uv_err_name_r",
+        "rva": 20784,
+        "forwarder": null
+      },
+      {
+        "ordinal": 35,
+        "name": "uv_exepath",
+        "rva": 183488,
+        "forwarder": null
+      },
+      {
+        "ordinal": 36,
+        "name": "uv_fileno",
+        "rva": 39728,
+        "forwarder": null
+      },
+      {
+        "ordinal": 37,
+        "name": "uv_free_cpu_info",
+        "rva": 33280,
+        "forwarder": null
+      },
+      {
+        "ordinal": 38,
+        "name": "uv_free_interface_addresses",
+        "rva": 33888,
+        "forwarder": null
+      },
+      {
+        "ordinal": 39,
+        "name": "uv_freeaddrinfo",
+        "rva": 90944,
+        "forwarder": null
+      },
+      {
+        "ordinal": 40,
+        "name": "uv_fs_access",
+        "rva": 82496,
+        "forwarder": null
+      },
+      {
+        "ordinal": 41,
+        "name": "uv_fs_chmod",
+        "rva": 83072,
+        "forwarder": null
+      },
+      {
+        "ordinal": 42,
+        "name": "uv_fs_chown",
+        "rva": 77024,
+        "forwarder": null
+      },
+      {
+        "ordinal": 43,
+        "name": "uv_fs_close",
+        "rva": 68576,
+        "forwarder": null
+      },
+      {
+        "ordinal": 44,
+        "name": "uv_fs_closedir",
+        "rva": 73952,
+        "forwarder": null
+      },
+      {
+        "ordinal": 45,
+        "name": "uv_fs_copyfile",
+        "rva": 81344,
+        "forwarder": null
+      },
+      {
+        "ordinal": 46,
+        "name": "uv_fs_event_getpath",
+        "rva": 31776,
+        "forwarder": null
+      },
+      {
+        "ordinal": 47,
+        "name": "uv_fs_event_init",
+        "rva": 86368,
+        "forwarder": null
+      },
+      {
+        "ordinal": 48,
+        "name": "uv_fs_event_start",
+        "rva": 86496,
+        "forwarder": null
+      },
+      {
+        "ordinal": 49,
+        "name": "uv_fs_event_stop",
+        "rva": 87664,
+        "forwarder": null
+      },
+      {
+        "ordinal": 50,
+        "name": "uv_fs_fchmod",
+        "rva": 83648,
+        "forwarder": null
+      },
+      {
+        "ordinal": 51,
+        "name": "uv_fs_fchown",
+        "rva": 77584,
+        "forwarder": null
+      },
+      {
+        "ordinal": 52,
+        "name": "uv_fs_fdatasync",
+        "rva": 80800,
+        "forwarder": null
+      },
+      {
+        "ordinal": 53,
+        "name": "uv_fs_fstat",
+        "rva": 79520,
+        "forwarder": null
+      },
+      {
+        "ordinal": 54,
+        "name": "uv_fs_fsync",
+        "rva": 80544,
+        "forwarder": null
+      },
+      {
+        "ordinal": 55,
+        "name": "uv_fs_ftruncate",
+        "rva": 81056,
+        "forwarder": null
+      },
+      {
+        "ordinal": 56,
+        "name": "uv_fs_futime",
+        "rva": 84528,
+        "forwarder": null
+      },
+      {
+        "ordinal": 57,
+        "name": "uv_fs_get_path",
+        "rva": 34656,
+        "forwarder": null
+      },
+      {
+        "ordinal": 58,
+        "name": "uv_fs_get_ptr",
+        "rva": 34640,
+        "forwarder": null
+      },
+      {
+        "ordinal": 59,
+        "name": "uv_fs_get_result",
+        "rva": 34624,
+        "forwarder": null
+      },
+      {
+        "ordinal": 60,
+        "name": "uv_fs_get_statbuf",
+        "rva": 34672,
+        "forwarder": null
+      },
+      {
+        "ordinal": 61,
+        "name": "uv_fs_get_system_error",
+        "rva": 85984,
+        "forwarder": null
+      },
+      {
+        "ordinal": 62,
+        "name": "uv_fs_get_type",
+        "rva": 34608,
+        "forwarder": null
+      },
+      {
+        "ordinal": 63,
+        "name": "uv_fs_lchown",
+        "rva": 77840,
+        "forwarder": null
+      },
+      {
+        "ordinal": 64,
+        "name": "uv_fs_link",
+        "rva": 74240,
+        "forwarder": null
+      },
+      {
+        "ordinal": 65,
+        "name": "uv_fs_lstat",
+        "rva": 78960,
+        "forwarder": null
+      },
+      {
+        "ordinal": 66,
+        "name": "uv_fs_lutime",
+        "rva": 84832,
+        "forwarder": null
+      },
+      {
+        "ordinal": 67,
+        "name": "uv_fs_mkdir",
+        "rva": 70352,
+        "forwarder": null
+      },
+      {
+        "ordinal": 68,
+        "name": "uv_fs_mkdtemp",
+        "rva": 70928,
+        "forwarder": null
+      },
+      {
+        "ordinal": 69,
+        "name": "uv_fs_mkstemp",
+        "rva": 71440,
+        "forwarder": null
+      },
+      {
+        "ordinal": 70,
+        "name": "uv_fs_open",
+        "rva": 67984,
+        "forwarder": null
+      },
+      {
+        "ordinal": 71,
+        "name": "uv_fs_opendir",
+        "rva": 73088,
+        "forwarder": null
+      },
+      {
+        "ordinal": 72,
+        "name": "uv_fs_poll_getpath",
+        "rva": 6464,
+        "forwarder": null
+      },
+      {
+        "ordinal": 73,
+        "name": "uv_fs_poll_init",
+        "rva": 5888,
+        "forwarder": null
+      },
+      {
+        "ordinal": 74,
+        "name": "uv_fs_poll_start",
+        "rva": 5952,
+        "forwarder": null
+      },
+      {
+        "ordinal": 75,
+        "name": "uv_fs_poll_stop",
+        "rva": 6336,
+        "forwarder": null
+      },
+      {
+        "ordinal": 76,
+        "name": "uv_fs_read",
+        "rva": 68832,
+        "forwarder": null
+      },
+      {
+        "ordinal": 77,
+        "name": "uv_fs_readdir",
+        "rva": 73648,
+        "forwarder": null
+      },
+      {
+        "ordinal": 78,
+        "name": "uv_fs_readlink",
+        "rva": 75792,
+        "forwarder": null
+      },
+      {
+        "ordinal": 79,
+        "name": "uv_fs_realpath",
+        "rva": 76352,
+        "forwarder": null
+      },
+      {
+        "ordinal": 80,
+        "name": "uv_fs_rename",
+        "rva": 79776,
+        "forwarder": null
+      },
+      {
+        "ordinal": 81,
+        "name": "uv_fs_req_cleanup",
+        "rva": 67744,
+        "forwarder": null
+      },
+      {
+        "ordinal": 82,
+        "name": "uv_fs_rmdir",
+        "rva": 71952,
+        "forwarder": null
+      },
+      {
+        "ordinal": 83,
+        "name": "uv_fs_scandir",
+        "rva": 72512,
+        "forwarder": null
+      },
+      {
+        "ordinal": 84,
+        "name": "uv_fs_scandir_next",
+        "rva": 32064,
+        "forwarder": null
+      },
+      {
+        "ordinal": 85,
+        "name": "uv_fs_sendfile",
+        "rva": 82160,
+        "forwarder": null
+      },
+      {
+        "ordinal": 86,
+        "name": "uv_fs_stat",
+        "rva": 78400,
+        "forwarder": null
+      },
+      {
+        "ordinal": 87,
+        "name": "uv_fs_statfs",
+        "rva": 85424,
+        "forwarder": null
+      },
+      {
+        "ordinal": 88,
+        "name": "uv_fs_symlink",
+        "rva": 75008,
+        "forwarder": null
+      },
+      {
+        "ordinal": 89,
+        "name": "uv_fs_unlink",
+        "rva": 69792,
+        "forwarder": null
+      },
+      {
+        "ordinal": 90,
+        "name": "uv_fs_utime",
+        "rva": 83936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 91,
+        "name": "uv_fs_write",
+        "rva": 69296,
+        "forwarder": null
+      },
+      {
+        "ordinal": 92,
+        "name": "uv_get_available_memory",
+        "rva": 184336,
+        "forwarder": null
+      },
+      {
+        "ordinal": 93,
+        "name": "uv_get_constrained_memory",
+        "rva": 184320,
+        "forwarder": null
+      },
+      {
+        "ordinal": 94,
+        "name": "uv_get_free_memory",
+        "rva": 184224,
+        "forwarder": null
+      },
+      {
+        "ordinal": 95,
+        "name": "uv_get_osfhandle",
+        "rva": 93216,
+        "forwarder": null
+      },
+      {
+        "ordinal": 96,
+        "name": "uv_get_process_title",
+        "rva": 184768,
+        "forwarder": null
+      },
+      {
+        "ordinal": 97,
+        "name": "uv_get_total_memory",
+        "rva": 184272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 98,
+        "name": "uv_getaddrinfo",
+        "rva": 90960,
+        "forwarder": null
+      },
+      {
+        "ordinal": 99,
+        "name": "uv_getnameinfo",
+        "rva": 92320,
+        "forwarder": null
+      },
+      {
+        "ordinal": 100,
+        "name": "uv_getrusage",
+        "rva": 187856,
+        "forwarder": null
+      },
+      {
+        "ordinal": 101,
+        "name": "uv_getrusage_thread",
+        "rva": 188272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 102,
+        "name": "uv_gettimeofday",
+        "rva": 192928,
+        "forwarder": null
+      },
+      {
+        "ordinal": 103,
+        "name": "uv_guess_handle",
+        "rva": 92624,
+        "forwarder": null
+      },
+      {
+        "ordinal": 104,
+        "name": "uv_handle_get_data",
+        "rva": 34256,
+        "forwarder": null
+      },
+      {
+        "ordinal": 105,
+        "name": "uv_handle_get_loop",
+        "rva": 34272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 106,
+        "name": "uv_handle_get_type",
+        "rva": 34240,
+        "forwarder": null
+      },
+      {
+        "ordinal": 107,
+        "name": "uv_handle_set_data",
+        "rva": 34288,
+        "forwarder": null
+      },
+      {
+        "ordinal": 108,
+        "name": "uv_handle_size",
+        "rva": 20688,
+        "forwarder": null
+      },
+      {
+        "ordinal": 109,
+        "name": "uv_handle_type_name",
+        "rva": 33936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 110,
+        "name": "uv_has_ref",
+        "rva": 31616,
+        "forwarder": null
+      },
+      {
+        "ordinal": 111,
+        "name": "uv_hrtime",
+        "rva": 185280,
+        "forwarder": null
+      },
+      {
+        "ordinal": 112,
+        "name": "uv_idle_init",
+        "rva": 94096,
+        "forwarder": null
+      },
+      {
+        "ordinal": 113,
+        "name": "uv_idle_start",
+        "rva": 94160,
+        "forwarder": null
+      },
+      {
+        "ordinal": 114,
+        "name": "uv_idle_stop",
+        "rva": 94256,
+        "forwarder": null
+      },
+      {
+        "ordinal": 115,
+        "name": "uv_if_indextoiid",
+        "rva": 91856,
+        "forwarder": null
+      },
+      {
+        "ordinal": 116,
+        "name": "uv_if_indextoname",
+        "rva": 91712,
+        "forwarder": null
+      },
+      {
+        "ordinal": 117,
+        "name": "uv_inet_ntop",
+        "rva": 11728,
+        "forwarder": null
+      },
+      {
+        "ordinal": 118,
+        "name": "uv_inet_pton",
+        "rva": 13536,
+        "forwarder": null
+      },
+      {
+        "ordinal": 119,
+        "name": "uv_interface_addresses",
+        "rva": 186672,
+        "forwarder": null
+      },
+      {
+        "ordinal": 120,
+        "name": "uv_ip4_addr",
+        "rva": 29200,
+        "forwarder": null
+      },
+      {
+        "ordinal": 121,
+        "name": "uv_ip4_name",
+        "rva": 29536,
+        "forwarder": null
+      },
+      {
+        "ordinal": 122,
+        "name": "uv_ip6_addr",
+        "rva": 29280,
+        "forwarder": null
+      },
+      {
+        "ordinal": 123,
+        "name": "uv_ip6_name",
+        "rva": 29568,
+        "forwarder": null
+      },
+      {
+        "ordinal": 124,
+        "name": "uv_ip_name",
+        "rva": 29600,
+        "forwarder": null
+      },
+      {
+        "ordinal": 125,
+        "name": "uv_is_active",
+        "rva": 92736,
+        "forwarder": null
+      },
+      {
+        "ordinal": 126,
+        "name": "uv_is_closing",
+        "rva": 93200,
+        "forwarder": null
+      },
+      {
+        "ordinal": 127,
+        "name": "uv_is_readable",
+        "rva": 138144,
+        "forwarder": null
+      },
+      {
+        "ordinal": 128,
+        "name": "uv_is_writable",
+        "rva": 138160,
+        "forwarder": null
+      },
+      {
+        "ordinal": 129,
+        "name": "uv_key_create",
+        "rva": 118432,
+        "forwarder": null
+      },
+      {
+        "ordinal": 130,
+        "name": "uv_key_delete",
+        "rva": 118480,
+        "forwarder": null
+      },
+      {
+        "ordinal": 131,
+        "name": "uv_key_get",
+        "rva": 118528,
+        "forwarder": null
+      },
+      {
+        "ordinal": 132,
+        "name": "uv_key_set",
+        "rva": 118592,
+        "forwarder": null
+      },
+      {
+        "ordinal": 133,
+        "name": "uv_kill",
+        "rva": 130496,
+        "forwarder": null
+      },
+      {
+        "ordinal": 134,
+        "name": "uv_library_shutdown",
+        "rva": 33408,
+        "forwarder": null
+      },
+      {
+        "ordinal": 135,
+        "name": "uv_listen",
+        "rva": 136592,
+        "forwarder": null
+      },
+      {
+        "ordinal": 136,
+        "name": "uv_loadavg",
+        "rva": 184208,
+        "forwarder": null
+      },
+      {
+        "ordinal": 137,
+        "name": "uv_loop_alive",
+        "rva": 38736,
+        "forwarder": null
+      },
+      {
+        "ordinal": 138,
+        "name": "uv_loop_close",
+        "rva": 32816,
+        "forwarder": null
+      },
+      {
+        "ordinal": 139,
+        "name": "uv_loop_configure",
+        "rva": 32464,
+        "forwarder": null
+      },
+      {
+        "ordinal": 140,
+        "name": "uv_loop_delete",
+        "rva": 32928,
+        "forwarder": null
+      },
+      {
+        "ordinal": 141,
+        "name": "uv_loop_fork",
+        "rva": 38720,
+        "forwarder": null
+      },
+      {
+        "ordinal": 142,
+        "name": "uv_loop_get_data",
+        "rva": 34688,
+        "forwarder": null
+      },
+      {
+        "ordinal": 143,
+        "name": "uv_loop_init",
+        "rva": 37264,
+        "forwarder": null
+      },
+      {
+        "ordinal": 144,
+        "name": "uv_loop_new",
+        "rva": 32592,
+        "forwarder": null
+      },
+      {
+        "ordinal": 145,
+        "name": "uv_loop_set_data",
+        "rva": 34704,
+        "forwarder": null
+      },
+      {
+        "ordinal": 146,
+        "name": "uv_loop_size",
+        "rva": 20752,
+        "forwarder": null
+      },
+      {
+        "ordinal": 147,
+        "name": "uv_metrics_idle_time",
+        "rva": 33792,
+        "forwarder": null
+      },
+      {
+        "ordinal": 148,
+        "name": "uv_metrics_info",
+        "rva": 33696,
+        "forwarder": null
+      },
+      {
+        "ordinal": 149,
+        "name": "uv_mutex_destroy",
+        "rva": 117680,
+        "forwarder": null
+      },
+      {
+        "ordinal": 150,
+        "name": "uv_mutex_init",
+        "rva": 117616,
+        "forwarder": null
+      },
+      {
+        "ordinal": 151,
+        "name": "uv_mutex_init_recursive",
+        "rva": 117648,
+        "forwarder": null
+      },
+      {
+        "ordinal": 152,
+        "name": "uv_mutex_lock",
+        "rva": 117696,
+        "forwarder": null
+      },
+      {
+        "ordinal": 153,
+        "name": "uv_mutex_trylock",
+        "rva": 117712,
+        "forwarder": null
+      },
+      {
+        "ordinal": 154,
+        "name": "uv_mutex_unlock",
+        "rva": 117744,
+        "forwarder": null
+      },
+      {
+        "ordinal": 155,
+        "name": "uv_now",
+        "rva": 31648,
+        "forwarder": null
+      },
+      {
+        "ordinal": 156,
+        "name": "uv_once",
+        "rva": 115488,
+        "forwarder": null
+      },
+      {
+        "ordinal": 157,
+        "name": "uv_open_osfhandle",
+        "rva": 93232,
+        "forwarder": null
+      },
+      {
+        "ordinal": 158,
+        "name": "uv_os_environ",
+        "rva": 189248,
+        "forwarder": null
+      },
+      {
+        "ordinal": 159,
+        "name": "uv_os_free_environ",
+        "rva": 33168,
+        "forwarder": null
+      },
+      {
+        "ordinal": 160,
+        "name": "uv_os_free_group",
+        "rva": 20608,
+        "forwarder": null
+      },
+      {
+        "ordinal": 161,
+        "name": "uv_os_free_passwd",
+        "rva": 20512,
+        "forwarder": null
+      },
+      {
+        "ordinal": 162,
+        "name": "uv_os_get_group",
+        "rva": 189232,
+        "forwarder": null
+      },
+      {
+        "ordinal": 163,
+        "name": "uv_os_get_passwd",
+        "rva": 189200,
+        "forwarder": null
+      },
+      {
+        "ordinal": 164,
+        "name": "uv_os_get_passwd2",
+        "rva": 189216,
+        "forwarder": null
+      },
+      {
+        "ordinal": 165,
+        "name": "uv_os_getenv",
+        "rva": 189808,
+        "forwarder": null
+      },
+      {
+        "ordinal": 166,
+        "name": "uv_os_gethostname",
+        "rva": 190864,
+        "forwarder": null
+      },
+      {
+        "ordinal": 167,
+        "name": "uv_os_getpid",
+        "rva": 184384,
+        "forwarder": null
+      },
+      {
+        "ordinal": 168,
+        "name": "uv_os_getppid",
+        "rva": 184400,
+        "forwarder": null
+      },
+      {
+        "ordinal": 169,
+        "name": "uv_os_getpriority",
+        "rva": 191104,
+        "forwarder": null
+      },
+      {
+        "ordinal": 170,
+        "name": "uv_os_homedir",
+        "rva": 190272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 171,
+        "name": "uv_os_setenv",
+        "rva": 190448,
+        "forwarder": null
+      },
+      {
+        "ordinal": 172,
+        "name": "uv_os_setpriority",
+        "rva": 191376,
+        "forwarder": null
+      },
+      {
+        "ordinal": 173,
+        "name": "uv_os_tmpdir",
+        "rva": 188576,
+        "forwarder": null
+      },
+      {
+        "ordinal": 174,
+        "name": "uv_os_uname",
+        "rva": 191856,
+        "forwarder": null
+      },
+      {
+        "ordinal": 175,
+        "name": "uv_os_unsetenv",
+        "rva": 190720,
+        "forwarder": null
+      },
+      {
+        "ordinal": 176,
+        "name": "uv_pipe",
+        "rva": 102496,
+        "forwarder": null
+      },
+      {
+        "ordinal": 177,
+        "name": "uv_pipe_bind",
+        "rva": 104704,
+        "forwarder": null
+      },
+      {
+        "ordinal": 178,
+        "name": "uv_pipe_bind2",
+        "rva": 103872,
+        "forwarder": null
+      },
+      {
+        "ordinal": 179,
+        "name": "uv_pipe_chmod",
+        "rva": 114656,
+        "forwarder": null
+      },
+      {
+        "ordinal": 180,
+        "name": "uv_pipe_connect",
+        "rva": 104752,
+        "forwarder": null
+      },
+      {
+        "ordinal": 181,
+        "name": "uv_pipe_connect2",
+        "rva": 105664,
+        "forwarder": null
+      },
+      {
+        "ordinal": 182,
+        "name": "uv_pipe_getpeername",
+        "rva": 114416,
+        "forwarder": null
+      },
+      {
+        "ordinal": 183,
+        "name": "uv_pipe_getsockname",
+        "rva": 114224,
+        "forwarder": null
+      },
+      {
+        "ordinal": 184,
+        "name": "uv_pipe_init",
+        "rva": 102272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 185,
+        "name": "uv_pipe_open",
+        "rva": 113728,
+        "forwarder": null
+      },
+      {
+        "ordinal": 186,
+        "name": "uv_pipe_pending_count",
+        "rva": 114192,
+        "forwarder": null
+      },
+      {
+        "ordinal": 187,
+        "name": "uv_pipe_pending_instances",
+        "rva": 103840,
+        "forwarder": null
+      },
+      {
+        "ordinal": 188,
+        "name": "uv_pipe_pending_type",
+        "rva": 114624,
+        "forwarder": null
+      },
+      {
+        "ordinal": 189,
+        "name": "uv_poll_init",
+        "rva": 120224,
+        "forwarder": null
+      },
+      {
+        "ordinal": 190,
+        "name": "uv_poll_init_socket",
+        "rva": 119392,
+        "forwarder": null
+      },
+      {
+        "ordinal": 191,
+        "name": "uv_poll_start",
+        "rva": 120272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 192,
+        "name": "uv_poll_stop",
+        "rva": 120656,
+        "forwarder": null
+      },
+      {
+        "ordinal": 193,
+        "name": "uv_prepare_init",
+        "rva": 93328,
+        "forwarder": null
+      },
+      {
+        "ordinal": 194,
+        "name": "uv_prepare_start",
+        "rva": 93392,
+        "forwarder": null
+      },
+      {
+        "ordinal": 195,
+        "name": "uv_prepare_stop",
+        "rva": 93488,
+        "forwarder": null
+      },
+      {
+        "ordinal": 196,
+        "name": "uv_print_active_handles",
+        "rva": 31504,
+        "forwarder": null
+      },
+      {
+        "ordinal": 197,
+        "name": "uv_print_all_handles",
+        "rva": 31488,
+        "forwarder": null
+      },
+      {
+        "ordinal": 198,
+        "name": "uv_process_get_pid",
+        "rva": 34592,
+        "forwarder": null
+      },
+      {
+        "ordinal": 199,
+        "name": "uv_process_kill",
+        "rva": 130432,
+        "forwarder": null
+      },
+      {
+        "ordinal": 200,
+        "name": "uv_queue_work",
+        "rva": 16720,
+        "forwarder": null
+      },
+      {
+        "ordinal": 201,
+        "name": "uv_random",
+        "rva": 13936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 202,
+        "name": "uv_read_start",
+        "rva": 33072,
+        "forwarder": null
+      },
+      {
+        "ordinal": 203,
+        "name": "uv_read_stop",
+        "rva": 136848,
+        "forwarder": null
+      },
+      {
+        "ordinal": 204,
+        "name": "uv_recv_buffer_size",
+        "rva": 31744,
+        "forwarder": null
+      },
+      {
+        "ordinal": 205,
+        "name": "uv_ref",
+        "rva": 31520,
+        "forwarder": null
+      },
+      {
+        "ordinal": 206,
+        "name": "uv_replace_allocator",
+        "rva": 20448,
+        "forwarder": null
+      },
+      {
+        "ordinal": 207,
+        "name": "uv_req_get_data",
+        "rva": 34512,
+        "forwarder": null
+      },
+      {
+        "ordinal": 208,
+        "name": "uv_req_get_type",
+        "rva": 34496,
+        "forwarder": null
+      },
+      {
+        "ordinal": 209,
+        "name": "uv_req_set_data",
+        "rva": 34528,
+        "forwarder": null
+      },
+      {
+        "ordinal": 210,
+        "name": "uv_req_size",
+        "rva": 20720,
+        "forwarder": null
+      },
+      {
+        "ordinal": 211,
+        "name": "uv_req_type_name",
+        "rva": 34304,
+        "forwarder": null
+      },
+      {
+        "ordinal": 212,
+        "name": "uv_resident_set_memory",
+        "rva": 185616,
+        "forwarder": null
+      },
+      {
+        "ordinal": 213,
+        "name": "uv_run",
+        "rva": 38880,
+        "forwarder": null
+      },
+      {
+        "ordinal": 214,
+        "name": "uv_rwlock_destroy",
+        "rva": 117808,
+        "forwarder": null
+      },
+      {
+        "ordinal": 215,
+        "name": "uv_rwlock_init",
+        "rva": 117760,
+        "forwarder": null
+      },
+      {
+        "ordinal": 216,
+        "name": "uv_rwlock_rdlock",
+        "rva": 117824,
+        "forwarder": null
+      },
+      {
+        "ordinal": 217,
+        "name": "uv_rwlock_rdunlock",
+        "rva": 117872,
+        "forwarder": null
+      },
+      {
+        "ordinal": 218,
+        "name": "uv_rwlock_tryrdlock",
+        "rva": 117840,
+        "forwarder": null
+      },
+      {
+        "ordinal": 219,
+        "name": "uv_rwlock_trywrlock",
+        "rva": 117904,
+        "forwarder": null
+      },
+      {
+        "ordinal": 220,
+        "name": "uv_rwlock_wrlock",
+        "rva": 117888,
+        "forwarder": null
+      },
+      {
+        "ordinal": 221,
+        "name": "uv_rwlock_wrunlock",
+        "rva": 117936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 222,
+        "name": "uv_sem_destroy",
+        "rva": 118032,
+        "forwarder": null
+      },
+      {
+        "ordinal": 223,
+        "name": "uv_sem_init",
+        "rva": 117952,
+        "forwarder": null
+      },
+      {
+        "ordinal": 224,
+        "name": "uv_sem_post",
+        "rva": 118064,
+        "forwarder": null
+      },
+      {
+        "ordinal": 225,
+        "name": "uv_sem_trywait",
+        "rva": 118144,
+        "forwarder": null
+      },
+      {
+        "ordinal": 226,
+        "name": "uv_sem_wait",
+        "rva": 118112,
+        "forwarder": null
+      },
+      {
+        "ordinal": 227,
+        "name": "uv_send_buffer_size",
+        "rva": 31760,
+        "forwarder": null
+      },
+      {
+        "ordinal": 228,
+        "name": "uv_set_process_title",
+        "rva": 184512,
+        "forwarder": null
+      },
+      {
+        "ordinal": 229,
+        "name": "uv_setup_args",
+        "rva": 184480,
+        "forwarder": null
+      },
+      {
+        "ordinal": 230,
+        "name": "uv_shutdown",
+        "rva": 137904,
+        "forwarder": null
+      },
+      {
+        "ordinal": 231,
+        "name": "uv_signal_init",
+        "rva": 133200,
+        "forwarder": null
+      },
+      {
+        "ordinal": 232,
+        "name": "uv_signal_start",
+        "rva": 136304,
+        "forwarder": null
+      },
+      {
+        "ordinal": 233,
+        "name": "uv_signal_start_oneshot",
+        "rva": 136320,
+        "forwarder": null
+      },
+      {
+        "ordinal": 234,
+        "name": "uv_signal_stop",
+        "rva": 133312,
+        "forwarder": null
+      },
+      {
+        "ordinal": 235,
+        "name": "uv_sleep",
+        "rva": 193120,
+        "forwarder": null
+      },
+      {
+        "ordinal": 236,
+        "name": "uv_socketpair",
+        "rva": 151776,
+        "forwarder": null
+      },
+      {
+        "ordinal": 237,
+        "name": "uv_spawn",
+        "rva": 126464,
+        "forwarder": null
+      },
+      {
+        "ordinal": 238,
+        "name": "uv_stop",
+        "rva": 31632,
+        "forwarder": null
+      },
+      {
+        "ordinal": 239,
+        "name": "uv_stream_get_write_queue_size",
+        "rva": 34544,
+        "forwarder": null
+      },
+      {
+        "ordinal": 240,
+        "name": "uv_stream_set_blocking",
+        "rva": 138176,
+        "forwarder": null
+      },
+      {
+        "ordinal": 241,
+        "name": "uv_strerror",
+        "rva": 27536,
+        "forwarder": null
+      },
+      {
+        "ordinal": 242,
+        "name": "uv_strerror_r",
+        "rva": 24736,
+        "forwarder": null
+      },
+      {
+        "ordinal": 243,
+        "name": "uv_tcp_bind",
+        "rva": 29680,
+        "forwarder": null
+      },
+      {
+        "ordinal": 244,
+        "name": "uv_tcp_close_reset",
+        "rva": 142272,
+        "forwarder": null
+      },
+      {
+        "ordinal": 245,
+        "name": "uv_tcp_connect",
+        "rva": 29936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 246,
+        "name": "uv_tcp_getpeername",
+        "rva": 144128,
+        "forwarder": null
+      },
+      {
+        "ordinal": 247,
+        "name": "uv_tcp_getsockname",
+        "rva": 144080,
+        "forwarder": null
+      },
+      {
+        "ordinal": 248,
+        "name": "uv_tcp_init",
+        "rva": 141488,
+        "forwarder": null
+      },
+      {
+        "ordinal": 249,
+        "name": "uv_tcp_init_ex",
+        "rva": 141056,
+        "forwarder": null
+      },
+      {
+        "ordinal": 250,
+        "name": "uv_tcp_keepalive",
+        "rva": 147936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 251,
+        "name": "uv_tcp_keepalive_ex",
+        "rva": 148432,
+        "forwarder": null
+      },
+      {
+        "ordinal": 252,
+        "name": "uv_tcp_nodelay",
+        "rva": 147808,
+        "forwarder": null
+      },
+      {
+        "ordinal": 253,
+        "name": "uv_tcp_open",
+        "rva": 149680,
+        "forwarder": null
+      },
+      {
+        "ordinal": 254,
+        "name": "uv_tcp_simultaneous_accepts",
+        "rva": 148928,
+        "forwarder": null
+      },
+      {
+        "ordinal": 255,
+        "name": "uv_thread_create",
+        "rva": 115536,
+        "forwarder": null
+      },
+      {
+        "ordinal": 256,
+        "name": "uv_thread_create_ex",
+        "rva": 115824,
+        "forwarder": null
+      },
+      {
+        "ordinal": 257,
+        "name": "uv_thread_detach",
+        "rva": 115760,
+        "forwarder": null
+      },
+      {
+        "ordinal": 258,
+        "name": "uv_thread_equal",
+        "rva": 116992,
+        "forwarder": null
+      },
+      {
+        "ordinal": 259,
+        "name": "uv_thread_getaffinity",
+        "rva": 116432,
+        "forwarder": null
+      },
+      {
+        "ordinal": 260,
+        "name": "uv_thread_getcpu",
+        "rva": 116640,
+        "forwarder": null
+      },
+      {
+        "ordinal": 261,
+        "name": "uv_thread_getname",
+        "rva": 117232,
+        "forwarder": null
+      },
+      {
+        "ordinal": 262,
+        "name": "uv_thread_getpriority",
+        "rva": 191616,
+        "forwarder": null
+      },
+      {
+        "ordinal": 263,
+        "name": "uv_thread_join",
+        "rva": 116912,
+        "forwarder": null
+      },
+      {
+        "ordinal": 264,
+        "name": "uv_thread_self",
+        "rva": 116656,
+        "forwarder": null
+      },
+      {
+        "ordinal": 265,
+        "name": "uv_thread_setaffinity",
+        "rva": 116176,
+        "forwarder": null
+      },
+      {
+        "ordinal": 266,
+        "name": "uv_thread_setname",
+        "rva": 117008,
+        "forwarder": null
+      },
+      {
+        "ordinal": 267,
+        "name": "uv_thread_setpriority",
+        "rva": 191696,
+        "forwarder": null
+      },
+      {
+        "ordinal": 268,
+        "name": "uv_timer_again",
+        "rva": 18832,
+        "forwarder": null
+      },
+      {
+        "ordinal": 269,
+        "name": "uv_timer_get_due_in",
+        "rva": 18944,
+        "forwarder": null
+      },
+      {
+        "ordinal": 270,
+        "name": "uv_timer_get_repeat",
+        "rva": 18928,
+        "forwarder": null
+      },
+      {
+        "ordinal": 271,
+        "name": "uv_timer_init",
+        "rva": 17344,
+        "forwarder": null
+      },
+      {
+        "ordinal": 272,
+        "name": "uv_timer_set_repeat",
+        "rva": 18912,
+        "forwarder": null
+      },
+      {
+        "ordinal": 273,
+        "name": "uv_timer_start",
+        "rva": 18304,
+        "forwarder": null
+      },
+      {
+        "ordinal": 274,
+        "name": "uv_timer_stop",
+        "rva": 17440,
+        "forwarder": null
+      },
+      {
+        "ordinal": 275,
+        "name": "uv_translate_sys_error",
+        "rva": 41600,
+        "forwarder": null
+      },
+      {
+        "ordinal": 276,
+        "name": "uv_try_write",
+        "rva": 137520,
+        "forwarder": null
+      },
+      {
+        "ordinal": 277,
+        "name": "uv_try_write2",
+        "rva": 137696,
+        "forwarder": null
+      },
+      {
+        "ordinal": 278,
+        "name": "uv_tty_get_vterm_state",
+        "rva": 173152,
+        "forwarder": null
+      },
+      {
+        "ordinal": 279,
+        "name": "uv_tty_get_winsize",
+        "rva": 163936,
+        "forwarder": null
+      },
+      {
+        "ordinal": 280,
+        "name": "uv_tty_init",
+        "rva": 162688,
+        "forwarder": null
+      },
+      {
+        "ordinal": 281,
+        "name": "uv_tty_reset_mode",
+        "rva": 173008,
+        "forwarder": null
+      },
+      {
+        "ordinal": 282,
+        "name": "uv_tty_set_mode",
+        "rva": 171616,
+        "forwarder": null
+      },
+      {
+        "ordinal": 283,
+        "name": "uv_tty_set_vterm_state",
+        "rva": 173088,
+        "forwarder": null
+      },
+      {
+        "ordinal": 284,
+        "name": "uv_udp_bind",
+        "rva": 29872,
+        "forwarder": null
+      },
+      {
+        "ordinal": 285,
+        "name": "uv_udp_connect",
+        "rva": 30016,
+        "forwarder": null
+      },
+      {
+        "ordinal": 286,
+        "name": "uv_udp_get_send_queue_count",
+        "rva": 34576,
+        "forwarder": null
+      },
+      {
+        "ordinal": 287,
+        "name": "uv_udp_get_send_queue_size",
+        "rva": 34560,
+        "forwarder": null
+      },
+      {
+        "ordinal": 288,
+        "name": "uv_udp_getpeername",
+        "rva": 174320,
+        "forwarder": null
+      },
+      {
+        "ordinal": 289,
+        "name": "uv_udp_getsockname",
+        "rva": 174368,
+        "forwarder": null
+      },
+      {
+        "ordinal": 290,
+        "name": "uv_udp_init",
+        "rva": 29856,
+        "forwarder": null
+      },
+      {
+        "ordinal": 291,
+        "name": "uv_udp_init_ex",
+        "rva": 29760,
+        "forwarder": null
+      },
+      {
+        "ordinal": 292,
+        "name": "uv_udp_open",
+        "rva": 179584,
+        "forwarder": null
+      },
+      {
+        "ordinal": 293,
+        "name": "uv_udp_open_ex",
+        "rva": 179168,
+        "forwarder": null
+      },
+      {
+        "ordinal": 294,
+        "name": "uv_udp_recv_start",
+        "rva": 31232,
+        "forwarder": null
+      },
+      {
+        "ordinal": 295,
+        "name": "uv_udp_recv_stop",
+        "rva": 31264,
+        "forwarder": null
+      },
+      {
+        "ordinal": 296,
+        "name": "uv_udp_send",
+        "rva": 30432,
+        "forwarder": null
+      },
+      {
+        "ordinal": 297,
+        "name": "uv_udp_set_broadcast",
+        "rva": 178992,
+        "forwarder": null
+      },
+      {
+        "ordinal": 298,
+        "name": "uv_udp_set_membership",
+        "rva": 177792,
+        "forwarder": null
+      },
+      {
+        "ordinal": 299,
+        "name": "uv_udp_set_multicast_interface",
+        "rva": 178656,
+        "forwarder": null
+      },
+      {
+        "ordinal": 300,
+        "name": "uv_udp_set_multicast_loop",
+        "rva": 179888,
+        "forwarder": null
+      },
+      {
+        "ordinal": 301,
+        "name": "uv_udp_set_multicast_ttl",
+        "rva": 179744,
+        "forwarder": null
+      },
+      {
+        "ordinal": 302,
+        "name": "uv_udp_set_source_membership",
+        "rva": 178160,
+        "forwarder": null
+      },
+      {
+        "ordinal": 303,
+        "name": "uv_udp_set_ttl",
+        "rva": 179600,
+        "forwarder": null
+      },
+      {
+        "ordinal": 304,
+        "name": "uv_udp_try_send",
+        "rva": 30704,
+        "forwarder": null
+      },
+      {
+        "ordinal": 305,
+        "name": "uv_udp_try_send2",
+        "rva": 30944,
+        "forwarder": null
+      },
+      {
+        "ordinal": 306,
+        "name": "uv_udp_using_recvmmsg",
+        "rva": 174912,
+        "forwarder": null
+      },
+      {
+        "ordinal": 307,
+        "name": "uv_unref",
+        "rva": 31568,
+        "forwarder": null
+      },
+      {
+        "ordinal": 308,
+        "name": "uv_update_time",
+        "rva": 38128,
+        "forwarder": null
+      },
+      {
+        "ordinal": 309,
+        "name": "uv_uptime",
+        "rva": 185696,
+        "forwarder": null
+      },
+      {
+        "ordinal": 310,
+        "name": "uv_utf16_length_as_wtf8",
+        "rva": 9888,
+        "forwarder": null
+      },
+      {
+        "ordinal": 311,
+        "name": "uv_utf16_to_wtf8",
+        "rva": 10048,
+        "forwarder": null
+      },
+      {
+        "ordinal": 312,
+        "name": "uv_version",
+        "rva": 34720,
+        "forwarder": null
+      },
+      {
+        "ordinal": 313,
+        "name": "uv_version_string",
+        "rva": 34736,
+        "forwarder": null
+      },
+      {
+        "ordinal": 314,
+        "name": "uv_walk",
+        "rva": 31296,
+        "forwarder": null
+      },
+      {
+        "ordinal": 315,
+        "name": "uv_write",
+        "rva": 136992,
+        "forwarder": null
+      },
+      {
+        "ordinal": 316,
+        "name": "uv_write2",
+        "rva": 137280,
+        "forwarder": null
+      },
+      {
+        "ordinal": 317,
+        "name": "uv_write_nwritten",
+        "rva": 138224,
+        "forwarder": null
+      },
+      {
+        "ordinal": 318,
+        "name": "uv_wtf8_length_as_utf16",
+        "rva": 9296,
+        "forwarder": null
+      },
+      {
+        "ordinal": 319,
+        "name": "uv_wtf8_to_utf16",
+        "rva": 9568,
+        "forwarder": null
+      }
+    ]
+  },
+  {
+    "file": "uv_run_tests.exe",
+    "sha256": "42ce060fb7cab03a7c008c2fdd85c37fe05e4c9fdc2b7343ec30815d2750f712",
+    "machine": "0x8664",
+    "imports": [
+      {
+        "dll": "ADVAPI32.dll",
+        "symbols": [
+          {
+            "name": "GetTokenInformation"
+          },
+          {
+            "name": "OpenProcessToken"
+          }
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          {
+            "name": "CloseHandle"
+          },
+          {
+            "name": "CreateConsoleScreenBuffer"
+          },
+          {
+            "name": "CreateFileA"
+          },
+          {
+            "name": "CreateFileW"
+          },
+          {
+            "name": "CreateNamedPipeA"
+          },
+          {
+            "name": "CreatePipe"
+          },
+          {
+            "name": "CreateProcessW"
+          },
+          {
+            "name": "DeleteCriticalSection"
+          },
+          {
+            "name": "DeviceIoControl"
+          },
+          {
+            "name": "DuplicateHandle"
+          },
+          {
+            "name": "EnterCriticalSection"
+          },
+          {
+            "name": "FillConsoleOutputAttribute"
+          },
+          {
+            "name": "FillConsoleOutputCharacterA"
+          },
+          {
+            "name": "FillConsoleOutputCharacterW"
+          },
+          {
+            "name": "FlushFileBuffers"
+          },
+          {
+            "name": "GetConsoleCursorInfo"
+          },
+          {
+            "name": "GetConsoleScreenBufferInfo"
+          },
+          {
+            "name": "GetCurrentProcess"
+          },
+          {
+            "name": "GetCurrentProcessId"
+          },
+          {
+            "name": "GetEnvironmentVariableW"
+          },
+          {
+            "name": "GetExitCodeProcess"
+          },
+          {
+            "name": "GetFileSize"
+          },
+          {
+            "name": "GetFileSizeEx"
+          },
+          {
+            "name": "GetHandleInformation"
+          },
+          {
+            "name": "GetLastError"
+          },
+          {
+            "name": "GetLongPathNameW"
+          },
+          {
+            "name": "GetModuleFileNameW"
+          },
+          {
+            "name": "GetShortPathNameW"
+          },
+          {
+            "name": "GetStartupInfoA"
+          },
+          {
+            "name": "GetStdHandle"
+          },
+          {
+            "name": "GetTempFileNameW"
+          },
+          {
+            "name": "GetTempPathW"
+          },
+          {
+            "name": "InitializeCriticalSection"
+          },
+          {
+            "name": "IsDBCSLeadByteEx"
+          },
+          {
+            "name": "LeaveCriticalSection"
+          },
+          {
+            "name": "MultiByteToWideChar"
+          },
+          {
+            "name": "ReadConsoleOutputAttribute"
+          },
+          {
+            "name": "ReadConsoleOutputCharacterA"
+          },
+          {
+            "name": "ReadFile"
+          },
+          {
+            "name": "SetConsoleCursorInfo"
+          },
+          {
+            "name": "SetConsoleCursorPosition"
+          },
+          {
+            "name": "SetEnvironmentVariableA"
+          },
+          {
+            "name": "SetEnvironmentVariableW"
+          },
+          {
+            "name": "SetErrorMode"
+          },
+          {
+            "name": "SetFileAttributesA"
+          },
+          {
+            "name": "SetHandleInformation"
+          },
+          {
+            "name": "SetLastError"
+          },
+          {
+            "name": "SetUnhandledExceptionFilter"
+          },
+          {
+            "name": "TerminateProcess"
+          },
+          {
+            "name": "TlsGetValue"
+          },
+          {
+            "name": "VirtualProtect"
+          },
+          {
+            "name": "VirtualQuery"
+          },
+          {
+            "name": "WaitForMultipleObjects"
+          },
+          {
+            "name": "WideCharToMultiByte"
+          },
+          {
+            "name": "WriteConsoleInputW"
+          },
+          {
+            "name": "WriteFile"
+          },
+          {
+            "name": "__C_specific_handler"
+          }
+        ]
+      },
+      {
+        "dll": "msvcrt.dll",
+        "symbols": [
+          {
+            "name": "___lc_codepage_func"
+          },
+          {
+            "name": "___mb_cur_max_func"
+          },
+          {
+            "name": "__getmainargs"
+          },
+          {
+            "name": "__initenv"
+          },
+          {
+            "name": "__iob_func"
+          },
+          {
+            "name": "__set_app_type"
+          },
+          {
+            "name": "__setusermatherr"
+          },
+          {
+            "name": "_acmdln"
+          },
+          {
+            "name": "_amsg_exit"
+          },
+          {
+            "name": "_cexit"
+          },
+          {
+            "name": "_close"
+          },
+          {
+            "name": "_commode"
+          },
+          {
+            "name": "_errno"
+          },
+          {
+            "name": "_fileno"
+          },
+          {
+            "name": "_fmode"
+          },
+          {
+            "name": "_get_osfhandle"
+          },
+          {
+            "name": "_initterm"
+          },
+          {
+            "name": "_lock"
+          },
+          {
+            "name": "_lseek"
+          },
+          {
+            "name": "_onexit"
+          },
+          {
+            "name": "_open"
+          },
+          {
+            "name": "_open_osfhandle"
+          },
+          {
+            "name": "_putenv"
+          },
+          {
+            "name": "_read"
+          },
+          {
+            "name": "_rmdir"
+          },
+          {
+            "name": "_setmode"
+          },
+          {
+            "name": "_snwprintf"
+          },
+          {
+            "name": "_stat64"
+          },
+          {
+            "name": "_stricmp"
+          },
+          {
+            "name": "_strnicmp"
+          },
+          {
+            "name": "_unlink"
+          },
+          {
+            "name": "_unlock"
+          },
+          {
+            "name": "_wcsicmp"
+          },
+          {
+            "name": "_write"
+          },
+          {
+            "name": "_wunlink"
+          },
+          {
+            "name": "abort"
+          },
+          {
+            "name": "calloc"
+          },
+          {
+            "name": "exit"
+          },
+          {
+            "name": "fclose"
+          },
+          {
+            "name": "fflush"
+          },
+          {
+            "name": "fgets"
+          },
+          {
+            "name": "fopen"
+          },
+          {
+            "name": "fprintf"
+          },
+          {
+            "name": "fputc"
+          },
+          {
+            "name": "fputs"
+          },
+          {
+            "name": "free"
+          },
+          {
+            "name": "fwrite"
+          },
+          {
+            "name": "getc"
+          },
+          {
+            "name": "getenv"
+          },
+          {
+            "name": "islower"
+          },
+          {
+            "name": "isspace"
+          },
+          {
+            "name": "isupper"
+          },
+          {
+            "name": "isxdigit"
+          },
+          {
+            "name": "localeconv"
+          },
+          {
+            "name": "malloc"
+          },
+          {
+            "name": "memchr"
+          },
+          {
+            "name": "memcmp"
+          },
+          {
+            "name": "memcpy"
+          },
+          {
+            "name": "memmove"
+          },
+          {
+            "name": "memset"
+          },
+          {
+            "name": "puts"
+          },
+          {
+            "name": "qsort"
+          },
+          {
+            "name": "rand"
+          },
+          {
+            "name": "realloc"
+          },
+          {
+            "name": "remove"
+          },
+          {
+            "name": "setvbuf"
+          },
+          {
+            "name": "signal"
+          },
+          {
+            "name": "strcmp"
+          },
+          {
+            "name": "strcpy"
+          },
+          {
+            "name": "strerror"
+          },
+          {
+            "name": "strlen"
+          },
+          {
+            "name": "strncmp"
+          },
+          {
+            "name": "strncpy"
+          },
+          {
+            "name": "strrchr"
+          },
+          {
+            "name": "strstr"
+          },
+          {
+            "name": "strtol"
+          },
+          {
+            "name": "strtoul"
+          },
+          {
+            "name": "system"
+          },
+          {
+            "name": "tolower"
+          },
+          {
+            "name": "ungetc"
+          },
+          {
+            "name": "vfprintf"
+          },
+          {
+            "name": "wcslen"
+          }
+        ]
+      },
+      {
+        "dll": "api-ms-win-core-synch-l1-2-0.dll",
+        "symbols": [
+          {
+            "name": "Sleep"
+          }
+        ]
+      },
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          {
+            "name": "MapVirtualKeyW"
+          },
+          {
+            "name": "ToUnicode"
+          }
+        ]
+      },
+      {
+        "dll": "WS2_32.dll",
+        "symbols": [
+          {
+            "name": "WSAGetLastError"
+          },
+          {
+            "name": "WSAStartup"
+          },
+          {
+            "name": "accept"
+          },
+          {
+            "name": "bind"
+          },
+          {
+            "name": "closesocket"
+          },
+          {
+            "name": "connect"
+          },
+          {
+            "name": "htonl"
+          },
+          {
+            "name": "htons"
+          },
+          {
+            "name": "ioctlsocket"
+          },
+          {
+            "name": "listen"
+          },
+          {
+            "name": "ntohs"
+          },
+          {
+            "name": "recv"
+          },
+          {
+            "name": "send"
+          },
+          {
+            "name": "shutdown"
+          },
+          {
+            "name": "socket"
+          }
+        ]
+      },
+      {
+        "dll": "libuv.dll",
+        "symbols": [
+          {
+            "name": "uv_accept"
+          },
+          {
+            "name": "uv_async_init"
+          },
+          {
+            "name": "uv_async_send"
+          },
+          {
+            "name": "uv_available_parallelism"
+          },
+          {
+            "name": "uv_backend_timeout"
+          },
+          {
+            "name": "uv_barrier_destroy"
+          },
+          {
+            "name": "uv_barrier_init"
+          },
+          {
+            "name": "uv_barrier_wait"
+          },
+          {
+            "name": "uv_buf_init"
+          },
+          {
+            "name": "uv_cancel"
+          },
+          {
+            "name": "uv_chdir"
+          },
+          {
+            "name": "uv_check_init"
+          },
+          {
+            "name": "uv_check_start"
+          },
+          {
+            "name": "uv_check_stop"
+          },
+          {
+            "name": "uv_clock_gettime"
+          },
+          {
+            "name": "uv_close"
+          },
+          {
+            "name": "uv_cond_broadcast"
+          },
+          {
+            "name": "uv_cond_destroy"
+          },
+          {
+            "name": "uv_cond_init"
+          },
+          {
+            "name": "uv_cond_signal"
+          },
+          {
+            "name": "uv_cond_timedwait"
+          },
+          {
+            "name": "uv_cond_wait"
+          },
+          {
+            "name": "uv_cpu_info"
+          },
+          {
+            "name": "uv_cpumask_size"
+          },
+          {
+            "name": "uv_cwd"
+          },
+          {
+            "name": "uv_default_loop"
+          },
+          {
+            "name": "uv_dlclose"
+          },
+          {
+            "name": "uv_dlerror"
+          },
+          {
+            "name": "uv_dlopen"
+          },
+          {
+            "name": "uv_err_name"
+          },
+          {
+            "name": "uv_exepath"
+          },
+          {
+            "name": "uv_fileno"
+          },
+          {
+            "name": "uv_free_cpu_info"
+          },
+          {
+            "name": "uv_free_interface_addresses"
+          },
+          {
+            "name": "uv_freeaddrinfo"
+          },
+          {
+            "name": "uv_fs_access"
+          },
+          {
+            "name": "uv_fs_chmod"
+          },
+          {
+            "name": "uv_fs_chown"
+          },
+          {
+            "name": "uv_fs_close"
+          },
+          {
+            "name": "uv_fs_closedir"
+          },
+          {
+            "name": "uv_fs_copyfile"
+          },
+          {
+            "name": "uv_fs_event_getpath"
+          },
+          {
+            "name": "uv_fs_event_init"
+          },
+          {
+            "name": "uv_fs_event_start"
+          },
+          {
+            "name": "uv_fs_event_stop"
+          },
+          {
+            "name": "uv_fs_fchmod"
+          },
+          {
+            "name": "uv_fs_fchown"
+          },
+          {
+            "name": "uv_fs_fdatasync"
+          },
+          {
+            "name": "uv_fs_fstat"
+          },
+          {
+            "name": "uv_fs_fsync"
+          },
+          {
+            "name": "uv_fs_ftruncate"
+          },
+          {
+            "name": "uv_fs_futime"
+          },
+          {
+            "name": "uv_fs_get_path"
+          },
+          {
+            "name": "uv_fs_get_ptr"
+          },
+          {
+            "name": "uv_fs_get_result"
+          },
+          {
+            "name": "uv_fs_get_statbuf"
+          },
+          {
+            "name": "uv_fs_get_system_error"
+          },
+          {
+            "name": "uv_fs_get_type"
+          },
+          {
+            "name": "uv_fs_lchown"
+          },
+          {
+            "name": "uv_fs_link"
+          },
+          {
+            "name": "uv_fs_lstat"
+          },
+          {
+            "name": "uv_fs_lutime"
+          },
+          {
+            "name": "uv_fs_mkdir"
+          },
+          {
+            "name": "uv_fs_mkdtemp"
+          },
+          {
+            "name": "uv_fs_mkstemp"
+          },
+          {
+            "name": "uv_fs_open"
+          },
+          {
+            "name": "uv_fs_opendir"
+          },
+          {
+            "name": "uv_fs_poll_getpath"
+          },
+          {
+            "name": "uv_fs_poll_init"
+          },
+          {
+            "name": "uv_fs_poll_start"
+          },
+          {
+            "name": "uv_fs_poll_stop"
+          },
+          {
+            "name": "uv_fs_read"
+          },
+          {
+            "name": "uv_fs_readdir"
+          },
+          {
+            "name": "uv_fs_readlink"
+          },
+          {
+            "name": "uv_fs_realpath"
+          },
+          {
+            "name": "uv_fs_rename"
+          },
+          {
+            "name": "uv_fs_req_cleanup"
+          },
+          {
+            "name": "uv_fs_rmdir"
+          },
+          {
+            "name": "uv_fs_scandir"
+          },
+          {
+            "name": "uv_fs_scandir_next"
+          },
+          {
+            "name": "uv_fs_sendfile"
+          },
+          {
+            "name": "uv_fs_stat"
+          },
+          {
+            "name": "uv_fs_statfs"
+          },
+          {
+            "name": "uv_fs_symlink"
+          },
+          {
+            "name": "uv_fs_unlink"
+          },
+          {
+            "name": "uv_fs_utime"
+          },
+          {
+            "name": "uv_fs_write"
+          },
+          {
+            "name": "uv_get_available_memory"
+          },
+          {
+            "name": "uv_get_constrained_memory"
+          },
+          {
+            "name": "uv_get_free_memory"
+          },
+          {
+            "name": "uv_get_osfhandle"
+          },
+          {
+            "name": "uv_get_process_title"
+          },
+          {
+            "name": "uv_get_total_memory"
+          },
+          {
+            "name": "uv_getaddrinfo"
+          },
+          {
+            "name": "uv_getnameinfo"
+          },
+          {
+            "name": "uv_getrusage"
+          },
+          {
+            "name": "uv_getrusage_thread"
+          },
+          {
+            "name": "uv_gettimeofday"
+          },
+          {
+            "name": "uv_guess_handle"
+          },
+          {
+            "name": "uv_handle_get_data"
+          },
+          {
+            "name": "uv_handle_get_loop"
+          },
+          {
+            "name": "uv_handle_get_type"
+          },
+          {
+            "name": "uv_handle_set_data"
+          },
+          {
+            "name": "uv_handle_size"
+          },
+          {
+            "name": "uv_handle_type_name"
+          },
+          {
+            "name": "uv_has_ref"
+          },
+          {
+            "name": "uv_hrtime"
+          },
+          {
+            "name": "uv_idle_init"
+          },
+          {
+            "name": "uv_idle_start"
+          },
+          {
+            "name": "uv_idle_stop"
+          },
+          {
+            "name": "uv_if_indextoiid"
+          },
+          {
+            "name": "uv_if_indextoname"
+          },
+          {
+            "name": "uv_inet_ntop"
+          },
+          {
+            "name": "uv_inet_pton"
+          },
+          {
+            "name": "uv_interface_addresses"
+          },
+          {
+            "name": "uv_ip4_addr"
+          },
+          {
+            "name": "uv_ip4_name"
+          },
+          {
+            "name": "uv_ip6_addr"
+          },
+          {
+            "name": "uv_ip6_name"
+          },
+          {
+            "name": "uv_ip_name"
+          },
+          {
+            "name": "uv_is_active"
+          },
+          {
+            "name": "uv_is_closing"
+          },
+          {
+            "name": "uv_is_readable"
+          },
+          {
+            "name": "uv_is_writable"
+          },
+          {
+            "name": "uv_key_create"
+          },
+          {
+            "name": "uv_key_delete"
+          },
+          {
+            "name": "uv_key_get"
+          },
+          {
+            "name": "uv_key_set"
+          },
+          {
+            "name": "uv_kill"
+          },
+          {
+            "name": "uv_library_shutdown"
+          },
+          {
+            "name": "uv_listen"
+          },
+          {
+            "name": "uv_loadavg"
+          },
+          {
+            "name": "uv_loop_alive"
+          },
+          {
+            "name": "uv_loop_close"
+          },
+          {
+            "name": "uv_loop_configure"
+          },
+          {
+            "name": "uv_loop_get_data"
+          },
+          {
+            "name": "uv_loop_init"
+          },
+          {
+            "name": "uv_loop_set_data"
+          },
+          {
+            "name": "uv_loop_size"
+          },
+          {
+            "name": "uv_metrics_idle_time"
+          },
+          {
+            "name": "uv_metrics_info"
+          },
+          {
+            "name": "uv_mutex_destroy"
+          },
+          {
+            "name": "uv_mutex_init"
+          },
+          {
+            "name": "uv_mutex_init_recursive"
+          },
+          {
+            "name": "uv_mutex_lock"
+          },
+          {
+            "name": "uv_mutex_trylock"
+          },
+          {
+            "name": "uv_mutex_unlock"
+          },
+          {
+            "name": "uv_now"
+          },
+          {
+            "name": "uv_open_osfhandle"
+          },
+          {
+            "name": "uv_os_environ"
+          },
+          {
+            "name": "uv_os_free_environ"
+          },
+          {
+            "name": "uv_os_free_passwd"
+          },
+          {
+            "name": "uv_os_get_group"
+          },
+          {
+            "name": "uv_os_get_passwd"
+          },
+          {
+            "name": "uv_os_get_passwd2"
+          },
+          {
+            "name": "uv_os_getenv"
+          },
+          {
+            "name": "uv_os_gethostname"
+          },
+          {
+            "name": "uv_os_getpid"
+          },
+          {
+            "name": "uv_os_getppid"
+          },
+          {
+            "name": "uv_os_getpriority"
+          },
+          {
+            "name": "uv_os_homedir"
+          },
+          {
+            "name": "uv_os_setenv"
+          },
+          {
+            "name": "uv_os_setpriority"
+          },
+          {
+            "name": "uv_os_tmpdir"
+          },
+          {
+            "name": "uv_os_uname"
+          },
+          {
+            "name": "uv_os_unsetenv"
+          },
+          {
+            "name": "uv_pipe"
+          },
+          {
+            "name": "uv_pipe_bind"
+          },
+          {
+            "name": "uv_pipe_bind2"
+          },
+          {
+            "name": "uv_pipe_chmod"
+          },
+          {
+            "name": "uv_pipe_connect"
+          },
+          {
+            "name": "uv_pipe_connect2"
+          },
+          {
+            "name": "uv_pipe_getpeername"
+          },
+          {
+            "name": "uv_pipe_getsockname"
+          },
+          {
+            "name": "uv_pipe_init"
+          },
+          {
+            "name": "uv_pipe_open"
+          },
+          {
+            "name": "uv_pipe_pending_count"
+          },
+          {
+            "name": "uv_pipe_pending_instances"
+          },
+          {
+            "name": "uv_pipe_pending_type"
+          },
+          {
+            "name": "uv_poll_init"
+          },
+          {
+            "name": "uv_poll_init_socket"
+          },
+          {
+            "name": "uv_poll_start"
+          },
+          {
+            "name": "uv_poll_stop"
+          },
+          {
+            "name": "uv_prepare_init"
+          },
+          {
+            "name": "uv_prepare_start"
+          },
+          {
+            "name": "uv_prepare_stop"
+          },
+          {
+            "name": "uv_process_get_pid"
+          },
+          {
+            "name": "uv_process_kill"
+          },
+          {
+            "name": "uv_queue_work"
+          },
+          {
+            "name": "uv_random"
+          },
+          {
+            "name": "uv_read_start"
+          },
+          {
+            "name": "uv_read_stop"
+          },
+          {
+            "name": "uv_recv_buffer_size"
+          },
+          {
+            "name": "uv_ref"
+          },
+          {
+            "name": "uv_replace_allocator"
+          },
+          {
+            "name": "uv_req_size"
+          },
+          {
+            "name": "uv_req_type_name"
+          },
+          {
+            "name": "uv_resident_set_memory"
+          },
+          {
+            "name": "uv_run"
+          },
+          {
+            "name": "uv_rwlock_destroy"
+          },
+          {
+            "name": "uv_rwlock_init"
+          },
+          {
+            "name": "uv_rwlock_rdlock"
+          },
+          {
+            "name": "uv_rwlock_rdunlock"
+          },
+          {
+            "name": "uv_rwlock_tryrdlock"
+          },
+          {
+            "name": "uv_rwlock_trywrlock"
+          },
+          {
+            "name": "uv_rwlock_wrlock"
+          },
+          {
+            "name": "uv_rwlock_wrunlock"
+          },
+          {
+            "name": "uv_sem_destroy"
+          },
+          {
+            "name": "uv_sem_init"
+          },
+          {
+            "name": "uv_sem_post"
+          },
+          {
+            "name": "uv_sem_trywait"
+          },
+          {
+            "name": "uv_sem_wait"
+          },
+          {
+            "name": "uv_send_buffer_size"
+          },
+          {
+            "name": "uv_set_process_title"
+          },
+          {
+            "name": "uv_setup_args"
+          },
+          {
+            "name": "uv_shutdown"
+          },
+          {
+            "name": "uv_signal_init"
+          },
+          {
+            "name": "uv_signal_start"
+          },
+          {
+            "name": "uv_sleep"
+          },
+          {
+            "name": "uv_socketpair"
+          },
+          {
+            "name": "uv_spawn"
+          },
+          {
+            "name": "uv_stop"
+          },
+          {
+            "name": "uv_stream_get_write_queue_size"
+          },
+          {
+            "name": "uv_stream_set_blocking"
+          },
+          {
+            "name": "uv_strerror"
+          },
+          {
+            "name": "uv_strerror_r"
+          },
+          {
+            "name": "uv_tcp_bind"
+          },
+          {
+            "name": "uv_tcp_close_reset"
+          },
+          {
+            "name": "uv_tcp_connect"
+          },
+          {
+            "name": "uv_tcp_getpeername"
+          },
+          {
+            "name": "uv_tcp_getsockname"
+          },
+          {
+            "name": "uv_tcp_init"
+          },
+          {
+            "name": "uv_tcp_init_ex"
+          },
+          {
+            "name": "uv_tcp_keepalive"
+          },
+          {
+            "name": "uv_tcp_keepalive_ex"
+          },
+          {
+            "name": "uv_tcp_nodelay"
+          },
+          {
+            "name": "uv_tcp_open"
+          },
+          {
+            "name": "uv_tcp_simultaneous_accepts"
+          },
+          {
+            "name": "uv_thread_create"
+          },
+          {
+            "name": "uv_thread_create_ex"
+          },
+          {
+            "name": "uv_thread_detach"
+          },
+          {
+            "name": "uv_thread_equal"
+          },
+          {
+            "name": "uv_thread_getaffinity"
+          },
+          {
+            "name": "uv_thread_getcpu"
+          },
+          {
+            "name": "uv_thread_getname"
+          },
+          {
+            "name": "uv_thread_getpriority"
+          },
+          {
+            "name": "uv_thread_join"
+          },
+          {
+            "name": "uv_thread_self"
+          },
+          {
+            "name": "uv_thread_setaffinity"
+          },
+          {
+            "name": "uv_thread_setname"
+          },
+          {
+            "name": "uv_thread_setpriority"
+          },
+          {
+            "name": "uv_timer_again"
+          },
+          {
+            "name": "uv_timer_get_due_in"
+          },
+          {
+            "name": "uv_timer_get_repeat"
+          },
+          {
+            "name": "uv_timer_init"
+          },
+          {
+            "name": "uv_timer_set_repeat"
+          },
+          {
+            "name": "uv_timer_start"
+          },
+          {
+            "name": "uv_timer_stop"
+          },
+          {
+            "name": "uv_translate_sys_error"
+          },
+          {
+            "name": "uv_try_write"
+          },
+          {
+            "name": "uv_tty_get_winsize"
+          },
+          {
+            "name": "uv_tty_init"
+          },
+          {
+            "name": "uv_tty_reset_mode"
+          },
+          {
+            "name": "uv_tty_set_mode"
+          },
+          {
+            "name": "uv_tty_set_vterm_state"
+          },
+          {
+            "name": "uv_udp_bind"
+          },
+          {
+            "name": "uv_udp_connect"
+          },
+          {
+            "name": "uv_udp_getpeername"
+          },
+          {
+            "name": "uv_udp_getsockname"
+          },
+          {
+            "name": "uv_udp_init"
+          },
+          {
+            "name": "uv_udp_init_ex"
+          },
+          {
+            "name": "uv_udp_open"
+          },
+          {
+            "name": "uv_udp_recv_start"
+          },
+          {
+            "name": "uv_udp_recv_stop"
+          },
+          {
+            "name": "uv_udp_send"
+          },
+          {
+            "name": "uv_udp_set_broadcast"
+          },
+          {
+            "name": "uv_udp_set_membership"
+          },
+          {
+            "name": "uv_udp_set_multicast_interface"
+          },
+          {
+            "name": "uv_udp_set_multicast_loop"
+          },
+          {
+            "name": "uv_udp_set_multicast_ttl"
+          },
+          {
+            "name": "uv_udp_set_source_membership"
+          },
+          {
+            "name": "uv_udp_set_ttl"
+          },
+          {
+            "name": "uv_udp_try_send"
+          },
+          {
+            "name": "uv_udp_try_send2"
+          },
+          {
+            "name": "uv_udp_using_recvmmsg"
+          },
+          {
+            "name": "uv_unref"
+          },
+          {
+            "name": "uv_update_time"
+          },
+          {
+            "name": "uv_uptime"
+          },
+          {
+            "name": "uv_walk"
+          },
+          {
+            "name": "uv_write"
+          },
+          {
+            "name": "uv_write2"
+          },
+          {
+            "name": "uv_write_nwritten"
+          }
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "exports": []
+  },
+  {
+    "file": "uv_run_tests_a.exe",
+    "sha256": "4ac27006cce901a79a03c5208372057e77dbec8ddd6f83ceeba1a74e8a9eb241",
+    "machine": "0x8664",
+    "imports": [
+      {
+        "dll": "ADVAPI32.dll",
+        "symbols": [
+          {
+            "name": "AllocateAndInitializeSid"
+          },
+          {
+            "name": "FreeSid"
+          },
+          {
+            "name": "GetSecurityInfo"
+          },
+          {
+            "name": "GetTokenInformation"
+          },
+          {
+            "name": "GetUserNameW"
+          },
+          {
+            "name": "OpenProcessToken"
+          },
+          {
+            "name": "RegCloseKey"
+          },
+          {
+            "name": "RegGetValueW"
+          },
+          {
+            "name": "RegOpenKeyExW"
+          },
+          {
+            "name": "RegQueryValueExW"
+          },
+          {
+            "name": "SetEntriesInAclA"
+          },
+          {
+            "name": "SetSecurityInfo"
+          },
+          {
+            "name": "SystemFunction036"
+          }
+        ]
+      },
+      {
+        "dll": "dbghelp.dll",
+        "symbols": [
+          {
+            "name": "MiniDumpWriteDump"
+          },
+          {
+            "name": "SymGetOptions"
+          },
+          {
+            "name": "SymSetOptions"
+          }
+        ]
+      },
+      {
+        "dll": "IPHLPAPI.DLL",
+        "symbols": [
+          {
+            "name": "ConvertInterfaceIndexToLuid"
+          },
+          {
+            "name": "ConvertInterfaceLuidToNameW"
+          },
+          {
+            "name": "GetAdaptersAddresses"
+          }
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          {
+            "name": "AssignProcessToJobObject"
+          },
+          {
+            "name": "CancelIo"
+          },
+          {
+            "name": "CancelIoEx"
+          },
+          {
+            "name": "CancelSynchronousIo"
+          },
+          {
+            "name": "CloseHandle"
+          },
+          {
+            "name": "CompareStringOrdinal"
+          },
+          {
+            "name": "ConnectNamedPipe"
+          },
+          {
+            "name": "CopyFileW"
+          },
+          {
+            "name": "CreateConsoleScreenBuffer"
+          },
+          {
+            "name": "CreateDirectoryW"
+          },
+          {
+            "name": "CreateFileA"
+          },
+          {
+            "name": "CreateFileMappingA"
+          },
+          {
+            "name": "CreateFileW"
+          },
+          {
+            "name": "CreateHardLinkW"
+          },
+          {
+            "name": "CreateIoCompletionPort"
+          },
+          {
+            "name": "CreateJobObjectW"
+          },
+          {
+            "name": "CreateNamedPipeA"
+          },
+          {
+            "name": "CreateNamedPipeW"
+          },
+          {
+            "name": "CreatePipe"
+          },
+          {
+            "name": "CreateProcessW"
+          },
+          {
+            "name": "CreateSemaphoreA"
+          },
+          {
+            "name": "CreateSymbolicLinkW"
+          },
+          {
+            "name": "DebugBreak"
+          },
+          {
+            "name": "DeleteProcThreadAttributeList"
+          },
+          {
+            "name": "DeviceIoControl"
+          },
+          {
+            "name": "DuplicateHandle"
+          },
+          {
+            "name": "FileTimeToSystemTime"
+          },
+          {
+            "name": "FillConsoleOutputAttribute"
+          },
+          {
+            "name": "FillConsoleOutputCharacterA"
+          },
+          {
+            "name": "FillConsoleOutputCharacterW"
+          },
+          {
+            "name": "FindClose"
+          },
+          {
+            "name": "FindFirstFileW"
+          },
+          {
+            "name": "FindNextFileW"
+          },
+          {
+            "name": "FlushFileBuffers"
+          },
+          {
+            "name": "FlushViewOfFile"
+          },
+          {
+            "name": "FormatMessageA"
+          },
+          {
+            "name": "FreeEnvironmentStringsW"
+          },
+          {
+            "name": "FreeLibrary"
+          },
+          {
+            "name": "GetConsoleCursorInfo"
+          },
+          {
+            "name": "GetConsoleMode"
+          },
+          {
+            "name": "GetConsoleScreenBufferInfo"
+          },
+          {
+            "name": "GetCurrentDirectoryW"
+          },
+          {
+            "name": "GetCurrentProcess"
+          },
+          {
+            "name": "GetCurrentProcessId"
+          },
+          {
+            "name": "GetCurrentProcessorNumber"
+          },
+          {
+            "name": "GetCurrentThread"
+          },
+          {
+            "name": "GetEnvironmentStringsW"
+          },
+          {
+            "name": "GetEnvironmentVariableW"
+          },
+          {
+            "name": "GetExitCodeProcess"
+          },
+          {
+            "name": "GetExitCodeThread"
+          },
+          {
+            "name": "GetFileAttributesW"
+          },
+          {
+            "name": "GetFileInformationByHandle"
+          },
+          {
+            "name": "GetFileInformationByHandleEx"
+          },
+          {
+            "name": "GetFileSize"
+          },
+          {
+            "name": "GetFileSizeEx"
+          },
+          {
+            "name": "GetFileType"
+          },
+          {
+            "name": "GetFinalPathNameByHandleW"
+          },
+          {
+            "name": "GetHandleInformation"
+          },
+          {
+            "name": "GetLastError"
+          },
+          {
+            "name": "GetLongPathNameW"
+          },
+          {
+            "name": "GetModuleFileNameW"
+          },
+          {
+            "name": "GetModuleHandleW"
+          },
+          {
+            "name": "GetNamedPipeClientProcessId"
+          },
+          {
+            "name": "GetNamedPipeHandleStateA"
+          },
+          {
+            "name": "GetNamedPipeServerProcessId"
+          },
+          {
+            "name": "GetNativeSystemInfo"
+          },
+          {
+            "name": "GetNumberOfConsoleInputEvents"
+          },
+          {
+            "name": "GetOverlappedResult"
+          },
+          {
+            "name": "GetPriorityClass"
+          },
+          {
+            "name": "GetProcAddress"
+          },
+          {
+            "name": "GetProcessAffinityMask"
+          },
+          {
+            "name": "GetProcessId"
+          },
+          {
+            "name": "GetProcessIoCounters"
+          },
+          {
+            "name": "GetProcessTimes"
+          },
+          {
+            "name": "GetQueuedCompletionStatusEx"
+          },
+          {
+            "name": "GetShortPathNameW"
+          },
+          {
+            "name": "GetStartupInfoA"
+          },
+          {
+            "name": "GetStartupInfoW"
+          },
+          {
+            "name": "GetStdHandle"
+          },
+          {
+            "name": "GetSystemInfo"
+          },
+          {
+            "name": "GetSystemTimeAsFileTime"
+          },
+          {
+            "name": "GetSystemTimePreciseAsFileTime"
+          },
+          {
+            "name": "GetTempFileNameW"
+          },
+          {
+            "name": "GetTempPathW"
+          },
+          {
+            "name": "GetThreadPriority"
+          },
+          {
+            "name": "GetThreadTimes"
+          },
+          {
+            "name": "GetTickCount64"
+          },
+          {
+            "name": "GlobalMemoryStatusEx"
+          },
+          {
+            "name": "InitializeProcThreadAttributeList"
+          },
+          {
+            "name": "IsDBCSLeadByteEx"
+          },
+          {
+            "name": "K32GetModuleBaseNameW"
+          },
+          {
+            "name": "K32GetProcessMemoryInfo"
+          },
+          {
+            "name": "LoadLibraryExA"
+          },
+          {
+            "name": "LoadLibraryExW"
+          },
+          {
+            "name": "LocalFree"
+          },
+          {
+            "name": "MapViewOfFile"
+          },
+          {
+            "name": "MoveFileExW"
+          },
+          {
+            "name": "MultiByteToWideChar"
+          },
+          {
+            "name": "NeedCurrentDirectoryForExePathW"
+          },
+          {
+            "name": "OpenProcess"
+          },
+          {
+            "name": "PeekNamedPipe"
+          },
+          {
+            "name": "PostQueuedCompletionStatus"
+          },
+          {
+            "name": "QueryPerformanceCounter"
+          },
+          {
+            "name": "QueryPerformanceFrequency"
+          },
+          {
+            "name": "QueueUserWorkItem"
+          },
+          {
+            "name": "ReOpenFile"
+          },
+          {
+            "name": "ReadConsoleInputW"
+          },
+          {
+            "name": "ReadConsoleOutputAttribute"
+          },
+          {
+            "name": "ReadConsoleOutputCharacterA"
+          },
+          {
+            "name": "ReadConsoleW"
+          },
+          {
+            "name": "ReadDirectoryChangesW"
+          },
+          {
+            "name": "ReadFile"
+          },
+          {
+            "name": "RegisterWaitForSingleObject"
+          },
+          {
+            "name": "RemoveDirectoryW"
+          },
+          {
+            "name": "ResumeThread"
+          },
+          {
+            "name": "SetConsoleCtrlHandler"
+          },
+          {
+            "name": "SetConsoleCursorInfo"
+          },
+          {
+            "name": "SetConsoleCursorPosition"
+          },
+          {
+            "name": "SetConsoleMode"
+          },
+          {
+            "name": "SetConsoleTextAttribute"
+          },
+          {
+            "name": "SetConsoleTitleW"
+          },
+          {
+            "name": "SetCurrentDirectoryW"
+          },
+          {
+            "name": "SetEnvironmentVariableA"
+          },
+          {
+            "name": "SetEnvironmentVariableW"
+          },
+          {
+            "name": "SetErrorMode"
+          },
+          {
+            "name": "SetFileAttributesA"
+          },
+          {
+            "name": "SetFileCompletionNotificationModes"
+          },
+          {
+            "name": "SetFileInformationByHandle"
+          },
+          {
+            "name": "SetFilePointerEx"
+          },
+          {
+            "name": "SetFileTime"
+          },
+          {
+            "name": "SetHandleInformation"
+          },
+          {
+            "name": "SetInformationJobObject"
+          },
+          {
+            "name": "SetLastError"
+          },
+          {
+            "name": "SetNamedPipeHandleState"
+          },
+          {
+            "name": "SetPriorityClass"
+          },
+          {
+            "name": "SetThreadAffinityMask"
+          },
+          {
+            "name": "SetThreadPriority"
+          },
+          {
+            "name": "SetUnhandledExceptionFilter"
+          },
+          {
+            "name": "SwitchToThread"
+          },
+          {
+            "name": "TerminateProcess"
+          },
+          {
+            "name": "TlsAlloc"
+          },
+          {
+            "name": "TlsFree"
+          },
+          {
+            "name": "TlsGetValue"
+          },
+          {
+            "name": "TlsSetValue"
+          },
+          {
+            "name": "UnmapViewOfFile"
+          },
+          {
+            "name": "UnregisterWait"
+          },
+          {
+            "name": "UnregisterWaitEx"
+          },
+          {
+            "name": "UpdateProcThreadAttribute"
+          },
+          {
+            "name": "VirtualProtect"
+          },
+          {
+            "name": "VirtualQuery"
+          },
+          {
+            "name": "WaitForMultipleObjects"
+          },
+          {
+            "name": "WaitNamedPipeW"
+          },
+          {
+            "name": "WideCharToMultiByte"
+          },
+          {
+            "name": "WriteConsoleInputW"
+          },
+          {
+            "name": "WriteConsoleW"
+          },
+          {
+            "name": "WriteFile"
+          },
+          {
+            "name": "__C_specific_handler"
+          }
+        ]
+      },
+      {
+        "dll": "msvcrt.dll",
+        "symbols": [
+          {
+            "name": "___lc_codepage_func"
+          },
+          {
+            "name": "___mb_cur_max_func"
+          },
+          {
+            "name": "__doserrno"
+          },
+          {
+            "name": "__getmainargs"
+          },
+          {
+            "name": "__initenv"
+          },
+          {
+            "name": "__iob_func"
+          },
+          {
+            "name": "__set_app_type"
+          },
+          {
+            "name": "__setusermatherr"
+          },
+          {
+            "name": "_acmdln"
+          },
+          {
+            "name": "_amsg_exit"
+          },
+          {
+            "name": "_beginthreadex"
+          },
+          {
+            "name": "_cexit"
+          },
+          {
+            "name": "_close"
+          },
+          {
+            "name": "_commode"
+          },
+          {
+            "name": "_errno"
+          },
+          {
+            "name": "_fileno"
+          },
+          {
+            "name": "_fmode"
+          },
+          {
+            "name": "_get_osfhandle"
+          },
+          {
+            "name": "_initterm"
+          },
+          {
+            "name": "_lock"
+          },
+          {
+            "name": "_lseek"
+          },
+          {
+            "name": "_lseeki64"
+          },
+          {
+            "name": "_onexit"
+          },
+          {
+            "name": "_open"
+          },
+          {
+            "name": "_open_osfhandle"
+          },
+          {
+            "name": "_putenv"
+          },
+          {
+            "name": "_read"
+          },
+          {
+            "name": "_rmdir"
+          },
+          {
+            "name": "_setmode"
+          },
+          {
+            "name": "_snwprintf"
+          },
+          {
+            "name": "_snwprintf_s"
+          },
+          {
+            "name": "_stat64"
+          },
+          {
+            "name": "_stricmp"
+          },
+          {
+            "name": "_strnicmp"
+          },
+          {
+            "name": "fwprintf"
+          },
+          {
+            "name": "_umask"
+          },
+          {
+            "name": "_unlink"
+          },
+          {
+            "name": "_unlock"
+          },
+          {
+            "name": "_wchmod"
+          },
+          {
+            "name": "_wcsdup"
+          },
+          {
+            "name": "_wcsicmp"
+          },
+          {
+            "name": "_wcsnicmp"
+          },
+          {
+            "name": "_wcsrev"
+          },
+          {
+            "name": "_write"
+          },
+          {
+            "name": "_wunlink"
+          },
+          {
+            "name": "abort"
+          },
+          {
+            "name": "atoi"
+          },
+          {
+            "name": "calloc"
+          },
+          {
+            "name": "exit"
+          },
+          {
+            "name": "fclose"
+          },
+          {
+            "name": "fflush"
+          },
+          {
+            "name": "fgets"
+          },
+          {
+            "name": "fopen"
+          },
+          {
+            "name": "fprintf"
+          },
+          {
+            "name": "fputc"
+          },
+          {
+            "name": "fputs"
+          },
+          {
+            "name": "fputwc"
+          },
+          {
+            "name": "free"
+          },
+          {
+            "name": "fwrite"
+          },
+          {
+            "name": "getc"
+          },
+          {
+            "name": "getenv"
+          },
+          {
+            "name": "islower"
+          },
+          {
+            "name": "isspace"
+          },
+          {
+            "name": "isupper"
+          },
+          {
+            "name": "isxdigit"
+          },
+          {
+            "name": "localeconv"
+          },
+          {
+            "name": "malloc"
+          },
+          {
+            "name": "memchr"
+          },
+          {
+            "name": "memcmp"
+          },
+          {
+            "name": "memcpy"
+          },
+          {
+            "name": "memmove"
+          },
+          {
+            "name": "memset"
+          },
+          {
+            "name": "puts"
+          },
+          {
+            "name": "qsort"
+          },
+          {
+            "name": "rand"
+          },
+          {
+            "name": "realloc"
+          },
+          {
+            "name": "remove"
+          },
+          {
+            "name": "setvbuf"
+          },
+          {
+            "name": "signal"
+          },
+          {
+            "name": "strchr"
+          },
+          {
+            "name": "strcmp"
+          },
+          {
+            "name": "strcpy"
+          },
+          {
+            "name": "strerror"
+          },
+          {
+            "name": "strlen"
+          },
+          {
+            "name": "strncmp"
+          },
+          {
+            "name": "strncpy"
+          },
+          {
+            "name": "strrchr"
+          },
+          {
+            "name": "strstr"
+          },
+          {
+            "name": "strtol"
+          },
+          {
+            "name": "strtoul"
+          },
+          {
+            "name": "system"
+          },
+          {
+            "name": "tolower"
+          },
+          {
+            "name": "ungetc"
+          },
+          {
+            "name": "vfprintf"
+          },
+          {
+            "name": "wcscat"
+          },
+          {
+            "name": "wcschr"
+          },
+          {
+            "name": "wcscmp"
+          },
+          {
+            "name": "wcscpy"
+          },
+          {
+            "name": "wcslen"
+          },
+          {
+            "name": "wcsncmp"
+          },
+          {
+            "name": "wcsncpy"
+          },
+          {
+            "name": "wcspbrk"
+          },
+          {
+            "name": "wcsrchr"
+          },
+          {
+            "name": "wcsstr"
+          },
+          {
+            "name": "wcstombs"
+          }
+        ]
+      },
+      {
+        "dll": "ole32.dll",
+        "symbols": [
+          {
+            "name": "CoTaskMemFree"
+          }
+        ]
+      },
+      {
+        "dll": "SHELL32.dll",
+        "symbols": [
+          {
+            "name": "CommandLineToArgvW"
+          },
+          {
+            "name": "SHGetKnownFolderPath"
+          }
+        ]
+      },
+      {
+        "dll": "api-ms-win-core-synch-l1-2-0.dll",
+        "symbols": [
+          {
+            "name": "AcquireSRWLockExclusive"
+          },
+          {
+            "name": "AcquireSRWLockShared"
+          },
+          {
+            "name": "CreateEventA"
+          },
+          {
+            "name": "DeleteCriticalSection"
+          },
+          {
+            "name": "EnterCriticalSection"
+          },
+          {
+            "name": "InitOnceExecuteOnce"
+          },
+          {
+            "name": "InitializeConditionVariable"
+          },
+          {
+            "name": "InitializeCriticalSection"
+          },
+          {
+            "name": "InitializeSRWLock"
+          },
+          {
+            "name": "LeaveCriticalSection"
+          },
+          {
+            "name": "ReleaseSRWLockExclusive"
+          },
+          {
+            "name": "ReleaseSRWLockShared"
+          },
+          {
+            "name": "ReleaseSemaphore"
+          },
+          {
+            "name": "ResetEvent"
+          },
+          {
+            "name": "SetEvent"
+          },
+          {
+            "name": "Sleep"
+          },
+          {
+            "name": "SleepConditionVariableCS"
+          },
+          {
+            "name": "TryAcquireSRWLockExclusive"
+          },
+          {
+            "name": "TryAcquireSRWLockShared"
+          },
+          {
+            "name": "TryEnterCriticalSection"
+          },
+          {
+            "name": "WaitForSingleObject"
+          },
+          {
+            "name": "WaitOnAddress"
+          },
+          {
+            "name": "WakeAllConditionVariable"
+          },
+          {
+            "name": "WakeByAddressSingle"
+          },
+          {
+            "name": "WakeConditionVariable"
+          }
+        ]
+      },
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          {
+            "name": "DispatchMessageA"
+          },
+          {
+            "name": "GetMessageA"
+          },
+          {
+            "name": "GetSystemMetrics"
+          },
+          {
+            "name": "MapVirtualKeyW"
+          },
+          {
+            "name": "ToUnicode"
+          },
+          {
+            "name": "TranslateMessage"
+          }
+        ]
+      },
+      {
+        "dll": "USERENV.dll",
+        "symbols": [
+          {
+            "name": "GetUserProfileDirectoryW"
+          }
+        ]
+      },
+      {
+        "dll": "WS2_32.dll",
+        "symbols": [
+          {
+            "name": "FreeAddrInfoW"
+          },
+          {
+            "name": "GetAddrInfoW"
+          },
+          {
+            "name": "GetNameInfoW"
+          },
+          {
+            "name": "WSADuplicateSocketW"
+          },
+          {
+            "name": "WSAGetLastError"
+          },
+          {
+            "name": "WSAGetOverlappedResult"
+          },
+          {
+            "name": "WSAIoctl"
+          },
+          {
+            "name": "WSARecv"
+          },
+          {
+            "name": "WSARecvFrom"
+          },
+          {
+            "name": "WSASend"
+          },
+          {
+            "name": "WSASendTo"
+          },
+          {
+            "name": "WSASetLastError"
+          },
+          {
+            "name": "WSASocketW"
+          },
+          {
+            "name": "WSAStartup"
+          },
+          {
+            "name": "accept"
+          },
+          {
+            "name": "bind"
+          },
+          {
+            "name": "closesocket"
+          },
+          {
+            "name": "connect"
+          },
+          {
+            "name": "getpeername"
+          },
+          {
+            "name": "getsockname"
+          },
+          {
+            "name": "getsockopt"
+          },
+          {
+            "name": "htonl"
+          },
+          {
+            "name": "htons"
+          },
+          {
+            "name": "ioctlsocket"
+          },
+          {
+            "name": "listen"
+          },
+          {
+            "name": "ntohs"
+          },
+          {
+            "name": "recv"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "send"
+          },
+          {
+            "name": "setsockopt"
+          },
+          {
+            "name": "shutdown"
+          },
+          {
+            "name": "socket"
+          }
+        ]
+      }
+    ],
+    "delay_imports": [],
+    "exports": []
+  }
+]

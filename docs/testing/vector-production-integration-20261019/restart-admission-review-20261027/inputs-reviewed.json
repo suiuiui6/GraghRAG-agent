@@ -1,0 +1,16 @@
+{
+  "baseline_manifest_sha256": "9a47cd9a545ece66abbd02eb6ee12230da8c2951703719d33d8d5234724f3e51",
+  "lifecycle_baseline_sha256": "299a3fdbab8099958d5e7dabf20a947f6763a95e61da8ec69985c1aadbd91ffa",
+  "reverse_transport_only_reconstructs_baseline": true,
+  "candidate_matches_C": true,
+  "hashes": {
+    "D:\\graghRAG-agent\\.tmp\\model-restart-fix-20261027\\test_vector_http_lifecycle.py": "f4b9b3475b53e15d33e5aa89e456fa95afb189562ef70c929055e71e4deb3528",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_http_lifecycle.py": "f4b9b3475b53e15d33e5aa89e456fa95afb189562ef70c929055e71e4deb3528",
+    "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\test_vector_model_admission_failures.py": "a42428da3cdbe848fa9cfbf40cdcb6e74916f87a4fd90d8533f5b26de91195ac",
+    "D:\\graghRAG-agent\\.tmp\\model-restart-debug-20261027\\test_restart_credential_transport.py": "ef682a756a076ba3a2d2ed4e0e92d17676e81e0220b76475220441ef57428d6c",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_backup_rejection_contracts.py": "ac3a851c46f754a1d45f8163c3ff4f913a1a90b9c30ddbddfae66a000169845f",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_publication_backup.py": "b3e112ed322d669a6950c1781315825fddc9920e3ed12d9b9142f60acf4b5ff5"
+  },
+  "admission_input_drift": [],
+  "backup_reverse_import_only_matches_R3": true
+}

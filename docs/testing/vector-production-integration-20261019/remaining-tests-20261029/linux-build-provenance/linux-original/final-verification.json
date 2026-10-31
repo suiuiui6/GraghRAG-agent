@@ -1,0 +1,39 @@
+{
+  "status": "linux-original-artifact-signature-and-declared-source-feature-premise-verified",
+  "wheel_sha256": "cc09b3df76e5a5cb386aed2715a2eea152e3949f9e1ba93c7119505377749929",
+  "wheel_bytes": 23316203,
+  "certificate": {
+    "certificateIssuer": "CN=sigstore-intermediate,O=sigstore.dev",
+    "subjectAlternativeName": "https://github.com/chroma-core/chroma/.github/workflows/_build_release_pypi.yml@refs/tags/1.5.9",
+    "issuer": "https://token.actions.githubusercontent.com",
+    "githubWorkflowTrigger": "push",
+    "githubWorkflowSHA": "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+    "githubWorkflowName": "\ud83d\udce6 Release chromadb to PyPI and DockerHub",
+    "githubWorkflowRepository": "chroma-core/chroma",
+    "githubWorkflowRef": "refs/tags/1.5.9",
+    "buildSignerURI": "https://github.com/chroma-core/chroma/.github/workflows/_build_release_pypi.yml@refs/tags/1.5.9",
+    "buildSignerDigest": "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+    "runnerEnvironment": "self-hosted",
+    "sourceRepositoryURI": "https://github.com/chroma-core/chroma",
+    "sourceRepositoryDigest": "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+    "sourceRepositoryRef": "refs/tags/1.5.9",
+    "sourceRepositoryIdentifier": "546206616",
+    "sourceRepositoryOwnerURI": "https://github.com/chroma-core",
+    "sourceRepositoryOwnerIdentifier": "105881770",
+    "buildConfigURI": "https://github.com/chroma-core/chroma/.github/workflows/release-chromadb.yml@refs/tags/1.5.9",
+    "buildConfigDigest": "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+    "buildTrigger": "push",
+    "runInvocationURI": "https://github.com/chroma-core/chroma/actions/runs/25357632446/attempts/2",
+    "sourceRepositoryVisibilityAtSigning": "public"
+  },
+  "verified_timestamps": [
+    {
+      "type": "Tlog",
+      "uri": "https://rekor.sigstore.dev",
+      "timestamp": "2026-05-05T13:54:00+08:00"
+    }
+  ],
+  "source_verification_sha256": "6f9b8cb0dd12e0c570802d5e6a6e5f7881d23be7ac0758e6a5d6f9e5c3ee906e",
+  "production_gate_approved": false,
+  "limitations": "same usual upstream source/lock/config execution premise as existing Windows contract; not actual rustc trace or native security clearance"
+}

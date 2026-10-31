@@ -26,6 +26,7 @@ async def list_documents(request: Request):
     items = [
         DocumentItem(
             document_id=d["document_id"],
+            active_revision=d.get("active_revision"),
             filename=d["filename"],
             status=d["status"],
             kg_nodes=d.get("kg_nodes"),
@@ -53,13 +54,28 @@ async def download_document(doc_id: str, request: Request):
     filepath = doc.get("filepath")
     if not filepath or not os.path.exists(filepath):
         raise HTTPException(404, detail="Original file not available for download")
-    path = contained_asset(filepath, Path(UPLOADS_DIR))
+    from services.document_runtime import get_publication
+    service = get_publication()
+    root = service.asset_root if service is not None and doc.get('active_revision') is not None else Path(UPLOADS_DIR)
+    path = contained_asset(filepath, root)
     return FileResponse(path, filename=doc["filename"], media_type="application/octet-stream")
 
 
 @router.delete("/documents/{doc_id}", response_model=DeleteResponse)
 async def delete_document(doc_id: str, request: Request):
     doc = authorized_documents(request, doc_id, write=True)[0]
+    from services.document_runtime import get_publication
+    service = get_publication()
+    if service is not None:
+        from services.document_catalog import CatalogNotFound
+        try:
+            cleanup = service.delete(doc_id, legacy=doc if doc.get('active_revision') is None else None)
+        except CatalogNotFound as exc:
+            raise HTTPException(404, "Document not found") from exc
+        from routes.rag_query import invalidate_rag_runtime
+        invalidate_rag_runtime()
+        return DeleteResponse(document_id=doc_id, status='deleted', deleted_at=datetime.now(timezone.utc),
+                              cleanup_status=cleanup['cleanup_status'], cleanup_pending=cleanup['cleanup_pending'])
     base = Path(__file__).resolve().parent.parent
     kg_root = base / "output" / "kg"
     kg_path = graph_directory(doc, kg_root)

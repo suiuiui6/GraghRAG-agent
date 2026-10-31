@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-29T08:11:09.422211+00:00",
+  "driver_exit": 0,
+  "backend_gate": true,
+  "source_count": 258,
+  "runtime_count": 36682,
+  "current_source_drift": [],
+  "current_runtime_drift": [],
+  "current_rehash_seconds": 17.890999999988708,
+  "tests": {
+    "collected": 2201,
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "production_python_files": 120,
+  "lines": {
+    "covered": 16624,
+    "total": 17802,
+    "percent": 93.38276598135042
+  },
+  "branches": {
+    "covered": 5481,
+    "total": 6086,
+    "percent": 90.0591521524811
+  },
+  "initial_snapshot_seconds_approx": 861,
+  "test_command_seconds": 580.9529999999941,
+  "baseline_identity_count": 2201,
+  "collection_junit_exact_counter": true,
+  "runtime_assembly": "verified-copy of 32995 installed files plus verified wheels; not clean full reinstall",
+  "safe_archive_files": [
+    "summary.json",
+    "commands.json",
+    "before.json",
+    "after.json",
+    "runtime-before.json",
+    "runtime-after.json",
+    "collected-nodeids.json",
+    "coverage.json"
+  ],
+  "private_only": [
+    "junit.xml",
+    "tests.log",
+    "collect.log",
+    "export.log",
+    "backend.coverage",
+    "test-temp"
+  ],
+  "scope": "Windows backend Python only; no Linux/native/global production approval or commit/push",
+  "files": {
+    "summary.json": "0b948779b9ca212aeebd2491f9e5f84e1714007331e6ff42829984131ae4c923",
+    "commands.json": "dde5a707bbb230a005a09893af01e78d5fcbbf990e2809998e4a6946f86de409",
+    "before.json": "6ba3faaca61530d75bf8243f68f47b139d5d42d25b19a0ecd66babfb00e6967f",
+    "after.json": "6ba3faaca61530d75bf8243f68f47b139d5d42d25b19a0ecd66babfb00e6967f",
+    "runtime-before.json": "4601d7a50f61aa0869d1794767b71f2dc8a83a325c267d2b86456208a44bf9b2",
+    "runtime-after.json": "4601d7a50f61aa0869d1794767b71f2dc8a83a325c267d2b86456208a44bf9b2",
+    "collected-nodeids.json": "38451b44109aa9b5ce1da4e0bbb00629fe50bfde465eea99fbf89c9189a4f323",
+    "coverage.json": "dcb1ffd96cdaa8c345b6895d2a0ab539d55f8e445f0e9b39359055c426cddd22"
+  }
+}

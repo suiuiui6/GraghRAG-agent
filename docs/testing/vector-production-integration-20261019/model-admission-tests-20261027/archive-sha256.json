@@ -1,0 +1,62 @@
+[
+  {
+    "file": "argument-error-pytest.exit",
+    "sha256": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\argument-error-pytest.exit"
+  },
+  {
+    "file": "argument-error-pytest.log",
+    "sha256": "138397da27392363f3689e941958a1b1c38bdea5869a1e6be90cde2dfbcaf8d7",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\argument-error-pytest.log"
+  },
+  {
+    "file": "argument-error-verification.json",
+    "sha256": "e6d975ec9feb0e0ddcc8250f7cd7ad81dc545eb6fc92b22aea265de78db3681b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\argument-error-verification.json"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "047bb55bd75e88b3a45fff994e4daaeb755a2448d0a40ac83ce5207835d490aa",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\commands.json"
+  },
+  {
+    "file": "inputs-after.json",
+    "sha256": "4a696ed260f107a41050869702dae10886f31ea42b2da8e9051e7498f518445f",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\inputs-after.json"
+  },
+  {
+    "file": "inputs-before.json",
+    "sha256": "4a696ed260f107a41050869702dae10886f31ea42b2da8e9051e7498f518445f",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\inputs-before.json"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "30f3952e046bbbf50e2dbb83c32bedcfd1234b74ae2f0338555ff57429e68a02",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\junit.xml"
+  },
+  {
+    "file": "pytest.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\pytest.exit"
+  },
+  {
+    "file": "pytest.log",
+    "sha256": "07f9f031293f01f50e925e080b427f0a3b355820bee476d6a45f4f6cc86a68d1",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\pytest.log"
+  },
+  {
+    "file": "report.md",
+    "sha256": "1eb9c12b612e9795e284bc568ca4f0388f6974bad8192538ae9509c9812a7d45",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\report.md"
+  },
+  {
+    "file": "test_vector_model_admission_failures.py",
+    "sha256": "a42428da3cdbe848fa9cfbf40cdcb6e74916f87a4fd90d8533f5b26de91195ac",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\test_vector_model_admission_failures.py"
+  },
+  {
+    "file": "verification.json",
+    "sha256": "7e0789d8f28100435da1de7462e575a89a8c0c259707752114137fd7e2fba355",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\model-admission-tests-20261027\\verification.json"
+  }
+]

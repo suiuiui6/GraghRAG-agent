@@ -1,0 +1,58 @@
+[
+  {
+    "url": "https://github.com/libuv/libuv/commit/0f2d7e7.diff",
+    "final_url": "https://github.com/libuv/libuv/commit/0f2d7e7.diff",
+    "file": "fix-0f2d7e7.diff",
+    "bytes": 912,
+    "sha256": "bda7f479752dc5fba901de5f5eed0d275e41cd13374f1333ba49cbedc367f26b",
+    "utc": "2026-10-29T13:37:45.426865+00:00"
+  },
+  {
+    "url": "https://github.com/libuv/libuv/commit/3530bcc.diff",
+    "final_url": "https://github.com/libuv/libuv/commit/3530bcc.diff",
+    "file": "fix-3530bcc.diff",
+    "bytes": 671,
+    "sha256": "b1e9166aabf0eb2a74aa7a2f5fb17d4e45881f4e053d70f1c607c445b2e65fc6",
+    "utc": "2026-10-29T13:37:46.415067+00:00"
+  },
+  {
+    "url": "https://github.com/libuv/libuv/commit/e0327e1.diff",
+    "final_url": "https://github.com/libuv/libuv/commit/e0327e1.diff",
+    "file": "fix-e0327e1.diff",
+    "bytes": 471,
+    "sha256": "1b6bf12d46a5f2d654bbe10358cbcee7475756b0a89a6970fbce40abe63e265e",
+    "utc": "2026-10-29T13:37:52.583895+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/src/idna.c",
+    "final_url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/src/idna.c",
+    "file": "v140-idna.c.txt",
+    "bytes": 5969,
+    "sha256": "8e374d4f2a57d94ec51e2512b40ee2b38ee8a42e3fb9febf49f4d30709b35eb6",
+    "utc": "2026-10-29T13:37:53.765313+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/src/win/getaddrinfo.c",
+    "final_url": "https://raw.githubusercontent.com/libuv/libuv/v1.40.0/src/win/getaddrinfo.c",
+    "file": "v140-win-getaddrinfo.c.txt",
+    "bytes": 14663,
+    "sha256": "c8be9bfd642309f3d147d0ac97bf94c24621b818a9548d9aaac2aa86bf46835d",
+    "utc": "2026-10-29T13:37:54.743746+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.x/SECURITY.md",
+    "final_url": "https://raw.githubusercontent.com/libuv/libuv/v1.x/SECURITY.md",
+    "file": "security.md.txt",
+    "bytes": 1321,
+    "sha256": "732e5e21c0da1b9fce01ad506a117874883548c5824819b0467f461f017f7c7f",
+    "utc": "2026-10-29T13:37:55.695843+00:00"
+  },
+  {
+    "url": "https://api.github.com/repos/libuv/libuv/security-advisories?per_page=30",
+    "final_url": "https://api.github.com/repos/libuv/libuv/security-advisories?per_page=30",
+    "file": "advisories.json",
+    "bytes": 7483,
+    "sha256": "ce29685f864a0f42276a313b451b819df5db14cc2aba6548181c8152a4ccb99f",
+    "utc": "2026-10-29T13:37:56.708175+00:00"
+  }
+]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="4.953" timestamp="2026-10-27T17:37:09.904663+08:00" hostname="LAPTOP-GVOK4HA0"><testcase classname="" name=".tmp.model-restart-debug-20261027.test_restart_credential_transport" time="0.000"><error message="collection failure">ImportError while importing test module 'D:\graghRAG-agent\.tmp\model-restart-debug-20261027\test_restart_credential_transport.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+.tmp\vector-runtime-20261020\derived\python\Lib\importlib\__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.tmp\model-restart-debug-20261027\test_restart_credential_transport.py:7: in &lt;module&gt;
+    from backend.tests import test_vector_http_lifecycle as subject
+E   ImportError: cannot import name 'test_vector_http_lifecycle' from 'backend.tests' (D:\graghRAG-agent\backend\tests\__init__.py)</error></testcase></testsuite></testsuites>

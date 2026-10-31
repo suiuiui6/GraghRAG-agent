@@ -32,7 +32,6 @@ from errors import (
     StageBridgeError, StageExtractionError, StageGroundingError, StageKGBuildError,
     StageMinerUError, classify_external_error,
 )
-from grounding import grounding_stats, resolve_grounding
 from kg_builder import build_knowledge_graph, serialize_kg
 from logging_config import get_logger
 from config import non_thinking_provider_options
@@ -104,6 +103,8 @@ def _run_real_pipeline_inner(task_id: str, filepath: str, filename: str, progres
     if ext in (".docx", ".xlsx", ".doc"):
         return _run_local_parse_pipeline(task_id, filepath, filename, ext, progress_callback)
 
+    from grounding import grounding_stats, resolve_grounding
+
     # ── Stage 0: 确定 MinerU 输出目录 ──
     mineru_dir = _resolve_mineru_dir(task_id, filepath, ingest_options, progress_callback)
 
@@ -129,8 +130,10 @@ def _run_real_pipeline_inner(task_id: str, filepath: str, filename: str, progres
             context=ErrorContext(stage=PipelineStage.BRIDGE, task_id=task_id),
         ) from exc
 
+    from services.document_runtime import get_publication
     try:
-        _build_runtime_indexes_from_mineru_output(mineru_dir, filename, source_path=filepath)
+        if get_publication() is None:
+            _build_runtime_indexes_from_mineru_output(mineru_dir, filename, source_path=filepath)
     except Exception:  # noqa: BLE001  # 运行时索引为旁路产物，构建失败只降级检索质量，不阻断入库主流程
         # 运行时索引为旁路产物，构建失败只降级检索质量，不阻断入库主流程
         logger.warning("runtime_index_build_failed", task_id=task_id, exc_info=True)
@@ -196,7 +199,7 @@ def _run_real_pipeline_inner(task_id: str, filepath: str, filename: str, progres
     except Exception:  # noqa: S110, BLE001  # 审计写入失败不阻断业务主流程
         pass
 
-    return {
+    result = {
         "document_id": f"doc_{task_id}",
         "kg_nodes": len(nodes),
         "kg_edges": len(edges),
@@ -207,6 +210,14 @@ def _run_real_pipeline_inner(task_id: str, filepath: str, filename: str, progres
         "partial": False,
         "warnings": [],
     }
+    if get_publication() is not None:
+        from doc_processor import chunk_sections, deduplicate_chunks
+        from services.document_runtime import get_embedding_client
+        runtime_sections = _mineru_output_to_sections(mineru_dir, filename, source_path=filepath)
+        chunks = deduplicate_chunks(chunk_sections(runtime_sections, source_file=filename, source_format=ext.lstrip('.'), level=2))
+        result['_publication_chunks'] = chunks
+        result['_publication_embeddings'] = get_embedding_client().embed_texts([chunk.text for chunk in chunks])
+    return result
 
 
 def _resolve_mineru_dir(task_id: str, filepath: str, ingest_options: dict | None,
@@ -817,20 +828,26 @@ def _run_local_parse_pipeline(task_id: str, filepath: str, filename: str, ext: s
     chunk_count = len(chunks)
     progress_callback("chunk", "文档分块", 2, {"chunk": "done", "count": chunk_count})
 
+    from services.document_runtime import get_publication, get_embedding_client
+    publication = get_publication()
+    embeddings = None
     progress_callback("embed", "向量化与存储", 3, {"embed": "running"})
     try:
         from embedding import EmbeddingClient
         from vector_store import VectorStore
 
-        embedding_client = EmbeddingClient()
+        embedding_client = get_embedding_client() if publication is not None else EmbeddingClient()
         texts = [c.text for c in chunks]
         embeddings = embedding_client.embed_texts(texts)
 
-        vector_store = VectorStore()
-        vector_store.add_chunks(chunks, embeddings)
+        if publication is None:
+            vector_store = VectorStore()
+            vector_store.add_chunks(chunks, embeddings)
 
         progress_callback("embed", "向量化与存储", 3, {"embed": "done", "chunks": chunk_count})
     except ImportError as e:
+        if publication is not None:
+            raise
         # 向量化是**可选**增强：缺依赖时降级为"仅落盘 chunks"，入库本身仍成功。
         # 必须用 degraded=True —— 否则 progress() 会把任务标成 FAILED，而本函数随后
         # 仍继续执行并返回成功 dict，最终留下一个 status=DONE 却挂着 error 的脏任务。
@@ -839,6 +856,8 @@ def _run_local_parse_pipeline(task_id: str, filepath: str, filename: str, ext: s
                          error_code=ErrorCode.PIPELINE_EXTRACTION_ERROR.value,
                          degraded=True)
     except Exception as e:
+        if publication is not None:
+            raise
         logger.error("embed_failed", task_id=task_id, exc_info=True)
         # 同上：这条分支之后仍继续建 BM25/Table 索引并返回成功 dict，
         # 因此也走 degraded 而非 FAILED，避免留下 DONE + 残留 error 的脏任务。
@@ -848,35 +867,36 @@ def _run_local_parse_pipeline(task_id: str, filepath: str, filename: str, ext: s
                          error_code=ErrorCode.PIPELINE_EXTRACTION_ERROR.value,
                          degraded=True)
 
-    # Build BM25 + TableIndex after embedding for query-time availability
-    progress_callback("index", "BM25 + Table 索引构建", 4, {"index": "running"})
-    try:
-        from index_registry import (
-            build_bm25_from_chunks, build_table_index_from_chunks,
-            set_bm25_index, set_table_index,
-        )
+    if publication is None:
+        # Build BM25 + TableIndex after embedding for query-time availability
+        progress_callback("index", "BM25 + Table 索引构建", 4, {"index": "running"})
+        try:
+            from index_registry import (
+                build_bm25_from_chunks, build_table_index_from_chunks,
+                set_bm25_index, set_table_index,
+            )
 
-        bm25 = build_bm25_from_chunks(chunks)
-        if bm25 is not None:
-            set_bm25_index(bm25)
+            bm25 = build_bm25_from_chunks(chunks)
+            if bm25 is not None:
+                set_bm25_index(bm25)
 
-        ti = build_table_index_from_chunks(chunks)
-        if ti is not None:
-            set_table_index(ti)
+            ti = build_table_index_from_chunks(chunks)
+            if ti is not None:
+                set_table_index(ti)
 
-        progress_callback("index", "BM25 + Table 索引构建", 4, {
-            "index": "done",
-            "bm25_docs": len(chunks) if bm25 else 0,
-            "table_rows": ti.count() if ti else 0,
-        })
-    except Exception as e:
-        logger.error("bm25_table_index_failed", task_id=task_id, exc_info=True)
-        # BM25/Table 索引是查询期增强，构建失败不影响入库结果本身；
-        # 用 degraded 而非 FAILED，避免本函数随后返回成功 dict 留下残留 error。
-        progress_callback("index", "BM25 + Table 索引构建", 4, {"index": "failed"},
-                         error=str(e),
-                         error_code=ErrorCode.PIPELINE_KG_BUILD_ERROR.value,
-                         degraded=True)
+            progress_callback("index", "BM25 + Table 索引构建", 4, {
+                "index": "done",
+                "bm25_docs": len(chunks) if bm25 else 0,
+                "table_rows": ti.count() if ti else 0,
+            })
+        except Exception as e:
+            logger.error("bm25_table_index_failed", task_id=task_id, exc_info=True)
+            # BM25/Table 索引是查询期增强，构建失败不影响入库结果本身；
+            # 用 degraded 而非 FAILED，避免本函数随后返回成功 dict 留下残留 error。
+            progress_callback("index", "BM25 + Table 索引构建", 4, {"index": "failed"},
+                             error=str(e),
+                             error_code=ErrorCode.PIPELINE_KG_BUILD_ERROR.value,
+                             degraded=True)
 
     # ── Entity extraction + KG build for DOCX/XLSX ──
     progress_callback("extraction", "实体抽取与KG构建", 5, {"extraction": "running"})
@@ -932,7 +952,7 @@ def _run_local_parse_pipeline(task_id: str, filepath: str, filename: str, ext: s
     except Exception:  # noqa: S110, BLE001  # 审计写入失败不阻断业务主流程
         pass
 
-    return {
+    result = {
         "document_id": doc_id,
         "kg_nodes": kg_nodes,
         "kg_edges": kg_edges,
@@ -945,6 +965,10 @@ def _run_local_parse_pipeline(task_id: str, filepath: str, filename: str, ext: s
         "warnings": ([f"{outcome.batches_failed}/{outcome.batches_total} 批次抽取失败"]
                      if outcome.partial else []),
     }
+    if publication is not None:
+        result['_publication_chunks'] = chunks
+        result['_publication_embeddings'] = embeddings
+    return result
 
 
 def _extract_and_build_kg(chunks, task_id: str, filename: str) -> ExtractionOutcome:
@@ -957,7 +981,7 @@ def _extract_and_build_kg(chunks, task_id: str, filename: str) -> ExtractionOutc
     """
     MAX_CHUNKS = 50
     BATCH_SIZE = 5
-    OLLAMA_URL = "http://localhost:11434/api/chat"
+    OLLAMA_URL = os.getenv("OLLAMA_CHAT_URL", "http://localhost:11434/api/chat")
     MODEL = "qwen2.5:7b"
 
     PROMPT = (

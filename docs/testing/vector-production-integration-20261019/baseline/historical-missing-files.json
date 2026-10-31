@@ -1,0 +1,167 @@
+{
+  "sqlite-vector-r8-r2-20261017/final-20261017-v2.log": {
+    "sha256": "91cde14905c8494845747b73739b50b70aa7156daef066fdbea73a09b39f1bf0",
+    "name": "final-20261017-v2.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\final-20261017-v2.log"
+  },
+  "sqlite-vector-r8-r2-20261017/final-20261017.log": {
+    "sha256": "4b980c9a03a99cf65f2b956a4bd6ca2c8ea8d6ab57495309d9ede8d53268bb8a",
+    "name": "final-20261017.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\final-20261017.log"
+  },
+  "sqlite-vector-r8-r2-20261017/final.log": {
+    "sha256": "4af2e7abda04af1a7651c7d04a10eec537e9953b3d2ddfad0c02a8a20b84668b",
+    "name": "final.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\final.log"
+  },
+  "sqlite-vector-r8-r2-20261017/green.log": {
+    "sha256": "69ed142d88f31845f5a4853479dc7f6c4e0c4c0290f7f89bd1d78e2a083cb4ff",
+    "name": "green.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\green.log"
+  },
+  "sqlite-vector-r8-r2-20261017/green2.log": {
+    "sha256": "9b21aa5b789ec46a9d34b5623194e280ac8afa2b8e577ae57afb0bb199c5e2ed",
+    "name": "green2.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\green2.log"
+  },
+  "sqlite-vector-r8-r2-20261017/green3.log": {
+    "sha256": "855060641feb1ce5a84985b1d8f06353fae610b57403f5bdcb96bbf38ab887b4",
+    "name": "green3.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\green3.log"
+  },
+  "sqlite-vector-r8-r2-20261017/native.log": {
+    "sha256": "6e69664476741883d615a0317cd24cac9c2007dcbaad4dc39073624d92fe4603",
+    "name": "native.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\native.log"
+  },
+  "sqlite-vector-r8-r2-20261017/public-green.log": {
+    "sha256": "260623f981d842fb9009ba6523d5774e69fd506c8761ba5809fde3201b024638",
+    "name": "public-green.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\public-green.log"
+  },
+  "sqlite-vector-r8-r2-20261017/public-red.log": {
+    "sha256": "598ff68b982d0bb92cbdc209cb445fa4d781ddfe51475ff43dc15ea3a82ad8d6",
+    "name": "public-red.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\public-red.log"
+  },
+  "sqlite-vector-r8-r2-20261017/red.log": {
+    "sha256": "b8deb6d4a59855666de2139bb930ecb260dffbf3f752fb413e1dec6c36b83e69",
+    "name": "red.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\red.log"
+  },
+  "sqlite-vector-r8-r2-20261017/red2.log": {
+    "sha256": "474f3820c1ef124272c88082ab6517eb726bf48f62a95a2d1cd0bd933863f67e",
+    "name": "red2.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\red2.log"
+  },
+  "sqlite-vector-r8-r2-20261017/resources-green.log": {
+    "sha256": "6478758e782ae72ef2059c9b520b6297c15d143547c15496cf4e991dcf3765db",
+    "name": "resources-green.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\resources-green.log"
+  },
+  "sqlite-vector-r8-r2-20261017/resources-red.log": {
+    "sha256": "2ccd59c173e6eb0623b817fe9154b41c8712f23e9ac99f41a137bd9fbd16ed82",
+    "name": "resources-red.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\resources-red.log"
+  },
+  "sqlite-vector-r8-r2-20261017/rounding-red.log": {
+    "sha256": "9673c8e0df3c484b88b8b1f474888f6d57d99fa1d1b86797ccbac11e51ad362c",
+    "name": "rounding-red.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\rounding-red.log"
+  },
+  "sqlite-vector-r8-r2-20261017/schema-green.log": {
+    "sha256": "24e44a7fef5f22f2ef711b3e2227e30cd7f9ad06e63b5dffa44447a851d839bd",
+    "name": "schema-green.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\schema-green.log"
+  },
+  "sqlite-vector-r8-r2-20261017/schema-red.log": {
+    "sha256": "41c67aa65c53a2dff285347fbc84f90296866b7b1552c2d15ba76530c25d1194",
+    "name": "schema-red.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-vector-r8-20261016\\schema-red.log"
+  },
+  "sqlite-r8-consumers-r2-20261017/r2-green.log": {
+    "sha256": "6f9aca86d9f3cf135b940b8385fb91b452727428f84337740a3abd5e553f4ede",
+    "name": "r2-green.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-consumers-20261016\\r2-green.log"
+  },
+  "sqlite-r8-consumers-r2-20261017/r2-red.log": {
+    "sha256": "91a93963458133ba813209004b453c6289ca3e8ef1ea37b70be79860869c95ee",
+    "name": "r2-red.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-consumers-20261016\\r2-red.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-final\\chroma.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "chroma.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-final\\sqlite.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "sqlite.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\adapter-r2-review.log": {
+    "sha256": "77b5d0f6abd89f0475c74b4dc09fc5332bbd4655b28bb1cf1f1b95f22137269e",
+    "name": "adapter-r2-review.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\adapter-r2-review.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\adapter-review.log": {
+    "sha256": "f3851bc46ff8435b2705bb3d525ffde0a88dde0cdf22cdb1d9e9022ffeada58b",
+    "name": "adapter-review.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\adapter-review.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\adapter-temp-error.log": {
+    "sha256": "ba33277b32f68cb4035233186b09819f15d777dc1667aa998f6668daf1d51eb5",
+    "name": "adapter-temp-error.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\adapter-temp-error.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\fixture-error.log": {
+    "sha256": "f471cf81804e126cb9cc1d11189f163d0a11788054f4c332aa00cc47278d316f",
+    "name": "fixture-error.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\fixture-error.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\r2-fixture-wal-error.log": {
+    "sha256": "2c9e0beba1ca869f6a1e639446906824636720243d553b02f587037c64fbaa73",
+    "name": "r2-fixture-wal-error.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\r2-fixture-wal-error.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\review.log": {
+    "sha256": "c60b93c834e7443ebc83c38a724dcb0dc49c74d39a7c208a50a38fa2328731e5",
+    "name": "review.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\review.log"
+  },
+  "sqlite-r8-final-independent-20261017/review\\schema-review.log": {
+    "sha256": "a469164a13ae498212103da66b69efc96bb8b6c871b52b93c89f353d70007de6",
+    "name": "schema-review.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-r2-review-20261017\\schema-review.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-history\\diff-r2-20261017\\chroma.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "chroma.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-history\\diff-r2-20261017\\sqlite.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "sqlite.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-history\\diff-r3-20261017\\chroma.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "chroma.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-history\\diff-r3-20261017\\sqlite.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "sqlite.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-history\\diff-r4-20261017\\chroma.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "chroma.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  },
+  "sqlite-r8-final-independent-20261017/differential-history\\diff-r4-20261017\\sqlite.log": {
+    "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "name": "sqlite.log",
+    "exact_original_copy": "D:\\graghRAG-agent\\.tmp\\sqlite-r8-oracle-20261016\\diff-20261017\\sqlite.log"
+  }
+}

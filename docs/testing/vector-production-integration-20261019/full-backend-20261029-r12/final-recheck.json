@@ -1,0 +1,27 @@
+{
+  "source": {
+    "count": 260,
+    "before_after_equal": true,
+    "current_sha_changes": []
+  },
+  "runtime-": {
+    "count": 36704,
+    "before_after_equal": true,
+    "current_sha_changes": []
+  },
+  "lines": {
+    "covered": 16669,
+    "total": 17848,
+    "percent": 93.39421783953384
+  },
+  "branches": {
+    "covered": 5506,
+    "total": 6114,
+    "percent": 90.05561007523715
+  },
+  "production_count": 120,
+  "baseline_cases": 2201,
+  "actual_cases": 2223,
+  "missing_baseline": [],
+  "new_cases_count": 22
+}

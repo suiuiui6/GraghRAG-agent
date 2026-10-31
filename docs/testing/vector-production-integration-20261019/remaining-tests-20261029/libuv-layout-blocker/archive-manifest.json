@@ -1,0 +1,42 @@
+[
+  {
+    "path": "REPORT.md",
+    "bytes": 5133,
+    "sha256": "c15d8c0a5926cee0c294a401decb8684f12e05986f4c3b8f1a0e3c87c438d88f"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 3754,
+    "sha256": "ef16af6d14fc15ce72a28766c615be51800277d2963d1a83f7c9783840bf5cc6"
+  },
+  {
+    "path": "layout.json",
+    "bytes": 1975,
+    "sha256": "f8f6f1325d9bc5ab253ce394ad4ba8e2d4c9e7c27011db11ba331052d27f26fb"
+  },
+  {
+    "path": "run.json",
+    "bytes": 935,
+    "sha256": "5bd4d424dedcee919c762fe9b505445cbf0a7ed2b375ae0be35052c6d4d2ed4f"
+  },
+  {
+    "path": "header-source.json",
+    "bytes": 1211,
+    "sha256": "4eee681d40cf9dd1c5dd05124306e35c1da5c9f49b106ca0f08d5bdfe815db3c"
+  },
+  {
+    "path": "failed-attempts.json",
+    "bytes": 609,
+    "sha256": "e0492317100819733f587320b1920040e8a4351b716130f07828a139f4e85f1d"
+  },
+  {
+    "path": "fixture.c",
+    "bytes": 1094,
+    "sha256": "2e1a16871bbda11be8da8e86ee099c6b56454bdacb2b42722f20847e536aeed3"
+  },
+  {
+    "path": "compile.sh",
+    "bytes": 310,
+    "sha256": "979537f4bb00a325781bc69b29af25cfbebeaa01a235989d9b6dcedc5eb30ae4"
+  }
+]

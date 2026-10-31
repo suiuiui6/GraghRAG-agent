@@ -1,0 +1,24 @@
+{
+  "startup": {
+    "status": "down",
+    "ready": false,
+    "code": "ingest_recovery_failed"
+  },
+  "ready_http_status": 503,
+  "ready_body": {
+    "status": "down",
+    "ready": false,
+    "code": "ingest_recovery_failed"
+  },
+  "successful_retry": {
+    "status": "ok",
+    "ready": true,
+    "code": "synthetic_only",
+    "documents": 0,
+    "chunks": 0,
+    "generation": 0,
+    "sqlite_version": "3.54.0",
+    "hardening": true
+  },
+  "retry_ready_status": 200
+}

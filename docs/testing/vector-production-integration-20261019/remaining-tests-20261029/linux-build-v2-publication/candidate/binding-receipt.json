@@ -1,0 +1,15 @@
+{
+  "C_R11_inputs_count": 258,
+  "C_R11_drift": {},
+  "vendor_files": 447,
+  "vendor_manifest_sha256": "04dcaeb46d835797859d3b4af0e14612cf7cb203f18103e99a25f3556a643f92",
+  "cargo_config_sha256": "51887b696d384938c825726fda839e4bddfb6fdb9f6f64d6f14d0798b59ec073",
+  "build_script_sha256": "27242d74c351a6d25ed2163d626e7afd3728692df30dfd739a6c2a9c5b8e5082",
+  "red_script_sha256": "f53b3fba26cf6d8752f5b066878d4b70321fff4ccabf80efea261aa04d66cd52",
+  "binary_sha256": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0",
+  "policy_final": {
+    "passed": 32,
+    "exit": 0
+  },
+  "approved": false
+}

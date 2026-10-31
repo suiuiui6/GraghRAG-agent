@@ -1,0 +1,47 @@
+[
+  {
+    "file": "pypi-release.json",
+    "sha256": "82be7082d1a27eaa7410b92609606c288d10b4411ac4ccf2c989e6de368ce58d",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\pypi-release.json"
+  },
+  {
+    "file": "github-tree.json",
+    "sha256": "f6cbfbebc814b6a4768eccc2b01741f767975a13c89c210cb5714ae8a92e5f0f",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-tree.json"
+  },
+  {
+    "file": "github-win-attestation.json",
+    "sha256": "7680bcb292165c31057dbcb80a0933543a183474621130d4095f43d37544b4ca",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-win-attestation.json"
+  },
+  {
+    "file": "attestation-results.json",
+    "sha256": "ae57600e19d1c85fe9983fb708a0a4634b3a69b8be99e1dad9bd8a4f7517ee8a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\attestation-results.json"
+  },
+  {
+    "file": "Cargo.toml",
+    "sha256": "e3499fa958ed860053cefa072fb00dbf61b11a834b897efcbbb38312961ce7cd",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\Cargo.toml"
+  },
+  {
+    "file": "pyproject.toml",
+    "sha256": "e08b82c05f7db1cbe900641bbb414a7164032e3c3dc5b91f601b1ca1fb045b00",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\pyproject.toml"
+  },
+  {
+    "file": "rust__python_bindings__Cargo.toml",
+    "sha256": "f83950a377564771bcef983b4318a4ee162b7ad113caad90623684ab95a66df1",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\rust__python_bindings__Cargo.toml"
+  },
+  {
+    "file": ".github__workflows___build_release_pypi.yml",
+    "sha256": "ca543e82da593d725d4c15ab835594b4412ce84050c01d70d2d7e508fd20da3b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\.github__workflows___build_release_pypi.yml"
+  },
+  {
+    "file": ".github__workflows__release-chromadb.yml",
+    "sha256": "be6bc33066172a5acbe0eac7ef621c0ce91e65508f2a4d7f1480a26fa7c71560",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\.github__workflows__release-chromadb.yml"
+  }
+]

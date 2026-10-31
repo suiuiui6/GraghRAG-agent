@@ -1,0 +1,10 @@
+{
+  "difference": {
+    "boolean.py": "boolean-py"
+  },
+  "cause": "Verifier did not apply PEP503 dot/hyphen equivalence",
+  "fix": "packaging.utils.canonicalize_name; retain exact158/unique names/versions/venv roots",
+  "old_probe_sha256": "9ac7e02ba881f9f732f6f12f25fc7556872e5736e5ec56110216a1705b835b2d",
+  "new_probe_sha256": "a0f918310863576ef34e045943f2fa7db78d84364a0e7b78dcd00b0e87ee42c3",
+  "production_modified": false
+}

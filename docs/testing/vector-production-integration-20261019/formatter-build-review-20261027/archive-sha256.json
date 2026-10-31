@@ -1,0 +1,52 @@
+[
+  {
+    "file": "contract-review.md",
+    "sha256": "2d679db3f8ee5598f2a209e60682361442470f740d904df1d324b1b66a2cb4c4",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\contract-review.md"
+  },
+  {
+    "file": "contract-verification.json",
+    "sha256": "35ef2af220da85c657783815ccf709da4ba78d3ef4787e99d43214c216703380",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\contract-verification.json"
+  },
+  {
+    "file": "gh-verify-network.json",
+    "sha256": "68c3deff0bf98d2d2c020dcb22391075e78b681437bbcdab41be56db3d3ab263",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify-network.json"
+  },
+  {
+    "file": "gh-verify-network.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify-network.stderr"
+  },
+  {
+    "file": "gh-verify.json",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify.json"
+  },
+  {
+    "file": "gh-verify.stderr",
+    "sha256": "340b9dbf6482effc71d5b84a4735c89db9e436b8cc05ada3890f583cc8ec995e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify.stderr"
+  },
+  {
+    "file": "REVIEW.md",
+    "sha256": "298e0c8590f9f8e21efcabe6a3a00ca20ebbaa1cd3a86a132568440ff8398d6b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\REVIEW.md"
+  },
+  {
+    "file": "verification.json",
+    "sha256": "d1b18b40698266a525ced016d4b220bc8007ba7a518957d7f72b5e5791b25424",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\verification.json"
+  },
+  {
+    "file": "verify.py",
+    "sha256": "779999d4f4551a2f7764af88a93e3d59064abc5a68efaa358d2c9a47dd93b567",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\verify.py"
+  },
+  {
+    "file": "verify_contract.py",
+    "sha256": "b33977f36cde7fe9f056d417eaca99c6facc6cb7ac1268be1abe3322d32cbeea",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\verify_contract.py"
+  }
+]

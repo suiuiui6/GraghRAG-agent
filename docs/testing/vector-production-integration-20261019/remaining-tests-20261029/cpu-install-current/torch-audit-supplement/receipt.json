@@ -1,0 +1,81 @@
+{
+  "scope": "Supplemental OSV exact CPU and public-base queries; preserves main157 PyPI Torch skip. Not native security clearance.",
+  "queries": [
+    {
+      "label": "exact-cpu",
+      "requested_version": "2.14.0+cpu",
+      "argv": [
+        "D:/graghRAG-agent/.tmp/backend-runtime-20261028/.venv/Scripts/python.exe",
+        "-B",
+        "-m",
+        "pip_audit",
+        "-r",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\torch-audit-supplement\\exact-cpu.txt",
+        "--disable-pip",
+        "--no-deps",
+        "--vulnerability-service",
+        "osv",
+        "--timeout",
+        "20",
+        "--format",
+        "json",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\torch-audit-supplement\\exact-cpu.json",
+        "--cache-dir",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\torch-audit-supplement\\cache",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed": 3.639999999999418,
+      "report": {
+        "dependencies": [
+          {
+            "name": "torch",
+            "version": "2.14.0+cpu",
+            "vulns": []
+          }
+        ],
+        "fixes": []
+      }
+    },
+    {
+      "label": "public-base",
+      "requested_version": "2.14.0",
+      "argv": [
+        "D:/graghRAG-agent/.tmp/backend-runtime-20261028/.venv/Scripts/python.exe",
+        "-B",
+        "-m",
+        "pip_audit",
+        "-r",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\torch-audit-supplement\\public-base.txt",
+        "--disable-pip",
+        "--no-deps",
+        "--vulnerability-service",
+        "osv",
+        "--timeout",
+        "20",
+        "--format",
+        "json",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\torch-audit-supplement\\public-base.json",
+        "--cache-dir",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-artifacts-20261029\\torch-audit-supplement\\cache",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit": 0,
+      "elapsed": 3.311999999998079,
+      "report": {
+        "dependencies": [
+          {
+            "name": "torch",
+            "version": "2.14.0",
+            "vulns": []
+          }
+        ],
+        "fixes": []
+      }
+    }
+  ]
+}

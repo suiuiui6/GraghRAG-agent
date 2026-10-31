@@ -198,8 +198,8 @@ def get_runtime_recovery_status(
     }
 
 
-def build_bm25_from_chunks(chunks: list) -> "BM25Okapi | None":
-    """Build a BM25 index from a list of Chunk objects.
+def build_bm25_from_chunks(chunks) -> "BM25Okapi | None":
+    """Build BM25 from one pass over Chunk objects, retaining final chunks only.
 
     Uses jieba for Chinese tokenization; falls back to character-level
     bigrams if jieba is unavailable. Returns a tuple of
@@ -210,10 +210,27 @@ def build_bm25_from_chunks(chunks: list) -> "BM25Okapi | None":
     except ImportError:
         return None
 
-    tokenized = [_tokenize_for_bm25(c.text) for c in chunks]
-    if not tokenized:
-        return None
-    return (BM25Okapi(tokenized), chunks)
+    from itertools import chain
+    iterator = iter(chunks)
+    try:
+        try:
+            first = next(iterator)
+        except StopIteration:
+            return None
+        retained = chunks if isinstance(chunks, list) else []
+
+        def tokens():
+            for chunk in chain((first,), iterator):
+                if retained is not chunks:
+                    retained.append(chunk)
+                yield _tokenize_for_bm25(chunk.text)
+
+        return (BM25Okapi(tokens()), retained)
+    finally:
+        close = getattr(iterator, "close", None)
+        if close is not None:
+            close()
+
 
 
 def _tokenize_for_bm25(text: str) -> list[str]:

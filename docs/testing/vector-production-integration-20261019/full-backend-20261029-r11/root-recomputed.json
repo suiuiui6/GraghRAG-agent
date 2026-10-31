@@ -1,0 +1,18 @@
+{
+  "scope": "Independent root recompute from actual raw coverage and JUnit and exact pre/post mappings; does not repeat 36682 runtime SHA read or replace independent final review",
+  "source_inputs": 258,
+  "runtime_inputs": 36682,
+  "source_pre_post_equal": true,
+  "runtime_pre_post_equal": true,
+  "coverage_production_files": 120,
+  "covered_lines": 16624,
+  "num_statements": 17802,
+  "covered_branches": 5481,
+  "num_branches": 6086,
+  "line_percent": 93.38276598135042,
+  "branch_percent": 90.0591521524811,
+  "junit": 2201,
+  "baseline_counter_equal": true,
+  "all_command_exits_zero": true,
+  "linux_recreation_manifest_files_verified": 32
+}

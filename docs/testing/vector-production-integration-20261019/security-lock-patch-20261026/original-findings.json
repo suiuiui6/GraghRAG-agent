@@ -1,0 +1,50 @@
+[
+  {
+    "name": "filelock",
+    "version": "3.32.7",
+    "vulns": [
+      {
+        "id": "CVE-2026-112940",
+        "fix_versions": [
+          "4.2.1"
+        ]
+      },
+      {
+        "id": "CVE-2026-112913",
+        "fix_versions": [
+          "4.2.1"
+        ]
+      },
+      {
+        "id": "CVE-2026-112907",
+        "fix_versions": [
+          "4.2.1"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "opentelemetry-api",
+    "version": "1.44.0",
+    "vulns": [
+      {
+        "id": "CVE-2026-114603",
+        "fix_versions": [
+          "1.45.1"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "vulns": [
+      {
+        "id": "GHSA-xmj3-9gf7-h52w",
+        "fix_versions": [
+          "84.1.0"
+        ]
+      }
+    ]
+  }
+]

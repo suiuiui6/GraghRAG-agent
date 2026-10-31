@@ -1,0 +1,45 @@
+{
+  "verified_fingerprint": "612F0EAD9401622379DF4402F28C3C8DA33C03BE",
+  "public_key_expiry_unix": 1908982478,
+  "source_sha256": "cb0d6dd2128d5a95bd242c6cc982a24fe608fa93da57b6b4ec763b0018c53e64",
+  "signature_exit": 0,
+  "release_commit": [
+    "840404ce8ba7cc0204be52389a6cfff9f2c90fb6"
+  ],
+  "tar_members": 536,
+  "links": [],
+  "static_source_files": {
+    "include/uv/version.h": {
+      "file": "source-include_uv_version.h",
+      "bytes": 1831,
+      "sha256": "8e216f0998cae52664f5a9889a2ec921e43c7abf7970c4780ab4e1bb6262932c"
+    },
+    "src/idna.c": {
+      "file": "source-src_idna.c",
+      "bytes": 12844,
+      "sha256": "99a7634718087d25e341ebf8ba818ee43244c6806c959e90bb78a9c765663d33"
+    },
+    "CMakeLists.txt": {
+      "file": "source-CMakeLists.txt",
+      "bytes": 31589,
+      "sha256": "80767494d9c728b70c16a78bff15aa7184ee6f566d94fd93983bfdb4c3305da4"
+    },
+    "LICENSE": {
+      "file": "source-LICENSE",
+      "bytes": 1079,
+      "sha256": "16de0c32b265cb7d46a6d3bd614f259dd4d693a5e26b3407b04aae8d73041f0c"
+    },
+    "LICENSE-extra": {
+      "file": "source-LICENSE-extra",
+      "bytes": 1603,
+      "sha256": "262c44bd2cdba037e6d2a82fba15f5800d292bc993a6f5d6b6ea487744d02836"
+    },
+    "ChangeLog": {
+      "file": "source-ChangeLog",
+      "bytes": 211017,
+      "sha256": "4785290be4da2ee87a310574745b8579f7b5d0532005df3f464f384ba01d425c"
+    }
+  },
+  "no_build_hooks_executed": true,
+  "no_tool_download_or_install": true
+}

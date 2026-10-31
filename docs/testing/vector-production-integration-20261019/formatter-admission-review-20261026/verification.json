@@ -1,0 +1,174 @@
+{
+  "utc": "2026-10-26T10:49:56.763311+00:00",
+  "python": "3.12.15 (main, Oct 14 2026, 01:08:45) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Windows scalar bridge only; no Chroma execution, no all-domain statistical claim",
+  "binary": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\bin\\x86_64-pc-windows-msvc\\vector-numeric-bridge.exe",
+  "inputs_sha256": {
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\vector_numeric.py": "2ad65375cf6727c2ac32bd18a07c7169896525a3f6c632b721319da5fbb1aad5",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\sqlite_vector_store.py": "238c0836f9db011596fb610497e4a3829a350d1b68164abc5dd479ea0ac90b9f",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\Cargo.toml": "02105d1df940431d92ff91bb536eb65aee8e2ba3a7fc19f21e9e0ee624842c2c",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\Cargo.lock": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\rust-toolchain.toml": "4cb550734bd94d0591c8a84b561c654dd58ddc3b0d67464c2ddeb2962a4cd826",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\src\\main.rs": "eee79631cc3e7ee8acd2d48485be9a811374d7d04426a49f1368e7b260f65dfe",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\build.py": "0f3c30dc5d983473716fa94c50adef353c650081b9d67014900ca8ca00628c41",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\build-receipt.json": "b0643b26edd403e08b389c9cbc93a712006dabb7ab06286e323f198df2f935de",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\bin\\x86_64-pc-windows-msvc\\approved-build.json": "5bd305407c9e741d6d9753240352a2fef6abe2c97a894478da3aab5ad0853845",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\bin\\x86_64-pc-windows-msvc\\vector-numeric-bridge.exe": "752027dbe65ce9b5a94ce4cc439fe1fc9ec43561f7ca62be1ae7931c312b3f38",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\design\\2026-10-19-vector-production-integration.md": "e92677cac2761e04f2dbf2685ed6cd7a8bffd446995244c12777cc165bb20283",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\contracts\\2026-10-14-vector-ingress-semantics.md": "e6cc809f67440b822f4299c7b8365573e8f0e2bc28c8bd6c04a9befcd5f131dd",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\REVIEW.md": "9568821bbe46267f135e8cad0543f181550a00b4fc619daafd8acb8e87790bec",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-metadata-commit.rs": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-metadata-api.rs": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-Cargo.lock": "ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-derive-enum-untagged.rs": "b66ad3cea36ee786d50270f6648f1075c1e615b5f04173b47f034a251df5220e",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-private-de.rs": "68ee17774d3bbc693d9f19803747fa2c3afdb7046482e6d94ac6cf7db5a4fe20",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\chroma-python-rust.py": "ba6da39ae81c6e7e31b1283dacfdcfcf4c0341f9ac2c22589e27c7dbdd84fc7e",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\chroma-sqlite-log.rs": "2d6e74c560cc02c194ed78dc3db5593f3aad645ec9062e998cd1117d59b5d41b",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\chroma-bindings.rs": "e22d934e4955b20497d383c2336ee9da16c6fb37c3c26b91d44f21d044d8c025",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\serde_json-1.0.149.crate": "83fc039473c5595ace860d8c4fafa220ff474b3fc6bfdb4293327f1a37e94d86",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\ser.rs": "f2b8cc0b97e30c49dbc58698fa22c14a7d56ea616cdb57b067835a59af49a75f",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\de.rs": "2364aaa767bb40eeedd4aa24e3bf917be5e007a00bd3d911b61f9de74aa5f074",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\value\\de.rs": "ceda1bf415aafde89caa83bf275811b70d393717d4e1038e0c61822d2da02993",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\zmij-1.0.21.crate": "b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zmij-1.0.21\\src\\lib.rs": "d843c3c1c8a41a8cdaead2ee3a223a204bf2ed047c3f2892719248a0f10d9bef",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\serde_core-1.0.228.crate": "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_core-1.0.228\\src\\de\\impls.rs": "9fb7a0322af51971fe1fa8f5b56c7ca3716622a6e9127b86bddfc0742c11383c"
+  },
+  "registry_source_checks": {
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\ser.rs": "byte-identical to archive matching locked checksum",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\de.rs": "byte-identical to archive matching locked checksum",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\value\\de.rs": "byte-identical to archive matching locked checksum",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zmij-1.0.21\\src\\lib.rs": "byte-identical to archive matching locked checksum",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_core-1.0.228\\src\\de\\impls.rs": "byte-identical to archive matching locked checksum"
+  },
+  "unchanged": true,
+  "checks": [
+    {
+      "op": "record_ingress",
+      "input": "-9223372036854775808",
+      "tag": "i64",
+      "value": "-9223372036854775808"
+    },
+    {
+      "op": "record_ingress",
+      "input": "-1",
+      "tag": "i64",
+      "value": "-1"
+    },
+    {
+      "op": "record_ingress",
+      "input": "0",
+      "tag": "i64",
+      "value": "0"
+    },
+    {
+      "op": "record_ingress",
+      "input": "9223372036854775807",
+      "tag": "i64",
+      "value": "9223372036854775807"
+    },
+    {
+      "op": "record_ingress",
+      "input": "0x0.0p+0",
+      "tag": "f64",
+      "value": "0x0.0p+0"
+    },
+    {
+      "op": "record_ingress",
+      "input": "-0x0.0p+0",
+      "tag": "f64",
+      "value": "0x0.0p+0"
+    },
+    {
+      "op": "record_ingress",
+      "input": "0x1.0000000000000p+0",
+      "tag": "f64",
+      "value": "0x1.0000000000000p+0"
+    },
+    {
+      "op": "record_ingress",
+      "input": "-0x1.0000000000000p+0",
+      "tag": "f64",
+      "value": "-0x1.0000000000000p+0"
+    },
+    {
+      "op": "record_ingress",
+      "input": "0x1.fffffffffffffp+62",
+      "tag": "f64",
+      "value": "0x1.0000000000000p+63"
+    },
+    {
+      "op": "record_ingress",
+      "input": "9223372036854775808",
+      "tag": "f64",
+      "value": "0x1.0000000000000p+63"
+    },
+    {
+      "op": "record_ingress",
+      "input": "18446744073709551617",
+      "tag": "f64",
+      "value": "0x1.0000000000000p+64"
+    },
+    {
+      "op": "parse",
+      "input": "0",
+      "tag": "u64",
+      "value": "0"
+    },
+    {
+      "op": "parse",
+      "input": "9223372036854775807",
+      "tag": "u64",
+      "value": "9223372036854775807"
+    },
+    {
+      "op": "parse",
+      "input": "9223372036854775808",
+      "tag": "u64",
+      "value": "9223372036854775808"
+    },
+    {
+      "op": "parse",
+      "input": "18446744073709551615",
+      "tag": "u64",
+      "value": "18446744073709551615"
+    },
+    {
+      "op": "parse",
+      "input": "-9223372036854775808",
+      "tag": "i64",
+      "value": "-9223372036854775808"
+    },
+    {
+      "op": "parse",
+      "input": "-0.0",
+      "tag": "f64",
+      "value": "-0x0.0p+0"
+    },
+    {
+      "op": "parse",
+      "input": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "tag": "f64",
+      "value": "0x1.1ccf385ebc8a0p+1023"
+    },
+    {
+      "op": "parse",
+      "input": "10000000000000000000",
+      "length": 310,
+      "rejected": true
+    },
+    {
+      "op": "parse",
+      "input": "NaN",
+      "length": 3,
+      "rejected": true
+    },
+    {
+      "op": "parse",
+      "input": "Infinity",
+      "length": 8,
+      "rejected": true
+    }
+  ],
+  "actual_wheel_features": "PENDING authoritative build/feature provenance; prior finite probes are behavior evidence only"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "summary.json",
+    "bytes": 3146,
+    "sha256": "c6a2c87bd5a56b4cdd77b01f25fcde7b88524396ef16dfd8561630845430266d"
+  },
+  {
+    "file": "commands.json",
+    "bytes": 1903,
+    "sha256": "67a223322062c257fb6e9032934e35e6c8558a72224d7afdaf5a07a7fb332f4d"
+  },
+  {
+    "file": "before.json",
+    "bytes": 28646,
+    "sha256": "a65cd119d46ecd3bae5f6dec7e58870836f0764df50dfa36c513ea000d61bbb1"
+  },
+  {
+    "file": "after.json",
+    "bytes": 28646,
+    "sha256": "a65cd119d46ecd3bae5f6dec7e58870836f0764df50dfa36c513ea000d61bbb1"
+  },
+  {
+    "file": "runtime-before.json",
+    "bytes": 657914,
+    "sha256": "c9bec9ec98e2c069def00652ca2695e5716af292b1b58ad42e3814c8f4407a1d"
+  },
+  {
+    "file": "runtime-after.json",
+    "bytes": 657914,
+    "sha256": "c9bec9ec98e2c069def00652ca2695e5716af292b1b58ad42e3814c8f4407a1d"
+  },
+  {
+    "file": "coverage.json",
+    "bytes": 1172531,
+    "sha256": "72dd7599a7323c7d1e9158a32c94c73aa6cea914a566d70c0c03a327c50f6585"
+  },
+  {
+    "file": "collected-nodeids.json",
+    "bytes": 252536,
+    "sha256": "1d82a06fde32ac76b0a1e2f73eebea99820d0b722084ccfafdea3fd8ffc13336"
+  }
+]

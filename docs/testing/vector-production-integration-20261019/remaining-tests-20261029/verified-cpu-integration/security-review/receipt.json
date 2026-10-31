@@ -1,0 +1,77 @@
+{
+  "utc": "2026-10-29T01:30:29.376573+00:00",
+  "role": "independent reviewer",
+  "checks": {
+    "main": {
+      "records": 181,
+      "third_party": 179,
+      "changed_full_records": [
+        "graphrag-agent-backend",
+        "langgraph",
+        "langgraph-sdk"
+      ],
+      "all_other_full_records_equal": true,
+      "all_dependency_edges_equal": true,
+      "source_stable": {
+        "backend/pyproject.toml": true,
+        "backend/uv.lock": true,
+        "langextract/pyproject.toml": true
+      },
+      "author_process_receipts_checked_not_rerun": {
+        "resolve": {
+          "exit": 0,
+          "elapsed": 4.266222899997956,
+          "before_lock_sha": "61ad9d13ef50034d9dca46eab106bb15e2b1a24bf7b91ab869c653b2fc19b0a9",
+          "after_lock_sha": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5"
+        },
+        "check": {
+          "exit": 0,
+          "elapsed": 0.05765889999747742,
+          "before_lock_sha": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5",
+          "after_lock_sha": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5"
+        }
+      }
+    },
+    "cpu-canonical": {
+      "records": 159,
+      "third_party": 157,
+      "changed_full_records": [
+        "graphrag-agent-backend",
+        "langgraph",
+        "langgraph-sdk"
+      ],
+      "all_other_full_records_equal": true,
+      "all_dependency_edges_equal": true,
+      "source_stable": {
+        "backend/pyproject.toml": true,
+        "backend/uv.lock": true,
+        "langextract/pyproject.toml": true
+      },
+      "author_process_receipts_checked_not_rerun": {
+        "resolve": {
+          "exit": 0,
+          "elapsed": 0.5096488999988651,
+          "before_lock_sha": "d1434b9b8b46f3d9c061098e15ddaada44e8d0a2d3dfb55d4db4c425a8f60b36",
+          "after_lock_sha": "8a8ef5c4e9327e7f22529eec5f90ea204db3238d19948634da75e4954ed2f786"
+        },
+        "check": {
+          "exit": 0,
+          "elapsed": 0.04874809999455465,
+          "before_lock_sha": "8a8ef5c4e9327e7f22529eec5f90ea204db3238d19948634da75e4954ed2f786",
+          "after_lock_sha": "8a8ef5c4e9327e7f22529eec5f90ea204db3238d19948634da75e4954ed2f786"
+        }
+      }
+    }
+  },
+  "input_hashes": {
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\main\\backend\\pyproject.toml": "dad9964abed69b6dc64394f5abaf166a8a48672397185187aee5ec76725e5bb5",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\main\\backend\\uv.lock": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\cpu-canonical\\backend\\pyproject.toml": "c1cae69d7690f5ec5776465bc8c33dc4f5a6d5c303494a44523a964f3c8d37ef",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\cpu-canonical\\backend\\uv.lock": "8a8ef5c4e9327e7f22529eec5f90ea204db3238d19948634da75e4954ed2f786",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\main\\backend\\requirements.txt": "d18e9ae179634c1583296089f2822d2247ce6ce2ceaaf5fbf2607b1c1e337177",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\candidate-diff.json": "842fe3b1b05ad0aafa6bdda46eb1f3af98cc4d4a4ec91c989316f7308b374b2d",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\evidence-manifest.json": "0ebc2d77aba0b35b1970afd7cdb13ba3417d2d3c43b20faed7a38d10276a7255",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-security-candidate-20261029\\REPORT.md": "1f4bea78c1b138e03928a20a7a989b210adde20fa4ae9eef0c260960b5133c75"
+  },
+  "requirements_only_floor_change": true
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "HANDOFF.md",
+    "sha256": "d3b5901948f5285a6117e51bde3e9a58ec5c477c56ee0623edb2926b7d3b7168",
+    "source": "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\HANDOFF.md"
+  },
+  {
+    "file": "report.json",
+    "sha256": "a3a51d1c3c55ee82289bd8f163c6b86a35874a57b2d0d9c5bc65dae0246da49d",
+    "source": "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\report.json"
+  },
+  {
+    "file": "tests.log",
+    "sha256": "b48a2d1952258fb4ebca285d4607a479487e098dcd57534c530d95cb3374b0e7",
+    "source": "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\tests.log"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "dfcb2a16617e9b00db089de282d9d5058cd6fb69e176b45dd0d1329165eba103",
+    "source": "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\junit.xml"
+  },
+  {
+    "file": "export.log",
+    "sha256": "cedfa30c24f0af72b702f138ca412f485432e6d6380c2f8225d306cd21e8c185",
+    "source": "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\export.log"
+  }
+]

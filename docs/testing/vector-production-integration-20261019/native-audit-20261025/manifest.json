@@ -1,0 +1,8 @@
+{
+  "cargo-audit.json": "c49c925a8215953f3eb3fa4820251fd77592bf4c241e5bb2e45f03cc5ab03948",
+  "cargo-audit.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "current-cargo-audit.json": "450568761096f55abde855062aeddbef1259fb5cd5a6f769111abfaaacdf56a3",
+  "current-cargo-audit.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "current-receipt.json": "5494bf4d7552da1c7f2280efa9b7e39ecdd8d5f6022b8a43101bd7ea5e5208e6",
+  "receipt.json": "31377eb436573f28bca80d7a54555aacc493d0c631b09981b3908adfad05fe89"
+}

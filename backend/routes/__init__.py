@@ -47,6 +47,9 @@ _docs_store: list[dict] = _load_docs()
 
 def add_doc(doc: dict):
     """Thread-safe add document."""
+    from services.document_runtime import get_publication
+    if get_publication() is not None:
+        raise RuntimeError("New documents must be committed through publication")
     with _lock:
         _docs_store.append(doc)
         _save_docs(_docs_store)
@@ -55,6 +58,12 @@ def add_doc(doc: dict):
 def remove_doc(doc_id: str):
     """Thread-safe remove document."""
     global _docs_store
+    from services.document_runtime import get_publication
+    service = get_publication()
+    if service is not None:
+        with _lock:
+            legacy = next((d for d in _docs_store if d['document_id'] == doc_id), None)
+        return service.delete(doc_id, legacy=legacy)
     with _lock:
         _docs_store = [d for d in _docs_store if d["document_id"] != doc_id]
         _save_docs(_docs_store)
@@ -63,4 +72,7 @@ def remove_doc(doc_id: str):
 def get_docs_snapshot() -> list[dict]:
     """Thread-safe read — returns a shallow copy of the current document store."""
     with _lock:
-        return _docs_store[:]
+        legacy = _docs_store[:]
+    from services.document_runtime import get_publication
+    service = get_publication()
+    return service.documents(legacy) if service is not None else legacy

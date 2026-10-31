@@ -1,0 +1,11 @@
+{
+  "candidate": {
+    "frozen_input_helpers.py": "56b704f83e25b553dddba4501b8dd9e6917bf096c02fe8902867eaa0b3ce8e2e",
+    "test_new_document_pilot.py": "684643f64c644a9a09e51c78e3953235df7b9e02538d47e77dfdc5749e6cd033",
+    "test_frozen_prompt_contract.py": "fba92ecb3f163b61084062fb4a162b8f75a3133307f0d71738245d0b41f35acf"
+  },
+  "current_production_read_only": {
+    "new_document_pilot.py": "10720e7eadd7620ddd7e15f8767ede8d76bb666b819d4f7bc9fd1b6cf2961385",
+    "common_three_arm.py": "d5cbf52cb9dc5ff30bdd13fe7de9c050751cec6413f4e69f31f49f2abc998d9e"
+  }
+}

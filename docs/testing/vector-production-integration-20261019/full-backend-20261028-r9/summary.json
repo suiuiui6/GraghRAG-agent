@@ -1,0 +1,94 @@
+{
+  "time_utc": "2026-10-28T12:44:17.822155+00:00",
+  "commands": [
+    {
+      "name": "collect",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "backend/tests",
+        "backend/research/test_deepseek_scope_pilot.py",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 89.84400000000005
+    },
+    {
+      "name": "tests",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "run",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r9\\backend.coverage",
+        "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\model_dependency_bootstrap.py",
+        "backend/tests",
+        "backend/research/test_deepseek_scope_pilot.py",
+        "-vv",
+        "-ra",
+        "--tb=short",
+        "--durations=20",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r9\\test-temp",
+        "--junitxml=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r9\\junit.xml"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 835.4370000000001
+    },
+    {
+      "name": "export",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "json",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r9\\backend.coverage",
+        "-o",
+        "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r9\\coverage.json"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 4.25
+    }
+  ],
+  "inputs_stable": true,
+  "runtime_inputs_stable": true,
+  "purpose": "full fixed-scope backend on Python3.12.16/SQLite3.54/msgpack1.2.3; dependency preparation inside coverage precedes pytest; test command budget 1200 seconds",
+  "totals": {
+    "covered_lines": 16604,
+    "num_statements": 17802,
+    "percent_covered": 92.40204286671133,
+    "percent_covered_display": "92",
+    "missing_lines": 1198,
+    "excluded_lines": 0,
+    "num_branches": 6086,
+    "num_partial_branches": 439,
+    "covered_branches": 5469,
+    "missing_branches": 617
+  },
+  "production_count": 120,
+  "coverage_count": 120,
+  "missing": [],
+  "extra": [],
+  "coverage_gate": false,
+  "scope_gate": true,
+  "command_gate": true,
+  "test_counts": {
+    "collected": 2187,
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "test_gate": true,
+  "baseline_sha256": "803513af06da9e41d48eb79774a4254683db2aa876de1fab7d93fe5784464b82",
+  "baseline_cases": 2157,
+  "missing_baseline_cases": [],
+  "baseline_gate": true,
+  "backend_gate": false
+}

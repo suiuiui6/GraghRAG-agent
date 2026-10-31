@@ -1,0 +1,13 @@
+{
+  "all_zero_exit": true,
+  "source_native4_and_build_py_match_C": true,
+  "actual_image_restrictions_and_rw_alias_checked": true,
+  "container_ids": [
+    "d9b72132e9a9e408024f4ebc64f768d01e22dc29e41823bcb8c4271e93379aeb",
+    "a18d2f8b7d1bd30afd2904c5789e252179a937f0ff06ee7d82b78498f33cca69",
+    "fb2be0bdfa336ee82d4808bb16f3c9077c3c7014b0e0d76a8b1662149407cfb7"
+  ],
+  "distinct": 3,
+  "scope": "Private synthetic build identity only; three-container service-level recovery with real pinned model; existing HTTP22 separately evidenced",
+  "formal_linux_build_gate": "closed: Linux release build and validation are not yet approved"
+}

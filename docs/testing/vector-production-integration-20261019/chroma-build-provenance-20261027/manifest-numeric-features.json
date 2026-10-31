@@ -1,0 +1,138 @@
+[
+  {
+    "path": "chromadb-1.5.9/rust/benchmark/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/chroma/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/cli/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/cli/Cargo.toml",
+    "section": "dev-dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/frontend/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/log/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/memberlist/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/metering/Cargo.toml",
+    "section": "dev-dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/python_bindings/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/s3heap/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/s3heap-service/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/segment/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/storage/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/sysdb/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/tracing/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/types/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  },
+  {
+    "path": "chromadb-1.5.9/rust/wal3/Cargo.toml",
+    "section": "dependencies",
+    "name": "serde_json",
+    "value": {
+      "workspace": true
+    }
+  }
+]

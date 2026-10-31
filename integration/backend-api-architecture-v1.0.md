@@ -21,11 +21,21 @@ KG版本创建、激活及生命周期清理共享文档级`.versions.lock`跨�
 - 认证先于租户解析与资源守卫。CORS 预检由最外层 CORS 处理，实际请求仍经过认证。公开路径按精确集合匹配，含健康、认证入口、API 文档与 /static/chat-widget.js；不允许公共前缀扩大到资料或管理接口。
 - 入库的 owner_id 来自可信身份。X-Project-Id 仅作选择器，须核验项目、活跃组织与当前真实成员；项目入库要求编辑能力。任务状态、文档列表、下载、删除、chunk_count、文件和图谱复用同一资源规则；未知或不可见对象统一 404。旧资料缺归属只向管理员开放，不猜测归属或默认公开。尚无资源过滤的目录、导出、血缘等接口暂限管理员。
 - /query 在调用模型前按授权文档加载独立 KG 快照；节点及来源携带真实 document_id、document_version，按 active_version 读取。无 document_id 表示全部授权资料，无可用授权节点直接返回 metadata.status=no_data，不调用模型。
-- /rag/query 的指定文档、指定项目及非管理员请求仅走授权 KG，禁用全局 vector/BM25/table 与旧未绑定会话。显式要求无法隔离的来源返回 503，旧 session_id 返回 409。管理员无范围限制保留既有全局 RAG 路径。metadata.retrieval_scope=authorized_kg 说明受限来源；完整多来源隔离与绑定会话是后续工作。
-- 删除先查授权记录再解析全部受控资产，仅删除登记的精确 filepath 与文档 KG 目录；拒绝越界、symlink、Windows junction，未知 doc_ 不产生副作用。清理失败返回错误并保留记录以便重试；成功后使查询运行时失效。外部本地原始资料不属于可删除上传资产。
+- /rag/query 对已配置发布服务的受管文档，将授权active revision固定在同一SQLite读事务中，vector/KG/分页BM25/Table读取相同版本，返回真实document/revision；生成结束再以新事务核验授权及版本，仅版本变化允许一次完整重取。legacy资料保持授权KG限制：显式要求未经隔离的来源503，旧未绑定session_id返回409。默认生产兼容准入仍关闭，不能将合成路径通过视为可使用历史向量。受管语义以[向量集成设计](../docs/design/2026-10-19-vector-production-integration.md)为准。
+- 删除先验证写权限，以SQLite事务持久化tombstone并撤销所有版本可见性，legacy JSON同ID记录也被遮蔽。后续只清理无有效读取pin的精确登记资产；越界、symlink/junction等不安全资产不得触碰，标cleanup blocked且逻辑删除不回滚。响应status=deleted，cleanup_status与cleanup_pending明确物理清理进度；未知或不可见文档404，外部原始资料不属于可删除上传资产。此为已确认的2026-10-19删除契约，替代下文旧“清理失败保留可见记录”示例。
 - 所有入库入口使用 ingest_ 加完整 UUID；MinerU 产物发布到 output/mineru/<完整task_id>/result，独占任务目录，工作目录不作为运行时恢复来源，已有/残留任务目录拒绝覆盖。allow_cached_mineru_output 字段保留兼容，true 在产生入库副作用前返回 400；工作器绝不复用未能证明输入归属的历史产物。
 
 本地文件、JSON、图谱和认证测试不能替代真实 MinerU/OIDC/生成供应商验收；验证记录与限制见 docs/testing/2026-10-12-p0-verification.md。
+
+## 2026-10-25 向量生命周期集成补充
+
+生产源码使用SQLite＋NumPy与统一document/revision/task目录；默认`compatibility_not_approved`，检测未迁移旧Chroma库返回`migration_required`，不回退Chroma、不创建空库伪装恢复。当前仅显式隔离合成准入及固定本地模型profile参与验收。完整生产准入、Linux运行库/容器和最终全量双90仍待关闭，阶段证据见[接续记录](../memory/2026-10-25.md)。
+
+- `POST /api/v1/ingest`新增成对`replace_document_id`、严格正整数`expected_revision`；缺一422，未知/越权404，接收阶段版本冲突409。普通同名上传仍新建。提交前再次授权/CAS，后台冲突通过HTTP200状态接口返回FAILED及稳定`revision_conflict`/http_status409，DONE仅在发布成功收据之后。
+- `TaskResult`及`DocumentItem`新增可选`active_revision`；受管文档为正整数，legacy为null。向量、KG和原件引用同一manifest，prepared/inactive不能经公开读接口泄露。
+- 启动恢复按已提交收据恢复任务DONE，无有效跨进程lease且无收据的孤儿任务标`ingest_interrupted`，不重新执行模型/供应商。恢复失败保持未就绪，只有显式成功重试后解除。
+- 精确公开`GET /api/v1/ready`只返回status/ready/code，ready为true才200，否则503；相似前缀仍需鉴权。`/health`的依赖视图不代替readiness。恢复失败状态不能被新探针覆盖成成功。
+- 备份固定数据库读快照与全部登记资产引用，并持有跨进程pin；清单字节/hash/schema/目录关系验证成功后才封存。恢复只写新的隔离目标并在发布前复验，不自动切换在线库；相邻WAL不能改变所验证主文件内容。
 
 ## 目录
 

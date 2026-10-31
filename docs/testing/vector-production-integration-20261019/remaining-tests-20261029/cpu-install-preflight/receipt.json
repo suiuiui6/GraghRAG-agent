@@ -1,0 +1,453 @@
+{
+  "status": "PREFLIGHT_ONLY_INSTALL_NOT_EXECUTED",
+  "lock_sha256": "d1434b9b8b46f3d9c061098e15ddaada44e8d0a2d3dfb55d4db4c425a8f60b36",
+  "runtime_image": "sha256:ca19e0667a83656165ad4c7edd07ef50b97429fa7aa5932453dac1dc4c16ebe1",
+  "runtime_probe": {
+    "exit": 0,
+    "network": "none",
+    "read_only": true,
+    "machine": "x86_64",
+    "glibc": "2.36",
+    "python": "3.12.16",
+    "venv_module": true
+  },
+  "builder_image": "sha256:cd48c100f4e8c0297c2e1a558b7a93d95e41f79ba4f58d5f7d938a71192dff23",
+  "builder_probe": {
+    "exit": 0,
+    "gcc": "12.2.0",
+    "ld": "/usr/bin/ld",
+    "ar": "/usr/bin/ar",
+    "Python_h": true,
+    "make": null
+  },
+  "initial_builder_probe": {
+    "exit": 1,
+    "error": "FileNotFoundError: make",
+    "note": "read-only probe only; no build attempted"
+  },
+  "apt_lock_sha256": "7fa4c3c0479829be1c4b8bf7c65e4222a6022dfe3c42a2e444586a1a1cebdf16",
+  "apt_source_snapshot": "20261020T213255Z",
+  "apt_artifact_checks": [
+    {
+      "name": "binutils-common_2.40-2_amd64.deb",
+      "sha256": "ab314134f43a0891a48f69a9bc33d825da748fa5e0ba2bebb7a5c491b026f1a0",
+      "expected": "ab314134f43a0891a48f69a9bc33d825da748fa5e0ba2bebb7a5c491b026f1a0",
+      "ok": true
+    },
+    {
+      "name": "libbinutils_2.40-2_amd64.deb",
+      "sha256": "fcf55b99e5f8a78f3c8ce9b6957f1024f394cf20c196b100d308a57e43547710",
+      "expected": "fcf55b99e5f8a78f3c8ce9b6957f1024f394cf20c196b100d308a57e43547710",
+      "ok": true
+    },
+    {
+      "name": "libctf-nobfd0_2.40-2_amd64.deb",
+      "sha256": "ef1dfcf22de41ea90ebd3d505447ccccd999e96b85aa777a1d7d981dc3b347aa",
+      "expected": "ef1dfcf22de41ea90ebd3d505447ccccd999e96b85aa777a1d7d981dc3b347aa",
+      "ok": true
+    },
+    {
+      "name": "libctf0_2.40-2_amd64.deb",
+      "sha256": "3fb7b6f326be3fae4a87a3d33b9269bd06c1e4346a24bd737f265067e3b7427f",
+      "expected": "3fb7b6f326be3fae4a87a3d33b9269bd06c1e4346a24bd737f265067e3b7427f",
+      "ok": true
+    },
+    {
+      "name": "libgprofng0_2.40-2_amd64.deb",
+      "sha256": "a3c4092d84f19d13caf90f3c96eec53db8819f0e3a5247434944d71ed75fa53d",
+      "expected": "a3c4092d84f19d13caf90f3c96eec53db8819f0e3a5247434944d71ed75fa53d",
+      "ok": true
+    },
+    {
+      "name": "libjansson4_2.14-2_amd64.deb",
+      "sha256": "3fc9742f9f1a37bcb9931df6074b4d1483419ef832ad5349f47323e75fc27864",
+      "expected": "3fc9742f9f1a37bcb9931df6074b4d1483419ef832ad5349f47323e75fc27864",
+      "ok": true
+    },
+    {
+      "name": "binutils-x86-64-linux-gnu_2.40-2_amd64.deb",
+      "sha256": "2d7ea8a570d768224d7f2424abbe6f373d2154865a1fa7f56c80d43ecf492521",
+      "expected": "2d7ea8a570d768224d7f2424abbe6f373d2154865a1fa7f56c80d43ecf492521",
+      "ok": true
+    },
+    {
+      "name": "binutils_2.40-2_amd64.deb",
+      "sha256": "83c3e20b53e1fbd84d764c3ba27d26a0376e361ae5d7fb37120196934dd87424",
+      "expected": "83c3e20b53e1fbd84d764c3ba27d26a0376e361ae5d7fb37120196934dd87424",
+      "ok": true
+    },
+    {
+      "name": "libisl23_0.25-1.1_amd64.deb",
+      "sha256": "ebff0b2f8b220c74224197523019366e97ee4770d464bebc48e4865114e4da0e",
+      "expected": "ebff0b2f8b220c74224197523019366e97ee4770d464bebc48e4865114e4da0e",
+      "ok": true
+    },
+    {
+      "name": "libmpfr6_4.2.0-1_amd64.deb",
+      "sha256": "37b7a2b4e78890b6a074777f27b96c84f58e81558ba08410c2b6c0ca4a4ad77b",
+      "expected": "37b7a2b4e78890b6a074777f27b96c84f58e81558ba08410c2b6c0ca4a4ad77b",
+      "ok": true
+    },
+    {
+      "name": "libmpc3_1.3.1-1_amd64.deb",
+      "sha256": "d7f79544790e44f9b0c8cb9034a18c58d37f8702a15f32539050718679e52f80",
+      "expected": "d7f79544790e44f9b0c8cb9034a18c58d37f8702a15f32539050718679e52f80",
+      "ok": true
+    },
+    {
+      "name": "cpp-12_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "fedbb98e877adde83c983c6071537ea25ac52b277ac6e4637d85025949ca1454",
+      "expected": "fedbb98e877adde83c983c6071537ea25ac52b277ac6e4637d85025949ca1454",
+      "ok": true
+    },
+    {
+      "name": "cpp_4%3a12.2.0-3_amd64.deb",
+      "sha256": "a63db920f7aa1857a57beab185423deffb6111fa09437a99bbb4ef724fb7ba78",
+      "expected": "a63db920f7aa1857a57beab185423deffb6111fa09437a99bbb4ef724fb7ba78",
+      "ok": true
+    },
+    {
+      "name": "libcc1-0_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "4ee6009633003f47de98333ea7f7d8835ec563ae2ac4f30251dbfee04d75d46b",
+      "expected": "4ee6009633003f47de98333ea7f7d8835ec563ae2ac4f30251dbfee04d75d46b",
+      "ok": true
+    },
+    {
+      "name": "libgomp1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "48fec46bda7f5b1638b9e959889bfbc20491247d402d120bb152687eb48143d7",
+      "expected": "48fec46bda7f5b1638b9e959889bfbc20491247d402d120bb152687eb48143d7",
+      "ok": true
+    },
+    {
+      "name": "libitm1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "0ed5b35dfd1346cccbf065408ec789db6c44c1d0a16ae84533411dea09632979",
+      "expected": "0ed5b35dfd1346cccbf065408ec789db6c44c1d0a16ae84533411dea09632979",
+      "ok": true
+    },
+    {
+      "name": "libatomic1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "fbd4e154a6b444229ea002cc209df099209c0adc09102e5fd21239a3d2b55e2d",
+      "expected": "fbd4e154a6b444229ea002cc209df099209c0adc09102e5fd21239a3d2b55e2d",
+      "ok": true
+    },
+    {
+      "name": "libasan8_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "e7ac5d797d7d438a130674a8e463530f06aa02ecf919ca054d75eaa2f7849ec7",
+      "expected": "e7ac5d797d7d438a130674a8e463530f06aa02ecf919ca054d75eaa2f7849ec7",
+      "ok": true
+    },
+    {
+      "name": "liblsan0_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "d234ab339c0ba31a4fb44e2334cf5a8d15b87f2c2f9e74fadfaa877f92dcf22a",
+      "expected": "d234ab339c0ba31a4fb44e2334cf5a8d15b87f2c2f9e74fadfaa877f92dcf22a",
+      "ok": true
+    },
+    {
+      "name": "libtsan2_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "06906663d644a75a1a836382ecd80b61461129c06f02935ce408b25809f6c958",
+      "expected": "06906663d644a75a1a836382ecd80b61461129c06f02935ce408b25809f6c958",
+      "ok": true
+    },
+    {
+      "name": "libubsan1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "744f52adf00ffd45d44806b1c7e802a36bd27e479c9bc8457128fde357faa530",
+      "expected": "744f52adf00ffd45d44806b1c7e802a36bd27e479c9bc8457128fde357faa530",
+      "ok": true
+    },
+    {
+      "name": "libquadmath0_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "3f0c9a4c730da2fdab001cae596625438598fd2996d29d888feeb4c1cdc9011f",
+      "expected": "3f0c9a4c730da2fdab001cae596625438598fd2996d29d888feeb4c1cdc9011f",
+      "ok": true
+    },
+    {
+      "name": "libgcc-12-dev_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "d720259380a84f2ffc6fe516eff5cbe9c8a005138e8d6a5748747ba4b3404a82",
+      "expected": "d720259380a84f2ffc6fe516eff5cbe9c8a005138e8d6a5748747ba4b3404a82",
+      "ok": true
+    },
+    {
+      "name": "gcc-12_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "b46f33cc2ec245e435e043807038cecf4b201ef004800e9dfc1455240360e49d",
+      "expected": "b46f33cc2ec245e435e043807038cecf4b201ef004800e9dfc1455240360e49d",
+      "ok": true
+    },
+    {
+      "name": "gcc_4%3a12.2.0-3_amd64.deb",
+      "sha256": "bb63b0fb2797e2a3a294dab8a02614930c557ec1f4ea96637c244b8b5f87e630",
+      "expected": "bb63b0fb2797e2a3a294dab8a02614930c557ec1f4ea96637c244b8b5f87e630",
+      "ok": true
+    },
+    {
+      "name": "libc-dev-bin_2.36-9+deb12u14_amd64.deb",
+      "sha256": "f61d923b703401023bec2ac3d9d1c9ad7341930fbe11736f7f5ef64b489d03c4",
+      "expected": "f61d923b703401023bec2ac3d9d1c9ad7341930fbe11736f7f5ef64b489d03c4",
+      "ok": true
+    },
+    {
+      "name": "linux-libc-dev_6.1.190-1_amd64.deb",
+      "sha256": "a88a129991cbb7db1715bed232c9808b91ac0fb7149660558b9df0d074348f05",
+      "expected": "a88a129991cbb7db1715bed232c9808b91ac0fb7149660558b9df0d074348f05",
+      "ok": true
+    },
+    {
+      "name": "libcrypt-dev_1%3a4.4.33-2_amd64.deb",
+      "sha256": "81ccd29130f75a9e3adabc80e61921abff42f76761e1f792fa2d1bb69af7f52f",
+      "expected": "81ccd29130f75a9e3adabc80e61921abff42f76761e1f792fa2d1bb69af7f52f",
+      "ok": true
+    },
+    {
+      "name": "libtirpc-dev_1.3.3+ds-1_amd64.deb",
+      "sha256": "03326473eed54ffa27efae19aa5d6aeb402930968f869f318445513093691d55",
+      "expected": "03326473eed54ffa27efae19aa5d6aeb402930968f869f318445513093691d55",
+      "ok": true
+    },
+    {
+      "name": "libnsl-dev_1.3.0-2_amd64.deb",
+      "sha256": "bb81a188c119cd7fdebae723cbc95887b6c549b2fe4fb7e268a9c8846444da99",
+      "expected": "bb81a188c119cd7fdebae723cbc95887b6c549b2fe4fb7e268a9c8846444da99",
+      "ok": true
+    },
+    {
+      "name": "rpcsvc-proto_1.4.3-1_amd64.deb",
+      "sha256": "32ac0692694f8a34cc90c895f4fc739680fb2ef0e2d4870a68833682bf1c81a3",
+      "expected": "32ac0692694f8a34cc90c895f4fc739680fb2ef0e2d4870a68833682bf1c81a3",
+      "ok": true
+    },
+    {
+      "name": "libc6-dev_2.36-9+deb12u14_amd64.deb",
+      "sha256": "0218fc2befcd784c1b0c6292c0a137ce89fad054efaa579ad083bee0f2c01aae",
+      "expected": "0218fc2befcd784c1b0c6292c0a137ce89fad054efaa579ad083bee0f2c01aae",
+      "ok": true
+    }
+  ],
+  "sdists": {
+    "oss2": {
+      "url": "https://files.pythonhosted.org/packages/df/b5/f2cb1950dda46ac2284d6c950489fdacd0e743c2d79a347924d3cc44b86f/oss2-2.19.1.tar.gz",
+      "hash": "sha256:a8ab9ee7eb99e88a7e1382edc6ea641d219d585a7e074e3776e9dec9473e59c1",
+      "size": 298845,
+      "upload-time": "2024-10-25T11:37:46.638Z"
+    },
+    "crcmod": {
+      "url": "https://files.pythonhosted.org/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz",
+      "hash": "sha256:dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e",
+      "size": 89670,
+      "upload-time": "2010-06-27T14:35:29.538Z"
+    }
+  },
+  "oss2_static_files": {
+    "setup.py": "21128b30e6138cc4fe03aca66c7ecb2936a164ed984abf6db27e0219a3d8688e",
+    "setup.cfg": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e",
+    "PKG-INFO": "726c2bb507e68201730b194b6c1868ade1b28e02059bdb4d4b764a12978c9f5b"
+  },
+  "crcmod_source_review": "NOT_DONE: only cache metadata located, obtain locked source archive before hook execution",
+  "build_requirements": {
+    "setuptools": "84.1.0 (runtime lock exact; candidate builder pin)",
+    "wheel": "UNRESOLVED exact version/hash; obtain explicit wheel artifact pin before builds",
+    "backend": "setuptools.build_meta:__legacy__ for absent pyproject; confirm each verified archive"
+  },
+  "langextract_manifest_sha256": "d49efe7782cfd2becddfe0be7cc8bed09dc81e06c30bba86703c590d108af02f",
+  "langextract_files": 49,
+  "langextract_checks": [
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\LICENSE",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\pyproject.toml",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\README.md",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\annotation.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\chunking.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\data.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\data_lib.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\exceptions.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\extraction.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\factory.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\inference.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\io.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\plugins.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\progress.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\prompting.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\prompt_validation.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\py.typed",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\registry.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\resolver.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\schema.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\tokenizer.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\visualization.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\__init__.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\base_model.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\data.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\debug_utils.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\exceptions.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\format_handler.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\schema.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\tokenizer.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\types.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\core\\__init__.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\builtin_registry.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\gemini.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\gemini_batch.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\ollama.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\openai.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\openai_batch.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\patterns.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\router.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\__init__.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\_compat\\exceptions.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\_compat\\inference.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\_compat\\registry.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\_compat\\schema.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\_compat\\__init__.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\schemas\\gemini.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\schemas\\openai.py",
+      "ok": true
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract\\langextract\\providers\\schemas\\__init__.py",
+      "ok": true
+    }
+  ],
+  "network_this_task": 0,
+  "build_hooks_executed": false,
+  "installation_executed": false,
+  "production_gate_changed": false
+}

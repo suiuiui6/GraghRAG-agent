@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-29T13:41:51.0075386Z",
+  "scope": "independent design review; read only inputs",
+  "inputs": [
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\libuv-route-assessment-20261029\\assessment.md",
+      "bytes": 8862,
+      "sha256": "97a2846b13221d18244d4f7dc900863c4cd7155fc2952c720f68a0e2e2fa8e19"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\libuv-route-assessment-20261029\\backport-route\\REPORT.md",
+      "bytes": 8018,
+      "sha256": "2e5e5af1e422e4a755ad74b8306a03a701739ff9b50f166afd436383f19fbc2e"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\libuv-route-assessment-20261029\\torch-route\\REPORT.md",
+      "bytes": 11238,
+      "sha256": "c9dfdc10021710906f57a3fca2a8b175d39185635e04102b637c27f7915775e3"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\REPORT.md",
+      "bytes": 5133,
+      "sha256": "c15d8c0a5926cee0c294a401decb8684f12e05986f4c3b8f1a0e3c87c438d88f"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\windows-uv-loop-layout-debug-20261029\\torch-header-mapping\\REPORT.md",
+      "bytes": 5533,
+      "sha256": "dd9c1eb239e5050173bb1223d7c6bbdce8ed3d91ff523e5e47f17bfd79e653d6"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\windows-libuv-artifact-static-review-20261029\\REPORT.md",
+      "bytes": 5680,
+      "sha256": "3f35dbeea0123ec5b7e06e822ea280b9ec0a0aec213c7d7aaf4beffcc1acdbd2"
+    }
+  ],
+  "executed": [
+    "read reports and requesting-code-review skill; git status and memory index read requested"
+  ],
+  "notExecuted": [
+    "compile",
+    "install",
+    "DLL load",
+    "Torch import",
+    "production write",
+    "commit",
+    "push",
+    "deploy"
+  ]
+}

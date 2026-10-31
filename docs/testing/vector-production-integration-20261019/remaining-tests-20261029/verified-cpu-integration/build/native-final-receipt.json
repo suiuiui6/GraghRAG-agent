@@ -1,0 +1,14 @@
+{
+  "status": "NATIVE_EXTENSION_VERIFIED",
+  "python": "3.12.16 (main, Oct 28 2026, 02:01:35) [GCC 12.2.0]",
+  "uid": 1000,
+  "extension_path": "/work/native-venv/lib/python3.12/site-packages/crcmod/_crcfunext.cpython-312-x86_64-linux-gnu.so",
+  "extension_sha256": "ca367176ffb138dcac27abbdfdd6dfc6067d94b25ac0c9f0b559755642fe8425",
+  "implementation_module": "/work/native-venv/lib/python3.12/site-packages/crcmod/crcmod.py",
+  "usingExtension": true,
+  "crc32": "0xcbf43926",
+  "ldd_exit": 0,
+  "ldd": "\tstatically linked\n",
+  "prior_check_exit": 1,
+  "prior_check_failure": "import alias bound package; corrected to importlib.import_module, unchanged built wheel/native venv"
+}

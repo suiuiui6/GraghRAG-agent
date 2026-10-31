@@ -6,12 +6,12 @@ fastapi>=0.115.0
 uvicorn[standard]>=0.32.0
 pydantic>=2.10.0
 python-multipart>=0.0.18
-langgraph>=1.0.0
+langgraph>=1.2.14
 langchain>=1.2.0
 langchain-openai>=0.3.0
 openai>=3.14.1
 starlette>=1.6.0
-chromadb>=0.5.0
+numpy==2.5.4
 networkx>=3.0.0
 rank-bm25>=0.2.2
 sentence-transformers>=3.0.0
@@ -25,7 +25,7 @@ structlog>=25.0.0
 prometheus-client>=0.21.0
 apscheduler>=3.10.0
 pyjwt>=2.15.1
-filelock>=3.32.7
+filelock>=4.2.1
 oss2>=2.19.0
 # 选项依赖：table_index.py 缺包时会 raise，但调用方
 # index_registry.build_table_index_from_chunks 与 worker.py 均 try/except 吞掉，

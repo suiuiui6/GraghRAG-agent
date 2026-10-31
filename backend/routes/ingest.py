@@ -3,6 +3,10 @@
 import json
 import os
 import uuid
+from pathlib import Path
+from urllib.parse import urlsplit, unquote
+from filelock import FileLock, Timeout
+from services.vector_ingest import task_lock
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, HTTPException, UploadFile, File, Form, BackgroundTasks, Request
@@ -10,7 +14,7 @@ from models import (
     IngestResponse, StatusResponse, TaskStatus, StageProgress, TaskResult, TaskError, SUPPORTED_EXTENSIONS, MAX_FILE_SIZE,
 )
 from routes import add_doc
-from services.resource_access import ingest_identity, authorize_resource, is_admin, require_principal
+from services.resource_access import ingest_identity, authorize_resource, is_admin, require_principal, authorized_documents, background_authorizer
 
 from errors import ErrorCode, PipelineError, user_message
 from logging_config import get_logger
@@ -36,8 +40,8 @@ def _load_tasks() -> dict[str, dict]:
     return {}
 
 
-def _save_tasks(tasks: dict[str, dict]):
-    """Persist tasks to JSON file."""
+def _save_tasks(tasks: dict[str, dict], task_id=None):
+    """Merge a task and atomically persist it under a cross-process store lock."""
     import datetime as _dt
     def _json_serial(obj):
         if isinstance(obj, (_dt.datetime, _dt.date)):
@@ -48,19 +52,130 @@ def _save_tasks(tasks: dict[str, dict]):
             return obj.value
         return str(obj)
     os.makedirs(os.path.dirname(TASKS_STORE_PATH), exist_ok=True)
-    with open(TASKS_STORE_PATH, "w", encoding="utf-8") as f:
-        json.dump(tasks, f, ensure_ascii=False, indent=2, default=_json_serial)
+    with FileLock(TASKS_STORE_PATH + '.lock').acquire(timeout=5):
+        current = _load_tasks() if task_id is not None else {}
+        current.update({task_id: tasks[task_id]} if task_id is not None else tasks)
+        temporary = TASKS_STORE_PATH + '.' + uuid.uuid4().hex + '.tmp'
+        try:
+            with open(temporary, 'x', encoding='utf-8') as stream:
+                json.dump(current, stream, ensure_ascii=False, indent=2, default=_json_serial)
+                stream.flush()
+                os.fsync(stream.fileno())
+            os.replace(temporary, TASKS_STORE_PATH)
+        finally:
+            if os.path.exists(temporary):
+                os.unlink(temporary)
 
 
 _tasks: dict[str, dict] = _load_tasks()
+_scheduled_leases = {}
 
 
-def _run_indexing(task_id: str, filepath: str, filename: str, file_size: int, ingest_options: dict):
+def _recover_publication_receipt(task_id):
+    from services.document_runtime import get_publication
+    service = get_publication()
+    if service is None:
+        return False
+    with service.catalog() as catalog:
+        receipt = catalog.task_receipt(task_id)
+    if receipt is None or receipt['status'] not in {'done', 'failed'}:
+        return False
+    if receipt['status'] == 'failed':
+        code = receipt.get('error_code') or 'publication_failed'
+        existing = _tasks[task_id]
+        if existing.get('status') == TaskStatus.FAILED and (existing.get('error') or {}).get('code') == code:
+            return True
+        existing.update(status=TaskStatus.FAILED, error=TaskError(code=code, message=code).model_dump(),
+                        updated_at=datetime.now(timezone.utc))
+        _save_tasks(_tasks, task_id)
+        return True
+    if (_tasks[task_id].get('status') == TaskStatus.DONE
+            and (_tasks[task_id].get('result') or {}).get('active_revision') == receipt['result'].get('active_revision')):
+        return True
+    values = receipt['result']
+    result = {key: values[key] for key in TaskResult.model_fields if key in values}
+    result['pages_parsed'] = values.get('pages_parsed', values.get('pages'))
+    _tasks[task_id].update(status=TaskStatus.DONE, stage='completed', error=None,
+                           result=TaskResult(**result).model_dump(), updated_at=datetime.now(timezone.utc))
+    _save_tasks(_tasks, task_id)
+    return True
+
+
+def recover_orphaned_tasks():
+    """Run once after publication composition, before accepting new requests.
+
+    A kernel lease, rather than a PID or wall clock, proves worker liveness.
+    Recovery never retries parsing, embedding, or publication.
+    """
+    from services.document_runtime import get_publication
+    service = get_publication()
+    if service is None:
+        return
+    persisted = _load_tasks()
+    for task_id, task in persisted.items():
+        if task.get('status') not in {TaskStatus.PENDING, TaskStatus.RUNNING} or task_id in _scheduled_leases:
+            continue
+        lock = task_lock(TASKS_STORE_PATH, task_id)
+        try:
+            lock.acquire(timeout=0)
+        except Timeout:
+            continue
+        try:
+            latest = _load_tasks().get(task_id)
+            if not latest or latest.get('status') not in {TaskStatus.PENDING, TaskStatus.RUNNING}:
+                continue
+            _tasks[task_id] = latest
+            with service.catalog() as catalog:
+                with catalog._write():
+                    catalog.connection.execute(
+                        "UPDATE document_tasks SET status='failed',error_code='ingest_interrupted' "
+                        "WHERE task_id=? AND status='prepared'", (task_id,))
+            if not _recover_publication_receipt(task_id):
+                _tasks[task_id].update(status=TaskStatus.FAILED,
+                    error=TaskError(code='ingest_interrupted', message='ingest_interrupted').model_dump(),
+                    updated_at=datetime.now(timezone.utc))
+                _save_tasks(_tasks, task_id)
+        finally:
+            lock.release()
+
+
+def _schedule_indexing(background_tasks, task_id, filepath, filename, file_size, options):
+    # Reserve before scheduling: another process restarting during the pending
+    # window must not classify this live request's task as orphaned.
+    lease = task_lock(TASKS_STORE_PATH, task_id)
+    lease.acquire(timeout=0)
+    _scheduled_leases[task_id] = lease
+    try:
+        _save_tasks(_tasks, task_id)
+        background_tasks.add_task(_run_indexing, task_id, filepath, filename, file_size, options)
+    except BaseException:
+        _scheduled_leases.pop(task_id, None)
+        lease.release()
+        raise
+
+
+def _run_indexing(task_id, filepath, filename, file_size, ingest_options):
+    lease = _scheduled_leases.pop(task_id, None)
+    if lease is None:
+        lease = task_lock(TASKS_STORE_PATH, task_id)
+        try:
+            lease.acquire(timeout=0)
+        except Timeout:
+            return
+    try:
+        return _run_indexing_locked(task_id, filepath, filename, file_size, ingest_options)
+    finally:
+        lease.release()
+
+
+def _run_indexing_locked(task_id: str, filepath: str, filename: str, file_size: int, ingest_options: dict):
     """Background indexing — REAL MinerU → LangExtract → KG pipeline."""
 
+    if _recover_publication_receipt(task_id):
+        return
     _tasks[task_id]["status"] = TaskStatus.RUNNING
     _tasks[task_id]["updated_at"] = datetime.now(timezone.utc)
-    _save_tasks(_tasks)
+    _save_tasks(_tasks, task_id)
 
     def progress(stage_key, stage_name, step, details, error=None,
                  error_code=None, degraded=False):
@@ -91,8 +206,22 @@ def _run_indexing(task_id: str, filepath: str, filename: str, file_size: int, in
                 ).model_dump()
                 logger.error("ingest_failed", task_id=task_id, stage=stage_key,
                              error_code=error_code, detail=error)
-        _save_tasks(_tasks)
+        _save_tasks(_tasks, task_id)
 
+    # Download once; provider parsing and publication consume the same bytes.
+    if filepath.startswith(('http://', 'https://')):
+        from services.vector_ingest import materialize_original
+        original_path = Path(UPLOADS_DIR) / (task_id + Path(filename).suffix.lower())
+        try:
+            filepath, file_size = materialize_original(filepath, original_path, max_bytes=MAX_FILE_SIZE)
+        except (ValueError, OSError):
+            _tasks[task_id].update(status=TaskStatus.FAILED,
+                error=TaskError(code='source_download_failed', message='source_download_failed').model_dump(),
+                updated_at=datetime.now(timezone.utc))
+            _save_tasks(_tasks, task_id)
+            return
+        _tasks[task_id]['file_size_bytes'] = file_size
+        _save_tasks(_tasks, task_id)
     try:
         from worker import run_real_pipeline
         result = run_real_pipeline(task_id, filepath, filename, progress, ingest_options)
@@ -110,7 +239,26 @@ def _run_indexing(task_id: str, filepath: str, filename: str, file_size: int, in
     if result is None:
         return  # Already marked as failed in progress callback
 
+    from services.document_runtime import get_publication, publish_pipeline_result
+    service = get_publication()
+    if service is not None:
+        try:
+            publish_pipeline_result(task_id, filepath, filename, result, ingest_options,
+                                    authorize=background_authorizer(ingest_options))
+        except Exception as exc:
+            from services.document_catalog import CatalogConflict, CatalogNotFound
+            code = exc.code if isinstance(exc, CatalogConflict) else 'document_not_found' if isinstance(exc, CatalogNotFound) else 'publication_failed'
+            http_status = 409 if isinstance(exc, CatalogConflict) else 404 if isinstance(exc, CatalogNotFound) else exc.status_code if isinstance(exc, HTTPException) else 503
+            _tasks[task_id].update(status=TaskStatus.FAILED, error=TaskError(code=code, message=code, http_status=http_status).model_dump(), updated_at=datetime.now(timezone.utc))
+            _save_tasks(_tasks, task_id)
+            return
     doc_id = result["document_id"]
+    if service is None:
+        add_doc({**ingest_options.get('identity', {}), 'document_id': doc_id,
+                 'filename': filename, 'status': 'indexed', 'kg_path': result.get('kg_path'),
+                 'kg_nodes': result['kg_nodes'], 'kg_edges': result['kg_edges'],
+                 'pages': result['pages_parsed'], 'indexed_at': datetime.now(timezone.utc).isoformat(),
+                 'file_size_bytes': file_size, 'filepath': filepath})
     _tasks[task_id].update({
         "status": TaskStatus.DONE,
         "stage": "completed",
@@ -120,6 +268,7 @@ def _run_indexing(task_id: str, filepath: str, filename: str, file_size: int, in
         ).model_dump(),
         "result": TaskResult(
             document_id=doc_id,
+            active_revision=result.get("active_revision"),
             kg_nodes=result["kg_nodes"],
             kg_edges=result["kg_edges"],
             grounded_entities=result["grounded_entities"],
@@ -131,21 +280,10 @@ def _run_indexing(task_id: str, filepath: str, filename: str, file_size: int, in
         ).model_dump(),
         "updated_at": datetime.now(timezone.utc),
     })
-    _save_tasks(_tasks)
-    add_doc({
-        **ingest_options.get("identity", {}),
-        "document_id": doc_id,
-        "kg_path": result.get("kg_path"),
-        "filename": filename,
-        "status": "indexed",
-        "kg_nodes": result["kg_nodes"],
-        "kg_edges": result["kg_edges"],
-        "pages": result["pages_parsed"],
-        "indexed_at": datetime.now(timezone.utc).isoformat(),
-        "file_size_bytes": file_size,
-        "filepath": filepath,
-    })
+    _save_tasks(_tasks, task_id)
 
+    if service is not None:
+        return
     # Hot-reload KG so query endpoint picks up new data
     try:
         from routes.query import reload_kg
@@ -169,8 +307,30 @@ async def ingest(
     # Retained for wire compatibility; true is rejected because legacy cached
     # artifacts cannot prove they belong to this upload.
     allow_cached_mineru_output: bool = Form(default=False),
+    replace_document_id: str | None = Form(default=None),
+    expected_revision: str | None = Form(default=None),
 ):
     identity = ingest_identity(request)
+    from services.document_runtime import get_publication
+    from services.document_catalog import DocumentCatalog, CatalogConflict
+    revision = None
+    if replace_document_id is not None or expected_revision is not None:
+        import re
+        if (not replace_document_id or not replace_document_id.strip() or expected_revision is None
+                or re.fullmatch(r'[1-9][0-9]*', expected_revision) is None):
+            raise HTTPException(422, "replace_document_id and a positive integer expected_revision are required together")
+        revision = int(expected_revision)
+        target = authorized_documents(request, replace_document_id, write=True)[0]
+        if get_publication() is None:
+            raise HTTPException(503, "Document vector publication is not configured")
+        try:
+            DocumentCatalog.require_revision(target, revision)
+        except CatalogConflict as exc:
+            raise HTTPException(409, detail={'code': exc.code}) from exc
+        identity = {key: target.get(key) for key in ('owner_id', 'org_id', 'project_id')}
+    publication_context = {'replace_document_id': replace_document_id, 'expected_revision': revision,
+                           'principal': dict(require_principal(request)),
+                           'selected_project': request.headers.get('X-Project-Id')}
     if allow_cached_mineru_output:
         raise HTTPException(400, detail="Unverified MinerU cache reuse is disabled")
     filename_override = None
@@ -206,7 +366,6 @@ async def ingest(
                 "filename": filename, "file_size_bytes": os.path.getsize(url) if os.path.exists(url) else 0,
                 "created_at": now, "updated_at": now, "progress": None, "result": None, "error": None,
             }
-            _save_tasks(_tasks)
             ingest_options = {
                 "language": language,
                 "enable_ocr": enable_ocr,
@@ -214,14 +373,19 @@ async def ingest(
                 "enable_table": enable_table,
                 "model_version": model_version,
             }
+            ingest_options.update(publication_context)
             ingest_options["identity"] = identity
-            background_tasks.add_task(_run_indexing, task_id, url, filename, os.path.getsize(url), ingest_options)
+            _schedule_indexing(background_tasks, task_id, url, filename, os.path.getsize(url), ingest_options)
             return IngestResponse(task_id=task_id, status=TaskStatus.PENDING, filename=filename,
                                   file_size_bytes=os.path.getsize(url), created_at=now, estimated_duration_seconds=60,
                                   links={"status": f"/api/v1/status/{task_id}"})
 
         task_id = f"ingest_{uuid.uuid4().hex}"
-        filename = url.split("/")[-1] or "document.pdf"
+        filename = filename_override or unquote(urlsplit(url).path.rsplit('/', 1)[-1]) or "document.pdf"
+        filename = filename.replace('\\', '/').rsplit('/', 1)[-1]
+        ext = os.path.splitext(filename)[1].lower()
+        if ext not in SUPPORTED_EXTENSIONS:
+            raise HTTPException(400, detail="Unsupported URL document format")
         now = datetime.now(timezone.utc)
         _tasks[task_id] = {
             **identity,
@@ -229,7 +393,6 @@ async def ingest(
             "filename": filename, "file_size_bytes": 0,
             "created_at": now, "updated_at": now, "progress": None, "result": None, "error": None,
         }
-        _save_tasks(_tasks)
         ingest_options = {
             "language": language,
             "enable_ocr": enable_ocr,
@@ -237,8 +400,9 @@ async def ingest(
             "enable_table": enable_table,
             "model_version": model_version,
         }
+        ingest_options.update(publication_context)
         ingest_options["identity"] = identity
-        background_tasks.add_task(_run_indexing, task_id, url, filename, 0, ingest_options)
+        _schedule_indexing(background_tasks, task_id, url, filename, 0, ingest_options)
         return IngestResponse(task_id=task_id, status=TaskStatus.PENDING, filename=filename,
                               file_size_bytes=0, created_at=now, estimated_duration_seconds=60,
                               links={"status": f"/api/v1/status/{task_id}"})
@@ -267,8 +431,6 @@ async def ingest(
         "filename": file.filename, "file_size_bytes": len(contents),
         "created_at": now, "updated_at": now, "progress": None, "result": None, "error": None,
     }
-    _save_tasks(_tasks)
-
     ingest_options = {
         "language": language,
         "enable_ocr": enable_ocr,
@@ -277,8 +439,9 @@ async def ingest(
         "model_version": model_version,
         "allow_cached_mineru_output": False,
     }
+    ingest_options.update(publication_context)
     ingest_options["identity"] = identity
-    background_tasks.add_task(_run_indexing, task_id, filepath, file.filename or "unknown", len(contents), ingest_options)
+    _schedule_indexing(background_tasks, task_id, filepath, file.filename or "unknown", len(contents), ingest_options)
 
     return IngestResponse(task_id=task_id, status=TaskStatus.PENDING,
         filename=file.filename or "unknown", file_size_bytes=len(contents),
@@ -293,6 +456,7 @@ async def get_status(task_id: str, request: Request):
         raise HTTPException(404, detail=f"Task not found: {task_id}")
 
     authorize_resource(request, task)
+    _recover_publication_receipt(task_id)
     def timestamp(value):
         return datetime.fromisoformat(value.replace("Z", "+00:00")) if isinstance(value, str) else value
 

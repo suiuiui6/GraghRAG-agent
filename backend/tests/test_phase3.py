@@ -300,7 +300,7 @@ class TestHealthChecker:
         results = hc.probe_all()
         assert "deepseek_api" in results
         assert "mineru_api" in results
-        assert "chromadb" in results
+        assert "vector_store" in results
         assert "oauth2_provider" in results
         assert "feishu_bot" in results
         for k, v in results.items():

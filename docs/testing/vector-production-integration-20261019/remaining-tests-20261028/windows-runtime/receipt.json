@@ -1,0 +1,163 @@
+{
+  "observed_utc": "2026-10-28T06:24:23.535327+00:00",
+  "runtime": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+  "python_composition": "D:/graghRAG-agent/.tmp/python-security-runtime-20261028/derived-composition.json",
+  "assembly": "Verified copy of existing installed payload, not a complete clean reinstall. New uv venv; fresh verified official msgpack wheel + offline editable LangExtract build.",
+  "source_target_files": 33167,
+  "post_assembly_mismatches": [],
+  "packages_old": 159,
+  "packages_new": 159,
+  "package_diff": {
+    "msgpack": [
+      "1.2.2",
+      "1.2.3"
+    ]
+  },
+  "io": {
+    "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+    "sqlite": "3.54.0",
+    "openssl": "OpenSSL 3.5.9 29 Sep 2026",
+    "expat": "expat_2.9.0",
+    "numpy": "2.5.4",
+    "msgpack": "1.2.3",
+    "runtime": {
+      "sqlite_version": "3.54.0",
+      "hardening": true
+    },
+    "wal": true,
+    "rollback": true,
+    "blob": true,
+    "backup": true,
+    "child": {
+      "exit": 0,
+      "stdout": "reopen_ok\n"
+    },
+    "cosine": true,
+    "expat_parse": true,
+    "msgpack_roundtrip": true
+  },
+  "scans": {
+    "all-lock": {
+      "dependencies": 179,
+      "vulnerabilities": 0,
+      "skipped": []
+    },
+    "installed": {
+      "dependencies": 159,
+      "vulnerabilities": 0,
+      "skipped": []
+    }
+  },
+  "commands": [
+    {
+      "name": "install-msgpack",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "--offline",
+        "--no-deps",
+        "D:\\graghRAG-agent\\.tmp\\msgpack-candidate-review-20261028\\msgpack-1.2.3-cp312-cp312-win_amd64.whl"
+      ],
+      "exit": 0,
+      "seconds": 0.11061310768127441
+    },
+    {
+      "name": "install-local",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "--offline",
+        "--no-build-isolation",
+        "--no-deps",
+        "-e",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract"
+      ],
+      "exit": 0,
+      "seconds": 3.2511260509490967
+    },
+    {
+      "name": "pip-check",
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe"
+      ],
+      "exit": 0,
+      "seconds": 6.227360010147095
+    },
+    {
+      "name": "normal-io",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-B",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\normal_io.py"
+      ],
+      "exit": 0,
+      "seconds": 3.1774163246154785
+    },
+    {
+      "name": "audit-all-lock",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pip_audit",
+        "-r",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\all-lock-requirements.txt",
+        "--disable-pip",
+        "--no-deps",
+        "--timeout",
+        "45",
+        "--format",
+        "json",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-all-lock.json",
+        "--cache-dir",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-cache-all-lock",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit": 0,
+      "seconds": 169.95082092285156
+    },
+    {
+      "name": "audit-installed",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pip_audit",
+        "--timeout",
+        "45",
+        "--format",
+        "json",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-installed.json",
+        "--cache-dir",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-cache-installed",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit": 0,
+      "seconds": 136.39074993133545
+    }
+  ],
+  "config_sha256": {
+    "pyproject.toml": "961a7f39035342cbfd09739f54e7f7a3dfe34fd005a02081c5f6675830d71ed8",
+    "requirements.txt": "a2f13bc4eb914c602cc9b45294340ecdc55334d99f5b585d78d006f6f9f50688",
+    "uv.lock": "6168a2319f7b2964b7f325ab700444c5974b7c2c6fbc4ee95bb0c5eefdca1b90"
+  },
+  "retained_failures": [
+    "Initial default uv cache access denied",
+    "install-local-attempt1.log: sandbox WinError5 in new build temporary directory; normal elevated rerun succeeded"
+  ],
+  "scope": "Only this directory modified. No commit/push/deployment/gate changes. Full backend coverage and independent review owned by root."
+}

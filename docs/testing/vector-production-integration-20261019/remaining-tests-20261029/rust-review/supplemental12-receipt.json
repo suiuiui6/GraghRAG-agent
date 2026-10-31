@@ -1,0 +1,553 @@
+{
+  "scope": "Finite real malformed protocol/bounded frame/OS handle error contracts; explicit predicates then release differential",
+  "timeout_per_process_seconds": 3,
+  "uid": 65534,
+  "cases": [
+    {
+      "case": {
+        "id": "f64-length15",
+        "input_hex": "7265636f72645f663634093030303030303030303030303030300a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.172247+00:00",
+          "elapsed_seconds": 0.030494582999381237,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/f64-length15.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.214321+00:00",
+          "elapsed_seconds": 0.04494981100287987,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "f64-invalid-g",
+        "input_hex": "7265636f72645f66363409303030303030303030303030303030670a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.272409+00:00",
+          "elapsed_seconds": 0.01469651100342162,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/f64-invalid-g.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.291703+00:00",
+          "elapsed_seconds": 0.026528790993324947,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "f64-uppercase-rejected",
+        "input_hex": "7265636f72645f66363409334646303030303030303030303030300a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.330291+00:00",
+          "elapsed_seconds": 0.011657559000013862,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/f64-uppercase-rejected.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.348204+00:00",
+          "elapsed_seconds": 0.022908462000486907,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "malformed-utf8",
+        "input_hex": "776865726509ff0a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.382062+00:00",
+          "elapsed_seconds": 0.008491099004459102,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/malformed-utf8.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.395537+00:00",
+          "elapsed_seconds": 0.022030061001714785,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "missing-tab",
+        "input_hex": "77686572650a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.429186+00:00",
+          "elapsed_seconds": 0.007437791995471343,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/missing-tab.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.440936+00:00",
+          "elapsed_seconds": 0.026863115999731235,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "no-newline-valid",
+        "input_hex": "77686572650931",
+        "expected_stdout_hex": "6f6b0975363409310a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.481514+00:00",
+          "elapsed_seconds": 0.01480477700533811,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/no-newline-valid.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.500177+00:00",
+          "elapsed_seconds": 0.03498225799557986,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "empty-input",
+        "input_hex": "",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.554869+00:00",
+          "elapsed_seconds": 0.012822462995245587,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/empty-input.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.573801+00:00",
+          "elapsed_seconds": 0.03875539300497621,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "exact384-valid-whitespace",
+        "input_hex": "77686572650920202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020310a",
+        "expected_stdout_hex": "6f6b0975363409310a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.626307+00:00",
+          "elapsed_seconds": 0.009341507000499405,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/exact384-valid-whitespace.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.641723+00:00",
+          "elapsed_seconds": 0.026375645997177344,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "exact385-invalid-limit",
+        "input_hex": "7768657265092020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020310a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_exit": 0,
+        "expected_stderr_hex": ""
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.683916+00:00",
+          "elapsed_seconds": 0.00908469899877673,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/exact385-invalid-limit.profraw"
+          },
+          "io_mode": "normal",
+          "started_utc": "2026-10-29T00:21:48.699901+00:00",
+          "elapsed_seconds": 0.024565156003518496,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "stdin-directory-error",
+        "input_hex": "",
+        "expected_stdout_hex": "",
+        "expected_exit": 1,
+        "expected_stderr_hex": "",
+        "io_mode": "stdin-directory",
+        "expected_stderr_contains": [
+          "code: 21",
+          "Is a directory"
+        ]
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "stdin-directory",
+          "started_utc": "2026-10-29T00:21:48.737462+00:00",
+          "elapsed_seconds": 0.010153638999327086,
+          "exit": 1,
+          "stdout_hex": "",
+          "stderr_hex": "4572726f723a204f73207b20636f64653a2032312c206b696e643a204973414469726563746f72792c206d6573736167653a202249732061206469726563746f727922207d0a"
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/stdin-directory-error.profraw"
+          },
+          "io_mode": "stdin-directory",
+          "started_utc": "2026-10-29T00:21:48.755726+00:00",
+          "elapsed_seconds": 0.023283032998733688,
+          "exit": 1,
+          "stdout_hex": "",
+          "stderr_hex": "4572726f723a204f73207b20636f64653a2032312c206b696e643a204973414469726563746f72792c206d6573736167653a202249732061206469726563746f727922207d0a"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "stdout-full-valid",
+        "input_hex": "776865726509310a",
+        "expected_stdout_hex": "",
+        "expected_exit": 1,
+        "expected_stderr_hex": "",
+        "io_mode": "stdout-full",
+        "expected_stderr_contains": [
+          "code: 28",
+          "No space left on device"
+        ]
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "stdout-full",
+          "started_utc": "2026-10-29T00:21:48.796294+00:00",
+          "elapsed_seconds": 0.01837322900246363,
+          "exit": 1,
+          "stdout_hex": "",
+          "stderr_hex": "4572726f723a204f73207b20636f64653a2032382c206b696e643a2053746f7261676546756c6c2c206d6573736167653a20224e6f207370616365206c656674206f6e2064657669636522207d0a"
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/stdout-full-valid.profraw"
+          },
+          "io_mode": "stdout-full",
+          "started_utc": "2026-10-29T00:21:48.826831+00:00",
+          "elapsed_seconds": 0.03673731299932115,
+          "exit": 1,
+          "stdout_hex": "",
+          "stderr_hex": "4572726f723a204f73207b20636f64653a2032382c206b696e643a2053746f7261676546756c6c2c206d6573736167653a20224e6f207370616365206c656674206f6e2064657669636522207d0a"
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "stdout-full-error",
+        "input_hex": "77686572650a",
+        "expected_stdout_hex": "",
+        "expected_exit": 1,
+        "expected_stderr_hex": "",
+        "io_mode": "stdout-full",
+        "expected_stderr_contains": [
+          "code: 28",
+          "No space left on device"
+        ]
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "io_mode": "stdout-full",
+          "started_utc": "2026-10-29T00:21:48.875719+00:00",
+          "elapsed_seconds": 0.01659269499941729,
+          "exit": 1,
+          "stdout_hex": "",
+          "stderr_hex": "4572726f723a204f73207b20636f64653a2032382c206b696e643a2053746f7261676546756c6c2c206d6573736167653a20224e6f207370616365206c656674206f6e2064657669636522207d0a"
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-supplemental12/stdout-full-error.profraw"
+          },
+          "io_mode": "stdout-full",
+          "started_utc": "2026-10-29T00:21:48.898012+00:00",
+          "elapsed_seconds": 0.02696178500627866,
+          "exit": 1,
+          "stdout_hex": "",
+          "stderr_hex": "4572726f723a204f73207b20636f64653a2032382c206b696e643a2053746f7261676546756c6c2c206d6573736167653a20224e6f207370616365206c656674206f6e2064657669636522207d0a"
+        }
+      ]
+    }
+  ],
+  "passed": 12,
+  "profiles": [
+    {
+      "name": "empty-input.profraw",
+      "bytes": 56376,
+      "sha256": "fc32bc6cb951170b19b4ebf66004866db8b34e1353dbe9ce7440f69235cc3292"
+    },
+    {
+      "name": "exact384-valid-whitespace.profraw",
+      "bytes": 56376,
+      "sha256": "fbbb72e4a45fd08d341124dccc6badc6be80d720d0172d482df9b73cff89c757"
+    },
+    {
+      "name": "exact385-invalid-limit.profraw",
+      "bytes": 56376,
+      "sha256": "85e1237b4e27648687a91a422cfdbe0133bb4307f09ec0a73c8a4904b9fc7d36"
+    },
+    {
+      "name": "f64-invalid-g.profraw",
+      "bytes": 56376,
+      "sha256": "a85a5f20c0e8768ca7d12aba1ed9fc038410b10698ca18fbc61eb9744c897465"
+    },
+    {
+      "name": "f64-length15.profraw",
+      "bytes": 56376,
+      "sha256": "9b936a382f25074459053aea166386371c4eecc89a4f83532b77c35246d3b648"
+    },
+    {
+      "name": "f64-uppercase-rejected.profraw",
+      "bytes": 56376,
+      "sha256": "e16748d553234341f5338749c34b41e401db2029c68e06ab6f86914780118341"
+    },
+    {
+      "name": "malformed-utf8.profraw",
+      "bytes": 56376,
+      "sha256": "04dba71bad1af1d46aa2baddddbd3f8f468ee6fb115b02874ce63ae1a585ae57"
+    },
+    {
+      "name": "missing-tab.profraw",
+      "bytes": 56376,
+      "sha256": "b6c42725b68064e72af89e9110fa3b6dfc7d1048c425061fde96ca40026d043a"
+    },
+    {
+      "name": "no-newline-valid.profraw",
+      "bytes": 56376,
+      "sha256": "ccd3e4c555af171312bc5a405c2dcabfea3d1e770f11094ddfd365d952673fec"
+    },
+    {
+      "name": "stdin-directory-error.profraw",
+      "bytes": 56376,
+      "sha256": "8e3e36c7d86b4ee4d362c73872b15bc1ca48ff77de7070c7946212426c9a8f6a"
+    },
+    {
+      "name": "stdout-full-error.profraw",
+      "bytes": 56376,
+      "sha256": "5401eb661f32fc236f85c0577110a37e2a203d08f0b7ea2803799cc429121f28"
+    },
+    {
+      "name": "stdout-full-valid.profraw",
+      "bytes": 56376,
+      "sha256": "0aafcf4332634e500b2fa90a306dc109c6543553ed551f4213b8f27ff5607aaa"
+    }
+  ]
+}

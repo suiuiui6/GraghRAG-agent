@@ -1,0 +1,169 @@
+{
+  "source_manifest_unchanged": {
+    "Cargo.toml": true,
+    "Cargo.lock": true,
+    "src/main.rs": true,
+    "bridge.py": true,
+    "test_bridge.py": true,
+    "validate.py": true,
+    "replay.py": true,
+    "capture.py": true,
+    "verify.py": true,
+    "README.md": true,
+    "upstream/chroma-bindings.rs": true,
+    "upstream/chroma-python-rust.py": true,
+    "upstream/chroma-sqlite-log.rs": true,
+    "target/debug/vector-numeric-bridge-mvp.exe": true
+  },
+  "available_registry_source_archives_verified": [
+    "itoa-1.0.11.crate",
+    "memchr-2.7.4.crate",
+    "serde_core-1.0.228.crate",
+    "serde_json-1.0.149.crate",
+    "syn-2.0.82.crate",
+    "zmij-1.0.21.crate"
+  ],
+  "probes": [
+    [
+      "record_f64\t0000000000000000",
+      [
+        "ok",
+        "f64",
+        "0000000000000000"
+      ]
+    ],
+    [
+      "record_f64\t8000000000000000",
+      [
+        "ok",
+        "f64",
+        "8000000000000000"
+      ]
+    ],
+    [
+      "where\t0",
+      [
+        "ok",
+        "u64",
+        "0"
+      ]
+    ],
+    [
+      "where\t-0",
+      [
+        "ok",
+        "f64",
+        "8000000000000000"
+      ]
+    ],
+    [
+      "where\t-0.0",
+      [
+        "ok",
+        "f64",
+        "8000000000000000"
+      ]
+    ],
+    [
+      "where\t9223372036854775807",
+      [
+        "ok",
+        "u64",
+        "9223372036854775807"
+      ]
+    ],
+    [
+      "where\t9223372036854775808",
+      [
+        "ok",
+        "u64",
+        "9223372036854775808"
+      ]
+    ],
+    [
+      "where\t18446744073709551615",
+      [
+        "ok",
+        "u64",
+        "18446744073709551615"
+      ]
+    ],
+    [
+      "where\t18446744073709551616",
+      [
+        "ok",
+        "f64",
+        "43f0000000000000"
+      ]
+    ],
+    [
+      "where\t-9223372036854775808",
+      [
+        "ok",
+        "i64",
+        "-9223372036854775808"
+      ]
+    ],
+    [
+      "where\t-9223372036854775809",
+      [
+        "ok",
+        "f64",
+        "c3e0000000000000"
+      ]
+    ],
+    [
+      "record_i64\t9223372036854775807",
+      [
+        "ok",
+        "i64",
+        "9223372036854775807"
+      ]
+    ],
+    [
+      "where\t1e-9999",
+      [
+        "ok",
+        "f64",
+        "0000000000000000"
+      ]
+    ],
+    [
+      "where\t-1e-9999",
+      [
+        "ok",
+        "f64",
+        "8000000000000000"
+      ]
+    ]
+  ],
+  "commands": [
+    {
+      "name": "audit-version",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\audit-tool\\cargo-audit-x86_64-pc-windows-msvc-v0.22.2\\cargo-audit.exe",
+        "--version"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "audit-lock",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\audit-tool\\cargo-audit-x86_64-pc-windows-msvc-v0.22.2\\cargo-audit.exe",
+        "audit",
+        "--file",
+        "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\Cargo.lock",
+        "--db",
+        "D:\\graghRAG-agent\\.tmp\\vector-native-audit-20261014\\tooling\\db-fixed",
+        "--no-fetch",
+        "--no-yanked",
+        "--json",
+        "--deny",
+        "warnings"
+      ],
+      "exit": 0
+    }
+  ],
+  "rustsec_fixed_commit": "edb58f5974b83eb8302332821cb6d389777aa351",
+  "audit_limitations": "fixed historical database; yanked NOT_RUN; native CRT/MSVC/stdlib not covered"
+}

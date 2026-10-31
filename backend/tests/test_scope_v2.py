@@ -4,11 +4,12 @@ import importlib
 import hashlib
 
 import pytest
+from backend.tests.frozen_input_helpers import current_module, frozen_gold, frozen_source
 
 
 def api():
     assert importlib.util.find_spec("backend.research.scope_v2") is not None, "independent scope module must exist"
-    return importlib.import_module("backend.research.scope_v2")
+    return current_module("scope_v2")
 
 
 def test_no_selection_and_uncertain_queries_abstain():
@@ -176,7 +177,7 @@ def test_nine_frozen_queries_with_explicit_test_fixture_only_selection(qid, sele
     # Gold is accessible only here in TESTS. AUTO receives the query and the
     # independently selected TEST_FIXTURE_ONLY Source, never qid/range/answers.
     from backend.research.gold_v2 import load_gold
-    package = load_gold(Path(__file__).resolve().parents[2])
+    package = frozen_gold()
     question = next(q for q in package.data["questions"] if q["id"] == qid)
     m = api()
     result = m.resolve_scope(question["query"], [m.Source(selected, package.texts[selected])])
@@ -255,7 +256,7 @@ def test_invalid_budget_and_abstention(budget):
 ])
 def test_real_source_coordinates(path, query, expected):
     m = api()
-    source = m.Source(path, (Path(__file__).resolve().parents[2] / path).read_text(encoding="utf-8"))
+    source = m.Source(path, frozen_source(path))
     result = m.resolve_scope(query, [source])
     assert result.status == "RESOLVED", result.reason
     assert [(span.start, span.end) for span in result.spans] == [expected]

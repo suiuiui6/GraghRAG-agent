@@ -1,82 +1,42 @@
-from pathlib import Path
+"""SQLite I/O failures preserve identity; never return a temporary mirror."""
+import pytest
 
-import vector_store as vector_store_module
-
-
-def test_vector_store_falls_back_to_sqlite_safe_temp_mirror(monkeypatch):
-    source_dir = Path(r"D:\virtual\vector-store\source\vectordb")
-    fallback_dir = Path(r"D:\virtual\vector-store\temp\graphrag_chroma\vectordb")
-
-    attempted_paths: list[str] = []
-    prepared = {}
-
-    class DummyPersistentClient:
-        def __init__(self, path, settings):
-            attempted_paths.append(path)
-            if path == str(source_dir):
-                raise RuntimeError("disk I/O error")
-            self.path = path
-
-        def get_or_create_collection(self, name, metadata):
-            return {"name": name, "metadata": metadata}
-
-    monkeypatch.setattr(vector_store_module, "HAS_CHROMADB", True)
-    monkeypatch.setattr(vector_store_module.chromadb, "PersistentClient", DummyPersistentClient)
-    monkeypatch.setattr(vector_store_module, "ChromaSettings", lambda anonymized_telemetry=False: object())
-    monkeypatch.setattr(vector_store_module.os, "makedirs", lambda *args, **kwargs: None)
-
-    def fake_prepare_sqlite_safe_mirror(persist_dir):
-        prepared["persist_dir"] = persist_dir
-        return str(fallback_dir)
-
-    monkeypatch.setattr(
-        vector_store_module,
-        "_prepare_sqlite_safe_mirror",
-        fake_prepare_sqlite_safe_mirror,
-    )
-
-    store = vector_store_module.VectorStore(persist_dir=str(source_dir))
-
-    assert attempted_paths[0] == str(source_dir)
-    assert prepared["persist_dir"] == str(source_dir)
-    assert attempted_paths[1] == str(fallback_dir)
-    assert store.persist_dir == str(fallback_dir)
+from vector_errors import VectorStorageError
+from vector_runtime import SyntheticIntegrationConfig
+from vector_store import VectorStore
 
 
-def test_vector_store_fallback_reuses_existing_temp_mirror_directory(monkeypatch):
-    source_dir = Path(r"D:\virtual\vector-store\source\vectordb")
-    mirror_dir = Path(r"D:\virtual\vector-store\temp\graphrag_chroma\vectordb")
+def test_corrupt_store_is_not_replaced_with_an_empty_mirror(tmp_path):
+    root = tmp_path / 'synthetic'
+    config = SyntheticIntegrationConfig.create(root)
+    store = VectorStore(persist_dir=str(root / 'vectors'), embedding_dim=2, integration_config=config)
+    store._collection.add(ids=['a'], embeddings=[[1.0, 0.0]], documents=['original'])
+    store.path.write_bytes(b'corrupt registered database')
+    before = store.path.read_bytes()
+    with pytest.raises(VectorStorageError) as caught:
+        VectorStore(persist_dir=store.persist_dir, embedding_dim=2, integration_config=config)
+    assert caught.value.code == 'storage_unavailable'
+    assert store.path.read_bytes() == before
+    assert {p.name for p in root.iterdir()} == {'.synthetic-vector-integration.json', 'vectors'}
 
-    attempted_paths: list[str] = []
-    prepared = {}
 
-    class DummyPersistentClient:
-        def __init__(self, path, settings):
-            attempted_paths.append(path)
-            if path == str(source_dir):
-                raise RuntimeError("disk I/O error")
-            self.path = path
-
-        def get_or_create_collection(self, name, metadata):
-            return {"name": name, "metadata": metadata}
-
-    monkeypatch.setattr(vector_store_module, "HAS_CHROMADB", True)
-    monkeypatch.setattr(vector_store_module.chromadb, "PersistentClient", DummyPersistentClient)
-    monkeypatch.setattr(vector_store_module, "ChromaSettings", lambda anonymized_telemetry=False: object())
-    monkeypatch.setattr(vector_store_module.os, "makedirs", lambda *args, **kwargs: None)
-
-    def fake_prepare_sqlite_safe_mirror(persist_dir):
-        prepared["persist_dir"] = persist_dir
-        return str(mirror_dir)
-
-    monkeypatch.setattr(
-        vector_store_module,
-        "_prepare_sqlite_safe_mirror",
-        fake_prepare_sqlite_safe_mirror,
-    )
-
-    store = vector_store_module.VectorStore(persist_dir=str(source_dir))
-
-    assert attempted_paths == [str(source_dir), str(mirror_dir)]
-    assert prepared["persist_dir"] == str(source_dir)
-    assert store.persist_dir == str(mirror_dir)
+def test_existing_mirror_does_not_rescue_failed_authoritative_database(tmp_path, monkeypatch):
+    import sqlite_vector_store
+    root = tmp_path / 'synthetic'
+    config = SyntheticIntegrationConfig.create(root)
+    store = VectorStore(persist_dir=str(root / 'vectors'), embedding_dim=2, integration_config=config)
+    store._collection.add(ids=['a'], embeddings=[[1.0, 0.0]], documents=['original'])
+    mirror = root / 'graphrag_chroma' / 'vectordb'
+    mirror.mkdir(parents=True)
+    sentinel = mirror / 'do-not-use.txt'
+    sentinel.write_bytes(b'unrelated mirror')
+    before = store.path.read_bytes()
+    def unavailable(*args, **kwargs):
+        raise OSError('synthetic disk I/O failure')
+    monkeypatch.setattr(sqlite_vector_store, 'connect', unavailable)
+    with pytest.raises(VectorStorageError) as caught:
+        store.search([1.0, 0.0])
+    assert caught.value.code == 'storage_unavailable'
+    assert store.path.read_bytes() == before
+    assert sentinel.read_bytes() == b'unrelated mirror'
+    assert store.persist_dir == str((root / 'vectors').resolve())

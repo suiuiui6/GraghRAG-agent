@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-25T10:38:49.786128+00:00",
+  "command": [
+    "D:\\graghRAG-agent\\.tmp\\vector-native-audit-20261014\\tooling\\bin\\cargo-audit-x86_64-pc-windows-msvc-v0.22.2\\cargo-audit.exe",
+    "audit",
+    "--file",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\Cargo.lock",
+    "--db",
+    "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\native-audit-20261025\\advisory-db-current",
+    "--no-fetch",
+    "--no-yanked",
+    "--json",
+    "--deny",
+    "warnings"
+  ],
+  "exit": 0,
+  "lock_sha256": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+  "tool_sha256": "0157f5ce1ce9fd4fb0a1f7c79af1229771d1f80b6c2613ddb0d9200a8ba73946",
+  "database_commit": "21d909e4c8bd4e14c7aea58bf980c881a0053ab1",
+  "database_clean": true,
+  "limits": "actual numeric bridge Cargo.lock only; yanked registry NOT_RUN; not whole native runtime"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "check-sources.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "check-sources.log",
+    "bytes": 403,
+    "sha256": "22560231452270c27cddd7797f35285f7d40b5adf2c8ca45b9220c0ddd124dc7"
+  },
+  {
+    "file": "check_preflight_tools.py",
+    "bytes": 2252,
+    "sha256": "f792fe7b0e7a9e3784502bfdd44dd49f2cdb603e5cf4aedf5ce3be8d52aa1b1b"
+  },
+  {
+    "file": "check_sources.py",
+    "bytes": 2305,
+    "sha256": "e9af3f3cb4f479ae1022eaa5cfd589bf8fa8896e7fc48def80f8c764292a5d44"
+  },
+  {
+    "file": "preflight-tools.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "preflight-tools.log",
+    "bytes": 129,
+    "sha256": "5da0307f7c2cc655e7ea4920d2b83146e3f516d75b256c28900c8d18d22ade30"
+  },
+  {
+    "file": "receipt.json",
+    "bytes": 47243,
+    "sha256": "3597555b54ede0c606461716de9122cea248b78d9bec159f7b25c534ca8bbb11"
+  },
+  {
+    "file": "REPORT.md",
+    "bytes": 5882,
+    "sha256": "0f787278807445f085a37203aa1daf6cb7bb31e6d31ce3b93f98443ffc91f5aa"
+  }
+]

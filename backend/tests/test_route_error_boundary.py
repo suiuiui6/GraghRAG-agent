@@ -22,7 +22,7 @@ def client(monkeypatch, sandbox_tmp_path):
     return authenticated_client(app, monkeypatch, sandbox_tmp_path, raise_server_exceptions=False)
 
 
-def test_query_route_does_not_leak_exception_text(client, monkeypatch):
+def test_query_route_does_not_leak_exception_text(client, monkeypatch, tmp_path):
     """routes/query.py 捕获 Agent 异常后不得回显其文本。
 
     改造前此处是 HTTPException(500, detail=f"Agent error: {str(e)}")，SENTINEL 会原样出现在响应体。
@@ -32,16 +32,28 @@ def test_query_route_does_not_leak_exception_text(client, monkeypatch):
     tests/test_exception_handlers.py 覆盖。
     """
     import routes.query as q
+    from tests.legacy_query_helpers import register_legacy_query_graph, assert_registered_query_graph
+    document = register_legacy_query_graph(monkeypatch, tmp_path)
+    calls = []
+    agent = object()
+
+    def build_agent(graph):
+        assert_registered_query_graph(graph, document)
+        return agent
 
     def _boom(*args, **kwargs):
+        calls.append((args, kwargs))
         raise RuntimeError(f"upstream exploded: {SENTINEL}")
 
-    monkeypatch.setattr(q, "_build_agent", lambda graph: object())
+    monkeypatch.setattr(q, "_build_agent", build_agent)
     monkeypatch.setattr(q, "_invoke_legacy_agent", _boom)
 
     r = client.post("/api/v1/query", json={"query": "测试问题"})
     assert SENTINEL not in r.text, f"响应体泄露了内部异常文本：{r.text[:300]}"
     assert r.status_code == 503
+    assert len(calls) == 1
+    assert calls[0][0][0] is agent
+    assert calls[0][0][1] == "测试问题"
 
 
 def test_bot_route_does_not_leak_exception_text(client, monkeypatch):

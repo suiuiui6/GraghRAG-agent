@@ -1,0 +1,8 @@
+{
+  "previous_sha256": "56e8d6810b4177ce720a755e2a4a2e404d40b3019165eced1e72f17edcad2200",
+  "reviewed_sha256": "19cbabcd3a74249650d31696139e7a1caf380d140c83b5d57a0ba138e676b431",
+  "reason": "Independent real execution exposed STATUS_INVALID_HANDLE when querying a closed handle. Observe actual successful CloseHandle exactly once instead; preserve real owner query, child exit, timeout, failure-result assertions.",
+  "test_cases_expected": 14,
+  "production_changes": false,
+  "old2187_tests_unchanged": true
+}

@@ -1,0 +1,16 @@
+{
+  "arch": "x86_64",
+  "build": "h8ffe710_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "libuv",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1608303361609,
+  "version": "1.40.0"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "crcmod-1.7-cp312-cp312-linux_x86_64.whl",
+    "sha256": "e532d2b05f1ac0afec916d02c6c69aff64b6c61d49d86bf12b32e35047a25781",
+    "bytes": 31274,
+    "WHEEL": "Wheel-Version: 1.0\nGenerator: setuptools (84.1.0)\nRoot-Is-Purelib: false\nTag: cp312-cp312-linux_x86_64\n\n"
+  },
+  {
+    "name": "oss2-2.19.1-py3-none-any.whl",
+    "sha256": "bc3639baa781bf8efe1e720dac52a00fa44d14bce1de4f605e4798b09d29a482",
+    "bytes": 124035,
+    "WHEEL": "Wheel-Version: 1.0\nGenerator: setuptools (84.1.0)\nRoot-Is-Purelib: true\nTag: py3-none-any\n\n"
+  }
+]

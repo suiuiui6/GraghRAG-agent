@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-29T01:38:08.868804+00:00",
+  "review_sha256": "b418b8ff07ebf5b061dfaba3c1df2ffc186b777dc348c784eafbe979deccb7e4",
+  "files": [
+    {
+      "file": "backend/pyproject.toml",
+      "before": "961a7f39035342cbfd09739f54e7f7a3dfe34fd005a02081c5f6675830d71ed8",
+      "after": "dad9964abed69b6dc64394f5abaf166a8a48672397185187aee5ec76725e5bb5"
+    },
+    {
+      "file": "backend/uv.lock",
+      "before": "6168a2319f7b2964b7f325ab700444c5974b7c2c6fbc4ee95bb0c5eefdca1b90",
+      "after": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5"
+    },
+    {
+      "file": "backend/requirements.txt",
+      "before": "a2f13bc4eb914c602cc9b45294340ecdc55334d99f5b585d78d006f6f9f50688",
+      "after": "d18e9ae179634c1583296089f2822d2247ce6ce2ceaaf5fbf2607b1c1e337177"
+    }
+  ],
+  "CPU_formal_default_modified": false,
+  "production_admission": "unchanged_closed",
+  "commit_push": false,
+  "R10_evidence": "historical snapshot only; R11 final new dependency acceptance required"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "REPORT.md",
+    "bytes": 5533,
+    "sha256": "dd9c1eb239e5050173bb1223d7c6bbdce8ed3d91ff523e5e47f17bfd79e653d6"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 3410,
+    "sha256": "31b33ae42be9d3983efc62b7e4545218ad01a84d9d9644e0d6ead7de09e63ae0"
+  },
+  {
+    "path": "binding-receipt.json",
+    "bytes": 1882,
+    "sha256": "49e0a68fbedf62533db209f12504ad1ef7b7c25ce85f6e29e80e691060734670"
+  },
+  {
+    "path": "package-fetch.json",
+    "bytes": 2007,
+    "sha256": "7648e76358f441a3568e8eb9246b64430218a5c43d6255df7a6f3eb337006ee6"
+  },
+  {
+    "path": "package-info__index.json",
+    "bytes": 325,
+    "sha256": "25d065706ebb5e14cf40258434d367b4feb42aeeb5444eaa7620f773663989e2"
+  },
+  {
+    "path": "package-info__recipe__meta.yaml",
+    "bytes": 1854,
+    "sha256": "4562b78435090796b4006c124af9df7eef39a18e96825a72fbcc68fa9bd03b1d"
+  },
+  {
+    "path": "torch__csrc__distributed__c10d__store__TCPStoreLibUvBackend.cpp",
+    "bytes": 43787,
+    "sha256": "c7e4dddb05699ee8145a8c03805604ea59f8610f50d052ce136125361687a12e"
+  },
+  {
+    "path": ".ci__pytorch__windows__build_install_deps.py",
+    "bytes": 4375,
+    "sha256": "2178f85b8502b9d2fb949bc1b3513d3f029df1b29217cf18a397ccaac8b57ec0"
+  }
+]

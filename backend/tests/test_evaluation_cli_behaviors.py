@@ -158,17 +158,22 @@ def test_main_reads_local_graph_and_serializes_report_offline(monkeypatch, tmp_p
     monkeypatch.setattr(index_registry, "get_bm25_index", lambda: None if missing_indices else "existing-bm25")
     monkeypatch.setattr(index_registry, "get_table_index", lambda: None if missing_indices else table)
     built = {}
+    real_build_bm25 = index_registry.build_bm25_from_chunks
     def build_bm25(chunks):
+        chunks = list(chunks)
         built["chunks"] = chunks
         if missing_indices == "failure":
             raise RuntimeError("index unavailable")
         if missing_indices == "empty":
             return None
-        return "built-bm25"
+        built["bm25"] = real_build_bm25(chunks)
+        return built["bm25"]
     monkeypatch.setattr(index_registry, "build_bm25_from_chunks", build_bm25)
     monkeypatch.setattr(index_registry, "build_table_index_from_chunks", lambda chunks: None if missing_indices == "empty" else table)
-    monkeypatch.setattr(index_registry, "set_bm25_index", lambda index: built.update(bm25=index))
-    monkeypatch.setattr(index_registry, "set_table_index", lambda index: built.update(table=index))
+    def unexpected_publish(index):
+        pytest.fail("CLI-local indexes must not replace the global registry")
+    monkeypatch.setattr(index_registry, "set_bm25_index", unexpected_publish)
+    monkeypatch.setattr(index_registry, "set_table_index", unexpected_publish)
     observed = {}
     def retrieval(**kwargs):
         observed.update(kwargs)
@@ -193,7 +198,8 @@ def test_main_reads_local_graph_and_serializes_report_offline(monkeypatch, tmp_p
     if missing_indices is True:
         assert built["chunks"][0].chunk_id == "c001"
         assert built["chunks"][0].content_type == "table"
-        assert built["bm25"] == observed["bm25_index"] == "built-bm25"
+        assert built["bm25"] is observed["bm25_index"]
+        assert observed["bm25_index"][1][0].chunk_id == "c001"
     elif missing_indices in ("failure", "empty"):
         assert observed["bm25_index"] is None and observed["table_index"] is None
         assert "bm25" not in built and "table" not in built

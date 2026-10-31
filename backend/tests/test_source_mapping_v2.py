@@ -4,12 +4,12 @@ from pathlib import Path
 
 import pytest
 
-ROOT = Path(__file__).resolve().parents[2]
+from backend.tests.frozen_input_helpers import CODE_ROOT as ROOT, current_module, frozen_gold, frozen_database
 
 
 def tool():
     assert (ROOT / 'backend/research/source_mapping_v2.py').exists(), 'mapping tool not implemented'
-    return importlib.import_module('backend.research.source_mapping_v2')
+    return current_module('source_mapping_v2')
 
 
 def test_exact_unique_non_bmp_mapping():
@@ -41,11 +41,19 @@ def test_invalid_coordinate_is_not_verified(span):
     assert not tool().map_text('abc', 'abc', span)['stored_span_verified']
 
 
-def test_read_only_real_sqlite_and_privacy():
+def test_read_only_real_sqlite_and_privacy(monkeypatch):
     m = tool()
-    database = ROOT / 'backend/output/vectordb/chroma.sqlite3'
-    texts = {'D1': (ROOT / 'backend/output/mineru/ingest_2/full.md').read_text(encoding='utf-8')}
-    report = m.audit_chroma(database, texts)
+    opened = []
+    connect = m.sqlite3.connect
+    def record_readonly(*args, **kwargs):
+        opened.append((args[0], kwargs.get('uri')))
+        return connect(*args, **kwargs)
+    monkeypatch.setattr(m.sqlite3, 'connect', record_readonly)
+    texts = {'D1': frozen_gold().texts['D1']}
+    with frozen_database() as database:
+        report = m.audit_chroma(database, texts)
+    assert opened and all(uri.endswith('?mode=ro') and enabled is True for uri, enabled in opened)
+    assert report['hashes_before'] == report['hashes_after']
     assert report['database_unchanged']
     assert report['status'] == 'READ_ONLY_SNAPSHOT_AUDIT'
     assert report['runtime_membership'] == 'UNKNOWN'

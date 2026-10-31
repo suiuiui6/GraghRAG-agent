@@ -1,0 +1,37 @@
+{
+  "command": [
+    "D:/graghRAG-agent/.tmp/security-lock-patch-20261026/.venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "coverage",
+    "run",
+    "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+    "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\model-prepared-20261027\\backend.coverage",
+    "backend/tests/model_dependency_bootstrap.py",
+    "backend/tests/test_vector_http_lifecycle.py::test_fixed_local_model_http_upload_update_delete_restart",
+    "-vv",
+    "--tb=short",
+    "--durations=3",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\model-prepared-20261027\\test-temp",
+    "--junitxml=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\model-prepared-20261027\\junit.xml"
+  ],
+  "exit": 0,
+  "total_command_elapsed_seconds": 139.4220000000205,
+  "before": {
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_http_lifecycle.py": "de99fcbef358c8c430a1832aebe4aa2648d4e9b3dfd363a5b3182e0dccde5914",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\model_dependency_bootstrap.py": "3dda3ed4fb6949f6bd121a374e1d7b031607f0b062890d63b6b7319ea7f5072c",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\document_runtime.py": "1ee407ee0db7e650d169c999ebe1e3df8f6a2e30347a0c964efc0cfd2c6830ee",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\uv.lock": "50bb993c6aff56335edd92875d764013d4d91339140c548a79111b1cc2d69a30",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini": "4d9cc425396c80c16fe2e65efb4786e38f99b305d24f9f7a713fa8fa82922a70"
+  },
+  "after": {
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_http_lifecycle.py": "de99fcbef358c8c430a1832aebe4aa2648d4e9b3dfd363a5b3182e0dccde5914",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\model_dependency_bootstrap.py": "3dda3ed4fb6949f6bd121a374e1d7b031607f0b062890d63b6b7319ea7f5072c",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\document_runtime.py": "1ee407ee0db7e650d169c999ebe1e3df8f6a2e30347a0c964efc0cfd2c6830ee",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\uv.lock": "50bb993c6aff56335edd92875d764013d4d91339140c548a79111b1cc2d69a30",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini": "4d9cc425396c80c16fe2e65efb4786e38f99b305d24f9f7a713fa8fa82922a70"
+  },
+  "purpose": "Focused lifecycle after explicit dependency preparation; not full backend coverage"
+}

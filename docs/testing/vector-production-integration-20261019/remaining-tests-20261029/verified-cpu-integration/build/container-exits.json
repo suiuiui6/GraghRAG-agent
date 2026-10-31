@@ -1,0 +1,24 @@
+{
+  "original_build_container": {
+    "exit": 1,
+    "command_file": "container-command.txt",
+    "reason": "checker import alias AttributeError; both builds and native installation exit0"
+  },
+  "corrected_native_container": {
+    "exit": 0,
+    "image": "sha256:cd48c100f4e8c0297c2e1a558b7a93d95e41f79ba4f58d5f7d938a71192dff23",
+    "network": "none",
+    "read_only_root": true,
+    "user": "1000:1000",
+    "cap_drop": [
+      "ALL"
+    ],
+    "no_new_privileges": true,
+    "tmpfs": "/tmp:rw,noexec,nosuid,size=128m",
+    "bind": "owned directory to /work",
+    "argv": [
+      "/work/native-venv/bin/python",
+      "/work/check_native.py"
+    ]
+  }
+}

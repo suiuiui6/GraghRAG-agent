@@ -1,0 +1,12 @@
+[package]
+name = "vector-numeric-bridge"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+serde_json = { version = "=1.0.149", default-features = false, features = ["std"] }
+zmij = "=1.0.21"
+
+[workspace]
+

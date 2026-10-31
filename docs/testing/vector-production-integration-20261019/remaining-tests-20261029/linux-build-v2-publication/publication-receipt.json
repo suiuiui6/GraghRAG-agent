@@ -1,0 +1,48 @@
+{
+  "changes": [
+    {
+      "file": "backend/native/vector_numeric/build.py",
+      "source": "backend/native/vector_numeric/build.py",
+      "before": "0f3c30dc5d983473716fa94c50adef353c650081b9d67014900ca8ca00628c41",
+      "after": "27242d74c351a6d25ed2163d626e7afd3728692df30dfd739a6c2a9c5b8e5082"
+    },
+    {
+      "file": "backend/tests/test_vector_numeric_build_policy.py",
+      "source": "backend/tests/test_vector_numeric_build_policy.py",
+      "before": "0a3dc467d948ea9fb434f5fccfe1846e2093975a1beb76b12aa4bc10fc4b1920",
+      "after": "9fe2853420841b36f342313bb3b4279e1e7b83114148da85a7b4c834d74e7618"
+    },
+    {
+      "file": "backend/tests/test_linux_build_policy.py",
+      "source": "backend/tests/test_linux_build_policy.py",
+      "before": null,
+      "after": "33852bf06a73d0f5cf2a3477ab15b978e6dd23ba4255713f508c35d42722a7c3"
+    },
+    {
+      "file": "backend/tests/test_vector_numeric_build_receipt_limits.py",
+      "source": "backend/tests/test_additional.py",
+      "before": null,
+      "after": "cdcbd3aedbef3c31ff76c766255e3501588b9c6925229107bb5a0637576d41ae"
+    },
+    {
+      "file": "docs/design/2026-10-19-vector-production-integration.md",
+      "before": "a2caac58ba0b6243d488d8d96040975aea5c31e2b54daaa3fe489f994fbb1483",
+      "after": "256baef6da3dce63f1a9912c99326deb29f916169ca66ea3ba83ae67a9bcff07"
+    },
+    {
+      "file": "docs/plans/2026-10-19-vector-production-integration.md",
+      "before": "9270b6bf0cdd973356e8b0013436c0276bf7bc3fbe9e0f1cdcceaa03651659a1",
+      "after": "2cd7454054aa54a9636200af1e1464f60af90b7e1f099fe3b352169519270374"
+    },
+    {
+      "file": "docs/contracts/2026-10-14-vector-ingress-semantics.md",
+      "before": "59aeccdecfb3d78446c8bae7af4df5e59aad437e85e7dbe9a97feae94b6bfff3",
+      "after": "b825ef3d8a3875bd00713c6a1a32ab77a01e933ae2361f01386a24cb3c261c4f"
+    }
+  ],
+  "production_code_change": "build.py only; Rust and runtime verifier unchanged",
+  "test_source_renamed_only": "test_additional.py -> test_vector_numeric_build_receipt_limits.py",
+  "old_R11": "historical after this change",
+  "full_regression": "required, not yet run",
+  "commit_push_deploy": false
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "file": "torch-libuv-static/report.md",
+    "bytes": 7359,
+    "sha256": "6b698e2245f6037589bb624fd7fc0c904823772261dd88edf6c70aa4f41a7a2e"
+  },
+  {
+    "file": "torch-libuv-static/static-excerpts.json",
+    "bytes": 30324,
+    "sha256": "82119cffc65ea8a10cbd1bb5e79ea3e6aaa199edb949542e06b71f7aa7ce8efe"
+  },
+  {
+    "file": "cpu-design-draft/DESIGN.md",
+    "bytes": 4033,
+    "sha256": "8fc37169e5d82f82a372db089a448b8d78cddf0e6f23afcfbaf2b93123ee1af0"
+  },
+  {
+    "file": "cpu-design-draft/REPORT.md",
+    "bytes": 8601,
+    "sha256": "82e005f85801cf474fddcdce8b47d0f2508339c46192e8412868fedbcea745d5"
+  },
+  {
+    "file": "cpu-design-draft/RESOLVER-ADDENDUM-20261028.md",
+    "bytes": 2819,
+    "sha256": "072625a93b75180665f099cc542a28dcbc3c4c5e71a96f0483ced4e971632bf3"
+  },
+  {
+    "file": "cpu-design-draft/torch-cpu-index-receipt.json",
+    "bytes": 1200,
+    "sha256": "fab381e63921de3879f3bf8a3cae2065266d08e64342aa9083991f04feddd1ee"
+  },
+  {
+    "file": "cpu-design-draft/static-cpu-lock-diff.json",
+    "bytes": 739611,
+    "sha256": "d8575f6c195ba7bf779e29538f9106be78261645a1c3dbac841b44362249bb7c"
+  }
+]

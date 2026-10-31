@@ -1,0 +1,16 @@
+{
+  "original_hostname_verified": true,
+  "wrong_hostname_rejected": true,
+  "environment_proxy_ignored": true,
+  "sni": [
+    "synthetic.example",
+    "wrong.example"
+  ],
+  "host": [
+    "synthetic.example:52442"
+  ],
+  "connect": [
+    "127.0.0.1",
+    "127.0.0.1"
+  ]
+}

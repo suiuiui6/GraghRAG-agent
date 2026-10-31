@@ -1,0 +1,70 @@
+{
+  "scope": "New candidate locks only; installed runtime not yet upgraded. CPU PyPI Torch skip preserved, exact-version supplemental OSV evidence separate. Native risk not cleared.",
+  "scans": [
+    {
+      "label": "main179",
+      "argv": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pip_audit",
+        "-r",
+        "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\main179.txt",
+        "--disable-pip",
+        "--no-deps",
+        "--timeout",
+        "20",
+        "--format",
+        "json",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\main179.json",
+        "--cache-dir",
+        "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\cache",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit": 0,
+      "seconds": 59.45300000000134,
+      "lock_sha256": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5",
+      "expected": 179,
+      "reported": 179,
+      "vulnerabilities": 0,
+      "skipped": []
+    },
+    {
+      "label": "cpu157",
+      "argv": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "pip_audit",
+        "-r",
+        "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\cpu157.txt",
+        "--disable-pip",
+        "--no-deps",
+        "--timeout",
+        "20",
+        "--format",
+        "json",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\cpu157.json",
+        "--cache-dir",
+        "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\cache",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit": 0,
+      "seconds": 5.843000000000757,
+      "lock_sha256": "8a8ef5c4e9327e7f22529eec5f90ea204db3238d19948634da75e4954ed2f786",
+      "expected": 157,
+      "reported": 157,
+      "vulnerabilities": 0,
+      "skipped": [
+        {
+          "name": "torch",
+          "reason": "Dependency not found on PyPI and could not be audited: torch (2.14.0+cpu)"
+        }
+      ]
+    }
+  ]
+}

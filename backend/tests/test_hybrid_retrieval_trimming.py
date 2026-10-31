@@ -154,26 +154,20 @@ def test_build_prompt_reapplies_source_caps_before_context():
     assert "[v2]" not in prompt_text
 
 
-def test_vector_search_projection_only_returns_whitelisted_metadata(monkeypatch):
+def test_vector_search_projection_only_returns_whitelisted_metadata(monkeypatch, tmp_path):
     from vector_store import VectorStore
+    from vector_runtime import SyntheticIntegrationConfig
 
-    store = VectorStore.__new__(VectorStore)
-
-    class DummyCollection:
-        def query(self, **kwargs):
-            return {
-                "ids": [["c0001"]],
-                "documents": [["X" * 2000]],
-                "metadatas": [[{
+    admission = SyntheticIntegrationConfig.create(tmp_path / 'synthetic')
+    store = VectorStore(persist_dir=str(admission.fixture_root / 'vectors'), embedding_dim=2,
+                        integration_config=admission)
+    store._collection.add(ids=['c0001'], documents=['X' * 2000], embeddings=[[0.1, 0.2]],
+                          metadatas=[{
                     "page_idx": 3,
                     "section_path": '["Budget", "Execution"]',
                     "entity_ids": '["n1"]',
                     "source_file": "secret.pdf",
-                }]],
-                "distances": [[0.2]],
-            }
-
-    store._collection = DummyCollection()
+                }])
     results = store.search(
         query_vector=[0.1, 0.2],
         top_k=1,

@@ -1,0 +1,298 @@
+{
+  "comparisons": [
+    {
+      "path": "Cargo.toml",
+      "sdist_git_blob": "58aabb0e7560012b59754c1bc398cc2600a6d70b",
+      "original_git_blob": "e3a321708ac089bc9874d06d8389675cb795a698",
+      "equal": false
+    },
+    {
+      "path": "rust/api-types/Cargo.toml",
+      "sdist_git_blob": "2ad55896ab231eadfca15b93cda572a712bede9b",
+      "original_git_blob": "2ad55896ab231eadfca15b93cda572a712bede9b",
+      "equal": true
+    },
+    {
+      "path": "rust/benchmark/Cargo.toml",
+      "sdist_git_blob": "4f49aac4a39c7289cfeea3a1ee7bc2deccc9d48e",
+      "original_git_blob": "4f49aac4a39c7289cfeea3a1ee7bc2deccc9d48e",
+      "equal": true
+    },
+    {
+      "path": "rust/blockstore/Cargo.toml",
+      "sdist_git_blob": "b5dea9a221c25e31e7d6f5b159db3a3e247c39bb",
+      "original_git_blob": "b5dea9a221c25e31e7d6f5b159db3a3e247c39bb",
+      "equal": true
+    },
+    {
+      "path": "rust/cache/Cargo.toml",
+      "sdist_git_blob": "3f7efe87a2d98725f6dd41885545d975d7848841",
+      "original_git_blob": "3f7efe87a2d98725f6dd41885545d975d7848841",
+      "equal": true
+    },
+    {
+      "path": "rust/chroma/Cargo.toml",
+      "sdist_git_blob": "fe225021d5ac0860b432bf53c71a2c177cac02fb",
+      "original_git_blob": "d7e7b37d55cf0b90fae75f2002c6bbd6bd11e5b1",
+      "equal": false
+    },
+    {
+      "path": "rust/cli/Cargo.toml",
+      "sdist_git_blob": "48e97368f1a34c34be7b460d0518b951a5024398",
+      "original_git_blob": "48e97368f1a34c34be7b460d0518b951a5024398",
+      "equal": true
+    },
+    {
+      "path": "rust/config/Cargo.toml",
+      "sdist_git_blob": "bee5cb5036e331f9dbf9292b992d569ae6df5330",
+      "original_git_blob": "bee5cb5036e331f9dbf9292b992d569ae6df5330",
+      "equal": true
+    },
+    {
+      "path": "rust/distance/Cargo.toml",
+      "sdist_git_blob": "5f052372c365c2e44fcdd7fec093725b5957c9b0",
+      "original_git_blob": "5f052372c365c2e44fcdd7fec093725b5957c9b0",
+      "equal": true
+    },
+    {
+      "path": "rust/error/Cargo.toml",
+      "sdist_git_blob": "ed93c00ac14434c1ea29721961a0d278c9fa4816",
+      "original_git_blob": "ed93c00ac14434c1ea29721961a0d278c9fa4816",
+      "equal": true
+    },
+    {
+      "path": "rust/frontend/Cargo.toml",
+      "sdist_git_blob": "61445fe9f6eec0058fbed8cd9f1e3fce5beab664",
+      "original_git_blob": "61445fe9f6eec0058fbed8cd9f1e3fce5beab664",
+      "equal": true
+    },
+    {
+      "path": "rust/index/Cargo.toml",
+      "sdist_git_blob": "eecae986b48fd6d72533a6d56c4a1e86b91a2950",
+      "original_git_blob": "eecae986b48fd6d72533a6d56c4a1e86b91a2950",
+      "equal": true
+    },
+    {
+      "path": "rust/jemalloc-pprof-server/Cargo.toml",
+      "sdist_git_blob": "d1d321e19263df9faa006bde06de71c79309e755",
+      "original_git_blob": "d1d321e19263df9faa006bde06de71c79309e755",
+      "equal": true
+    },
+    {
+      "path": "rust/log/Cargo.toml",
+      "sdist_git_blob": "0cc1f11e4f9d8f71e32d441baadf63a53bb905e7",
+      "original_git_blob": "0cc1f11e4f9d8f71e32d441baadf63a53bb905e7",
+      "equal": true
+    },
+    {
+      "path": "rust/mdac/Cargo.toml",
+      "sdist_git_blob": "c5bb87f5c6fe4b9b928b42e688d338e4326efee2",
+      "original_git_blob": "c5bb87f5c6fe4b9b928b42e688d338e4326efee2",
+      "equal": true
+    },
+    {
+      "path": "rust/memberlist/Cargo.toml",
+      "sdist_git_blob": "3165d0a2bfa13934db32f1ee3cda6ee9a2ac4bb2",
+      "original_git_blob": "3165d0a2bfa13934db32f1ee3cda6ee9a2ac4bb2",
+      "equal": true
+    },
+    {
+      "path": "rust/metering/Cargo.toml",
+      "sdist_git_blob": "85c80e5ce362b0ffc2ef08ab185c4b50966a0d8a",
+      "original_git_blob": "a84453b22b72d226de29b19d5419e72dd057bad7",
+      "equal": false
+    },
+    {
+      "path": "rust/metering-macros/Cargo.toml",
+      "sdist_git_blob": "a468270007bb25e77524fdc575f57279303b7c79",
+      "original_git_blob": "a07e00245456bb2f84ced99d3ad32626031dd53b",
+      "equal": false
+    },
+    {
+      "path": "rust/python_bindings/Cargo.toml",
+      "sdist_git_blob": "65b7c9dc160f10dd15aa64bafb92d26a4570cf39",
+      "original_git_blob": "65b7c9dc160f10dd15aa64bafb92d26a4570cf39",
+      "equal": true
+    },
+    {
+      "path": "rust/s3heap/Cargo.toml",
+      "sdist_git_blob": "7eef8ee66240667ae3a5fa40c5a02c0e2fb3118e",
+      "original_git_blob": "7eef8ee66240667ae3a5fa40c5a02c0e2fb3118e",
+      "equal": true
+    },
+    {
+      "path": "rust/s3heap-service/Cargo.toml",
+      "sdist_git_blob": "e55f897df96e870541525b1655cccb1f1f01043b",
+      "original_git_blob": "5455231fca5b6715f9c2255dcccdb0d5fd69c2d0",
+      "equal": false
+    },
+    {
+      "path": "rust/segment/Cargo.toml",
+      "sdist_git_blob": "35c6c2096b2932bce2acf7452cb3012e8139dfec",
+      "original_git_blob": "35c6c2096b2932bce2acf7452cb3012e8139dfec",
+      "equal": true
+    },
+    {
+      "path": "rust/sqlite/Cargo.toml",
+      "sdist_git_blob": "92f7014223588d3f734940fcf6ffa5c65135ef31",
+      "original_git_blob": "92f7014223588d3f734940fcf6ffa5c65135ef31",
+      "equal": true
+    },
+    {
+      "path": "rust/storage/Cargo.toml",
+      "sdist_git_blob": "2f6a24184e3f4032f4b805e0400f1f305173426c",
+      "original_git_blob": "2f6a24184e3f4032f4b805e0400f1f305173426c",
+      "equal": true
+    },
+    {
+      "path": "rust/sysdb/Cargo.toml",
+      "sdist_git_blob": "5019cad2367907a6f83f0564aa3385fd875dbdb8",
+      "original_git_blob": "5019cad2367907a6f83f0564aa3385fd875dbdb8",
+      "equal": true
+    },
+    {
+      "path": "rust/system/Cargo.toml",
+      "sdist_git_blob": "740c5125e58a5390c7e5cc87d384ff572913590e",
+      "original_git_blob": "740c5125e58a5390c7e5cc87d384ff572913590e",
+      "equal": true
+    },
+    {
+      "path": "rust/tracing/Cargo.toml",
+      "sdist_git_blob": "270c4597b6ec3decf35ef2cfc20f484b5756021f",
+      "original_git_blob": "270c4597b6ec3decf35ef2cfc20f484b5756021f",
+      "equal": true
+    },
+    {
+      "path": "rust/types/Cargo.toml",
+      "sdist_git_blob": "6ad49c4f0970dc0a2a55a568600c7d2ded3146c7",
+      "original_git_blob": "6ad49c4f0970dc0a2a55a568600c7d2ded3146c7",
+      "equal": true
+    },
+    {
+      "path": "rust/wal3/Cargo.toml",
+      "sdist_git_blob": "66b071b32d068630552b74ba4ee5510547749465",
+      "original_git_blob": "f97e799feb6a95beb0e1453b0de68ccbd6265aff",
+      "equal": false
+    },
+    {
+      "path": "rust/worker/Cargo.toml",
+      "sdist_git_blob": "15039389a4c0558e3f2d213a7b0cc0952aed338a",
+      "original_git_blob": "75e00f09ccb289c8a847c8230e928c49ffd88d83",
+      "equal": false
+    }
+  ],
+  "missing_or_different_original": [
+    {
+      "path": "Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3a321708ac089bc9874d06d8389675cb795a698",
+      "size": 6269,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/e3a321708ac089bc9874d06d8389675cb795a698"
+    },
+    {
+      "path": "rust/chroma/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7e7b37d55cf0b90fae75f2002c6bbd6bd11e5b1",
+      "size": 1134,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/d7e7b37d55cf0b90fae75f2002c6bbd6bd11e5b1"
+    },
+    {
+      "path": "rust/faults/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fabc0e8afb54fdcb02cda21407433e1f4db95096",
+      "size": 373,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/fabc0e8afb54fdcb02cda21407433e1f4db95096"
+    },
+    {
+      "path": "rust/garbage_collector/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b1b193ebe344c16449baa8de1762036a8b7f8f1",
+      "size": 2165,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/3b1b193ebe344c16449baa8de1762036a8b7f8f1"
+    },
+    {
+      "path": "rust/js_bindings/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ec8d1d07d8cd09374bd46ad9a2f762e913fac60",
+      "size": 394,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/9ec8d1d07d8cd09374bd46ad9a2f762e913fac60"
+    },
+    {
+      "path": "rust/load/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19180e21e698eb3c25ce5c655fccb218d27874ef",
+      "size": 82,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/19180e21e698eb3c25ce5c655fccb218d27874ef"
+    },
+    {
+      "path": "rust/log-service/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3e3493dc46bf500065ccc62b618a9b243fabeba",
+      "size": 1601,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/c3e3493dc46bf500065ccc62b618a9b243fabeba"
+    },
+    {
+      "path": "rust/metering-macros/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a07e00245456bb2f84ced99d3ad32626031dd53b",
+      "size": 403,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/a07e00245456bb2f84ced99d3ad32626031dd53b"
+    },
+    {
+      "path": "rust/metering/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a84453b22b72d226de29b19d5419e72dd057bad7",
+      "size": 414,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/a84453b22b72d226de29b19d5419e72dd057bad7"
+    },
+    {
+      "path": "rust/rust-sysdb/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "882362800c694642d8dc0393f9b559999462d85b",
+      "size": 1277,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/882362800c694642d8dc0393f9b559999462d85b"
+    },
+    {
+      "path": "rust/s3heap-service/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5455231fca5b6715f9c2255dcccdb0d5fd69c2d0",
+      "size": 952,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/5455231fca5b6715f9c2255dcccdb0d5fd69c2d0"
+    },
+    {
+      "path": "rust/spanner-migrations/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "538193b5926b2b20ebe313e370f17b146042e9cb",
+      "size": 813,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/538193b5926b2b20ebe313e370f17b146042e9cb"
+    },
+    {
+      "path": "rust/wal3/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f97e799feb6a95beb0e1453b0de68ccbd6265aff",
+      "size": 990,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/f97e799feb6a95beb0e1453b0de68ccbd6265aff"
+    },
+    {
+      "path": "rust/worker/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75e00f09ccb289c8a847c8230e928c49ffd88d83",
+      "size": 2782,
+      "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/75e00f09ccb289c8a847c8230e928c49ffd88d83"
+    }
+  ]
+}

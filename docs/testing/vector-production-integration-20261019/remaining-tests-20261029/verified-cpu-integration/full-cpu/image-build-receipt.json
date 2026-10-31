@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-29T01:41:37.684238+00:00",
+  "argv": [
+    "docker",
+    "build",
+    "--pull=false",
+    "--network=none",
+    "--progress=plain",
+    "--file",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-patched-artifacts-20261029\\Dockerfile.private-cpu",
+    "--iidfile",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-patched-artifacts-20261029\\private-image.id",
+    "--tag",
+    "graphrag-private-cpu:20261029",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-patched-artifacts-20261029"
+  ],
+  "exit": 0,
+  "elapsed_seconds": 140.51600000000326,
+  "base_id": "sha256:ca19e0667a83656165ad4c7edd07ef50b97429fa7aa5932453dac1dc4c16ebe1",
+  "inputs_before": {
+    "Dockerfile.private-cpu": "a243678d5e06a901553dbb705b582d2236a484b6a86050f84319d1dccf7ffa0f",
+    "capture_runtime.py": "547a9d480d08da5ed62de9a5b527c72dbe34c29d4daeef77510dddf9515e6405",
+    "all158-hashed-requirements.txt": "ef5139bed55088270eda34acab7b23caa692cf95eaad382377274644edc17548",
+    "artifact-map-all158.json": "62a0b3ba3b4d9f864d6b80dd83be5334268f9cc6f83ca1a08ff3849b4b4f8fb3"
+  },
+  "inputs_after": {
+    "Dockerfile.private-cpu": "a243678d5e06a901553dbb705b582d2236a484b6a86050f84319d1dccf7ffa0f",
+    "capture_runtime.py": "547a9d480d08da5ed62de9a5b527c72dbe34c29d4daeef77510dddf9515e6405",
+    "all158-hashed-requirements.txt": "ef5139bed55088270eda34acab7b23caa692cf95eaad382377274644edc17548",
+    "artifact-map-all158.json": "62a0b3ba3b4d9f864d6b80dd83be5334268f9cc6f83ca1a08ff3849b4b4f8fb3"
+  },
+  "scope": "Private complete CPU dependency image; no app/model/production service/default change",
+  "image_id": "sha256:f4e637023bdc366728472bcaa271002d2d69ad6065c6bd6e7b706ed9c4d1df83",
+  "base_rootfs_prefix_verified": true,
+  "runtime_user": "65534:65534"
+}

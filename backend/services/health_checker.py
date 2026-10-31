@@ -2,7 +2,7 @@
 Health Checker — §6.7 of enterprise-evolution-blueprint.
 
 Periodic dependency health probes (apscheduler, every 5 min).
-DeepSeek, MinerU, ChromaDB, OAuth2 Provider, Feishu Bot.
+DeepSeek, MinerU, admitted vector runtime, OAuth2 Provider, Feishu Bot.
 """
 
 from __future__ import annotations
@@ -15,7 +15,6 @@ from logging_config import get_logger
 
 logger = get_logger(__name__)
 
-CHROMADB_PATH = Path("output/vectordb")
 
 
 class HealthChecker:
@@ -28,7 +27,7 @@ class HealthChecker:
         results = {}
         results["deepseek_api"] = self._probe_deepseek()
         results["mineru_api"] = self._probe_mineru()
-        results["chromadb"] = self._probe_chromadb()
+        results["vector_store"] = self._probe_vector_store()
         results["oauth2_provider"] = self._probe_oauth2()
         results["feishu_bot"] = self._probe_feishu()
         self._status = results
@@ -89,22 +88,9 @@ class HealthChecker:
             return {"status": "down", "latency_ms": int((time.time() - t0) * 1000),
                     "message": str(e)[:200]}
 
-    def _probe_chromadb(self) -> dict:
-        t0 = time.time()
-        try:
-            db = CHROMADB_PATH / "chroma.sqlite3"
-            if not db.exists():
-                return {"status": "degraded", "message": "ChromaDB not found"}
-            import sqlite3
-            conn = sqlite3.connect(str(db))
-            cur = conn.execute("SELECT COUNT(*) FROM embedding_metadata")
-            count = cur.fetchone()[0]
-            conn.close()
-            return {"status": "ok", "latency_ms": int((time.time() - t0) * 1000),
-                    "documents": count}
-        except Exception as e:  # noqa: BLE001  # 探活失败即视为该依赖 down，不抛给调用方
-            return {"status": "down", "latency_ms": int((time.time() - t0) * 1000),
-                    "message": str(e)[:200]}
+    def _probe_vector_store(self) -> dict:
+        from services.vector_startup import runtime_status
+        return runtime_status()
 
     def _probe_oauth2(self) -> dict:
         t0 = time.time()

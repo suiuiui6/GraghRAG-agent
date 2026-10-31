@@ -1,0 +1,127 @@
+[
+  {
+    "file": "linux-install/REPORT.md",
+    "bytes": 3145,
+    "sha256": "d6ec8b964dfafbbb3f0909d5ab3ff7bcfc7e154c1d87f2e7762f837140064e36"
+  },
+  {
+    "file": "linux-install/final-receipt.json",
+    "bytes": 1220,
+    "sha256": "4b5f35901035d13c4805d410262c9d838267a88be46f1b3977f63b3719cbf3ca"
+  },
+  {
+    "file": "linux-install/commands.json",
+    "bytes": 4407,
+    "sha256": "dbe43dafb3099012ca4de7e96e68e4f7a7df952a9d07765cbc53e36eb65558e0"
+  },
+  {
+    "file": "linux-install/evidence-manifest.json",
+    "bytes": 4351,
+    "sha256": "4053770c62a4992fa9e5ba5edd4ebb84ef0fa9dd4288ce9d7ea2592185beb1ea"
+  },
+  {
+    "file": "linux-install/probe.py",
+    "bytes": 2719,
+    "sha256": "6a4dc36716b8e9ac099ce6faa3e884ea8b6fbcc56396ddbdd29a87925f7c06eb"
+  },
+  {
+    "file": "linux-install/probe-good.json",
+    "bytes": 1365,
+    "sha256": "565a987c538680f1f82d2d2ae97d7876e5c34d857c9b09c029bb81c4beff3201"
+  },
+  {
+    "file": "linux-install/probe-noexec.json",
+    "bytes": 83,
+    "sha256": "de069b8742dc08a04387f2393470185846101c07a3be015dbdcc10cac347fe8e"
+  },
+  {
+    "file": "linux-install/probe-missing.json",
+    "bytes": 84,
+    "sha256": "09a383757829b8c5ff72e5cd82edd72d6419ceef19a7dce21980c7f2318d35ca"
+  },
+  {
+    "file": "linux-install/input-hashes.json",
+    "bytes": 929,
+    "sha256": "4170bf1d5b9e11ead93bd6d1939a5d8d33e959ca1bc04fa36147934974d7f00b"
+  },
+  {
+    "file": "linux-install/context/Dockerfile",
+    "bytes": 910,
+    "sha256": "9cb32122e24729522775780f627229c54efa54c965077cfb0d9233d297d99113"
+  },
+  {
+    "file": "root-install-review/receipt.json",
+    "bytes": 3937,
+    "sha256": "90ce0ac8ef7b23c07d05adb8f0a6e660f0de99bf30ac253cd93cba87ad30049e"
+  },
+  {
+    "file": "root-install-review/commands.json",
+    "bytes": 3163,
+    "sha256": "d6af6894f2bdbc645c217923fde885336fee9bb0604506f80e21c5ea067ae506"
+  },
+  {
+    "file": "root-install-review/probe.py",
+    "bytes": 777,
+    "sha256": "26b08dca253fe9eea2ed05ed8fbf5c4188e1f311d0c38500c3cf2216a3a17d34"
+  },
+  {
+    "file": "windows-source-inputs/REPORT.md",
+    "bytes": 6325,
+    "sha256": "30bc4f07ceed13da3fee1fcdf9878c9b2b92f4deab10af75624a1c756bc42be8"
+  },
+  {
+    "file": "windows-source-inputs/evidence-manifest.json",
+    "bytes": 11261,
+    "sha256": "a90f79f3ad49a58477ccc479be8b1e132d5d7c2f4c9c6a508119d0a28a781e6f"
+  },
+  {
+    "file": "windows-source-inputs/source-identity.json",
+    "bytes": 1508,
+    "sha256": "97cb6e297ae17020b2267f9fc3d690a04e10c9d1258700c092e4645f1f048331"
+  },
+  {
+    "file": "windows-source-inputs/source-fetch.json",
+    "bytes": 1250,
+    "sha256": "7589601a969f1a29fa0480afd9bd40c501bddb14607b6928f16c2329fc8d0ea8"
+  },
+  {
+    "file": "windows-source-inputs/source-signature-current.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "windows-source-inputs/source-signature-current.status",
+    "bytes": 404,
+    "sha256": "633a2d5b5afe7457ff8d25f0d11a03ead46ace93d7cca29a1f4c468f2f30b5ca"
+  },
+  {
+    "file": "windows-source-inputs/source-signature-current.stderr",
+    "bytes": 441,
+    "sha256": "a36bb22469306f3c4aabb6cae9fbbbe6752069226d06092d42a4907fec318594"
+  },
+  {
+    "file": "windows-source-inputs/key-current-fetch.json",
+    "bytes": 168,
+    "sha256": "46584a8590b4a3274d2b699828a075a98a72e60799d5e7a935f567fe4e32a075"
+  },
+  {
+    "file": "windows-source-inputs/key-current-fingerprint.txt",
+    "bytes": 405,
+    "sha256": "155860c68fe0d2197f7bf068de3bcfffd7a3b14a5a3f2458577d46f75bf03984"
+  },
+  {
+    "file": "windows-source-inputs/MAINTAINERS",
+    "bytes": 2628,
+    "sha256": "33910a51888aedd124de6015e86c254bfbd1119fc089974efa134940d1a80852"
+  },
+  {
+    "file": "windows-source-inputs/tools-closure.lock.json",
+    "bytes": 24264,
+    "sha256": "e16943046dec831e9c653962f9158ca5b0d166cb7c7da88f43e4dfe32efce0bf"
+  },
+  {
+    "file": "windows-source-inputs/tools-closure.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  }
+]

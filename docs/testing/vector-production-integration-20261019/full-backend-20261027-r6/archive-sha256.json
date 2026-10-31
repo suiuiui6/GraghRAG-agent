@@ -1,0 +1,32 @@
+[
+  {
+    "file": "summary.json",
+    "sha256": "e2f4f76467f1c4e358c4d24fed7a484afe4f90cda63f1fc9a8d90b7a2b42084f",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r6\\summary.json"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "8d002e06e0485fbc8fb9f9c4c846ac57eb052b8ead8cfe64d40b4a543a6a973c",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r6\\commands.json"
+  },
+  {
+    "file": "before.json",
+    "sha256": "b4199695ee3ae5004c76e8cf85a3b5204a5439ce3d96fcb487a5ea8f68008416",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r6\\before.json"
+  },
+  {
+    "file": "after.json",
+    "sha256": "b4199695ee3ae5004c76e8cf85a3b5204a5439ce3d96fcb487a5ea8f68008416",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r6\\after.json"
+  },
+  {
+    "file": "tests.log",
+    "sha256": "550995ce381cdc49e069274a16e1c005dd8bfc88e2c36103ba2be8a57ee76cd2",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r6\\tests.log"
+  },
+  {
+    "file": "export.log",
+    "sha256": "9dabc42e037e994dd58488c1e2a7121d07b05fa59e5afb58c9ccb387f804bdc8",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r6\\export.log"
+  }
+]

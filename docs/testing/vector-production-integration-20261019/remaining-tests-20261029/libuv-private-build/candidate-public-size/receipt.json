@@ -1,0 +1,37 @@
+{
+  "scope": "Private candidate public version/size queries only. No networking, handles allocated, callbacks, formal runtime replacement or ABI approval; sizes alone do not prove compatibility.",
+  "path": "D:\\graghRAG-agent\\.tmp\\windows-libuv-cross-mvp-20261029\\build-authorized\\outputs\\libuv.dll",
+  "sha256": "6f91cea90646d077b1bcb6372433ea048bac344e8eeb5e5c8ee4b163f02edf96",
+  "version": "1.53.0",
+  "loop_size": 472,
+  "handle_sizes": {
+    "async": 224,
+    "check": 120,
+    "fs_event": 272,
+    "fs_poll": 104,
+    "handle": 96,
+    "idle": 120,
+    "pipe": 576,
+    "poll": 416,
+    "prepare": 120,
+    "process": 264,
+    "stream": 272,
+    "tcp": 320,
+    "timer": 160,
+    "tty": 344,
+    "udp": 424,
+    "signal": 264
+  },
+  "request_sizes": {
+    "req": 112,
+    "connect": 128,
+    "write": 176,
+    "shutdown": 128,
+    "udp_send": 128,
+    "fs": 456,
+    "work": 176,
+    "getaddrinfo": 216,
+    "getnameinfo": 1368,
+    "random": 192
+  }
+}

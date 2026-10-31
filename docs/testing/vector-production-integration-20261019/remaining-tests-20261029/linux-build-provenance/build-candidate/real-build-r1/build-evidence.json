@@ -1,0 +1,218 @@
+{
+  "compiler": "rustc 1.94.0 (4a4ef493e 2026-03-02)\nbinary: rustc\ncommit-hash: 4a4ef493e3a1488c6e321570238084b38948f6db\ncommit-date: 2026-03-02\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.0\nLLVM version: 21.1.8\n",
+  "cargo": "cargo 1.94.0 (85eff7c80 2026-01-15)\n",
+  "feature_tree": "vector-numeric-bridge v0.1.0 (/work/source)\n\u251c\u2500\u2500 serde_json feature \"std\"\n\u2502   \u251c\u2500\u2500 serde_json v1.0.149\n\u2502   \u2502   \u251c\u2500\u2500 memchr v2.7.4\n\u2502   \u2502   \u251c\u2500\u2500 serde_core v1.0.228\n\u2502   \u2502   \u251c\u2500\u2500 itoa feature \"default\"\n\u2502   \u2502   \u2502   \u2514\u2500\u2500 itoa v1.0.11\n\u2502   \u2502   \u2514\u2500\u2500 zmij feature \"default\"\n\u2502   \u2502       \u2514\u2500\u2500 zmij v1.0.21\n\u2502   \u251c\u2500\u2500 memchr feature \"std\"\n\u2502   \u2502   \u251c\u2500\u2500 memchr v2.7.4\n\u2502   \u2502   \u2514\u2500\u2500 memchr feature \"alloc\"\n\u2502   \u2502       \u2514\u2500\u2500 memchr v2.7.4\n\u2502   \u2514\u2500\u2500 serde_core feature \"std\"\n\u2502       \u2514\u2500\u2500 serde_core v1.0.228\n\u2514\u2500\u2500 zmij feature \"default\" (*)\n",
+  "graph": {
+    "itoa": [],
+    "memchr": [
+      "alloc",
+      "std"
+    ],
+    "serde_core": [
+      "result",
+      "std"
+    ],
+    "serde_json": [
+      "std"
+    ],
+    "vector-numeric-bridge": [],
+    "zmij": []
+  },
+  "compiled": {
+    "serde_json": [
+      "std"
+    ],
+    "serde_core": [
+      "std"
+    ],
+    "zmij": []
+  },
+  "fingerprints": {
+    "serde_json": {
+      "sha256": "6836192aca8c255644465820e68841812340452c09e07b39ff4d38ec94d9047d",
+      "value": {
+        "rustc": 18276270781310494267,
+        "features": "[\"std\"]",
+        "declared_features": "[\"alloc\", \"arbitrary_precision\", \"default\", \"float_roundtrip\", \"indexmap\", \"preserve_order\", \"raw_value\", \"std\", \"unbounded_depth\"]",
+        "target": 9592559880233824070,
+        "profile": 2040997289075261528,
+        "path": 15986647331089785422,
+        "deps": [
+          [
+            3129130049864710036,
+            "memchr",
+            false,
+            15244510637297544250
+          ],
+          [
+            11356286270989087318,
+            "itoa",
+            false,
+            18176490130595736913
+          ],
+          [
+            11899261697793765154,
+            "serde_core",
+            false,
+            807262432350587521
+          ],
+          [
+            12347024475581975995,
+            "zmij",
+            false,
+            14791177276586759148
+          ],
+          [
+            13795362694956882968,
+            "build_script_build",
+            false,
+            10444955148271903560
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "x86_64-unknown-linux-gnu/release/.fingerprint/serde_json-dba6cace2d9307de/dep-lib-serde_json",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 8247474407144887393,
+        "compile_kind": 13270707523875659407
+      }
+    },
+    "serde_core": {
+      "sha256": "cf505b32400b5f10ee5718dc9a97a3fa09bb03c188926345812c371a772abf8c",
+      "value": {
+        "rustc": 18276270781310494267,
+        "features": "[\"std\"]",
+        "declared_features": "[\"alloc\", \"default\", \"rc\", \"result\", \"std\", \"unstable\"]",
+        "target": 6810695588070812737,
+        "profile": 2040997289075261528,
+        "path": 17848675540933467932,
+        "deps": [
+          [
+            11899261697793765154,
+            "build_script_build",
+            false,
+            16075621071050867675
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "x86_64-unknown-linux-gnu/release/.fingerprint/serde_core-e5f24d6a1d671051/dep-lib-serde_core",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 8247474407144887393,
+        "compile_kind": 13270707523875659407
+      }
+    },
+    "zmij": {
+      "sha256": "33b2a64eb59e1754842edfc5022aa1728614c64764735f217bb018a28da53c67",
+      "value": {
+        "rustc": 18276270781310494267,
+        "features": "[]",
+        "declared_features": "[\"no-panic\"]",
+        "target": 16603507647234574737,
+        "profile": 2040997289075261528,
+        "path": 10199883426678822822,
+        "deps": [
+          [
+            12347024475581975995,
+            "build_script_build",
+            false,
+            18107478985798746113
+          ]
+        ],
+        "local": [
+          {
+            "CheckDepInfo": {
+              "dep_info": "x86_64-unknown-linux-gnu/release/.fingerprint/zmij-84b4b84d7e563c3a/dep-lib-zmij",
+              "checksum": false
+            }
+          }
+        ],
+        "rustflags": [],
+        "config": 8247474407144887393,
+        "compile_kind": 13270707523875659407
+      }
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "rustc",
+        "+1.94.0",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.94.0 (4a4ef493e 2026-03-02)\nbinary: rustc\ncommit-hash: 4a4ef493e3a1488c6e321570238084b38948f6db\ncommit-date: 2026-03-02\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.0\nLLVM version: 21.1.8\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cargo",
+        "+1.94.0",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "cargo 1.94.0 (85eff7c80 2026-01-15)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cargo",
+        "+1.94.0",
+        "tree",
+        "--offline",
+        "--locked",
+        "--target",
+        "x86_64-unknown-linux-gnu",
+        "-e",
+        "features"
+      ],
+      "exit_code": 0,
+      "stdout": "vector-numeric-bridge v0.1.0 (/work/source)\n\u251c\u2500\u2500 serde_json feature \"std\"\n\u2502   \u251c\u2500\u2500 serde_json v1.0.149\n\u2502   \u2502   \u251c\u2500\u2500 memchr v2.7.4\n\u2502   \u2502   \u251c\u2500\u2500 serde_core v1.0.228\n\u2502   \u2502   \u251c\u2500\u2500 itoa feature \"default\"\n\u2502   \u2502   \u2502   \u2514\u2500\u2500 itoa v1.0.11\n\u2502   \u2502   \u2514\u2500\u2500 zmij feature \"default\"\n\u2502   \u2502       \u2514\u2500\u2500 zmij v1.0.21\n\u2502   \u251c\u2500\u2500 memchr feature \"std\"\n\u2502   \u2502   \u251c\u2500\u2500 memchr v2.7.4\n\u2502   \u2502   \u2514\u2500\u2500 memchr feature \"alloc\"\n\u2502   \u2502       \u2514\u2500\u2500 memchr v2.7.4\n\u2502   \u2514\u2500\u2500 serde_core feature \"std\"\n\u2502       \u2514\u2500\u2500 serde_core v1.0.228\n\u2514\u2500\u2500 zmij feature \"default\" (*)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cargo",
+        "+1.94.0",
+        "metadata",
+        "--offline",
+        "--locked",
+        "--filter-platform",
+        "x86_64-unknown-linux-gnu",
+        "--format-version",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"packages\":[{\"name\":\"itoa\",\"version\":\"1.0.11\",\"id\":\"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.11\",\"license\":\"MIT OR Apache-2.0\",\"license_file\":null,\"description\":\"Fast integer primitive to string conversion\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"dependencies\":[{\"name\":\"no-panic\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.1\",\"kind\":null,\"rename\":null,\"optional\":true,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null}],\"targets\":[{\"kind\":[\"lib\"],\"crate_types\":[\"lib\"],\"name\":\"itoa\",\"src_path\":\"/vendor/itoa/src/lib.rs\",\"edition\":\"2018\",\"doc\":true,\"doctest\":true,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"test\",\"src_path\":\"/vendor/itoa/tests/test.rs\",\"edition\":\"2018\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"bench\"],\"crate_types\":[\"bin\"],\"name\":\"bench\",\"src_path\":\"/vendor/itoa/benches/bench.rs\",\"edition\":\"2018\",\"doc\":false,\"doctest\":false,\"test\":false}],\"features\":{\"no-panic\":[\"dep:no-panic\"]},\"manifest_path\":\"/vendor/itoa/Cargo.toml\",\"metadata\":{\"docs\":{\"rs\":{\"rustdoc-args\":[\"--generate-link-to-definition\"],\"targets\":[\"x86_64-unknown-linux-gnu\"]}}},\"publish\":null,\"authors\":[\"David Tolnay <dtolnay@gmail.com>\"],\"categories\":[\"value-formatting\",\"no-std\",\"no-std::no-alloc\"],\"keywords\":[\"integer\"],\"readme\":\"README.md\",\"repository\":\"https://github.com/dtolnay/itoa\",\"homepage\":null,\"documentation\":\"https://docs.rs/itoa\",\"edition\":\"2018\",\"links\":null,\"default_run\":null,\"rust_version\":\"1.36\"},{\"name\":\"memchr\",\"version\":\"2.7.4\",\"id\":\"registry+https://github.com/rust-lang/crates.io-index#memchr@2.7.4\",\"license\":\"Unlicense OR MIT\",\"license_file\":null,\"description\":\"Provides extremely fast (uses SIMD on x86_64, aarch64 and wasm32) routines for\\n1, 2 or 3 byte search and single substring search.\\n\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"dependencies\":[{\"name\":\"compiler_builtins\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.1.2\",\"kind\":null,\"rename\":null,\"optional\":true,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"rustc-std-workspace-core\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.0\",\"kind\":null,\"rename\":\"core\",\"optional\":true,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"log\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.4.20\",\"kind\":null,\"rename\":null,\"optional\":true,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"quickcheck\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.3\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":false,\"features\":[],\"target\":null,\"registry\":null}],\"targets\":[{\"kind\":[\"lib\"],\"crate_types\":[\"lib\"],\"name\":\"memchr\",\"src_path\":\"/vendor/memchr/src/lib.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":true,\"test\":true}],\"features\":{\"alloc\":[],\"compiler_builtins\":[\"dep:compiler_builtins\"],\"core\":[\"dep:core\"],\"default\":[\"std\"],\"libc\":[],\"logging\":[\"dep:log\"],\"rustc-dep-of-std\":[\"core\",\"compiler_builtins\"],\"std\":[\"alloc\"],\"use_std\":[\"std\"]},\"manifest_path\":\"/vendor/memchr/Cargo.toml\",\"metadata\":{\"docs\":{\"rs\":{\"rustdoc-args\":[\"--generate-link-to-definition\"]}}},\"publish\":null,\"authors\":[\"Andrew Gallant <jamslam@gmail.com>\",\"bluss\"],\"categories\":[],\"keywords\":[\"memchr\",\"memmem\",\"substring\",\"find\",\"search\"],\"readme\":\"README.md\",\"repository\":\"https://github.com/BurntSushi/memchr\",\"homepage\":\"https://github.com/BurntSushi/memchr\",\"documentation\":\"https://docs.rs/memchr/\",\"edition\":\"2021\",\"links\":null,\"default_run\":null,\"rust_version\":\"1.61\"},{\"name\":\"serde_core\",\"version\":\"1.0.228\",\"id\":\"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.228\",\"license\":\"MIT OR Apache-2.0\",\"license_file\":null,\"description\":\"Serde traits only, with no support for derive -- use the `serde` crate instead\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"dependencies\":[{\"name\":\"serde\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde_derive\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde_derive\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"=1.0.228\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":\"cfg(any())\",\"registry\":null}],\"targets\":[{\"kind\":[\"lib\"],\"crate_types\":[\"lib\"],\"name\":\"serde_core\",\"src_path\":\"/vendor/serde_core/src/lib.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":true,\"test\":true},{\"kind\":[\"custom-build\"],\"crate_types\":[\"bin\"],\"name\":\"build-script-build\",\"src_path\":\"/vendor/serde_core/build.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":false}],\"features\":{\"alloc\":[],\"default\":[\"std\",\"result\"],\"rc\":[],\"result\":[],\"std\":[],\"unstable\":[]},\"manifest_path\":\"/vendor/serde_core/Cargo.toml\",\"metadata\":{\"playground\":{\"features\":[\"rc\",\"result\"]},\"docs\":{\"rs\":{\"features\":[\"rc\",\"result\",\"unstable\"],\"targets\":[\"x86_64-unknown-linux-gnu\"],\"rustdoc-args\":[\"--generate-link-to-definition\",\"--generate-macro-expansion\",\"--extern-html-root-url=core=https://doc.rust-lang.org\",\"--extern-html-root-url=alloc=https://doc.rust-lang.org\",\"--extern-html-root-url=std=https://doc.rust-lang.org\"]}}},\"publish\":null,\"authors\":[\"Erick Tryzelaar <erick.tryzelaar@gmail.com>\",\"David Tolnay <dtolnay@gmail.com>\"],\"categories\":[\"encoding\",\"no-std\",\"no-std::no-alloc\"],\"keywords\":[\"serde\",\"serialization\",\"no_std\"],\"readme\":\"README.md\",\"repository\":\"https://github.com/serde-rs/serde\",\"homepage\":\"https://serde.rs\",\"documentation\":\"https://docs.rs/serde_core\",\"edition\":\"2021\",\"links\":null,\"default_run\":null,\"rust_version\":\"1.56\"},{\"name\":\"serde_json\",\"version\":\"1.0.149\",\"id\":\"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.149\",\"license\":\"MIT OR Apache-2.0\",\"license_file\":null,\"description\":\"A JSON serialization file format\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"dependencies\":[{\"name\":\"indexmap\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^2.2.3\",\"kind\":null,\"rename\":null,\"optional\":true,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"itoa\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"memchr\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^2\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":false,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde_core\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.220\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":false,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"zmij\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"automod\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.11\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"indoc\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^2.0.2\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"ref-cast\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.18\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"rustversion\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.13\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.194\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[\"derive\"],\"target\":null,\"registry\":null},{\"name\":\"serde_bytes\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.11.10\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde_derive\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.166\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"serde_stacker\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.1.8\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"trybuild\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.108\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[\"diff\"],\"target\":null,\"registry\":null},{\"name\":\"serde\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.0.220\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":false,\"features\":[],\"target\":\"cfg(any())\",\"registry\":null}],\"targets\":[{\"kind\":[\"lib\"],\"crate_types\":[\"lib\"],\"name\":\"serde_json\",\"src_path\":\"/vendor/serde_json/src/lib.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":true,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"compiletest\",\"src_path\":\"/vendor/serde_json/tests/compiletest.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"debug\",\"src_path\":\"/vendor/serde_json/tests/debug.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"lexical\",\"src_path\":\"/vendor/serde_json/tests/lexical.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"map\",\"src_path\":\"/vendor/serde_json/tests/map.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"regression\",\"src_path\":\"/vendor/serde_json/tests/regression.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"stream\",\"src_path\":\"/vendor/serde_json/tests/stream.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"test\",\"src_path\":\"/vendor/serde_json/tests/test.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"custom-build\"],\"crate_types\":[\"bin\"],\"name\":\"build-script-build\",\"src_path\":\"/vendor/serde_json/build.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":false}],\"features\":{\"alloc\":[\"serde_core/alloc\"],\"arbitrary_precision\":[],\"default\":[\"std\"],\"float_roundtrip\":[],\"indexmap\":[\"dep:indexmap\"],\"preserve_order\":[\"indexmap\",\"std\"],\"raw_value\":[],\"std\":[\"memchr/std\",\"serde_core/std\"],\"unbounded_depth\":[]},\"manifest_path\":\"/vendor/serde_json/Cargo.toml\",\"metadata\":{\"docs\":{\"rs\":{\"features\":[\"preserve_order\",\"raw_value\",\"unbounded_depth\"],\"targets\":[\"x86_64-unknown-linux-gnu\"],\"rustdoc-args\":[\"--generate-link-to-definition\",\"--generate-macro-expansion\",\"--extern-html-root-url=core=https://doc.rust-lang.org\",\"--extern-html-root-url=alloc=https://doc.rust-lang.org\",\"--extern-html-root-url=std=https://doc.rust-lang.org\"]}},\"playground\":{\"features\":[\"float_roundtrip\",\"raw_value\",\"unbounded_depth\"]}},\"publish\":null,\"authors\":[\"Erick Tryzelaar <erick.tryzelaar@gmail.com>\",\"David Tolnay <dtolnay@gmail.com>\"],\"categories\":[\"encoding\",\"parser-implementations\",\"no-std\"],\"keywords\":[\"json\",\"serde\",\"serialization\"],\"readme\":\"README.md\",\"repository\":\"https://github.com/serde-rs/json\",\"homepage\":null,\"documentation\":\"https://docs.rs/serde_json\",\"edition\":\"2021\",\"links\":null,\"default_run\":null,\"rust_version\":\"1.68\"},{\"name\":\"vector-numeric-bridge\",\"version\":\"0.1.0\",\"id\":\"path+file:///work/source#vector-numeric-bridge@0.1.0\",\"license\":null,\"license_file\":null,\"description\":null,\"source\":null,\"dependencies\":[{\"name\":\"serde_json\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"=1.0.149\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":false,\"features\":[\"std\"],\"target\":null,\"registry\":null},{\"name\":\"zmij\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"=1.0.21\",\"kind\":null,\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null}],\"targets\":[{\"kind\":[\"bin\"],\"crate_types\":[\"bin\"],\"name\":\"vector-numeric-bridge\",\"src_path\":\"/work/source/src/main.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":false,\"test\":true}],\"features\":{},\"manifest_path\":\"/work/source/Cargo.toml\",\"metadata\":null,\"publish\":[],\"authors\":[],\"categories\":[],\"keywords\":[],\"readme\":null,\"repository\":null,\"homepage\":null,\"documentation\":null,\"edition\":\"2021\",\"links\":null,\"default_run\":null,\"rust_version\":null},{\"name\":\"zmij\",\"version\":\"1.0.21\",\"id\":\"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.21\",\"license\":\"MIT\",\"license_file\":null,\"description\":\"A double-to-string conversion algorithm based on Schubfach and yy\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"dependencies\":[{\"name\":\"no-panic\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.1.36\",\"kind\":null,\"rename\":null,\"optional\":true,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"num-bigint\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.4\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"num-integer\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.1\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"num_cpus\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1.8\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"opt-level\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"rand\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.10\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"ryu\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^1\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":true,\"features\":[],\"target\":null,\"registry\":null},{\"name\":\"criterion\",\"source\":\"registry+https://github.com/rust-lang/crates.io-index\",\"req\":\"^0.8\",\"kind\":\"dev\",\"rename\":null,\"optional\":false,\"uses_default_features\":false,\"features\":[],\"target\":\"cfg(not(miri))\",\"registry\":null}],\"targets\":[{\"kind\":[\"lib\"],\"crate_types\":[\"lib\"],\"name\":\"zmij\",\"src_path\":\"/vendor/zmij/src/lib.rs\",\"edition\":\"2021\",\"doc\":true,\"doctest\":true,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"exhaustive\",\"src_path\":\"/vendor/zmij/tests/exhaustive.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"ryu_comparison\",\"src_path\":\"/vendor/zmij/tests/ryu_comparison.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"test\"],\"crate_types\":[\"bin\"],\"name\":\"test\",\"src_path\":\"/vendor/zmij/tests/test.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":true},{\"kind\":[\"bench\"],\"crate_types\":[\"bin\"],\"name\":\"bench\",\"src_path\":\"/vendor/zmij/benches/bench.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":false},{\"kind\":[\"custom-build\"],\"crate_types\":[\"bin\"],\"name\":\"build-script-build\",\"src_path\":\"/vendor/zmij/build.rs\",\"edition\":\"2021\",\"doc\":false,\"doctest\":false,\"test\":false}],\"features\":{\"no-panic\":[\"dep:no-panic\"]},\"manifest_path\":\"/vendor/zmij/Cargo.toml\",\"metadata\":{\"docs\":{\"rs\":{\"targets\":[\"x86_64-unknown-linux-gnu\"],\"rustdoc-args\":[\"--generate-link-to-definition\",\"--generate-macro-expansion\",\"--extern-html-root-url=core=https://doc.rust-lang.org\"]}}},\"publish\":null,\"authors\":[\"David Tolnay <dtolnay@gmail.com>\"],\"categories\":[\"value-formatting\",\"no-std\",\"no-std::no-alloc\"],\"keywords\":[\"float\"],\"readme\":\"README.md\",\"repository\":\"https://github.com/dtolnay/zmij\",\"homepage\":null,\"documentation\":\"https://docs.rs/zmij\",\"edition\":\"2021\",\"links\":null,\"default_run\":null,\"rust_version\":\"1.71\"}],\"workspace_members\":[\"path+file:///work/source#vector-numeric-bridge@0.1.0\"],\"workspace_default_members\":[\"path+file:///work/source#vector-numeric-bridge@0.1.0\"],\"resolve\":{\"nodes\":[{\"id\":\"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.11\",\"dependencies\":[],\"deps\":[],\"features\":[]},{\"id\":\"registry+https://github.com/rust-lang/crates.io-index#memchr@2.7.4\",\"dependencies\":[],\"deps\":[],\"features\":[\"alloc\",\"std\"]},{\"id\":\"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.228\",\"dependencies\":[],\"deps\":[],\"features\":[\"result\",\"std\"]},{\"id\":\"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.149\",\"dependencies\":[\"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.11\",\"registry+https://github.com/rust-lang/crates.io-index#memchr@2.7.4\",\"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.228\",\"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.21\"],\"deps\":[{\"name\":\"itoa\",\"pkg\":\"registry+https://github.com/rust-lang/crates.io-index#itoa@1.0.11\",\"dep_kinds\":[{\"kind\":null,\"target\":null}]},{\"name\":\"memchr\",\"pkg\":\"registry+https://github.com/rust-lang/crates.io-index#memchr@2.7.4\",\"dep_kinds\":[{\"kind\":null,\"target\":null}]},{\"name\":\"serde_core\",\"pkg\":\"registry+https://github.com/rust-lang/crates.io-index#serde_core@1.0.228\",\"dep_kinds\":[{\"kind\":null,\"target\":null}]},{\"name\":\"zmij\",\"pkg\":\"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.21\",\"dep_kinds\":[{\"kind\":null,\"target\":null}]}],\"features\":[\"std\"]},{\"id\":\"path+file:///work/source#vector-numeric-bridge@0.1.0\",\"dependencies\":[\"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.149\",\"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.21\"],\"deps\":[{\"name\":\"serde_json\",\"pkg\":\"registry+https://github.com/rust-lang/crates.io-index#serde_json@1.0.149\",\"dep_kinds\":[{\"kind\":null,\"target\":null}]},{\"name\":\"zmij\",\"pkg\":\"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.21\",\"dep_kinds\":[{\"kind\":null,\"target\":null}]}],\"features\":[]},{\"id\":\"registry+https://github.com/rust-lang/crates.io-index#zmij@1.0.21\",\"dependencies\":[],\"deps\":[],\"features\":[]}],\"root\":\"path+file:///work/source#vector-numeric-bridge@0.1.0\"},\"target_directory\":\"/work/source/target\",\"build_directory\":\"/work/source/target\",\"version\":1,\"workspace_root\":\"/work/source\",\"metadata\":null}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "cargo",
+        "+1.94.0",
+        "build",
+        "--offline",
+        "--locked",
+        "--release",
+        "--target",
+        "x86_64-unknown-linux-gnu",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "   Compiling serde_core v1.0.228\n   Compiling zmij v1.0.21\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name build_script_build --edition=2021 /vendor/serde_core/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature=\"std\"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"alloc\", \"default\", \"rc\", \"result\", \"std\", \"unstable\"))' -C metadata=f105c6cd9bb3a386 -C extra-filename=-83a6faafc3c361b2 --out-dir /work/source/target/release/build/serde_core-83a6faafc3c361b2 -C strip=debuginfo -L dependency=/work/source/target/release/deps --cap-lints allow`\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name build_script_build --edition=2021 /vendor/zmij/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"no-panic\"))' -C metadata=f7dbc40ac3fe60af -C extra-filename=-6b72ac5b6722cab2 --out-dir /work/source/target/release/build/zmij-6b72ac5b6722cab2 -C strip=debuginfo -L dependency=/work/source/target/release/deps --cap-lints allow`\n     Running `/work/source/target/release/build/zmij-6b72ac5b6722cab2/build-script-build`\n     Running `/work/source/target/release/build/serde_core-83a6faafc3c361b2/build-script-build`\n   Compiling serde_json v1.0.149\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name build_script_build --edition=2021 /vendor/serde_json/build.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C embed-bitcode=no -C debug-assertions=off --cfg 'feature=\"std\"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"alloc\", \"arbitrary_precision\", \"default\", \"float_roundtrip\", \"indexmap\", \"preserve_order\", \"raw_value\", \"std\", \"unbounded_depth\"))' -C metadata=7327d5b7116e3624 -C extra-filename=-253ae0c599e8bf58 --out-dir /work/source/target/release/build/serde_json-253ae0c599e8bf58 -C strip=debuginfo -L dependency=/work/source/target/release/deps --cap-lints allow`\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name serde_core --edition=2021 /vendor/serde_core/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature=\"std\"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"alloc\", \"default\", \"rc\", \"result\", \"std\", \"unstable\"))' -C metadata=10dadf2490805529 -C extra-filename=-e5f24d6a1d671051 --out-dir /work/source/target/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -C strip=debuginfo -L dependency=/work/source/target/x86_64-unknown-linux-gnu/release/deps -L dependency=/work/source/target/release/deps --cap-lints allow --check-cfg 'cfg(if_docsrs_then_no_serde_core)' --check-cfg 'cfg(no_core_cstr)' --check-cfg 'cfg(no_core_error)' --check-cfg 'cfg(no_core_net)' --check-cfg 'cfg(no_core_num_saturating)' --check-cfg 'cfg(no_diagnostic_namespace)' --check-cfg 'cfg(no_serde_derive)' --check-cfg 'cfg(no_std_atomic)' --check-cfg 'cfg(no_std_atomic64)' --check-cfg 'cfg(no_target_has_atomic)'`\n     Running `/work/source/target/release/build/serde_json-253ae0c599e8bf58/build-script-build`\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name zmij --edition=2021 /vendor/zmij/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"no-panic\"))' -C metadata=0e927f27764d67f6 -C extra-filename=-84b4b84d7e563c3a --out-dir /work/source/target/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -C strip=debuginfo -L dependency=/work/source/target/x86_64-unknown-linux-gnu/release/deps -L dependency=/work/source/target/release/deps --cap-lints allow --check-cfg 'cfg(exhaustive)' --check-cfg 'cfg(zmij_no_select_unpredictable)'`\n   Compiling memchr v2.7.4\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name memchr --edition=2021 /vendor/memchr/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature=\"alloc\"' --cfg 'feature=\"std\"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"alloc\", \"compiler_builtins\", \"core\", \"default\", \"libc\", \"logging\", \"rustc-dep-of-std\", \"std\", \"use_std\"))' -C metadata=043c14008b57c453 -C extra-filename=-3faf6fd57f340ec7 --out-dir /work/source/target/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -C strip=debuginfo -L dependency=/work/source/target/x86_64-unknown-linux-gnu/release/deps -L dependency=/work/source/target/release/deps --cap-lints allow`\n   Compiling itoa v1.0.11\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name itoa --edition=2018 /vendor/itoa/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"no-panic\"))' -C metadata=18093ce5dbf4b034 -C extra-filename=-a57aa358b19a5679 --out-dir /work/source/target/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -C strip=debuginfo -L dependency=/work/source/target/x86_64-unknown-linux-gnu/release/deps -L dependency=/work/source/target/release/deps --cap-lints allow`\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name serde_json --edition=2021 /vendor/serde_json/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C opt-level=3 -C embed-bitcode=no --cfg 'feature=\"std\"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values(\"alloc\", \"arbitrary_precision\", \"default\", \"float_roundtrip\", \"indexmap\", \"preserve_order\", \"raw_value\", \"std\", \"unbounded_depth\"))' -C metadata=52a6b43908efdfe2 -C extra-filename=-dba6cace2d9307de --out-dir /work/source/target/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -C strip=debuginfo -L dependency=/work/source/target/x86_64-unknown-linux-gnu/release/deps -L dependency=/work/source/target/release/deps --extern itoa=/work/source/target/x86_64-unknown-linux-gnu/release/deps/libitoa-a57aa358b19a5679.rmeta --extern memchr=/work/source/target/x86_64-unknown-linux-gnu/release/deps/libmemchr-3faf6fd57f340ec7.rmeta --extern serde_core=/work/source/target/x86_64-unknown-linux-gnu/release/deps/libserde_core-e5f24d6a1d671051.rmeta --extern zmij=/work/source/target/x86_64-unknown-linux-gnu/release/deps/libzmij-84b4b84d7e563c3a.rmeta --cap-lints allow --cfg 'fast_arithmetic=\"64\"' --check-cfg 'cfg(fast_arithmetic, values(\"32\", \"64\"))'`\n   Compiling vector-numeric-bridge v0.1.0 (/work/source)\n     Running `/usr/local/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name vector_numeric_bridge --edition=2021 src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C opt-level=3 -C embed-bitcode=no --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values())' -C metadata=f7839ad7c3a76f76 -C extra-filename=-3e2c98156b3553ea --out-dir /work/source/target/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -C strip=debuginfo -L dependency=/work/source/target/x86_64-unknown-linux-gnu/release/deps -L dependency=/work/source/target/release/deps --extern serde_json=/work/source/target/x86_64-unknown-linux-gnu/release/deps/libserde_json-dba6cace2d9307de.rlib --extern zmij=/work/source/target/x86_64-unknown-linux-gnu/release/deps/libzmij-84b4b84d7e563c3a.rlib`\n    Finished `release` profile [optimized] target(s) in 14.09s\n"
+    }
+  ],
+  "build_script_sha256": "083f7d8615163c926c0a04b2a3f1bcfde74c761bd399804d3bac09514dee29ed"
+}

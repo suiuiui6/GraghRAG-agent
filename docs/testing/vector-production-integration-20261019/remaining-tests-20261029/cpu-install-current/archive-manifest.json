@@ -1,0 +1,57 @@
+[
+  {
+    "file": "artifact-selection-review/REPORT.md",
+    "bytes": 4081,
+    "sha256": "52ce491f0f2ee3b1bcc7e198c5ae30a19a95155468b1e732babc71a1f0803e01"
+  },
+  {
+    "file": "artifact-selection-review/receipt.json",
+    "bytes": 73078,
+    "sha256": "e4fe07f0eaafa64441c747082e6ac190255f20370fa997673be4573ac68fc3cc"
+  },
+  {
+    "file": "selection-plan.json",
+    "bytes": 74614,
+    "sha256": "6e1343070cd3e7d31d1d79a07b7c3fda58285d84a9742495afc897612c98cf85"
+  },
+  {
+    "file": "target-tags.stdout",
+    "bytes": 34027,
+    "sha256": "41029827e145b023c7e7bf793d8cca1052ac9be7bea414d203993ee3954e7ae4"
+  },
+  {
+    "file": "target-tags-command.json",
+    "bytes": 564,
+    "sha256": "8fa20ad5e8dface8d31b2681459738b0a499d3da7590836c5ef142efbc600127"
+  },
+  {
+    "file": "audit-all157-versions.txt",
+    "bytes": 3083,
+    "sha256": "8f21069c18e24ecff9070acd6c216571785979e3dd01e7712443056a60a72973"
+  },
+  {
+    "file": "audit-all157.json",
+    "bytes": 11260,
+    "sha256": "b8b64cd86215d782a644e12bbc9e7e01cfec7c05a07af3408b338611a18bbc26"
+  },
+  {
+    "file": "audit-all157-receipt.json",
+    "bytes": 1055,
+    "sha256": "11546c673fd9a857cb475caa7f53225bf1170752c1f5464ef6782364b3adf87b"
+  },
+  {
+    "file": "torch-audit-supplement/exact-cpu.json",
+    "bytes": 90,
+    "sha256": "5eeadc892edd16a105210f42715341ee98e083b168a14ee1bcb785ba3c4bb0a3"
+  },
+  {
+    "file": "torch-audit-supplement/public-base.json",
+    "bytes": 86,
+    "sha256": "b4dee846d89db1b9cfaaa4521aaba395ca1c61a8c7cf9c1b3d0c08d233c6f5c5"
+  },
+  {
+    "file": "torch-audit-supplement/receipt.json",
+    "bytes": 2363,
+    "sha256": "9acbaaa73e05b34aaf419c98365eeaaaf82aa8085658b75645f19880ae067b3a"
+  }
+]

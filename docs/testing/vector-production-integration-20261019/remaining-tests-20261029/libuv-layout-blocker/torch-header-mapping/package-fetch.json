@@ -1,0 +1,57 @@
+{
+  "url": "https://s3.amazonaws.com/ossci-windows/libuv-1.40.0-h8ffe710_0.tar.bz2",
+  "limit": 5000000,
+  "headers": {
+    "x-amz-id-2": "SaT54AvWn01QuOxUi0h9556kkEfmSvNvAHR+/DwOv5CETj+gAuP7FavordDzZWVTwJlxqMRyZjc=",
+    "x-amz-request-id": "PNG2W1W60M2G8KQ9",
+    "Server": "AmazonS3",
+    "Date": "Thu, 29 Oct 2026 13:22:53 GMT",
+    "Last-Modified": "Thu, 24 Apr 2025 16:24:28 GMT",
+    "ETag": "\"cde4b3adfb81cfe28ac17b84e62ed93e\"",
+    "x-amz-server-side-encryption": "AES256",
+    "Accept-Ranges": "bytes",
+    "Content-Type": "binary/octet-stream",
+    "Content-Length": "337434",
+    "Connection": "close"
+  },
+  "bytes": 337434,
+  "sha256": "e22158feea790e9c4e9f14a3dd85d9fdba8dcdc9b4a7b998e6adadfe8dee3865",
+  "members": [
+    {
+      "member": "info/index.json",
+      "file": "package-info__index.json",
+      "size": 325,
+      "sha256": "25d065706ebb5e14cf40258434d367b4feb42aeeb5444eaa7620f773663989e2"
+    },
+    {
+      "member": "info/about.json",
+      "file": "package-info__about.json",
+      "size": 6022,
+      "sha256": "25ab978dc2d9245c787aa0ea5d8c809ba94634220a1bfd2187eb31b356d4b774"
+    },
+    {
+      "member": "Library/bin/uv.dll",
+      "file": "package-Library__bin__uv.dll",
+      "size": 195072,
+      "sha256": "fa569e682fc5fb7a8eb94c6829af9f30a569748dbbc6bce39735d48bc960bcf8"
+    },
+    {
+      "member": "info/recipe/meta.yaml",
+      "file": "package-info__recipe__meta.yaml",
+      "size": 1854,
+      "sha256": "4562b78435090796b4006c124af9df7eef39a18e96825a72fbcc68fa9bd03b1d"
+    },
+    {
+      "member": "Library/include/uv/win.h",
+      "file": "package-Library__include__uv__win.h",
+      "size": 32541,
+      "sha256": "7f378fa6d8fce51b4999344818731b40b7cac7a3d84d9ba60a9629dfece2ebab"
+    },
+    {
+      "member": "Library/include/uv.h",
+      "file": "package-Library__include__uv.h",
+      "size": 65703,
+      "sha256": "253cfea345971c78dbb15853fe0c1df960bbef6af8eeb78c85525bc9ff1553bf"
+    }
+  ]
+}

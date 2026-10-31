@@ -1,0 +1,44 @@
+[
+  {
+    "file": "candidate-manifest-v2.json",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\candidate-manifest-v2.json",
+    "bytes": 1017,
+    "sha256": "ca620ab51522cccb8dc0df2475f7dbb96879979b6ac213aa2cb3abb539c8d268"
+  },
+  {
+    "file": "commands-v2.json",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\commands-v2.json",
+    "bytes": 2071,
+    "sha256": "8be0dec2626bc43b9ceae2394f2a30293c4afc18e361b80d1a53c9bc23b2d99d"
+  },
+  {
+    "file": "publication-receipt.json",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\root-publication-receipt.json",
+    "bytes": 1238,
+    "sha256": "977525c459c3811d5fc6508e335622c629f42b201b7924285e7e6feb7eff1d44"
+  },
+  {
+    "file": "root-focused-receipt.json",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\root-focused-v2\\receipt.json",
+    "bytes": 2440,
+    "sha256": "ab2d825a77c303ee7784d9312667bd028c0e21cafac10c9ad89af443337619ca"
+  },
+  {
+    "file": "final-independent-review.md",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-independent-review-20261028\\final-review-v2.md",
+    "bytes": 5669,
+    "sha256": "15dc333ac5543ddb07396624691b6fb2a3ffe572257a089a1ea8cfa92827942f"
+  },
+  {
+    "file": "final-hashes.json",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-independent-review-20261028\\final-hashes.json",
+    "bytes": 1703,
+    "sha256": "669be5356306fed6bc9e5967ea120869cd653063a8ae313b0d87857eec102c62"
+  },
+  {
+    "file": "r9-runner-static-review.md",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\git-identity-independent-review-20261028\\r9-runner-static-review.md",
+    "bytes": 1625,
+    "sha256": "e82bb3289cf384d9f95afeae20eeca5000f1a758a7b3cf41623119882b7011f2"
+  }
+]

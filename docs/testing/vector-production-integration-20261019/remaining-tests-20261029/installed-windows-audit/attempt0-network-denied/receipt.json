@@ -1,0 +1,31 @@
+{
+  "argv": [
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "pip_audit",
+    "-r",
+    "D:\\graghRAG-agent\\.tmp\\installed-windows-audit-20261029\\installed-thirdparty158.txt",
+    "--disable-pip",
+    "--no-deps",
+    "--timeout",
+    "20",
+    "--format",
+    "json",
+    "--output",
+    "D:\\graghRAG-agent\\.tmp\\installed-windows-audit-20261029\\audit.json",
+    "--cache-dir",
+    "D:\\graghRAG-agent\\.tmp\\langgraph-patched-audits-20261029\\cache",
+    "--progress-spinner",
+    "off"
+  ],
+  "exit": 1,
+  "seconds": 4.75,
+  "unique_installed": 159,
+  "thirdparty": 158,
+  "local_source_distribution": 1,
+  "metadata_matches_assembly_receipt": true,
+  "all_versions_match_main_lock": true,
+  "lock_sha256": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5",
+  "scope": "Read actual new runtime METADATA; scan using separate old tool runtime. No new runtime files modified. Announcement scan excludes local LangExtract and does not clear native bundled libraries."
+}

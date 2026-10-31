@@ -1,0 +1,16 @@
+{
+  "badmain": {
+    "verify": "backup_catalog_integrity",
+    "archive_unchanged": true
+  },
+  "badwal": {
+    "verify": true,
+    "archive_unchanged": true
+  },
+  "slow_header_deadline": {
+    "budget_seconds": 0.2,
+    "actual_seconds": 0.25,
+    "outcome": "source_download_failed",
+    "partial_file": false
+  }
+}

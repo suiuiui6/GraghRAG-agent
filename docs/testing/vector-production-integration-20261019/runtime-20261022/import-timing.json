@@ -1,0 +1,18 @@
+[
+  {
+    "run": 1,
+    "fresh_process": true,
+    "exit": 0,
+    "seconds": 48.28099999995902,
+    "stdout": "torch 9.422000000020489\nsentence_transformers 37.125\n",
+    "stderr": ""
+  },
+  {
+    "run": 2,
+    "fresh_process": true,
+    "exit": 0,
+    "seconds": 40.59400000004098,
+    "stdout": "torch 8.670999999972992\nsentence_transformers 30.45400000002701\n",
+    "stderr": ""
+  }
+]

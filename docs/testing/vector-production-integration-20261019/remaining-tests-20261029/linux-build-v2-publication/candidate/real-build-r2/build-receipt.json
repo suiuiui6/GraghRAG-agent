@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "approved": false,
+  "target": "x86_64-unknown-linux-gnu",
+  "profile": "release",
+  "features": [
+    "serde_json/std",
+    "zmij/default"
+  ],
+  "toolchain": "rustc 1.94.0 (4a4ef493e 2026-03-02)\nbinary: rustc\ncommit-hash: 4a4ef493e3a1488c6e321570238084b38948f6db\ncommit-date: 2026-03-02\nhost: x86_64-unknown-linux-gnu\nrelease: 1.94.0\nLLVM version: 21.1.8\n",
+  "files": {
+    "Cargo.toml": "02105d1df940431d92ff91bb536eb65aee8e2ba3a7fc19f21e9e0ee624842c2c",
+    "Cargo.lock": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+    "rust-toolchain.toml": "4cb550734bd94d0591c8a84b561c654dd58ddc3b0d67464c2ddeb2962a4cd826",
+    "src/main.rs": "eee79631cc3e7ee8acd2d48485be9a811374d7d04426a49f1368e7b260f65dfe",
+    "vector-numeric-bridge": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0"
+  }
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "name": "install-msgpack",
+    "command": [
+      "uv",
+      "pip",
+      "install",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+      "--offline",
+      "--no-deps",
+      "D:\\graghRAG-agent\\.tmp\\msgpack-candidate-review-20261028\\msgpack-1.2.3-cp312-cp312-win_amd64.whl"
+    ],
+    "exit": 0,
+    "seconds": 0.11061310768127441
+  },
+  {
+    "name": "install-local",
+    "command": [
+      "uv",
+      "pip",
+      "install",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+      "--offline",
+      "--no-build-isolation",
+      "--no-deps",
+      "-e",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\langextract"
+    ],
+    "exit": 0,
+    "seconds": 3.2511260509490967
+  },
+  {
+    "name": "pip-check",
+    "command": [
+      "uv",
+      "pip",
+      "check",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe"
+    ],
+    "exit": 0,
+    "seconds": 6.227360010147095
+  },
+  {
+    "name": "normal-io",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+      "-B",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\normal_io.py"
+    ],
+    "exit": 0,
+    "seconds": 3.1774163246154785
+  },
+  {
+    "name": "audit-all-lock",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip_audit",
+      "-r",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\all-lock-requirements.txt",
+      "--disable-pip",
+      "--no-deps",
+      "--timeout",
+      "45",
+      "--format",
+      "json",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-all-lock.json",
+      "--cache-dir",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-cache-all-lock",
+      "--progress-spinner",
+      "off"
+    ],
+    "exit": 0,
+    "seconds": 169.95082092285156
+  },
+  {
+    "name": "audit-installed",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip_audit",
+      "--timeout",
+      "45",
+      "--format",
+      "json",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-installed.json",
+      "--cache-dir",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-cache-installed",
+      "--progress-spinner",
+      "off"
+    ],
+    "exit": 0,
+    "seconds": 136.39074993133545
+  }
+]

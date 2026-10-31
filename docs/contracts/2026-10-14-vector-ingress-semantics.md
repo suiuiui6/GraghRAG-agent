@@ -1,5 +1,7 @@
 # Chroma 1.5.9 数值入口兼容合同（隔离候选，未放行生产）
 
+当前合同见文末“2026-10-27 当前数值桥合同”；此前r4/R4b/R5部分为保留反例及决策依据的历史阶段，不代表当前实现仍采用Python formatter或仅支持I64记录。生产总准入仍未放行。
+
 ## 已复现根因
 
 真实隔离 Chroma 1.5.9 中，Python binary64 `±0x1.fffffffffffffp+62` 经 add 后，embeddings_queue.metadata JSON 仍是 `±9.223372036854775e+18`；embedding_metadata.float_value 和 API get readback 已变 `±0x1.0000000000000p+63`。证据 `.tmp/vector-ingress-debug-20261014/real-probe.json`，同目录脚本、exit0及日志；全合成显式向量，无模型。
@@ -16,7 +18,7 @@ parser应按源码泛化significand/u64 overflow/exponent/POW10逻辑，不得�
 
 ## 验收及限制
 
-必须对独立随机finite binary64、边界相邻值、极大极小值、signed zero、指数格式、范围外原始int分别核raw/log/store/query/readback；保留红证据及真实get/query差分、旧H1消费者。任何不能证明安全模拟的子域明确拒绝并记录兼容差异；不得声称H2或整体替换关闭。生产/主锁/旧r2/r3/原数据不改，无commit/push/deploy。
+必须对独立随机finite binary64、边界相邻值、极大极小值、signed zero、指数格式、范围外原始int分别核raw/log/store/query/readback；保留红证据及真实get/query差分、旧H1消费者。任何不能证明安全模拟的子域明确拒绝并记录兼容差异；不得声称H2或整体替换关闭。生产/主锁/旧r2/r3/原数据不改，无commit/push/deploy。
 
 ## 2026-10-14 独立算法验证结果（可供r4隔离原型执行）
 
@@ -29,7 +31,7 @@ parser应按源码泛化significand/u64 overflow/exponent/POW10逻辑，不得�
 
 r4允许复用临时审计port作为隔离实现起点：metadata派生兼容值及query数值先经json.dumps→port，原payload独立保留。compat API readback返回派生metadata，存档raw另给明确接口；不能改变现有冻结。审计证据充分支持已测域及H2反例修复尝试，但Python/Zmij任意float最短表示全域等价尚未证明，H2整体关闭和生产替换须独立评审后判定。未执行生产全量/双90，无提交。
 
-完整官方Cargo.lock SHA256 `ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a`，272967 bytes。所有执行输入、官方源码、临时实现、原始oracle、退出码、helper锁、许可证及SHA256清单保存 `docs/testing/vector-ingress-debug-20261014/`。随机数据无生产内容、provider、密钥或Gold。
+完整官方Cargo.lock SHA256 `ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a`，272967 bytes。所有执行输入、官方源码、临时实现、原始oracle、退出码、helper锁、许可证及SHA256清单保存 `docs/testing/vector-ingress-debug-20261014/`。随机数据无生产内容、provider、密钥或Gold。
 
 ## R4b 已测语义与剩余边界（2026-10-14）
 
@@ -51,9 +53,32 @@ r4允许复用临时审计port作为隔离实现起点：metadata派生兼容值
 | P0 | 未修复 | 完整adapter动态schema增量/回填、固定G分页、并发写删、崩溃恢复和应用级一致快照；按替换设计实跑，静态generation探针不替代 |
 | P1 | 待验证 | 规定规模/采样的性能与内存，形成具体选型和集成计划；生产集成及真实数据迁移另需用户确认 |
 
-## R5记录入口新证据及错误契约
+## R5记录入口新证据及错误契约（历史阶段）
 
 [公共异常契约](2026-10-14-vector-error-semantics.md)定义应用自己的分类与消费者边界，不要求供应商异常类名相同。真实Chroma新合成探针发现metadata原始Python int `2**63`、`2**64`、`-2**63-1`均可add并get为float，hex分别`0x1.0000000000000p+63`、`0x1.0000000000000p+64`、`-0x1.0000000000000p+63`。先前“record typed API必限I64”的断言被推翻；候选暂保留I64支持域及显式拒绝，三项为兼容GAP，不能用错误归一化算匹配，也不能把查询where解析规则直接套到PyO3记录入口。
 
 另真实Chroma接受含NaN的query_embeddings；这是查询向量，不是where数值literal。候选按有限向量策略拒绝，此差异也单列，不推翻已测where非有限数拒绝。历史冻结保持原样；新证据绑定R5源码/原始回执，整体数值入口仍部分修复。
 
+## 2026-10-27 当前数值桥合同
+
+本节取代上文旧候选的记录仅支持I64、Python formatter近似及原wheel parser feature缺依据的当前状态描述；其原始反例和阶段报告保留。本节不将H2整体、完整adapter或生产替换标为完成。
+
+记录中的内置Python int在signed I64范围内保持整数恒等；超出该范围时沿原PyO3提取次序转换为有限f64，不能按where的U64 guard提前拒绝，也不能把bool当数值处理。内置float和该宽整数转换结果以精确f64 bits传入批准的原生桥，由锁定serde_json 1.0.149与Zmij 1.0.21执行原serializer→原default parser；不再使用Python十进制formatter近似记录路径。解析拒绝沿既有输入错误边界返回，不假定parse(format(f))必等于原f。该论证不外推任意Python数值对象或全部PyO3提取行为。
+
+where数值沿调用方产生的Python JSON token进入同源parser一次，保留原signed I64/U64/F64分类和后续guard；不与记录入口合并。公开读回不得再次执行记录入口这一非幂等转换。SQLite兼容读回的浮点负零规范化和原payload保留规则沿用既有合同；已确认拒绝NaN/Infinity查询向量的兼容性变化不变。不缩小既有合法数据规模或有限数值支持域。
+
+构建依据绑定原官方Chroma 1.5.9 Windows wheel SHA256 `4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c`、tag及源码commit `11f3c7435e71024aa0a2b53710a28d3289d922d1`。官方签名由作者及独立reviewer分别实际验证；原锁、37份原始workspace Cargo manifests、51个直接serde_json消费者（30个registry精确版本/checksum、20个local、1个固定Git）及serde_json自身feature闭包的保守超集均未请求float_roundtrip/arbitrary_precision/unbounded_depth。此处采用官方签名构建按其声明source/lock/configuration正常执行的通常上游信任前提，足以满足本项目既有源码/构建依据标准；不是候选helper的feature tree替代原件，也不是随机零差分推出全域等价。
+
+原发布workflow缺少显式--locked，使用浮动action及自托管runner；现有attestation不记录每条rustc调用或隐藏环境。原run日志访问403/工件API零项不代表这些隐藏输入已被查明。上述事实仍是该条件性构建论证的边界，不声称可复现原wheel的全部编译过程。算法独立审、原构建调查及独立复核分别见测试证据目录中的`formatter-admission-review-20261026/`、`chroma-build-provenance-20261027/`和`formatter-build-review-20261027/`（均位于`../testing/vector-production-integration-20261019/`）。
+
+据此可关闭旧Python formatter近似和本节所述Windows内置数值标量parser-feature前提；完整predicate/collection/异常边界、同快照消费者和生命周期验收仍需各自证据。批准原生包身份不等于原生组件安全审计；Linux构建、运行库/模型部署身份和文件权限不由此推定通过。默认`compatibility_not_approved`继续保留，现有资料不迁移，生产总准入不因本节自动开放。
+
+
+
+### 2026-10-29 Linux 数值桥构建入口集成
+
+固定 x86_64 MSVC/GNU 的 `backend/native/vector_numeric/build.py` 现支持离线构建和审查 SHA 后向 fresh、非服务 staging 安装。前提是已安装 rustup 及固定 1.94.0 工具链；全部编译器/Cargo调用使用不带 `--install` 的 `rustup run 1.94.0`，缺工具链直接失败，Cargo依赖命令继续 `--offline --locked`。schema1 features 保留 requested labels，真实 graph/compiled cfg 单独记录；安装身份批准不等于数值语义或生产批准。Linux可执行位及只读源/包由安装和受控镜像打包分别落实。
+
+候选经历有效RED/GREEN、独立32策略用例、真实断网GNU构建及缺工具链负例；未改Rust源码/锁、数值协议或runtime verifier。未改的installer另有真实审SHA安装、非root只读执行/权限负例和root三个新容器复验。Linux Chroma1.5.9 ABI3 wheel SHA cc09b3df76e5a5cb386aed2715a2eea152e3949f9e1ba93c7119505377749929 已由作者与独立reviewer分别实际验签，绑定既定源码commit/tag；37原manifest与51全target消费者闭包通过，接受与Windows相同通常上游信任条件下的内置标量source/build前提，不外推任意PyO3/全部predicate或全部native安全。
+
+证据见 `docs/testing/vector-production-integration-20261019/remaining-tests-20261029/linux-build-provenance/`、`linux-install-native-inputs/` 及 `linux-build-v2-publication/`。本次正式源码/测试变化后R11仅历史，须执行新最终快照全量回归与分别双90。正式Dockerfile/生产runtime和CPU/GPU默认未切换；Windows libuv修补仅获私有离线构建及静态检查授权、尚未验证ABI或替换运行库。`compatibility_not_approved` 保持，无提交/推送/部署/资料迁移。

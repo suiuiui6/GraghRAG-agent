@@ -1,0 +1,267 @@
+[
+  {
+    "file": "build/REPORT.md",
+    "bytes": 3872,
+    "sha256": "aed2ab486d6292a4a393aa9ef5de7e9326ee8c120ea828e649eb1e66f3f0d6c4"
+  },
+  {
+    "file": "build/acquire-receipt.json",
+    "bytes": 631,
+    "sha256": "431c4c2c25409f1ad7b5379e62df7eba232543134b1e5940109458a8298fb017"
+  },
+  {
+    "file": "build/wheel-manifest.json",
+    "bytes": 574,
+    "sha256": "ea0fa7fae710c268dacd0122e0503ec96ac18b6d6e8a17783266e897b1f3772f"
+  },
+  {
+    "file": "build/input-linkage.json",
+    "bytes": 979,
+    "sha256": "235f41b301221f62945ea563c6e5c8e633c80977d3ccff754e085b85e11b2ed9"
+  },
+  {
+    "file": "build/native-final-receipt.json",
+    "bytes": 683,
+    "sha256": "24a11bd15b5eff271baec8b247fe09a75182b7f78b58aca6c24e1ea4e833204f"
+  },
+  {
+    "file": "build/container-exits.json",
+    "bytes": 679,
+    "sha256": "4f5148d1236726b584ae50604c103ebe0cc87485b13f7abef9b68fc3336bfd5d"
+  },
+  {
+    "file": "build-review/REPORT.md",
+    "bytes": 4549,
+    "sha256": "7df6b9a25ca2f9b677c6700f5f1f680cfc83622f4355f8b9b7294f49319222b6"
+  },
+  {
+    "file": "build-review/receipt.json",
+    "bytes": 1264,
+    "sha256": "a609ae18eb7e9331cc6157a8e25c93d5f11eadc23c5396927bcbb18f6d85e29b"
+  },
+  {
+    "file": "build-review/hashes.json",
+    "bytes": 3103,
+    "sha256": "101daea89ea06b4fa41f7c6d36ee4f015da733d35ac119ed2fb2c7ccff6d7c07"
+  },
+  {
+    "file": "build-review/native-receipt.json",
+    "bytes": 4606,
+    "sha256": "d922ede13cf3a798a2de092051a0b25d0c4780e03bf6a049d3384d77e3fc584a"
+  },
+  {
+    "file": "local-build/REPORT.md",
+    "bytes": 3245,
+    "sha256": "eb6a54a17ffafba47683339d51b32340569a471855629da2f047fd94dc6484d1"
+  },
+  {
+    "file": "local-build/source-check.json",
+    "bytes": 13707,
+    "sha256": "0cc8b54dd2aef022b1e9364d5f3b7c56145d66158c95e4e14c795651f716b711"
+  },
+  {
+    "file": "local-build/build-receipt.json",
+    "bytes": 28557,
+    "sha256": "6cc694cc608904281782e84659bf8cfcf16678e2646b884fbdfa8396f8a343f6"
+  },
+  {
+    "file": "local-build/artifact-reverify.json",
+    "bytes": 262,
+    "sha256": "c569c41c39de7cc5a57e455c5037934c7cb18dbc1ad29c043f656d1b3300508c"
+  },
+  {
+    "file": "local-review/REPORT.md",
+    "bytes": 4411,
+    "sha256": "9b180d1a178c1bf777ef5a3d4416b0492a43fdb6ef257feddfcd957cb38872d3"
+  },
+  {
+    "file": "local-review/receipt.json",
+    "bytes": 2336,
+    "sha256": "64945735fdbe9570198d892f485138bafc64e33fb495541735aadd8ecb8e79ee"
+  },
+  {
+    "file": "security-author/REPORT.md",
+    "bytes": 9363,
+    "sha256": "1f4bea78c1b138e03928a20a7a989b210adde20fa4ae9eef0c260960b5133c75"
+  },
+  {
+    "file": "security-author/candidate-diff.json",
+    "bytes": 147853,
+    "sha256": "842fe3b1b05ad0aafa6bdda46eb1f3af98cc4d4a4ec91c989316f7308b374b2d"
+  },
+  {
+    "file": "security-review/REPORT.md",
+    "bytes": 5437,
+    "sha256": "b418b8ff07ebf5b061dfaba3c1df2ffc186b777dc348c784eafbe979deccb7e4"
+  },
+  {
+    "file": "security-review/receipt.json",
+    "bytes": 3690,
+    "sha256": "e266582cb5a908296c669abe49dcbcd08ddd11e641355777f2472dc972284c08"
+  },
+  {
+    "file": "security-review/behavior-baseline.json",
+    "bytes": 14759,
+    "sha256": "475ae506e2c7c04476ceefeb5f0ad6ed1b9ea982f27a76945e235542c8162900"
+  },
+  {
+    "file": "security-review/behavior-patched.json",
+    "bytes": 15014,
+    "sha256": "ba961daca274cfe121f912d7ab6e602957485bb6d498687b0cab2255f243c0b4"
+  },
+  {
+    "file": "new-lock-audits/receipt.json",
+    "bytes": 2225,
+    "sha256": "8fbc8d93a26fff7753383aba73f5cd3afd451359d3449172cd49ed61f988acbe"
+  },
+  {
+    "file": "new-lock-audits/main179.json",
+    "bytes": 10460,
+    "sha256": "3f352d32121130da84fc0bd6e2ffaedab0d5ed8e4bb49f8d72202faad8376731"
+  },
+  {
+    "file": "new-lock-audits/cpu157.json",
+    "bytes": 9136,
+    "sha256": "80aef7b918d4286f2790022efbff724b38d27ec79fb032e88256f0367c1a392d"
+  },
+  {
+    "file": "full-cpu/image-build-receipt.json",
+    "bytes": 1772,
+    "sha256": "1534dd1d2a035242a4b26ce2c092b7bd2a757a8b3b4e85a98d526e0737fa8131"
+  },
+  {
+    "file": "full-cpu/Dockerfile.private-cpu",
+    "bytes": 786,
+    "sha256": "a243678d5e06a901553dbb705b582d2236a484b6a86050f84319d1dccf7ffa0f"
+  },
+  {
+    "file": "full-cpu/capture_runtime.py",
+    "bytes": 1363,
+    "sha256": "547a9d480d08da5ed62de9a5b527c72dbe34c29d4daeef77510dddf9515e6405"
+  },
+  {
+    "file": "full-cpu/artifact-map-all158.json",
+    "bytes": 110822,
+    "sha256": "62a0b3ba3b4d9f864d6b80dd83be5334268f9cc6f83ca1a08ff3849b4b4f8fb3"
+  },
+  {
+    "file": "full-cpu/all158-hashed-requirements.txt",
+    "bytes": 15585,
+    "sha256": "ef5139bed55088270eda34acab7b23caa692cf95eaad382377274644edc17548"
+  },
+  {
+    "file": "full-cpu/expected-packages.json",
+    "bytes": 4212,
+    "sha256": "1a076aedb79a061823ba0b85a14110e86e4fec0b1f03a1e389bb12cf329fa433"
+  },
+  {
+    "file": "numeric-package-review/REPORT.md",
+    "bytes": 6927,
+    "sha256": "859fdaa4e7d1884fd35ff61c70c0cfeaddcfff33c6f79c22ced1e82e2364d559"
+  },
+  {
+    "file": "numeric-package-review/output/results.json",
+    "bytes": 6032,
+    "sha256": "005813c05da61c99fedb9edde41c53778ddb049c4541df0d2344541ad58de930"
+  },
+  {
+    "file": "windows-new-runtime/REPORT.md",
+    "bytes": 3319,
+    "sha256": "aa4c163abf2270d133171e36664484562a64abb6a1129c6b44d37358b2afc7f4"
+  },
+  {
+    "file": "windows-new-runtime/receipt.json",
+    "bytes": 3545,
+    "sha256": "4512b672bf4e99ede4dd212ccdbd95bd52e382eb4725371b9d1b21aba7843e11"
+  },
+  {
+    "file": "windows-new-runtime/commands.json",
+    "bytes": 1819,
+    "sha256": "c8c4583ab12bc03249ec9155ddfd3fa262370595b6fb6a961a9b43107083e245"
+  },
+  {
+    "file": "windows-new-runtime/package-set.json",
+    "bytes": 9273,
+    "sha256": "b993dc0215a11669dbd189b21d3a50e558764113df88514293ae4abbcd3363f1"
+  },
+  {
+    "file": "windows-new-runtime/copy-post-verification.json",
+    "bytes": 45,
+    "sha256": "81a47f7d1001a345b3360d9fa1f2c63d266d1a3ea6c7b9910a3827659fa1f9e1"
+  },
+  {
+    "file": "windows-new-runtime/actual-imports.json",
+    "bytes": 1628,
+    "sha256": "c4ea949592389ce96816db4764b431940ae14d21fc19cedfdf80c3dc29c585fa"
+  },
+  {
+    "file": "windows-new-runtime/normal-io.json",
+    "bytes": 511,
+    "sha256": "e055016efdadaf86ebeddb586eee5e82bcedef06a5fa657497e165797b5a3c33"
+  },
+  {
+    "file": "windows-new-runtime/config-binding.json",
+    "bytes": 917,
+    "sha256": "04210c2d6354eba1db4ed8e9549c0b9e7bd0a6676ac26658e9c0dfc274768a1f"
+  },
+  {
+    "file": "linux-acceptance/staged-inputs.json",
+    "bytes": 85387,
+    "sha256": "d40aac9235a2843aec20c29867a4488cd34be18bd8955820e00f59253733e03c"
+  },
+  {
+    "file": "linux-acceptance/model-receipt-linux.json",
+    "bytes": 2089,
+    "sha256": "644e50b3f946cc3d5e69c21a188fd4154b8ef9b804b93948b10a5a7bef915d0d"
+  },
+  {
+    "file": "linux-acceptance/private-build-identity-approval.json",
+    "bytes": 523,
+    "sha256": "e49fa3d2189e38a95dcd772f11646decd0660120333c25d50dea2c49291f8ac6"
+  },
+  {
+    "file": "linux-acceptance/normalization-fix.json",
+    "bytes": 440,
+    "sha256": "746f45e6a51adcb2c9e51a3550b9f2f707eb81eaac5d28121f30d2c2e10013e4"
+  },
+  {
+    "file": "linux-acceptance/runtime-model-command.json",
+    "bytes": 1653,
+    "sha256": "7737ffce8fc003046ecb904d48012e0624e26e572737e73ea598168710594bac"
+  },
+  {
+    "file": "linux-acceptance/runtime-model-r1-command.json",
+    "bytes": 1665,
+    "sha256": "384d89776604e13b0829c41030f879df3f0418b0eec0b696e4d33ea84d257294"
+  },
+  {
+    "file": "linux-acceptance/runtime-model-r2-command.json",
+    "bytes": 1664,
+    "sha256": "d4531a891c6660663804db42309c242015fccbc9bb6b8fb728c050eb4f766351"
+  },
+  {
+    "file": "linux-acceptance/outputs/runtime-model-receipt.json",
+    "bytes": 3798,
+    "sha256": "6ba2a993967aaf9d7c45a5a66067e39b82f5384886577cc6e70a27c5fa001ecc"
+  },
+  {
+    "file": "linux-acceptance/outputs/linux-http-lifecycle-command.json",
+    "bytes": 2686,
+    "sha256": "cbccc8de0387691154ea862c82b32a1752554e13544d2e2406badeb5c3f7b182"
+  },
+  {
+    "file": "linux-acceptance/outputs/linux-http-lifecycle-r1-command.json",
+    "bytes": 2986,
+    "sha256": "dabfa14c49e05a0ea43b6aa96eeecc35aab8c5d9009067e58d8455978d0614f1"
+  },
+  {
+    "file": "linux-acceptance/outputs/linux-http-lifecycle-r2-command.json",
+    "bytes": 2982,
+    "sha256": "b3bb6b7b15d97da4c0bff9d5f4424fe49fd1da098b92f11ddf4edee843337913"
+  },
+  {
+    "file": "main-dependency-publication.json",
+    "bytes": 1029,
+    "sha256": "20ecf28b8445cbf349f24d442f16c78b7214c40ee22ec6774657b2c050f27c04"
+  }
+]

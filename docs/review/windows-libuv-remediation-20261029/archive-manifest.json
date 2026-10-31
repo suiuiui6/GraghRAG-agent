@@ -1,0 +1,157 @@
+[
+  {
+    "path": "backport-route/additional-sources.json",
+    "bytes": 457,
+    "sha256": "42d7b89f4d21bc3342ff74ff39ed7e2123766d3e823b7e54da8d7175bbc0c809"
+  },
+  {
+    "path": "backport-route/advisories.json",
+    "bytes": 7483,
+    "sha256": "ce29685f864a0f42276a313b451b819df5db14cc2aba6548181c8152a4ccb99f"
+  },
+  {
+    "path": "backport-route/fix-0f2d7e7.diff",
+    "bytes": 912,
+    "sha256": "bda7f479752dc5fba901de5f5eed0d275e41cd13374f1333ba49cbedc367f26b"
+  },
+  {
+    "path": "backport-route/fix-3530bcc.diff",
+    "bytes": 671,
+    "sha256": "b1e9166aabf0eb2a74aa7a2f5fb17d4e45881f4e053d70f1c607c445b2e65fc6"
+  },
+  {
+    "path": "backport-route/fix-e0327e1.diff",
+    "bytes": 471,
+    "sha256": "1b6bf12d46a5f2d654bbe10358cbcee7475756b0a89a6970fbce40abe63e265e"
+  },
+  {
+    "path": "backport-route/manifest.json",
+    "bytes": 2266,
+    "sha256": "56f29e803cdb71934376355994b46a0b6f9cbee8c86d982eb0835a7bc7e082f2"
+  },
+  {
+    "path": "backport-route/REPORT.md",
+    "bytes": 8018,
+    "sha256": "2e5e5af1e422e4a755ad74b8306a03a701739ff9b50f166afd436383f19fbc2e"
+  },
+  {
+    "path": "backport-route/security.md.txt",
+    "bytes": 1321,
+    "sha256": "732e5e21c0da1b9fce01ad506a117874883548c5824819b0467f461f017f7c7f"
+  },
+  {
+    "path": "backport-route/sources-success.json",
+    "bytes": 2478,
+    "sha256": "a64885fb959fb0acf7ac28e8450fecbf92df037328cc1999d0aecd828fb70f7f"
+  },
+  {
+    "path": "backport-route/sources.json",
+    "bytes": 2057,
+    "sha256": "8b6ecc76b507415e9716b73855abc784b6d1977ecc493d07b4ab612f05459453"
+  },
+  {
+    "path": "backport-route/v140-idna.c.txt",
+    "bytes": 5969,
+    "sha256": "8e374d4f2a57d94ec51e2512b40ee2b38ee8a42e3fb9febf49f4d30709b35eb6"
+  },
+  {
+    "path": "backport-route/v140-win-getaddrinfo.c.txt",
+    "bytes": 14663,
+    "sha256": "c8be9bfd642309f3d147d0ac97bf94c24621b818a9548d9aaac2aa86bf46835d"
+  },
+  {
+    "path": "backport-route/v142-ChangeLog.txt",
+    "bytes": 155647,
+    "sha256": "3b448e19778c8464156239811f954da58fcf82981cca3199ca53b015fbec6a72"
+  },
+  {
+    "path": "backport-route/v142-idna.c.txt",
+    "bytes": 6333,
+    "sha256": "4dc32519b56d4880cf0282d6072adfe6b1648ec58e5deb6658bddf55b75f310b"
+  },
+  {
+    "path": "backport-route/web-receipt.json",
+    "bytes": 565,
+    "sha256": "cc21b9686fa12da8a11f192f0906d7f024b6b462a1650e719200105f192541b0"
+  },
+  {
+    "path": "torch-route/build_variables.bzl",
+    "bytes": 79151,
+    "sha256": "a3c52dad0a60e532b379813245d1cd3d7d93bbcee47a74c5063eeebcc524b424"
+  },
+  {
+    "path": "torch-route/cmake__Dependencies.cmake",
+    "bytes": 67957,
+    "sha256": "385ed64146da313ccb4a9fb149b536e14186670e3260bb077f0f4834d09f18c9"
+  },
+  {
+    "path": "torch-route/CMakeLists.txt",
+    "bytes": 59103,
+    "sha256": "61bcd1b3b1d00a8fb32a6e7fa22b454e348d9f24b5d3ae0374a98f1e48b7d7bd"
+  },
+  {
+    "path": "torch-route/manifest.json",
+    "bytes": 1491,
+    "sha256": "4ec31f7c5d79449ddb29f033caa989370ba89f6ba1a4f812c970e4c21f571d36"
+  },
+  {
+    "path": "torch-route/pyproject.toml",
+    "bytes": 26084,
+    "sha256": "8ba6dc482d955267f9ead956b8b5a9f1dd6442a026d7f0b8ebf516bf989f9069"
+  },
+  {
+    "path": "torch-route/README.md",
+    "bytes": 30323,
+    "sha256": "6f993564b6d153b2adf82d9d434e57374766da4bf398269f4fe358fcf9dd4115"
+  },
+  {
+    "path": "torch-route/REPORT.md",
+    "bytes": 11238,
+    "sha256": "c9dfdc10021710906f57a3fca2a8b175d39185635e04102b637c27f7915775e3"
+  },
+  {
+    "path": "torch-route/reused-input-receipts.json",
+    "bytes": 3687,
+    "sha256": "7dd1f85b9c9df4e98bdcac1273423eccb3435098ab750c8689fecb097ab3f441"
+  },
+  {
+    "path": "torch-route/source-fetch-escalated.json",
+    "bytes": 2313,
+    "sha256": "27fe0e1ddb8d1c5b2f8586399015e3f315db5559a6c8aed2c1c36fccdf1d7c9e"
+  },
+  {
+    "path": "torch-route/source-receipts.json",
+    "bytes": 2297,
+    "sha256": "43115af72a6ac7316976847c78f362e7aa4e626e833fc91ed990e214958e934f"
+  },
+  {
+    "path": "torch-route/verification.json",
+    "bytes": 1884,
+    "sha256": "f6c11cc84e57031736a899a701229396b92b22f7ae0d7d983ebc4a077af74e8d"
+  },
+  {
+    "path": "independent-review/final-status-addendum.json",
+    "bytes": 823,
+    "sha256": "b919966b3ee9a0089a54848172d67cdb36c8b2e7a9c7ad398e3e5fc1709f8c93"
+  },
+  {
+    "path": "independent-review/manifest.json",
+    "bytes": 286,
+    "sha256": "fe47cdc197a414a731dc16722d5a66ced77a7714c27b9b07f540ce90af9888b7"
+  },
+  {
+    "path": "independent-review/receipt.json",
+    "bytes": 1739,
+    "sha256": "88521478640415204e50fb2190585226ff16981d9433ac7ef49e2fab03964c89"
+  },
+  {
+    "path": "independent-review/REPORT.md",
+    "bytes": 4430,
+    "sha256": "00f36bf367dd812f2cbb7161ca35e54b4bb78f61a113d237073c1210ee29e3ac"
+  },
+  {
+    "path": "../2026-10-29-windows-libuv-remediation-assessment.md",
+    "bytes": 8922,
+    "sha256": "2831668e3df60178914f71cd98f75912e921fe5e39b30a0f72c6200cb7ee092e"
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "cwd": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028",
+  "executable": "D:/graghRAG-agent/.tmp/backend-runtime-20261028/.venv/Scripts/python.exe",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028;C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent;C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend;C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\langextract",
+    "GRAPHRAG_FROZEN_TEST_ROOT": "D:/graghRAG-agent",
+    "TMP": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028",
+    "TEMP": "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028"
+  },
+  "other_environment": "Inherited, never dumped or persisted",
+  "red_v2": {
+    "argv": [
+      "-B",
+      "-m",
+      "pytest",
+      "--noconftest",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "addopts=",
+      "-o",
+      "timeout=60",
+      "--basetemp=D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\red-v2-tmp",
+      "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\backend\\tests\\test_git_identity_deadline.py",
+      "-k",
+      "job_cleanup_oserror",
+      "-q"
+    ],
+    "exit_code": 1,
+    "pytest_elapsed_seconds": 3.46,
+    "result": "1 failed, 29 deselected; missing second bounded wait"
+  },
+  "green_v2": {
+    "argv": [
+      "-B",
+      "-m",
+      "pytest",
+      "--noconftest",
+      "-p",
+      "no:cacheprovider",
+      "-o",
+      "addopts=",
+      "-o",
+      "timeout=60",
+      "--basetemp=D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\green-v2-tmp",
+      "D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\backend\\tests\\test_git_identity_deadline.py",
+      "-q"
+    ],
+    "exit_code": 0,
+    "pytest_elapsed_seconds": 33.52,
+    "result": "30 passed, 0 skipped, one unchanged policy docstring warning"
+  },
+  "timing_scope": "pytest-reported elapsed; complete shell/approval wall time was not measured"
+}

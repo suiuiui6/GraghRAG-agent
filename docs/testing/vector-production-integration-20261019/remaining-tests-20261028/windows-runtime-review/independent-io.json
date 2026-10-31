@@ -1,0 +1,15 @@
+{
+  "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.54.0",
+  "expat": "expat_2.9.0",
+  "openssl": "OpenSSL 3.5.9 29 Sep 2026",
+  "numpy": "2.5.4",
+  "msgpack": "1.2.3",
+  "hardening": true,
+  "wal": true,
+  "rollback": true,
+  "backup": true,
+  "child_exit": 0,
+  "child_stdout": "blob_backup_cosine_reopen_ok\n",
+  "seconds": 0.625
+}

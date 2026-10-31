@@ -1,0 +1,218 @@
+[
+  {
+    "file": "runtime-post-r10.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\runtime-post-r10-20261029\\receipt.json",
+    "bytes": 765,
+    "sha256": "bafc54866e7818b4a0d99a424b790842abad3c2d08ef159c8689a68636655877"
+  },
+  {
+    "file": "rust-author/REPORT.md",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\REPORT.md",
+    "bytes": 11146,
+    "sha256": "efa9de03c8ae68260ccae34a2f37ed68a7fdcbb64f87de67a429361b429125c0"
+  },
+  {
+    "file": "rust-review/REPORT.md",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\REPORT.md",
+    "bytes": 7303,
+    "sha256": "fe2cb8fcaa019fa199bc82dfca1739b9e981d8e59ede8e0678c7bd49b5216748"
+  },
+  {
+    "file": "root-readonly-arithmetic.py",
+    "source": "D:\\graghRAG-agent\\.tmp\\verify_rust_root_20261029.py",
+    "bytes": 719,
+    "sha256": "38c5e62d995ca3fd1accc53bd9ee562d2cde040474dbc60a1f37babaec0b3066"
+  },
+  {
+    "file": "rust-author/coverage-verified.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\coverage-verified.json",
+    "bytes": 84723,
+    "sha256": "77dfacb000c3fd820a2ed07ad6194df1b6770e0d21a11146657487f31fd3eac0"
+  },
+  {
+    "file": "rust-author/inputs-before.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\inputs-before.json",
+    "bytes": 47318,
+    "sha256": "fac338afeee8afd17a92e87470bb9b6ce479410fc4b44b4a82b55b5ec0aab1fb"
+  },
+  {
+    "file": "rust-author/identity-after.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\identity-after.json",
+    "bytes": 4109,
+    "sha256": "5b0a91387cd8ead72fe476aa6b2bf815c2db72ad379cb50411445cb50897fe59"
+  },
+  {
+    "file": "rust-author/evidence-manifest.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\evidence-manifest.json",
+    "bytes": 65388,
+    "sha256": "bc45422b2f4b23ff0b1c5a7f6766c1bddaa916ecda889800ea0a575cf03aa7f1"
+  },
+  {
+    "file": "rust-author/corpus-original49.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\corpus-original49.json",
+    "bytes": 13188,
+    "sha256": "d1a1eee6cb82e3c056676f95dae743d3f2c0fc1f39ac04332eccfbef899d2aff"
+  },
+  {
+    "file": "rust-author/corpus-supplemental12.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\corpus-supplemental12.json",
+    "bytes": 4216,
+    "sha256": "d11ffeebe14cf014aa2e547f444ead6e19347a92a5ab4b6e703b9c869080402a"
+  },
+  {
+    "file": "rust-author/original49-receipt.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\original49-receipt.json",
+    "bytes": 68589,
+    "sha256": "718e3f2633f6f89bec6ea8ca2cb86bb62a77a5539caab41ed80f84b601cb4fec"
+  },
+  {
+    "file": "rust-author/supplemental12-receipt.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\supplemental12-receipt.json",
+    "bytes": 19131,
+    "sha256": "a4823882454a1259f6b4f83a761a395f0d6383dab3337807ec9599d810ff06ce"
+  },
+  {
+    "file": "rust-author/original49-lcov.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\original49-lcov.stdout",
+    "bytes": 1522,
+    "sha256": "0e4862c87ef39f8722e33d8f6c42b5b92a35deb8b23085ec01f767113c17c11e"
+  },
+  {
+    "file": "rust-author/final61-lcov.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\final61-lcov.stdout",
+    "bytes": 1523,
+    "sha256": "7e4a300a1b79d6cb7b49989c80a765ad1f2c6eebae96b46620ae78253655527f"
+  },
+  {
+    "file": "rust-author/original49-export.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\original49-export.stdout",
+    "bytes": 2538347,
+    "sha256": "a9986b593df9b4c00057c8a19b44d1af5f9aecfd1cacf87d51fa48b850e3e226"
+  },
+  {
+    "file": "rust-author/final61-export.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\final61-export.stdout",
+    "bytes": 2538406,
+    "sha256": "95cca3e9de86ce3221a7c226c6b0eb2aa946c779891b14bf601711c7f4907d21"
+  },
+  {
+    "file": "rust-author/dead-scope-export.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\dead-scope-export.stdout",
+    "bytes": 1739,
+    "sha256": "b594c61b873e389b5473c7b9eb90cc4e8ee464f21e54b4203496da73dc102904"
+  },
+  {
+    "file": "rust-author/build-container.command.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\build-container.command.json",
+    "bytes": 1430,
+    "sha256": "256ff49e9dda8e5b3c3727402fbdc55675cc6e142a37a6cc29f37163b86df97b"
+  },
+  {
+    "file": "rust-author/verify-final-r4.exit",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\verify-final-r4.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "rust-author/verify-final-r4.log",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-bridge-coverage-20261028\\verify-final-r4.log",
+    "bytes": 599,
+    "sha256": "d7352ba281a2e48c13924b0eb0d853b5f422ef5a9c416563a922f2d4abff52f1"
+  },
+  {
+    "file": "rust-review/independent-results.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\independent-results.json",
+    "bytes": 12637,
+    "sha256": "50c453f6454e4d599779ff6415ab36fcd2d787fae68ead971910483e6e1527d4"
+  },
+  {
+    "file": "rust-review/inputs-before.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\inputs-before.json",
+    "bytes": 47316,
+    "sha256": "376e500546c684055da21ee468851e04687d4a698c6ec835a83926a46dfae502"
+  },
+  {
+    "file": "rust-review/identity-before.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\identity-before.json",
+    "bytes": 604,
+    "sha256": "c84b7c5a59a069df54131508a2edeefcaf2faea5a759b69366ba80f27891c506"
+  },
+  {
+    "file": "rust-review/review-manifest.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\review-manifest.json",
+    "bytes": 43012,
+    "sha256": "f9b1a5ba24973e0027fa3ecb6f3b86d4bba678e5c2b72a4a5e22efa50e83e473"
+  },
+  {
+    "file": "rust-review/corpus-original49.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\corpus-original49.json",
+    "bytes": 13188,
+    "sha256": "d1a1eee6cb82e3c056676f95dae743d3f2c0fc1f39ac04332eccfbef899d2aff"
+  },
+  {
+    "file": "rust-review/corpus-supplemental12.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\corpus-supplemental12.json",
+    "bytes": 4216,
+    "sha256": "d11ffeebe14cf014aa2e547f444ead6e19347a92a5ab4b6e703b9c869080402a"
+  },
+  {
+    "file": "rust-review/original49-receipt.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\original49-receipt.json",
+    "bytes": 68607,
+    "sha256": "d7edcb2db70f5ad166a5ff7ab3598a7cfd467e6a1b490227aca0022e0e272990"
+  },
+  {
+    "file": "rust-review/supplemental12-receipt.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\supplemental12-receipt.json",
+    "bytes": 19135,
+    "sha256": "d5f7267233157d8243f075671caa60269003ae8fbc2ad27b5acbdf865341402a"
+  },
+  {
+    "file": "rust-review/original49-lcov.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\original49-lcov.stdout",
+    "bytes": 1522,
+    "sha256": "0e4862c87ef39f8722e33d8f6c42b5b92a35deb8b23085ec01f767113c17c11e"
+  },
+  {
+    "file": "rust-review/final61-lcov.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\final61-lcov.stdout",
+    "bytes": 1523,
+    "sha256": "7e4a300a1b79d6cb7b49989c80a765ad1f2c6eebae96b46620ae78253655527f"
+  },
+  {
+    "file": "rust-review/original49-export.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\original49-export.stdout",
+    "bytes": 2538347,
+    "sha256": "a9986b593df9b4c00057c8a19b44d1af5f9aecfd1cacf87d51fa48b850e3e226"
+  },
+  {
+    "file": "rust-review/final61-export.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\final61-export.stdout",
+    "bytes": 2538406,
+    "sha256": "95cca3e9de86ce3221a7c226c6b0eb2aa946c779891b14bf601711c7f4907d21"
+  },
+  {
+    "file": "rust-review/dead-scope-export.stdout",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\dead-scope-export.stdout",
+    "bytes": 1739,
+    "sha256": "b594c61b873e389b5473c7b9eb90cc4e8ee464f21e54b4203496da73dc102904"
+  },
+  {
+    "file": "rust-review/build-container.command.json",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\build-container.command.json",
+    "bytes": 1257,
+    "sha256": "1e8ca639c2cd80b6b7a5067224ba4733df2f4f6070d7e56e6b039af428f4a8a3"
+  },
+  {
+    "file": "rust-review/verify-independent.exit",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\verify-independent.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "rust-review/verify-independent.log",
+    "source": "D:\\graghRAG-agent\\.tmp\\rust-coverage-independent-review-20261028\\actual-20261029\\verify-independent.log",
+    "bytes": 131,
+    "sha256": "baf511077295f526811135459ba1fa8e8502effcce62c69a75d561abb6eb8c61"
+  }
+]

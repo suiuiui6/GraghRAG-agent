@@ -1,0 +1,14 @@
+[
+  {
+    "file": "v142-ChangeLog.txt",
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.42.0/ChangeLog",
+    "bytes": 155647,
+    "sha256": "3b448e19778c8464156239811f954da58fcf82981cca3199ca53b015fbec6a72"
+  },
+  {
+    "file": "v142-idna.c.txt",
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.42.0/src/idna.c",
+    "bytes": 6333,
+    "sha256": "4dc32519b56d4880cf0282d6072adfe6b1648ec58e5deb6658bddf55b75f310b"
+  }
+]

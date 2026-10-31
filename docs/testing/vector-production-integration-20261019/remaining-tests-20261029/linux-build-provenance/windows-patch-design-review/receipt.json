@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-29",
+  "type": "independent-design-review",
+  "decision": "conditional-pass-isolated-preparation-only",
+  "inputs": [
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\native-torch-scope-review-20261029\\windows-patch-preflight\\REPORT.md",
+      "sha256": "7954373c8df9b685c36f05c57aa0fd0ba8a66c59f15a70906933e9074bac2994"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\native-torch-scope-review-20261029\\windows-patch-preflight\\pe-summary.json",
+      "sha256": "da5bd3a5e241b3288cf78d3a9f6013319c544a89d616d03eeecaf8802c812c45"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\native-torch-scope-review-20261029\\windows-patch-preflight\\pe-import-export.json",
+      "sha256": "fb67bfcafec0125b3390ef965cac873c545cf9cbfb157a0a4a13de1e4cfdfd9f"
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\native-torch-scope-review-20261029\\windows-patch-preflight\\tools.json",
+      "sha256": "12294f5a93da8ed5d7a08e5bec1da5fc1e35460dfc2363c698711815cef56b86"
+    }
+  ],
+  "report_sha256": "32f46a474461ba8fd43d57ebc0b2b6bd8f2bfeb17894895dcfe5331f404d8749",
+  "executed_build": false,
+  "modified_C": false,
+  "git_C": "permission_denied",
+  "upstream": "https://github.com/libuv/libuv/blob/v1.51.0/README.md"
+}

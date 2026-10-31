@@ -1,0 +1,23 @@
+{
+  "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.54.0",
+  "openssl": "OpenSSL 3.5.9 29 Sep 2026",
+  "expat": "expat_2.9.0",
+  "numpy": "2.5.4",
+  "msgpack": "1.2.3",
+  "runtime": {
+    "sqlite_version": "3.54.0",
+    "hardening": true
+  },
+  "wal": true,
+  "rollback": true,
+  "blob": true,
+  "backup": true,
+  "child": {
+    "exit": 0,
+    "stdout": "reopen_ok\n"
+  },
+  "cosine": true,
+  "expat_parse": true,
+  "msgpack_roundtrip": true
+}

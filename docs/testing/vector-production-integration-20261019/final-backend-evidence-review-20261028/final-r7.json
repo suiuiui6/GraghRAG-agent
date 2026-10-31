@@ -1,0 +1,143 @@
+{
+  "before_after_equal": true,
+  "before_count": 255,
+  "after_count": 255,
+  "current_missing": [],
+  "current_drift": [],
+  "current_python_added": [],
+  "current_python_removed": [],
+  "walk_errors": [],
+  "production_count": 119,
+  "coverage_count": 119,
+  "scope_missing": [],
+  "scope_extra": [],
+  "totals": {
+    "covered_lines": 16456,
+    "num_statements": 17653,
+    "percent_covered": 92.39988184158332,
+    "percent_covered_display": "92",
+    "missing_lines": 1197,
+    "excluded_lines": 0,
+    "num_branches": 6044,
+    "num_partial_branches": 424,
+    "covered_branches": 5440,
+    "missing_branches": 604
+  },
+  "independent_per_file_sums": {
+    "covered_lines": 16456,
+    "num_statements": 17653,
+    "covered_branches": 5440,
+    "num_branches": 6044,
+    "excluded_lines": 0
+  },
+  "sum_matches_totals": true,
+  "files_with_excluded_lines": [],
+  "line_percent": 93.21928284144339,
+  "branch_percent": 90.0066181336863,
+  "line_integer_margin": 56830,
+  "branch_integer_margin": 40,
+  "junit_counts": {
+    "cases": 2157,
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "model_cases": [
+    {
+      "name": "test_fixed_local_model_http_upload_update_delete_restart",
+      "classname": "tests.test_vector_http_lifecycle",
+      "time": "43.470",
+      "children": []
+    }
+  ],
+  "config": {
+    "run": {
+      "branch": "True",
+      "source": "backend",
+      "data_file": "docs/testing/2026-10-12-backend.coverage",
+      "omit": "\n*/.venv/*\n*/tests/*\n*/output/*\n*/uploads/*\n*/__pycache__/*\n*/node_modules/*\n*/research/test_*.py"
+    },
+    "report": {
+      "include_namespace_packages": "True",
+      "exclude_lines": "",
+      "partial_branches": "",
+      "show_missing": "True"
+    },
+    "json": {
+      "output": "docs/testing/2026-10-12-backend-coverage.json"
+    }
+  },
+  "artifact_sha256": {
+    "before.json": "b4199695ee3ae5004c76e8cf85a3b5204a5439ce3d96fcb487a5ea8f68008416",
+    "after.json": "b4199695ee3ae5004c76e8cf85a3b5204a5439ce3d96fcb487a5ea8f68008416",
+    "summary.json": "24ae268a56723f763bd243980768e2e329ff954f7da68f6644c28dd9ab27ca0f",
+    "commands.json": "58611b42c32f2f311bb139c30574f12359ac0b6f3b4ef13fed05fab45a2606a2",
+    "coverage.json": "cb952ce8846bb34f700f55a5241f99eade58ded00c8a6f046ee83f0dae0e4c4c",
+    "junit.xml": "803513af06da9e41d48eb79774a4254683db2aa876de1fab7d93fe5784464b82",
+    "tests.log": "f62199ea6c1f6e7d3c266d5d952209d65e0ce6e280d61a6f909b5a813ee97834"
+  },
+  "driver_sha256": "84bed636a868734839c923529df925fdca3f759f93f53c6172cdd0d1cc559bb8",
+  "failure_history": {
+    "full-backend-20261026-r3": {
+      "backend_gate": false,
+      "commands": [
+        {
+          "name": "tests",
+          "exit": 2,
+          "elapsed_seconds": null
+        },
+        {
+          "name": "export",
+          "exit": 0,
+          "elapsed_seconds": null
+        }
+      ]
+    },
+    "full-backend-20261026-r4": {
+      "backend_gate": false,
+      "commands": [
+        {
+          "name": "tests",
+          "exit": 1,
+          "elapsed_seconds": null
+        },
+        {
+          "name": "export",
+          "exit": 0,
+          "elapsed_seconds": null
+        }
+      ]
+    },
+    "full-backend-20261027-r5": {
+      "backend_gate": false,
+      "commands": [
+        {
+          "name": "tests",
+          "exit": 2,
+          "elapsed_seconds": 166.26600000000326
+        },
+        {
+          "name": "export",
+          "exit": 0,
+          "elapsed_seconds": 2.952999999979511
+        }
+      ]
+    },
+    "full-backend-20261027-r6": {
+      "backend_gate": false,
+      "commands": [
+        {
+          "name": "tests",
+          "exit": 1,
+          "elapsed_seconds": 421.51499999995576
+        },
+        {
+          "name": "export",
+          "exit": 1,
+          "elapsed_seconds": 0.4850000000442378
+        }
+      ]
+    }
+  },
+  "r6_r7_same_before_inputs": true
+}

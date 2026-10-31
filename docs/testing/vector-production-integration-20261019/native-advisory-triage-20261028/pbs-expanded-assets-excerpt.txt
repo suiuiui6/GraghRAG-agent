@@ -1,0 +1,17 @@
+Source: https://github.com/astral-sh/python-build-standalone/releases/expanded_assets/20261026
+Retrieved through platform web open/find 2026-10-28. Derived plain-text excerpt, not original HTTP response.
+
+cpython-3.12.16+20261026-x86_64-pc-windows-msvc-install_only_stripped.tar.gz
+sha256:1f2ab53880fc67ea323398c6388e05af28addc99a8e389209f08a51fdff4b149
+21 MB 2026-10-26T15:26:31Z
+
+cpython-3.12.16+20261026-x86_64-pc-windows-msvc-install_only.tar.gz
+sha256:590dfcbe3a34c07301e6332e13e2188b98655cd072b08afa45a7998dc4c22bc5
+44.9 MB 2026-10-26T15:26:30Z
+
+cpython-3.12.16+20261026-x86_64-pc-windows-msvc-pgo-full.tar.zst
+sha256:37b4eb2818fee605fefa75ed156c4f2e1aaeaebaf662f9b30177c842ee16c48f
+41.7 MB 2026-10-26T15:26:31Z
+
+Stripped exact asset URL:
+https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.12.16%2B20261026-x86_64-pc-windows-msvc-install_only_stripped.tar.gz

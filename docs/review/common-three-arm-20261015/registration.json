@@ -1,0 +1,1948 @@
+{
+  "status": "REGISTERED_NOT_EXECUTED",
+  "runtime": "D:\\graghRAG-agent\\.tmp\\common-three-arm-final-20261015\\runtime",
+  "frozen_runtime": "D:\\graghRAG-agent\\.tmp\\public-dev-budget-20261015-r2",
+  "frozen_snapshot_sha256": "f3f59076a62d11afa5acdb78335bc09a89341499d3c572107b3e1694a288446e",
+  "runtime_snapshot_sha256": "c80e8d0a2640a3b59372c017a44e2008cbe7063edc8922f4d92bfcd7fc663544",
+  "source_code_files": {
+    "backend/agentic_rag_mvp.py": "bf8812ca339a36cd6be5824f4494e89d95a1805c09417a023eb43dd2f53add83",
+    "backend/auth.py": "dff011e54197325d7ec8d3e53490e9d4472074bf2305083c6cedf933d9853a14",
+    "backend/bridge.py": "08a5ac7dce4dac38b33d6f83d38bcabe14c47c47ec2be4b138375a2341314531",
+    "backend/build_indices.py": "3f03dd91f612e29523e0658dd1fb4bee93b578fbb14a0e5dfe248ebc700f3a3a",
+    "backend/community_index.py": "61ba22d895b13d0695a5fefc4097f6b056ea788f4b7c0aebfdb56bb914f91841",
+    "backend/config.py": "389b9d7a978abbc2dd68ca5cb405c4fd7c8ed6bb6df5890ed71a0dfb93079fee",
+    "backend/conversation.py": "c6b498cc67e68b619dc8be963fffe4ce248470391d201b8c98eaaa5079333973",
+    "backend/doc_processor.py": "0e9ccc941b101a5eb225aa40f0b596a3c6435cdc43c8ccc6ba4a0dd9dbfc654d",
+    "backend/domain_dict.py": "07390519368bb5abbe2280a611eb3eac34da03c34d4bb8314528e82b9e484e18",
+    "backend/embedding.py": "52b15ad92c396fa9f8b2d4d451ab255906feb330e56e7e3ff4db00c2859e780a",
+    "backend/errors.py": "14dd69791988464970382a2b96ff432ed10d968e41e0acbbf79b621b319e4168",
+    "backend/evaluation.py": "d39053541cfd1209cb5ddb8fee7618b1d32c9e0bf33c6c2954ca718f552b9935",
+    "backend/evidence_trace.py": "07cc6a3cce87c788a9639510a6540639f6b6d57e93f639b10a2593254b18bf65",
+    "backend/generator.py": "55d8612e9d17e8a796ba4a9e0e295a34f14578ce46705ca70e2904dea1c6679e",
+    "backend/grounding.py": "cfa030e4e7bdaa0f26934cf8d2a26d2a6552cf9ac0fe44c1ea84fe7f344d49c3",
+    "backend/index_registry.py": "4406c4234a262b099447751d3f7b3ea3c441a49f28934045eb4ad8d978262b93",
+    "backend/kg_builder.py": "c006ed13a66726b92be0ddb6ac26d2b3bf420b95e33f27e817eafcdbf681cc53",
+    "backend/kg_store.py": "364ace85621aa64f06a934d0524da30fb695cecb4e91199b2f07fc013d7a08cd",
+    "backend/logging_config.py": "0e25712534474a5f5d1d1ba0f1d15c8e36969f4c54a929d6158ce9bdaef0eb6b",
+    "backend/metrics.py": "b61df0387138070599b929907d847c259465736bc9555d572d4d27a537c48098",
+    "backend/mineru_client.py": "d65ff3934b1042b29bf2f0c8cb996bf8a6cf64214d73ea8e015271a010ae1b73",
+    "backend/models.py": "b8603e88ea3161de56a4a4bf3eb5c956bdc4bd15f7325be19acb197088d6d34c",
+    "backend/oss_uploader.py": "6a377cf0eeeb03c212ca2a6319cecc70f8144fcf9b31eb1fe59589de71c276f9",
+    "backend/pipeline.py": "6f20e4dac769fab1ee2e85ef19e8e9a4845fc028934ff4c9adfdb1e93fb3a115",
+    "backend/prompt_builder.py": "f6a62fe8529b8909e7a1c2a59f097d8659aea64020547f04087837bc2e529b7c",
+    "backend/query_optimizer.py": "82b8179db2542c1e54cec4757a3167cfa22b2e82eabf8833a984e70c751da0d0",
+    "backend/retrieval.py": "25b5d116659a1aed95a8bd54767ee3287f2587cfc4ccc1c5afaf154699bef6e6",
+    "backend/run_evaluation.py": "9fe27b91f5fd9ce0ef44e583a29100a32845d96a6d3fa6234a3681277bb2b1e4",
+    "backend/schema.py": "d2be12ecdff29bd6e6fc4f7c0203c185d1af634f1d1b2faef04958283d8ea871",
+    "backend/security.py": "d42ce3befbe6beea0c1d1ad5a1ef5a205796d596d7a4ea1af7b93d194e22d0f1",
+    "backend/self_correction.py": "ba6f77675fb9daacec78258120f57cdefa4147ed59511aa5f979ba1a9940b976",
+    "backend/server.py": "bcd443b7fb6d32584e298af614d6936e14fdb58d20925d81c539af0b7105344e",
+    "backend/source_control.py": "b92d65ad4604207c0bdc65670197a3c63c37c668abacb8d6b38451d025001c25",
+    "backend/table_index.py": "fa9ff038fe21ad71597982a15afa0137a9dd6072f7c57b25f610b77bfd620297",
+    "backend/vector_store.py": "18d8fc6ff90823186034f5f10c876981a0da814bba5bb57c9299400eec0a6c82",
+    "backend/worker.py": "8748f821fc49dd1621bc04eae83a89f0e3a451dbd14d5e11ec895025d2e5a4f3",
+    "backend/config/domain_dict.yaml": "d184a4f3c9d6c692ccf0752fb291f1da585424a7726becfb3577809b26f890e7",
+    "backend/config/extraction_examples.yaml": "3c584bf39958a5e59ceb98e1dffbc66a6cab8f9e83f89e4399a25a5142e914a1",
+    "backend/config/project_id_mapping.json": "6ebf67cfa7c6a8d25e3a7469d6a06362b76f89dce8f251e7747b63f7dda5a864",
+    "backend/middleware/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/middleware/jwt_middleware.py": "f5574887ccefc1cc4a3f6177a28e2e52ebdb3f2361101c5cb7fd4cdd5e4d7acb",
+    "backend/middleware/tenant_middleware.py": "710e93407a4293d7572dc10462a1b676e7d7d031c065ea0d51b38b8fbf57f4ea",
+    "backend/research/deepseek_scope_pilot.py": "5bd5bccbe9b2db5818f64e87120a8ebf404d4c52afe733283caa70ae35e8de5b",
+    "backend/research/development_budget.py": "ad49ace9e8d70081f0b0fdc4258b6e936803eeef6d0a4cf9f6d5c1a99d331a03",
+    "backend/research/development_isolation.py": "8144ef633f3a7cb8e897e6c11115211a7d31b6d9c970ad88264c8386272e2410",
+    "backend/research/development_profile_cli.py": "584caf720f10215c9ec0b0c673f75b99ebf7f6694a3452b8ab19626344bb49ec",
+    "backend/research/development_run_authorized.py": "a5b004bc5e1bff1dbe49b1f8a0316cc49337725c0d85ebb3cf3e6c113f370851",
+    "backend/research/development_scope.py": "987da1f223dc3ec9d4d0021f55395bd4858bff83b3bd874670d6820454b525f2",
+    "backend/research/development_structure.py": "951db304b00918b13719fb8f9383d8aa9edef17d1f2994f4575bd339c81aa004",
+    "backend/research/gold_v2.py": "5e430411fcb530edd8f6aa077316b528a0c59b1f24b3b0c1800f3be56aa4579f",
+    "backend/research/isolated_guard.py": "432717ba4c5193ded837af5bcd1863c37cafc18a896d2fe2255e74a943450637",
+    "backend/research/isolation_snapshot.py": "57ae843f6dc60ad153754830ab13504e277de5d4b14fc4910db2cef9039319dd",
+    "backend/research/local_scope_v2.py": "5edb966581b1dddfe70b66e6711b0f62243d0985660046ad0d7116f79dacef0e",
+    "backend/research/scope_v2.py": "5f02c5a0cce6ddb73778e7a64331277382e95549036afef77e91652ac7d67848",
+    "backend/research/source_mapping_v2.py": "23efc8a11c7b3e630e068d73ffd5723b82f8d2d21548e621022c7994835bbfc6",
+    "backend/research/test_deepseek_scope_pilot.py": "2dea0723bdb0d1f1f99039b02dd9b8d69ecdfc9b0786bc4e489d27c16d42c0cd",
+    "backend/routes/__init__.py": "4bf0a68470b24a2999beb1e5f023c86448db37961acc0ef05bdada3e6442f701",
+    "backend/routes/api_keys.py": "46bd5c80a6ca21e9f2ccdcfadf17ca1bfcee154dc39a128a39b69693b44d5988",
+    "backend/routes/audit.py": "c0ba5e7c3ac03bcc86ec5360f765aeb52edc55b9554771eae4cdf0a3fa5274f0",
+    "backend/routes/auth.py": "122aab393839eb47a6c054fa0ce9ea0f0f7d596e16c48e9180ee80e8e64adce1",
+    "backend/routes/bot.py": "57961698ea43158ac8d88457707dd63b8a886fff551b16f86f42c91ce6296869",
+    "backend/routes/catalog.py": "f58076f2c99f44450407a06256d8a4d7ae33736a43f0f4e52577df0e02db1dd3",
+    "backend/routes/conversation.py": "78c174b10082a83257f0f1534bd8130419b8349eebdc3c488781cd8f1cb4b5e2",
+    "backend/routes/documents.py": "6c4594f2b81ced23dfb30b46acfad8def9741cffe073ad93724f8ddbfbc801ce",
+    "backend/routes/domain_dict.py": "e948367e15293fee9999834374020a7a3750938ce16a88cc05c95425a587249b",
+    "backend/routes/export.py": "877526282520d1639ea20e05344ac74ef316edd8c04516bb52f62d9f72adfe63",
+    "backend/routes/feedback.py": "ba9622ffb1c23597359af274ac8d9194fb3ab3fb0af4cd0d969795e324b29c78",
+    "backend/routes/graph.py": "bbba1f47269caae5bad33c1d61de44f537d848fda4d086add7a74bee2d67cac0",
+    "backend/routes/health.py": "a6ecd9dc173396bce9ac69314aa97046d4b2fab9804db4023d837b1c898ba45d",
+    "backend/routes/ingest.py": "5938429dc78b4ae3227b2f9361dd0c514dbbad38360c9023421f38b50bc6f908",
+    "backend/routes/lineage.py": "c5d29fe7e482067a39e8e69d37923a936653ca826fb2f4cdb20136f117d208ee",
+    "backend/routes/query.py": "0ef967a8145d7e2345deae8cdd7f5a2aeeef743e1f722afeb2101a6bb77cca76",
+    "backend/routes/rag_query.py": "d74e27e9ad4b33b355927d4658060cfdd140dd05ad168f82f3016c1de5966848",
+    "backend/routes/static.py": "f56d8bbbab12e0d0e661ff128cd9a6d05098af92ecff19efe15e5230718a1498",
+    "backend/routes/system.py": "361dceb49c20602b6226e1755dacad080e4defc20f8626a0a6cb4feb852cb288",
+    "backend/routes/tenants.py": "ebb522f2d883d89655c23104290ed3c84a6994dab4eae594ae79ea468f9c468f",
+    "backend/routes/webhooks.py": "a80af49a95e9185c65a8c01c1304d039f7a3bb320011c3da029f1e7f66d87a08",
+    "backend/scripts/check_imports.py": "79fd8bc16dbdd5e365e61fc3e9431042079a9ddc168e0ed6e3d843fa9f0f13cf",
+    "backend/scripts/purge_log_secrets.py": "9186eb0edd9ce33d9257ab2a3d705da7b75d479e0dcff6371a2c2eaa2ba5dee8",
+    "backend/services/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/services/api_key_manager.py": "7006e8baa9e7b4154926e6f69eb7c9889c779317f82530a0805d0e8d97e42daa",
+    "backend/services/audit_logger.py": "cf62e29da9c599529efd1c514d283f8c6370e771bbe6ab7cce3379b12654d456",
+    "backend/services/auth_service.py": "3b862d1010388eb149fedc523283105d0102692923c5f9e4cffe56690966818c",
+    "backend/services/backup.py": "4846741f06a43b972111343ca9fe3f1a4dd67fbc4e361f3703bf7aefd214689d",
+    "backend/services/bot_handler.py": "89218f3ef463b39afaaa5967718f1b2956fee3f1e94ade72047605097c678d81",
+    "backend/services/card_builder.py": "1fd74959747c3b7bdcd6cfd06a2d995e1fa02f4ef1b9b0e03abfb04991a1bf45",
+    "backend/services/catalog.py": "7c29f43180a049b3ba0998ce5250b14ad4772788147bd2dee6aecbaf736ff6ef",
+    "backend/services/document_snapshot.py": "487d849259699f573a89ddd717ad04968dd5d62935783ea8be79b1f8f7be7b17",
+    "backend/services/event_bus.py": "78c70fe9afb24f18406ec8751d9723b0da6fb65558a810ec501aef35ca843921",
+    "backend/services/feedback_store.py": "0ead47383879944400739da143b75d46c4537d6ccb2a65de266a8638a6994590",
+    "backend/services/feishu_client.py": "01e4c99d3f34ff478ba51dc806828c36a701452efd524a8bcfe9fdedc114a994",
+    "backend/services/health_checker.py": "a11baffe468ddd4d34962ee426a5ccd2154e0cc7127d6b50a404cc0b90cc6d4d",
+    "backend/services/kg_exporter.py": "611c5d16580d18a6abd264211c807cc9cb22a7f28443dcd88deb50e078d7fabc",
+    "backend/services/kg_service.py": "2a2df381d95cde067d6012701c7e2461625b8958369ea1e9e9d34f4a2ddf6498",
+    "backend/services/lifecycle.py": "2c5087d241ae742392013d71c2fe80bbe69d9a5473b9d6e6f31975fa1abb21d8",
+    "backend/services/lineage_store.py": "23ce08645cff6584af8f441beab1aed91b8972e447ccd848e067ddcc0b7e897c",
+    "backend/services/quality.py": "749fa9965d737da3733e054316ccd365b90c44ac9007424edcd4c274ef9f94ef",
+    "backend/services/resource_access.py": "72f8e4aa90b9fdfb12266d73a5be3357c8c3668411c16aeb10346de8ab945618",
+    "backend/services/tenant_service.py": "a5ec55a20cd87f5ca13b0090375ef18405bf7e298b6cf819e7aa4e7afa7804a5",
+    "backend/services/webhook_manager.py": "89487524ca880268ee8a9916141f25c775ea27a4827bc0a6d3baa7b78e4545a7",
+    "langextract/langextract/__init__.py": "9888c408da426845bc985ab761ea59fbf9c7e0b5e14e41cf3c10ff626854d447",
+    "langextract/langextract/annotation.py": "87522608ccbb160cf0ef228390bbd2ef6bbb5d268480a2cc983ce9601dd1bcd9",
+    "langextract/langextract/chunking.py": "0a620bc4c7c51b3dfee1ab7e9c4f9a51be3932b1b46555ae0c753ca661911941",
+    "langextract/langextract/data.py": "449d9040b1bf5ded11af17e48da6b59d3dcc8484e3cca15c392058d3d49df3a0",
+    "langextract/langextract/data_lib.py": "edc5d92cf0e66315fa032ac4dba2aef2ae9c80826d3861c4382c83a4c47bcf2c",
+    "langextract/langextract/exceptions.py": "0f4b2914a770630755d38e005b8406b2f8be57584223f6397e078dc1f6200576",
+    "langextract/langextract/extraction.py": "a4a0995fdc6135d1f9b362fa42c7b5233a81316bcbef61661571c25929282f7c",
+    "langextract/langextract/factory.py": "f771a165aa54a81524cf3f589dab980659b2fafd50dcaa7a70b7aa9bc36f6b83",
+    "langextract/langextract/inference.py": "05b6f2cdab376e8a4af73324779c8e14cb97c95e5fba6a53882ebaf7aa596c9a",
+    "langextract/langextract/io.py": "6718c46334306d038ab4b518e5c8a6566096faec7e6dc6244f4910d7d1b47495",
+    "langextract/langextract/plugins.py": "7c3d79d4cc8671185f495373297d140687225ad41a08734e3fee54a7dedfe7af",
+    "langextract/langextract/progress.py": "857e98760d06b4fd5f6e72bc6ef7c5a4f28b8e2feffcc26660749a848741f657",
+    "langextract/langextract/prompt_validation.py": "3f72eb68d4f2c71fb2b9da296af1497da0e8b9fa670a22c7a6738ced4f18399c",
+    "langextract/langextract/prompting.py": "0dd7568510b54f6ef12a955140c2bc8aef37ed71116aa14805e212b7bab5d765",
+    "langextract/langextract/registry.py": "1c12b21d7f40b5ec5a20158dc6d037880f3e64f01ae8137a8030355e12c9da9b",
+    "langextract/langextract/resolver.py": "a237925284202d452da69539f59f6b0e29a51af2a29e7355af1e97c0d33052b6",
+    "langextract/langextract/schema.py": "e44a960c3109bc236901648d2716f725e2ed64d6366f223c30c8d0cc34d693f9",
+    "langextract/langextract/tokenizer.py": "c9bb4c14dd7a503f748e1b1cf10634163070462a815fbbacdd319485b34add6e",
+    "langextract/langextract/visualization.py": "6d1c19d3200f0ec05bdf692353a7da281bc5376fcfe02ad5b48a78a5638e884f",
+    "langextract/langextract/_compat/__init__.py": "4692326b993a1034ac5ef540855f38cee16c3266c10f95f818647c5596540eee",
+    "langextract/langextract/_compat/exceptions.py": "b01b5e6102280f600444eeda8302a860cf32a78eb931700b409967251510174d",
+    "langextract/langextract/_compat/inference.py": "6449baf01e9dc4e787e6927b262569211d69260646d02620d530012e19acaa85",
+    "langextract/langextract/_compat/registry.py": "0c004e7bea63989cf48999d252c70d1bd61b6e4ab2b89adaf4d40678e50a69d5",
+    "langextract/langextract/_compat/schema.py": "a6c7c6e1e2df7ead822946f76072b37bbfbba89f356162dc31216aad2c60df74",
+    "langextract/langextract/core/__init__.py": "009351d36e3384afedec238198cb11569d1192d95198ced5dd46a192e82c0f0f",
+    "langextract/langextract/core/base_model.py": "0d8405d103b1af36951ebbdce9e7774feda0960e4b6f2adc67c017f813113f62",
+    "langextract/langextract/core/data.py": "1bdd05d75387858d38b0bb6975a7b7753e957b855ce4e694dabe2985cf0fc8a3",
+    "langextract/langextract/core/debug_utils.py": "8306bb42c41df3663b5331b6717cc9af5a435f8f5305f554f1c1b5166e1516c0",
+    "langextract/langextract/core/exceptions.py": "cd92f1a7c14009fc51c8aa7297947a22f69b68ca70a75d99c220b725cfa76d8c",
+    "langextract/langextract/core/format_handler.py": "98edeb9cd080819380024b0ef8744303ef86a587fb2868bf7a338446e41c7d47",
+    "langextract/langextract/core/schema.py": "61a061b743ed51fc264231044a64e0751d32d9c32900d0443397967c6bee1908",
+    "langextract/langextract/core/tokenizer.py": "2adf0f0e1d468d7a869314a5c3804ad0d67d4954f81e6f8bc635c51ef7c82922",
+    "langextract/langextract/core/types.py": "df307c6b65751683365800b2f24ee2a32923b3f96416159a58cbaa6a833644fb",
+    "langextract/langextract/providers/__init__.py": "3c9335630ce505408afd03a4b6c8d326d9cba6d79ed98a7f352450667929735e",
+    "langextract/langextract/providers/builtin_registry.py": "506f68badef72ba43da78d4b72b254446e6be0aaf989bda0656e6834f8c2fbd6",
+    "langextract/langextract/providers/gemini.py": "772f235d7824a2fc7801c45b83dee1acbd59fc865068313323a55e056ea110af",
+    "langextract/langextract/providers/gemini_batch.py": "f56660b85d0cc5fa543dd4cd3c0b5a8640cfafda1133f73d52758c99ca53de39",
+    "langextract/langextract/providers/ollama.py": "301586368ab9de065bed3b79f3004d6914dab14ca677612db6e64462097107a9",
+    "langextract/langextract/providers/openai.py": "79547098b45d6981c0a77ce00afd4605aea15aef4618ebdffaec9c57d5b2fde6",
+    "langextract/langextract/providers/openai_batch.py": "71830a425a9cb1e936ce7f10b70c977a03adbb98667ca6622d601dd42ca860bd",
+    "langextract/langextract/providers/patterns.py": "272709531883f4977755381a3a5db0010bed49f6f33ba26fe49eb2279c7cf4bb",
+    "langextract/langextract/providers/router.py": "2eaaae485cbcc7bdc95b30210d4ab77c50d4a10304020490b5ffcbdf6ada1a50",
+    "langextract/langextract/providers/schemas/__init__.py": "c2363a690666f2f0cab1c409c85a4e72201119d2f65659bbb99b98348d727773",
+    "langextract/langextract/providers/schemas/gemini.py": "e5bebf505b00cc0ea152fb0c934cc4b113ce8eff6a431ffddf699f44d8d967fd",
+    "langextract/langextract/providers/schemas/openai.py": "023bf0faf0874b953907730f9c3d6cff9e243269f344f6eae09a013dcac102ff",
+    "backend/research/common_three_arm.py": "d5cbf52cb9dc5ff30bdd13fe7de9c050751cec6413f4e69f31f49f2abc998d9e"
+  },
+  "kg_files": {
+    "backend/output/kg/LCNC-HOME/edges.json": "ab883f0d1a74eb9068b7a8d7d012414383bf54c8ab18a6fa4895ca6d890c73e2",
+    "backend/output/kg/LCNC-HOME/nodes.json": "de766286a7583b0fcc1e26d4d086a0ea5a231212d239469576e5d04a03fd705d",
+    "backend/output/kg/NIST-8091/edges.json": "a4b5b0c57c8eafe6b79caf3cd8adbb7ee8df8010dac012755e7fb977517b4054",
+    "backend/output/kg/NIST-8091/nodes.json": "92115ebe3f75c9c8d5f2b477c4ea5d4d46c5602c83cee67663033557a0c02e68",
+    "backend/output/docs_store.json": "71edd171a40d7cb40d2ddb818b374d0866305f20f8132d5a18be0c4908621d00"
+  },
+  "sources": {
+    "LCNC-HOME": {
+      "file": "public_sources/LCNC-HOME.txt",
+      "sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+      "chunks": [
+        {
+          "source_id": "LCNC-HOME",
+          "start": 0,
+          "end": 8000,
+          "chunk_id": "LCNC-HOME-S-0-8000"
+        },
+        {
+          "source_id": "LCNC-HOME",
+          "start": 8000,
+          "end": 16000,
+          "chunk_id": "LCNC-HOME-S-8000-16000"
+        },
+        {
+          "source_id": "LCNC-HOME",
+          "start": 16000,
+          "end": 18101,
+          "chunk_id": "LCNC-HOME-S-16000-18101"
+        }
+      ],
+      "unicode_characters": 18101
+    },
+    "NIST-8091": {
+      "file": "public_sources/NIST-8091.txt",
+      "sha256": "f087ac2280868164c688f26b07fe5b792542adc07dd22eed75265735eb2c1589",
+      "chunks": [
+        {
+          "source_id": "NIST-8091",
+          "start": 0,
+          "end": 8000,
+          "chunk_id": "NIST-8091-S-0-8000"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 8000,
+          "end": 16000,
+          "chunk_id": "NIST-8091-S-8000-16000"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 16000,
+          "end": 24000,
+          "chunk_id": "NIST-8091-S-16000-24000"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 24000,
+          "end": 32000,
+          "chunk_id": "NIST-8091-S-24000-32000"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 32000,
+          "end": 40000,
+          "chunk_id": "NIST-8091-S-32000-40000"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 40000,
+          "end": 41704,
+          "chunk_id": "NIST-8091-S-40000-41704"
+        }
+      ],
+      "unicode_characters": 41704
+    }
+  },
+  "work": [
+    {
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "question": "按第6节 Configuration 开头的表格，列出全部回零类型，并分别给出 HOME_SEARCH_VEL、HOME_LATCH_VEL、HOME_USE_INDEX 的取值。",
+      "range_condition": "scope_given",
+      "resolution": {
+        "status": "RESOLVED",
+        "spans": [
+          {
+            "source": "LCNC-HOME",
+            "start": 5666,
+            "end": 6065
+          }
+        ],
+        "reason": "",
+        "kind": "opening_table_region",
+        "scan_proof": {
+          "status": "SOURCE_VERIFIED_STRUCTURE",
+          "source": "LCNC-HOME",
+          "source_lf_sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+          "detector_version": "development-source-structure-v1",
+          "structure_metadata": {
+            "format": "XHTML",
+            "raw_sha256": "59640c6dffcb4aba389e3711eaebad4b007996be017ad1f2d6124b0516f1df05",
+            "coordinate_system": "LF_UNICODE_HALF_OPEN"
+          },
+          "coverage_claim": "结构选择不证明答案条目穷尽"
+        }
+      },
+      "assembly": {
+        "status": "COMPLETE_SCOPE",
+        "utf8_bytes": 399,
+        "characters": 399,
+        "mappings": [
+          {
+            "source": "LCNC-HOME",
+            "start": 5666,
+            "end": 6065,
+            "output_start": 0,
+            "output_end": 399
+          }
+        ]
+      },
+      "local_resolution_seconds": 0.0,
+      "chunks": [
+        {
+          "source_id": "LCNC-HOME",
+          "start": 5666,
+          "end": 6065,
+          "chunk_id": "LCNC-HOME-A-5666-6065"
+        }
+      ],
+      "planned_calls": 2
+    },
+    {
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "question": "在6.10 HOME_ABSOLUTE_ENCODER 中，列出枚举代码中的设置值及其行为，并列出该节Note说明的静默忽略行为。",
+      "range_condition": "scope_given",
+      "resolution": {
+        "status": "RESOLVED",
+        "spans": [
+          {
+            "source": "LCNC-HOME",
+            "start": 11680,
+            "end": 12290
+          }
+        ],
+        "reason": "",
+        "kind": "section",
+        "scan_proof": {
+          "status": "SOURCE_VERIFIED_STRUCTURE",
+          "source": "LCNC-HOME",
+          "source_lf_sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+          "detector_version": "development-source-structure-v1",
+          "structure_metadata": {
+            "format": "XHTML",
+            "raw_sha256": "59640c6dffcb4aba389e3711eaebad4b007996be017ad1f2d6124b0516f1df05",
+            "coordinate_system": "LF_UNICODE_HALF_OPEN"
+          },
+          "coverage_claim": "结构选择不证明答案条目穷尽"
+        }
+      },
+      "assembly": {
+        "status": "COMPLETE_SCOPE",
+        "utf8_bytes": 610,
+        "characters": 610,
+        "mappings": [
+          {
+            "source": "LCNC-HOME",
+            "start": 11680,
+            "end": 12290,
+            "output_start": 0,
+            "output_end": 610
+          }
+        ]
+      },
+      "local_resolution_seconds": 0.0,
+      "chunks": [
+        {
+          "source_id": "LCNC-HOME",
+          "start": 11680,
+          "end": 12290,
+          "chunk_id": "LCNC-HOME-A-11680-12290"
+        }
+      ],
+      "planned_calls": 2
+    },
+    {
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "question": "仅依据6.1–6.3，列出三个速度参数的单位和数值默认值；若没有给出数值默认值，写出未设置时的行为。对 HOME_FINAL_VEL 补充允许的取值条件。对 HOME_SEARCH_VEL，另说明零值对搜索阶段的影响。",
+      "range_condition": "scope_given",
+      "resolution": {
+        "status": "RESOLVED",
+        "spans": [
+          {
+            "source": "LCNC-HOME",
+            "start": 6065,
+            "end": 8450
+          }
+        ],
+        "reason": "",
+        "kind": "section_range",
+        "scan_proof": {
+          "status": "SOURCE_VERIFIED_STRUCTURE",
+          "source": "LCNC-HOME",
+          "source_lf_sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+          "detector_version": "development-source-structure-v1",
+          "structure_metadata": {
+            "format": "XHTML",
+            "raw_sha256": "59640c6dffcb4aba389e3711eaebad4b007996be017ad1f2d6124b0516f1df05",
+            "coordinate_system": "LF_UNICODE_HALF_OPEN"
+          },
+          "coverage_claim": "结构选择不证明答案条目穷尽"
+        }
+      },
+      "assembly": {
+        "status": "COMPLETE_SCOPE",
+        "utf8_bytes": 2385,
+        "characters": 2385,
+        "mappings": [
+          {
+            "source": "LCNC-HOME",
+            "start": 6065,
+            "end": 8450,
+            "output_start": 0,
+            "output_end": 2385
+          }
+        ]
+      },
+      "local_resolution_seconds": 0.0,
+      "chunks": [
+        {
+          "source_id": "LCNC-HOME",
+          "start": 6065,
+          "end": 8450,
+          "chunk_id": "LCNC-HOME-A-6065-8450"
+        }
+      ],
+      "planned_calls": 2
+    },
+    {
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "question": "列出6.11为三关节系统给出的全部示例，按顺序给出三个 HOME_SEQUENCE 值，并说明哪些关节同步最终移动。",
+      "range_condition": "scope_given",
+      "resolution": {
+        "status": "RESOLVED",
+        "spans": [
+          {
+            "source": "LCNC-HOME",
+            "start": 12290,
+            "end": 14728
+          }
+        ],
+        "reason": "",
+        "kind": "section",
+        "scan_proof": {
+          "status": "SOURCE_VERIFIED_STRUCTURE",
+          "source": "LCNC-HOME",
+          "source_lf_sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+          "detector_version": "development-source-structure-v1",
+          "structure_metadata": {
+            "format": "XHTML",
+            "raw_sha256": "59640c6dffcb4aba389e3711eaebad4b007996be017ad1f2d6124b0516f1df05",
+            "coordinate_system": "LF_UNICODE_HALF_OPEN"
+          },
+          "coverage_claim": "结构选择不证明答案条目穷尽"
+        }
+      },
+      "assembly": {
+        "status": "COMPLETE_SCOPE",
+        "utf8_bytes": 2440,
+        "characters": 2438,
+        "mappings": [
+          {
+            "source": "LCNC-HOME",
+            "start": 12290,
+            "end": 14728,
+            "output_start": 0,
+            "output_end": 2438
+          }
+        ]
+      },
+      "local_resolution_seconds": 0.0,
+      "chunks": [
+        {
+          "source_id": "LCNC-HOME",
+          "start": 12290,
+          "end": 14728,
+          "chunk_id": "LCNC-HOME-A-12290-14728"
+        }
+      ],
+      "planned_calls": 2
+    },
+    {
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "question": "列出6.14 Immediate Homing 代码块中的全部配置及其给定值或允许替代值，并说明省略 HOME_SEQUENCE 对 HOME ALL 的影响。",
+      "range_condition": "scope_given",
+      "resolution": {
+        "status": "RESOLVED",
+        "spans": [
+          {
+            "source": "LCNC-HOME",
+            "start": 15132,
+            "end": 15918
+          }
+        ],
+        "reason": "",
+        "kind": "section",
+        "scan_proof": {
+          "status": "SOURCE_VERIFIED_STRUCTURE",
+          "source": "LCNC-HOME",
+          "source_lf_sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+          "detector_version": "development-source-structure-v1",
+          "structure_metadata": {
+            "format": "XHTML",
+            "raw_sha256": "59640c6dffcb4aba389e3711eaebad4b007996be017ad1f2d6124b0516f1df05",
+            "coordinate_system": "LF_UNICODE_HALF_OPEN"
+          },
+          "coverage_claim": "结构选择不证明答案条目穷尽"
+        }
+      },
+      "assembly": {
+        "status": "COMPLETE_SCOPE",
+        "utf8_bytes": 786,
+        "characters": 786,
+        "mappings": [
+          {
+            "source": "LCNC-HOME",
+            "start": 15132,
+            "end": 15918,
+            "output_start": 0,
+            "output_end": 786
+          }
+        ]
+      },
+      "local_resolution_seconds": 0.0,
+      "chunks": [
+        {
+          "source_id": "LCNC-HOME",
+          "start": 15132,
+          "end": 15918,
+          "chunk_id": "LCNC-HOME-A-15132-15918"
+        }
+      ],
+      "planned_calls": 2
+    },
+    {
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "question": "在NISTIR 8091第3节中，引出子系统所需度量的列表列出了哪些类别？为每类保留括号中全部示例或判定要点，并说明该列表是否声称穷尽全部度量。",
+      "range_condition": "scope_given",
+      "resolution": {
+        "status": "RESOLVED",
+        "spans": [
+          {
+            "source": "NIST-8091",
+            "start": 13467,
+            "end": 36183
+          }
+        ],
+        "reason": "",
+        "kind": "section",
+        "scan_proof": {
+          "status": "SOURCE_VERIFIED_STRUCTURE",
+          "source": "NIST-8091",
+          "source_lf_sha256": "f087ac2280868164c688f26b07fe5b792542adc07dd22eed75265735eb2c1589",
+          "detector_version": "development-source-structure-v1",
+          "structure_metadata": {
+            "format": "PDF_POPPLER_XML",
+            "xml_sha256": "de9aa2c95b3be9695fa0331aa438bdea35e922a69b8afcd54b8d3a4526b15828",
+            "coordinate_system": "LF_UNICODE_HALF_OPEN",
+            "diagnostics": []
+          },
+          "coverage_claim": "结构选择不证明答案条目穷尽"
+        }
+      },
+      "assembly": {
+        "status": "COMPLETE_SCOPE",
+        "utf8_bytes": 22752,
+        "characters": 22716,
+        "mappings": [
+          {
+            "source": "NIST-8091",
+            "start": 13467,
+            "end": 36183,
+            "output_start": 0,
+            "output_end": 22716
+          }
+        ]
+      },
+      "local_resolution_seconds": 0.0,
+      "chunks": [
+        {
+          "source_id": "NIST-8091",
+          "start": 13467,
+          "end": 21467,
+          "chunk_id": "NIST-8091-A-13467-21467"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 21467,
+          "end": 29467,
+          "chunk_id": "NIST-8091-A-21467-29467"
+        },
+        {
+          "source_id": "NIST-8091",
+          "start": 29467,
+          "end": 36183,
+          "chunk_id": "NIST-8091-A-29467-36183"
+        }
+      ],
+      "planned_calls": 4
+    }
+  ],
+  "system_prompt": "You are a knowledge-based QA assistant for enterprise project documents.\nFollow these rules strictly:\n\n1. Answer ONLY using the provided context below. Do NOT fabricate information.\n2. EVERY factual statement MUST end with a source citation marker like [c00042] or [n0019].\n   - One citation per sentence minimum. Do NOT batch citations at the end of paragraphs.\n   - Example: \"The system uses 20MW electrolyzers [c00014]. Hydrogen production rate is 280kg/h [c00017].\"\n3. If the context is insufficient, clearly state: \"文档中未提及此信息\" (for Chinese queries) or \"This information is not mentioned in the documents\" (for English queries).\n4. For numerical/quantitative answers, use Markdown tables for clarity.\n   - Each table cell containing a fact must also include its citation marker.\n5. Respond in the same language as the user's question.\n6. Prioritize the most recent/production data when multiple sources conflict.\n",
+  "map_instruction": "You are performing one map stage of a complete-document scan.\nCheck only the supplied excerpt against the exact requested scope. Extract all\nsupported relevant items, values, units, conditions, examples and caveats without\ncompressing distinct attributes. Preserve citations to this chunk. Return NONE\nwhen no relevant evidence occurs. A partial excerpt cannot prove absence or\nexhaustiveness. The structure index is navigation metadata, not factual evidence.\nDo not answer from memory. Answer in the question's language.",
+  "reduce_instruction": "Merge the following map outputs for the question. Preserve\nall distinct supported items and required attributes, conditions and caveats;\ndeduplicate only semantically identical entries. Retain original chunk citations.\nDo not invent missing information or claim semantic exhaustiveness merely because\nall chunks were scanned. Map summaries may have omissions. Answer in Chinese.",
+  "heading_structures": {
+    "LCNC-HOME": {
+      "unicode_characters": 18101,
+      "structure_seconds": 0.0,
+      "structure": {
+        "source_id": "LCNC-HOME",
+        "source_sha256": "4c7715be8bc294e93f3235343932e2f0c0d8c333230b57867188b17a06f08bff",
+        "nodes": [
+          {
+            "kind": "heading",
+            "start": 0,
+            "end": 20,
+            "level": 1,
+            "number": "",
+            "title": "Homing Configuration",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[1]/h1[1]",
+              "tag": "h1",
+              "block_sha256": "f5f80c5aaea06dbfa3baef8aa8ba2df45c67c19bb87c0518d5f8a8e6f4944528"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 100,
+            "end": 111,
+            "level": 2,
+            "number": "1",
+            "title": "1. Overview",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[1]/h2[1]",
+              "tag": "h2",
+              "block_sha256": "1fcb3bd0656d7cd18cd97fdb3ea4b0a89924a6bbd809f9945d4fc6a038e1654b"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 851,
+            "end": 1003,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[1]/div[1]/div[2]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 1005,
+            "end": 1020,
+            "level": 2,
+            "number": "2",
+            "title": "2. Prerequisite",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[2]/h2[1]",
+              "tag": "h2",
+              "block_sha256": "5212b80022534156db835bd31c974b777c2f4239a7692b1d0648dadcf8b84623"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 2921,
+            "end": 3175,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[2]/div[1]/div[3]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 3177,
+            "end": 3215,
+            "level": 2,
+            "number": "3",
+            "title": "3. Separate Home Switch Example Layout",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[3]/h2[1]",
+              "tag": "h2",
+              "block_sha256": "e8f7bd7ce563bc2d4a3b987e27c0467a7f0af758261f5f4d9ee9fdc86da19471"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 4027,
+            "end": 4322,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[3]/div[1]/div[4]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[3]/div[1]/div[4]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 4324,
+            "end": 4366,
+            "level": 2,
+            "number": "4",
+            "title": "4. Shared Limit/Home Switch Example Layout",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[4]/h2[1]",
+              "tag": "h2",
+              "block_sha256": "c01b17a0c5941539c693f77f968fbc45d8969cde34e87e91670373cce9ace7e3"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 5222,
+            "end": 5240,
+            "level": 2,
+            "number": "5",
+            "title": "5. Homing Sequence",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[5]/h2[1]",
+              "tag": "h2",
+              "block_sha256": "b90ac18d7aebabd343d02eac55f208120f68395f9ab54b23a2dcb6eb7c5b01c4"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 5666,
+            "end": 5682,
+            "level": 2,
+            "number": "6",
+            "title": "6. Configuration",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/h2[1]",
+              "tag": "h2",
+              "block_sha256": "74916fdb0ee5fdde5def2f75cf15a32e0531de780ce872dbcf1ad6711d0f58c7"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "table",
+            "start": 5807,
+            "end": 6008,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[2]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[2]/table[1]/thead[1]/tr[1]",
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[2]/table[1]/tbody[1]/tr[1]",
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[2]/table[1]/tbody[1]/tr[2]",
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[2]/table[1]/tbody[1]/tr[3]",
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[2]/table[1]/tbody[1]/tr[4]"
+              ],
+              "classification": "NATIVE_TABLE"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 6010,
+            "end": 6063,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[3]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[3]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 6065,
+            "end": 6085,
+            "level": 3,
+            "number": "6.1",
+            "title": "6.1. HOME_SEARCH_VEL",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[4]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "afdb35e09754388c4de0acdee66c5db9f708b6b436a396bda1704628872e4b92"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 7055,
+            "end": 7074,
+            "level": 3,
+            "number": "6.2",
+            "title": "6.2. HOME_LATCH_VEL",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[5]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "76e92580c716ee1ae3313792f200d47f131a7490fc465b236b07948f6f81f5c5"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 8125,
+            "end": 8144,
+            "level": 3,
+            "number": "6.3",
+            "title": "6.3. HOME_FINAL_VEL",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[6]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "aea7f71a5b3252d6f3e32b01a4a6454910fac83f77adb7d52d1915c1e3d7e09c"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 8450,
+            "end": 8473,
+            "level": 3,
+            "number": "6.4",
+            "title": "6.4. HOME_IGNORE_LIMITS",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[7]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "89984f16f5462aad620ae05ac333aada37121a2340a44c79b434c447854e67c6"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 9069,
+            "end": 9088,
+            "level": 3,
+            "number": "6.5",
+            "title": "6.5. HOME_USE_INDEX",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[8]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "2222665f6fe1b50bd8823d000f7633ab984054f64538237e5a4838dfaf8b7fc2"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 9419,
+            "end": 9535,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[8]/div[2]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[8]/div[2]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 9537,
+            "end": 9569,
+            "level": 3,
+            "number": "6.6",
+            "title": "6.6. HOME_INDEX_NO_ENCODER_RESET",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[9]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "a65559bea0ba115c42ad5034c19919abdcf4ac85ce175d59db0afb9f57eed654"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 9782,
+            "end": 9798,
+            "level": 3,
+            "number": "6.7",
+            "title": "6.7. HOME_OFFSET",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[10]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "332d374f5e6daaf9669fe604caff55d82de0234429de94f88f754a902ff3474d"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 10208,
+            "end": 10384,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[10]/div[2]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[10]/div[2]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 10386,
+            "end": 10395,
+            "level": 3,
+            "number": "6.8",
+            "title": "6.8. HOME",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[11]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "1641776123516423ed8a3e0536753c1370e6fafb8c0d3a676398630ae69e31c1"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 11090,
+            "end": 11361,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[11]/div[2]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[11]/div[2]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 11363,
+            "end": 11382,
+            "level": 3,
+            "number": "6.9",
+            "title": "6.9. HOME_IS_SHARED",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[12]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "181084cd1276118d228d22ce92f5e972d0a7b93aa9ed07d2c8c289633b539932"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 11680,
+            "end": 11707,
+            "level": 3,
+            "number": "6.10",
+            "title": "6.10. HOME_ABSOLUTE_ENCODER",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[13]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "2cd2061bd4295667ed340239eea89b8cc946f5979bef745f16b4a38648ebd3d0"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 11954,
+            "end": 12175,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[13]/div[3]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "2f8068edf713166cf00868029f54678ef6fb6d5922182c528508ed43268c8688"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 12177,
+            "end": 12229,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[13]/div[4]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[13]/div[4]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 12231,
+            "end": 12288,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[13]/div[5]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[13]/div[5]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 12290,
+            "end": 12309,
+            "level": 3,
+            "number": "6.11",
+            "title": "6.11. HOME_SEQUENCE",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "db1bbf2ca0d12a4ed9f0d055a7e12cdc1ba86f3018a5ccefa8bb4ff9d86ad0e4"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 12654,
+            "end": 12817,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[2]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[2]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 14119,
+            "end": 14199,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[9]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "cd61b6fe679e1d6a3a724d123cda6591df56eebf36dc6fdc0bf3b3b5ea894968"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 14245,
+            "end": 14328,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[11]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "fb2d7a23b7336aed3707cb066e4633535dd0471db14719e92a4339d9bbbcda9a"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 14400,
+            "end": 14483,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[13]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "cd921389555b64ce0b650bdbcf4037b8a327a1be43499e1fc8c95d79d7391c20"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 14519,
+            "end": 14602,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[15]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "4c180ef0d3fb028209938103c596d3311ac50116f7555a9d880bb69403ab8c8c"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 14643,
+            "end": 14726,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[14]/div[17]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "9432921fd5fcc28ef715e9612241d2f5af0482801b2f3826ac32c0172e7c62b9"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 14728,
+            "end": 14747,
+            "level": 3,
+            "number": "6.12",
+            "title": "6.12. VOLATILE_HOME",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[15]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "e5d383c7992af0ffd6b5bfb9b6719ecae936909801337227dbb40401949bbd19"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 15015,
+            "end": 15036,
+            "level": 3,
+            "number": "6.13",
+            "title": "6.13. LOCKING_INDEXER",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[16]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "112070aba86758ec87e1c8a17a0204cff22316f236139353dc78384e670ce0cc"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 15132,
+            "end": 15154,
+            "level": 3,
+            "number": "6.14",
+            "title": "6.14. Immediate Homing",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[17]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "0f60c2e0c96c369a665224f7c4600e0673d4bc79ba2c1e387971f0b451dfaac3"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 15426,
+            "end": 15588,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[17]/div[2]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "f2280cdac2cf9871d4e0ad3974f8c0cfefde04f23fa7ec69b3dfbdc14cc66574"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 15590,
+            "end": 15916,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[17]/div[3]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[17]/div[3]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "heading",
+            "start": 15918,
+            "end": 15941,
+            "level": 3,
+            "number": "6.15",
+            "title": "6.15. Inhibiting Homing",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[18]/h3[1]",
+              "tag": "h3",
+              "block_sha256": "c182d0390144f8a0826bd50e2842fcdc6f5b36e55a6a64ded67801f74fbd9f9b"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "pre",
+            "start": 16876,
+            "end": 17513,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[18]/div[5]/div[1]/pre[1]",
+              "tag": "pre",
+              "block_sha256": "0fe01894e9c101f991e094db51aa4c4c79ddc23c4d89dd8f0640d0f39dd8e8df"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 17515,
+            "end": 17723,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[18]/div[6]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[18]/div[6]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          },
+          {
+            "kind": "admonition",
+            "start": 17725,
+            "end": 17929,
+            "level": 0,
+            "number": "",
+            "title": "",
+            "provenance": {
+              "xpath": "/html[1]/body[1]/div[2]/div[6]/div[1]/div[18]/div[7]/table[1]",
+              "row_xpaths": [
+                "/html[1]/body[1]/div[2]/div[6]/div[1]/div[18]/div[7]/table[1]/tr[1]"
+              ],
+              "classification": "NATIVE_ADMONITION_CLASS"
+            },
+            "source_id": "LCNC-HOME"
+          }
+        ],
+        "metadata": {
+          "format": "XHTML",
+          "raw_sha256": "59640c6dffcb4aba389e3711eaebad4b007996be017ad1f2d6124b0516f1df05",
+          "coordinate_system": "LF_UNICODE_HALF_OPEN"
+        }
+      }
+    },
+    "NIST-8091": {
+      "unicode_characters": 41704,
+      "structure_seconds": 0.0,
+      "structure": {
+        "source_id": "NIST-8091",
+        "source_sha256": "f087ac2280868164c688f26b07fe5b792542adc07dd22eed75265735eb2c1589",
+        "nodes": [
+          {
+            "kind": "heading",
+            "start": 2557,
+            "end": 2572,
+            "level": 1,
+            "number": "1",
+            "title": "1. Introduction",
+            "provenance": {
+              "pdf_page_one_based": 4,
+              "xml_text_nodes_zero_based": [
+                3,
+                5
+              ],
+              "font": {
+                "id": "12",
+                "size": "18",
+                "family": "Times New Roman,Bold",
+                "color": "#000000"
+              },
+              "matching": "UNIQUE_NORMALIZED_FULL_LINE"
+            },
+            "source_id": "NIST-8091"
+          },
+          {
+            "kind": "heading",
+            "start": 6278,
+            "end": 6293,
+            "level": 1,
+            "number": "2",
+            "title": "2. Related Work",
+            "provenance": {
+              "pdf_page_one_based": 5,
+              "xml_text_nodes_zero_based": [
+                8,
+                10
+              ],
+              "font": {
+                "id": "12",
+                "size": "18",
+                "family": "Times New Roman,Bold",
+                "color": "#000000"
+              },
+              "matching": "UNIQUE_NORMALIZED_FULL_LINE"
+            },
+            "source_id": "NIST-8091"
+          },
+          {
+            "kind": "heading",
+            "start": 13467,
+            "end": 13478,
+            "level": 1,
+            "number": "3",
+            "title": "3. Approach",
+            "provenance": {
+              "pdf_page_one_based": 7,
+              "xml_text_nodes_zero_based": [
+                10,
+                12
+              ],
+              "font": {
+                "id": "12",
+                "size": "18",
+                "family": "Times New Roman,Bold",
+                "color": "#000000"
+              },
+              "matching": "UNIQUE_NORMALIZED_FULL_LINE"
+            },
+            "source_id": "NIST-8091"
+          },
+          {
+            "kind": "heading",
+            "start": 19690,
+            "end": 19706,
+            "level": 2,
+            "number": "3.1",
+            "title": "3.1. Example",
+            "provenance": {
+              "pdf_page_one_based": 10,
+              "xml_text_nodes_zero_based": [
+                7,
+                9
+              ],
+              "font": {
+                "id": "12",
+                "size": "18",
+                "family": "Times New Roman,Bold",
+                "color": "#000000"
+              },
+              "matching": "UNIQUE_NORMALIZED_FULL_LINE"
+            },
+            "source_id": "NIST-8091"
+          },
+          {
+            "kind": "heading",
+            "start": 36183,
+            "end": 36196,
+            "level": 1,
+            "number": "4",
+            "title": "4. Discussion",
+            "provenance": {
+              "pdf_page_one_based": 15,
+              "xml_text_nodes_zero_based": [
+                33,
+                35
+              ],
+              "font": {
+                "id": "12",
+                "size": "18",
+                "family": "Times New Roman,Bold",
+                "color": "#000000"
+              },
+              "matching": "UNIQUE_NORMALIZED_FULL_LINE"
+            },
+            "source_id": "NIST-8091"
+          },
+          {
+            "kind": "heading",
+            "start": 37988,
+            "end": 38002,
+            "level": 1,
+            "number": "5",
+            "title": "5. Conclusions",
+            "provenance": {
+              "pdf_page_one_based": 16,
+              "xml_text_nodes_zero_based": [
+                10,
+                12
+              ],
+              "font": {
+                "id": "12",
+                "size": "18",
+                "family": "Times New Roman,Bold",
+                "color": "#000000"
+              },
+              "matching": "UNIQUE_NORMALIZED_FULL_LINE"
+            },
+            "source_id": "NIST-8091"
+          }
+        ],
+        "metadata": {
+          "format": "PDF_POPPLER_XML",
+          "xml_sha256": "de9aa2c95b3be9695fa0331aa438bdea35e922a69b8afcd54b8d3a4526b15828",
+          "coordinate_system": "LF_UNICODE_HALF_OPEN",
+          "diagnostics": []
+        }
+      }
+    }
+  },
+  "inputs_sha256": "f045367c935e9c876bbb06333593f8793659f022200fca9ec82d4ff2fe4d745e",
+  "schedule": [
+    {
+      "unit_id": "DEV-L01-r1-P0",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "P0",
+      "sequence": 1,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L01-r1-A",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "A",
+      "sequence": 2,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L01-r1-S",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "S",
+      "sequence": 3,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L01-r2-A",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "A",
+      "sequence": 4,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L01-r2-S",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "S",
+      "sequence": 5,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L01-r2-P0",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "P0",
+      "sequence": 6,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L01-r3-S",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "S",
+      "sequence": 7,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L01-r3-P0",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "P0",
+      "sequence": 8,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L01-r3-A",
+      "question_id": "DEV-L01",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "A",
+      "sequence": 9,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L02-r1-A",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "A",
+      "sequence": 10,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L02-r1-S",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "S",
+      "sequence": 11,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L02-r1-P0",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "P0",
+      "sequence": 12,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L02-r2-S",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "S",
+      "sequence": 13,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L02-r2-P0",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "P0",
+      "sequence": 14,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L02-r2-A",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "A",
+      "sequence": 15,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L02-r3-P0",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "P0",
+      "sequence": 16,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L02-r3-A",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "A",
+      "sequence": 17,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L02-r3-S",
+      "question_id": "DEV-L02",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "S",
+      "sequence": 18,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L03-r1-S",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "S",
+      "sequence": 19,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L03-r1-P0",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "P0",
+      "sequence": 20,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L03-r1-A",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "A",
+      "sequence": 21,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L03-r2-P0",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "P0",
+      "sequence": 22,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L03-r2-A",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "A",
+      "sequence": 23,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L03-r2-S",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "S",
+      "sequence": 24,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L03-r3-A",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "A",
+      "sequence": 25,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L03-r3-S",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "S",
+      "sequence": 26,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L03-r3-P0",
+      "question_id": "DEV-L03",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "P0",
+      "sequence": 27,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L04-r1-P0",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "P0",
+      "sequence": 28,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L04-r1-A",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "A",
+      "sequence": 29,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L04-r1-S",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "S",
+      "sequence": 30,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L04-r2-A",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "A",
+      "sequence": 31,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L04-r2-S",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "S",
+      "sequence": 32,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L04-r2-P0",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "P0",
+      "sequence": 33,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L04-r3-S",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "S",
+      "sequence": 34,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L04-r3-P0",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "P0",
+      "sequence": 35,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L04-r3-A",
+      "question_id": "DEV-L04",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "A",
+      "sequence": 36,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L05-r1-A",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "A",
+      "sequence": 37,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L05-r1-S",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "S",
+      "sequence": 38,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L05-r1-P0",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 1,
+      "arm": "P0",
+      "sequence": 39,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L05-r2-S",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "S",
+      "sequence": 40,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-L05-r2-P0",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "P0",
+      "sequence": 41,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L05-r2-A",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 2,
+      "arm": "A",
+      "sequence": 42,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L05-r3-P0",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "P0",
+      "sequence": 43,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-L05-r3-A",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "A",
+      "sequence": 44,
+      "planned_max_attempts": 2
+    },
+    {
+      "unit_id": "DEV-L05-r3-S",
+      "question_id": "DEV-L05",
+      "source_id": "LCNC-HOME",
+      "repeat": 3,
+      "arm": "S",
+      "sequence": 45,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-N01-r1-S",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 1,
+      "arm": "S",
+      "sequence": 46,
+      "planned_max_attempts": 7
+    },
+    {
+      "unit_id": "DEV-N01-r1-P0",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 1,
+      "arm": "P0",
+      "sequence": 47,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-N01-r1-A",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 1,
+      "arm": "A",
+      "sequence": 48,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-N01-r2-P0",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 2,
+      "arm": "P0",
+      "sequence": 49,
+      "planned_max_attempts": 3
+    },
+    {
+      "unit_id": "DEV-N01-r2-A",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 2,
+      "arm": "A",
+      "sequence": 50,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-N01-r2-S",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 2,
+      "arm": "S",
+      "sequence": 51,
+      "planned_max_attempts": 7
+    },
+    {
+      "unit_id": "DEV-N01-r3-A",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 3,
+      "arm": "A",
+      "sequence": 52,
+      "planned_max_attempts": 4
+    },
+    {
+      "unit_id": "DEV-N01-r3-S",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 3,
+      "arm": "S",
+      "sequence": 53,
+      "planned_max_attempts": 7
+    },
+    {
+      "unit_id": "DEV-N01-r3-P0",
+      "question_id": "DEV-N01",
+      "source_id": "NIST-8091",
+      "repeat": 3,
+      "arm": "P0",
+      "sequence": 54,
+      "planned_max_attempts": 3
+    }
+  ],
+  "path_proof": {
+    "status": "STATIC_SCOPED_PATH_SUPPORTED",
+    "preprocess_attempts": 1,
+    "generation_attempts": 2,
+    "per_unit_max_attempts": 3,
+    "enable_global_mode": false,
+    "source_sha256": {
+      "generator.py": "55d8612e9d17e8a796ba4a9e0e295a34f14578ce46705ca70e2904dea1c6679e",
+      "retrieval.py": "25b5d116659a1aed95a8bd54767ee3287f2587cfc4ccc1c5afaf154699bef6e6",
+      "routes/rag_query.py": "d74e27e9ad4b33b355927d4658060cfdd140dd05ad168f82f3016c1de5966848",
+      "config.py": "389b9d7a978abbc2dd68ca5cb405c4fd7c8ed6bb6df5890ed71a0dfb93079fee",
+      "models.py": "b8603e88ea3161de56a4a4bf3eb5c956bdc4bd15f7325be19acb197088d6d34c",
+      "research/development_isolation.py": "8144ef633f3a7cb8e897e6c11115211a7d31b6d9c970ad88264c8386272e2410"
+    },
+    "locators": {
+      "preprocess": 279,
+      "generation_retry": 282,
+      "scoped_route": 220
+    },
+    "reason": "Scoped KG route has no optimizer/domain model; one preprocess POST plus one generation site with max_retries=1; citation notice only appends text."
+  },
+  "A_calls_per_round": 14,
+  "S_calls_per_round": 27,
+  "global_path_attempts": 177,
+  "global_seconds": 5400,
+  "environment": {
+    "openai": "3.14.1",
+    "requests": "2.34.2",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.0",
+    "langextract": "1.5.0",
+    "pydantic": "2.13.5",
+    "networkx": "3.6.1"
+  },
+  "governance_sha256": {
+    "D:\\graghRAG-agent\\docs\\contracts\\2026-10-15-common-three-arm-evaluation.md": "4f5c9097b19f13b699b9e50123ee598fb52ac27246e8aeb945f7f4a788b0add4",
+    "D:\\graghRAG-agent\\docs\\plans\\2026-10-15-common-three-arm-evaluation.md": "8f38a5f6c540218bb0109aec43b399ad3b5b582a6d120b11391b96c22057dbc1"
+  },
+  "kg_provenance_sha256": {
+    "D:\\graghRAG-agent\\docs\\review\\development-budget-20261014\\executed-isolation\\kg\\LCNC-HOME\\edges.json": "ab883f0d1a74eb9068b7a8d7d012414383bf54c8ab18a6fa4895ca6d890c73e2",
+    "D:\\graghRAG-agent\\docs\\review\\development-budget-20261014\\executed-isolation\\kg\\LCNC-HOME\\nodes.json": "de766286a7583b0fcc1e26d4d086a0ea5a231212d239469576e5d04a03fd705d",
+    "D:\\graghRAG-agent\\docs\\review\\development-budget-20261014\\executed-isolation\\kg\\NIST-8091\\edges.json": "a4b5b0c57c8eafe6b79caf3cd8adbb7ee8df8010dac012755e7fb977517b4054",
+    "D:\\graghRAG-agent\\docs\\review\\development-budget-20261014\\executed-isolation\\kg\\NIST-8091\\nodes.json": "92115ebe3f75c9c8d5f2b477c4ea5d4d46c5602c83cee67663033557a0c02e68"
+  },
+  "model_config": {
+    "model": "deepseek-flash",
+    "temperature": 0.0,
+    "thinking": "disabled",
+    "stream": false,
+    "max_tokens": 2048,
+    "p0_preprocess_max_tokens": 300,
+    "p0_enable_global_mode": false
+  },
+  "common_budget": {
+    "attempts_per_unit": 8,
+    "single_input_json_utf8_bytes": 24000,
+    "unit_input_json_utf8_bytes": 192000,
+    "unit_seconds_including_startup": 120,
+    "single_actual_prompt_tokens": 8192,
+    "unit_actual_prompt_tokens": 65536,
+    "unit_actual_completion_tokens": 16384,
+    "global_seconds": 5400,
+    "global_path_attempts": 177
+  },
+  "gold_loaded": false,
+  "scientific_stage": "M2_OPEN"
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "independent static review only; author targeted execution not independently rerun",
+  "hashes": {
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\routes\\health.py": {
+      "expected": "f8b4d22c17f3046167ae263b86e28c3355df97edc068abd9b7194c89d534d97e",
+      "actual": "f8b4d22c17f3046167ae263b86e28c3355df97edc068abd9b7194c89d534d97e"
+    },
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_runtime_health.py": {
+      "expected": "87ca5895c63df28b544e487f342c2cd805aff55b6c36b4bfe199ca1333a8def5",
+      "actual": "87ca5895c63df28b544e487f342c2cd805aff55b6c36b4bfe199ca1333a8def5"
+    },
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\document_publication.py": {
+      "expected": "5fd35f970a18abd55da2efe76f3745b9e135697eea2733b97b06d3c6d7153de5",
+      "actual": "5fd35f970a18abd55da2efe76f3745b9e135697eea2733b97b06d3c6d7153de5"
+    },
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\vector_startup.py": {
+      "expected": "7ce0852214b6264194a925ad333ef59421a3c78fb09550155c6d72cf3cc76259",
+      "actual": "7ce0852214b6264194a925ad333ef59421a3c78fb09550155c6d72cf3cc76259"
+    },
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\uv.lock": {
+      "expected": "3a3ce015f3660e03d3b6d39983b47fee921b443b8740de9a39a9c28cf5e846df",
+      "actual": "3a3ce015f3660e03d3b6d39983b47fee921b443b8740de9a39a9c28cf5e846df"
+    },
+    "D:\\graghRAG-agent\\.tmp\\health-artifacts-20261026\\test_health_artifact_counts.py": {
+      "expected": "662470e09b493ce307c0cf0218759ed30783ccaf4b4f9d0ff0070bc09250e92d",
+      "actual": "662470e09b493ce307c0cf0218759ed30783ccaf4b4f9d0ff0070bc09250e92d"
+    }
+  },
+  "all_author_inputs_match_current": true
+}

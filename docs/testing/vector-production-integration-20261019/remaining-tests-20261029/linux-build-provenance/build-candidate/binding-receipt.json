@@ -1,0 +1,60 @@
+{
+  "C_R11_inputs_count": 258,
+  "C_R11_drift": {},
+  "vendor_files": 447,
+  "vendor_manifest_sha256": "04dcaeb46d835797859d3b4af0e14612cf7cb203f18103e99a25f3556a643f92",
+  "cargo_config_sha256": "51887b696d384938c825726fda839e4bddfb6fdb9f6f64d6f14d0798b59ec073",
+  "builder_images": {
+    "rust@sha256:a86cada82e36ebd7a9bffed7548792c55a952fdb20718eea9278a936bcb76e62": {
+      "Id": "sha256:a86cada82e36ebd7a9bffed7548792c55a952fdb20718eea9278a936bcb76e62",
+      "RootFS": {
+        "Type": "layers",
+        "Layers": [
+          "sha256:6143ee9e3de07e6ca35edaf392cf93dea566a5bcd0d3696607ae6c324193d099",
+          "sha256:807d4de864c56ea1f565ed8697acbf42db902de34ee8617015da8f95c1ff659a"
+        ]
+      },
+      "RepoDigests": [
+        "rust@sha256:a86cada82e36ebd7a9bffed7548792c55a952fdb20718eea9278a936bcb76e62"
+      ]
+    },
+    "graphrag-linux-mvp-numpy:20261028": {
+      "Id": "sha256:ca19e0667a83656165ad4c7edd07ef50b97429fa7aa5932453dac1dc4c16ebe1",
+      "RootFS": {
+        "Type": "layers",
+        "Layers": [
+          "sha256:44a87794b739d471ec360bec56cc0ceac640d06bbf579ee7d9061a0b88d09818",
+          "sha256:576179aecba1384366d23a3e2b732dfd408128a7d2dd1f068d894730362e7947",
+          "sha256:8ed4cbb16557f194937089b065970b4bd118ed82d749a9e1d56261a930488b60",
+          "sha256:f8ff5ead77b71a3abea55b349b2f7acd000ef0a705870552e8b35720dd69145f",
+          "sha256:724cc0d2af19b910e1e353636a25fab4e82b405bd4506405aff941079e017cf3",
+          "sha256:c59839d7acd8d0ae9ecc432bea1c9db3eba14d8d15f13315e49a2a1092b66b35",
+          "sha256:aaba967d56cabdcdf0214cefe10e02d4466b85baf287d79fc86dbdf7417336c5",
+          "sha256:d735b8e3f5be3689badec1b0ec269b6136e09df68a1302cbf865918a0cc61292",
+          "sha256:91541eb3048a5bfaa7e3c19f1e7632d25b9267ecba91c19ef45562bac4305da4"
+        ]
+      },
+      "RepoDigests": [
+        "graphrag-linux-mvp-numpy@sha256:ca19e0667a83656165ad4c7edd07ef50b97429fa7aa5932453dac1dc4c16ebe1"
+      ]
+    },
+    "graphrag-numeric-build-candidate:20261029": {
+      "Id": "sha256:cf1d89f553d6154fe833706f742b0f07a5ddebfe3d5ec2d3e49c363959f4445b",
+      "RootFS": {
+        "Type": "layers",
+        "Layers": [
+          "sha256:6143ee9e3de07e6ca35edaf392cf93dea566a5bcd0d3696607ae6c324193d099",
+          "sha256:807d4de864c56ea1f565ed8697acbf42db902de34ee8617015da8f95c1ff659a",
+          "sha256:a5c97f5dd0d0a55e624093763bf82d8c9bed876ee35106190299acb8e58bdb66"
+        ]
+      },
+      "RepoDigests": [
+        "graphrag-numeric-build-candidate@sha256:cf1d89f553d6154fe833706f742b0f07a5ddebfe3d5ec2d3e49c363959f4445b"
+      ]
+    }
+  },
+  "binary_sha256": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0",
+  "approved": false,
+  "policy_tests": 30,
+  "policy_exit": 0
+}

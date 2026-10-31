@@ -1,0 +1,28 @@
+{
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent/backend",
+    "GRAPHRAG_RUNTIME_ARTIFACTS_DIR": "D:/graghRAG-agent/.tmp/model-admission-tests-20261027/runtime-artifacts"
+  },
+  "runs": [
+    {
+      "command": "D:/graghRAG-agent/.tmp/security-lock-patch-20261026/.venv/Scripts/python.exe -B -m pytest D:/graghRAG-agent/.tmp/model-admission-tests-20261027/test_vector_model_admission_failures.py --noconftest -q -p no:cacheprovider --junitxml=D:/graghRAG-agent/.tmp/model-admission-tests-20261027/junit.xml",
+      "exit_code": 0,
+      "result": "2 passed in 1.02s",
+      "note": "Initial successful run; subsequently clarified directory-membership assertion. Final snapshot is bound by the last run."
+    },
+    {
+      "powershell_argument_fragment": "--junitxml=(Join-Path $evidenceRoot 'junit.xml')",
+      "exit_code": 4,
+      "result": "no tests ran in 0.20s",
+      "note": "PowerShell argument construction incorrectly gave JUnit XML as a test path. Retained argument-error-pytest.log, argument-error-pytest.exit and argument-error-verification.json."
+    },
+    {
+      "command": "D:/graghRAG-agent/.tmp/security-lock-patch-20261026/.venv/Scripts/python.exe -B -m pytest D:/graghRAG-agent/.tmp/model-admission-tests-20261027/test_vector_model_admission_failures.py --noconftest -q -p no:cacheprovider --junitxml D:/graghRAG-agent/.tmp/model-admission-tests-20261027/junit.xml",
+      "exit_code": 0,
+      "result": "2 passed in 0.82s",
+      "utc": "2026-10-27T09:30:12.9575864Z",
+      "note": "Final test and ten exercised-path production source files hashed before and after; no input drift."
+    }
+  ]
+}

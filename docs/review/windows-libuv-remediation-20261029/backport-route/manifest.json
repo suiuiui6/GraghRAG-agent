@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-29T13:41:02.806022+00:00",
+  "files": [
+    {
+      "file": "additional-sources.json",
+      "bytes": 457,
+      "sha256": "42d7b89f4d21bc3342ff74ff39ed7e2123766d3e823b7e54da8d7175bbc0c809"
+    },
+    {
+      "file": "advisories.json",
+      "bytes": 7483,
+      "sha256": "ce29685f864a0f42276a313b451b819df5db14cc2aba6548181c8152a4ccb99f"
+    },
+    {
+      "file": "fix-0f2d7e7.diff",
+      "bytes": 912,
+      "sha256": "bda7f479752dc5fba901de5f5eed0d275e41cd13374f1333ba49cbedc367f26b"
+    },
+    {
+      "file": "fix-3530bcc.diff",
+      "bytes": 671,
+      "sha256": "b1e9166aabf0eb2a74aa7a2f5fb17d4e45881f4e053d70f1c607c445b2e65fc6"
+    },
+    {
+      "file": "fix-e0327e1.diff",
+      "bytes": 471,
+      "sha256": "1b6bf12d46a5f2d654bbe10358cbcee7475756b0a89a6970fbce40abe63e265e"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 8018,
+      "sha256": "2e5e5af1e422e4a755ad74b8306a03a701739ff9b50f166afd436383f19fbc2e"
+    },
+    {
+      "file": "security.md.txt",
+      "bytes": 1321,
+      "sha256": "732e5e21c0da1b9fce01ad506a117874883548c5824819b0467f461f017f7c7f"
+    },
+    {
+      "file": "sources-success.json",
+      "bytes": 2478,
+      "sha256": "a64885fb959fb0acf7ac28e8450fecbf92df037328cc1999d0aecd828fb70f7f"
+    },
+    {
+      "file": "sources.json",
+      "bytes": 2057,
+      "sha256": "8b6ecc76b507415e9716b73855abc784b6d1977ecc493d07b4ab612f05459453"
+    },
+    {
+      "file": "v140-idna.c.txt",
+      "bytes": 5969,
+      "sha256": "8e374d4f2a57d94ec51e2512b40ee2b38ee8a42e3fb9febf49f4d30709b35eb6"
+    },
+    {
+      "file": "v140-win-getaddrinfo.c.txt",
+      "bytes": 14663,
+      "sha256": "c8be9bfd642309f3d147d0ac97bf94c24621b818a9548d9aaac2aa86bf46835d"
+    },
+    {
+      "file": "v142-ChangeLog.txt",
+      "bytes": 155647,
+      "sha256": "3b448e19778c8464156239811f954da58fcf82981cca3199ca53b015fbec6a72"
+    },
+    {
+      "file": "v142-idna.c.txt",
+      "bytes": 6333,
+      "sha256": "4dc32519b56d4880cf0282d6072adfe6b1648ec58e5deb6658bddf55b75f310b"
+    },
+    {
+      "file": "web-receipt.json",
+      "bytes": 565,
+      "sha256": "cc21b9686fa12da8a11f192f0906d7f024b6b462a1650e719200105f192541b0"
+    }
+  ]
+}

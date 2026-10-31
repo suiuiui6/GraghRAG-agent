@@ -1,0 +1,50 @@
+{
+  "prefix": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv",
+  "base_prefix": "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python",
+  "executable": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+  "user_site": false,
+  "imports": [
+    {
+      "module": "langgraph",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\langgraph"
+      ]
+    },
+    {
+      "module": "langgraph_sdk",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\langgraph_sdk\\__init__.py"
+      ]
+    },
+    {
+      "module": "langgraph.checkpoint",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\langgraph\\checkpoint"
+      ]
+    },
+    {
+      "module": "langgraph.prebuilt",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\langgraph\\prebuilt\\__init__.py"
+      ]
+    },
+    {
+      "module": "langextract",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\langextract\\__init__.py"
+      ]
+    },
+    {
+      "module": "numpy",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\numpy\\__init__.py"
+      ]
+    },
+    {
+      "module": "msgpack",
+      "paths": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages\\msgpack\\__init__.py"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,35 @@
 # 测试与覆盖率规范
 
+
+2026-10-28 R10最新：完整120 Python生产文件、2201测试全通过/零skip，原2187/2157身份保留，行16624/17802（93.382766%）、分支5481/6086（90.059152%）两个原始整数门槛分别通过；258输入与3426选定运行库/工具文件前后及独立复核时一致。见[最终证据](vector-production-integration-20261019/full-backend-20261028-r10/REPORT.md)。这是audit-only-windows的Python门槛，不代替Rust覆盖及Linux/原生安全/生产准入；以下R9失败保留为历史。
+
+
+2026-10-28 R9当前结果：2187测试全通过/零skip，旧2157身份保留；120/120完整范围，行16604/17802（93.270419%）、分支5469/6086（89.861978%），原始整数未满足双90，backend_gate=false。collect/tests/export退出0，输入及明确运行库快照稳定。见[完整机器证据](vector-production-integration-20261019/full-backend-20261028-r9/REPORT.md)。原失败R8及启动参数错误保留；继续补有效异常契约测试后须重跑全量。
+
+以上是Python覆盖率范围，不能代替第一方Rust数值辅助程序的行/分支测量。原生CLI行为/源码/构建及安全专项分别有效，不等同Rust覆盖率；原生覆盖范围与测量证据仍需核实，不能凭Python达标宣称整体提交或生产门槛已过。
+
+## 向量集成验收执行入口（2026-10-27）
+
+1019实施代码R7时完整后端范围为119个Python文件；R9新增git_identity_worker.py后自然纳入全部120个生产Python文件，包含未导入文件。以未改动的固定coverage配置及每次报告missing/extra清单核实，不借用旧104或119文件分母。新增测试执行器不属于生产分母，不改变source/omit或分别计算的整数行/分支90%门槛。
+
+在后端独立锁定环境执行；从仓库根目录启动，`PYTHONPATH`显式包含仓库根、本地`langextract`及`backend`。脚本入口与`-m pytest`的默认搜索路径不同，漏掉仓库根会使`backend.tests`导入失败。`GRAPHRAG_FROZEN_TEST_ROOT`指向已有SHA核验的冻结研究输入，不能借此替换当前生产源码。coverage工具版本、运行库、模型及环境路径以本次命令收据为准，不能硬编码其他开发者绝对路径。
+
+固定本地模型完整验收使用`GRAPHRAG_TEST_MODEL_RECEIPT`及`HF_HUB_OFFLINE=1`、`TRANSFORMERS_OFFLINE=1`；模型文件逐hash核验，禁止联网下载替代。规范命令结构为：
+
+```text
+<integration-python> -m coverage run --rcfile=docs/testing/coverage-backend-2026-10-12.ini --data-file=<report-dir>/backend.coverage backend/tests/model_dependency_bootstrap.py backend/tests backend/research/test_deepseek_scope_pilot.py -vv -ra --tb=short --durations=20 -p no:cacheprovider --basetemp=<unique-temp-dir> --junitxml=<report-dir>/junit.xml
+<integration-python> -m coverage json --rcfile=docs/testing/coverage-backend-2026-10-12.ini --data-file=<report-dir>/backend.coverage -o <report-dir>/coverage.json
+```
+
+完整测试命令须由外部执行器维持1200秒上限并记录实际退出码、完整耗时及前后SHA。执行器在coverage已启动后、pytest收集前准备可信SentenceTransformers库；不加载模型字节、不导入应用、不吞失败。其`MODEL_LIBRARY_PREPARATION_SECONDS`单列记录：准备在真实生命周期240秒marker之外，但在整条命令1200秒内。该计时与旧父进程冷启动不同，不能宣称性能改善或旧计时已通过。真实fresh子进程仍独立冷导入、校验加载模型和执行HTTP断言，60秒上限保留，合成子进程35秒保留。
+
+全量验收要求全部规定测试无failure/error/skip，同快照全部生产Python文件（R9为120）missing/extra均空，覆盖原始计数分别通过且输入稳定。collect-only、专项、混合总覆盖率或一个全量通过记录均不能替代其余生产准入检查。证据归档在[向量生产集成目录](vector-production-integration-20261019/)；此前R3/R4/R5/R6失败原样保留，含合成JWT的旧输出仅保留注明原/派生SHA的脱敏归档。
+
+Windows结果仍为audit-only-windows。pip-audit零已知公告不等于CPython/SQLite/NumPy所带原生组件及Linux容器已审通过；完整原生适用性、Linux实际构建与持久化恢复单列验收，默认生产compatibility_not_approved须按设计解除，不能由测试配置绕过。
+
+R7在2026-10-27实际执行、28日独立复核：2157通过且无失败/错误/跳过，119文件完整范围，行16456/17653、分支5440/6044，255项输入前后及复核时SHA一致；见[独立最终核验](vector-production-integration-20261019/final-backend-evidence-review-20261028/final-r7.md)及[机器报告](vector-production-integration-20261019/full-backend-20261027-r7/summary.json)。这是已冻结Windows运行库上的后端结果；后续运行库、源码或覆盖配置改变仍须重新执行适用验证。
+
+
 > 2026-10-12后续实测：后端固定89生产文件，行8670/13238=65.49%，分支2405/4446=54.09%，全量706通过21失败；已运行后端/前端漏洞扫描并检出问题。最新证据见 [双覆盖率及安全扫描](2026-10-12-coverage-security.md) 与 [独立范围审查](../review/2026-10-12-coverage-scope-review.md)。下文“当前能力边界”为此前治理落地时的历史状态；不能再将后端状态写成从未测量，也不能称已达标。
 
 权威门槛：[AGENTS.md](../../AGENTS.md)。行覆盖率和分支覆盖率分别 ≥90%，不是混合总分或增量覆盖率；跨子项目分别检查。未满足不得提交或推送，包括纯文档提交。
@@ -53,3 +83,10 @@
 最新阶段已取得完整相关子项目双90证据，覆盖下段较早“仍缺证据”的描述：后端90文件1496通过，行12698/13568、分支4154/4584；前端29文件122通过，行927/957、分支853/913；rag_eval12文件74通过，行1722/1742、分支415/440。固定范围/原始JSON/退出码/前后hash与独立评审见[最终阶段报告](2026-10-13-to90-verification.md)。Chroma公告仍阻塞安全验收，真实供应商/镜像/远程CI和保护分支未验证；不因此允许提交。用户已授权进入向量库替换设计/隔离MVP，若后续产品输入变化须重新验证适用检查。
 
 上段保留治理任务开始时的历史状态。后续用户授权已完成[首次双覆盖率及扫描](2026-10-12-coverage-security.md)，后端固定89生产文件行65.49%、分支54.09%，并未达标。当前[整改记录](2026-10-12-quality-remediation.md)包含恢复正式隔离守卫、真实行为补测和锁升级；恢复模块自然纳入分母，固定配置仍为[coverage-backend-2026-10-12.ini](coverage-backend-2026-10-12.ini)。2026-10-13在独立锁定环境运行新全量验证，结果以对应原始JSON、日志、退出码和前后输入hash为准；前端及其他相关子项目仍缺完整双指标证据。未配置可信CI机械覆盖率门禁或保护分支，无提交。
+
+
+### 2026-10-29 Rust 数值桥诊断覆盖证据
+
+第一方Rust固定范围为 `backend/native/vector_numeric/src/main.rs`；Python `build.py` 仍纳入Python完整分母，两者不混合。当前源固定Rust1.94/LLVM21.1.8，以release优化/features/target加诊断instrument-coverage及不稳定branch选项，独立重编译并真实运行61项/122进程。唯一物理行59/60（98.3333%），LLVM函数/闭包行实例61/62（补充指标），原始file分支23/24（95.8333%），各按原始整数独立判定90%。root重算两份LLVM/LCOV一致；原49项分支21/24失败保留，未覆盖项未排除。
+
+该诊断profile不等同发布二进制；全3个词法函数及2个映射闭包均执行。LLVM dead-function对照证明summary可遗漏未执行函数的分支；任何后续源变更均须重新核对全源、原始file branch数组与LCOV，零分母不能视为通过。此处不宣称隐式控制流/MC/DC覆盖。该证据只关闭当前Rust源诊断覆盖项，Linux生产运行库、模型整链与安全准入仍分别待验，compatibility_not_approved保持。详见[独立报告](vector-production-integration-20261019/remaining-tests-20261029/rust-review/REPORT.md)和[选择归档](vector-production-integration-20261019/remaining-tests-20261029/archive-manifest.json)。

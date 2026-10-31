@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-28T15:03:13.3513241+08:00",
+  "scope": "vector-numeric-bridge Cargo.lock only, 11 registry crates + root",
+  "lock_path": "C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent/backend/native/vector_numeric/Cargo.lock",
+  "lock_sha256": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+  "tool": "D:/graghRAG-agent/.tmp/vector-native-audit-20261014/tooling/bin/cargo-audit-x86_64-pc-windows-msvc-v0.22.2/cargo-audit.exe",
+  "tool_sha256": "0157f5ce1ce9fd4fb0a1f7c79af1229771d1f80b6c2613ddb0d9200a8ba73946",
+  "database_source": "https://github.com/RustSec/advisory-db.git",
+  "database_commit": "99670cfc0bc574433034b75876a4b791ccaa2efb",
+  "database_commit_time": "2026-10-27T11:02:42+01:00",
+  "database_clean": true,
+  "database_advisory_count": 1380,
+  "prior_database_commit": "21d909e4c8bd4e14c7aea58bf980c881a0053ab1",
+  "fetch_official_exit": 0,
+  "normal_audit_exit": 0,
+  "normal_audit_yanked_errors": 11,
+  "network_audit_exit": 0,
+  "network_audit_yanked_errors": 11,
+  "registry_seed": "official crates.io fetch remained Updating index >103s; own process verified and stopped, exit -1; no compile",
+  "limited_audit_exit": 0,
+  "limited_flags": [
+    "--no-fetch",
+    "--no-yanked",
+    "--json",
+    "--deny",
+    "warnings"
+  ],
+  "limited_vulnerabilities": 0,
+  "limited_warnings": 0,
+  "full_yanked_acceptance": false,
+  "limitations": [
+    "No successful yanked checks; cargo-audit exit0 did not expose stderr lookup failures in JSON warnings",
+    "Rust lock advisory result does not cover CPython/SQLite/BLAS/CRT/Torch/libuv/model-parser native components"
+  ],
+  "files": [
+    {
+      "name": "audit-no-yanked.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    {
+      "name": "audit-no-yanked.json",
+      "sha256": "7e58e2518c47a176df7a3d77cea36d85bdf5567b3c780628a4ebc86fc6066fcd",
+      "bytes": 313
+    },
+    {
+      "name": "audit-no-yanked.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "name": "audit-yanked-network.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    {
+      "name": "audit-yanked-network.json",
+      "sha256": "7e58e2518c47a176df7a3d77cea36d85bdf5567b3c780628a4ebc86fc6066fcd",
+      "bytes": 313
+    },
+    {
+      "name": "audit-yanked-network.stderr",
+      "sha256": "a77b3e598cbf02ff803cbba8dabd819c3ca4dc2d5111dd0583ce596f9cf014fa",
+      "bytes": 1128
+    },
+    {
+      "name": "audit-yanked.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    {
+      "name": "audit-yanked.json",
+      "sha256": "7e58e2518c47a176df7a3d77cea36d85bdf5567b3c780628a4ebc86fc6066fcd",
+      "bytes": 313
+    },
+    {
+      "name": "audit-yanked.stderr",
+      "sha256": "a77b3e598cbf02ff803cbba8dabd819c3ca4dc2d5111dd0583ce596f9cf014fa",
+      "bytes": 1128
+    },
+    {
+      "name": "fetch-official-escalated.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+      "bytes": 3
+    },
+    {
+      "name": "fetch-official-escalated.log",
+      "sha256": "ca36946dedf8d5cf364e15fa04f98060cbf1247afb4316c79b26eae073c5896c",
+      "bytes": 92
+    },
+    {
+      "name": "fetch-official.exit",
+      "sha256": "d6a1e3465ed106cad3c49e17b247dec0b2737e0dea99ab406371fb53b22e93a7",
+      "bytes": 5
+    },
+    {
+      "name": "fetch-official.log",
+      "sha256": "a68c7f903857a65339ccc0f713d71db2f6a8d6954025a9885b0696bdb3e760af",
+      "bytes": 170
+    },
+    {
+      "name": "registry-seed-fetch.exit",
+      "sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577",
+      "bytes": 4
+    },
+    {
+      "name": "registry-seed-fetch.log",
+      "sha256": "41aef92068c2174b1933e7546c448d67bfac5051740217d244e7791de239338c",
+      "bytes": 30
+    },
+    {
+      "name": "registry-seed-timeout.txt",
+      "sha256": "e193e6d3bfb4f2209cadeb0fa37e1fa2d9b713a11fc26854bb6745f41d2520e9",
+      "bytes": 157
+    }
+  ]
+}

@@ -17,6 +17,7 @@ services:
       - FRONTEND_URL=http://localhost
     volumes:
       - graphrag_data:/app/output
+      - graphrag_uploads:/app/uploads
       - ./backend/config:/app/config:ro
     ports:
       - "8000:8000"
@@ -72,5 +73,6 @@ services:
 
 volumes:
   graphrag_data:
+  graphrag_uploads:
   prometheus_data:
   grafana_data:

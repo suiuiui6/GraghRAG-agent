@@ -1,0 +1,52 @@
+[
+  {
+    "file": "PLAN.md",
+    "bytes": 5475,
+    "sha256": "465a25134ed5d78ddff9fcb1310acdecd879d874c521d662d190e5f19c9132ad"
+  },
+  {
+    "file": "receipt.json",
+    "bytes": 18033,
+    "sha256": "00f08e5ea759588d8f6f39e64e3b063b77457a73b0341a267a73143fb3147ce5"
+  },
+  {
+    "file": "preflight.py",
+    "bytes": 2742,
+    "sha256": "166842e7140a97b7516d4b0cf1084c6a6180617fc1e07152073aa8b315ecbf65"
+  },
+  {
+    "file": "source/receipt.json",
+    "bytes": 2384,
+    "sha256": "6b6d5089b463222ba103472666afc52093c177edbdc3f73f18397d2ea11dc44c"
+  },
+  {
+    "file": "source/oss2-retry1-receipt.json",
+    "bytes": 856,
+    "sha256": "4d3db0a792f30cce16901e4fdb94bad3f6d9535dd3a778ec4bc96e8ae74fcc1b"
+  },
+  {
+    "file": "source/crcmod-1.7.tar.gz",
+    "bytes": 89670,
+    "sha256": "dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e"
+  },
+  {
+    "file": "source/oss2-2.19.1-retry1.tar.gz",
+    "bytes": 298845,
+    "sha256": "a8ab9ee7eb99e88a7e1382edc6ea641d219d585a7e074e3776e9dec9473e59c1"
+  },
+  {
+    "file": "source/crcmod-setup.py.txt",
+    "bytes": 1983,
+    "sha256": "129c37991924b5950aa28a5f854cd44a3f5af1d3c92c616897409a05b0fce40b"
+  },
+  {
+    "file": "source/oss2-setup.py.txt",
+    "bytes": 1705,
+    "sha256": "21128b30e6138cc4fe03aca66c7ecb2936a164ed984abf6db27e0219a3d8688e"
+  },
+  {
+    "file": "source/oss2-setup.cfg.txt",
+    "bytes": 38,
+    "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e"
+  }
+]

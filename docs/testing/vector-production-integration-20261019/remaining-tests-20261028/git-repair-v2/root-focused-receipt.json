@@ -1,0 +1,44 @@
+{
+  "command": [
+    "D:/graghRAG-agent/.tmp/backend-runtime-20261028/.venv/Scripts/python.exe",
+    "-B",
+    "-m",
+    "pytest",
+    "backend/tests/test_git_identity_deadline.py",
+    "backend/tests/test_error_handling_policy.py",
+    "backend/tests/test_local_scope_v2.py",
+    "backend/tests/test_scope_v2.py",
+    "-q",
+    "--tb=short",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\root-focused-v2\\temp",
+    "--junitxml=D:\\graghRAG-agent\\.tmp\\git-identity-fix-20261028\\root-focused-v2\\junit.xml"
+  ],
+  "env_overrides": {
+    "PYTHONPATH": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent;C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend;C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\langextract",
+    "PYTHON_DOTENV_DISABLED": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "GRAPHRAG_FROZEN_TEST_ROOT": "D:/graghRAG-agent"
+  },
+  "exit": 0,
+  "elapsed_seconds": 110.53099999999995,
+  "before": {
+    "backend/research/local_scope_v2.py": "70ab4227fbfa4583b7ad11bbc5406f12dffd85c2f708af8acd2ff955688be6d4",
+    "backend/research/git_identity_worker.py": "915ffed9ef4ba8f6dfd57024f0bcdc2d6d373f3df8b6c1ceb5b2da3cde4580d1",
+    "backend/tests/test_git_identity_deadline.py": "9bec72304edf58e3b64acf6717f7dbd93264d4271b896ed81bc4e6c4b24e8d12",
+    "backend/tests/test_error_handling_policy.py": "878c25ceb3e52501436db369591de4aa85da3ae6d3e0399cb9a0a8a0baade2bf",
+    "backend/research/LOCAL_SCOPE_V2.md": "5c738d376724d9544133e935c2c2048b5a8a4ba4202e886d436ae0aec548a06f"
+  },
+  "after": {
+    "backend/research/local_scope_v2.py": "70ab4227fbfa4583b7ad11bbc5406f12dffd85c2f708af8acd2ff955688be6d4",
+    "backend/research/git_identity_worker.py": "915ffed9ef4ba8f6dfd57024f0bcdc2d6d373f3df8b6c1ceb5b2da3cde4580d1",
+    "backend/tests/test_git_identity_deadline.py": "9bec72304edf58e3b64acf6717f7dbd93264d4271b896ed81bc4e6c4b24e8d12",
+    "backend/tests/test_error_handling_policy.py": "878c25ceb3e52501436db369591de4aa85da3ae6d3e0399cb9a0a8a0baade2bf",
+    "backend/research/LOCAL_SCOPE_V2.md": "5c738d376724d9544133e935c2c2048b5a8a4ba4202e886d436ae0aec548a06f"
+  },
+  "stable": true,
+  "scope": "Focused actual-worktree regressions only; not full coverage acceptance"
+}

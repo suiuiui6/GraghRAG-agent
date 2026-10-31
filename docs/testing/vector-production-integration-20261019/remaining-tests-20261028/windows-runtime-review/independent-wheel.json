@@ -1,0 +1,15 @@
+{
+  "wheel_sha256": "3ec409b0d6aa8e9eec6eaf881b893caa215dbe68c5319ca96e8a271d81bb111d",
+  "installed_wheel_equal_files": [
+    "msgpack/__init__.py",
+    "msgpack/_cmsgpack.cp312-win_amd64.pyd",
+    "msgpack/exceptions.py",
+    "msgpack/ext.py",
+    "msgpack/fallback.py",
+    "msgpack-1.2.3.dist-info/licenses/COPYING",
+    "msgpack-1.2.3.dist-info/METADATA",
+    "msgpack-1.2.3.dist-info/WHEEL",
+    "msgpack-1.2.3.dist-info/top_level.txt"
+  ],
+  "installed_RECORD_hash_entries": 13
+}

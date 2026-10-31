@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-29T00:24:02.258231+00:00",
+  "client_day": "2026-10-29",
+  "scope": "All33118 copied package payload files plus49 local LangExtract source files, source and target checked against initial pre-R10 assembly manifest. msgpack replaced separately and captured by R10 critical inputs; no claim of all unlisted environment files.",
+  "entries": 33167,
+  "manifest_sha256": {
+    "copied-unchanged-files.json": "3ee44276462a70f9ef2cb9090dfe261548ff7dc09e3a57b3a2dd1246285026bc",
+    "langextract-source-files.json": "d49efe7782cfd2becddfe0be7cc8bed09dc81e06c30bba86703c590d108af02f"
+  },
+  "differences": [],
+  "elapsed_seconds": 80.57800000000134,
+  "mutation": "No runtime, source, old manifest or report written; only this new receipt"
+}

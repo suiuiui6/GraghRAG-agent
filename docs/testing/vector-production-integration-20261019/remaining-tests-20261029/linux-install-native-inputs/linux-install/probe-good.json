@@ -1,0 +1,41 @@
+{
+  "kind": "good",
+  "uid": 65534,
+  "checks": [
+    "where:0",
+    "where:9223372036854775807",
+    "where:9223372036854775808",
+    "where:18446744073709551615",
+    "where:-9223372036854775808",
+    "where:1.5",
+    "write_denied:/app/native/vector_numeric/bin/x86_64-unknown-linux-gnu/vector-numeric-bridge",
+    "write_denied:/app/native/vector_numeric/bin/x86_64-unknown-linux-gnu/approved-build.json",
+    "write_denied:/app/native/vector_numeric/src/main.rs",
+    "create_denied:/app/native/vector_numeric/bin/x86_64-unknown-linux-gnu",
+    "create_denied:/app/native/vector_numeric",
+    "create_denied:/app/native/vector_numeric/src",
+    "create_denied:/app/native",
+    "create_denied:/app",
+    "metadata_formatter_and_nonfinite_boundaries"
+  ],
+  "manifest_bytes": 854,
+  "binary_sha256": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0",
+  "modes": {
+    "/app/native/vector_numeric": {
+      "mode": "0o555",
+      "uid": 0
+    },
+    "/app/native/vector_numeric/bin/x86_64-unknown-linux-gnu/vector-numeric-bridge": {
+      "mode": "0o555",
+      "uid": 0
+    },
+    "/app/native/vector_numeric/bin/x86_64-unknown-linux-gnu/approved-build.json": {
+      "mode": "0o444",
+      "uid": 0
+    },
+    "/app/native/vector_numeric/src/main.rs": {
+      "mode": "0o444",
+      "uid": 0
+    }
+  }
+}

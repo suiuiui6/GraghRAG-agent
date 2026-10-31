@@ -1,0 +1,72 @@
+[
+  {
+    "file": "ancestor-collection-error.exit",
+    "sha256": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\ancestor-collection-error.exit"
+  },
+  {
+    "file": "ancestor-collection-error.log",
+    "sha256": "5269ce90e4294abd911d3ddaf303a6833435f248761062f7fc95934cc547ffdb",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\ancestor-collection-error.log"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "b09e171576e8dc1c121d7892c22eef29e77e84f629b90ffb8251879c70e35cee",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\commands.json"
+  },
+  {
+    "file": "cwd-collection-error.exit",
+    "sha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\cwd-collection-error.exit"
+  },
+  {
+    "file": "cwd-collection-error.log",
+    "sha256": "a136eb2d55e586c98c21a5742a2cc603e41bd2524dbc2ba1ee45593e05397f67",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\cwd-collection-error.log"
+  },
+  {
+    "file": "inputs-reviewed.json",
+    "sha256": "3c791e60230529601b12b2fc1d6309650a4efa15e526839b87c000df6687db5a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\inputs-reviewed.json"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "896ac610b2a3261d524dd2f3ea929b19c0ef4616bdb069e30b70168a4d0e2666",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\junit.xml"
+  },
+  {
+    "file": "junit2.xml",
+    "sha256": "2a7db47fbf982ebbbb394f2ed1b5aff47fc67111557f0ea08b897989f1f3c119",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\junit2.xml"
+  },
+  {
+    "file": "junit3.xml",
+    "sha256": "127ed83cf5e063d533908ebfe6183ef248335f3d618f5b9c31b5bccec6dc3420",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\junit3.xml"
+  },
+  {
+    "file": "lifecycle-reviewed.diff",
+    "sha256": "813f8d50909e7f19120f5f27f69e8510f2159c994f0fe607c0519ad121480be2",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\lifecycle-reviewed.diff"
+  },
+  {
+    "file": "pytest.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\pytest.exit"
+  },
+  {
+    "file": "pytest.log",
+    "sha256": "41d2344dacf5dbd7d693c405fd74dd722530d9ece99951b3d8623709265b0edd",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\pytest.log"
+  },
+  {
+    "file": "report.md",
+    "sha256": "bd32d74009a8a4b73b09e9cf0c84d9721c043b5d28f13570f598ae32603452d8",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\report.md"
+  },
+  {
+    "file": "review_inputs.py",
+    "sha256": "6de660d9f5b68f81437286d7c57cb8c06b5abef89066b4c2480694aa06844c14",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\restart-admission-review-20261027\\review_inputs.py"
+  }
+]

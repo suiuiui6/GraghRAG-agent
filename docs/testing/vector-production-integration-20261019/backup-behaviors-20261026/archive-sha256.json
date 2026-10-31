@@ -1,0 +1,32 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "30121d8139d6470ba4797a97d3a08d1ee0fd06800c705db8cd88d8299f55a6b7",
+    "source": "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\report.md"
+  },
+  {
+    "file": "hashes.json",
+    "sha256": "225a1c52f9a717ec70092208184a5c18342ec1e6b0ae2ce3787e0a068e2812b7",
+    "source": "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\hashes.json"
+  },
+  {
+    "file": "branch-delta.json",
+    "sha256": "104d9af70202ecfca61485a7144a13d5a7d99a7fb382e8986296240efd6509d3",
+    "source": "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\branch-delta.json"
+  },
+  {
+    "file": "green3.log",
+    "sha256": "3760b2f160bbb26880fd766662b741d2a63112ce0365197756efc3e9666ccb3d",
+    "source": "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\green3.log"
+  },
+  {
+    "file": "green.log",
+    "sha256": "7906f6b71f82b1ed16d02907fe1a348f45aa30f1b3535b35f56a702366c46283",
+    "source": "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\green.log"
+  },
+  {
+    "file": "green2.log",
+    "sha256": "8fe1fe5d35df0b5028dd5b3e66309dd44f6d5047790c7ab43d5b04730694ce42",
+    "source": "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\green2.log"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "scope": "Private libuv1.53 verified-source/27locked-deb offline Docker tool image and <=600s WindowsAMD64 crosscompile/static PE; no formal runtime replacement",
+  "user_decision": "授权隔离构建（推荐）",
+  "prior_auto_review_rejection_preserved": true,
+  "authorized_build_exits": [
+    0,
+    0
+  ],
+  "candidate_runtime_adoption": false
+}

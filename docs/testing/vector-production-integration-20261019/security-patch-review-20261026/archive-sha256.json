@@ -1,0 +1,27 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "c9ef442eade946c40058b6dafba1c3c7297ac400c2b298f46ff9f7a45cf30538",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-patch-review-20261026\\report.md"
+  },
+  {
+    "file": "receipt.json",
+    "sha256": "fe7bac37284b9ea96a95c17f09180ce9df803a56fde2a97b1bea801d0c9c4692",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-patch-review-20261026\\receipt.json"
+  },
+  {
+    "file": "contract-receipt.json",
+    "sha256": "ae1a4fb386657ac11c691cb155cf5b1fbe05da580e143835b4f30f5aa3ed1935",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-patch-review-20261026\\contract-receipt.json"
+  },
+  {
+    "file": "review.py",
+    "sha256": "a55ae773b832d38e356190bb572e041fbd37bcaaf90e37ec344f2ad1a35abff2",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-patch-review-20261026\\review.py"
+  },
+  {
+    "file": "contract_probe.py",
+    "sha256": "398a8afe13435043e6e0d2bd0ae9abbe003cffba2fda7196952eb573d98166ed",
+    "source": "D:\\graghRAG-agent\\.tmp\\security-patch-review-20261026\\contract_probe.py"
+  }
+]

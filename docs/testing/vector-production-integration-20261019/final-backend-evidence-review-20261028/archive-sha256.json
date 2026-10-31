@@ -1,0 +1,17 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "e6237b49d1c8bd5e92c39787f5c0f2502266c62d8b1636b8303bf2e3b4341788",
+    "source": "D:\\graghRAG-agent\\.tmp\\final-backend-evidence-review-20261027\\report.md"
+  },
+  {
+    "file": "final-r7.md",
+    "sha256": "1ddfecd9b2664b6db49d6dfa599f00a5f5c18ec4e765733ad93368edbc1bb5e1",
+    "source": "D:\\graghRAG-agent\\.tmp\\final-backend-evidence-review-20261027\\final-r7.md"
+  },
+  {
+    "file": "final-r7.json",
+    "sha256": "c9bb4e13927dcb1d249d87f061c68fcf5e1269336d44572085cdf45e0adeb4ea",
+    "source": "D:\\graghRAG-agent\\.tmp\\final-backend-evidence-review-20261027\\final-r7.json"
+  }
+]

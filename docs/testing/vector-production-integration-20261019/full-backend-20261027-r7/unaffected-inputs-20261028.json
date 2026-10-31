@@ -1,0 +1,9 @@
+{
+  "baseline": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\testing\\vector-production-integration-20261019\\baseline\\inputs.json",
+  "baseline_sha256": "cd5c529f19feaa52e3a71268b246882e545210acc2c6595e0b02b5464e1b9e7d",
+  "frontend_count": 48,
+  "rag_eval_count": 34,
+  "compared": 82,
+  "mismatches": [],
+  "limits": "Registered input SHA comparison only, not newly executed frontend or rag tests."
+}

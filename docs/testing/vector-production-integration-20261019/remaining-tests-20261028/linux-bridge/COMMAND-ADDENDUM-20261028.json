@@ -1,0 +1,31 @@
+{
+  "record_kind": "retrospective transcription from retained actual tool invocation; not contemporaneous receipt",
+  "original_report_or_manifest_modified": false,
+  "docker_argv": [
+    "docker", "run", "--rm", "--network", "none", "--cpus=1", "--memory=512m",
+    "--env", "CARGO_HOME=/cargo-home",
+    "--env", "CARGO_TARGET_DIR=/target-linux",
+    "--mount", "type=bind,source=D:/graghRAG-agent/.tmp/linux-vector-bridge-20261028/source,target=/source,readonly",
+    "--mount", "type=bind,source=D:/graghRAG-agent/.tmp/linux-vector-bridge-20261028/cargo-home,target=/cargo-home",
+    "--mount", "type=bind,source=D:/graghRAG-agent/.tmp/linux-vector-bridge-20261028/vendor,target=/vendor,readonly",
+    "--mount", "type=bind,source=D:/graghRAG-agent/.tmp/linux-vector-bridge-20261028/target-linux,target=/target-linux",
+    "--workdir", "/source",
+    "rust@sha256:a86cada82e36ebd7a9bffed7548792c55a952fdb20718eea9278a936bcb76e62",
+    "cargo", "+1.94.0", "build", "--offline", "--locked", "--release", "--jobs", "1", "--target", "x86_64-unknown-linux-gnu"
+  ],
+  "explicit_container_env": {"CARGO_HOME": "/cargo-home", "CARGO_TARGET_DIR": "/target-linux"},
+  "rustflags_explicitly_supplied": false,
+  "actual_release_fingerprint_rustflags": [],
+  "private_cargo_config": "cargo-home/config.toml: crates-io replaced by vendored-sources directory /vendor; net.offline=true",
+  "stdout_stderr_redirection": "PowerShell *> D:/graghRAG-agent/.tmp/linux-vector-bridge-20261028/linux-release-build.log",
+  "exit_capture": "$code=$LASTEXITCODE; Set-Content linux-release-build.exit -Value $code; exit $code",
+  "actual_exit": 0,
+  "cargo_reported_release_seconds": 25.23,
+  "exact_start_utc": null,
+  "tool_record_locators": {"outer_running_cell": "10", "exec_command_session": 17830, "completion_chunk": "ba68f8"},
+  "binary_relative_path": "target-linux/x86_64-unknown-linux-gnu/release/vector-numeric-bridge",
+  "binary_sha256": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0",
+  "candidate_only": true,
+  "approved": false,
+  "new_execution_performed_for_addendum": false
+}

@@ -1,0 +1,192 @@
+{
+  "prior_http_actual_image": "sha256:f4e637023bdc366728472bcaa271002d2d69ad6065c6bd6e7b706ed9c4d1df83",
+  "mismatches": [],
+  "prior_http_actual_mounts": [
+    {
+      "Type": "bind",
+      "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\model",
+      "Destination": "/models/bge-small-zh-v1.5",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\model-receipt-linux.json",
+      "Destination": "/model-receipt.json",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\outputs",
+      "Destination": "/evidence",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\acceptance-data\\uploads",
+      "Destination": "/source/backend/uploads",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\acceptance-data\\output",
+      "Destination": "/source/backend/output",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\source",
+      "Destination": "/source",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  ],
+  "artifact_to_installed_versions": 158,
+  "prior_http_actual_exit": 0,
+  "prior_http_actual_user": "65534:65534",
+  "prior_http_actual_hostconfig": {
+    "Binds": null,
+    "ContainerIDFile": "",
+    "LogConfig": {
+      "Type": "json-file",
+      "Config": {}
+    },
+    "NetworkMode": "none",
+    "PortBindings": {},
+    "RestartPolicy": {
+      "Name": "no",
+      "MaximumRetryCount": 0
+    },
+    "AutoRemove": false,
+    "VolumeDriver": "",
+    "VolumesFrom": null,
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "CapAdd": null,
+    "CapDrop": [
+      "ALL"
+    ],
+    "CgroupnsMode": "private",
+    "Dns": null,
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IpcMode": "private",
+    "Cgroup": "",
+    "Links": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyRootfs": true,
+    "SecurityOpt": [
+      "no-new-privileges"
+    ],
+    "Tmpfs": {
+      "/tmp": "rw,nosuid,size=1073741824,mode=1777"
+    },
+    "UTSMode": "",
+    "UsernsMode": "",
+    "ShmSize": 67108864,
+    "Runtime": "runc",
+    "Isolation": "",
+    "CpuShares": 0,
+    "Memory": 4294967296,
+    "NanoCpus": 2000000000,
+    "CgroupParent": "",
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": [],
+    "BlkioDeviceReadBps": [],
+    "BlkioDeviceWriteBps": [],
+    "BlkioDeviceReadIOps": [],
+    "BlkioDeviceWriteIOps": [],
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "Devices": [],
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "MemoryReservation": 0,
+    "MemorySwap": 8589934592,
+    "MemorySwappiness": null,
+    "OomKillDisable": null,
+    "PidsLimit": 128,
+    "Ulimits": [],
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "IOMaximumIOps": 0,
+    "IOMaximumBandwidth": 0,
+    "Mounts": [
+      {
+        "Type": "bind",
+        "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\source",
+        "Target": "/source",
+        "ReadOnly": true
+      },
+      {
+        "Type": "bind",
+        "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\model",
+        "Target": "/models/bge-small-zh-v1.5",
+        "ReadOnly": true
+      },
+      {
+        "Type": "bind",
+        "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\model-receipt-linux.json",
+        "Target": "/model-receipt.json",
+        "ReadOnly": true
+      },
+      {
+        "Type": "bind",
+        "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\outputs",
+        "Target": "/evidence"
+      },
+      {
+        "Type": "bind",
+        "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\acceptance-data\\uploads",
+        "Target": "/source/backend/uploads"
+      },
+      {
+        "Type": "bind",
+        "Source": "D:\\graghRAG-agent\\.tmp\\linux-cpu-acceptance-20261029\\acceptance-data\\output",
+        "Target": "/source/backend/output"
+      }
+    ],
+    "MaskedPaths": [
+      "/proc/acpi",
+      "/proc/asound",
+      "/proc/interrupts",
+      "/proc/kcore",
+      "/proc/keys",
+      "/proc/latency_stats",
+      "/proc/sched_debug",
+      "/proc/scsi",
+      "/proc/timer_list",
+      "/proc/timer_stats",
+      "/sys/devices/virtual/powercap",
+      "/sys/firmware"
+    ],
+    "ReadonlyPaths": [
+      "/proc/bus",
+      "/proc/fs",
+      "/proc/irq",
+      "/proc/sys",
+      "/proc/sysrq-trigger"
+    ]
+  }
+}

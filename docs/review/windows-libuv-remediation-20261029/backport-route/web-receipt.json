@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-29",
+  "method": "platform web open/search; URLs retained; not raw downloaded page artifacts",
+  "sources": [
+    "https://github.com/libuv/libuv/security/advisories/GHSA-f74f-cvh7-c6q6",
+    "https://github.com/libuv/libuv/security/policy",
+    "https://github.com/libuv/libuv/security/advisories",
+    "https://nodejs.org/en/blog/vulnerability/july-2021-security-releases",
+    "https://github.com/libuv/libuv/issues/4416"
+  ],
+  "limitations": "issues/4416 available as official search excerpt only; no exact 2021 patch fetched"
+}

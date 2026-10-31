@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import httpx
 import pytest
+from backend.tests.frozen_input_helpers import current_module, frozen_p0_root
 from research.common_three_arm import build_schedule, scan_chunks, unit_guard_class, ResourceCap, verify_files, prove_p0_path, supervise, clear_unit_cache, child_environment
 
 
@@ -72,7 +73,8 @@ def test_hash_drift_is_rejected(tmp_path):
 
 
 def test_frozen_p0_call_bound_uses_one_preprocess_plus_two_generation():
-    root=Path(__file__).resolve().parents[2]/'.tmp/public-dev-budget-20261015-r2'
+    current_module('common_three_arm', namespace='research')
+    root=frozen_p0_root()
     proof=prove_p0_path(root)
     assert proof['preprocess_attempts']==1
     assert proof['generation_attempts']==2

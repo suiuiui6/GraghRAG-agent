@@ -1,4 +1,4 @@
-from tests.request_helpers import admin_request
+from tests.request_helpers import admin_request, registered_compat_admin
 import json
 import asyncio
 from pathlib import Path
@@ -337,12 +337,21 @@ def test_legacy_query_invoke_passes_recursion_limit():
     }
 
 
-def test_legacy_query_route_degrades_gracefully_on_graph_recursion_limit(monkeypatch):
+def test_legacy_query_route_degrades_gracefully_on_graph_recursion_limit(monkeypatch, tmp_path):
+    from tests.legacy_query_helpers import register_legacy_query_graph, assert_registered_query_graph
+    document = register_legacy_query_graph(monkeypatch, tmp_path)
+    calls = []
+
     class DummyAgent:
         def invoke(self, payload, config=None):
+            calls.append((payload, config))
             raise query_route.GraphRecursionError("limit reached")
 
-    monkeypatch.setattr(query_route, "_build_agent", lambda graph: DummyAgent())
+    def build_agent(graph):
+        assert_registered_query_graph(graph, document)
+        return DummyAgent()
+
+    monkeypatch.setattr(query_route, "_build_agent", build_agent)
     monkeypatch.setattr(query_route, "G_grounded", None)
 
     response = asyncio.run(
@@ -356,6 +365,10 @@ def test_legacy_query_route_degrades_gracefully_on_graph_recursion_limit(monkeyp
     )
 
     assert "步数预算" in response.answer
+    assert len(calls) == 1
+    assert calls[0][0] == {"messages": [("user", response.query)]}
+    assert calls[0][1] == {"recursion_limit": query_route.LEGACY_QUERY_RECURSION_LIMIT}
+    assert response.metadata["document_ids"] == [document["document_id"]]
     assert response.metadata["step_limited"] is True
     assert response.metadata["error_code"] == "GRAPH_RECURSION_LIMIT"
     assert (

@@ -5,16 +5,16 @@ from pathlib import Path
 
 import pytest
 
-ROOT = Path(__file__).resolve().parents[2]
+from backend.tests.frozen_input_helpers import CODE_ROOT as ROOT, current_module, frozen_gold
 
 
 def tool():
     assert (ROOT / 'backend/research/gold_v2.py').exists(), 'v2 loader not implemented'
-    return importlib.import_module('backend.research.gold_v2')
+    return current_module('gold_v2')
 
 
 def test_frozen_package_counts():
-    package = tool().load_gold(ROOT)
+    package = frozen_gold()
     assert package.summary == {'questions': 9, 'core_items': 31,
                                'required_attributes': 125, 'optional_attributes': 25,
                                'exact_evidence_associations': 172, 'source_documents': 3}
@@ -22,7 +22,7 @@ def test_frozen_package_counts():
 
 def test_future_coverage_uses_numbered_target():
     m = tool()
-    p = m.load_gold(ROOT)
+    p = frozen_gold()
     q = next(q for q in p.data['questions'] if q['id'] == 'D1-FUTURE-v2')
     assert m.coverage_status(q, [('D1', 20059, 20157)]) == 'COMPLETE'
     assert m.coverage_status(q, [('D1', 20059, 20156)]) == 'PARTIAL'
@@ -32,7 +32,7 @@ def test_future_coverage_uses_numbered_target():
 @pytest.mark.parametrize('mutation', ['version', 'span', 'evidence', 'duplicate', 'optional'])
 def test_schema_and_source_drift_rejected(mutation):
     m = tool()
-    p = m.load_gold(ROOT)
+    p = frozen_gold()
     data = copy.deepcopy(p.data)
     if mutation == 'version':
         data['version'] = '1.0'
@@ -67,7 +67,7 @@ def test_unicode_newline_convention():
 
 def test_empty_set_requires_full_visible_scope():
     m = tool()
-    p = m.load_gold(ROOT)
+    p = frozen_gold()
     q = next(q for q in p.data['questions'] if q['id'] == 'D2-NONE-v2')
     assert m.coverage_status(q, []) == 'MISSING'
     assert m.coverage_status(q, [('D2', 12251, 13000), ('D2', 13000, 13474)]) == 'COMPLETE'
@@ -76,7 +76,7 @@ def test_empty_set_requires_full_visible_scope():
 
 def test_absence_proof_requires_exact_text():
     m = tool()
-    p = m.load_gold(ROOT)
+    p = frozen_gold()
     data = copy.deepcopy(p.data)
     q = next(q for q in data['questions'] if q['id'] == 'D2-NONE-v2')
     q['empty_set_proof'] = copy.deepcopy(q['empty_set_proof'])

@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-29T12:40:47.637117+00:00",
+  "checks": [
+    {
+      "name": "import",
+      "argv": [
+        "C:/Program Files/Git/usr/bin/gpg.exe",
+        "--homedir",
+        "/d/graghRAG-agent/.tmp/windows-libuv-inputs-independent-review-20261029/gnupg",
+        "--batch",
+        "--no-auto-key-retrieve",
+        "--import",
+        "/d/graghRAG-agent/.tmp/windows-libuv-cross-mvp-20261029/maintainer-current.gpg.asc"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "fingerprint",
+      "argv": [
+        "C:/Program Files/Git/usr/bin/gpg.exe",
+        "--homedir",
+        "/d/graghRAG-agent/.tmp/windows-libuv-inputs-independent-review-20261029/gnupg",
+        "--batch",
+        "--no-auto-key-retrieve",
+        "--with-colons",
+        "--fingerprint"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "verify",
+      "argv": [
+        "C:/Program Files/Git/usr/bin/gpg.exe",
+        "--homedir",
+        "/d/graghRAG-agent/.tmp/windows-libuv-inputs-independent-review-20261029/gnupg",
+        "--batch",
+        "--no-auto-key-retrieve",
+        "--status-fd",
+        "1",
+        "--verify",
+        "/d/graghRAG-agent/.tmp/windows-libuv-cross-mvp-20261029/libuv-v1.53.0.tar.gz.sign",
+        "/d/graghRAG-agent/.tmp/windows-libuv-cross-mvp-20261029/libuv-v1.53.0.tar.gz"
+      ],
+      "exit": 0
+    }
+  ],
+  "sealed_files_verified": 70
+}

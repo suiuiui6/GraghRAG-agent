@@ -1,0 +1,23 @@
+--- R4-bound-baseline
++++ stdin-candidate
+@@ -345,7 +345,7 @@
+ from tests.test_vector_http_lifecycle import PROFILE, SyntheticEmbedding
+ import routes
+ from routes import documents, rag_query
+-args = json.loads(sys.argv[1])
++args = json.load(sys.stdin)
+ auth_service.USERS_DIR = Path(args['users'])
+ auth_service._service = auth_service.AuthService()
+ routes._docs_store = []
+@@ -370,9 +370,9 @@
+     env = {**os.environ, 'PYTHONPATH': str(Path(__file__).resolve().parents[1]),
+            'JWT_SECRET_KEY': SECRET, 'LANGEXTRACT_BASE_URL': provider_url,
+            'LANGEXTRACT_API_KEY': 'local-boundary-only'}
+-    result = subprocess.run([sys.executable, '-c', program, json.dumps({'root': str(config.root),
++    result = subprocess.run([sys.executable, '-c', program], input=json.dumps({'root': str(config.root),
+                               'users': str(auth_service.USERS_DIR), 'doc': doc, 'headers': headers,
+-                              'profile': service.model_profile})],
++                              'profile': service.model_profile}),
+                             env=env, capture_output=True, text=True,
+                             timeout=60 if 'files_sha256' in service.model_profile else 35)
+     assert result.returncode == 0, result.stdout + result.stderr

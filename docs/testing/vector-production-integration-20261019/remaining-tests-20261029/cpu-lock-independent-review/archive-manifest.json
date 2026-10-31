@@ -1,0 +1,42 @@
+[
+  {
+    "file": "REPORT.md",
+    "bytes": 8381,
+    "sha256": "deea82601718bf99a2612f0b6d8430685cffdeb4318ce01ff84419e757da3a55"
+  },
+  {
+    "file": "receipt.json",
+    "bytes": 57789,
+    "sha256": "8b8bbc573511fd50520fbf5922fa1188373e27adfefd104e96cb3b012d45db6c"
+  },
+  {
+    "file": "review.py",
+    "bytes": 6053,
+    "sha256": "7b5ca958da923c43ca7cbef0f4f76f367feae00769d7e94f3d5db6d0d4475734"
+  },
+  {
+    "file": "review.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "review.log",
+    "bytes": 152,
+    "sha256": "d9a6da063732cd8dc383dc477a14b0b66dd98f799e6ad1984010ec46ff2b5732"
+  },
+  {
+    "file": "check_project_delta.py",
+    "bytes": 987,
+    "sha256": "83fac76dfbe6389ad2ed1b6c88fed8b3c3e03d1aba22c24eb6ea6c7c8f524ab0"
+  },
+  {
+    "file": "project-delta.exit",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "file": "project-delta.log",
+    "bytes": 235,
+    "sha256": "835db5b777186b50459cfc337322ff5dba13cd2b673c0e0039c451b6c10fc49c"
+  }
+]

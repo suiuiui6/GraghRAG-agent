@@ -1,0 +1,539 @@
+{
+  "wheel": "D:\\graghRAG-agent\\.tmp\\linux-cpu-patched-artifacts-20261029\\wheels\\langgraph_sdk-0.4.6-py3-none-any.whl",
+  "wheel_sha256": "57122b02bda41d37a97a5e09eb018aa8c9b3dc85c433880073779bd9324b7eea",
+  "import_path": "D:\\graghRAG-agent\\.tmp\\linux-cpu-patched-artifacts-20261029\\wheels\\langgraph_sdk-0.4.6-py3-none-any.whl\\langgraph_sdk\\__init__.py",
+  "runtime": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+  "mode": "wheel zip sys.path overlay onto existing locked runtime; real asyncio event loop, no fresh install/external network/real server",
+  "cases": 44,
+  "mismatches": 0,
+  "rows": [
+    {
+      "site": "sync-tree",
+      "identity": "normal-id",
+      "actual": {
+        "path": "/assistants/normal-id/graph",
+        "raw_path": "/assistants/normal-id/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/normal-id/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "normal-id",
+      "actual": {
+        "path": "/assistants/normal-id/graph",
+        "raw_path": "/assistants/normal-id/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/normal-id/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "normal-id",
+      "actual": {
+        "path": "/threads/normal-id/state",
+        "raw_path": "/threads/normal-id/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/normal-id/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "normal-id",
+      "actual": {
+        "path": "/threads/normal-id/state",
+        "raw_path": "/threads/normal-id/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/normal-id/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "../store/items?namespace=x&key=y",
+      "actual": {
+        "path": "/assistants/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/graph",
+        "raw_path": "/assistants/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "../store/items?namespace=x&key=y",
+      "actual": {
+        "path": "/assistants/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/graph",
+        "raw_path": "/assistants/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "../store/items?namespace=x&key=y",
+      "actual": {
+        "path": "/threads/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/state",
+        "raw_path": "/threads/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "../store/items?namespace=x&key=y",
+      "actual": {
+        "path": "/threads/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/state",
+        "raw_path": "/threads/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/..%2Fstore%2Fitems%3Fnamespace%3Dx%26key%3Dy/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": ".",
+      "actual": {
+        "path": "/assistants/%2E/graph",
+        "raw_path": "/assistants/%2E/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/%2E/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": ".",
+      "actual": {
+        "path": "/assistants/%2E/graph",
+        "raw_path": "/assistants/%2E/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/%2E/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": ".",
+      "actual": {
+        "path": "/threads/%2E/state",
+        "raw_path": "/threads/%2E/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/%2E/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": ".",
+      "actual": {
+        "path": "/threads/%2E/state",
+        "raw_path": "/threads/%2E/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/%2E/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "..",
+      "actual": {
+        "path": "/assistants/%2E%2E/graph",
+        "raw_path": "/assistants/%2E%2E/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/%2E%2E/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "..",
+      "actual": {
+        "path": "/assistants/%2E%2E/graph",
+        "raw_path": "/assistants/%2E%2E/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/%2E%2E/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "..",
+      "actual": {
+        "path": "/threads/%2E%2E/state",
+        "raw_path": "/threads/%2E%2E/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/%2E%2E/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "..",
+      "actual": {
+        "path": "/threads/%2E%2E/state",
+        "raw_path": "/threads/%2E%2E/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/%2E%2E/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "a/b",
+      "actual": {
+        "path": "/assistants/a%2Fb/graph",
+        "raw_path": "/assistants/a%2Fb/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/a%2Fb/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "a/b",
+      "actual": {
+        "path": "/assistants/a%2Fb/graph",
+        "raw_path": "/assistants/a%2Fb/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/a%2Fb/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "a/b",
+      "actual": {
+        "path": "/threads/a%2Fb/state",
+        "raw_path": "/threads/a%2Fb/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/a%2Fb/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "a/b",
+      "actual": {
+        "path": "/threads/a%2Fb/state",
+        "raw_path": "/threads/a%2Fb/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/a%2Fb/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "a%2Fb",
+      "actual": {
+        "path": "/assistants/a%252Fb/graph",
+        "raw_path": "/assistants/a%252Fb/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/a%252Fb/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "a%2Fb",
+      "actual": {
+        "path": "/assistants/a%252Fb/graph",
+        "raw_path": "/assistants/a%252Fb/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/a%252Fb/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "a%2Fb",
+      "actual": {
+        "path": "/threads/a%252Fb/state",
+        "raw_path": "/threads/a%252Fb/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/a%252Fb/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "a%2Fb",
+      "actual": {
+        "path": "/threads/a%252Fb/state",
+        "raw_path": "/threads/a%252Fb/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/a%252Fb/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "\u6d4b\u8bd5",
+      "actual": {
+        "path": "/assistants/%E6%B5%8B%E8%AF%95/graph",
+        "raw_path": "/assistants/%E6%B5%8B%E8%AF%95/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/%E6%B5%8B%E8%AF%95/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "\u6d4b\u8bd5",
+      "actual": {
+        "path": "/assistants/%E6%B5%8B%E8%AF%95/graph",
+        "raw_path": "/assistants/%E6%B5%8B%E8%AF%95/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/%E6%B5%8B%E8%AF%95/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "\u6d4b\u8bd5",
+      "actual": {
+        "path": "/threads/%E6%B5%8B%E8%AF%95/state",
+        "raw_path": "/threads/%E6%B5%8B%E8%AF%95/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/%E6%B5%8B%E8%AF%95/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "\u6d4b\u8bd5",
+      "actual": {
+        "path": "/threads/%E6%B5%8B%E8%AF%95/state",
+        "raw_path": "/threads/%E6%B5%8B%E8%AF%95/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/%E6%B5%8B%E8%AF%95/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "x#frag",
+      "actual": {
+        "path": "/assistants/x%23frag/graph",
+        "raw_path": "/assistants/x%23frag/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/x%23frag/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "x#frag",
+      "actual": {
+        "path": "/assistants/x%23frag/graph",
+        "raw_path": "/assistants/x%23frag/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/x%23frag/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "x#frag",
+      "actual": {
+        "path": "/threads/x%23frag/state",
+        "raw_path": "/threads/x%23frag/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/x%23frag/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "x#frag",
+      "actual": {
+        "path": "/threads/x%23frag/state",
+        "raw_path": "/threads/x%23frag/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/x%23frag/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "x?key=y",
+      "actual": {
+        "path": "/assistants/x%3Fkey%3Dy/graph",
+        "raw_path": "/assistants/x%3Fkey%3Dy/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/x%3Fkey%3Dy/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "x?key=y",
+      "actual": {
+        "path": "/assistants/x%3Fkey%3Dy/graph",
+        "raw_path": "/assistants/x%3Fkey%3Dy/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/x%3Fkey%3Dy/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "x?key=y",
+      "actual": {
+        "path": "/threads/x%3Fkey%3Dy/state",
+        "raw_path": "/threads/x%3Fkey%3Dy/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/x%3Fkey%3Dy/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "x?key=y",
+      "actual": {
+        "path": "/threads/x%3Fkey%3Dy/state",
+        "raw_path": "/threads/x%3Fkey%3Dy/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/x%3Fkey%3Dy/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "a\\b",
+      "actual": {
+        "path": "/assistants/a%5Cb/graph",
+        "raw_path": "/assistants/a%5Cb/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/a%5Cb/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "a\\b",
+      "actual": {
+        "path": "/assistants/a%5Cb/graph",
+        "raw_path": "/assistants/a%5Cb/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/a%5Cb/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "a\\b",
+      "actual": {
+        "path": "/threads/a%5Cb/state",
+        "raw_path": "/threads/a%5Cb/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/a%5Cb/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "a\\b",
+      "actual": {
+        "path": "/threads/a%5Cb/state",
+        "raw_path": "/threads/a%5Cb/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/a%5Cb/state",
+      "ok": true
+    },
+    {
+      "site": "sync-tree",
+      "identity": "x y",
+      "actual": {
+        "path": "/assistants/x%20y/graph",
+        "raw_path": "/assistants/x%20y/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/x%20y/graph",
+      "ok": true
+    },
+    {
+      "site": "async-tree",
+      "identity": "x y",
+      "actual": {
+        "path": "/assistants/x%20y/graph",
+        "raw_path": "/assistants/x%20y/graph",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/assistants/x%20y/graph",
+      "ok": true
+    },
+    {
+      "site": "sync-state",
+      "identity": "x y",
+      "actual": {
+        "path": "/threads/x%20y/state",
+        "raw_path": "/threads/x%20y/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/x%20y/state",
+      "ok": true
+    },
+    {
+      "site": "async-state",
+      "identity": "x y",
+      "actual": {
+        "path": "/threads/x%20y/state",
+        "raw_path": "/threads/x%20y/state",
+        "query": "",
+        "auth_retained": true
+      },
+      "expected": "/threads/x%20y/state",
+      "ok": true
+    }
+  ]
+}

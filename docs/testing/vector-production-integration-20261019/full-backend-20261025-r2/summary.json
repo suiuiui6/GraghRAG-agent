@@ -1,0 +1,65 @@
+{
+  "time_utc": "2026-10-25T11:00:05.074189+00:00",
+  "commands": [
+    {
+      "name": "tests",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "run",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\backend.coverage",
+        "-m",
+        "pytest",
+        "backend/tests",
+        "backend/research/test_deepseek_scope_pilot.py",
+        "-vv",
+        "-ra",
+        "--tb=short",
+        "--durations=20",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\test-temp",
+        "--junitxml=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\junit.xml"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "export",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "json",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\backend.coverage",
+        "-o",
+        "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\coverage.json"
+      ],
+      "exit": 0
+    }
+  ],
+  "inputs_stable": true,
+  "purpose": "full fixed-scope backend verification; delivery requires all gates",
+  "totals": {
+    "covered_lines": 16365,
+    "num_statements": 17653,
+    "percent_covered": 91.80908975819725,
+    "percent_covered_display": "92",
+    "missing_lines": 1288,
+    "excluded_lines": 0,
+    "num_branches": 6044,
+    "num_partial_branches": 443,
+    "covered_branches": 5391,
+    "missing_branches": 653
+  },
+  "production_count": 119,
+  "coverage_count": 119,
+  "missing": [],
+  "extra": [],
+  "coverage_gate": false,
+  "scope_gate": true,
+  "test_gate": true,
+  "backend_gate": false
+}

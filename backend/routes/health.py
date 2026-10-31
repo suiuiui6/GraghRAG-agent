@@ -4,6 +4,7 @@ import json
 import os
 import time
 from fastapi import APIRouter
+from fastapi.responses import JSONResponse
 from models import HealthResponse
 from dotenv import load_dotenv
 
@@ -116,6 +117,10 @@ async def health_check():
     except Exception:  # noqa: BLE001  # 健康检查各字段独立探测，单项失败降级为占位值，不使整体探活失败
         dependencies = {}
 
+    from services.vector_startup import runtime_status
+    vector_state = runtime_status()
+    dependencies['vector_store'] = vector_state
+
     # Compute overall health from probe results
     degraded_count = sum(1 for v in dependencies.values() if v["status"] == "degraded")
     down_count = sum(1 for v in dependencies.values() if v["status"] == "down")
@@ -146,7 +151,7 @@ async def health_check():
             "mineru_api": mineru_status,
             "deepseek_api": deepseek_status,
             "kg_store": "ok",
-            "chromadb": dependencies.get("chromadb", {}).get("status", "unknown"),
+            "vector_store": vector_state["status"],
             "oauth2_provider": dependencies.get("oauth2_provider", {}).get("status", "unknown"),
             "feishu_bot": dependencies.get("feishu_bot", {}).get("status", "unknown"),
             "scheduler": "ok",
@@ -171,3 +176,11 @@ async def capabilities():
     return {
         "capabilities": ["query", "metadata", "ingest", "feedback", "graph", "export"],
     }
+
+
+@router.get("/ready")
+async def readiness():
+    from services.vector_startup import runtime_status
+    state = runtime_status()
+    public_state = {key: state[key] for key in ('status', 'ready', 'code')}
+    return JSONResponse(public_state, status_code=200 if state['ready'] else 503)

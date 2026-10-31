@@ -1,0 +1,1411 @@
+{
+  "created_utc": "2026-10-28T06:15:45.3014383Z",
+  "scope": "all final current files, including retained failed/partial downloads; partials are not executable inputs",
+  "files": [
+    {
+      "bytes": 222,
+      "path": ".dockerignore",
+      "sha256": "df818e49e729615230dfc81fe90235e185a1a735e13ead0a11e89223f630acc3"
+    },
+    {
+      "bytes": 40788,
+      "path": "aliyun-transport-test.deb",
+      "sha256": "3fc9742f9f1a37bcb9931df6074b4d1483419ef832ad5349f47323e75fc27864"
+    },
+    {
+      "bytes": 3,
+      "path": "aliyun-transport-test.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 480,
+      "path": "aliyun-transport-test.json",
+      "sha256": "65fb4685f4db9003b9b6c7f8381da30ced760ff0801b871ed085713000aef21e"
+    },
+    {
+      "bytes": 490,
+      "path": "aliyun-transport-test.log",
+      "sha256": "8a4b22f5af5ded45c529f8d8ef82fb862a5cfc8d999535bd9cf22d09dbe1f6c2"
+    },
+    {
+      "bytes": 3,
+      "path": "base-builder-inventory.exit",
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "bytes": 649,
+      "path": "base-builder-inventory.log",
+      "sha256": "4fb02af0e6fc168a0cc6e593a21a2b3b58a4af2b281723b9f26d67092cba2462"
+    },
+    {
+      "bytes": 3,
+      "path": "builder-apt-update-1.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 716,
+      "path": "builder-apt-update-1.log",
+      "sha256": "a989aefed0984a4b52574f739b2d2ab1c3275429bb28173fc676101a5b2b2845"
+    },
+    {
+      "bytes": 5,
+      "path": "builder-download-1.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 1444,
+      "path": "builder-download-1.log",
+      "sha256": "1cb445ba65022ab6aff804197991b1271d050c6bcd882f735311fd4eedc1f222"
+    },
+    {
+      "bytes": 5,
+      "path": "builder-download-2.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 2070,
+      "path": "builder-download-2.log",
+      "sha256": "cd82172f90026d1e0afb1ef1f74d5c9b90d99a962e396fbf9135b101d8c90308"
+    },
+    {
+      "bytes": 5,
+      "path": "builder-download-3-aliyun.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 4676,
+      "path": "builder-download-3-aliyun.log",
+      "sha256": "20c08153b0553a6173e57dc2c668f0929696d1ed7f531da3351aca8d34af7aad"
+    },
+    {
+      "bytes": 5,
+      "path": "builder-download-4-aliyun.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 5620,
+      "path": "builder-download-4-aliyun.log",
+      "sha256": "1137d1879b9c449fde26b5e1cd1a3e6c996d1e76ed66a8a7322b28efbe0971bb"
+    },
+    {
+      "bytes": 5,
+      "path": "builder-download-5-aliyun.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 0,
+      "path": "builder-download-5-aliyun.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3,
+      "path": "builder-download-6-bounded180.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 399,
+      "path": "builder-download-6-bounded180.log",
+      "sha256": "134ab49db9319a772acc670f3bfc4a7dc4d2598dc867d7a2713e40b3a02b49fa"
+    },
+    {
+      "bytes": 665,
+      "path": "builder-download-status-r4.json",
+      "sha256": "132070602b7db6d3a89d264d18340506c788221847095454a14853e0aea0865f"
+    },
+    {
+      "bytes": 665,
+      "path": "builder-download-status-r5.json",
+      "sha256": "ab7cabac96881b39458246032579977f44f5ecfc347d899a21ee186446f18a61"
+    },
+    {
+      "bytes": 662,
+      "path": "builder-download-status-r6.json",
+      "sha256": "832238ad90bcd945c9e9b0449fca7895caf84a0b607b27b66f49ec55d402f760"
+    },
+    {
+      "bytes": 650,
+      "path": "builder-download-status.json",
+      "sha256": "85949e0ef8e328eb9c91c516d9c787f39b169d28fff294b90d0c1afe3dd2b1bf"
+    },
+    {
+      "bytes": 3686,
+      "path": "builder-dpkg.txt",
+      "sha256": "1b6f6fc4bcca01b08d4d44ba4d730396b5b5085206ea2e4397bb9069d020aee8"
+    },
+    {
+      "bytes": 3,
+      "path": "builder-image-build.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 10129,
+      "path": "builder-image-build.log",
+      "sha256": "bb49a56ff7394c8e501e06692a687d6753a9df2a1e7a23e29eebe625fc1204f3"
+    },
+    {
+      "bytes": 1725,
+      "path": "builder-image-inspect.json",
+      "sha256": "03dbaa9ff56054049333ace7a9267f3a4d8e849e172655472ad6b297503fa229"
+    },
+    {
+      "bytes": 3,
+      "path": "builder-package-sha-lock.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 77,
+      "path": "builder-package-sha-lock.log",
+      "sha256": "65ffd5b755f0873c3d74638d0c4d21915048c6ee58027ed01ce1490c541b2405"
+    },
+    {
+      "bytes": 13687,
+      "path": "builder-packages.lock.json",
+      "sha256": "7fa4c3c0479829be1c4b8bf7c65e4222a6022dfe3c42a2e444586a1a1cebdf16"
+    },
+    {
+      "bytes": 3,
+      "path": "builder-tool-package-lock.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 7620,
+      "path": "builder-tool-package-lock.txt",
+      "sha256": "d1b9e218615a81c9215a7c3414ec65649f1805c642246dc8e5464628176b33f7"
+    },
+    {
+      "bytes": 2427,
+      "path": "compile_sqlite.py",
+      "sha256": "ca5dd26764429188004dc16fa863f578cf91bf38eccbc8ac9de386446cb26465"
+    },
+    {
+      "bytes": 420,
+      "path": "debian.sources",
+      "sha256": "aadc919b629c1457a5dcfb330cf0c6c0daaf5a4612b720037c0276f5e939b31c"
+    },
+    {
+      "bytes": 269,
+      "path": "Dockerfile.builder",
+      "sha256": "e3e25805368a4fd5e5014bca0b9318eab533f339818211de2367f87ab541345e"
+    },
+    {
+      "bytes": 879,
+      "path": "Dockerfile.numpy",
+      "sha256": "94172cdf48a1b56f8afe81a5783e1a0795d6b069b588793d042767f752977f97"
+    },
+    {
+      "bytes": 538,
+      "path": "Dockerfile.runtime",
+      "sha256": "0f546fbf75106ed1a59e0c48bc9d5311ed11594fba267fe6ae08d84443bc5e10"
+    },
+    {
+      "bytes": 2318,
+      "path": "download_builder_packages.py",
+      "sha256": "7380461080b5f271f20455a4a65f7d3594f611d10731057b823258f1e3cd8517"
+    },
+    {
+      "bytes": 2386,
+      "path": "download_numpy_ranges.py",
+      "sha256": "69c96f3709089da331b5a118b58ff240706adc7588a74b5f73ca0a0667835942"
+    },
+    {
+      "bytes": 1294,
+      "path": "download_numpy.py",
+      "sha256": "099f1cdb93089d16a1f99edf674d723312cc0e60e1a47c59a725b6dc8426f60c"
+    },
+    {
+      "bytes": 1195,
+      "path": "download_sqlite.py",
+      "sha256": "2faebd0de9fe43a1ef7d5f3bed47cb82891ac4cc6cd5c7c8d1df5f6f6209e486"
+    },
+    {
+      "bytes": 3,
+      "path": "image-inspect.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1265,
+      "path": "image-inspect.json",
+      "sha256": "42e535e4dd6fe640b3a776c95bcf248bb62dce77f8a78eb064b6bb62c863724f"
+    },
+    {
+      "bytes": 1169,
+      "path": "inspect_numpy_native.py",
+      "sha256": "b609b9966c9f7fcfd3c8a9d3332ae427ced05506a4ef7ca885021831b33eee6b"
+    },
+    {
+      "bytes": 1493,
+      "path": "inspect_runtime_permissions.py",
+      "sha256": "92558cba7e763666c2bfa1df10e6302187e4c743842220d5587f65c9a4b81cbb"
+    },
+    {
+      "bytes": 1395,
+      "path": "lock_builder_packages.py",
+      "sha256": "f7b088d066595b903966964d04297261ad9e44900fc1319ba0975b0567f68a50"
+    },
+    {
+      "bytes": 4,
+      "path": "numpy-download-1.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 58,
+      "path": "numpy-download-1.log",
+      "sha256": "14830982b4a93c9fa2556d7317686128831ef613255d524e04984bfa08b6916a"
+    },
+    {
+      "bytes": 3,
+      "path": "numpy-download-2-container.exit",
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "bytes": 271,
+      "path": "numpy-download-2-container.log",
+      "sha256": "4e2fa82fae8b16b5d0699760e520429f297b81372f403111500a746ec94de095"
+    },
+    {
+      "bytes": 5,
+      "path": "numpy-download-3-direct.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 0,
+      "path": "numpy-download-3-direct.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5,
+      "path": "numpy-download-4-bounded180.exit",
+      "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+    },
+    {
+      "bytes": 49,
+      "path": "numpy-download-4-bounded180.log",
+      "sha256": "0e099485d307812c21145865ca38568e96fb6475e3dac9c655f15d0918adf7ca"
+    },
+    {
+      "bytes": 3,
+      "path": "numpy-download-5-mirror180.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1157,
+      "path": "numpy-download-5-mirror180.log",
+      "sha256": "0d969cbed6fbed201b64273f295efd6277192dc36567b2d88d73485fba7a2af3"
+    },
+    {
+      "bytes": 3,
+      "path": "numpy-exact-url-head.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1056,
+      "path": "numpy-exact-url-head.log",
+      "sha256": "ff16607f5cc0698f0e53660dc88a1097d28b27e6515c0b4438d6e9679acf2148"
+    },
+    {
+      "bytes": 3,
+      "path": "numpy-image-build.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 2820,
+      "path": "numpy-image-build.log",
+      "sha256": "1013f849fe51a5ba668d1803478b277646132339a902ebac1df9091089bcab20"
+    },
+    {
+      "bytes": 1750,
+      "path": "numpy-image-inspect.json",
+      "sha256": "eadf7916a9a8b6616e53911944ec9a941e500ee21a188681b5fe388954d384a2"
+    },
+    {
+      "bytes": 3,
+      "path": "numpy-mirror-head.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 676,
+      "path": "numpy-mirror-head.log",
+      "sha256": "bffa4ee88e95bb8605830f79d4fee018ab41bca2f53abebc8ab5ecefc4151294"
+    },
+    {
+      "bytes": 3,
+      "path": "numpy-native-inventory.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 17101,
+      "path": "numpy-native-inventory.json",
+      "sha256": "e0ac67d4964bcb8dc3d86d2f2c0de567da89d4a0ecd53f1716d45b2e71d3d903"
+    },
+    {
+      "bytes": 102,
+      "path": "numpy-native-inventory.log",
+      "sha256": "73380e1771efccccc4a2bc3c12d1c8a13e6b91e1586ce898c2bdf72ca4140876"
+    },
+    {
+      "bytes": 92,
+      "path": "numpy-requirements.txt",
+      "sha256": "48550c5a6cd2c3b98720d6527d8d13ee9c74cd430b2f431a897d1e69dbeaaf8b"
+    },
+    {
+      "bytes": 977,
+      "path": "numpy-wheel-receipt.json",
+      "sha256": "925df968709b01cf70a417a39ec236bd4229f7218838602a9d9c2e64600fdce8"
+    },
+    {
+      "bytes": 3,
+      "path": "official-runtime-probe.exit",
+      "sha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+    },
+    {
+      "bytes": 1126,
+      "path": "official-runtime-probe.log",
+      "sha256": "1b778118143881968ad06895b3e957885921f553c0e3473782a5cc6e2565a455"
+    },
+    {
+      "bytes": 3,
+      "path": "official-sqlite-linkage.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 306,
+      "path": "official-sqlite-linkage.log",
+      "sha256": "158ea653295e4b1afcaea361b668279a3d0ff44679298e83725be03bab38f047"
+    },
+    {
+      "bytes": 4,
+      "path": "python-source-download.exit",
+      "sha256": "8abf1183c8fa6e85383e57785f594c00ab750b7b60f3f03a24c7fe4ce1cbdaa0"
+    },
+    {
+      "bytes": 2419,
+      "path": "python-source-download.log",
+      "sha256": "f9ed00a7c9284c8e28f6dc1b8cd34eb87ba77bbc82fb0cc504a97212c7fcb5bf"
+    },
+    {
+      "bytes": 301,
+      "path": "python-sqlite-extension-binding.json",
+      "sha256": "6c387f89ef54ce1efa954e44aa3dda3d2f9c0efaec6c2c3d956b997d7fff0610"
+    },
+    {
+      "bytes": 6540,
+      "path": "README.md",
+      "sha256": "ddefb586e29382a0feb75ec8a01df181c00a2c6df55fe064ae8aefcfd0cdf3a4"
+    },
+    {
+      "bytes": 1184,
+      "path": "reopen_vector.py",
+      "sha256": "9c36282bbe43031e05f74a71b60e3d1187978b0e52fdbdb79fdc4b877447a25d"
+    },
+    {
+      "bytes": 9860,
+      "path": "REPORT-20261028.md",
+      "sha256": "46c09802d12aecf62d42c659d66de5f18b3a2368545c0f5073830b6eaabc77fc"
+    },
+    {
+      "bytes": 4106,
+      "path": "runtime_probe.py",
+      "sha256": "1eb03da646c85d169af60dfa91ebc44cbc659ba20a948980427e28b4c6454bf9"
+    },
+    {
+      "bytes": 3,
+      "path": "runtime-dpkg.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 2902,
+      "path": "runtime-dpkg.txt",
+      "sha256": "45c3b818bae14d944450d4a22f13e97ae34c5d0a66c8fdf8d024f441bd45148f"
+    },
+    {
+      "bytes": 3,
+      "path": "runtime-image-build.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1987,
+      "path": "runtime-image-build.log",
+      "sha256": "a8378b2e2054ce5641de65430d32f689f812e08cb654ae792130078e9c225fa0"
+    },
+    {
+      "bytes": 1498,
+      "path": "runtime-image-inspect.json",
+      "sha256": "05b7349c2b225c451c266e5231ce2491b898bf6782d1aed910b2f046934b0e08"
+    },
+    {
+      "bytes": 3,
+      "path": "runtime-numpy-probe.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1132,
+      "path": "runtime-numpy-probe.log",
+      "sha256": "32a05d424ddc2cf0f513778cd256bfa61f5db60b529c6af7e2bdb6bd21e2a30a"
+    },
+    {
+      "bytes": 3,
+      "path": "runtime-permissions.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1776,
+      "path": "runtime-permissions.json",
+      "sha256": "66da2d4c034d6d20e00d005442f0dd3189b979ac1d2e0bb80e4f8ad5abfc19ff"
+    },
+    {
+      "bytes": 1844,
+      "path": "runtime-permissions.log",
+      "sha256": "c5e9d83ddb8134d9f9d57b4df12560868933748d2ca52115c90880258ff7abe9"
+    },
+    {
+      "bytes": 8222,
+      "path": "runtime-probe.json",
+      "sha256": "644e7cccb1df597a983a7db16beb60eac2f92375f2db95e0a2184c9bbec4b01c"
+    },
+    {
+      "bytes": 3,
+      "path": "runtime-sqlite-probe.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1094,
+      "path": "runtime-sqlite-probe.log",
+      "sha256": "9de026d3f65aa447d64797133a451695f1d55611b20205fce0e5c0cbc2567ebf"
+    },
+    {
+      "bytes": 3332512,
+      "path": "sqlite-autoconf-3540000.tar.gz",
+      "sha256": "134ec0802dda5795816e25d25872d20b312cb3973438c49b30bc40b7705ea9ed"
+    },
+    {
+      "bytes": 4084,
+      "path": "sqlite-compile-receipt.json",
+      "sha256": "998916db91eebb825ffbdcecee132f8e346ad558e5fe4f1aa71707e174bff05b"
+    },
+    {
+      "bytes": 3,
+      "path": "sqlite-compile.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 4149,
+      "path": "sqlite-compile.log",
+      "sha256": "78150b4fbb929af4104805d01e222e4f08e394a6c70316001ae34d43e899089e"
+    },
+    {
+      "bytes": 0,
+      "path": "sqlite-compile.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "sqlite-compile.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-download.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 2945,
+      "path": "sqlite-source-download.log",
+      "sha256": "80ef7f0ee86b2048fbf6da09d7f7b2f46e78908c4e47d7537c8b915ad0ac156c"
+    },
+    {
+      "bytes": 5672,
+      "path": "sqlite-source-files.json",
+      "sha256": "8cc33edecbecb7fcf6eaad1a9e6baad537db8df3c40e34bfdc843944a66a34ba"
+    },
+    {
+      "bytes": 360,
+      "path": "sqlite-source-receipt.json",
+      "sha256": "f928281a9252a83a46b7b4446d60ff2c276b73a3167a2e98070ad253790e3615"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-resume-1.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 4099,
+      "path": "sqlite-source-resume-1.log",
+      "sha256": "46a07bf32df76cdad3bf5d9d3fa8812b5b099281a53fb9bb8b5e5ff7764d13bf"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-resume-2.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 3783,
+      "path": "sqlite-source-resume-2.log",
+      "sha256": "34405df1aa2c08a649c4b5ca7ebb36be676e2bf545d98d034d247e778b64dd2e"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-resume-3.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 3705,
+      "path": "sqlite-source-resume-3.log",
+      "sha256": "8d7c20ef2dd1b864d6ad9d90e8fc0359e7dffd6ca4b17aeb8a43b54a020bdc18"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-resume-4.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 3231,
+      "path": "sqlite-source-resume-4.log",
+      "sha256": "4193f573f962aaf64d45220dc587dc52f351815f83cdedc3048fb01a6d8a62d1"
+    },
+    {
+      "bytes": 3,
+      "path": "sqlite-source-resume-5-container.exit",
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "bytes": 2137,
+      "path": "sqlite-source-resume-5-container.log",
+      "sha256": "da766ae423d59a40c8e5763296a9bfad9f9c2d28ac2b76bef9a6515caa6296ee"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-resume-6.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 4099,
+      "path": "sqlite-source-resume-6.log",
+      "sha256": "c4743a72ee8a9be9a623c2b90ab195b738c7cf24a330ba25e48c7baff695fdb6"
+    },
+    {
+      "bytes": 4,
+      "path": "sqlite-source-resume-7.exit",
+      "sha256": "aa043caaed4834c480a3cc4731b00af0f600e5548e7117b9f0b6fa5ac19939b3"
+    },
+    {
+      "bytes": 3625,
+      "path": "sqlite-source-resume-7.log",
+      "sha256": "72680b66f39d70f4c391d66e437a405d0fe05feec4417cf5f3c35022521110bc"
+    },
+    {
+      "bytes": 3,
+      "path": "sqlite-source-resume-8-tail.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 1631,
+      "path": "sqlite-source-resume-8-tail.log",
+      "sha256": "f24807d817cde8acf228fb517ca8fd7cc6141000f00184cfd3d6c7da086fff02"
+    },
+    {
+      "bytes": 3,
+      "path": "sqlite-source-verify.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 445,
+      "path": "sqlite-source-verify.log",
+      "sha256": "b904d8a756351256530f3d58b0e97c8456303cad212d1c74c80a827d9fddbb54"
+    },
+    {
+      "bytes": 886,
+      "path": "test_builder_transport.py",
+      "sha256": "2ba0ae961fa570cacc85abb8bc16c61004d14a925ba39101a7b44a0700579b52"
+    },
+    {
+      "bytes": 500,
+      "path": "verify_builder_inputs.py",
+      "sha256": "28ff3fa7175978f50a6a5f0c819bbffd804c85172be89c71bda394cd5c0f89e4"
+    },
+    {
+      "bytes": 4496,
+      "path": "verify_numpy_runtime.py",
+      "sha256": "33ac42cc8d9663709b66025cbf38e247ef7f6d36f226c123bf5411ad55ea116a"
+    },
+    {
+      "bytes": 4523,
+      "path": "verify_sqlite_runtime.py",
+      "sha256": "a0005610e93fe63a4393134cab0b2b99c33a51ed7615463353cc38977aa1b48f"
+    },
+    {
+      "bytes": 1211,
+      "path": "verify_sqlite_source.py",
+      "sha256": "72e106dd8e33cc06633d53aff593dd2be12e1e471a08120ef1468dc08a5338c9"
+    },
+    {
+      "bytes": 0,
+      "path": "apt-lists/lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 151075,
+      "path": "apt-lists/snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm_InRelease",
+      "sha256": "77737fa4b34f2693e982cc9ee35736816c35a7778fc2d326cc1bbf5b301fe1aa"
+    },
+    {
+      "bytes": 18840233,
+      "path": "apt-lists/snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm_main_binary-amd64_Packages.lz4",
+      "sha256": "38163a87d0269f1af22bdddc092bf8e6c605f981642a09561e60565358f15e07"
+    },
+    {
+      "bytes": 55403,
+      "path": "apt-lists/snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm-updates_InRelease",
+      "sha256": "006666490d0462470f3b132d43e6aab75034d35a408f69273db4b80fe1212ca5"
+    },
+    {
+      "bytes": 11648,
+      "path": "apt-lists/snapshot.debian.org_archive_debian_20261020T213255Z_dists_bookworm-updates_main_binary-amd64_Packages.lz4",
+      "sha256": "8ae7b65cb4858ac692572b6989be68da6505ae90fe4a3b4e0bf842d266209e53"
+    },
+    {
+      "bytes": 34770,
+      "path": "apt-lists/snapshot.debian.org_archive_debian-security_20261020T213255Z_dists_bookworm-security_InRelease",
+      "sha256": "5befd0f214d5fdb7e505b101662337e5e67dd6aaa68be5559f7795a47ecfb9d6"
+    },
+    {
+      "bytes": 710485,
+      "path": "apt-lists/snapshot.debian.org_archive_debian-security_20261020T213255Z_dists_bookworm-security_main_binary-amd64_Packages.lz4",
+      "sha256": "fe36895233e351c4cd30a8103d943f67d39f947531d0d8412456579fb80889dd"
+    },
+    {
+      "bytes": 1175712,
+      "path": "compiled/libsqlite3.so.3.54.0",
+      "sha256": "420d40ea91fae6b37dc276ae277def8ead9fb7dabdabbff141f62d085bcdf1b8"
+    },
+    {
+      "bytes": 8192,
+      "path": "data/backup.sqlite",
+      "sha256": "768251e5a4588b7e8dbd530aa3a2ef74a62eacafff80a9bc28c261c9cdcf6024"
+    },
+    {
+      "bytes": 8192,
+      "path": "data/probe.sqlite",
+      "sha256": "8eca85b8acabbdc8092f2cfcf12184bd2cc216aa9358461d4aa4410056d446cc"
+    },
+    {
+      "bytes": 64980,
+      "path": "debs/binutils_2.40-2_amd64.deb",
+      "sha256": "83c3e20b53e1fbd84d764c3ba27d26a0376e361ae5d7fb37120196934dd87424"
+    },
+    {
+      "bytes": 380,
+      "path": "debs/binutils_2.40-2_amd64.deb.receipt.json",
+      "sha256": "1bcbb659c3e9245b7691c5f2229891350d7c2dc57e8dfd13cba2793b0ac14786"
+    },
+    {
+      "bytes": 2486664,
+      "path": "debs/binutils-common_2.40-2_amd64.deb",
+      "sha256": "ab314134f43a0891a48f69a9bc33d825da748fa5e0ba2bebb7a5c491b026f1a0"
+    },
+    {
+      "bytes": 407,
+      "path": "debs/binutils-common_2.40-2_amd64.deb.receipt.json",
+      "sha256": "6131cb01dd0419a70dd78b9c0fa18b65eb7e9f8e7be8bb82ca4056e9ecb9a3aa"
+    },
+    {
+      "bytes": 2245848,
+      "path": "debs/binutils-x86-64-linux-gnu_2.40-2_amd64.deb",
+      "sha256": "2d7ea8a570d768224d7f2424abbe6f373d2154865a1fa7f56c80d43ecf492521"
+    },
+    {
+      "bytes": 437,
+      "path": "debs/binutils-x86-64-linux-gnu_2.40-2_amd64.deb.receipt.json",
+      "sha256": "e44eaa0c13be5f90df1fc655c31bd815e155230e7c063832064780c9acb3a357"
+    },
+    {
+      "bytes": 6836,
+      "path": "debs/cpp_4%3a12.2.0-3_amd64.deb",
+      "sha256": "a63db920f7aa1857a57beab185423deffb6111fa09437a99bbb4ef724fb7ba78"
+    },
+    {
+      "bytes": 384,
+      "path": "debs/cpp_4%3a12.2.0-3_amd64.deb.receipt.json",
+      "sha256": "582df0fc8271c9f22a1a3328aae4d284bea918411c321e7793bab47ed970d702"
+    },
+    {
+      "bytes": 9767788,
+      "path": "debs/cpp-12_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "fedbb98e877adde83c983c6071537ea25ac52b277ac6e4637d85025949ca1454"
+    },
+    {
+      "bytes": 413,
+      "path": "debs/cpp-12_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "8a6068426d25b9e6e3ff3dcb92db7daa51123736722967756e70b4e4d95b695a"
+    },
+    {
+      "bytes": 5216,
+      "path": "debs/gcc_4%3a12.2.0-3_amd64.deb",
+      "sha256": "bb63b0fb2797e2a3a294dab8a02614930c557ec1f4ea96637c244b8b5f87e630"
+    },
+    {
+      "bytes": 384,
+      "path": "debs/gcc_4%3a12.2.0-3_amd64.deb.receipt.json",
+      "sha256": "a5930a242c2868f329492abca0d93132eb6ca6fd3dd3137ddac7fc5cffa64d0e"
+    },
+    {
+      "bytes": 19268852,
+      "path": "debs/gcc-12_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "b46f33cc2ec245e435e043807038cecf4b201ef004800e9dfc1455240360e49d"
+    },
+    {
+      "bytes": 414,
+      "path": "debs/gcc-12_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "d4072460c6b0e1deff2a4f436306579f0dcd806f2aba375d885be5dd598ded7a"
+    },
+    {
+      "bytes": 2192652,
+      "path": "debs/libasan8_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "e7ac5d797d7d438a130674a8e463530f06aa02ecf919ca054d75eaa2f7849ec7"
+    },
+    {
+      "bytes": 419,
+      "path": "debs/libasan8_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "465209961da784727cf9e7ef68d03910e47ad0fc0d86a17460c7826816b6ba45"
+    },
+    {
+      "bytes": 9376,
+      "path": "debs/libatomic1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "fbd4e154a6b444229ea002cc209df099209c0adc09102e5fd21239a3d2b55e2d"
+    },
+    {
+      "bytes": 422,
+      "path": "debs/libatomic1_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "2dd6fc7f0912e848108d3ce5d4248da2922f7ada011b78672acfa0ab1212992c"
+    },
+    {
+      "bytes": 572104,
+      "path": "debs/libbinutils_2.40-2_amd64.deb",
+      "sha256": "fcf55b99e5f8a78f3c8ce9b6957f1024f394cf20c196b100d308a57e43547710"
+    },
+    {
+      "bytes": 390,
+      "path": "debs/libbinutils_2.40-2_amd64.deb.receipt.json",
+      "sha256": "49cf3664fa12818fb2e9f5da77e380430bef4f21caa44d85763b6ad71b123314"
+    },
+    {
+      "bytes": 48056,
+      "path": "debs/libc-dev-bin_2.36-9+deb12u14_amd64.deb",
+      "sha256": "f61d923b703401023bec2ac3d9d1c9ad7341930fbe11736f7f5ef64b489d03c4"
+    },
+    {
+      "bytes": 421,
+      "path": "debs/libc-dev-bin_2.36-9+deb12u14_amd64.deb.receipt.json",
+      "sha256": "98fd1c87dec95d261d963861d50f97ddc25676a455945d1aca19cc78ed8c107e"
+    },
+    {
+      "bytes": 1903668,
+      "path": "debs/libc6-dev_2.36-9+deb12u14_amd64.deb",
+      "sha256": "0218fc2befcd784c1b0c6292c0a137ce89fad054efaa579ad083bee0f2c01aae"
+    },
+    {
+      "bytes": 414,
+      "path": "debs/libc6-dev_2.36-9+deb12u14_amd64.deb.receipt.json",
+      "sha256": "1bd87c3674f540b543937509a68bbd54f23400b1421086de01fd0970e0387b0b"
+    },
+    {
+      "bytes": 41736,
+      "path": "debs/libcc1-0_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "4ee6009633003f47de98333ea7f7d8835ec563ae2ac4f30251dbfee04d75d46b"
+    },
+    {
+      "bytes": 417,
+      "path": "debs/libcc1-0_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "de69c00def6f6f451ad1525db84d51a858d6179c01fc1c14281d86174297bdb6"
+    },
+    {
+      "bytes": 118144,
+      "path": "debs/libcrypt-dev_1%3a4.4.33-2_amd64.deb",
+      "sha256": "81ccd29130f75a9e3adabc80e61921abff42f76761e1f792fa2d1bb69af7f52f"
+    },
+    {
+      "bytes": 413,
+      "path": "debs/libcrypt-dev_1%3a4.4.33-2_amd64.deb.receipt.json",
+      "sha256": "c12052f19572814281fb430b844288fee0043deb83f94349f19f10db4f98ff36"
+    },
+    {
+      "bytes": 153384,
+      "path": "debs/libctf-nobfd0_2.40-2_amd64.deb",
+      "sha256": "ef1dfcf22de41ea90ebd3d505447ccccd999e96b85aa777a1d7d981dc3b347aa"
+    },
+    {
+      "bytes": 396,
+      "path": "debs/libctf-nobfd0_2.40-2_amd64.deb.receipt.json",
+      "sha256": "a2cf8e44ed5f1dfa243c013436067b0853f02b1abc86fd94c481e25fafb7afbb"
+    },
+    {
+      "bytes": 89796,
+      "path": "debs/libctf0_2.40-2_amd64.deb",
+      "sha256": "3fb7b6f326be3fae4a87a3d33b9269bd06c1e4346a24bd737f265067e3b7427f"
+    },
+    {
+      "bytes": 377,
+      "path": "debs/libctf0_2.40-2_amd64.deb.receipt.json",
+      "sha256": "e664007be778d3a7009cd5c777a735e9f87e8be34fbc19d7ffb89b7cf53d40d1"
+    },
+    {
+      "bytes": 2437204,
+      "path": "debs/libgcc-12-dev_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "d720259380a84f2ffc6fe516eff5cbe9c8a005138e8d6a5748747ba4b3404a82"
+    },
+    {
+      "bytes": 434,
+      "path": "debs/libgcc-12-dev_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "04ddda871273db7c80a3cfd735ebb8497d74fe0e3781d1a6224aab7cf77f0980"
+    },
+    {
+      "bytes": 115772,
+      "path": "debs/libgomp1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "48fec46bda7f5b1638b9e959889bfbc20491247d402d120bb152687eb48143d7"
+    },
+    {
+      "bytes": 418,
+      "path": "debs/libgomp1_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "1ed56f08618eb261e45a3d7d827ba8e8c8369735f89bfe7b35d6c6c34c8c3abd"
+    },
+    {
+      "bytes": 812120,
+      "path": "debs/libgprofng0_2.40-2_amd64.deb",
+      "sha256": "a3c4092d84f19d13caf90f3c96eec53db8819f0e3a5247434944d71ed75fa53d"
+    },
+    {
+      "bytes": 394,
+      "path": "debs/libgprofng0_2.40-2_amd64.deb.receipt.json",
+      "sha256": "d3c55ced086b01f4007d51e44e0e89e9df775c78a009ad8d279ce8f89d38cc22"
+    },
+    {
+      "bytes": 683060,
+      "path": "debs/libisl23_0.25-1.1_amd64.deb",
+      "sha256": "ebff0b2f8b220c74224197523019366e97ee4770d464bebc48e4865114e4da0e"
+    },
+    {
+      "bytes": 381,
+      "path": "debs/libisl23_0.25-1.1_amd64.deb.receipt.json",
+      "sha256": "293c4de46063c1b8a079230060589b633e9dc586d2b3cac4b0ab29d7c4093ca8"
+    },
+    {
+      "bytes": 26140,
+      "path": "debs/libitm1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "0ed5b35dfd1346cccbf065408ec789db6c44c1d0a16ae84533411dea09632979"
+    },
+    {
+      "bytes": 414,
+      "path": "debs/libitm1_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "898384bbc83741fbe7cb089403ae731e5c095754e0c24547fef2e1d5cadfde97"
+    },
+    {
+      "bytes": 40788,
+      "path": "debs/libjansson4_2.14-2_amd64.deb",
+      "sha256": "3fc9742f9f1a37bcb9931df6074b4d1483419ef832ad5349f47323e75fc27864"
+    },
+    {
+      "bytes": 387,
+      "path": "debs/libjansson4_2.14-2_amd64.deb.receipt.json",
+      "sha256": "6439e5bb2e1bdedca2f4da0e27bd982deca846890d615db8de61ba4cac07f88e"
+    },
+    {
+      "bytes": 969300,
+      "path": "debs/liblsan0_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "d234ab339c0ba31a4fb44e2334cf5a8d15b87f2c2f9e74fadfaa877f92dcf22a"
+    },
+    {
+      "bytes": 418,
+      "path": "debs/liblsan0_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "63f9a2a37dc599b78bcfbf087459c1477364e3e74663b8d4bf20123d90256e16"
+    },
+    {
+      "bytes": 51480,
+      "path": "debs/libmpc3_1.3.1-1_amd64.deb",
+      "sha256": "d7f79544790e44f9b0c8cb9034a18c58d37f8702a15f32539050718679e52f80"
+    },
+    {
+      "bytes": 382,
+      "path": "debs/libmpc3_1.3.1-1_amd64.deb.receipt.json",
+      "sha256": "7dbf7ae52a6e21eba1c330617a618525a5a0a6be1d1f2fe8db4ce9637dfb4b46"
+    },
+    {
+      "bytes": 700900,
+      "path": "debs/libmpfr6_4.2.0-1_amd64.deb",
+      "sha256": "37b7a2b4e78890b6a074777f27b96c84f58e81558ba08410c2b6c0ca4a4ad77b"
+    },
+    {
+      "bytes": 382,
+      "path": "debs/libmpfr6_4.2.0-1_amd64.deb.receipt.json",
+      "sha256": "52005a421649cd9f382fc582b5fefdea2c5a5ca02e6bf5b85aeedc87db7f5d3a"
+    },
+    {
+      "bytes": 66436,
+      "path": "debs/libnsl-dev_1.3.0-2_amd64.deb",
+      "sha256": "bb81a188c119cd7fdebae723cbc95887b6c549b2fe4fb7e268a9c8846444da99"
+    },
+    {
+      "bytes": 395,
+      "path": "debs/libnsl-dev_1.3.0-2_amd64.deb.receipt.json",
+      "sha256": "b7258612ff3e1b1e174fa92faa494b5f0322ef0bb5d6cf3715612787d0194e1f"
+    },
+    {
+      "bytes": 144616,
+      "path": "debs/libquadmath0_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "3f0c9a4c730da2fdab001cae596625438598fd2996d29d888feeb4c1cdc9011f"
+    },
+    {
+      "bytes": 430,
+      "path": "debs/libquadmath0_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "2726b4c7804a988054d5140972ee3d3ea6bdb7dd40786cd750d649dc55338605"
+    },
+    {
+      "bytes": 191428,
+      "path": "debs/libtirpc-dev_1.3.3+ds-1_amd64.deb",
+      "sha256": "03326473eed54ffa27efae19aa5d6aeb402930968f869f318445513093691d55"
+    },
+    {
+      "bytes": 419,
+      "path": "debs/libtirpc-dev_1.3.3+ds-1_amd64.deb.receipt.json",
+      "sha256": "1b7c1b8db4a98e4b9734352c65beb214eb8a4466919e45e91e50ec0414542f50"
+    },
+    {
+      "bytes": 2196972,
+      "path": "debs/libtsan2_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "06906663d644a75a1a836382ecd80b61461129c06f02935ce408b25809f6c958"
+    },
+    {
+      "bytes": 419,
+      "path": "debs/libtsan2_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "5caab8f191187281d1e77ee039e6ed9fcb792d616ab4484a8bb2f5c39d0c15bf"
+    },
+    {
+      "bytes": 883056,
+      "path": "debs/libubsan1_12.2.0-14+deb12u1_amd64.deb",
+      "sha256": "744f52adf00ffd45d44806b1c7e802a36bd27e479c9bc8457128fde357faa530"
+    },
+    {
+      "bytes": 421,
+      "path": "debs/libubsan1_12.2.0-14+deb12u1_amd64.deb.receipt.json",
+      "sha256": "df5a6b87f0353f10cdd4eaa81683e14fcee8310ad30265fd46c36d0795234753"
+    },
+    {
+      "bytes": 2408528,
+      "path": "debs/linux-libc-dev_6.1.190-1_amd64.deb",
+      "sha256": "a88a129991cbb7db1715bed232c9808b91ac0fb7149660558b9df0d074348f05"
+    },
+    {
+      "bytes": 441,
+      "path": "debs/linux-libc-dev_6.1.190-1_amd64.deb.receipt.json",
+      "sha256": "bdb74eb071014820b9099963ba0fe1dc776d374e2539249f2be72ba48f24adf1"
+    },
+    {
+      "bytes": 0,
+      "path": "debs/lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 63268,
+      "path": "debs/rpcsvc-proto_1.4.3-1_amd64.deb",
+      "sha256": "32ac0692694f8a34cc90c895f4fc739680fb2ef0e2d4870a68833682bf1c81a3"
+    },
+    {
+      "bytes": 407,
+      "path": "debs/rpcsvc-proto_1.4.3-1_amd64.deb.receipt.json",
+      "sha256": "1c940a0d08ab2f76dca24f36e32420d6debe66c0f7f82da0b689a6dfb5f2f936"
+    },
+    {
+      "bytes": 211493,
+      "path": "debs/partial/binutils-common_2.40-2_amd64.deb",
+      "sha256": "0eb9251410155fb2df86490d2798ae1bf79c51195dc39465698b56bbf1c6e66d"
+    },
+    {
+      "bytes": 1266,
+      "path": "python316-baseline/image-inspect.json",
+      "sha256": "ed493aff678a0a61fb2a24b65e2e4d489bf0e5fb7f4c2c5dcd897df3d7eb03b8"
+    },
+    {
+      "bytes": 3,
+      "path": "python316-baseline/probe.exit",
+      "sha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b"
+    },
+    {
+      "bytes": 1126,
+      "path": "python316-baseline/probe.log",
+      "sha256": "ce1897d7a4fb4a424b1169877316585dbd7a5c8fbf6bdafd0bf15a06b6ed33b7"
+    },
+    {
+      "bytes": 4106,
+      "path": "python316-baseline/runtime_probe.py",
+      "sha256": "1eb03da646c85d169af60dfa91ebc44cbc659ba20a948980427e28b4c6454bf9"
+    },
+    {
+      "bytes": 8221,
+      "path": "python316-baseline/runtime-probe.json",
+      "sha256": "9de56922385cd19fe1729f38a03ae691e46656bd8da35e284d2cea3f906ae5f2"
+    },
+    {
+      "bytes": 3,
+      "path": "python316-baseline/security-versions.exit",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "bytes": 243,
+      "path": "python316-baseline/security-versions.log",
+      "sha256": "699dc758720a9c34a8231f7f32b35a522363ec794192ae695a3fb1bcb684681f"
+    },
+    {
+      "bytes": 8192,
+      "path": "python316-baseline/data/backup.sqlite",
+      "sha256": "768251e5a4588b7e8dbd530aa3a2ef74a62eacafff80a9bc28c261c9cdcf6024"
+    },
+    {
+      "bytes": 8192,
+      "path": "python316-baseline/data/probe.sqlite",
+      "sha256": "8eca85b8acabbdc8092f2cfcf12184bd2cc216aa9358461d4aa4410056d446cc"
+    },
+    {
+      "bytes": 8192,
+      "path": "python316-derived/numpy-backup.sqlite",
+      "sha256": "3a3634bbdddef10bb08d2ee28b696b3a274127f44601852db03217c88ec4d8f1"
+    },
+    {
+      "bytes": 32768,
+      "path": "python316-derived/numpy-backup.sqlite-shm",
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "bytes": 0,
+      "path": "python316-derived/numpy-backup.sqlite-wal",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 12538,
+      "path": "python316-derived/numpy-runtime-receipt.json",
+      "sha256": "8980639f7d0f63b74bd715159ef69d693609f0e9cd81d28a50712321b6e17d1a"
+    },
+    {
+      "bytes": 8192,
+      "path": "python316-derived/numpy.sqlite",
+      "sha256": "a759bdf8580a8759328f7ee91a9a9dfb41e7a4bc1e9019402b361b24db5beaf7"
+    },
+    {
+      "bytes": 32768,
+      "path": "python316-derived/numpy.sqlite-shm",
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "bytes": 0,
+      "path": "python316-derived/numpy.sqlite-wal",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8192,
+      "path": "python316-sqlite/backup.sqlite",
+      "sha256": "8f3f56b612e04150901830d4695670ede415b47058152da4a23f6ec7d8485452"
+    },
+    {
+      "bytes": 32768,
+      "path": "python316-sqlite/backup.sqlite-shm",
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "bytes": 0,
+      "path": "python316-sqlite/backup.sqlite-wal",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 8192,
+      "path": "python316-sqlite/disk.sqlite",
+      "sha256": "0f81c95d271b0fa5710180d5ea68b38dd0cf8792e6bdebb821296a34edc1eafb"
+    },
+    {
+      "bytes": 32768,
+      "path": "python316-sqlite/disk.sqlite-shm",
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "bytes": 0,
+      "path": "python316-sqlite/disk.sqlite-wal",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6956,
+      "path": "python316-sqlite/receipt.json",
+      "sha256": "70cb37db0443407c0a0a1d32143dfd04501a11c09bf1f27baa37d4de9acd48de"
+    },
+    {
+      "bytes": 1007,
+      "path": "source/sqlite-autoconf-3540000/auto.def",
+      "sha256": "3fef2a9ad38fe623e7ae33e73814b9ca1bbe3d253e0f18953a98d5a47c697238"
+    },
+    {
+      "bytes": 146,
+      "path": "source/sqlite-autoconf-3540000/configure",
+      "sha256": "265f6d7745f5d2a77bea83f50a8edf3dd62496ba9404c23ca735aeb035a0029e"
+    },
+    {
+      "bytes": 35,
+      "path": "source/sqlite-autoconf-3540000/make.bat",
+      "sha256": "38927e918de203a4e87ea60ec0de0228932ae2ef7d9db4344d23073b773237fb"
+    },
+    {
+      "bytes": 547,
+      "path": "source/sqlite-autoconf-3540000/Makefile.fallback",
+      "sha256": "67d473327dd92f5cad68fddb78b8bb3e8745aba851147945893e4db5a2b59892"
+    },
+    {
+      "bytes": 9903,
+      "path": "source/sqlite-autoconf-3540000/Makefile.in",
+      "sha256": "788d17f8e234719d4257e112d025afdddd4382d483d29a7c953858e9716bf1f6"
+    },
+    {
+      "bytes": 28482,
+      "path": "source/sqlite-autoconf-3540000/Makefile.msc",
+      "sha256": "73d22fb77762b5df63d5c6f2d39e0a5b8aada29b33d7b1df6771def26c641e89"
+    },
+    {
+      "bytes": 3563,
+      "path": "source/sqlite-autoconf-3540000/README.txt",
+      "sha256": "6c2c52310aebc296b779d1d4f2094566394f7c184bd7e53f1d7346492528ffb7"
+    },
+    {
+      "bytes": 7272,
+      "path": "source/sqlite-autoconf-3540000/Replace.cs",
+      "sha256": "74ba0687a84c328df2836f73d7d36368099a5f5c1c360a84211e51fa71f1dfc0"
+    },
+    {
+      "bytes": 1269586,
+      "path": "source/sqlite-autoconf-3540000/shell.c",
+      "sha256": "c444573b69d70516e64df5ab38911f814ed5509020c92cc899bf1f6ffa582e8f"
+    },
+    {
+      "bytes": 5315,
+      "path": "source/sqlite-autoconf-3540000/sqlite3.1",
+      "sha256": "1edbafb8886b64e5e72ca559d306f5ee63356cbf1059f72e908b66d1e231c46e"
+    },
+    {
+      "bytes": 9580800,
+      "path": "source/sqlite-autoconf-3540000/sqlite3.c",
+      "sha256": "2da161e310ef0aba3465f22a4d12b8a43723236f0942fa76e8aac523c3317243"
+    },
+    {
+      "bytes": 695737,
+      "path": "source/sqlite-autoconf-3540000/sqlite3.h",
+      "sha256": "cd20a2877bc82b94e36c1093b727dd87cfa3c1d581aac6e240925535cbd90166"
+    },
+    {
+      "bytes": 339,
+      "path": "source/sqlite-autoconf-3540000/sqlite3.pc.in",
+      "sha256": "c5467367b8b16ba116960c97f7120a6e3ef88896617afc2d4db44faeac574cad"
+    },
+    {
+      "bytes": 1988,
+      "path": "source/sqlite-autoconf-3540000/sqlite3.rc",
+      "sha256": "819c501ae41478928054fb1776f82bd4ffb1d42d779f29c812452cb94b43d343"
+    },
+    {
+      "bytes": 39547,
+      "path": "source/sqlite-autoconf-3540000/sqlite3ext.h",
+      "sha256": "48963abfefb41ac329ef9d706acb5eadba952a99a748285c9ded6b5e0942721b"
+    },
+    {
+      "bytes": 78,
+      "path": "source/sqlite-autoconf-3540000/sqlite3rc.h",
+      "sha256": "2fa5824d1c637013cbb68cfa589fd5b384e4413d67c2a6d8cd9b7f62ac37d055"
+    },
+    {
+      "bytes": 7,
+      "path": "source/sqlite-autoconf-3540000/VERSION",
+      "sha256": "7f61124735d044fa39bd13799617c4f8682650997cd6dedc84bba569b5413edc"
+    },
+    {
+      "bytes": 63145,
+      "path": "source/sqlite-autoconf-3540000/autosetup/autosetup",
+      "sha256": "9005aac8dfb41edef49376711c4e153eeec98c0fa39bcfa24d9d1b05de79a356"
+    },
+    {
+      "bytes": 50743,
+      "path": "source/sqlite-autoconf-3540000/autosetup/autosetup-config.guess",
+      "sha256": "e3d148130e9151735f8b9a8e69a70d06890ece51468a9762eb7ac0feddddcc2f"
+    },
+    {
+      "bytes": 39713,
+      "path": "source/sqlite-autoconf-3540000/autosetup/autosetup-config.sub",
+      "sha256": "11c54f55c3ac99e5d2c3dc2bb0bcccbf69f8223cc68f6b2438daa806cf0d16d8"
+    },
+    {
+      "bytes": 782,
+      "path": "source/sqlite-autoconf-3540000/autosetup/autosetup-find-tclsh",
+      "sha256": "546af36d01bf2be55949eeaecb0963509d03ebf1634f4f2a19760f3769aad3b7"
+    },
+    {
+      "bytes": 531,
+      "path": "source/sqlite-autoconf-3540000/autosetup/autosetup-test-tclsh",
+      "sha256": "955c5966fb008607030e89618f8c74dbbc69dc830393261e98dc668a80b5dd37"
+    },
+    {
+      "bytes": 390,
+      "path": "source/sqlite-autoconf-3540000/autosetup/cc-db.tcl",
+      "sha256": "455ba84859a051c72e607d789ae652264f657195ce2c76ea66d3113684e1e522"
+    },
+    {
+      "bytes": 4500,
+      "path": "source/sqlite-autoconf-3540000/autosetup/cc-lib.tcl",
+      "sha256": "07614cb53758c5cc99362f6c369b9728ace86a3ed2cfd4c7ff8462d746e8f89d"
+    },
+    {
+      "bytes": 3703,
+      "path": "source/sqlite-autoconf-3540000/autosetup/cc-shared.tcl",
+      "sha256": "027fa233775db2d1f57b39106e025477a2943fba4cf1b9a9c7c0e70cf294be87"
+    },
+    {
+      "bytes": 21057,
+      "path": "source/sqlite-autoconf-3540000/autosetup/cc.tcl",
+      "sha256": "3b5f94ddffe27503a55c909a333258216e2426cf63fb6dd40bb7300bd1ed6be9"
+    },
+    {
+      "bytes": 671,
+      "path": "source/sqlite-autoconf-3540000/autosetup/find_tclconfig.tcl",
+      "sha256": "3fb29a5f2e59fb1512d2fc841169c894cfca1147de3278005fd1ab7505fd5679"
+    },
+    {
+      "bytes": 651997,
+      "path": "source/sqlite-autoconf-3540000/autosetup/jimsh0.c",
+      "sha256": "d6ca32738df8d690b74c103d770661c689184333ea4ab21df03cf15bc2cc186d"
+    },
+    {
+      "bytes": 1737,
+      "path": "source/sqlite-autoconf-3540000/autosetup/LICENSE",
+      "sha256": "679b9208e67df09977456d1d2ae4d885b9badf02c47b45a28cf95ee27c14cb18"
+    },
+    {
+      "bytes": 5157,
+      "path": "source/sqlite-autoconf-3540000/autosetup/pkg-config.tcl",
+      "sha256": "331aa6a7e638dea9b509ca094ffd664299594f5c478986d7b1822e19cc349ba8"
+    },
+    {
+      "bytes": 77153,
+      "path": "source/sqlite-autoconf-3540000/autosetup/proj.tcl",
+      "sha256": "e624c67ba4e398cca4ac07d37631302d25f5e825cd807682846d652b15b8146a"
+    },
+    {
+      "bytes": 382,
+      "path": "source/sqlite-autoconf-3540000/autosetup/README.autosetup",
+      "sha256": "5a82b34f065ec4ce6f03cfa3dae158f841fa22e9381bba5489ea4083e295903e"
+    },
+    {
+      "bytes": 18896,
+      "path": "source/sqlite-autoconf-3540000/autosetup/README.md",
+      "sha256": "7e5ba508c1c880b37f0e82d26fa5927d5ae8e783f1e9f771e180e85b88e200d6"
+    },
+    {
+      "bytes": 90803,
+      "path": "source/sqlite-autoconf-3540000/autosetup/sqlite-config.tcl",
+      "sha256": "25fd44553285ceb1271be2c30d197af2bae3b6accc21f2c6e4c1a614fa8faa17"
+    },
+    {
+      "bytes": 11896,
+      "path": "source/sqlite-autoconf-3540000/autosetup/system.tcl",
+      "sha256": "fc0e4f05f7c75e24955e233ba93871e3b5b54e9f1f5e69f869c768a389bf4d4e"
+    },
+    {
+      "bytes": 82424,
+      "path": "source/sqlite-autoconf-3540000/autosetup/teaish/core.tcl",
+      "sha256": "73be13677038b417eaea35947407db9d5d76a26ad6e6d97b9b0af0d9cc6fd7b8"
+    },
+    {
+      "bytes": 6459,
+      "path": "source/sqlite-autoconf-3540000/autosetup/teaish/feature.tcl",
+      "sha256": "e2c0f5858c71bba23b996942c0d4c9beed25d47e7881cd300a0380138a49480f"
+    },
+    {
+      "bytes": 263,
+      "path": "source/sqlite-autoconf-3540000/autosetup/teaish/README.txt",
+      "sha256": "4beb97d3537774ee1f508e9bec2f973a60af8522e1fbe078c0d5821c0331c476"
+    },
+    {
+      "bytes": 8049,
+      "path": "source/sqlite-autoconf-3540000/autosetup/teaish/tester.tcl",
+      "sha256": "13d4468edfbe1c9660027bdcb810c2c1e9fd044c79c927fd01ec85c325aa209c"
+    },
+    {
+      "bytes": 1593,
+      "path": "source/sqlite-autoconf-3540000/tea/_teaish.tester.tcl.in",
+      "sha256": "5aac236286f6ea705c758d1814f461671dee9b529bb39f27032299f3cda3fd43"
+    },
+    {
+      "bytes": 259,
+      "path": "source/sqlite-autoconf-3540000/tea/auto.def",
+      "sha256": "c4bf68aae0616f3f0f7f3a8c8771f06710a2f4c82bc7ce550f74510fa0ec6617"
+    },
+    {
+      "bytes": 625,
+      "path": "source/sqlite-autoconf-3540000/tea/configure",
+      "sha256": "e7816e8e34687c64227d507d350d03864ec80dab04ca4ed11dac7bc90603d96e"
+    },
+    {
+      "bytes": 257,
+      "path": "source/sqlite-autoconf-3540000/tea/license.terms",
+      "sha256": "66e056b6e8687f32af30d5187611b98b12a8f46f07aaf62f43585f276e8f0ac9"
+    },
+    {
+      "bytes": 16310,
+      "path": "source/sqlite-autoconf-3540000/tea/Makefile.in",
+      "sha256": "169df2ee2e36f95167ee9dea5931c790edd232e9fbcf41575ded3c3b6372ae7c"
+    },
+    {
+      "bytes": 1238,
+      "path": "source/sqlite-autoconf-3540000/tea/pkgIndex.tcl.in",
+      "sha256": "83e655fdcf4b857c9073b7e3ab8d5c889eb0dee60dc77af88c6e45e1ee7f5e1c"
+    },
+    {
+      "bytes": 2972,
+      "path": "source/sqlite-autoconf-3540000/tea/README.txt",
+      "sha256": "ae3295589f941bb8af39156dfe92e60de9dfe641b2067e97c6ebf3c35137cc06"
+    },
+    {
+      "bytes": 19823,
+      "path": "source/sqlite-autoconf-3540000/tea/teaish.tcl",
+      "sha256": "86abd4e4e188fa1ba3deabe56f06f4caa3b67ae9fbc42d734e709220246a0fb3"
+    },
+    {
+      "bytes": 267,
+      "path": "source/sqlite-autoconf-3540000/tea/teaish.test.tcl",
+      "sha256": "e320b68f7b75dd1947691b642d4c35fb309e9d8047aba8772d6194c949d3311a"
+    },
+    {
+      "bytes": 150446,
+      "path": "source/sqlite-autoconf-3540000/tea/generic/tclsqlite3.c",
+      "sha256": "1925a5dfc20c095c1fc440bfa24fe455951f3fb4d37527ba049a4c20b7542946"
+    },
+    {
+      "bytes": 16727283,
+      "path": "wheels/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "fbde6962867ee75b48b0ee29b2b9372ec5d617799dbaf38e82dc0596f2f7738a"
+    },
+    {
+      "bytes": 1835008,
+      "path": "wheels/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.partial",
+      "sha256": "69a4bd0c139b02451dc0238aec4e899c59464b0d6d05efce98fd74ec9ca709e9"
+    },
+    {
+      "bytes": 3723069,
+      "path": "wheels/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.range-13004214-16727282",
+      "sha256": "7f958c7fb5f0137ea69617d68ca79e9425b89f5541f448011020c6a77bb578c6"
+    },
+    {
+      "bytes": 3723068,
+      "path": "wheels/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.range-1835008-5558075",
+      "sha256": "4093d723c2427da95f71df8babae0d13c95ea7e6603fb8330156aca0a3fd0fb6"
+    },
+    {
+      "bytes": 3723069,
+      "path": "wheels/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.range-5558076-9281144",
+      "sha256": "b270ad172fb060ddd47d4203d2119cbad5f428e78c202a11290d5c79b4bb70a7"
+    },
+    {
+      "bytes": 3723069,
+      "path": "wheels/numpy-2.5.4-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.range-9281145-13004213",
+      "sha256": "92a3ba83562bbe9a5b7fe850ee768f26875b56e8269054db9416f9d70cb11a97"
+    }
+  ]
+}

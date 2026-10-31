@@ -1,0 +1,29 @@
+{
+  "status": "PASS_BOUNDED_BUILD_AND_NATIVE_REVIEW",
+  "limitations": [
+    "not full CPU dependency/runtime acceptance",
+    "oss2 full installed consumer not run",
+    "historical author container actual inspection unavailable after auto-remove; saved HostConfig reviewed"
+  ],
+  "source_payload_comparisons": [
+    {
+      "package": "oss2",
+      "source_python_files_byte_identical": 20
+    },
+    {
+      "package": "crcmod",
+      "source_python_files_byte_identical": 5
+    }
+  ],
+  "container_id": "d6e20d64fd0ac200cbe69f56ec4997ad17d208741b4a0aaa589813d04d0d6417",
+  "container_exit": 0,
+  "runtime_image": "sha256:ca19e0667a83656165ad4c7edd07ef50b97429fa7aa5932453dac1dc4c16ebe1",
+  "builder_image": "sha256:cd48c100f4e8c0297c2e1a558b7a93d95e41f79ba4f58d5f7d938a71192dff23",
+  "native_extension_sha256": "ca367176ffb138dcac27abbdfdd6dfc6067d94b25ac0c9f0b559755642fe8425",
+  "independent_verifier_initial_failures": [
+    "existing runtime venv was mistaken for private verification venv: ModuleNotFoundError",
+    "only changing _usingExtension did not replace function map: TypeError; separate Python module now forces Python import and flag"
+  ],
+  "author_original_checker_exit": 1,
+  "author_corrected_checker_exit": 0
+}

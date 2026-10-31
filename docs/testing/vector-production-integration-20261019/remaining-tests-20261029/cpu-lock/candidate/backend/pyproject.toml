@@ -1,0 +1,133 @@
+[project]
+name = "graphrag-agent-backend"
+version = "0.1.0"
+description = "GraphRAG Agent 知识图谱问答系统后端（FastAPI）"
+requires-python = "==3.12.*"
+
+dependencies = [
+    "torch @ https://download-r2.pytorch.org/whl/cpu/torch-2.14.0%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=a09987c95ec4cffdb6df798d3d641558110a334cfccce22f2f046d83142bc260",
+    # Web 框架
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "pydantic>=2.10.0",
+    "python-multipart>=0.0.18",
+    # Agent / LLM 编排
+    "langgraph>=1.0.0",
+    "langchain>=1.2.0",
+    "langchain-openai>=0.3.0",
+    # Research budget and local ASGI adapters import these directly.
+    "openai>=3.14.1",
+    "starlette>=1.6.0",
+    # RAG pipeline
+    "numpy==2.5.4",
+    "networkx>=3.0.0",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=3.0.0",
+    "python-docx>=1.1.0",
+    "openpyxl>=3.1.0",
+    # 基础设施
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.32.0",
+    "httpx>=0.27.0",
+    "structlog>=25.0.0",
+    "prometheus-client>=0.21.0",
+    "apscheduler>=3.10.0",
+    "pyjwt>=2.15.1",
+    # KG版本创建/切换/清理共享进程间锁，不能只依赖其他包的传递安装。
+    "filelock>=4.2.1",
+    # 对象存储（代码已 import，此前漏声明）
+    "oss2>=2.19.0",
+    # 表格召回：table_index.py 缺包时 raise，但调用方
+    # index_registry.build_table_index_from_chunks / worker.py 均 try/except 吞掉，
+    # 缺失时表格召回静默失效、入库照常完成。列为默认安装，非硬必需。
+    "duckdb>=1.0.0",
+    # agentic_rag_mvp.py 直接 import，此前仅靠传递依赖
+    "typing-extensions>=4.0.0",
+    # 本地子模块：langextract（见下方 sources）
+    "langextract",
+]
+# 刻意不声明（附理由，便于后续审计）：
+#   jieba        —— index_registry.py:218 在 try/except ImportError 内，有 bigram fallback，软依赖
+#   langchain-core —— routes/query.py:10 直接 import，但由 langchain / langgraph 硬性传递保证
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-timeout>=2.3.0",
+    "pip-audit>=2.7.0",
+    "bandit>=1.7.9",
+    "detect-secrets>=1.5.0",
+    "ruff>=0.8.0",
+]
+
+[tool.uv]
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+# 传递依赖安全下限；保持原依赖角色，防止重锁退回已知漏洞版本。
+constraint-dependencies = ["absl-py==2.5.0", "aiohappyeyeballs==2.7.1", "aiohttp==3.14.4", "aiosignal==1.4.0", "aliyun-python-sdk-core==2.16.1", "aliyun-python-sdk-kms==2.16.5", "annotated-doc==0.0.5", "annotated-types==0.8.0", "anyio==4.15.1", "apscheduler==3.11.3", "async-timeout==5.0.1", "attrs==26.1.0", "bandit==1.9.4", "boolean-py==5.0", "cachecontrol==0.14.4", "certifi==2026.10.19", "cffi==2.1.1", "charset-normalizer==3.5.1", "click==8.5.0", "cloudpickle==3.1.2", "colorama==0.4.6", "crcmod==1.7", "cryptography==50.0.1", "cuda-bindings==13.4.1", "cuda-pathfinder==1.8.1", "cuda-toolkit==13.0.3.0", "cyclonedx-python-lib==11.12.0", "defusedxml==0.7.1", "detect-secrets==1.5.0", "distro==1.9.0", "duckdb==1.5.5", "et-xmlfile==2.0.0", "exceptiongroup==1.3.1", "fastapi==0.141.1", "filelock==4.2.1", "frozenlist==1.8.0", "fsspec==2026.7.0", "google-api-core==2.37.0", "google-auth==2.58.0", "google-cloud-core==2.7.0", "google-cloud-storage==3.14.1", "google-crc32c==1.8.0", "google-genai==2.23.0", "google-resumable-media==2.10.2", "googleapis-common-protos==1.75.3", "h11==0.16.0", "hf-xet==1.6.0", "httpcore==1.0.9", "httpcore2==2.13.0", "httptools==0.8.0", "httpx==0.28.1", "httpx2==2.13.0", "httpx2-jsfetch==1.0", "huggingface-hub==1.31.0", "idna==3.19", "iniconfig==2.3.0", "jinja2==3.1.6", "jiter==0.17.0", "jmespath==1.1.0", "joblib==1.6.0", "jsonpatch==1.33", "jsonpointer==3.1.1", "langchain==1.4.0", "langchain-core==1.6.3", "langchain-openai==1.6.2", "langchain-protocol==0.0.19", "langgraph==1.2.11", "langgraph-checkpoint==4.2.0", "langgraph-prebuilt==1.1.0", "langgraph-sdk==0.4.4", "langsmith==0.12.5", "license-expression==30.4.4", "lxml==6.1.3", "markdown-it-py==4.2.0", "markupsafe==3.0.3", "mdurl==0.1.2", "ml-collections==1.1.0", "more-itertools==11.1.0", "mpmath==1.3.0", "msgpack==1.2.3", "multidict==6.9.1", "narwhals==2.26.0", "networkx==3.6.1", "numpy==2.5.4", "nvidia-cublas==13.1.1.3", "nvidia-cuda-cupti==13.0.85", "nvidia-cuda-nvrtc==13.0.88", "nvidia-cuda-runtime==13.0.96", "nvidia-cudnn-cu13==9.24.0.43", "nvidia-cufft==12.0.0.61", "nvidia-cufile==1.15.1.6", "nvidia-curand==10.4.0.35", "nvidia-cusolver==12.0.4.66", "nvidia-cusparse==12.6.3.3", "nvidia-cusparselt-cu13==0.8.1", "nvidia-nccl-cu13==2.30.7", "nvidia-nvjitlink==13.4.52", "nvidia-nvshmem-cu13==3.4.5", "nvidia-nvtx==13.0.85", "openai==3.14.1", "openpyxl==3.1.5", "opentelemetry-api==1.45.1", "orjson==3.12.0", "ormsgpack==1.12.2", "oss2==2.19.1", "packageurl-python==0.17.6", "packaging==26.3", "pandas==3.0.5", "pip==26.2.1", "pip-api==0.0.35", "pip-audit==2.10.1", "pip-requirements-parser==32.0.1", "platformdirs==4.11.8", "pluggy==1.6.0", "prometheus-client==0.26.0", "propcache==0.5.4", "proto-plus==1.28.4", "protobuf==7.36.1", "py-serializable==2.1.0", "pyasn1==0.6.4", "pyasn1-modules==0.4.2", "pycparser==3.0", "pycryptodome==3.23.0", "pydantic==2.13.5", "pydantic-core==2.46.5", "pygments==2.21.0", "pyjwt==2.15.1", "pyparsing==3.3.2", "pytest==9.1.1", "pytest-timeout==2.4.0", "python-dateutil==2.9.0.post0", "python-docx==1.2.0", "python-dotenv==1.2.3", "python-multipart==0.0.32", "pyyaml==6.0.3", "rank-bm25==0.2.2", "regex==2026.9.10", "requests==2.34.2", "requests-toolbelt==1.0.0", "rich==15.0.0", "ruff==0.17.0", "safetensors==0.8.0", "scikit-learn==1.9.1", "scipy==1.18.1", "sentence-transformers==6.0.1", "setuptools==84.1.0", "shellingham==1.5.4", "six==1.17.0", "sniffio==1.3.1", "sortedcontainers==2.4.0", "starlette==1.6.0", "stevedore==5.9.1", "structlog==26.1.0", "sympy==1.14.0", "tenacity==9.1.4", "threadpoolctl==3.7.0", "tiktoken==0.14.0", "tokenizers==0.23.2", "tomli==2.4.1", "tomli-w==1.2.0", "torch==2.14.0+cpu", "tqdm==4.70.1", "transformers==5.17.0", "triton==3.8.0", "truststore==0.10.4", "typer==0.27.2", "typing-extensions==4.16.0", "typing-inspection==0.4.4", "tzdata==2026.4", "tzlocal==5.4.4", "urllib3==2.8.0", "uuid-utils==0.17.1", "uvicorn==0.53.0", "uvloop==0.22.1", "watchfiles==1.2.0", "websockets==16.1.1", "xxhash==4.0.1", "yarl==1.25.1", "zstandard==0.25.0"]
+
+[tool.uv.sources]
+langextract = { path = "../langextract", editable = true }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+timeout = 60
+
+# ── Ruff ────────────────────────────────────────────────────────────────
+# 规则来源：.claude/rules/error-handling.md
+#   E722 裸 except / BLE001 盲捕 / S110 try-except-pass / T20 业务代码禁 print
+# 落地顺序：先清代码（Task 1-15），最后开规则（本任务），否则 CI 中途必红。
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+src = ["."]
+extend-exclude = [".venv", "output", "__pycache__", "uploads"]
+
+[tool.ruff.lint]
+select = [
+    "E4", "E7", "E9",   # E7 含 E722 裸 except
+    "F",                # pyflakes
+    "BLE",              # BLE001 blind except
+    "S110",             # try-except-pass
+    "T20",              # T201 print
+    "RUF100",           # 未使用的 noqa
+]
+# 明确不启用（防后续无意识扩张）：
+#   S 全量 —— 与 bandit SAST 重复且噪声大，只挑 S110 精确命中
+#   T 全量 —— 只启用 T20 子集
+
+[tool.ruff.lint.per-file-ignores]
+# T20/BLE001/S110：以下 6 个是可独立运行的 CLI 入口，其 stdout 就是用户界面，
+# 且宽捕后继续跑是其容错设计（脚本靠打印提示失败，不靠异常传播）。
+# 用 per-file-ignores 而非逐行 # noqa：豁免是**文件角色**属性，
+# 逐行 noqa 只会训练审阅者忽略 noqa。
+# （purge_log_secrets.py 为 Task 5 新增的一次性运维 CLI，与 check_imports.py 同属一类。）
+"pipeline.py" = ["T20", "BLE001", "S110", "E402"]
+"run_evaluation.py" = ["T20", "BLE001", "S110"]
+"agentic_rag_mvp.py" = ["T20", "BLE001", "S110"]
+"build_indices.py" = ["T20", "BLE001", "S110"]
+"scripts/check_imports.py" = ["T20", "BLE001", "S110"]   # stdout 是 CI 步骤的可见输出（ci.yml 冒烟步骤）
+"scripts/purge_log_secrets.py" = ["T20", "BLE001", "S110"]
+# 测试：用 except Exception 做容错断言、用 print 调试属正常实践；
+# 测试文件需先配好 sys.path 再导入项目模块，必须先有语句再 import（E402）。
+"tests/**" = ["T20", "BLE001", "S110", "E722", "E402"]
+
+# E402（模块级导入不在文件顶部）：以下文件**刻意**先执行副作用再导入 ——
+# server.py / worker.py 先 load_dotenv(override=True) 覆盖环境变量，再导入读取 env 的模块；
+# pipeline.py 先 sys.path.insert() 定位同仓库模块。
+# 这不是疏漏：改成顶部导入会改变运行时行为（env 还没加载就被读走），因此按文件豁免。
+"server.py" = ["E402"]
+"worker.py" = ["E402"]
+
+# ── Bandit SAST ─────────────────────────────────────────────────────────
+# 扫描范围排除测试与虚拟环境。豁免**不放这里** —— 放在 CI 调用点的注释里，
+# 因为审阅者是在 CI 日志里看到失败时去读 CI 文件，而不是翻 toml。
+# 每条豁免须在 docs/governance/sast-exemptions-2026-09-18.md 落档（含复查触发条件），
+# 沿用 docs/governance/dependency-audit-2026-09-17.md 的体例。
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "output", "uploads", "__pycache__"]
+# skips 保持为空：需要的豁免在 CI 里用 --skip 显式列出并附理由。
+skips = []
+
+

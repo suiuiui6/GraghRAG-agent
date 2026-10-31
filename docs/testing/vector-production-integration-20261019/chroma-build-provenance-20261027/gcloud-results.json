@@ -1,0 +1,52 @@
+[
+  {
+    "name": "gcloud-root",
+    "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/41f36dbe75037399c6b68829530f13ef7111eac8",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "5",
+      "--max-time",
+      "20",
+      "--output",
+      ".tmp\\chroma-build-provenance-20261027\\gcloud-root.api.json",
+      "--write-out",
+      "%{http_code}",
+      "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/41f36dbe75037399c6b68829530f13ef7111eac8"
+    ],
+    "exit": 0,
+    "http": "200",
+    "stderr": "",
+    "git_blob_matches": true,
+    "special_mentions": []
+  },
+  {
+    "name": "gcloud-auth",
+    "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b8c191d9de02acd3133de59b085d0a1df2f63368",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "5",
+      "--max-time",
+      "20",
+      "--output",
+      ".tmp\\chroma-build-provenance-20261027\\gcloud-auth.api.json",
+      "--write-out",
+      "%{http_code}",
+      "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b8c191d9de02acd3133de59b085d0a1df2f63368"
+    ],
+    "exit": 0,
+    "http": "200",
+    "stderr": "",
+    "git_blob_matches": true,
+    "special_mentions": [
+      "serde_json = { version = \"1.0\" }"
+    ]
+  }
+]

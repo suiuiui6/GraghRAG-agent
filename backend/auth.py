@@ -7,7 +7,7 @@ import os
 from fastapi import Request
 from fastapi.responses import JSONResponse
 
-PUBLIC_PATHS = {"/", "/health", "/metrics", "/docs", "/redoc", "/openapi.json", "/api/v1/health", "/api/v1/auth/login", "/api/v1/auth/callback", "/api/v1/auth/refresh", "/static/chat-widget.js"}
+PUBLIC_PATHS = {"/", "/health", "/metrics", "/docs", "/redoc", "/openapi.json", "/api/v1/health", "/api/v1/ready", "/api/v1/auth/login", "/api/v1/auth/callback", "/api/v1/auth/refresh", "/static/chat-widget.js"}
 
 
 def is_production() -> bool:

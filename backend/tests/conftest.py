@@ -13,6 +13,7 @@ import structlog  # noqa: F401
 import re
 import shutil
 import uuid
+import tempfile
 from pathlib import Path
 
 import pytest
@@ -30,7 +31,7 @@ def isolate_runtime_artifacts(monkeypatch, tmp_path):
 
 
 _TESTS_DIR = Path(__file__).resolve().parent
-_SANDBOX_TMP_ROOT = _TESTS_DIR / "_sandbox_tmp"
+_SANDBOX_TMP_ROOT = Path(tempfile.gettempdir()) / 'graphrag-test-fixtures'
 _TEST_ARTIFACT_PREFIXES = (
     "tmp_basetemp_",
     "tmp_probe_",
@@ -58,8 +59,8 @@ def pytest_ignore_collect(collection_path, config):
 
 @pytest.fixture
 def sandbox_tmp_path(request):
-    """Create a repo-local temp directory compatible with the managed sandbox."""
-    prefix = _sanitize_tmp_prefix(request.node.name)
+    """Use short portable temporary paths, including long parameterized names."""
+    prefix = _sanitize_tmp_prefix(request.node.name)[:16]
     root = _SANDBOX_TMP_ROOT / prefix
     root.mkdir(parents=True, exist_ok=True)
     path = root / uuid.uuid4().hex

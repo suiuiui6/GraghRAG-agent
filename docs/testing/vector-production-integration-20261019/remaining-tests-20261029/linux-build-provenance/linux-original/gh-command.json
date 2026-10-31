@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gh",
+    "attestation",
+    "verify",
+    "D:\\graghRAG-agent\\.tmp\\linux-chroma-provenance-gap-20261029\\chromadb-1.5.9-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "--bundle",
+    "D:\\graghRAG-agent\\.tmp\\linux-chroma-provenance-gap-20261029\\linux-bundle.json",
+    "--repo",
+    "chroma-core/chroma",
+    "--signer-workflow",
+    "chroma-core/chroma/.github/workflows/_build_release_pypi.yml",
+    "--source-digest",
+    "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+    "--source-ref",
+    "refs/tags/1.5.9",
+    "--format",
+    "json"
+  ],
+  "exit": 0,
+  "seconds": 11.156000000002678
+}

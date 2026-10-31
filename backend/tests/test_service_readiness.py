@@ -88,7 +88,7 @@ def test_kg_default_corrupt_count_degrades(tmp_path):
     assert kg_service.count_kg_nodes() == 0
 
 
-def test_catalog_real_stats_search_pagination_and_quality(tmp_path):
+def test_catalog_real_stats_search_pagination_and_quality(tmp_path, admitted_health_publication):
     builder = catalog.get_catalog()
     assert builder is catalog.get_catalog()
     empty = builder.build()
@@ -110,9 +110,14 @@ def test_catalog_real_stats_search_pagination_and_quality(tmp_path):
     (tmp_path / "domain.yaml").write_text("motor:\n  category: machine\nsensor: {}\n", encoding="utf-8")
     (tmp_path / "vectordb").mkdir()
     assert builder._count_chunks() == 0
-    with sqlite3.connect(tmp_path / "vectordb/chroma.sqlite3") as conn:
-        conn.execute("CREATE TABLE embedding_metadata (id INTEGER)")
-        conn.executemany("INSERT INTO embedding_metadata VALUES (?)", [(1,), (2,)])
+    from doc_processor import Chunk
+    import hashlib
+    asset = admitted_health_publication.asset_root / 'fixture.txt'
+    asset.write_text('synthetic health fixture', encoding='utf-8')
+    admitted_health_publication.publish('health_task', 'health_doc', {'owner_id': 'owner'},
+        [Chunk('c' + str(i), 'public active text', 'text') for i in range(2)],
+        [[1., 0.]] * 2,
+        assets=[{'path': asset.name, 'sha256': hashlib.sha256(asset.read_bytes()).hexdigest()}])
     report = builder.build("p")
     assert report["summary"]["total_chunks"] == 2
     assert report["summary"]["by_project"] == {"p": {"documents": 1, "entities": 3}, "default": {"documents": 1, "entities": 0}}
@@ -572,3 +577,23 @@ def test_lifecycle_recent_malformed_versions_and_delete_failure(tmp_path, monkey
     assert manager._clean_kg_versions() == 1
     assert len(list((tmp_path / "kg/doc_long").glob(".retired-*"))) == 1
     assert (tmp_path / "kg/doc_long/vbad").exists()
+
+
+@pytest.fixture
+def admitted_health_publication():
+    from services.document_runtime import configure_publication
+    from services.document_publication import DocumentPublication
+    from vector_store import VectorStore
+    from vector_runtime import SyntheticStorageConfig
+    with SyntheticStorageConfig.create() as admission:
+        store = VectorStore(persist_dir=admission.root / 'database', embedding_dim=2,
+                            synthetic_config=admission)
+        profile = {'model': store.embedding_model, 'revision': 'health-fixture',
+                   'dimension': 2, 'normalize': True}
+        service = DocumentPublication(store, admission.root / 'assets', profile)
+        from types import SimpleNamespace
+        configure_publication(service, SimpleNamespace(model_profile=profile, model=profile['model'], dim=2))
+        try:
+            yield service
+        finally:
+            configure_publication(None)

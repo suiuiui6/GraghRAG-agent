@@ -1,0 +1,50 @@
+[
+  {
+    "name": "cl",
+    "path": null
+  },
+  {
+    "name": "clang-cl",
+    "path": null
+  },
+  {
+    "name": "clang",
+    "path": null
+  },
+  {
+    "name": "gcc",
+    "path": null
+  },
+  {
+    "name": "cmake",
+    "path": null
+  },
+  {
+    "name": "ninja",
+    "path": null
+  },
+  {
+    "name": "dumpbin",
+    "path": null
+  },
+  {
+    "name": "llvm-readobj",
+    "path": null
+  },
+  {
+    "name": "link",
+    "path": null
+  },
+  {
+    "name": "rc",
+    "path": null
+  },
+  {
+    "name": "msbuild",
+    "path": null
+  },
+  {
+    "name": "vswhere",
+    "path": null
+  }
+]

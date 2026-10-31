@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://dist.libuv.org/dist/v1.53.0/libuv-v1.53.0.tar.gz",
+    "file": "libuv-v1.53.0.tar.gz",
+    "timeout_seconds": 30,
+    "http_status": 200,
+    "bytes": 1391596,
+    "sha256": "cb0d6dd2128d5a95bd242c6cc982a24fe608fa93da57b6b4ec763b0018c53e64",
+    "seconds": 1.9220929000002798
+  },
+  {
+    "url": "https://dist.libuv.org/dist/v1.53.0/libuv-v1.53.0.tar.gz.sign",
+    "file": "libuv-v1.53.0.tar.gz.sign",
+    "timeout_seconds": 30,
+    "http_status": 200,
+    "bytes": 833,
+    "sha256": "65ca5d646db151e403d9271202c609ff72c41781285bae310e635a90f7e28d08",
+    "seconds": 1.3016473000025144
+  },
+  {
+    "url": "https://raw.githubusercontent.com/libuv/libuv/v1.53.0/MAINTAINERS.md",
+    "file": "MAINTAINERS",
+    "timeout_seconds": 30,
+    "http_status": 200,
+    "bytes": 2628,
+    "sha256": "33910a51888aedd124de6015e86c254bfbd1119fc089974efa134940d1a80852",
+    "seconds": 1.051170999999158
+  },
+  {
+    "url": "https://github.com/libuv/libuv/releases/tag/v1.53.0",
+    "file": "release.html",
+    "timeout_seconds": 30,
+    "http_status": 200,
+    "bytes": 276788,
+    "sha256": "dcd6c60b0f565941b6fb7325d37fd709188b4d281c1bb96a1db7ca08045a045e",
+    "seconds": 2.6498941000027116
+  }
+]

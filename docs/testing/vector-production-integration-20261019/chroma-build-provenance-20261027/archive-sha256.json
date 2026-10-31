@@ -1,0 +1,587 @@
+[
+  {
+    "file": "arrow-json.index.api.json",
+    "sha256": "b2dc33196719e30c6996a9f4e0b12a8d436acccb8f4ce5e34b9eaef144c26459",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\arrow-json.index.api.json"
+  },
+  {
+    "file": "bundle.json",
+    "sha256": "d9141c4dec6adb35a8566d0ed60c18bd2262216ccae18b1d527d2ec35519e1bc",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\bundle.json"
+  },
+  {
+    "file": "cached-original-serde-dependents.json",
+    "sha256": "43b7d6cec762115d879c5860e78bb59ff883cd7d61fa3f23e9e878ba9bc6f81b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\cached-original-serde-dependents.json"
+  },
+  {
+    "file": "check_index_features.py",
+    "sha256": "3af6487215143e70c63867792d42e5eb7675575b808e8e7ab4a66c1fdc58bab8",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\check_index_features.py"
+  },
+  {
+    "file": "check_lock_manifests.py",
+    "sha256": "46f70b67eb5e6d0628275b27af60b1d5ff93632adc56ef4ab37874da1c9b7de8",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\check_lock_manifests.py"
+  },
+  {
+    "file": "check_original_workspace.py",
+    "sha256": "c12dca5dae3e6142a7b2b83aa2a6f3fc1e7deb11771bc8936262c2997d1ba450",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\check_original_workspace.py"
+  },
+  {
+    "file": "decoded-attestation.json",
+    "sha256": "35d90d8cd3430a4531b34c0a91201f03cd1e0d86e74dac0285d1d642dbfa1dd1",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\decoded-attestation.json"
+  },
+  {
+    "file": "evidence-verification.json",
+    "sha256": "cfb4f03434943bac71f0f82098ff2d0883ef253bde170a705ec694da6a0fcb5c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\evidence-verification.json"
+  },
+  {
+    "file": "extra-fetch-results.json",
+    "sha256": "38707a75c2890e2f3808b5763acb13d0b11113b5a7b9f0c05b9cf733d2bdd8d7",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\extra-fetch-results.json"
+  },
+  {
+    "file": "gcloud-auth.api.json",
+    "sha256": "1ae806f95946ea7ac057b071ae70f70405f306d9b96ca4769ec13465189a6b91",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-auth.api.json"
+  },
+  {
+    "file": "gcloud-auth.Cargo.toml",
+    "sha256": "ff85e244805edea289b3fa83c5afbcb408dd95d6645f4604e698c37ed997d3d7",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-auth.Cargo.toml"
+  },
+  {
+    "file": "gcloud-results.json",
+    "sha256": "cc5436ecd09fc0b2773c9c8777b808e797a25a6c9a9221fa61ef243cce912f25",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-results.json"
+  },
+  {
+    "file": "gcloud-root.api.json",
+    "sha256": "8e0d89280a63d11d2f6aa99b663da58935f94d61f2bed728e127bdf330abf4e6",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-root.api.json"
+  },
+  {
+    "file": "gcloud-root.Cargo.toml",
+    "sha256": "fa246589a147a346933bea152de530db7fa390ab9cd2e0dd025d2ea3505ac598",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-root.Cargo.toml"
+  },
+  {
+    "file": "gcloud-tree.json",
+    "sha256": "ef41df5a3747e4ac3e39a79df38f59387a05096fa6605f873f9c208db353a326",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-tree.json"
+  },
+  {
+    "file": "gh-verification-network.json",
+    "sha256": "c142fdf2f8875ee5c1a6431b7d157059ead98f0366d11752365de16f15e1813e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gh-verification-network.json"
+  },
+  {
+    "file": "gh-verification-network.stderr",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gh-verification-network.stderr"
+  },
+  {
+    "file": "gh-verification.json",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gh-verification.json"
+  },
+  {
+    "file": "gh-verification.stderr",
+    "sha256": "340b9dbf6482effc71d5b84a4735c89db9e436b8cc05ada3890f583cc8ec995e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gh-verification.stderr"
+  },
+  {
+    "file": "index/arrow-json.json",
+    "sha256": "b2dc33196719e30c6996a9f4e0b12a8d436acccb8f4ce5e34b9eaef144c26459",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\arrow-json.json"
+  },
+  {
+    "file": "index/assert-json-diff.json",
+    "sha256": "ad5d61b299cf0fea12160b0af9017e53dcbd326b0204db7cf089d43e7fe69c97",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\assert-json-diff.json"
+  },
+  {
+    "file": "index/axum.json",
+    "sha256": "1a003ad9d793f9955b57f900bd769c5ac84d457659564a67c59ab2accf92e74b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\axum.json"
+  },
+  {
+    "file": "index/criterion.json",
+    "sha256": "cae1defc564aa1dc2e99b916bd6cf631942296f6bd29d552409d83d543fe0048",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\criterion.json"
+  },
+  {
+    "file": "index/hf-hub.json",
+    "sha256": "ddf175a3594ca982de113a9998614b6c648e2fdc64be9fe329812e1ab946cf14",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\hf-hub.json"
+  },
+  {
+    "file": "index/httpmock.json",
+    "sha256": "693012e9fe74b93f5d9999cbae3bae4793ffd40bca1d005beb28608452183180",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\httpmock.json"
+  },
+  {
+    "file": "index/json-patch.json",
+    "sha256": "a737dd61d6ff2919c8a56c9bbd5f967e9571e5757b99d972d5ceb5b2ca219c18",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\json-patch.json"
+  },
+  {
+    "file": "index/jsonpath-rust.json",
+    "sha256": "53336db44c94006a6db34c5c05b3f66ec2b97810c6502eba8a852481abad4352",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\jsonpath-rust.json"
+  },
+  {
+    "file": "index/jsonwebtoken.json",
+    "sha256": "a87b3aaa1eee591be8063cf40dabf31b463404301cdb1f826e0b5733c180b7fd",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\jsonwebtoken.json"
+  },
+  {
+    "file": "index/k8s-openapi.json",
+    "sha256": "600a934889122297bb5990e9f41038c91147da17ce50cc52eecbf4ddc790891a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\k8s-openapi.json"
+  },
+  {
+    "file": "index/kube-client.json",
+    "sha256": "9ce08ca1737efb0fe0b8d1c705cb5ff46567ee04997c7b34699cbc862b75044a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-client.json"
+  },
+  {
+    "file": "index/kube-core.json",
+    "sha256": "448cdebf0aaded7b6c8541fc6edb8d0317f078611ecbb210fb6098d197a9c48c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-core.json"
+  },
+  {
+    "file": "index/kube-derive.json",
+    "sha256": "b7931edb5b63f12b33e3325487b9bcb597c02997c748cc0c0745faa9e99f033e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-derive.json"
+  },
+  {
+    "file": "index/kube-runtime.json",
+    "sha256": "c917907849d70a184e123a3648370365afd4c1fa3c52630fc11a584df06864a0",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-runtime.json"
+  },
+  {
+    "file": "index/object_store.json",
+    "sha256": "80e388bc0b2f6a50edf22309b9836aa25a19b5271359abbe7569fc0fb590924f",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\object_store.json"
+  },
+  {
+    "file": "index/opentelemetry_sdk.json",
+    "sha256": "21f681255e3ec7771a7cf80cf78ba2a4a6da675394aaf06b996da273e7ecdb29",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\opentelemetry_sdk.json"
+  },
+  {
+    "file": "index/reqwest.json",
+    "sha256": "0d83500c5ac96f1ddeca88b37f72d80f5481511a6849efa316847ffea84f364a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\reqwest.json"
+  },
+  {
+    "file": "index/schemars.json",
+    "sha256": "be31590dc7cc5f5ef1a378effbb0b2018290b63fa1370f9d79e923ecbced435a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\schemars.json"
+  },
+  {
+    "file": "index/sqlx-core.json",
+    "sha256": "66a2dd96cb3966792d0b2c3f685d4deb7c79f1d9646f67d19cf83471a1260a49",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\sqlx-core.json"
+  },
+  {
+    "file": "index/sqlx-macros-core.json",
+    "sha256": "e9ccec009c452fc2bdb29c2000bac6e0502e67119049a61ab49f9d28c9db2bef",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\sqlx-macros-core.json"
+  },
+  {
+    "file": "index/sqlx-postgres.json",
+    "sha256": "064f575daf828518b2fcb8141b27bb0b6a39ce5ae5bae85d7ceb5110a1356852",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\sqlx-postgres.json"
+  },
+  {
+    "file": "index/tantivy.json",
+    "sha256": "2ea2a2f07fc926ce386c9102016a1d0efb74cf5c9a4da3077cd37407c7719d21",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\tantivy.json"
+  },
+  {
+    "file": "index/tinytemplate.json",
+    "sha256": "7832d28be113b998f1dcf01cfc00dcdc8cd1d30ec8db94ad2c5d45748dacd7cb",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\tinytemplate.json"
+  },
+  {
+    "file": "index/ureq.json",
+    "sha256": "1af216684d0e7d97ae77e7dda0d4ed28fe5dc5e22dd1052d9cd4e4c75bb8eb28",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\ureq.json"
+  },
+  {
+    "file": "index/utoipa-swagger-ui.json",
+    "sha256": "d52c6582b68abb5fe2fecb280b4f56fbf2a7c6b257ccf138f21f7ce00efb7e4d",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\utoipa-swagger-ui.json"
+  },
+  {
+    "file": "index/utoipa.json",
+    "sha256": "55d8405cfda8bdcb154fa54860f0eabcd6aaada2310d5a307654776612c43c36",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\utoipa.json"
+  },
+  {
+    "file": "index/validator.json",
+    "sha256": "972ccd00e6fe32a5fa5b7ebbda4e65c6fdb10dc0a268a38f8a31250c022c0f33",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\validator.json"
+  },
+  {
+    "file": "index/wit-component.json",
+    "sha256": "672cff31fb24543aa2b99732ab49b27cbe61094d749570645a56b0ea4b72fb07",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\wit-component.json"
+  },
+  {
+    "file": "index/wit-parser.json",
+    "sha256": "f9a67eb2d09cf073dab073ae5f5e1ccea83f2c5f25f5fac1d27714de107f3997",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\wit-parser.json"
+  },
+  {
+    "file": "index-feature-results.json",
+    "sha256": "ee521e28f92728d8eb83b9e5917133f16dc32aab67e1580be5028e15dd93229b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index-feature-results.json"
+  },
+  {
+    "file": "manifest-numeric-features.json",
+    "sha256": "51ef8e20f541728cfd1565b6028233e328f2fa996eb86bf4d543166a35bdfddd",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\manifest-numeric-features.json"
+  },
+  {
+    "file": "original-Cargo.lock",
+    "sha256": "ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-Cargo.lock"
+  },
+  {
+    "file": "original-workspace/Cargo.toml",
+    "sha256": "e3499fa958ed860053cefa072fb00dbf61b11a834b897efcbbb38312961ce7cd",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__api-types__Cargo.toml",
+    "sha256": "7cc5cf15d1fc4c59136f1ad5c83d59c1c10a7c92412bc20cec6bc9bfe8aa6dff",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__api-types__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__benchmark__Cargo.toml",
+    "sha256": "071fd29ef4e8c6434d696215958681d85e5da69cbe730aebcea051fb01d3cfeb",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__benchmark__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__blockstore__Cargo.toml",
+    "sha256": "dc0009f9d16e7d715f944968af11fa74cd659ff800591820d3d9a7ffd48b358c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__blockstore__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__cache__Cargo.toml",
+    "sha256": "9b35db6a08f1618c5faf79654a6a9701f84cb6b85a58e102af12d97b60a11e45",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__cache__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__chroma__Cargo.toml",
+    "sha256": "b8bd6bdead2223f9e77671f7bc45174b4de95a7eb14e26776a70fccb96c2af30",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__chroma__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__chroma__Cargo.toml.api.json",
+    "sha256": "d49c72f9b9af3afb5ad0a8a0f489efe5962cbe9b4b772550e442d144574b3347",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__chroma__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__cli__Cargo.toml",
+    "sha256": "8dd24b7b7a44b3683de53735a4a8b4df0c3871353ffb18417c414833bb4fd976",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__cli__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__config__Cargo.toml",
+    "sha256": "541bd82db4bc6e1597b304c912e464b32f732b6ea33cf0756be8febca3cab75b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__config__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__distance__Cargo.toml",
+    "sha256": "ba911140ccd27517d3ad6a2624f65392a5d9cf54b2c8df73aa544d4bc3cc3b60",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__distance__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__error__Cargo.toml",
+    "sha256": "997434a431cae350d56ff7861e315f610f39808e72e8a9d4f96a0bac7da95a00",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__error__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__faults__Cargo.toml",
+    "sha256": "beb8df5bc7a662684afb5e0e8e1224eb3bc68e2baafee90895ae2c22838e7b2a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__faults__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__faults__Cargo.toml.api.json",
+    "sha256": "8293903f4331d784ae1a930c0d2fbbc8961aed35c4e69e872c05d5f165b889f9",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__faults__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__frontend__Cargo.toml",
+    "sha256": "5c11adaba1a878f057e43c96fde751172d1e893c3b8085e525db4d02cc0b6758",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__frontend__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__garbage_collector__Cargo.toml",
+    "sha256": "917db84c9e2436036ccf5e14f80814cdaf3cc9821e914bc2d6fb71f836863367",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__garbage_collector__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__garbage_collector__Cargo.toml.api.json",
+    "sha256": "ef443516189812db4ee33188031f82503634f6ab8a27d387ae39e1b478e2893c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__garbage_collector__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__index__Cargo.toml",
+    "sha256": "0ac3fc9713c842ad0d4eefe1a2918d96cc9f6279ffe379aad9aab9e6b9e145d6",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__index__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__jemalloc-pprof-server__Cargo.toml",
+    "sha256": "abfeb19bb4d61e7f7ad303970901b7843eb9072ce4b1a0910953dfbe13dc18a5",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__jemalloc-pprof-server__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__js_bindings__Cargo.toml",
+    "sha256": "6a9f509bef779ff4ecf93b847b938a8e111c15427147edf5ea3fca76122a7a06",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__js_bindings__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__js_bindings__Cargo.toml.api.json",
+    "sha256": "ce3067e1ceb83bd547763d2968019cf2c9b616f98a85c2800cfc6193a84dfe6e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__js_bindings__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__load__Cargo.toml",
+    "sha256": "16cd18d8683bcfb94387cb1a2100d58c7656bf016212c7d224673463581aeba5",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__load__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__load__Cargo.toml.api.json",
+    "sha256": "b3536610fdaca9066a5520d5a39738391030fb4b3843505e173e8c11c7e153cb",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__load__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__log-service__Cargo.toml",
+    "sha256": "c458348a9d02b105a0082545e77f558af6448fdc95de99c7de01dac97ea8b959",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__log-service__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__log-service__Cargo.toml.api.json",
+    "sha256": "f17ee211b02140e34d6c6b23ac83415ad4bd91eed1f53324d0c7e0b33c3c8605",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__log-service__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__log__Cargo.toml",
+    "sha256": "e6bbb75c69bdbdb69e9bb36009b38d147503d82f79978be9fdd1005d7caf9b4e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__log__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__mdac__Cargo.toml",
+    "sha256": "6490d7836cdcfdb5efdb7b87687a51b49de3059ba47d4c4377c7cd8f9643dcbe",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__mdac__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__memberlist__Cargo.toml",
+    "sha256": "536745cc60049e62fab61d6c5a9aac2b11d358b411f834b4904aae43d6923504",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__memberlist__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__metering-macros__Cargo.toml",
+    "sha256": "7c57e768e44fa4b3b893cc25ecb200da17a54c841e3a8308712657fe3ba9830d",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__metering-macros__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__metering-macros__Cargo.toml.api.json",
+    "sha256": "05947fb0b9b89ccc6ab8f48182f44ac2346119c5d243a0262eb510fc403f2ddc",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__metering-macros__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__metering__Cargo.toml",
+    "sha256": "944e723ab9636011a43819bbbaaf66ec9ef1a7a0518037c57d844ec635259349",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__metering__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__metering__Cargo.toml.api.json",
+    "sha256": "91bb265897c43a41ab225f3f52476535f35b36a9de29b42258efa18d40ab521b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__metering__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__python_bindings__Cargo.toml",
+    "sha256": "f83950a377564771bcef983b4318a4ee162b7ad113caad90623684ab95a66df1",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__python_bindings__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__rust-sysdb__Cargo.toml",
+    "sha256": "c0c08625c6c5359e1d8df680f46880e31827e177366131e6c5354190c6497c9c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__rust-sysdb__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__rust-sysdb__Cargo.toml.api.json",
+    "sha256": "547b4057d4efb901e319e1a537cfb403b03a3c8ddc7f5ca9eb849fca006620ba",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__rust-sysdb__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__s3heap-service__Cargo.toml",
+    "sha256": "8f7969822d8ae44f51fb891e82467f6394275b2fde0ef02561e4f47c62e9daf5",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__s3heap-service__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__s3heap-service__Cargo.toml.api.json",
+    "sha256": "fe2daab264c27b9eeabaae2f1c9bc0a3761713e5630e4b89575e09037d00eb5a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__s3heap-service__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__s3heap__Cargo.toml",
+    "sha256": "0fd947849c0c3e601ee09e6c7039182752ffd976983b40d28908c0847d6b2108",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__s3heap__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__segment__Cargo.toml",
+    "sha256": "c51616041b2fa522f8daca4e7038426b9d13ef3cbbfe70de48feffdfbc509ca5",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__segment__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__spanner-migrations__Cargo.toml",
+    "sha256": "90edfdabe440cd9512655a8b237bba399d6c8902a715366a118cf99d808b0a2a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__spanner-migrations__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__spanner-migrations__Cargo.toml.api.json",
+    "sha256": "41a9787af905a721ef1622063d619aa61b0277424400bb0c59b927f7355bdfaf",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__spanner-migrations__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__sqlite__Cargo.toml",
+    "sha256": "e3e064a09cd86ee7941d5f5748bd2e8ac8e26046559288678f6ecdd9afd6f196",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__sqlite__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__storage__Cargo.toml",
+    "sha256": "3b01cba2ffea88764fe127a0f8c4579bb116d226bb548e42a5c33de3fd94c3e0",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__storage__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__sysdb__Cargo.toml",
+    "sha256": "301c815052af941f85ac2943078dcca66bc521f289c3d86a8132d5647aebc126",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__sysdb__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__system__Cargo.toml",
+    "sha256": "fd41d8b9a28829f2fdd3b5483c766b95a26131703e68ba8b6261c427fe24c40d",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__system__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__tracing__Cargo.toml",
+    "sha256": "342598ff691f620ff0383d50fc543ce75081082bd465600ae822942958090b73",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__tracing__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__types__Cargo.toml",
+    "sha256": "bdc9b87880d96d27d56b905d72c8d021e6f31fe2cac40116e56eb6a881885234",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__types__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__wal3__Cargo.toml",
+    "sha256": "46ee8801c67e2bc3a23610b9d8c5e2eff2cfc95e772766320ceed9a326463280",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__wal3__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__wal3__Cargo.toml.api.json",
+    "sha256": "516f849f1a83b63d13cd3804fe0afac2df5cd484eeb6c6ae4955e40b4982542c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__wal3__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace/rust__worker__Cargo.toml",
+    "sha256": "dde23899bb78286f1210ebd662c66806970a48afc36f1a93f1d7c86de782463d",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__worker__Cargo.toml"
+  },
+  {
+    "file": "original-workspace/rust__worker__Cargo.toml.api.json",
+    "sha256": "fdc0e365531a3a743c763357fd862b4c8018e8df1ee046c9b3e98b6c7a4bc74c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__worker__Cargo.toml.api.json"
+  },
+  {
+    "file": "original-workspace-results.json",
+    "sha256": "f24218d2e793ec9270c093a645016ff91a9314c5803504a225d38bf59f0bef83",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace-results.json"
+  },
+  {
+    "file": "REPORT.md",
+    "sha256": "c1ff8e8d9a2e1ef5cc40eef442233886dfd6ae563eb7a511e368ae44898dde00",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\REPORT.md"
+  },
+  {
+    "file": "run-artifacts.json",
+    "sha256": "cfd00a1615b82ab7c160002bdf84b7ff009ce8da119b4ec0385a7a382e09e7e3",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\run-artifacts.json"
+  },
+  {
+    "file": "run-artifacts.json.headers",
+    "sha256": "8ad94cd8e3290bd3f2b7a8d5301a2e964ab22290aa5631cdc169671a8364b5ab",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\run-artifacts.json.headers"
+  },
+  {
+    "file": "run-logs.json",
+    "sha256": "e2f3111ff69b383afba00d16e40de66bdcc571cd338d392acf172caf02fc6aad",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\run-logs.json"
+  },
+  {
+    "file": "run-logs.json.headers",
+    "sha256": "88f52f657b653ee1a931a495034c20b3cb46f50ebadd3a2d0c9b3dfa2e00871c",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\run-logs.json.headers"
+  },
+  {
+    "file": "rust-action-fetch.json",
+    "sha256": "eb1ca89ecc87ef6e6d240f24e50ee71c9e1c9c59ea77294283feaec6ba3dda25",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\rust-action-fetch.json"
+  },
+  {
+    "file": "rust-action.api.json",
+    "sha256": "4e6e79784ea0328cd0e9891510932b7c054e557811e9749f97f01c8fce1ef595",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\rust-action.api.json"
+  },
+  {
+    "file": "rust-action.json",
+    "sha256": "0f74c8b9c1f03a2b9d2da1ebe4f7c027ecb616202d539401c259562157c5a216",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\rust-action.json"
+  },
+  {
+    "file": "rust-action.json.headers",
+    "sha256": "45ace04f2a7f46bb2cab330389145b8931a7a042f1381f7ea366ca5d8fdbc917",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\rust-action.json.headers"
+  },
+  {
+    "file": "rust-action.yaml",
+    "sha256": "c0d17cff18f5f02097d51a6a43cef7312832ebe42de81ab6120420015754aded",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\rust-action.yaml"
+  },
+  {
+    "file": "sdist-original-manifest-comparison.json",
+    "sha256": "dd9754c8c78fd0873759050362995b20563581a8ab647e8f670cd8ca334f6153",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\sdist-original-manifest-comparison.json"
+  },
+  {
+    "file": "serde-json-default-features.json",
+    "sha256": "3165949f88c9e618285633335cc47ecadb0daaf825ec17812daff6b0dc4ea54d",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\serde-json-default-features.json"
+  },
+  {
+    "file": "serde_json-1.0.149.Cargo.toml",
+    "sha256": "65dabeea0112c066ff16c6d93142c4a08c01396f4e99a27d9255d19974eaeb73",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\serde_json-1.0.149.Cargo.toml"
+  },
+  {
+    "file": "third-party-manifest-results.json",
+    "sha256": "815a39176ebd5d2b59087a61d9eade04ef8e37fe4d5f46cb4bf07850f2fc9de8",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\third-party-manifest-results.json"
+  },
+  {
+    "file": "verify_evidence.py",
+    "sha256": "79b57ebcbfe5a090c71c9d2b973c204f67d4eb3ef5b60d44fd4df1c942377b97",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\verify_evidence.py"
+  }
+]

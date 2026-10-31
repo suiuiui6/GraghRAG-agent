@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--read-only",
+    "--tmpfs",
+    "/tmp:rw,nosuid,nodev,size=128m",
+    "--user",
+    "1000:1000",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--mount",
+    "type=bind,source=D:\\graghRAG-agent\\.tmp\\windows-libuv-inputs-independent-review-20261029,target=/review,readonly",
+    "--mount",
+    "type=bind,source=D:\\graghRAG-agent\\.tmp\\linux-runtime-mvp-20261027\\apt-lists,target=/lists,readonly",
+    "--mount",
+    "type=bind,source=D:\\graghRAG-agent\\.tmp\\linux-runtime-mvp-20261027\\debian.sources,target=/sources.sources,readonly",
+    "--mount",
+    "type=bind,source=D:\\graghRAG-agent\\.tmp\\windows-libuv-cross-mvp-20261029,target=/author,readonly",
+    "sha256:cd48c100f4e8c0297c2e1a558b7a93d95e41f79ba4f58d5f7d938a71192dff23",
+    "python",
+    "/review/verify_tools.py"
+  ],
+  "exit": 0
+}

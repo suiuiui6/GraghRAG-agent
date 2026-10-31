@@ -1,6 +1,22 @@
 """Trusted test requests and genuine JWT clients; no production auth bypass."""
 from fastapi import Request
 from fastapi.testclient import TestClient
+import pytest
+
+
+@pytest.fixture(autouse=True)
+def registered_compat_admin(monkeypatch, tmp_path):
+    """Opt-in direct-route modules use a real, isolated identity registry."""
+    from services import auth_service
+    from models import User
+    monkeypatch.setattr(auth_service, 'USERS_DIR', tmp_path / 'users')
+    monkeypatch.setattr(auth_service, 'OAUTH_STATES_DIR', tmp_path / 'oauth_states')
+    service = auth_service.AuthService()
+    monkeypatch.setattr(auth_service, '_service', service)
+    service._save_user(User(user_id='compat-admin', username='compat-admin',
+                            email='compat-admin@test.local', display_name='test admin',
+                            roles=['admin'], created_at=service._now()))
+    return service
 
 
 def admin_request() -> Request:

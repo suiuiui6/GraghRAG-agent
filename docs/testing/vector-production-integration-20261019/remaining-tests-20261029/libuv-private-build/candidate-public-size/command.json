@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+    "-B",
+    "D:\\graghRAG-agent\\.tmp\\windows-uv-candidate-size-probe-20261029\\child.py"
+  ],
+  "timeout": 10,
+  "exit": 0,
+  "seconds": 0.2180000000007567,
+  "formal_runtime_untouched": true,
+  "scope": "Private read-only public API smoke after independent static review; no application/runtime integration."
+}

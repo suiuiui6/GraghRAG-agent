@@ -1,0 +1,155 @@
+{
+  "time": "2026-10-29T13:08:39.901523+00:00",
+  "manifest_count": 82,
+  "report_sha256": "46ad3a9ac9aed66f15b52ec121acb4052e4b9ae8d854b9504a18182fb9d8f9df",
+  "hashes_before_after": {
+    "new": "6f91cea90646d077b1bcb6372433ea048bac344e8eeb5e5c8ee4b163f02edf96",
+    "old": "fa569e682fc5fb7a8eb94c6829af9f30a569748dbbc6bce39735d48bc960bcf8",
+    "torch": "0803ea116cd3e833b1b17515663734cbf7a78071ccd03dbcfa22d99517e1a134",
+    "sharedtest": "42ce060fb7cab03a7c008c2fdd85c37fe05e4c9fdc2b7343ec30815d2750f712",
+    "statictest": "4ac27006cce901a79a03c5208372057e77dbec8ddd6f83ceeba1a74e8a9eb241"
+  },
+  "old_names": 288,
+  "new_names": 319,
+  "missing": [],
+  "added": [
+    "uv_available_parallelism",
+    "uv_clock_gettime",
+    "uv_cpumask_size",
+    "uv_get_available_memory",
+    "uv_getrusage_thread",
+    "uv_ip_name",
+    "uv_metrics_info",
+    "uv_os_free_group",
+    "uv_os_get_group",
+    "uv_os_get_passwd2",
+    "uv_pipe",
+    "uv_pipe_bind2",
+    "uv_pipe_connect2",
+    "uv_socketpair",
+    "uv_tcp_keepalive_ex",
+    "uv_thread_detach",
+    "uv_thread_getaffinity",
+    "uv_thread_getcpu",
+    "uv_thread_getname",
+    "uv_thread_getpriority",
+    "uv_thread_setaffinity",
+    "uv_thread_setname",
+    "uv_thread_setpriority",
+    "uv_try_write2",
+    "uv_udp_open_ex",
+    "uv_udp_try_send2",
+    "uv_utf16_length_as_wtf8",
+    "uv_utf16_to_wtf8",
+    "uv_write_nwritten",
+    "uv_wtf8_length_as_utf16",
+    "uv_wtf8_to_utf16"
+  ],
+  "changed_ordinals": 285,
+  "torch_uv_symbols": [
+    {
+      "name": "uv_ip6_name"
+    },
+    {
+      "name": "uv_ip4_name"
+    },
+    {
+      "name": "uv_os_gethostname"
+    },
+    {
+      "name": "uv_free_interface_addresses"
+    },
+    {
+      "name": "uv_interface_addresses"
+    },
+    {
+      "name": "uv_timer_start"
+    },
+    {
+      "name": "uv_timer_init"
+    },
+    {
+      "name": "uv_async_send"
+    },
+    {
+      "name": "uv_async_init"
+    },
+    {
+      "name": "uv_tcp_connect"
+    },
+    {
+      "name": "uv_tcp_getsockname"
+    },
+    {
+      "name": "uv_read_stop"
+    },
+    {
+      "name": "uv_tcp_nodelay"
+    },
+    {
+      "name": "uv_tcp_init"
+    },
+    {
+      "name": "uv_is_closing"
+    },
+    {
+      "name": "uv_write"
+    },
+    {
+      "name": "uv_read_start"
+    },
+    {
+      "name": "uv_accept"
+    },
+    {
+      "name": "uv_listen"
+    },
+    {
+      "name": "uv_buf_init"
+    },
+    {
+      "name": "uv_close"
+    },
+    {
+      "name": "uv_strerror"
+    },
+    {
+      "name": "uv_run"
+    },
+    {
+      "name": "uv_loop_init"
+    },
+    {
+      "name": "uv_tcp_bind"
+    }
+  ],
+  "torch_missing": [],
+  "torch_ordinal_count": 0,
+  "candidate_imports": [
+    "ADVAPI32.dll",
+    "dbghelp.dll",
+    "IPHLPAPI.DLL",
+    "KERNEL32.dll",
+    "msvcrt.dll",
+    "ole32.dll",
+    "SHELL32.dll",
+    "api-ms-win-core-synch-l1-2-0.dll",
+    "USER32.dll",
+    "USERENV.dll",
+    "WS2_32.dll"
+  ],
+  "forwarders": {
+    "new": [],
+    "old": [],
+    "torch": [],
+    "sharedtest": [],
+    "statictest": []
+  },
+  "delay_counts": {
+    "new": 0,
+    "old": 0,
+    "torch": 0,
+    "sharedtest": 0,
+    "statictest": 0
+  }
+}

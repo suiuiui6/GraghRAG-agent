@@ -1,0 +1,412 @@
+[
+  {
+    "path": "actual-27-versions.json",
+    "bytes": 2931,
+    "sha256": "e8a37e4f898a6f33ca5057cf29a80783f7721204d1fa57466ad2f3704b9f7bac"
+  },
+  {
+    "path": "base-after.json",
+    "bytes": 195,
+    "sha256": "0a79b762b584a4b6f215cc0570f3151ef32ca8b85d3c508bdbf163a083af73c5"
+  },
+  {
+    "path": "base-after.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "base-after.stdout",
+    "bytes": 2795,
+    "sha256": "3b9075d1dce85b5ceb88a026a297602eed6775d2346024ab9f1126bb1586761e"
+  },
+  {
+    "path": "base-before.json",
+    "bytes": 195,
+    "sha256": "2090906cb73e3eeada028d319c534b395bdd6928704a0f68d90ca4c720743084"
+  },
+  {
+    "path": "base-before.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "base-before.stdout",
+    "bytes": 2482,
+    "sha256": "551ab148b264d40b5ebeb5e06d7345c2f0ae333e741de8e91b178c519e1252a4"
+  },
+  {
+    "path": "comparison.json",
+    "bytes": 25501,
+    "sha256": "4fe87583b728bb94763f09c8ec11cae14a91d446a751d397fe234e577197e488"
+  },
+  {
+    "path": "compile-run.json",
+    "bytes": 1143,
+    "sha256": "e8892cc0fb8e1394993af2e5b9ca82767a5891e564ba0e6262d3d6fcd743ce36"
+  },
+  {
+    "path": "compile.stderr",
+    "bytes": 9906,
+    "sha256": "e5bf2434292a6b940b997ff1994853b75c9140eaf80ed0db52bbbc2e0377a7ea"
+  },
+  {
+    "path": "compile.stdout",
+    "bytes": 295794,
+    "sha256": "7bd60bca580ed5c0ee54438d4e6f5f4186c5a8916eb73ec595d9ba59296e1ace"
+  },
+  {
+    "path": "context\\debs\\binutils-mingw-w64-x86-64_2.40-2+10.4_amd64.deb",
+    "bytes": 3198408,
+    "sha256": "0d26637363ec4e95200bc19fdcc517aa63f631a5922123990596bf82901da48b"
+  },
+  {
+    "path": "context\\debs\\cmake-data_3.25.1-1_all.deb",
+    "bytes": 2026484,
+    "sha256": "8371f9694da94fd551a3ea653e2e25d99747471ca0b48cc029bf5c792ea590a3"
+  },
+  {
+    "path": "context\\debs\\cmake_3.25.1-1_amd64.deb",
+    "bytes": 8692248,
+    "sha256": "257a11063855f09e48696057fdb1ba2bcf1069502e0302576831dc2fb1571d7f"
+  },
+  {
+    "path": "context\\debs\\gcc-mingw-w64-base_12.2.0-14+deb12u1+25.2+b1_amd64.deb",
+    "bytes": 186040,
+    "sha256": "811339affa3a6cf974bcfe2c2be3ce2d8883a43f45934ea7349f1c26b932ee38"
+  },
+  {
+    "path": "context\\debs\\gcc-mingw-w64-x86-64-win32-runtime_12.2.0-14+deb12u1+25.2+b1_amd64.deb",
+    "bytes": 12243932,
+    "sha256": "ca9f9450f4882d8afbc5331c8f59cbb2f4209a96c3107bec8efff6525de01fc7"
+  },
+  {
+    "path": "context\\debs\\gcc-mingw-w64-x86-64-win32_12.2.0-14+deb12u1+25.2+b1_amd64.deb",
+    "bytes": 31812672,
+    "sha256": "1097a1968ea51df95fc5f065c0eed5e8fac805dbf3be40a3dd28a0adf9cdebd8"
+  },
+  {
+    "path": "context\\debs\\libarchive13_3.6.2-1+deb12u5_amd64.deb",
+    "bytes": 345488,
+    "sha256": "45419b8c7646c1af12783ae31906ce2da4c465c1a948b01f8f44152d8269f403"
+  },
+  {
+    "path": "context\\debs\\libbrotli1_1.0.9-2+b6_amd64.deb",
+    "bytes": 275248,
+    "sha256": "563b4caec1aa5e876bd3355b36e7a38e1484baf5a293b48d1e8bd22db786e4d7"
+  },
+  {
+    "path": "context\\debs\\libcurl4_7.88.1-10+deb12u15_amd64.deb",
+    "bytes": 392184,
+    "sha256": "3042904de01f9c4fbdcf1452b8f81abedcf2b015f9b9deba109063322b5bd68b"
+  },
+  {
+    "path": "context\\debs\\libexpat1_2.5.0-1+deb12u4_amd64.deb",
+    "bytes": 105852,
+    "sha256": "ed010cc41577d75ab01cccc6afa93496d9a99f1e16bd469caf58e1b81fddae80"
+  },
+  {
+    "path": "context\\debs\\libicu72_72.1-3+deb12u1_amd64.deb",
+    "bytes": 9376124,
+    "sha256": "f7f6f99c6d7b025914df2447fc93e11d22c44c0c8bdd8b6f36691c9e7ddcef88"
+  },
+  {
+    "path": "context\\debs\\libjsoncpp25_1.9.5-4_amd64.deb",
+    "bytes": 78572,
+    "sha256": "4ab06b9ce67470579be3112bf2b6b314012f93bfff619580b93a902d6b1221c5"
+  },
+  {
+    "path": "context\\debs\\libldap-2.5-0_2.5.13+dfsg-5_amd64.deb",
+    "bytes": 183248,
+    "sha256": "4b6c30f6554149c594628d945edc6003f0eea8d0cc1341638c0e71375db147ed"
+  },
+  {
+    "path": "context\\debs\\libnghttp2-14_1.52.0-1+deb12u3_amd64.deb",
+    "bytes": 72404,
+    "sha256": "5a5736cee57e51c1baed869979e6ecdbc6495e939e33203d6cfe3b6e5a149e3f"
+  },
+  {
+    "path": "context\\debs\\libproc2-0_4.0.2-3_amd64.deb",
+    "bytes": 62804,
+    "sha256": "e82ba5d01929eafb8b9954606a3c38b0332a987c2b3432388b4ee7365e54deae"
+  },
+  {
+    "path": "context\\debs\\libpsl5_0.21.2-1_amd64.deb",
+    "bytes": 58684,
+    "sha256": "4f0d35610204e4e754b057748719744114621f2f6f4202d846c314860a981afb"
+  },
+  {
+    "path": "context\\debs\\librhash0_1.4.3-3_amd64.deb",
+    "bytes": 134112,
+    "sha256": "d9ba48a51fd4734aaaf3a75fd94b6352a02f9eaa88d3bec84cd0b5d3090f9d2a"
+  },
+  {
+    "path": "context\\debs\\librtmp1_2.4+20151223.gitfa8646d.1-2+b2_amd64.deb",
+    "bytes": 60824,
+    "sha256": "e1f69020dc2c466e421ec6a58406b643be8b5c382abf0f8989011c1d3df91c87"
+  },
+  {
+    "path": "context\\debs\\libsasl2-2_2.1.28+dfsg-10_amd64.deb",
+    "bytes": 59712,
+    "sha256": "11ee190ad39f8d7af441d2c8347388b9449434c73acc67b4b372445ac4152efa"
+  },
+  {
+    "path": "context\\debs\\libsasl2-modules-db_2.1.28+dfsg-10_amd64.deb",
+    "bytes": 20336,
+    "sha256": "3ac4fd6cbe3b3b06e68d24b931bf3eb9385b42f15604a37ed25310e948ca0ee6"
+  },
+  {
+    "path": "context\\debs\\libssh2-1_1.10.0-3+deb12u1_amd64.deb",
+    "bytes": 175976,
+    "sha256": "fff72a194e493f88e100a2567e22472bb4ab828d429c2956965c6f2f134f1b3a"
+  },
+  {
+    "path": "context\\debs\\libuv1_1.44.2-1+deb12u1_amd64.deb",
+    "bytes": 135616,
+    "sha256": "204f0e13354b44e6d19317887a53dab6f26696e8d95838db970b81f2a393f7fd"
+  },
+  {
+    "path": "context\\debs\\libxml2_2.9.14+dfsg-1.3~deb12u6_amd64.deb",
+    "bytes": 688760,
+    "sha256": "4460e39dda10a815881374217cde08474747cfa018358cd8612c14b390eff53b"
+  },
+  {
+    "path": "context\\debs\\make_4.3-4.1_amd64.deb",
+    "bytes": 395632,
+    "sha256": "a1a83af8cbd854af887b72ad196b1f4af58387815e21ced1000253a116a46e2a"
+  },
+  {
+    "path": "context\\debs\\mingw-w64-common_10.0.0-3_all.deb",
+    "bytes": 5168888,
+    "sha256": "1317a00bbbc3866a6d23ff177bc3f6c92ccbfc9489f8d5314bfac76cf60ffc19"
+  },
+  {
+    "path": "context\\debs\\mingw-w64-x86-64-dev_10.0.0-3_all.deb",
+    "bytes": 3551836,
+    "sha256": "6dc1360a4e643670c59b6056647af4ff9a3c254def43fc80e7922a25297fe7a1"
+  },
+  {
+    "path": "context\\debs\\procps_4.0.2-3_amd64.deb",
+    "bytes": 708712,
+    "sha256": "d9d0e75779cb79af869181f17b93c5c263a2b89cac6a0193c436160a4483ddc1"
+  },
+  {
+    "path": "context\\Dockerfile",
+    "bytes": 163,
+    "sha256": "37b05a62cf6541c26717379e7112eb2e4484d161961f50573d79c3c6fd5f6e3b"
+  },
+  {
+    "path": "derived.json",
+    "bytes": 195,
+    "sha256": "efc61211849f4bb369e764ede0a77cb8018b1255b0195d5d1ef8bb4385d08651"
+  },
+  {
+    "path": "derived.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "derived.stdout",
+    "bytes": 2705,
+    "sha256": "86440c62897af2206621e2b7c9397133912483bd742a6afc6f5187115bac7a8c"
+  },
+  {
+    "path": "finalize.py",
+    "bytes": 6740,
+    "sha256": "989f3f8db6c6de3bb2ad51640a744060ebeff22e326686dfcce5a6c2e67cdc8f"
+  },
+  {
+    "path": "finish_checks.py",
+    "bytes": 2435,
+    "sha256": "ea6450761ba24962f2ade4c96ebcb74e6ca2b806ad9eec6925c7263112017297"
+  },
+  {
+    "path": "image-binding.json",
+    "bytes": 2022,
+    "sha256": "ed902cc6c1c2f0f24bc2dfa28c38659614df0482f2a2337e1efc10da7ea5a7b3"
+  },
+  {
+    "path": "image-build.json",
+    "bytes": 434,
+    "sha256": "387800f69255730e649e83fad4519e1ce3719db6f2e31543b03654f24de1e17e"
+  },
+  {
+    "path": "image-build.stderr",
+    "bytes": 8898,
+    "sha256": "ba58d8d8cac305782ba8d12262a8e457e0e0c50f55515edb792319a45ac0129d"
+  },
+  {
+    "path": "image-build.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "image.id",
+    "bytes": 71,
+    "sha256": "fd902acbe4dc8060b3321e987a237f11198573bdc89fa8ce9ea17d5ac409dad3"
+  },
+  {
+    "path": "image.py",
+    "bytes": 1412,
+    "sha256": "171fbc318075bf00befcbfe90c7cdc55c004b609e1969ec246a3e45e9f56fb6f"
+  },
+  {
+    "path": "inputs-after.json",
+    "bytes": 3724,
+    "sha256": "2559d8364321fc2e05ad505d29853822ebf95fb5e43a726ff12ccbc199ba96b3"
+  },
+  {
+    "path": "inputs-before.json",
+    "bytes": 3724,
+    "sha256": "2559d8364321fc2e05ad505d29853822ebf95fb5e43a726ff12ccbc199ba96b3"
+  },
+  {
+    "path": "inspect_pe.py",
+    "bytes": 3501,
+    "sha256": "916fb70496facdf89aa9db1bb547a9339ede9723a679b61c37d50974f600fd6b"
+  },
+  {
+    "path": "original-pe-full.json",
+    "bytes": 50539,
+    "sha256": "6313000a6720169f4a949d076819eb180914cccb576170a12ef8498f5cbb6d56"
+  },
+  {
+    "path": "original-readonly-receipt.json",
+    "bytes": 1880,
+    "sha256": "f7fe39c416dd42b38401f4aa5ef37966d1932aa72ffb22f83a9f61bfd8b64677"
+  },
+  {
+    "path": "outputs\\actual-CMakeLists.txt",
+    "bytes": 31589,
+    "sha256": "80767494d9c728b70c16a78bff15aa7184ee6f566d94fd93983bfdb4c3305da4"
+  },
+  {
+    "path": "outputs\\CMakeCache.txt",
+    "bytes": 21396,
+    "sha256": "880d5f7e4c1138563b9801d01d032d9d96aee72f556a7015fd9b1aa6abad4086"
+  },
+  {
+    "path": "outputs\\dpkg-actual.tsv",
+    "bytes": 4561,
+    "sha256": "0b21aae64000531d968d86098765b2ee5e82b88718cfe8ea03391cc20363d62c"
+  },
+  {
+    "path": "outputs\\gcc-specs.txt",
+    "bytes": 7827,
+    "sha256": "f1c6d95c104302964ef8044cfde23a22c820a142eb4f70d5f75522b5b8509f4a"
+  },
+  {
+    "path": "outputs\\libuv.dll",
+    "bytes": 555046,
+    "sha256": "6f91cea90646d077b1bcb6372433ea048bac344e8eeb5e5c8ee4b163f02edf96"
+  },
+  {
+    "path": "outputs\\libuv.dll.objdump.txt",
+    "bytes": 268254,
+    "sha256": "987313384b46cff8a492ba6662a3624797930011ae2552f61cf0d6b18a975375"
+  },
+  {
+    "path": "outputs\\links.txt",
+    "bytes": 4324,
+    "sha256": "4e07b7e545bed523b3496a65c4312be7bdecea8732a198171b0da40845886122"
+  },
+  {
+    "path": "outputs\\source-after.json",
+    "bytes": 53573,
+    "sha256": "68e34e8f6fa8a2a0e57e8c47de90747478f3c2bb10858ce22fe8a68ed157d667"
+  },
+  {
+    "path": "outputs\\source-before.json",
+    "bytes": 53573,
+    "sha256": "68e34e8f6fa8a2a0e57e8c47de90747478f3c2bb10858ce22fe8a68ed157d667"
+  },
+  {
+    "path": "outputs\\uv_run_tests.exe",
+    "bytes": 1704226,
+    "sha256": "42ce060fb7cab03a7c008c2fdd85c37fe05e4c9fdc2b7343ec30815d2750f712"
+  },
+  {
+    "path": "outputs\\uv_run_tests.exe.objdump.txt",
+    "bytes": 656288,
+    "sha256": "ad7ccedec9edc498abd4eecd98ca29e0e82defff58e823cc07122535dfc1ffbd"
+  },
+  {
+    "path": "outputs\\uv_run_tests_a.exe",
+    "bytes": 2001840,
+    "sha256": "4ac27006cce901a79a03c5208372057e77dbec8ddd6f83ceeba1a74e8a9eb241"
+  },
+  {
+    "path": "outputs\\uv_run_tests_a.exe.objdump.txt",
+    "bytes": 857523,
+    "sha256": "f18eea87ef8a95e25f50205f147579774eed1f81bb860488cd5cc06e49533863"
+  },
+  {
+    "path": "pe.json",
+    "bytes": 114257,
+    "sha256": "99d69ae15fcfb8c0e63f61ad2079a710ff8eee3a7bad78dbc74392b2f07557ee"
+  },
+  {
+    "path": "prepare.py",
+    "bytes": 1478,
+    "sha256": "7f2cfa1f7dd33db1e74acc2b8733c5ac926d639f1d80f006820ab88b64a665bc"
+  },
+  {
+    "path": "PROGRESS.md",
+    "bytes": 116,
+    "sha256": "1744d32aabeec1aef67fb264587cd33240a5f1b605202e6e701d518e6f3368f8"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 5203,
+    "sha256": "46ad3a9ac9aed66f15b52ec121acb4052e4b9ae8d854b9504a18182fb9d8f9df"
+  },
+  {
+    "path": "run_compile.py",
+    "bytes": 1130,
+    "sha256": "33acea5f79fdc3d9e859d9f50e328ee4f5715c0734561411b7b96fac29a5cb4c"
+  },
+  {
+    "path": "scripts\\compile.sh",
+    "bytes": 2219,
+    "sha256": "4d06af5772926e7530daa239d065b329a4bfd8c7515df3db3d3477a61ecac576"
+  },
+  {
+    "path": "source\\libuv-v1.53.0.tar.gz",
+    "bytes": 1391596,
+    "sha256": "cb0d6dd2128d5a95bd242c6cc982a24fe608fa93da57b6b4ec763b0018c53e64"
+  },
+  {
+    "path": "tag-before.json",
+    "bytes": 157,
+    "sha256": "ccb464e389a554373c10a2d303127d467381adb5aca5398e5009d78467301f96"
+  },
+  {
+    "path": "tag-before.stderr",
+    "bytes": 77,
+    "sha256": "dd47ce63510a4ef245255fb86306436713d22c25257ad2c0f0cbdf8f24f4b2df"
+  },
+  {
+    "path": "tag-before.stdout",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "path": "tag-create.json",
+    "bytes": 219,
+    "sha256": "c96278816a02b11c81ef642fe1dd8296b1ff9e8a5f97daf814ca7ea02a6d418b"
+  },
+  {
+    "path": "tag-create.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "tag-create.stdout",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "torch_static.py",
+    "bytes": 1797,
+    "sha256": "430bbd9888ee09956c23355326b920405ca9e938373e9fc8c26de44d108629e8"
+  }
+]

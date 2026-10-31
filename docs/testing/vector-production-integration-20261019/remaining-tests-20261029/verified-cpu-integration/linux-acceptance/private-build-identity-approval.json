@@ -1,0 +1,9 @@
+{
+  "review_sha256": "859fdaa4e7d1884fd35ff61c70c0cfeaddcfff33c6f79c22ced1e82e2364d559",
+  "manifest_sha256": "bcdc431c5c051408595606ec34049ef6079c7f849046092b82f8b3c326631b55",
+  "scope": "PRIVATE SYNTHETIC MVP BUILD IDENTITY ONLY; NOT Linux Chroma semantic or production admission",
+  "production_admission_changed": false,
+  "formal_build_script_changed": false,
+  "formal_C_manifest_changed": false,
+  "mount_policy": "source/model readonly without writable parent alias; outputs only writable evidence mount"
+}

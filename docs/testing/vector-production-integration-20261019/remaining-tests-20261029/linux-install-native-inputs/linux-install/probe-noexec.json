@@ -1,0 +1,6 @@
+{
+  "kind": "noexec",
+  "uid": 65534,
+  "checks": [],
+  "safe_failure": true
+}

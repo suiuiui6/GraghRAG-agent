@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/README.md",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6261431Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/pyproject.toml",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6370558Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/CMakeLists.txt",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6416704Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/torch/csrc/distributed/c10d/CMakeLists.txt",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6448141Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/.ci/pytorch/windows/build_wheel.py",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6481226Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/.ci/pytorch/windows/build_env_setup.py",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6510536Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/.ci/pytorch/windows/build_install_deps.py",
+    "status": "failed",
+    "error": "以一种访问权限不允许的方式做了一个访问套接字的尝试。 (127.0.0.1:10794)",
+    "utc": "2026-10-29T13:36:03.6543299Z"
+  }
+]

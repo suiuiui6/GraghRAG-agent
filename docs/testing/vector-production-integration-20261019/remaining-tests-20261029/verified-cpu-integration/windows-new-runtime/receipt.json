@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-29T02:21:47.361336+00:00",
+  "status": "READY_FOR_FINAL_R11",
+  "assembly": "New uv venv with verified copy of existing installed payload; not a fresh clean complete reinstall. Three verified universal wheels installed offline with require-hashes/no-deps.",
+  "runtime": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+  "copied_files": 32995,
+  "packages_old": 159,
+  "packages_new": 159,
+  "package_diff": {
+    "langgraph-sdk": [
+      "0.4.4",
+      "0.4.6"
+    ],
+    "langgraph": [
+      "1.2.11",
+      "1.2.14"
+    ]
+  },
+  "langextract": "1.5.0 unchanged source; editable to wheel installation mode change",
+  "normal_io": {
+    "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+    "sqlite": "3.54.0",
+    "openssl": "OpenSSL 3.5.9 29 Sep 2026",
+    "expat": "expat_2.9.0",
+    "numpy": "2.5.4",
+    "msgpack": "1.2.3",
+    "runtime": {
+      "sqlite_version": "3.54.0",
+      "hardening": true
+    },
+    "wal": true,
+    "rollback": true,
+    "blob": true,
+    "backup": true,
+    "child": {
+      "exit": 0,
+      "stdout": "reopen_ok\n"
+    },
+    "cosine": true,
+    "expat_parse": true,
+    "msgpack_roundtrip": true
+  },
+  "full_R11": "NOT_RUN",
+  "commit_push": false,
+  "gate": "closed",
+  "retained_failures": [
+    "Initial normal-io failed because vector_runtime was not on Python path; retained commands-attempt1.json and normal-io.log. Final command explicitly imports formal C/backend vector_runtime read-only."
+  ],
+  "commands": [
+    {
+      "name": "create-venv",
+      "command": [
+        "uv",
+        "venv",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv",
+        "--python",
+        "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\python.exe",
+        "--no-project",
+        "--offline"
+      ],
+      "exit": 0,
+      "seconds": 0.5566959381103516
+    },
+    {
+      "name": "install-wheels",
+      "command": [
+        "uv",
+        "pip",
+        "install",
+        "--python",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "--offline",
+        "--no-index",
+        "--no-deps",
+        "--require-hashes",
+        "-r",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\verified-wheels.txt"
+      ],
+      "exit": 0,
+      "seconds": 1.635178565979004
+    },
+    {
+      "name": "pip-check",
+      "command": [
+        "uv",
+        "pip",
+        "check",
+        "--python",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "--offline"
+      ],
+      "exit": 0,
+      "seconds": 0.18935513496398926
+    },
+    {
+      "name": "normal-io",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "-B",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\normal_io.py"
+      ],
+      "exit": 0,
+      "seconds": 0.8165197372436523,
+      "pythonpath": "C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent/backend"
+    },
+    {
+      "name": "actual-imports",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "-B",
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\probe.py"
+      ],
+      "exit": 0,
+      "seconds": 9.943957567214966,
+      "pythonpath": null
+    }
+  ]
+}

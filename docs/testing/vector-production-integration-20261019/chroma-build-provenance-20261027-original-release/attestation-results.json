@@ -1,0 +1,77 @@
+[
+  {
+    "url": "https://api.github.com/repos/chroma-core/chroma/attestations/sha256:4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c",
+    "time_utc": "2026-10-26T11:00:27.401283+00:00",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "40",
+      "--dump-header",
+      "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-win-attestation.json.headers",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-win-attestation.json",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download}",
+      "https://api.github.com/repos/chroma-core/chroma/attestations/sha256:4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c"
+    ],
+    "exit": 0,
+    "stdout": "http=200 bytes=10952",
+    "stderr": "",
+    "sha256": "7680bcb292165c31057dbcb80a0933543a183474621130d4095f43d37544b4ca"
+  },
+  {
+    "url": "https://api.github.com/repos/chroma-core/chroma/actions/runs?head_sha=11f3c7435e71024aa0a2b53710a28d3289d922d1&per_page=100",
+    "time_utc": "2026-10-26T11:00:29.088208+00:00",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "40",
+      "--dump-header",
+      "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-runs.json.headers",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-runs.json",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download}",
+      "https://api.github.com/repos/chroma-core/chroma/actions/runs?head_sha=11f3c7435e71024aa0a2b53710a28d3289d922d1&per_page=100"
+    ],
+    "exit": 0,
+    "stdout": "http=200 bytes=78215",
+    "stderr": "",
+    "sha256": "49e9f5a7243ad9474e6528f46b487f63abb702b078c3b4ff54cb9f980fa6ded2"
+  },
+  {
+    "url": "https://pypi.org/integrity/chromadb/1.5.9/chromadb-1.5.9.tar.gz/provenance",
+    "time_utc": "2026-10-26T11:00:30.006867+00:00",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "10",
+      "--max-time",
+      "40",
+      "--dump-header",
+      "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\sdist-provenance.json.headers",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\sdist-provenance.json",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download}",
+      "https://pypi.org/integrity/chromadb/1.5.9/chromadb-1.5.9.tar.gz/provenance"
+    ],
+    "exit": 0,
+    "stdout": "http=404 bytes=63",
+    "stderr": "",
+    "sha256": "4c995ab77d7ec8c26bfd46c6d66310b030600cc16284505ab20285ac796c8d1a"
+  }
+]

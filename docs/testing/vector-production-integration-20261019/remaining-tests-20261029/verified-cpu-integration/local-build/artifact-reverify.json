@@ -1,0 +1,9 @@
+{
+  "status": "LOCAL_ARTIFACT_REVERIFY_PASS",
+  "wheel_sha256": "c91f2345b54de57233d70709c3649ac414252a478a6910ed0bfbe5bf9287bc72",
+  "bytes": 143060,
+  "safe_zip": true,
+  "RECORD_members": 52,
+  "hashed_members": 51,
+  "identical_package_modules": 45
+}

@@ -1,0 +1,156 @@
+{
+  "torch": "2.14.0+cpu",
+  "git": "08187d9e0fba026dc8217405802ab5381dc88d90",
+  "config": "PyTorch built with:\n  - GCC 13.3\n  - C++ Version: 202002\n  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22)\n  - OpenMP 201511 (a.k.a. OpenMP 4.5)\n  - LAPACK is enabled (usually provided by MKL)\n  - NNPACK is enabled\n  - CPU capability usage: AVX2\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=08187d9e0fba026dc8217405802ab5381dc88d90, CUDA_FLAGS= -DLIBCUDACXX_ENABLE_SIMPLIFIED_COMPLEX_OPERATIONS -Xfatbin -compress-all  -Wno-deprecated-gpu-targets --expt-extended-lambda -DCUB_WRAPPED_NAMESPACE=at_cuda_detail -DDISABLE_CUSPARSE_DEPRECATED -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -DC10_NODEPRECATED, CXX_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -faligned-new -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-dangling-reference -Wno-error=dangling-reference -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.14.0, USE_CUDA=0, USE_CUDNN=OFF, USE_CUSPARSELT=OFF, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_HIPSPARSELT=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=OFF, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n",
+  "libraries": [
+    {
+      "name": "libaoti_custom_ops.so",
+      "bytes": 370488,
+      "sha256": "2ad7760f3067c3e9f5daa1374c9e766742aa1ee29f8f698d939e29afe3893864"
+    },
+    {
+      "name": "libbackend_with_compiler.so",
+      "bytes": 261384,
+      "sha256": "2d9b142b3a23fa5b27b0e0e0685e4d3fb089b0512f3928fa4fc830733be5e68d"
+    },
+    {
+      "name": "libc10.so",
+      "bytes": 1553824,
+      "sha256": "9c142dbe5f1c5291e57605586bf22eaa07cd27da720825b1cf02fc2f6eb8047e"
+    },
+    {
+      "name": "libgomp.so.1",
+      "bytes": 2115417,
+      "sha256": "dcb9bd5cc517b0a23cf5923864abeee11ee00ba11abe9b3089388f50f7ba4628"
+    },
+    {
+      "name": "libjitbackend_test.so",
+      "bytes": 213776,
+      "sha256": "c9abfe6eabdf5e70e9d8f0e8a83395a5d79b8dfe7d94379f68bcfa1666fbc91e"
+    },
+    {
+      "name": "libshm.so",
+      "bytes": 41328,
+      "sha256": "7846821a00be2750f0c718c69396bd3c3e54924d52ecce347ab610ee9079149a"
+    },
+    {
+      "name": "libtorch.so",
+      "bytes": 8032,
+      "sha256": "28b3d3926e0674eda7dcdf26c27dfd05cb455d681d11cb84fdbf7e0df72f3f7b"
+    },
+    {
+      "name": "libtorch_cpu.so",
+      "bytes": 438232064,
+      "sha256": "cc3d0101c16504ba021abe6794c98122f744ec8cf077bd0178f630f320b24aeb"
+    },
+    {
+      "name": "libtorch_global_deps.so",
+      "bytes": 8264,
+      "sha256": "2e5d497259a62960d95f4a7719abaeb24745429b49ffdf58e67672140205eb99"
+    },
+    {
+      "name": "libtorch_python.so",
+      "bytes": 32676952,
+      "sha256": "0282680cad07d1e92d92a586caf2563280072dbc4d2283759a5fce63f01a500f"
+    },
+    {
+      "name": "libtorchbind_test.so",
+      "bytes": 918152,
+      "sha256": "f9bc71ab25c48b9e38de2523e40a7c31f989d9ddd09d6777116572eefff4e141"
+    }
+  ],
+  "symbol_probes": [
+    {
+      "library": "libtorch_cpu.so",
+      "symbols": {
+        "uv_version_string": "not exported",
+        "uv_version": "not exported",
+        "uv_getaddrinfo": "export present; not invoked",
+        "uv__idna_toascii": "export present; not invoked"
+      }
+    },
+    {
+      "library": "libtorch_python.so",
+      "symbols": {
+        "uv_version_string": "not exported",
+        "uv_version": "not exported",
+        "uv_getaddrinfo": "export present; not invoked",
+        "uv__idna_toascii": "export present; not invoked"
+      }
+    },
+    {
+      "library": "libc10.so",
+      "symbols": {
+        "uv_version_string": "not exported",
+        "uv_version": "not exported",
+        "uv_getaddrinfo": "not exported",
+        "uv__idna_toascii": "not exported"
+      }
+    }
+  ],
+  "mapped_native_paths": [
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/numpy.libs/libgfortran-83c28eba-468e71e5.so.5.0.0",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/numpy.libs/libquadmath-2284e583-a9307bba.so.0.0.0",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-x86_64-linux-gnu.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/numpy/linalg/_umath_linalg.cpython-312-x86_64-linux-gnu.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/_C.cpython-312-x86_64-linux-gnu.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libc10.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libgomp.so.1",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libshm.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libtorch.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libtorch_cpu.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libtorch_global_deps.so",
+    "/opt/graphrag-cpu/venv/lib/python3.12/site-packages/torch/lib/libtorch_python.so",
+    "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2",
+    "/usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4",
+    "/usr/lib/x86_64-linux-gnu/libc.so.6",
+    "/usr/lib/x86_64-linux-gnu/libcrypto.so.3",
+    "/usr/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libffi.so.8.1.2",
+    "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/usr/lib/x86_64-linux-gnu/liblzma.so.5.4.1",
+    "/usr/lib/x86_64-linux-gnu/libm.so.6",
+    "/usr/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/usr/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libssl.so.3",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.30",
+    "/usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0",
+    "/usr/lib/x86_64-linux-gnu/libz.so.1.2.13",
+    "/usr/local/lib/libpython3.12.so.1.0",
+    "/usr/local/lib/python3.12/lib-dynload/_asyncio.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_bisect.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_blake2.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_bz2.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_contextvars.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_csv.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_ctypes.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_datetime.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_hashlib.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_heapq.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_json.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_lzma.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_multiprocessing.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_opcode.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_pickle.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_posixshmem.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_posixsubprocess.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_queue.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_random.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_sha2.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_socket.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_ssl.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_struct.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/_uuid.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/array.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/binascii.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/cmath.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/fcntl.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/grp.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/math.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/mmap.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/select.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/unicodedata.cpython-312-x86_64-linux-gnu.so",
+    "/usr/local/lib/python3.12/lib-dynload/zlib.cpython-312-x86_64-linux-gnu.so"
+  ]
+}

@@ -1,0 +1,1160 @@
+{
+  "sys_executable": "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+  "sys_version": "3.12.15 (main, Oct 14 2026, 01:08:45) [MSC v.1944 64 bit (AMD64)]",
+  "sys_prefix": "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv",
+  "sys_base_prefix": "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python",
+  "sqlite_version": "3.54.0",
+  "sqlite_dll": "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python\\DLLs\\sqlite3.dll",
+  "sqlite_dll_sha256": "5ca6a16bdd2c5a5037b1e3a942d9ac1c66efe2def902b202d44774680a8a4656",
+  "numpy_version": "2.5.4",
+  "pytest_version": "9.1.1",
+  "pyproject_sha256": "8754a6ccd94dab6a22dc6608e46ffd8efe2564fafcf2091906021e74c5101753",
+  "uv_lock_sha256": "3a3ce015f3660e03d3b6d39983b47fee921b443b8740de9a39a9c28cf5e846df",
+  "installed": {
+    "absl-py": "2.5.0",
+    "aiohappyeyeballs": "2.7.1",
+    "aiohttp": "3.14.4",
+    "aiosignal": "1.4.0",
+    "aliyun-python-sdk-core": "2.16.1",
+    "aliyun-python-sdk-kms": "2.16.5",
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "apscheduler": "3.11.3",
+    "async-timeout": "5.0.1",
+    "attrs": "26.1.0",
+    "bandit": "1.9.4",
+    "boolean-py": "5.0",
+    "cachecontrol": "0.14.4",
+    "certifi": "2026.7.22",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.1",
+    "click": "8.5.0",
+    "cloudpickle": "3.1.2",
+    "colorama": "0.4.6",
+    "crcmod": "1.7",
+    "cryptography": "50.0.1",
+    "cyclonedx-python-lib": "11.12.0",
+    "defusedxml": "0.7.1",
+    "detect-secrets": "1.5.0",
+    "distro": "1.9.0",
+    "duckdb": "1.5.5",
+    "et-xmlfile": "2.0.0",
+    "exceptiongroup": "1.3.1",
+    "fastapi": "0.141.1",
+    "filelock": "3.32.7",
+    "frozenlist": "1.8.0",
+    "fsspec": "2026.7.0",
+    "googleapis-common-protos": "1.75.3",
+    "google-api-core": "2.37.0",
+    "google-auth": "2.58.0",
+    "google-cloud-core": "2.7.0",
+    "google-cloud-storage": "3.14.1",
+    "google-crc32c": "1.8.0",
+    "google-genai": "2.23.0",
+    "google-resumable-media": "2.10.2",
+    "h11": "0.16.0",
+    "hf-xet": "1.6.0",
+    "httpcore": "1.0.9",
+    "httpcore2": "2.13.0",
+    "httptools": "0.8.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.0",
+    "huggingface-hub": "1.31.0",
+    "idna": "3.19",
+    "iniconfig": "2.3.0",
+    "jinja2": "3.1.6",
+    "jiter": "0.17.0",
+    "jmespath": "1.1.0",
+    "joblib": "1.6.0",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.1.1",
+    "langchain": "1.4.0",
+    "langchain-core": "1.6.3",
+    "langchain-openai": "1.6.2",
+    "langchain-protocol": "0.0.19",
+    "langextract": "1.5.0",
+    "langgraph": "1.2.11",
+    "langgraph-checkpoint": "4.2.0",
+    "langgraph-prebuilt": "1.1.0",
+    "langgraph-sdk": "0.4.4",
+    "langsmith": "0.12.5",
+    "license-expression": "30.4.4",
+    "lxml": "6.1.3",
+    "markdown-it-py": "4.2.0",
+    "markupsafe": "3.0.3",
+    "mdurl": "0.1.2",
+    "ml-collections": "1.1.0",
+    "more-itertools": "11.1.0",
+    "mpmath": "1.3.0",
+    "msgpack": "1.2.2",
+    "multidict": "6.9.1",
+    "narwhals": "2.26.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.4",
+    "openai": "3.14.1",
+    "openpyxl": "3.1.5",
+    "opentelemetry-api": "1.44.0",
+    "orjson": "3.12.0",
+    "ormsgpack": "1.12.2",
+    "oss2": "2.19.1",
+    "packageurl-python": "0.17.6",
+    "packaging": "26.3",
+    "pandas": "3.0.5",
+    "pip": "26.2.1",
+    "pip-api": "0.0.35",
+    "pip-audit": "2.10.1",
+    "pip-requirements-parser": "32.0.1",
+    "platformdirs": "4.11.8",
+    "pluggy": "1.6.0",
+    "prometheus-client": "0.26.0",
+    "propcache": "0.5.4",
+    "protobuf": "7.36.1",
+    "proto-plus": "1.28.4",
+    "pyasn1": "0.6.4",
+    "pyasn1-modules": "0.4.2",
+    "pycparser": "3.0",
+    "pycryptodome": "3.23.0",
+    "pydantic": "2.13.5",
+    "pydantic-core": "2.46.5",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pyparsing": "3.3.2",
+    "pytest": "9.1.1",
+    "pytest-timeout": "2.4.0",
+    "python-dateutil": "2.9.0.post0",
+    "python-docx": "1.2.0",
+    "python-dotenv": "1.2.3",
+    "python-multipart": "0.0.32",
+    "pyyaml": "6.0.3",
+    "py-serializable": "2.1.0",
+    "rank-bm25": "0.2.2",
+    "regex": "2026.9.10",
+    "requests": "2.34.2",
+    "requests-toolbelt": "1.0.0",
+    "rich": "15.0.0",
+    "ruff": "0.17.0",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sentence-transformers": "6.0.1",
+    "setuptools": "84.0.0",
+    "shellingham": "1.5.4",
+    "six": "1.17.0",
+    "sniffio": "1.3.1",
+    "sortedcontainers": "2.4.0",
+    "starlette": "1.6.0",
+    "stevedore": "5.9.1",
+    "structlog": "26.1.0",
+    "sympy": "1.14.0",
+    "tenacity": "9.1.4",
+    "threadpoolctl": "3.7.0",
+    "tiktoken": "0.14.0",
+    "tokenizers": "0.23.2",
+    "tomli": "2.4.1",
+    "tomli-w": "1.2.0",
+    "torch": "2.14.0",
+    "tqdm": "4.70.1",
+    "transformers": "5.17.0",
+    "truststore": "0.10.4",
+    "typer": "0.27.2",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "tzdata": "2026.4",
+    "tzlocal": "5.4.4",
+    "urllib3": "2.8.0",
+    "uuid-utils": "0.17.1",
+    "uvicorn": "0.53.0",
+    "watchfiles": "1.2.0",
+    "websockets": "16.1.1",
+    "xxhash": "4.0.1",
+    "yarl": "1.25.1",
+    "zstandard": "0.25.0"
+  },
+  "lock_version_mismatches": {},
+  "installed_extras": {},
+  "platform_applicable_registry": {
+    "absl-py": "2.5.0",
+    "aiohappyeyeballs": "2.7.1",
+    "aiohttp": "3.14.4",
+    "aiosignal": "1.4.0",
+    "aliyun-python-sdk-core": "2.16.1",
+    "aliyun-python-sdk-kms": "2.16.5",
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "apscheduler": "3.11.3",
+    "async-timeout": "5.0.1",
+    "attrs": "26.1.0",
+    "bandit": "1.9.4",
+    "boolean-py": "5.0",
+    "cachecontrol": "0.14.4",
+    "certifi": "2026.7.22",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.1",
+    "click": "8.5.0",
+    "cloudpickle": "3.1.2",
+    "colorama": "0.4.6",
+    "crcmod": "1.7",
+    "cryptography": "50.0.1",
+    "cyclonedx-python-lib": "11.12.0",
+    "defusedxml": "0.7.1",
+    "detect-secrets": "1.5.0",
+    "distro": "1.9.0",
+    "duckdb": "1.5.5",
+    "et-xmlfile": "2.0.0",
+    "exceptiongroup": "1.3.1",
+    "fastapi": "0.141.1",
+    "filelock": "3.32.7",
+    "frozenlist": "1.8.0",
+    "fsspec": "2026.7.0",
+    "google-api-core": "2.37.0",
+    "google-auth": "2.58.0",
+    "google-cloud-core": "2.7.0",
+    "google-cloud-storage": "3.14.1",
+    "google-crc32c": "1.8.0",
+    "google-genai": "2.23.0",
+    "google-resumable-media": "2.10.2",
+    "googleapis-common-protos": "1.75.3",
+    "h11": "0.16.0",
+    "hf-xet": "1.6.0",
+    "httpcore": "1.0.9",
+    "httpcore2": "2.13.0",
+    "httptools": "0.8.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.13.0",
+    "huggingface-hub": "1.31.0",
+    "idna": "3.19",
+    "iniconfig": "2.3.0",
+    "jinja2": "3.1.6",
+    "jiter": "0.17.0",
+    "jmespath": "1.1.0",
+    "joblib": "1.6.0",
+    "jsonpatch": "1.33",
+    "jsonpointer": "3.1.1",
+    "langchain": "1.4.0",
+    "langchain-core": "1.6.3",
+    "langchain-openai": "1.6.2",
+    "langchain-protocol": "0.0.19",
+    "langgraph": "1.2.11",
+    "langgraph-checkpoint": "4.2.0",
+    "langgraph-prebuilt": "1.1.0",
+    "langgraph-sdk": "0.4.4",
+    "langsmith": "0.12.5",
+    "license-expression": "30.4.4",
+    "lxml": "6.1.3",
+    "markdown-it-py": "4.2.0",
+    "markupsafe": "3.0.3",
+    "mdurl": "0.1.2",
+    "ml-collections": "1.1.0",
+    "more-itertools": "11.1.0",
+    "mpmath": "1.3.0",
+    "msgpack": "1.2.2",
+    "multidict": "6.9.1",
+    "narwhals": "2.26.0",
+    "networkx": "3.6.1",
+    "numpy": "2.5.4",
+    "openai": "3.14.1",
+    "openpyxl": "3.1.5",
+    "opentelemetry-api": "1.44.0",
+    "orjson": "3.12.0",
+    "ormsgpack": "1.12.2",
+    "oss2": "2.19.1",
+    "packageurl-python": "0.17.6",
+    "packaging": "26.3",
+    "pandas": "3.0.5",
+    "pip": "26.2.1",
+    "pip-api": "0.0.35",
+    "pip-audit": "2.10.1",
+    "pip-requirements-parser": "32.0.1",
+    "platformdirs": "4.11.8",
+    "pluggy": "1.6.0",
+    "prometheus-client": "0.26.0",
+    "propcache": "0.5.4",
+    "proto-plus": "1.28.4",
+    "protobuf": "7.36.1",
+    "py-serializable": "2.1.0",
+    "pyasn1": "0.6.4",
+    "pyasn1-modules": "0.4.2",
+    "pycparser": "3.0",
+    "pycryptodome": "3.23.0",
+    "pydantic": "2.13.5",
+    "pydantic-core": "2.46.5",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pyparsing": "3.3.2",
+    "pytest": "9.1.1",
+    "pytest-timeout": "2.4.0",
+    "python-dateutil": "2.9.0.post0",
+    "python-docx": "1.2.0",
+    "python-dotenv": "1.2.3",
+    "python-multipart": "0.0.32",
+    "pyyaml": "6.0.3",
+    "rank-bm25": "0.2.2",
+    "regex": "2026.9.10",
+    "requests": "2.34.2",
+    "requests-toolbelt": "1.0.0",
+    "rich": "15.0.0",
+    "ruff": "0.17.0",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sentence-transformers": "6.0.1",
+    "setuptools": "84.0.0",
+    "shellingham": "1.5.4",
+    "six": "1.17.0",
+    "sniffio": "1.3.1",
+    "sortedcontainers": "2.4.0",
+    "starlette": "1.6.0",
+    "stevedore": "5.9.1",
+    "structlog": "26.1.0",
+    "sympy": "1.14.0",
+    "tenacity": "9.1.4",
+    "threadpoolctl": "3.7.0",
+    "tiktoken": "0.14.0",
+    "tokenizers": "0.23.2",
+    "tomli": "2.4.1",
+    "tomli-w": "1.2.0",
+    "torch": "2.14.0",
+    "tqdm": "4.70.1",
+    "transformers": "5.17.0",
+    "truststore": "0.10.4",
+    "typer": "0.27.2",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "tzdata": "2026.4",
+    "tzlocal": "5.4.4",
+    "urllib3": "2.8.0",
+    "uuid-utils": "0.17.1",
+    "uvicorn": "0.53.0",
+    "watchfiles": "1.2.0",
+    "websockets": "16.1.1",
+    "xxhash": "4.0.1",
+    "yarl": "1.25.1",
+    "zstandard": "0.25.0"
+  },
+  "platform_skipped_registry": {
+    "cuda-bindings": "13.4.1",
+    "cuda-pathfinder": "1.8.1",
+    "cuda-toolkit": "13.0.3.0",
+    "httpx2-jsfetch": "1.0",
+    "nvidia-cublas": "13.1.1.3",
+    "nvidia-cuda-cupti": "13.0.85",
+    "nvidia-cuda-nvrtc": "13.0.88",
+    "nvidia-cuda-runtime": "13.0.96",
+    "nvidia-cudnn-cu13": "9.24.0.43",
+    "nvidia-cufft": "12.0.0.61",
+    "nvidia-cufile": "1.15.1.6",
+    "nvidia-curand": "10.4.0.35",
+    "nvidia-cusolver": "12.0.4.66",
+    "nvidia-cusparse": "12.6.3.3",
+    "nvidia-cusparselt-cu13": "0.8.1",
+    "nvidia-nccl-cu13": "2.30.7",
+    "nvidia-nvjitlink": "13.4.52",
+    "nvidia-nvshmem-cu13": "3.4.5",
+    "nvidia-nvtx": "13.0.85",
+    "triton": "3.8.0",
+    "uvloop": "0.22.1"
+  },
+  "record_checks": [
+    {
+      "package": "absl-py",
+      "version": "2.5.0",
+      "hashed_files_checked": 31
+    },
+    {
+      "package": "aiohappyeyeballs",
+      "version": "2.7.1",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "aiohttp",
+      "version": "3.14.4",
+      "hashed_files_checked": 74
+    },
+    {
+      "package": "aiosignal",
+      "version": "1.4.0",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "aliyun-python-sdk-core",
+      "version": "2.16.1",
+      "hashed_files_checked": 168
+    },
+    {
+      "package": "aliyun-python-sdk-kms",
+      "version": "2.16.5",
+      "hashed_files_checked": 103
+    },
+    {
+      "package": "annotated-doc",
+      "version": "0.0.5",
+      "hashed_files_checked": 9
+    },
+    {
+      "package": "annotated-types",
+      "version": "0.8.0",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "anyio",
+      "version": "4.15.1",
+      "hashed_files_checked": 54
+    },
+    {
+      "package": "APScheduler",
+      "version": "3.11.3",
+      "hashed_files_checked": 48
+    },
+    {
+      "package": "async-timeout",
+      "version": "5.0.1",
+      "hashed_files_checked": 9
+    },
+    {
+      "package": "attrs",
+      "version": "26.1.0",
+      "hashed_files_checked": 36
+    },
+    {
+      "package": "bandit",
+      "version": "1.9.4",
+      "hashed_files_checked": 81
+    },
+    {
+      "package": "boolean.py",
+      "version": "5.0",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "CacheControl",
+      "version": "0.14.4",
+      "hashed_files_checked": 20
+    },
+    {
+      "package": "certifi",
+      "version": "2026.7.22",
+      "hashed_files_checked": 13
+    },
+    {
+      "package": "cffi",
+      "version": "2.1.1",
+      "hashed_files_checked": 33
+    },
+    {
+      "package": "charset-normalizer",
+      "version": "3.5.1",
+      "hashed_files_checked": 23
+    },
+    {
+      "package": "click",
+      "version": "8.5.0",
+      "hashed_files_checked": 23
+    },
+    {
+      "package": "cloudpickle",
+      "version": "3.1.2",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "colorama",
+      "version": "0.4.6",
+      "hashed_files_checked": 18
+    },
+    {
+      "package": "crcmod",
+      "version": "1.7",
+      "hashed_files_checked": 13
+    },
+    {
+      "package": "cryptography",
+      "version": "50.0.1",
+      "hashed_files_checked": 121
+    },
+    {
+      "package": "cyclonedx-python-lib",
+      "version": "11.12.0",
+      "hashed_files_checked": 87
+    },
+    {
+      "package": "defusedxml",
+      "version": "0.7.1",
+      "hashed_files_checked": 17
+    },
+    {
+      "package": "detect-secrets",
+      "version": "1.5.0",
+      "hashed_files_checked": 98
+    },
+    {
+      "package": "distro",
+      "version": "1.9.0",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "duckdb",
+      "version": "1.5.5",
+      "hashed_files_checked": 55
+    },
+    {
+      "package": "et_xmlfile",
+      "version": "2.0.0",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "exceptiongroup",
+      "version": "1.3.1",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "fastapi",
+      "version": "0.141.1",
+      "hashed_files_checked": 63
+    },
+    {
+      "package": "filelock",
+      "version": "3.32.7",
+      "hashed_files_checked": 27
+    },
+    {
+      "package": "frozenlist",
+      "version": "1.8.0",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "fsspec",
+      "version": "2026.7.0",
+      "hashed_files_checked": 62
+    },
+    {
+      "package": "googleapis-common-protos",
+      "version": "1.75.3",
+      "hashed_files_checked": 200
+    },
+    {
+      "package": "google-api-core",
+      "version": "2.37.0",
+      "hashed_files_checked": 73
+    },
+    {
+      "package": "google-auth",
+      "version": "2.58.0",
+      "hashed_files_checked": 86
+    },
+    {
+      "package": "google-cloud-core",
+      "version": "2.7.0",
+      "hashed_files_checked": 23
+    },
+    {
+      "package": "google-cloud-storage",
+      "version": "3.14.1",
+      "hashed_files_checked": 85
+    },
+    {
+      "package": "google-crc32c",
+      "version": "1.8.0",
+      "hashed_files_checked": 16
+    },
+    {
+      "package": "google-genai",
+      "version": "2.23.0",
+      "hashed_files_checked": 541
+    },
+    {
+      "package": "google-resumable-media",
+      "version": "2.10.2",
+      "hashed_files_checked": 24
+    },
+    {
+      "package": "h11",
+      "version": "0.16.0",
+      "hashed_files_checked": 18
+    },
+    {
+      "package": "hf-xet",
+      "version": "1.6.0",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "httpcore",
+      "version": "1.0.9",
+      "hashed_files_checked": 37
+    },
+    {
+      "package": "httpcore2",
+      "version": "2.13.0",
+      "hashed_files_checked": 37
+    },
+    {
+      "package": "httptools",
+      "version": "0.8.0",
+      "hashed_files_checked": 23
+    },
+    {
+      "package": "httpx",
+      "version": "0.28.1",
+      "hashed_files_checked": 31
+    },
+    {
+      "package": "httpx2",
+      "version": "2.13.0",
+      "hashed_files_checked": 38
+    },
+    {
+      "package": "huggingface_hub",
+      "version": "1.31.0",
+      "hashed_files_checked": 196
+    },
+    {
+      "package": "idna",
+      "version": "3.19",
+      "hashed_files_checked": 18
+    },
+    {
+      "package": "iniconfig",
+      "version": "2.3.0",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "Jinja2",
+      "version": "3.1.6",
+      "hashed_files_checked": 32
+    },
+    {
+      "package": "jiter",
+      "version": "0.17.0",
+      "hashed_files_checked": 10
+    },
+    {
+      "package": "jmespath",
+      "version": "1.1.0",
+      "hashed_files_checked": 15
+    },
+    {
+      "package": "joblib",
+      "version": "1.6.0",
+      "hashed_files_checked": 142
+    },
+    {
+      "package": "jsonpatch",
+      "version": "1.33",
+      "hashed_files_checked": 10
+    },
+    {
+      "package": "jsonpointer",
+      "version": "3.1.1",
+      "hashed_files_checked": 9
+    },
+    {
+      "package": "langchain",
+      "version": "1.4.0",
+      "hashed_files_checked": 46
+    },
+    {
+      "package": "langchain-core",
+      "version": "1.6.3",
+      "hashed_files_checked": 187
+    },
+    {
+      "package": "langchain-openai",
+      "version": "1.6.2",
+      "hashed_files_checked": 31
+    },
+    {
+      "package": "langchain-protocol",
+      "version": "0.0.19",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "langextract",
+      "version": "1.5.0",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "langgraph",
+      "version": "1.2.11",
+      "hashed_files_checked": 84
+    },
+    {
+      "package": "langgraph-checkpoint",
+      "version": "4.2.0",
+      "hashed_files_checked": 28
+    },
+    {
+      "package": "langgraph-prebuilt",
+      "version": "1.1.0",
+      "hashed_files_checked": 13
+    },
+    {
+      "package": "langgraph-sdk",
+      "version": "0.4.4",
+      "hashed_files_checked": 51
+    },
+    {
+      "package": "langsmith",
+      "version": "0.12.5",
+      "hashed_files_checked": 309
+    },
+    {
+      "package": "license-expression",
+      "version": "30.4.4",
+      "hashed_files_checked": 17
+    },
+    {
+      "package": "lxml",
+      "version": "6.1.3",
+      "hashed_files_checked": 179
+    },
+    {
+      "package": "markdown-it-py",
+      "version": "4.2.0",
+      "hashed_files_checked": 76
+    },
+    {
+      "package": "MarkupSafe",
+      "version": "3.0.3",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "mdurl",
+      "version": "0.1.2",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "ml_collections",
+      "version": "1.1.0",
+      "hashed_files_checked": 37
+    },
+    {
+      "package": "more-itertools",
+      "version": "11.1.0",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "mpmath",
+      "version": "1.3.0",
+      "hashed_files_checked": 93
+    },
+    {
+      "package": "msgpack",
+      "version": "1.2.2",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "multidict",
+      "version": "6.9.1",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "narwhals",
+      "version": "2.26.0",
+      "hashed_files_checked": 168
+    },
+    {
+      "package": "networkx",
+      "version": "3.6.1",
+      "hashed_files_checked": 602
+    },
+    {
+      "package": "numpy",
+      "version": "2.5.4",
+      "hashed_files_checked": 948
+    },
+    {
+      "package": "openai",
+      "version": "3.14.1",
+      "hashed_files_checked": 1854
+    },
+    {
+      "package": "openpyxl",
+      "version": "3.1.5",
+      "hashed_files_checked": 196
+    },
+    {
+      "package": "opentelemetry-api",
+      "version": "1.44.0",
+      "hashed_files_checked": 48
+    },
+    {
+      "package": "orjson",
+      "version": "3.12.0",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "ormsgpack",
+      "version": "1.12.2",
+      "hashed_files_checked": 13
+    },
+    {
+      "package": "oss2",
+      "version": "2.19.1",
+      "hashed_files_checked": 27
+    },
+    {
+      "package": "packageurl-python",
+      "version": "0.17.6",
+      "hashed_files_checked": 18
+    },
+    {
+      "package": "packaging",
+      "version": "26.3",
+      "hashed_files_checked": 30
+    },
+    {
+      "package": "pandas",
+      "version": "3.0.5",
+      "hashed_files_checked": 1569
+    },
+    {
+      "package": "pip",
+      "version": "26.2.1",
+      "hashed_files_checked": 480
+    },
+    {
+      "package": "pip_api",
+      "version": "0.0.35",
+      "hashed_files_checked": 44
+    },
+    {
+      "package": "pip_audit",
+      "version": "2.10.1",
+      "hashed_files_checked": 34
+    },
+    {
+      "package": "pip-requirements-parser",
+      "version": "32.0.1",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "platformdirs",
+      "version": "4.11.8",
+      "hashed_files_checked": 15
+    },
+    {
+      "package": "pluggy",
+      "version": "1.6.0",
+      "hashed_files_checked": 15
+    },
+    {
+      "package": "prometheus_client",
+      "version": "0.26.0",
+      "hashed_files_checked": 38
+    },
+    {
+      "package": "propcache",
+      "version": "0.5.4",
+      "hashed_files_checked": 14
+    },
+    {
+      "package": "protobuf",
+      "version": "7.36.1",
+      "hashed_files_checked": 64
+    },
+    {
+      "package": "proto-plus",
+      "version": "1.28.4",
+      "hashed_files_checked": 32
+    },
+    {
+      "package": "pyasn1",
+      "version": "0.6.4",
+      "hashed_files_checked": 39
+    },
+    {
+      "package": "pyasn1_modules",
+      "version": "0.4.2",
+      "hashed_files_checked": 139
+    },
+    {
+      "package": "pycparser",
+      "version": "3.0",
+      "hashed_files_checked": 14
+    },
+    {
+      "package": "pycryptodome",
+      "version": "3.23.0",
+      "hashed_files_checked": 353
+    },
+    {
+      "package": "pydantic",
+      "version": "2.13.5",
+      "hashed_files_checked": 112
+    },
+    {
+      "package": "pydantic_core",
+      "version": "2.46.5",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "Pygments",
+      "version": "2.21.0",
+      "hashed_files_checked": 351
+    },
+    {
+      "package": "PyJWT",
+      "version": "2.15.1",
+      "hashed_files_checked": 20
+    },
+    {
+      "package": "pyparsing",
+      "version": "3.3.2",
+      "hashed_files_checked": 24
+    },
+    {
+      "package": "pytest",
+      "version": "9.1.1",
+      "hashed_files_checked": 92
+    },
+    {
+      "package": "pytest-timeout",
+      "version": "2.4.0",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "python-dateutil",
+      "version": "2.9.0.post0",
+      "hashed_files_checked": 26
+    },
+    {
+      "package": "python-docx",
+      "version": "1.2.0",
+      "hashed_files_checked": 125
+    },
+    {
+      "package": "python-dotenv",
+      "version": "1.2.3",
+      "hashed_files_checked": 17
+    },
+    {
+      "package": "python-multipart",
+      "version": "0.0.32",
+      "hashed_files_checked": 14
+    },
+    {
+      "package": "PyYAML",
+      "version": "6.0.3",
+      "hashed_files_checked": 25
+    },
+    {
+      "package": "py-serializable",
+      "version": "2.1.0",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "rank-bm25",
+      "version": "0.2.2",
+      "hashed_files_checked": 7
+    },
+    {
+      "package": "regex",
+      "version": "2026.9.10",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "requests",
+      "version": "2.34.2",
+      "hashed_files_checked": 27
+    },
+    {
+      "package": "requests-toolbelt",
+      "version": "1.0.0",
+      "hashed_files_checked": 41
+    },
+    {
+      "package": "rich",
+      "version": "15.0.0",
+      "hashed_files_checked": 106
+    },
+    {
+      "package": "ruff",
+      "version": "0.17.0",
+      "hashed_files_checked": 10
+    },
+    {
+      "package": "safetensors",
+      "version": "0.8.0",
+      "hashed_files_checked": 16
+    },
+    {
+      "package": "scikit-learn",
+      "version": "1.9.1",
+      "hashed_files_checked": 1078
+    },
+    {
+      "package": "scipy",
+      "version": "1.18.1",
+      "hashed_files_checked": 1536
+    },
+    {
+      "package": "sentence-transformers",
+      "version": "6.0.1",
+      "hashed_files_checked": 224
+    },
+    {
+      "package": "setuptools",
+      "version": "84.0.0",
+      "hashed_files_checked": 344
+    },
+    {
+      "package": "shellingham",
+      "version": "1.5.4",
+      "hashed_files_checked": 14
+    },
+    {
+      "package": "six",
+      "version": "1.17.0",
+      "hashed_files_checked": 7
+    },
+    {
+      "package": "sniffio",
+      "version": "1.3.1",
+      "hashed_files_checked": 14
+    },
+    {
+      "package": "sortedcontainers",
+      "version": "2.4.0",
+      "hashed_files_checked": 10
+    },
+    {
+      "package": "starlette",
+      "version": "1.6.0",
+      "hashed_files_checked": 41
+    },
+    {
+      "package": "stevedore",
+      "version": "5.9.1",
+      "hashed_files_checked": 47
+    },
+    {
+      "package": "structlog",
+      "version": "26.1.0",
+      "hashed_files_checked": 29
+    },
+    {
+      "package": "sympy",
+      "version": "1.14.0",
+      "hashed_files_checked": 1572
+    },
+    {
+      "package": "tenacity",
+      "version": "9.1.4",
+      "hashed_files_checked": 19
+    },
+    {
+      "package": "threadpoolctl",
+      "version": "3.7.0",
+      "hashed_files_checked": 6
+    },
+    {
+      "package": "tiktoken",
+      "version": "0.14.0",
+      "hashed_files_checked": 15
+    },
+    {
+      "package": "tokenizers",
+      "version": "0.23.2",
+      "hashed_files_checked": 33
+    },
+    {
+      "package": "tomli",
+      "version": "2.4.1",
+      "hashed_files_checked": 16
+    },
+    {
+      "package": "tomli_w",
+      "version": "1.2.0",
+      "hashed_files_checked": 8
+    },
+    {
+      "package": "torch",
+      "version": "2.14.0",
+      "hashed_files_checked": 12213
+    },
+    {
+      "package": "tqdm",
+      "version": "4.70.1",
+      "hashed_files_checked": 41
+    },
+    {
+      "package": "transformers",
+      "version": "5.17.0",
+      "hashed_files_checked": 2690
+    },
+    {
+      "package": "truststore",
+      "version": "0.10.4",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "typer",
+      "version": "0.27.2",
+      "hashed_files_checked": 43
+    },
+    {
+      "package": "typing_extensions",
+      "version": "4.16.0",
+      "hashed_files_checked": 6
+    },
+    {
+      "package": "typing-inspection",
+      "version": "0.4.4",
+      "hashed_files_checked": 10
+    },
+    {
+      "package": "tzdata",
+      "version": "2026.4",
+      "hashed_files_checked": 634
+    },
+    {
+      "package": "tzlocal",
+      "version": "5.4.4",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "urllib3",
+      "version": "2.8.0",
+      "hashed_files_checked": 43
+    },
+    {
+      "package": "uuid_utils",
+      "version": "0.17.1",
+      "hashed_files_checked": 12
+    },
+    {
+      "package": "uvicorn",
+      "version": "0.53.0",
+      "hashed_files_checked": 53
+    },
+    {
+      "package": "watchfiles",
+      "version": "1.2.0",
+      "hashed_files_checked": 18
+    },
+    {
+      "package": "websockets",
+      "version": "16.1.1",
+      "hashed_files_checked": 60
+    },
+    {
+      "package": "xxhash",
+      "version": "4.0.1",
+      "hashed_files_checked": 11
+    },
+    {
+      "package": "yarl",
+      "version": "1.25.1",
+      "hashed_files_checked": 18
+    },
+    {
+      "package": "zstandard",
+      "version": "0.25.0",
+      "hashed_files_checked": 12
+    }
+  ],
+  "record_errors": [],
+  "sqlite_numpy_roundtrip": true,
+  "reused_cache": "existing local artifact cache reused; uv pip --require-hashes --no-deps retained frozen export platform markers",
+  "audit_scope": "runtime identity, lock versions, installed RECORD integrity, real SQLite+NumPy roundtrip; not a full native security audit"
+}

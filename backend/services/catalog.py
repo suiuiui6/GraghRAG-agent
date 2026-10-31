@@ -130,19 +130,9 @@ class CatalogBuilder:
         return nodes_total, edges_total, by_entity_type
 
     def _count_chunks(self) -> int:
-        if VECTORDB_DIR.exists():
-            try:
-                import sqlite3
-                db = VECTORDB_DIR / "chroma.sqlite3"
-                if db.exists():
-                    conn = sqlite3.connect(str(db))
-                    cur = conn.execute("SELECT COUNT(*) FROM embedding_metadata")
-                    count = cur.fetchone()[0]
-                    conn.close()
-                    return count
-            except Exception:  # noqa: S110, BLE001  # 统计聚合降级：单维读取失败不应让整个接口失败
-                pass
-        return 0
+        from services.vector_startup import runtime_status
+        state = runtime_status()
+        return state.get('chunks', 0) if state['ready'] else 0
 
     # ── per-doc stats ───────────────────────────────────────────────────
 

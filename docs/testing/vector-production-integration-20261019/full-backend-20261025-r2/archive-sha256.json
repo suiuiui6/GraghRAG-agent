@@ -1,0 +1,34 @@
+[
+  {
+    "file": "summary.json",
+    "sha256": "36a20a6109790817de0ebcc055977773300f1dc2ac947bdda6b23fd62ebfee22"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "85160a86ff97bd8b34db2e045bc7736b8c4fef724cbfd382f3dbabc77d54cffe"
+  },
+  {
+    "file": "before.json",
+    "sha256": "72c29a50ff4ea67fe9630d65328a29256b6c62cf75fbe4a3cd03825f8d380caf"
+  },
+  {
+    "file": "after.json",
+    "sha256": "72c29a50ff4ea67fe9630d65328a29256b6c62cf75fbe4a3cd03825f8d380caf"
+  },
+  {
+    "file": "coverage.json",
+    "sha256": "fc5bdfb011a78c7ec7192a5a2a79dc4104969a57458addfc92ac80dbb9eeac77"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "99f8fc47ce7283ed69fac6461fd7c478988f269e1b039c8dd7fe96d057d55061"
+  },
+  {
+    "file": "tests.log",
+    "sha256": "31e162e1e3770edc08a433ec43b84ecb9ab7c1db11078dd3d040832cf9cd3be2"
+  },
+  {
+    "file": "export.log",
+    "sha256": "dac48ed927159530dff72010674933d5915d0878bf471201eee5a2e64f89cced"
+  }
+]

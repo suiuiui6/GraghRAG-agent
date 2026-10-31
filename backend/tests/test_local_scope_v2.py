@@ -4,20 +4,21 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
+import os
 import sys
 
 import pytest
 
-ROOT = Path(__file__).resolve().parents[2]
+from backend.tests.frozen_input_helpers import CODE_ROOT as ROOT, current_module, data_root, frozen_gold, prepare_frozen_b0
 
 
 def tool():
     assert (ROOT / 'backend/research/local_scope_v2.py').exists(), 'offline CLI not implemented'
-    return importlib.import_module('backend.research.local_scope_v2')
+    return current_module('local_scope_v2')
 
 
 def test_check_summary_no_private_text():
-    report = tool().check_package(ROOT)
+    report = tool().check_package(data_root())
     assert report['status'] == 'LOCAL_SOURCE_BINDING_PASS'
     assert report['counts']['questions'] == 9
     assert report['human_certified'] is False
@@ -26,7 +27,7 @@ def test_check_summary_no_private_text():
 
 
 def test_b0_preparation_is_not_execution():
-    report = tool().prepare_b0(ROOT)
+    report = prepare_frozen_b0()
     assert report['status'] == 'BLOCKED_NOT_EXECUTED'
     assert report['arms'] == ['B0_NATIVE', 'C_NATIVE_CONTEXT', 'C_AUTO_SCOPE', 'C_ORACLE_SCOPE']
     # Software must report drift faithfully; research admission is a separate
@@ -37,7 +38,7 @@ def test_b0_preparation_is_not_execution():
     assert frozen and set(records) == set(frozen)
     comparisons = []
     for path, expected in frozen.items():
-        file = ROOT / path
+        file = data_root() / path
         actual = hashlib.sha256(file.read_bytes()).hexdigest() if file.is_file() else None
         assert records[path] == {'expected': expected, 'actual': actual, 'match': actual == expected}
         comparisons.append(actual == expected)
@@ -71,7 +72,7 @@ def test_integrity_reports_exact_bytes_and_missing_file_without_rewriting_freeze
 
 
 def test_b0_metadata_includes_nonvector_artifacts_and_historical_guard():
-    report = tool().prepare_b0(ROOT)
+    report = prepare_frozen_b0()
     assert report['historical_integrity']['all_match_freeze']
     assert len(report['historical_integrity']['files']) == 62
     assert report['local_artifact_metadata']['bm25']['records'] == 3
@@ -81,7 +82,8 @@ def test_b0_metadata_includes_nonvector_artifacts_and_historical_guard():
 
 def test_explicit_source_auto_metadata_only():
     m = tool()
-    report = m.auto_scope(ROOT, 'section 3.2.3', ['backend/output/mineru/ingest_f/full.md'], 8192)
+    frozen_gold()
+    report = m.auto_scope(data_root(), 'section 3.2.3', ['backend/output/mineru/ingest_f/full.md'], 8192)
     assert report['routing_status'] == 'RESOLVED'
     assert report['assembly_status'] == 'COMPLETE_SCOPE'
     assert report['mappings'][0]['start'] == 12251
@@ -90,14 +92,14 @@ def test_explicit_source_auto_metadata_only():
 
 
 def test_missing_selection_not_derived_from_gold():
-    report = tool().auto_scope(ROOT, 'section 3.2.3', [], 8192)
+    report = tool().auto_scope(data_root(), 'section 3.2.3', [], 8192)
     assert report['routing_status'] == 'SOURCE_UNRESOLVED'
 
 
 def test_cli_check_fresh_process():
     tool()
-    result = subprocess.run([sys.executable, '-B', '-m', 'backend.research.local_scope_v2', 'check'],
-                            cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+    result = subprocess.run([sys.executable, '-B', '-m', 'backend.research.local_scope_v2', '--root', str(data_root()), 'check'],
+                            cwd=ROOT, env={**os.environ, 'PYTHONPATH': str(ROOT)}, capture_output=True, text=True, encoding='utf-8')
     assert result.returncode == 0, result.stderr
     assert json.loads(result.stdout)['counts']['core_items'] == 31
 
@@ -111,4 +113,4 @@ def test_cli_has_no_execute_and_does_not_import_production():
 
 def test_auto_rejects_outside_path():
     with pytest.raises(ValueError):
-        tool().auto_scope(ROOT, 'all figures', ['../another-project/full.md'], 8192)
+        tool().auto_scope(data_root(), 'all figures', ['../another-project/full.md'], 8192)

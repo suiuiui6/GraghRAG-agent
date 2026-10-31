@@ -1,0 +1,22 @@
+[
+  {
+    "path": "pe-independent.json",
+    "bytes": 13732705,
+    "sha256": "231d4367122fd158fb0f77d5bac23d115f6d2f041c6ab2f7eb9c05fcdd2c9cf8"
+  },
+  {
+    "path": "receipt.json",
+    "bytes": 3260,
+    "sha256": "852a0b7f14ad233febfc71ff1a2a2b0083595e7c3d03faaf5b48cc12f83952b8"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 5680,
+    "sha256": "3f35dbeea0123ec5b7e06e822ea280b9ec0a0aec213c7d7aaf4beffcc1acdbd2"
+  },
+  {
+    "path": "review.py",
+    "bytes": 3395,
+    "sha256": "ccf87e5846a62369c363840296476bf6e6656212d5bfd929afc6127d1eac940a"
+  }
+]

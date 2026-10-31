@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-10-19T13:14:18.937963+00:00",
+  "head": "b1e300f1445c48f9f838bcc0d7b91cb39c1171b2",
+  "branch": "codex/safe-snapshot-20261019",
+  "workspace": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent",
+  "archives": {
+    "sqlite-vector-r8-r2-20261017": {
+      "count": 42,
+      "manifest_sha256": "9d4e97242ea1e536669502ab28d16a9b5beaa0dff6ce410d1726666293761cc7",
+      "present_files_match": true
+    },
+    "sqlite-r8-consumers-r2-20261017": {
+      "count": 66,
+      "manifest_sha256": "63d4084f6ad92d6df1e80c3132e1ff9ac9ff385f9d392df20eb64d4ae8206f8d",
+      "present_files_match": true
+    },
+    "sqlite-r8-final-independent-20261017": {
+      "count": 150,
+      "manifest_sha256": "c545dbb23094257326970200bad54b2a996334059be983f32752e89206ffc2a7",
+      "present_files_match": true
+    }
+  },
+  "inputs_count": 280,
+  "inputs_sha256": "cd5c529f19feaa52e3a71268b246882e545210acc2c6595e0b02b5464e1b9e7d",
+  "baseline_tests": "not-run",
+  "historical_missing": 33,
+  "exact_copies_found": 33
+}

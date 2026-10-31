@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-29T13:42:56.2596641Z",
+  "scope": "Status-only addendum; technical design not reopened",
+  "statusOnlyVerified": true,
+  "verification": "Replace exact final status line with original status; SHA256 of reconstructed original bytes equals sealed input SHA256",
+  "originalAssessmentSha256": "97a2846b13221d18244d4f7dc900863c4cd7155fc2952c720f68a0e2e2fa8e19",
+  "finalAssessmentSha256": "2831668e3df60178914f71cd98f75912e921fe5e39b30a0f72c6200cb7ee092e",
+  "newStatus": "状态：路线评估已通过独立设计审查；仅支持继续有界证据调查和制定实施计划。未实施安全 backport 或 Torch 重建，未批准正式运行库替换。",
+  "sealedReviewReportSha256": "00f36bf367dd812f2cbb7161ca35e54b4bb78f61a113d237073c1210ee29e3ac",
+  "sealedArtifactsModified": false
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+      "-B",
+      "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\run_historical.py"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\test_vector_backup_rejection_contracts.py",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--tb=short",
+      "--basetemp=D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\backup-temp",
+      "--junitxml=D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\backup.xml"
+    ],
+    "exit": 0
+  }
+]

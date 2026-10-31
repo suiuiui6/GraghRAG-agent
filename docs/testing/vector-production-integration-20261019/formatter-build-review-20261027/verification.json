@@ -1,0 +1,1908 @@
+{
+  "utc": "2026-10-27T09:44:12.683766+00:00",
+  "exit": 0,
+  "scope": "static source/build evidence; no Chroma import/execution; no C writes",
+  "wheel_sha256": "4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c",
+  "source_commit": "11f3c7435e71024aa0a2b53710a28d3289d922d1",
+  "manifests": 37,
+  "consumers": 51,
+  "registry": 30,
+  "local": 20,
+  "git": 1,
+  "index_records": [
+    {
+      "name": "arrow-json",
+      "version": "55.2.0",
+      "checksum": "5709d974c4ea5be96d900c01576c7c0b99705f4a3eec343648cb1ca863988a9c",
+      "features": {},
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [
+            "std"
+          ],
+          "optional": false,
+          "default_features": false,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "assert-json-diff",
+      "version": "2.0.2",
+      "checksum": "47e4f2b81832e72834d7518d8487a0396a28cc408186a2e8854c0f98011faf12",
+      "features": {},
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "axum",
+      "version": "0.8.8",
+      "checksum": "8b52af3cb4058c895d37317bb27508dccc8e5f2d39454016b297bf4a400597b8",
+      "features": {
+        "matched-path": [],
+        "original-uri": [],
+        "tower-log": [
+          "tower/log"
+        ]
+      },
+      "features2": {
+        "__private": [
+          "tokio",
+          "http1",
+          "dep:reqwest"
+        ],
+        "__private_docs": [
+          "axum-core/__private_docs",
+          "tower/full",
+          "dep:serde",
+          "dep:tower-http"
+        ],
+        "default": [
+          "form",
+          "http1",
+          "json",
+          "matched-path",
+          "original-uri",
+          "query",
+          "tokio",
+          "tower-log",
+          "tracing"
+        ],
+        "form": [
+          "dep:form_urlencoded",
+          "dep:serde_urlencoded",
+          "dep:serde_path_to_error"
+        ],
+        "http1": [
+          "dep:hyper",
+          "hyper?/http1",
+          "hyper-util?/http1"
+        ],
+        "http2": [
+          "dep:hyper",
+          "hyper?/http2",
+          "hyper-util?/http2"
+        ],
+        "json": [
+          "dep:serde_json",
+          "dep:serde_path_to_error"
+        ],
+        "macros": [
+          "dep:axum-macros"
+        ],
+        "multipart": [
+          "dep:multer"
+        ],
+        "query": [
+          "dep:form_urlencoded",
+          "dep:serde_urlencoded",
+          "dep:serde_path_to_error"
+        ],
+        "tokio": [
+          "dep:hyper-util",
+          "dep:tokio",
+          "tokio/net",
+          "tokio/rt",
+          "tower/make",
+          "tokio/macros"
+        ],
+        "tracing": [
+          "dep:tracing",
+          "axum-core/tracing"
+        ],
+        "ws": [
+          "dep:hyper",
+          "tokio",
+          "dep:tokio-tungstenite",
+          "dep:sha1",
+          "dep:base64"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [
+            "raw_value"
+          ],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        },
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [
+            "raw_value"
+          ],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "dev"
+        }
+      ]
+    },
+    {
+      "name": "criterion",
+      "version": "0.7.0",
+      "checksum": "e1c047a62b0cc3e145fa84415a3191f628e980b194c2755aa12300a4e6cbd928",
+      "features": {
+        "async": [],
+        "cargo_bench_support": [],
+        "html_reports": [],
+        "real_blackbox": []
+      },
+      "features2": {
+        "async_futures": [
+          "dep:futures",
+          "async"
+        ],
+        "async_smol": [
+          "dep:smol",
+          "async"
+        ],
+        "async_std": [
+          "dep:async-std",
+          "async"
+        ],
+        "async_tokio": [
+          "dep:tokio",
+          "async"
+        ],
+        "csv_output": [
+          "dep:csv"
+        ],
+        "default": [
+          "rayon",
+          "plotters",
+          "cargo_bench_support"
+        ],
+        "plotters": [
+          "dep:plotters"
+        ],
+        "rayon": [
+          "dep:rayon"
+        ],
+        "stable": [
+          "csv_output",
+          "html_reports",
+          "async_futures",
+          "async_smol",
+          "async_tokio",
+          "async_std"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.100",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "hf-hub",
+      "version": "0.4.3",
+      "checksum": "629d8f3bbeda9d148036d6b0de0a3ab947abd08ce90626327fc3547a49d59d97",
+      "features": {},
+      "features2": {
+        "default": [
+          "default-tls",
+          "tokio",
+          "ureq"
+        ],
+        "default-tls": [
+          "native-tls"
+        ],
+        "native-tls": [
+          "dep:reqwest",
+          "reqwest?/default",
+          "dep:native-tls",
+          "dep:ureq",
+          "ureq?/native-tls"
+        ],
+        "rustls-tls": [
+          "reqwest?/rustls-tls"
+        ],
+        "tokio": [
+          "dep:futures",
+          "dep:indicatif",
+          "dep:num_cpus",
+          "dep:rand",
+          "dep:reqwest",
+          "reqwest/charset",
+          "reqwest/http2",
+          "reqwest/macos-system-configuration",
+          "dep:serde",
+          "dep:serde_json",
+          "dep:thiserror",
+          "dep:tokio",
+          "tokio/rt-multi-thread",
+          "dep:libc",
+          "dep:windows-sys"
+        ],
+        "ureq": [
+          "dep:http",
+          "dep:indicatif",
+          "dep:rand",
+          "dep:serde",
+          "dep:serde_json",
+          "dep:thiserror",
+          "dep:ureq",
+          "dep:libc",
+          "dep:windows-sys"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "httpmock",
+      "version": "0.8.3",
+      "checksum": "bf4888a4d02d8e1f92ffb6b4965cf5ff56dda36ef41975f41c6fa0f6bde78c4e",
+      "features": {
+        "color": [
+          "colored"
+        ],
+        "cookies": [
+          "headers"
+        ],
+        "default": [
+          "cookies"
+        ],
+        "experimental": [],
+        "http2": [
+          "hyper/http2",
+          "hyper-util/http2"
+        ],
+        "https": [
+          "rustls",
+          "rcgen",
+          "tokio-rustls",
+          "hyper-rustls",
+          "rustls-pki-types",
+          "rustls/ring",
+          "tls-detect",
+          "if-addrs"
+        ],
+        "proxy": [
+          "remote-https",
+          "hyper-util/client-legacy",
+          "hyper-util/http2",
+          "hyper-rustls",
+          "hyper-rustls/http2"
+        ],
+        "record": [
+          "proxy",
+          "serde_yaml"
+        ],
+        "remote": [
+          "hyper-util/client-legacy",
+          "hyper-util/http2"
+        ],
+        "remote-https": [
+          "remote",
+          "rustls",
+          "rustls/ring",
+          "hyper-rustls",
+          "hyper-rustls/ring",
+          "hyper-rustls/http2"
+        ],
+        "standalone": [
+          "clap",
+          "tracing-subscriber",
+          "record",
+          "http2",
+          "cookies",
+          "remote",
+          "remote-https"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "json-patch",
+      "version": "1.4.0",
+      "checksum": "ec9ad60d674508f3ca8f380a928cfe7b096bc729c4e2dbfe3852bc45da3ab30b",
+      "features": {
+        "default": [
+          "diff"
+        ],
+        "diff": []
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.95",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        },
+        {
+          "name": "serde_json",
+          "req": "^1.0.95",
+          "features": [
+            "preserve_order"
+          ],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "dev"
+        }
+      ]
+    },
+    {
+      "name": "jsonpath-rust",
+      "version": "0.3.5",
+      "checksum": "06cc127b7c3d270be504572364f9569761a180b981919dd0d87693a7f5fb7829",
+      "features": {},
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "jsonwebtoken",
+      "version": "10.3.0",
+      "checksum": "0529410abe238729a60b108898784df8984c87f6054c9c4fcacc47e4803c1ce1",
+      "features": {
+        "aws_lc_rs": [
+          "aws-lc-rs"
+        ],
+        "default": [
+          "use_pem"
+        ],
+        "rust_crypto": [
+          "ed25519-dalek",
+          "hmac",
+          "p256",
+          "p384",
+          "rand",
+          "rsa",
+          "sha2"
+        ],
+        "use_pem": [
+          "pem",
+          "simple_asn1"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "k8s-openapi",
+      "version": "0.20.0",
+      "checksum": "edc3606fd16aca7989db2f84bb25684d0270c6d6fa1dbcd0025af7b4130523a6",
+      "features": {
+        "earliest": [
+          "v1_22"
+        ],
+        "latest": [
+          "v1_28"
+        ],
+        "v1_22": [],
+        "v1_23": [],
+        "v1_24": [],
+        "v1_25": [],
+        "v1_26": [],
+        "v1_27": [],
+        "v1_28": []
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [
+            "alloc"
+          ],
+          "optional": false,
+          "default_features": false,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "kube-client",
+      "version": "0.87.2",
+      "checksum": "033450dfa0762130565890dadf2f8835faedf749376ca13345bcd8ecd6b5f29f",
+      "features": {
+        "__non_core": [
+          "tracing",
+          "serde_yaml",
+          "base64"
+        ],
+        "admission": [
+          "kube-core/admission"
+        ],
+        "client": [
+          "config",
+          "__non_core",
+          "hyper",
+          "http-body",
+          "tower",
+          "tower-http",
+          "hyper-timeout",
+          "pin-project",
+          "chrono",
+          "jsonpath-rust",
+          "bytes",
+          "futures",
+          "tokio",
+          "tokio-util",
+          "either"
+        ],
+        "config": [
+          "__non_core",
+          "pem",
+          "home"
+        ],
+        "default": [
+          "client"
+        ],
+        "gzip": [
+          "client",
+          "tower-http/decompression-gzip"
+        ],
+        "jsonpatch": [
+          "kube-core/jsonpatch"
+        ],
+        "oauth": [
+          "client",
+          "tame-oauth"
+        ],
+        "oidc": [
+          "client",
+          "form_urlencoded"
+        ],
+        "openssl-tls": [
+          "openssl",
+          "hyper-openssl"
+        ],
+        "rustls-tls": [
+          "rustls",
+          "rustls-pemfile",
+          "hyper-rustls"
+        ],
+        "socks5": [
+          "hyper-socks2"
+        ],
+        "ws": [
+          "client",
+          "tokio-tungstenite",
+          "rand",
+          "kube-core/ws",
+          "tokio/macros"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.68",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "kube-core",
+      "version": "0.87.2",
+      "checksum": "b5bba93d054786eba7994d03ce522f368ef7d48c88a1826faa28478d85fb63ae",
+      "features": {
+        "admission": [
+          "json-patch"
+        ],
+        "jsonpatch": [
+          "json-patch"
+        ],
+        "schema": [
+          "schemars"
+        ],
+        "ws": []
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.68",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "kube-derive",
+      "version": "0.87.2",
+      "checksum": "91e98dd5e5767c7b894c1f0e41fd628b145f808e981feb8b08ed66455d47f1a4",
+      "features": {},
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.68",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "kube-runtime",
+      "version": "0.87.2",
+      "checksum": "2d8893eb18fbf6bb6c80ef6ee7dd11ec32b1dc3c034c988ac1b3a84d46a230ae",
+      "features": {
+        "unstable-runtime": [
+          "unstable-runtime-subscribe",
+          "unstable-runtime-predicates",
+          "unstable-runtime-stream-control",
+          "unstable-runtime-reconcile-on"
+        ],
+        "unstable-runtime-predicates": [],
+        "unstable-runtime-reconcile-on": [],
+        "unstable-runtime-stream-control": [],
+        "unstable-runtime-subscribe": []
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.68",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        },
+        {
+          "name": "serde_json",
+          "req": "^1.0.68",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "dev"
+        }
+      ]
+    },
+    {
+      "name": "object_store",
+      "version": "0.12.5",
+      "checksum": "fbfbfff40aeccab00ec8a910b57ca8ecf4319b335c542f2edcd19dd25a1e2a00",
+      "features": {
+        "aws": [
+          "cloud",
+          "md-5"
+        ],
+        "azure": [
+          "cloud",
+          "httparse"
+        ],
+        "cloud": [
+          "serde",
+          "serde_json",
+          "quick-xml",
+          "hyper",
+          "reqwest",
+          "reqwest/stream",
+          "chrono/serde",
+          "base64",
+          "rand",
+          "ring",
+          "http-body-util",
+          "form_urlencoded",
+          "serde_urlencoded"
+        ],
+        "default": [
+          "fs"
+        ],
+        "fs": [
+          "walkdir"
+        ],
+        "gcp": [
+          "cloud",
+          "rustls-pemfile"
+        ],
+        "http": [
+          "cloud"
+        ],
+        "integration": [
+          "rand"
+        ]
+      },
+      "features2": {
+        "tls-webpki-roots": [
+          "reqwest?/rustls-tls-webpki-roots"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [
+            "std"
+          ],
+          "optional": true,
+          "default_features": false,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "opentelemetry_sdk",
+      "version": "0.27.1",
+      "checksum": "231e9d6ceef9b0b2546ddf52335785ce41252bc7474ee8ba05bfad277be13ab8",
+      "features": {
+        "default": [
+          "trace",
+          "metrics",
+          "logs",
+          "internal-logs"
+        ],
+        "experimental_metrics_periodic_reader_no_runtime": [
+          "metrics"
+        ],
+        "internal-logs": [
+          "tracing"
+        ],
+        "jaeger_remote_sampler": [
+          "trace",
+          "opentelemetry-http",
+          "http",
+          "serde",
+          "serde_json",
+          "url"
+        ],
+        "logs": [
+          "opentelemetry/logs",
+          "async-trait",
+          "serde_json"
+        ],
+        "metrics": [
+          "opentelemetry/metrics",
+          "glob",
+          "async-trait"
+        ],
+        "rt-async-std": [
+          "async-std"
+        ],
+        "rt-tokio": [
+          "tokio",
+          "tokio-stream"
+        ],
+        "rt-tokio-current-thread": [
+          "tokio",
+          "tokio-stream"
+        ],
+        "spec_unstable_logs_enabled": [
+          "logs",
+          "opentelemetry/spec_unstable_logs_enabled"
+        ],
+        "spec_unstable_metrics_views": [
+          "metrics"
+        ],
+        "testing": [
+          "opentelemetry/testing",
+          "trace",
+          "metrics",
+          "logs",
+          "rt-async-std",
+          "rt-tokio",
+          "rt-tokio-current-thread",
+          "tokio/macros",
+          "tokio/rt-multi-thread"
+        ],
+        "trace": [
+          "opentelemetry/trace",
+          "rand",
+          "percent-encoding"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "reqwest",
+      "version": "0.12.28",
+      "checksum": "eddd3ca559203180a307f12d114c268abf583f59b03cb906fd0b3ff8646c1147",
+      "features": {
+        "brotli": [
+          "tower-http/decompression-br"
+        ],
+        "deflate": [
+          "tower-http/decompression-deflate"
+        ],
+        "gzip": [
+          "tower-http/decompression-gzip"
+        ],
+        "macos-system-configuration": [
+          "system-proxy"
+        ],
+        "socks": [],
+        "system-proxy": [
+          "hyper-util/client-proxy-system"
+        ],
+        "trust-dns": [],
+        "zstd": [
+          "tower-http/decompression-zstd"
+        ]
+      },
+      "features2": {
+        "__rustls": [
+          "dep:hyper-rustls",
+          "dep:tokio-rustls",
+          "dep:rustls",
+          "__tls"
+        ],
+        "__rustls-ring": [
+          "hyper-rustls?/ring",
+          "tokio-rustls?/ring",
+          "rustls?/ring",
+          "quinn?/ring"
+        ],
+        "__tls": [
+          "dep:rustls-pki-types",
+          "tokio/io-util"
+        ],
+        "blocking": [
+          "dep:futures-channel",
+          "futures-channel?/sink",
+          "dep:futures-util",
+          "futures-util?/io",
+          "futures-util?/sink",
+          "tokio/sync"
+        ],
+        "charset": [
+          "dep:encoding_rs",
+          "dep:mime"
+        ],
+        "cookies": [
+          "dep:cookie_crate",
+          "dep:cookie_store"
+        ],
+        "default": [
+          "default-tls",
+          "charset",
+          "http2",
+          "system-proxy"
+        ],
+        "default-tls": [
+          "dep:hyper-tls",
+          "dep:native-tls-crate",
+          "__tls",
+          "dep:tokio-native-tls"
+        ],
+        "hickory-dns": [
+          "dep:hickory-resolver",
+          "dep:once_cell"
+        ],
+        "http2": [
+          "h2",
+          "hyper/http2",
+          "hyper-util/http2",
+          "hyper-rustls?/http2"
+        ],
+        "http3": [
+          "rustls-tls-manual-roots",
+          "dep:h3",
+          "dep:h3-quinn",
+          "dep:quinn",
+          "tokio/macros"
+        ],
+        "json": [
+          "dep:serde_json"
+        ],
+        "multipart": [
+          "dep:mime_guess",
+          "dep:futures-util"
+        ],
+        "native-tls": [
+          "default-tls"
+        ],
+        "native-tls-alpn": [
+          "native-tls",
+          "native-tls-crate?/alpn",
+          "hyper-tls?/alpn"
+        ],
+        "native-tls-vendored": [
+          "native-tls",
+          "native-tls-crate?/vendored"
+        ],
+        "rustls-tls": [
+          "rustls-tls-webpki-roots"
+        ],
+        "rustls-tls-manual-roots": [
+          "rustls-tls-manual-roots-no-provider",
+          "__rustls-ring"
+        ],
+        "rustls-tls-manual-roots-no-provider": [
+          "__rustls"
+        ],
+        "rustls-tls-native-roots": [
+          "rustls-tls-native-roots-no-provider",
+          "__rustls-ring"
+        ],
+        "rustls-tls-native-roots-no-provider": [
+          "dep:rustls-native-certs",
+          "hyper-rustls?/native-tokio",
+          "__rustls"
+        ],
+        "rustls-tls-no-provider": [
+          "rustls-tls-manual-roots-no-provider"
+        ],
+        "rustls-tls-webpki-roots": [
+          "rustls-tls-webpki-roots-no-provider",
+          "__rustls-ring"
+        ],
+        "rustls-tls-webpki-roots-no-provider": [
+          "dep:webpki-roots",
+          "hyper-rustls?/webpki-tokio",
+          "__rustls"
+        ],
+        "stream": [
+          "tokio/fs",
+          "dep:futures-util",
+          "dep:tokio-util",
+          "dep:wasm-streams"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": "cfg(target_arch = \"wasm32\")",
+          "kind": "normal"
+        },
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "reqwest",
+      "version": "0.13.2",
+      "checksum": "ab3f43e3283ab1488b624b44b0e988d0acea0b3214e694730a055cb6b2efa801",
+      "features": {
+        "brotli": [
+          "tower-http/decompression-br"
+        ],
+        "deflate": [
+          "tower-http/decompression-deflate"
+        ],
+        "gzip": [
+          "tower-http/decompression-gzip"
+        ],
+        "socks": [],
+        "system-proxy": [
+          "hyper-util/client-proxy-system"
+        ],
+        "zstd": [
+          "tower-http/decompression-zstd"
+        ]
+      },
+      "features2": {
+        "__native-tls": [
+          "dep:hyper-tls",
+          "dep:native-tls-crate",
+          "__tls",
+          "dep:tokio-native-tls"
+        ],
+        "__native-tls-alpn": [
+          "native-tls-crate?/alpn",
+          "hyper-tls?/alpn"
+        ],
+        "__rustls": [
+          "dep:hyper-rustls",
+          "dep:tokio-rustls",
+          "dep:rustls",
+          "__tls"
+        ],
+        "__rustls-aws-lc-rs": [
+          "hyper-rustls?/aws-lc-rs",
+          "tokio-rustls?/aws-lc-rs",
+          "rustls?/aws-lc-rs",
+          "quinn?/rustls-aws-lc-rs"
+        ],
+        "__tls": [
+          "dep:rustls-pki-types",
+          "tokio/io-util"
+        ],
+        "blocking": [
+          "dep:futures-channel",
+          "futures-channel?/sink",
+          "dep:futures-util",
+          "futures-util?/io",
+          "futures-util?/sink",
+          "tokio/sync"
+        ],
+        "charset": [
+          "dep:encoding_rs",
+          "dep:mime"
+        ],
+        "cookies": [
+          "dep:cookie_crate",
+          "dep:cookie_store"
+        ],
+        "default": [
+          "default-tls",
+          "charset",
+          "http2",
+          "system-proxy"
+        ],
+        "default-tls": [
+          "rustls"
+        ],
+        "form": [
+          "dep:serde",
+          "dep:serde_urlencoded"
+        ],
+        "hickory-dns": [
+          "dep:hickory-resolver",
+          "dep:once_cell"
+        ],
+        "http2": [
+          "dep:h2",
+          "hyper/http2",
+          "hyper-util/http2",
+          "hyper-rustls?/http2"
+        ],
+        "http3": [
+          "rustls",
+          "dep:h3",
+          "dep:h3-quinn",
+          "dep:quinn",
+          "tokio/macros"
+        ],
+        "json": [
+          "dep:serde",
+          "dep:serde_json"
+        ],
+        "multipart": [
+          "dep:mime_guess",
+          "dep:futures-util"
+        ],
+        "native-tls": [
+          "__native-tls",
+          "__native-tls-alpn"
+        ],
+        "native-tls-no-alpn": [
+          "__native-tls"
+        ],
+        "native-tls-vendored": [
+          "__native-tls",
+          "native-tls-crate?/vendored",
+          "__native-tls-alpn"
+        ],
+        "native-tls-vendored-no-alpn": [
+          "__native-tls",
+          "native-tls-crate?/vendored"
+        ],
+        "query": [
+          "dep:serde",
+          "dep:serde_urlencoded"
+        ],
+        "rustls": [
+          "__rustls-aws-lc-rs",
+          "dep:rustls-platform-verifier",
+          "__rustls"
+        ],
+        "rustls-no-provider": [
+          "dep:rustls-platform-verifier",
+          "__rustls"
+        ],
+        "stream": [
+          "tokio/fs",
+          "dep:futures-util",
+          "dep:tokio-util",
+          "dep:wasm-streams"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "schemars",
+      "version": "0.8.22",
+      "checksum": "3fbf2ae1b8bc8e02df939598064d22402220cd5bbcca1c76f7d6a310974d5615",
+      "features": {
+        "arrayvec": [
+          "arrayvec05"
+        ],
+        "bigdecimal": [
+          "bigdecimal03"
+        ],
+        "default": [
+          "derive"
+        ],
+        "derive": [
+          "schemars_derive"
+        ],
+        "derive_json_schema": [
+          "impl_json_schema"
+        ],
+        "impl_json_schema": [
+          "derive"
+        ],
+        "indexmap1": [
+          "indexmap"
+        ],
+        "preserve_order": [
+          "indexmap"
+        ],
+        "raw_value": [
+          "serde_json/raw_value"
+        ],
+        "ui_test": [],
+        "uuid": [
+          "uuid08"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.25",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "sqlx-core",
+      "version": "0.8.6",
+      "checksum": "ee6798b1838b6a0f69c007c133b8df5866302197e404e8b6ee8ed3e3a5e68dc6",
+      "features": {
+        "_rt-async-std": [
+          "async-std",
+          "async-io"
+        ],
+        "_rt-tokio": [
+          "tokio",
+          "tokio-stream"
+        ],
+        "_tls-native-tls": [
+          "native-tls"
+        ],
+        "_tls-none": [],
+        "_tls-rustls": [
+          "rustls"
+        ],
+        "_tls-rustls-aws-lc-rs": [
+          "_tls-rustls",
+          "rustls/aws-lc-rs",
+          "webpki-roots"
+        ],
+        "_tls-rustls-ring-native-roots": [
+          "_tls-rustls",
+          "rustls/ring",
+          "rustls-native-certs"
+        ],
+        "_tls-rustls-ring-webpki": [
+          "_tls-rustls",
+          "rustls/ring",
+          "webpki-roots"
+        ],
+        "any": [],
+        "default": [],
+        "json": [
+          "serde",
+          "serde_json"
+        ],
+        "migrate": [
+          "sha2",
+          "crc"
+        ],
+        "offline": [
+          "serde",
+          "either/serde"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.73",
+          "features": [
+            "raw_value"
+          ],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "sqlx-macros-core",
+      "version": "0.8.6",
+      "checksum": "19a9c1841124ac5a61741f96e1d9e2ec77424bf323962dd894bdb93f37d5219b",
+      "features": {
+        "_rt-async-std": [
+          "async-std",
+          "sqlx-core/_rt-async-std"
+        ],
+        "_rt-tokio": [
+          "tokio",
+          "sqlx-core/_rt-tokio"
+        ],
+        "_sqlite": [],
+        "_tls-native-tls": [
+          "sqlx-core/_tls-native-tls"
+        ],
+        "_tls-rustls-aws-lc-rs": [
+          "sqlx-core/_tls-rustls-aws-lc-rs"
+        ],
+        "_tls-rustls-ring-native-roots": [
+          "sqlx-core/_tls-rustls-ring-native-roots"
+        ],
+        "_tls-rustls-ring-webpki": [
+          "sqlx-core/_tls-rustls-ring-webpki"
+        ],
+        "default": [],
+        "derive": [],
+        "macros": [],
+        "migrate": [
+          "sqlx-core/migrate"
+        ],
+        "mysql": [
+          "sqlx-mysql"
+        ],
+        "postgres": [
+          "sqlx-postgres"
+        ],
+        "sqlite": [
+          "_sqlite",
+          "sqlx-sqlite/bundled"
+        ],
+        "sqlite-unbundled": [
+          "_sqlite",
+          "sqlx-sqlite/unbundled"
+        ]
+      },
+      "features2": {
+        "bigdecimal": [
+          "sqlx-core/bigdecimal",
+          "sqlx-mysql?/bigdecimal",
+          "sqlx-postgres?/bigdecimal"
+        ],
+        "bit-vec": [
+          "sqlx-core/bit-vec",
+          "sqlx-postgres?/bit-vec"
+        ],
+        "chrono": [
+          "sqlx-core/chrono",
+          "sqlx-mysql?/chrono",
+          "sqlx-postgres?/chrono",
+          "sqlx-sqlite?/chrono"
+        ],
+        "ipnet": [
+          "sqlx-core/ipnet",
+          "sqlx-postgres?/ipnet"
+        ],
+        "ipnetwork": [
+          "sqlx-core/ipnetwork",
+          "sqlx-postgres?/ipnetwork"
+        ],
+        "json": [
+          "sqlx-core/json",
+          "sqlx-mysql?/json",
+          "sqlx-postgres?/json",
+          "sqlx-sqlite?/json"
+        ],
+        "mac_address": [
+          "sqlx-core/mac_address",
+          "sqlx-postgres?/mac_address"
+        ],
+        "rust_decimal": [
+          "sqlx-core/rust_decimal",
+          "sqlx-mysql?/rust_decimal",
+          "sqlx-postgres?/rust_decimal"
+        ],
+        "time": [
+          "sqlx-core/time",
+          "sqlx-mysql?/time",
+          "sqlx-postgres?/time",
+          "sqlx-sqlite?/time"
+        ],
+        "uuid": [
+          "sqlx-core/uuid",
+          "sqlx-mysql?/uuid",
+          "sqlx-postgres?/uuid",
+          "sqlx-sqlite?/uuid"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.73",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "sqlx-postgres",
+      "version": "0.8.6",
+      "checksum": "db58fcd5a53cf07c184b154801ff91347e4c30d17a3562a635ff028ad5deda46",
+      "features": {
+        "any": [
+          "sqlx-core/any"
+        ],
+        "json": [
+          "sqlx-core/json"
+        ],
+        "migrate": [
+          "sqlx-core/migrate"
+        ],
+        "offline": [
+          "sqlx-core/offline"
+        ]
+      },
+      "features2": {
+        "bigdecimal": [
+          "dep:bigdecimal",
+          "dep:num-bigint",
+          "sqlx-core/bigdecimal"
+        ],
+        "bit-vec": [
+          "dep:bit-vec",
+          "sqlx-core/bit-vec"
+        ],
+        "chrono": [
+          "dep:chrono",
+          "sqlx-core/chrono"
+        ],
+        "ipnet": [
+          "dep:ipnet",
+          "sqlx-core/ipnet"
+        ],
+        "ipnetwork": [
+          "dep:ipnetwork",
+          "sqlx-core/ipnetwork"
+        ],
+        "mac_address": [
+          "dep:mac_address",
+          "sqlx-core/mac_address"
+        ],
+        "rust_decimal": [
+          "dep:rust_decimal",
+          "rust_decimal/maths",
+          "sqlx-core/rust_decimal"
+        ],
+        "time": [
+          "dep:time",
+          "sqlx-core/time"
+        ],
+        "uuid": [
+          "dep:uuid",
+          "sqlx-core/uuid"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.85",
+          "features": [
+            "raw_value"
+          ],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "tantivy",
+      "version": "0.22.1",
+      "checksum": "96599ea6fccd844fc833fed21d2eecac2e6a7c1afd9e044057391d78b1feb141",
+      "features": {
+        "compare_hash_only": [
+          "stacker/compare_hash_only"
+        ],
+        "default": [
+          "mmap",
+          "stopwords",
+          "lz4-compression"
+        ],
+        "failpoints": [
+          "fail",
+          "fail/failpoints"
+        ],
+        "lz4-compression": [
+          "lz4_flex"
+        ],
+        "mmap": [
+          "fs4",
+          "tempfile",
+          "memmap2"
+        ],
+        "quickwit": [
+          "sstable",
+          "futures-util"
+        ],
+        "stopwords": [],
+        "unstable": [],
+        "zstd-compression": [
+          "zstd"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.79",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "tinytemplate",
+      "version": "1.2.1",
+      "checksum": "be4d6b5f19ff7664e8c98d03e2139cb510db9b0a60b55f8e8709b689d939b6bc",
+      "features": {},
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "ureq",
+      "version": "2.12.1",
+      "checksum": "02d1a66277ed75f640d608235660df48c8e3c19f3b4edb6a263315626cc3c01d",
+      "features": {
+        "proxy-from-env": []
+      },
+      "features2": {
+        "brotli": [
+          "dep:brotli-decompressor"
+        ],
+        "charset": [
+          "dep:encoding_rs"
+        ],
+        "cookies": [
+          "dep:cookie",
+          "dep:cookie_store"
+        ],
+        "default": [
+          "tls",
+          "gzip"
+        ],
+        "gzip": [
+          "dep:flate2"
+        ],
+        "http-crate": [
+          "dep:http"
+        ],
+        "http-interop": [
+          "dep:http-02"
+        ],
+        "json": [
+          "dep:serde",
+          "dep:serde_json"
+        ],
+        "native-certs": [
+          "dep:rustls-native-certs"
+        ],
+        "native-tls": [
+          "dep:native-tls"
+        ],
+        "socks-proxy": [
+          "dep:socks"
+        ],
+        "testdeps": [
+          "dep:hootbin"
+        ],
+        "tls": [
+          "dep:webpki-roots",
+          "dep:rustls",
+          "dep:rustls-pki-types"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0.97",
+          "features": [],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "utoipa",
+      "version": "5.4.0",
+      "checksum": "2fcc29c80c21c31608227e0912b2d7fddba57ad76b606890627ba8ee7964e993",
+      "features": {
+        "openapi_extensions": [],
+        "preserve_order": [],
+        "preserve_path_order": []
+      },
+      "features2": {
+        "actix_extras": [
+          "utoipa-gen?/actix_extras"
+        ],
+        "auto_into_responses": [
+          "utoipa-gen?/auto_into_responses"
+        ],
+        "axum_extras": [
+          "utoipa-gen?/axum_extras"
+        ],
+        "chrono": [
+          "utoipa-gen?/chrono"
+        ],
+        "config": [
+          "utoipa-gen?/config"
+        ],
+        "debug": [
+          "utoipa-gen?/debug"
+        ],
+        "decimal": [
+          "utoipa-gen?/decimal"
+        ],
+        "decimal_float": [
+          "utoipa-gen?/decimal_float"
+        ],
+        "default": [
+          "macros"
+        ],
+        "indexmap": [
+          "utoipa-gen?/indexmap"
+        ],
+        "jiff_0_2": [
+          "utoipa-gen?/jiff_0_2"
+        ],
+        "macros": [
+          "dep:utoipa-gen"
+        ],
+        "non_strict_integers": [
+          "utoipa-gen?/non_strict_integers"
+        ],
+        "rc_schema": [
+          "utoipa-gen?/rc_schema"
+        ],
+        "repr": [
+          "utoipa-gen?/repr"
+        ],
+        "rocket_extras": [
+          "utoipa-gen?/rocket_extras"
+        ],
+        "smallvec": [
+          "utoipa-gen?/smallvec"
+        ],
+        "time": [
+          "utoipa-gen?/time"
+        ],
+        "ulid": [
+          "utoipa-gen?/ulid"
+        ],
+        "url": [
+          "utoipa-gen?/url"
+        ],
+        "uuid": [
+          "utoipa-gen?/uuid"
+        ],
+        "yaml": [
+          "serde_norway",
+          "utoipa-gen?/yaml"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "utoipa-swagger-ui",
+      "version": "9.0.2",
+      "checksum": "d047458f1b5b65237c2f6dc6db136945667f40a7668627b3490b9513a3d43a55",
+      "features": {
+        "debug": [],
+        "debug-embed": [
+          "rust-embed/debug-embed"
+        ]
+      },
+      "features2": {
+        "cache": [
+          "dep:dirs",
+          "dep:sha2"
+        ],
+        "default": [
+          "url"
+        ],
+        "reqwest": [
+          "dep:reqwest"
+        ],
+        "url": [
+          "dep:url"
+        ],
+        "vendored": [
+          "dep:utoipa-swagger-ui-vendored"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1.0",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "validator",
+      "version": "0.19.0",
+      "checksum": "d0b4a29d8709210980a09379f27ee31549b73292c87ab9899beee1c0d3be6303",
+      "features": {
+        "card": [
+          "card-validate"
+        ],
+        "derive": [
+          "validator_derive"
+        ],
+        "derive_nightly_features": [
+          "derive",
+          "validator_derive/nightly_features"
+        ],
+        "unic": [
+          "unic-ucd-common"
+        ]
+      },
+      "features2": {},
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "wit-component",
+      "version": "0.244.0",
+      "checksum": "9d66ea20e9553b30172b5e831994e35fbde2d165325bec84fc43dbf6f4eb9cb2",
+      "features": {},
+      "features2": {
+        "dummy-module": [
+          "dep:wat"
+        ],
+        "semver-check": [
+          "dummy-module"
+        ],
+        "wat": [
+          "dep:wast",
+          "dep:wat"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        }
+      ]
+    },
+    {
+      "name": "wit-parser",
+      "version": "0.244.0",
+      "checksum": "ecc8ac4bc1dc3381b7f59c34f00b67e18f910c2c0f50015669dde7def656a736",
+      "features": {},
+      "features2": {
+        "decoding": [
+          "dep:wasmparser"
+        ],
+        "default": [
+          "serde",
+          "decoding"
+        ],
+        "serde": [
+          "dep:serde",
+          "dep:serde_derive",
+          "indexmap/serde",
+          "serde_json"
+        ],
+        "wat": [
+          "decoding",
+          "dep:wat"
+        ]
+      },
+      "serde_dependencies": [
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": true,
+          "default_features": true,
+          "target": null,
+          "kind": "normal"
+        },
+        {
+          "name": "serde_json",
+          "req": "^1",
+          "features": [],
+          "optional": false,
+          "default_features": true,
+          "target": null,
+          "kind": "dev"
+        }
+      ]
+    }
+  ],
+  "prior_algorithm_review_inputs_unchanged": 29,
+  "inputs_sha256": {
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\github-tree.json": "f6cbfbebc814b6a4768eccc2b01741f767975a13c89c210cb5714ae8a92e5f0f",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-Cargo.lock": "ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\Cargo.toml": "e3499fa958ed860053cefa072fb00dbf61b11a834b897efcbbb38312961ce7cd",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__api-types__Cargo.toml": "7cc5cf15d1fc4c59136f1ad5c83d59c1c10a7c92412bc20cec6bc9bfe8aa6dff",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__benchmark__Cargo.toml": "071fd29ef4e8c6434d696215958681d85e5da69cbe730aebcea051fb01d3cfeb",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__blockstore__Cargo.toml": "dc0009f9d16e7d715f944968af11fa74cd659ff800591820d3d9a7ffd48b358c",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__cache__Cargo.toml": "9b35db6a08f1618c5faf79654a6a9701f84cb6b85a58e102af12d97b60a11e45",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__chroma__Cargo.toml": "b8bd6bdead2223f9e77671f7bc45174b4de95a7eb14e26776a70fccb96c2af30",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__cli__Cargo.toml": "8dd24b7b7a44b3683de53735a4a8b4df0c3871353ffb18417c414833bb4fd976",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__config__Cargo.toml": "541bd82db4bc6e1597b304c912e464b32f732b6ea33cf0756be8febca3cab75b",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__distance__Cargo.toml": "ba911140ccd27517d3ad6a2624f65392a5d9cf54b2c8df73aa544d4bc3cc3b60",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__error__Cargo.toml": "997434a431cae350d56ff7861e315f610f39808e72e8a9d4f96a0bac7da95a00",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__faults__Cargo.toml": "beb8df5bc7a662684afb5e0e8e1224eb3bc68e2baafee90895ae2c22838e7b2a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__frontend__Cargo.toml": "5c11adaba1a878f057e43c96fde751172d1e893c3b8085e525db4d02cc0b6758",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__garbage_collector__Cargo.toml": "917db84c9e2436036ccf5e14f80814cdaf3cc9821e914bc2d6fb71f836863367",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__index__Cargo.toml": "0ac3fc9713c842ad0d4eefe1a2918d96cc9f6279ffe379aad9aab9e6b9e145d6",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__jemalloc-pprof-server__Cargo.toml": "abfeb19bb4d61e7f7ad303970901b7843eb9072ce4b1a0910953dfbe13dc18a5",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__js_bindings__Cargo.toml": "6a9f509bef779ff4ecf93b847b938a8e111c15427147edf5ea3fca76122a7a06",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__load__Cargo.toml": "16cd18d8683bcfb94387cb1a2100d58c7656bf016212c7d224673463581aeba5",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__log-service__Cargo.toml": "c458348a9d02b105a0082545e77f558af6448fdc95de99c7de01dac97ea8b959",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__log__Cargo.toml": "e6bbb75c69bdbdb69e9bb36009b38d147503d82f79978be9fdd1005d7caf9b4e",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__mdac__Cargo.toml": "6490d7836cdcfdb5efdb7b87687a51b49de3059ba47d4c4377c7cd8f9643dcbe",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__memberlist__Cargo.toml": "536745cc60049e62fab61d6c5a9aac2b11d358b411f834b4904aae43d6923504",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__metering-macros__Cargo.toml": "7c57e768e44fa4b3b893cc25ecb200da17a54c841e3a8308712657fe3ba9830d",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__metering__Cargo.toml": "944e723ab9636011a43819bbbaaf66ec9ef1a7a0518037c57d844ec635259349",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__python_bindings__Cargo.toml": "f83950a377564771bcef983b4318a4ee162b7ad113caad90623684ab95a66df1",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__rust-sysdb__Cargo.toml": "c0c08625c6c5359e1d8df680f46880e31827e177366131e6c5354190c6497c9c",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__s3heap-service__Cargo.toml": "8f7969822d8ae44f51fb891e82467f6394275b2fde0ef02561e4f47c62e9daf5",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__s3heap__Cargo.toml": "0fd947849c0c3e601ee09e6c7039182752ffd976983b40d28908c0847d6b2108",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__segment__Cargo.toml": "c51616041b2fa522f8daca4e7038426b9d13ef3cbbfe70de48feffdfbc509ca5",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__spanner-migrations__Cargo.toml": "90edfdabe440cd9512655a8b237bba399d6c8902a715366a118cf99d808b0a2a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__sqlite__Cargo.toml": "e3e064a09cd86ee7941d5f5748bd2e8ac8e26046559288678f6ecdd9afd6f196",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__storage__Cargo.toml": "3b01cba2ffea88764fe127a0f8c4579bb116d226bb548e42a5c33de3fd94c3e0",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__sysdb__Cargo.toml": "301c815052af941f85ac2943078dcca66bc521f289c3d86a8132d5647aebc126",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__system__Cargo.toml": "fd41d8b9a28829f2fdd3b5483c766b95a26131703e68ba8b6261c427fe24c40d",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__tracing__Cargo.toml": "342598ff691f620ff0383d50fc543ce75081082bd465600ae822942958090b73",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__types__Cargo.toml": "bdc9b87880d96d27d56b905d72c8d021e6f31fe2cac40116e56eb6a881885234",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__wal3__Cargo.toml": "46ee8801c67e2bc3a23610b9d8c5e2eff2cfc95e772766320ceed9a326463280",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\original-workspace\\rust__worker__Cargo.toml": "dde23899bb78286f1210ebd662c66806970a48afc36f1a93f1d7c86de782463d",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\arrow-json.json": "b2dc33196719e30c6996a9f4e0b12a8d436acccb8f4ce5e34b9eaef144c26459",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\assert-json-diff.json": "ad5d61b299cf0fea12160b0af9017e53dcbd326b0204db7cf089d43e7fe69c97",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\axum.json": "1a003ad9d793f9955b57f900bd769c5ac84d457659564a67c59ab2accf92e74b",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\criterion.json": "cae1defc564aa1dc2e99b916bd6cf631942296f6bd29d552409d83d543fe0048",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\hf-hub.json": "ddf175a3594ca982de113a9998614b6c648e2fdc64be9fe329812e1ab946cf14",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\httpmock.json": "693012e9fe74b93f5d9999cbae3bae4793ffd40bca1d005beb28608452183180",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\json-patch.json": "a737dd61d6ff2919c8a56c9bbd5f967e9571e5757b99d972d5ceb5b2ca219c18",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\jsonpath-rust.json": "53336db44c94006a6db34c5c05b3f66ec2b97810c6502eba8a852481abad4352",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\jsonwebtoken.json": "a87b3aaa1eee591be8063cf40dabf31b463404301cdb1f826e0b5733c180b7fd",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\k8s-openapi.json": "600a934889122297bb5990e9f41038c91147da17ce50cc52eecbf4ddc790891a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-client.json": "9ce08ca1737efb0fe0b8d1c705cb5ff46567ee04997c7b34699cbc862b75044a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-core.json": "448cdebf0aaded7b6c8541fc6edb8d0317f078611ecbb210fb6098d197a9c48c",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-derive.json": "b7931edb5b63f12b33e3325487b9bcb597c02997c748cc0c0745faa9e99f033e",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\kube-runtime.json": "c917907849d70a184e123a3648370365afd4c1fa3c52630fc11a584df06864a0",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\object_store.json": "80e388bc0b2f6a50edf22309b9836aa25a19b5271359abbe7569fc0fb590924f",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\opentelemetry_sdk.json": "21f681255e3ec7771a7cf80cf78ba2a4a6da675394aaf06b996da273e7ecdb29",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\reqwest.json": "0d83500c5ac96f1ddeca88b37f72d80f5481511a6849efa316847ffea84f364a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\schemars.json": "be31590dc7cc5f5ef1a378effbb0b2018290b63fa1370f9d79e923ecbced435a",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\sqlx-core.json": "66a2dd96cb3966792d0b2c3f685d4deb7c79f1d9646f67d19cf83471a1260a49",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\sqlx-macros-core.json": "e9ccec009c452fc2bdb29c2000bac6e0502e67119049a61ab49f9d28c9db2bef",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\sqlx-postgres.json": "064f575daf828518b2fcb8141b27bb0b6a39ce5ae5bae85d7ceb5110a1356852",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\tantivy.json": "2ea2a2f07fc926ce386c9102016a1d0efb74cf5c9a4da3077cd37407c7719d21",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\tinytemplate.json": "7832d28be113b998f1dcf01cfc00dcdc8cd1d30ec8db94ad2c5d45748dacd7cb",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\ureq.json": "1af216684d0e7d97ae77e7dda0d4ed28fe5dc5e22dd1052d9cd4e4c75bb8eb28",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\utoipa.json": "55d8405cfda8bdcb154fa54860f0eabcd6aaada2310d5a307654776612c43c36",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\utoipa-swagger-ui.json": "d52c6582b68abb5fe2fecb280b4f56fbf2a7c6b257ccf138f21f7ce00efb7e4d",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\validator.json": "972ccd00e6fe32a5fa5b7ebbda4e65c6fdb10dc0a268a38f8a31250c022c0f33",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\wit-component.json": "672cff31fb24543aa2b99732ab49b27cbe61094d749570645a56b0ea4b72fb07",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\index\\wit-parser.json": "f9a67eb2d09cf073dab073ae5f5e1ccea83f2c5f25f5fac1d27714de107f3997",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-tree.json": "ef41df5a3747e4ac3e39a79df38f59387a05096fa6605f873f9c208db353a326",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-root.Cargo.toml": "fa246589a147a346933bea152de530db7fa390ab9cd2e0dd025d2ea3505ac598",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gcloud-auth.Cargo.toml": "ff85e244805edea289b3fa83c5afbcb408dd95d6645f4604e698c37ed997d3d7",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\serde_json-1.0.149.crate": "83fc039473c5595ace860d8c4fafa220ff474b3fc6bfdb4293327f1a37e94d86",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\.github__workflows___build_release_pypi.yml": "ca543e82da593d725d4c15ab835594b4412ce84050c01d70d2d7e508fd20da3b",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\pyproject.toml": "e08b82c05f7db1cbe900641bbb414a7164032e3c3dc5b91f601b1ca1fb045b00",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\Cargo.toml": "e3499fa958ed860053cefa072fb00dbf61b11a834b897efcbbb38312961ce7cd",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\rust-action.yaml": "c0d17cff18f5f02097d51a6a43cef7312832ebe42de81ab6120420015754aded",
+    "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify-network.json": "68c3deff0bf98d2d2c020dcb22391075e78b681437bbcdab41be56db3d3ab263",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\chromadb-1.5.9-cp39-abi3-win_amd64.whl": "4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261026\\pypi-release.json": "82be7082d1a27eaa7410b92609606c288d10b4411ac4ccf2c989e6de368ce58d",
+    "D:\\graghRAG-agent\\.tmp\\formatter-admission-review-20261026\\verification.json": "3ebfadba0e726c40dbc641e563cecdb8e98ca897e62801ef0fa29bbdddfc6408",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\vector_numeric.py": "2ad65375cf6727c2ac32bd18a07c7169896525a3f6c632b721319da5fbb1aad5",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\sqlite_vector_store.py": "238c0836f9db011596fb610497e4a3829a350d1b68164abc5dd479ea0ac90b9f",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\Cargo.toml": "02105d1df940431d92ff91bb536eb65aee8e2ba3a7fc19f21e9e0ee624842c2c",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\Cargo.lock": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\rust-toolchain.toml": "4cb550734bd94d0591c8a84b561c654dd58ddc3b0d67464c2ddeb2962a4cd826",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\src\\main.rs": "eee79631cc3e7ee8acd2d48485be9a811374d7d04426a49f1368e7b260f65dfe",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\build.py": "0f3c30dc5d983473716fa94c50adef353c650081b9d67014900ca8ca00628c41",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\build-receipt.json": "b0643b26edd403e08b389c9cbc93a712006dabb7ab06286e323f198df2f935de",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\bin\\x86_64-pc-windows-msvc\\approved-build.json": "5bd305407c9e741d6d9753240352a2fef6abe2c97a894478da3aab5ad0853845",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\native\\vector_numeric\\bin\\x86_64-pc-windows-msvc\\vector-numeric-bridge.exe": "752027dbe65ce9b5a94ce4cc439fe1fc9ec43561f7ca62be1ae7931c312b3f38",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\design\\2026-10-19-vector-production-integration.md": "e92677cac2761e04f2dbf2685ed6cd7a8bffd446995244c12777cc165bb20283",
+    "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\contracts\\2026-10-14-vector-ingress-semantics.md": "e6cc809f67440b822f4299c7b8365573e8f0e2bc28c8bd6c04a9befcd5f131dd",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\REVIEW.md": "9568821bbe46267f135e8cad0543f181550a00b4fc619daafd8acb8e87790bec",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-metadata-commit.rs": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-metadata-api.rs": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-Cargo.lock": "ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-derive-enum-untagged.rs": "b66ad3cea36ee786d50270f6648f1075c1e615b5f04173b47f034a251df5220e",
+    "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-private-de.rs": "68ee17774d3bbc693d9f19803747fa2c3afdb7046482e6d94ac6cf7db5a4fe20",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\chroma-python-rust.py": "ba6da39ae81c6e7e31b1283dacfdcfcf4c0341f9ac2c22589e27c7dbdd84fc7e",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\chroma-sqlite-log.rs": "2d6e74c560cc02c194ed78dc3db5593f3aad645ec9062e998cd1117d59b5d41b",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\chroma-bindings.rs": "e22d934e4955b20497d383c2336ee9da16c6fb37c3c26b91d44f21d044d8c025",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\ser.rs": "f2b8cc0b97e30c49dbc58698fa22c14a7d56ea616cdb57b067835a59af49a75f",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\de.rs": "2364aaa767bb40eeedd4aa24e3bf917be5e007a00bd3d911b61f9de74aa5f074",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_json-1.0.149\\src\\value\\de.rs": "ceda1bf415aafde89caa83bf275811b70d393717d4e1038e0c61822d2da02993",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\zmij-1.0.21.crate": "b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\zmij-1.0.21\\src\\lib.rs": "d843c3c1c8a41a8cdaead2ee3a223a204bf2ed047c3f2892719248a0f10d9bef",
+    "D:\\graghRAG-agent\\.tmp\\vector-formatter-20261020\\upstream\\serde_core-1.0.228.crate": "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad",
+    "C:\\Users\\14156\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_core-1.0.228\\src\\de\\impls.rs": "9fb7a0322af51971fe1fa8f5b56c7ca3716622a6e9127b86bddfc0742c11383c",
+    "D:\\graghRAG-agent\\.tmp\\formatter-admission-review-20261026\\REVIEW.md": "5ce4b48facc01e64a79bec748434976ccb3e3d338726683a7ba3b3076b8e07c2",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\REPORT.md": "c1ff8e8d9a2e1ef5cc40eef442233886dfd6ae563eb7a511e368ae44898dde00",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\verify_evidence.py": "79b57ebcbfe5a090c71c9d2b973c204f67d4eb3ef5b60d44fd4df1c942377b97",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\evidence-verification.json": "cfb4f03434943bac71f0f82098ff2d0883ef253bde170a705ec694da6a0fcb5c",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\gh-verification-network.json": "c142fdf2f8875ee5c1a6431b7d157059ead98f0366d11752365de16f15e1813e",
+    "D:\\graghRAG-agent\\.tmp\\chroma-build-provenance-20261027\\bundle.json": "d9141c4dec6adb35a8566d0ed60c18bd2262216ccae18b1d527d2ec35519e1bc",
+    "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify.stderr": "340b9dbf6482effc71d5b84a4735c89db9e436b8cc05ada3890f583cc8ec995e",
+    "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\gh-verify-network.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\graghRAG-agent\\.tmp\\formatter-build-review-20261027\\verify.py": "779999d4f4551a2f7764af88a93e3d59064abc5a68efaa358d2c9a47dd93b567"
+  },
+  "interpretation": "Declared feature superset excludes three special features. Actual build settings are inferred under trust in signed official source/workflow; they are not cryptographically enumerated."
+}

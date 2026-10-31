@@ -1,0 +1,48 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "name": "chromadb-1.5.9-cp39-abi3-win_amd64.whl",
+      "digest": {
+        "sha256": "4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c"
+      }
+    }
+  ],
+  "predicateType": "https://slsa.dev/provenance/v1",
+  "predicate": {
+    "buildDefinition": {
+      "buildType": "https://actions.github.io/buildtypes/workflow/v1",
+      "externalParameters": {
+        "workflow": {
+          "ref": "refs/tags/1.5.9",
+          "repository": "https://github.com/chroma-core/chroma",
+          "path": ".github/workflows/release-chromadb.yml"
+        }
+      },
+      "internalParameters": {
+        "github": {
+          "event_name": "push",
+          "repository_id": "546206616",
+          "repository_owner_id": "105881770",
+          "runner_environment": "self-hosted"
+        }
+      },
+      "resolvedDependencies": [
+        {
+          "uri": "git+https://github.com/chroma-core/chroma@refs/tags/1.5.9",
+          "digest": {
+            "gitCommit": "11f3c7435e71024aa0a2b53710a28d3289d922d1"
+          }
+        }
+      ]
+    },
+    "runDetails": {
+      "builder": {
+        "id": "https://github.com/chroma-core/chroma/.github/workflows/_build_release_pypi.yml@refs/tags/1.5.9"
+      },
+      "metadata": {
+        "invocationId": "https://github.com/chroma-core/chroma/actions/runs/25357632446/attempts/2"
+      }
+    }
+  }
+}

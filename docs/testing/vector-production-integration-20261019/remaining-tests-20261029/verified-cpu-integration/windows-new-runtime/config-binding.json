@@ -1,0 +1,17 @@
+[
+  {
+    "source": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\pyproject.toml",
+    "target": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\backend\\pyproject.toml",
+    "sha256": "dad9964abed69b6dc64394f5abaf166a8a48672397185187aee5ec76725e5bb5"
+  },
+  {
+    "source": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\uv.lock",
+    "target": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\backend\\uv.lock",
+    "sha256": "ed3d04e415f6e42480ec69d4eaab56b56f783b7b713264d71795f372d2e8e0a5"
+  },
+  {
+    "source": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\requirements.txt",
+    "target": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\backend\\requirements.txt",
+    "sha256": "d18e9ae179634c1583296089f2822d2247ce6ce2ceaaf5fbf2607b1c1e337177"
+  }
+]

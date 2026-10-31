@@ -1,0 +1,11 @@
+{
+  "filelock": "4.2.1",
+  "module": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Lib\\site-packages\\filelock\\__init__.py",
+  "backend": "WindowsFileLock",
+  "reentrant_counter": true,
+  "timeout_caught": true,
+  "cross_process_exclusion": true,
+  "cross_thread_release": true,
+  "reacquisition": true,
+  "killed_owner_recovery": true
+}

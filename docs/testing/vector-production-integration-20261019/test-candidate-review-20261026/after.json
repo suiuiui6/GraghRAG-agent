@@ -1,0 +1,22 @@
+{
+  "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\frozen_input_helpers.py": "56b704f83e25b553dddba4501b8dd9e6917bf096c02fe8902867eaa0b3ce8e2e",
+  "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\test_new_document_pilot.py": "684643f64c644a9a09e51c78e3953235df7b9e02538d47e77dfdc5749e6cd033",
+  "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\test_frozen_prompt_contract.py": "fba92ecb3f163b61084062fb4a162b8f75a3133307f0d71738245d0b41f35acf",
+  "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\candidate.diff": "f90a9dbd8d841dab52c45ec0fccd6bb5e01182494a39e3e8a82b1883c7c08790",
+  "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\report.md": "0b884a5142f6b48032d8990bee2ea34d3e8cb3e7280e6bac892d12df716188d5",
+  "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\hashes.json": "93d539ff56200705d1db8a40069f15c827b32f89c87a871f81243dd2da1343f7",
+  "D:\\graghRAG-agent\\.tmp\\backup-behaviors-20261026\\test_vector_backup_rejection_contracts.py": "9aa7e8ca22a51fe57b8e9431800f1b6afb08a05052155f386ef5142237cfe3ac",
+  "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\run_backend_20261026_r3.py": "f286022262fe29a84423ec997789827b477dca0713c74f44e8dfa476cceda88f",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\services\\vector_backup.py": "50c8b54734df2807649ca34b6c80f1d3b650dd07c84eebe0ec09b6d5c2453f37",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_publication_backup.py": "b3e112ed322d669a6950c1781315825fddc9920e3ed12d9b9142f60acf4b5ff5",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_new_document_pilot.py": "766bd89428d6f77d3ce9ce89cee87ae8aeef1e0fdbae4f8ba96bb63c3cb5d598",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\frozen_input_helpers.py": "5a086cf7cc1dab969852e14d9639c88ab9f17afc60c623389931bde856de97fd",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\research\\new_document_pilot.py": "10720e7eadd7620ddd7e15f8767ede8d76bb666b819d4f7bc9fd1b6cf2961385",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\research\\common_three_arm.py": "d5cbf52cb9dc5ff30bdd13fe7de9c050751cec6413f4e69f31f49f2abc998d9e",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\review\\simple-output-20261016\\registration-receipt.json": "1ba35da4f1722c391af573b868cc3b6a0f6cb34be7b522de71e80bb93ef48605",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\review\\simple-output-20261016\\prompts.v1.json": "2de5735d6e7e1340664826edbfae077ca1ce80ed9c02f4cb6e85ace7264f8316",
+  "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini": "4d9cc425396c80c16fe2e65efb4786e38f99b305d24f9f7a713fa8fa82922a70",
+  "D:\\graghRAG-agent\\.tmp\\simple-output-20261016\\registration.json": "32f5cb13cbe578e89df9375a80bb347fb4e69a4f3d99b095dd5afb85d916fedc",
+  "D:\\graghRAG-agent\\docs\\review\\simple-output-20261016\\prompts.v1.json": "f9360dcc29d10d627cf52b6ade48d9c1a75ec69abf9ce1d3f13491648830d8a4",
+  "D:\\graghRAG-agent\\.tmp\\public-dev-budget-20261015-r2\\snapshot.json": "f3f59076a62d11afa5acdb78335bc09a89341499d3c572107b3e1694a288446e"
+}

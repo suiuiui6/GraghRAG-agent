@@ -1,0 +1,21 @@
+[
+  {
+    "name": "wheel-download",
+    "command": [
+      "curl.exe",
+      "--fail",
+      "--location",
+      "--silent",
+      "--show-error",
+      "--connect-timeout",
+      "8",
+      "--max-time",
+      "90",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\linux-chroma-provenance-gap-20261029\\chromadb-1.5.9-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "https://files.pythonhosted.org/packages/e6/ec/0c42039e80b9acc534f67b73b7a42471948042859b3a64867b50a4a77fa3/chromadb-1.5.9-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    ],
+    "exit": 28,
+    "seconds": 90.0789999999979
+  }
+]

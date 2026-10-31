@@ -1,0 +1,62 @@
+[
+  {
+    "file": "r11-independent-review/REPORT.md",
+    "sha256": "0c4bf6c72a96d461dc6a5ae2bca06e3d03a30c77f9e9ea3f0622bbc81fa117a1",
+    "bytes": 5100
+  },
+  {
+    "file": "r11-independent-review/receipt.json",
+    "sha256": "097c44d090558aa8d63714418fb2a3193dc602254345233a33329a65f7188e22",
+    "bytes": 7850
+  },
+  {
+    "file": "r11-independent-review/hashmanifest.json",
+    "sha256": "64e7e41f5f58fc85481f9a7b9e7d8a88c8e69995016ee395a0622df65c8e269d",
+    "bytes": 7359500
+  },
+  {
+    "file": "r11-independent-review/review.py",
+    "sha256": "70c1ec10f954fe021a6a3e0c450ad9cd49c4251fd5d6cb72c94d29fc02c11a64",
+    "bytes": 6690
+  },
+  {
+    "file": "r11-independent-review/compare.py",
+    "sha256": "ac0877034008d972cce4d6bc8c567d0dda42d92e598e8b046327ba5e1891680b",
+    "bytes": 462
+  },
+  {
+    "file": "r11-independent-review/checknames.py",
+    "sha256": "4f80b2e98c6839aa09da51e7f382bdebed82e9233fa322e822861745eddce2b5",
+    "bytes": 808
+  },
+  {
+    "file": "r11-independent-review/model.py",
+    "sha256": "6a821819eec8d81c44df5656f8507861fcaef94f791e40a17c6d6dbfa6892534",
+    "bytes": 1095
+  },
+  {
+    "file": "torch-native-scope/REPORT.md",
+    "sha256": "3e6834fbb525c2c465d0b9bca8ce37ec76e095265bd8051ada6a3983b4913165",
+    "bytes": 5049
+  },
+  {
+    "file": "torch-native-scope/windows-uv-current-hash.json",
+    "sha256": "b8cebd155c3b0ef10dcac07c7d5c61d921fee05d831884a4feff177c7d84d5c0",
+    "bytes": 196
+  },
+  {
+    "file": "torch-native-scope/probe_linux.py",
+    "sha256": "a06c44a8f021fef49545ce4811e878df81f1828b662eb236474dbdbd06ea13ca",
+    "bytes": 1135
+  },
+  {
+    "file": "torch-native-scope/linux-probe-r1.json",
+    "sha256": "30432c6086dee1c5fd1434bdcbe514eb379f58d4a3a09217b4e85f15cfd7df7b",
+    "bytes": 9491
+  },
+  {
+    "file": "torch-native-scope/linux-probe-r1.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "bytes": 3
+  }
+]

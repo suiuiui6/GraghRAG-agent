@@ -1,0 +1,12 @@
+[
+  {
+    "path": "receipt.json",
+    "bytes": 1739,
+    "sha256": "88521478640415204e50fb2190585226ff16981d9433ac7ef49e2fab03964c89"
+  },
+  {
+    "path": "REPORT.md",
+    "bytes": 4430,
+    "sha256": "00f36bf367dd812f2cbb7161ca35e54b4bb78f61a113d237073c1210ee29e3ac"
+  }
+]

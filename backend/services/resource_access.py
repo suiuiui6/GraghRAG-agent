@@ -9,6 +9,21 @@ def require_principal(request: Request) -> dict:
     user = getattr(request.state, "user", None)
     if not isinstance(user, dict) or not user.get("user_id"):
         raise HTTPException(401, "需要有效认证")
+    if user.get('auth_type') in {'jwt', 'api_key'}:
+        from services.auth_service import get_auth_service
+        current = get_auth_service().get_user(user['user_id'])
+        if current is None:
+            raise HTTPException(404, "资源不存在")
+        user = {**user, 'roles': ['viewer'] if user['auth_type'] == 'api_key' else current.roles}
+        if user['auth_type'] == 'api_key':
+            from services.api_key_manager import get_api_key_manager
+            rec = get_api_key_manager().get(user['key_id'])
+            if rec is None or rec.revoked:
+                raise HTTPException(404, "资源不存在")
+            if rec.expires_at:
+                from datetime import datetime, timezone
+                if datetime.fromisoformat(rec.expires_at.replace('Z', '+00:00')) <= datetime.now(timezone.utc):
+                    raise HTTPException(404, "资源不存在")
     return user
 
 
@@ -57,8 +72,15 @@ def authorized_documents(request: Request, document_id: str | None = None, write
     if selected:
         project_membership(require_principal(request), selected)
     from routes import get_docs_snapshot
+    import sqlite3
+    from vector_errors import VectorStorageError
+    from services.document_catalog import CatalogConflict
+    try:
+        documents = get_docs_snapshot()
+    except (sqlite3.Error, VectorStorageError, CatalogConflict) as exc:
+        raise HTTPException(503, "Document directory unavailable") from exc
     results = []
-    for doc in get_docs_snapshot():
+    for doc in documents:
         if document_id is not None and doc.get("document_id") != document_id:
             continue
         try:
@@ -95,3 +117,27 @@ def create_resource_guard_middleware():
             return JSONResponse(status_code=exc.status_code, content={"detail":exc.detail})
         return await call_next(request)
     return guard
+
+
+def background_authorizer(options):
+    """Recheck live identity/key and tenant membership at publication commit."""
+    principal = dict(options['principal'])
+    selected = options.get('selected_project')
+
+    def authorize(resource):
+        user = dict(principal)
+        if user.get('auth_type') in {'jwt', 'api_key'}:
+            from services.auth_service import get_auth_service
+            current = get_auth_service().get_user(user['user_id'])
+            if current is None:
+                raise HTTPException(404, 'Resource no longer accessible')
+            user['roles'] = ['viewer'] if user['auth_type'] == 'api_key' else current.roles
+        if user.get('auth_type') == 'api_key':
+            from services.api_key_manager import get_api_key_manager
+            rec = get_api_key_manager().get(user['key_id'])
+            if rec is None or rec.revoked or 'write:ingest' not in rec.scopes:
+                raise HTTPException(404, 'Resource no longer accessible')
+        headers = [(b'x-project-id', selected.encode())] if selected else []
+        request = Request({'type': 'http', 'headers': headers, 'state': {'user': user}})
+        return authorize_resource(request, resource, write=True)
+    return authorize

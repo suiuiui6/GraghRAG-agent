@@ -1,0 +1,52 @@
+[
+  {
+    "file": "REVIEW.md",
+    "sha256": "9568821bbe46267f135e8cad0543f181550a00b4fc619daafd8acb8e87790bec",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\REVIEW.md"
+  },
+  {
+    "file": "review-manifest.json",
+    "sha256": "b3e672ea165c798f10da5664756e88d14e30db4af3a8b011e24b6a2717472f0b",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\review-manifest.json"
+  },
+  {
+    "file": "review-results.json",
+    "sha256": "17f0f292ae53ac7a7285b7c6dfbbe2d73e624393fc12e0937b0891a47efcb201",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\review-results.json"
+  },
+  {
+    "file": "chroma-Cargo.lock",
+    "sha256": "ccc181d8494e9f5bc0ce26999384983aa63e49cfbea1a89d5c954c7529313a4a",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-Cargo.lock"
+  },
+  {
+    "file": "chroma-metadata-api.rs",
+    "sha256": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-metadata-api.rs"
+  },
+  {
+    "file": "chroma-metadata-commit.rs",
+    "sha256": "32cc67b10eea1db964f1f8d1a00fd0955f05934cd51c9b54192ea4009e357f95",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-metadata-commit.rs"
+  },
+  {
+    "file": "chroma-tag.json",
+    "sha256": "612d70401daee9655c09ea55006006468d671828321b1bbf2d8e0f1bd9377c98",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\chroma-tag.json"
+  },
+  {
+    "file": "serde-derive-de.rs",
+    "sha256": "08fc2db0db3e7263ccfb8999ecc6249e5a8c3d9d3a3b85ea3b8995e865f08c83",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-derive-de.rs"
+  },
+  {
+    "file": "serde-derive-enum-untagged.rs",
+    "sha256": "b66ad3cea36ee786d50270f6648f1075c1e615b5f04173b47f034a251df5220e",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-derive-enum-untagged.rs"
+  },
+  {
+    "file": "serde-private-de.rs",
+    "sha256": "68ee17774d3bbc693d9f19803747fa2c3afdb7046482e6d94ac6cf7db5a4fe20",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\vector-bridge-review-20261020\\serde-private-de.rs"
+  }
+]

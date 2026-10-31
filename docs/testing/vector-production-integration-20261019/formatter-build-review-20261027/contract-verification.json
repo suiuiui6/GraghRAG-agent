@@ -1,0 +1,85 @@
+{
+  "utc": "2026-10-27T09:51:14.630202+00:00",
+  "exit": 0,
+  "scope": "document candidates only; line-ending normalization for diff only, hashes bind actual bytes",
+  "records": [
+    {
+      "candidate": "D:\\graghRAG-agent\\.tmp\\vector-contract-update-20261027\\ingress.md",
+      "target": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\contracts\\2026-10-14-vector-ingress-semantics.md",
+      "baseline_sha256": "e6cc809f67440b822f4299c7b8365573e8f0e2bc28c8bd6c04a9befcd5f131dd",
+      "candidate_sha256": "59aeccdecfb3d78446c8bae7af4df5e59aad437e85e7dbe9a97feae94b6bfff3",
+      "normalized_changes": [
+        {
+          "op": "insert",
+          "old_lines": [],
+          "new_lines": [
+            "",
+            "当前合同见文末“2026-10-27 当前数值桥合同”；此前r4/R4b/R5部分为保留反例及决策依据的历史阶段，不代表当前实现仍采用Python formatter或仅支持I64记录。生产总准入仍未放行。"
+          ]
+        },
+        {
+          "op": "replace",
+          "old_lines": [
+            "## R5记录入口新证据及错误契约"
+          ],
+          "new_lines": [
+            "## R5记录入口新证据及错误契约（历史阶段）"
+          ]
+        },
+        {
+          "op": "insert",
+          "old_lines": [],
+          "new_lines": [
+            "## 2026-10-27 当前数值桥合同",
+            "",
+            "本节取代上文旧候选的记录仅支持I64、Python formatter近似及原wheel parser feature缺依据的当前状态描述；其原始反例和阶段报告保留。本节不将H2整体、完整adapter或生产替换标为完成。",
+            "",
+            "记录中的内置Python int在signed I64范围内保持整数恒等；超出该范围时沿原PyO3提取次序转换为有限f64，不能按where的U64 guard提前拒绝，也不能把bool当数值处理。内置float和该宽整数转换结果以精确f64 bits传入批准的原生桥，由锁定serde_json 1.0.149与Zmij 1.0.21执行原serializer→原default parser；不再使用Python十进制formatter近似记录路径。解析拒绝沿既有输入错误边界返回，不假定parse(format(f))必等于原f。该论证不外推任意Python数值对象或全部PyO3提取行为。",
+            "",
+            "where数值沿调用方产生的Python JSON token进入同源parser一次，保留原signed I64/U64/F64分类和后续guard；不与记录入口合并。公开读回不得再次执行记录入口这一非幂等转换。SQLite兼容读回的浮点负零规范化和原payload保留规则沿用既有合同；已确认拒绝NaN/Infinity查询向量的兼容性变化不变。不缩小既有合法数据规模或有限数值支持域。",
+            "",
+            "构建依据绑定原官方Chroma 1.5.9 Windows wheel SHA256 `4fd0b560e56761b7f3cb4d5c6205fd5f20814484b4a3e4e9af9038c2b428fc6c`、tag及源码commit `11f3c7435e71024aa0a2b53710a28d3289d922d1`。官方签名由作者及独立reviewer分别实际验证；原锁、37份原始workspace Cargo manifests、51个直接serde_json消费者（30个registry精确版本/checksum、20个local、1个固定Git）及serde_json自身feature闭包的保守超集均未请求float_roundtrip/arbitrary_precision/unbounded_depth。此处采用官方签名构建按其声明source/lock/configuration正常执行的通常上游信任前提，足以满足本项目既有源码/构建依据标准；不是候选helper的feature tree替代原件，也不是随机零差分推出全域等价。",
+            "",
+            "原发布workflow缺少显式--locked，使用浮动action及自托管runner；现有attestation不记录每条rustc调用或隐藏环境。原run日志访问403/工件API零项不代表这些隐藏输入已被查明。上述事实仍是该条件性构建论证的边界，不声称可复现原wheel的全部编译过程。算法独立审、原构建调查及独立复核分别见测试证据目录中的`formatter-admission-review-20261026/`、`chroma-build-provenance-20261027/`和`formatter-build-review-20261027/`（均位于`../testing/vector-production-integration-20261019/`）。",
+            "",
+            "据此可关闭旧Python formatter近似和本节所述Windows内置数值标量parser-feature前提；完整predicate/collection/异常边界、同快照消费者和生命周期验收仍需各自证据。批准原生包身份不等于原生组件安全审计；Linux构建、运行库/模型部署身份和文件权限不由此推定通过。默认`compatibility_not_approved`继续保留，现有资料不迁移，生产总准入不因本节自动开放。",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": "D:\\graghRAG-agent\\.tmp\\vector-contract-update-20261027\\design.md",
+      "target": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\design\\2026-10-19-vector-production-integration.md",
+      "baseline_sha256": "e92677cac2761e04f2dbf2685ed6cd7a8bffd446995244c12777cc165bb20283",
+      "candidate_sha256": "76db7da62e33711fbebe88b8a17aa663454fb8b1430d833f73fda5586244bb1d",
+      "normalized_changes": [
+        {
+          "op": "replace",
+          "old_lines": [
+            "R5旧文档对formatter全域等价的准入要求与R8有限差分证据仍存在未关闭边界。集成编码可以准备，但**默认生产激活/迁移准入不得凭335组通过自行关闭该门槛**。独立审查需定位R6/R8是否已有正式替代契约；若没有，补等价实现依据或提交明确产品取舍，保留原输入及反例，不擅自限域。包audit不覆盖SQLite/CPython/OpenBLAS/CRT全部原生风险；原生SBOM和适用性审查另列，未完成不称安全清零。"
+          ],
+          "new_lines": [
+            "2026-10-27数值准入更新：[入口合同](../contracts/2026-10-14-vector-ingress-semantics.md)最新节记录同源serde_json/Zmij原生桥、精确I64恒等及独立算法论证；原官方Windows wheel签名与完整声明依赖图的保守feature超集已独立核实。在明确采用官方签名构建正常执行声明source/lock/configuration的通常信任前提下，可关闭旧Python formatter近似和内置数值标量的parser-feature依据缺口。原workflow无显式--locked、浮动action及自托管runner和未取得实际rustc调用仍须披露；不外推全部原wheel/PyO3对象语义、Linux或可复现构建。**默认生产激活/迁移准入不得凭335组或本次单项关闭自行开放**；完整adapter及最终同快照验收、运行库/原生安全/模型部署条件仍分别核验。包audit不覆盖SQLite/CPython/OpenBLAS/CRT全部原生风险；原生SBOM和适用性审查另列，未完成不称安全清零。"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": "D:\\graghRAG-agent\\.tmp\\vector-contract-update-20261027\\plan.md",
+      "target": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\docs\\plans\\2026-10-19-vector-production-integration.md",
+      "baseline_sha256": "12a626d995b68af6a6aa84cce916854357e95f9f22cafa9aceacb797447e19aa",
+      "candidate_sha256": "fd9f20f11800eca5313d0c83afc8a2864e13d5b5c7e31348767454e8f18ce6f9",
+      "normalized_changes": [
+        {
+          "op": "insert",
+          "old_lines": [],
+          "new_lines": [
+            "",
+            "2026-10-27接续：数值桥和原官方构建的条件性源码依据已独立审查，按入口合同最新节回流；不由此开放生产gate。最新完整R4为2152通过/1真实模型fresh进程超时/0skip，119全范围行93.21%及分支89.97%，未通过；补丁全锁与安装扫描已验，新增测试仍需最终同快照全量复验。以下未勾选条目保持其完整验收含义，不能以专项或有限差分代替。"
+          ]
+        }
+      ]
+    }
+  ]
+}

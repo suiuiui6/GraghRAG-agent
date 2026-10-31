@@ -1,0 +1,54 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/README.md",
+    "file": "README.md",
+    "sha256": "6F993564B6D153B2ADF82D9D434E57374766DA4BF398269F4FE358FCF9DD4115",
+    "bytes": 30323,
+    "status": "success",
+    "utc": "2026-10-29T13:37:19.2794283Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/pyproject.toml",
+    "file": "pyproject.toml",
+    "sha256": "8BA6DC482D955267F9EAD956B8B5A9F1DD6442A026D7F0B8EBF516BF989F9069",
+    "bytes": 26084,
+    "status": "success",
+    "utc": "2026-10-29T13:37:20.2275504Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/CMakeLists.txt",
+    "file": "CMakeLists.txt",
+    "sha256": "61BCD1B3B1D00A8FB32A6E7FA22B454E348D9F24B5D3AE0374A98F1E48B7D7BD",
+    "bytes": 59103,
+    "status": "success",
+    "utc": "2026-10-29T13:37:22.3267474Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/torch/csrc/distributed/c10d/CMakeLists.txt",
+    "status": "failed",
+    "error": "Response status code does not indicate success: 404 (Not Found).",
+    "utc": "2026-10-29T13:37:23.4833008Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/cmake/Dependencies.cmake",
+    "file": "cmake__Dependencies.cmake",
+    "sha256": "385ED64146DA313CCB4A9FB149B536E14186670E3260BB077F0F4834D09F18C9",
+    "bytes": 67957,
+    "status": "success",
+    "utc": "2026-10-29T13:37:24.4984460Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/build_variables.bzl",
+    "file": "build_variables.bzl",
+    "sha256": "A3C52DAD0A60E532B379813245D1CD3D7D93BBCEE47A74C5063EEEBCC524B424",
+    "bytes": 79151,
+    "status": "success",
+    "utc": "2026-10-29T13:37:25.6465883Z"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/08187d9e0fba026dc8217405802ab5381dc88d90/cmake/Modules/FindLibUV.cmake",
+    "status": "failed",
+    "error": "Response status code does not indicate success: 404 (Not Found).",
+    "utc": "2026-10-29T13:37:26.5458388Z"
+  }
+]

@@ -5,6 +5,7 @@ import sys
 import pytest
 import httpx
 from research import new_document_pilot as pilot
+from backend.tests.frozen_input_helpers import assert_current_module, frozen_p0_root, frozen_prompt_root
 
 
 @pytest.mark.parametrize('mode',['unknown','oversize','known_over_token','two_attempts'])
@@ -66,10 +67,10 @@ def test_unresolved_preserved_without_request_or_index(monkeypatch,tmp_path):
 
 
 def test_native_sdk_mock_preflight_and_registration_real_frozen_snapshot(tmp_path):
-    repo=Path(__file__).resolve().parents[2]
-    frozen=repo/'.tmp/public-dev-budget-20261015-r2'
-    prompt=repo/'.tmp/simple-output-20261016'
-    if not frozen.exists() or not prompt.exists():pytest.skip('需要已登记本地研究快照')
+    assert_current_module(pilot, 'new_document_pilot')
+    assert_current_module(pilot.common, 'common_three_arm')
+    frozen=frozen_p0_root()
+    prompt=frozen_prompt_root()
     data=tmp_path/'data';data.mkdir()
     # Synthetic parser fixture: PDF bytes are an identity placeholder only;
     # the actual native bridge consumes canonical page map and Poppler XML.

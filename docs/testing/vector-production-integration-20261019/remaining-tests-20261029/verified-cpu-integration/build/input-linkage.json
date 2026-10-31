@@ -1,0 +1,8 @@
+{
+ "accepted_lock":{"path":"../linux-cpu-direct-url-20261028/candidate/backend/uv.lock","sha256":"d1434b9b8b46f3d9c061098e15ddaada44e8d0a2d3dfb55d4db4c425a8f60b36"},
+ "sources":[{"name":"oss2","version":"2.19.1","file":"../linux-cpu-sdist-source-review-20261029/oss2-2.19.1-retry1.tar.gz","sha256":"a8ab9ee7eb99e88a7e1382edc6ea641d219d585a7e074e3776e9dec9473e59c1","bytes":298845},{"name":"crcmod","version":"1.7","file":"../linux-cpu-sdist-source-review-20261029/crcmod-1.7.tar.gz","sha256":"dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e","bytes":89670}],
+ "build_tool":{"name":"setuptools","version":"84.1.0","file":"setuptools-84.1.0-py3-none-any.whl","sha256":"5231689c6ac8156cd155cfb98c3fd6fb252c3e7e9bd3d78b64d3c55f132624c9"},
+ "builder":"sha256:cd48c100f4e8c0297c2e1a558b7a93d95e41f79ba4f58d5f7d938a71192dff23",
+ "actual_argv_and_exit":"build-receipt.json",
+ "static_source_review":"../linux-cpu-build-source-independent-review-20261029/receipt.json"
+}

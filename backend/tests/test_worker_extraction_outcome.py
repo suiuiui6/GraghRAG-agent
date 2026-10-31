@@ -11,6 +11,11 @@ from errors import ErrorCode, StageExtractionError
 import worker
 
 
+@pytest.fixture(autouse=True)
+def isolated_worker_outputs(monkeypatch, tmp_path):
+    monkeypatch.setattr(worker, '__file__', str(tmp_path / 'worker.py'))
+
+
 class _Chunk:
     def __init__(self, text):
         self.text = text
@@ -46,7 +51,6 @@ def _stub_ollama(monkeypatch, *, fail_first_n: int, entities: bool = True):
         return r
 
     monkeypatch.setattr(requests, "post", _post)
-    monkeypatch.setattr(worker.os.path, "exists", lambda p: True)
     return state
 
 

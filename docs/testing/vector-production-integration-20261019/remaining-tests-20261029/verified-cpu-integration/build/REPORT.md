@@ -1,0 +1,19 @@
+# Locked Linux build evidence — 2026-10-29
+
+Owned directory only; no C checkout, source archives, accepted lock, existing image, production defaults or gates changed. No commit/push. Scope is two locked sdists and build-tool capability, not the complete CPU runtime installation.
+
+Verified setuptools84.1.0 universal wheel from the unique accepted-lock official URL:819380 bytes, SHA2565231689c6ac8156cd155cfb98c3fd6fb252c3e7e9bd3d78b64d3c55f132624c9. Safe ZIP names/types and all342 top-level RECORD hashes pass. See acquire-receipt.json and transport-notes.json; two sandbox DNS failures transferred no bytes, escalated download completed normally with TLS verification, max60s, no network retry. The first verifier selected a nested vendored RECORD and failed; corrected verification reused the unchanged hash-valid wheel and passed.
+
+Actual fixed builder sha256:cd48c100f4e8c0297c2e1a558b7a93d95e41f79ba4f58d5f7d938a71192dff23 runs user1000, network none, read-only root, all caps dropped, no-new-privileges, private work and bounded noexec/nosuid tmp. Actual HostConfig/User saved. Container argv in container-command.txt. Python3.12.16 creates an independent venv with bundled pip25.0.1. Only the verified setuptools wheel is installed offline with require-hashes/no-deps/no-index.
+
+Controlled fixture capability PASS: actual setuptools.build_meta generated controlled_build_probe-0.0.1-py3-none-any.whl, exit0. Imported setuptools84.1.0 from isolated build venv; wheel0.46.3 and packaging26.0 from setuptools/_vendor, distutils from setuptools/_distutils. This proves no separate wheel distribution is needed for these two builds. LangExtract explicitly declares a wheel build distribution and remains a separate boundary; no claim that its declared requirements or complete environment are satisfied.
+
+Both locked source builds PASS, each command exit0: oss2-2.19.1-py3-none-any.whl124035bytes SHA256bc3639baa781bf8efe1e720dac52a00fa44d14bce1de4f605e4798b09d29a482; crcmod-1.7-cp312-cp312-linux_x86_64.whl31274bytes SHA256e532d2b05f1ac0afec916d02c6c69aff64b6c61d49d86bf12b32e35047a25781. Source/tool links in input-linkage.json, actual argv/exit in build-receipt.json, complete individual build logs preserved. Every source archive was rehashed immediately before safe data-filter extraction.
+
+Native CRC PASS in separately created private native-venv. Actual crcmod._crcfunext import; crcmod.crcmod._usingExtension True; CRC32(b'123456789')0xCBF43926. Actual extension SHA256ca367176ffb138dcac27abbdfdd6dfc6067d94b25ac0c9f0b559755642fe8425; ldd exit0 reports statically linked (no dynamic library dependencies reported). See native-final-receipt.json/native-ldd.log. No fallback-native ambiguity remains for this wheel.
+
+Original full runner container exit1 is retained: after both successful builds and native-venv/install exit0, its checker used Python import alias syntax that resolved to the top-level crcmod package, causing AttributeError for _usingExtension. Corrected checker uses importlib.import_module('crcmod.crcmod'). A second identically restricted offline container reused the unchanged private native venv and ran check_native.py, exit0. No original failed receipt/log was overwritten, source/build/wheel unchanged. Independent reviewer should use native-final-receipt.json for the corrected module assertion, not claim original whole runner exit0.
+
+Builds and native proof do not establish oss2's full installed consumer chain; its dependency closure is outside this bounded build task and remains for the parent runtime acceptance. No full CPU installation, model encode, project integration, or security admission is claimed.
+
+Validation skill: verification-before-completion was read and applied. Parent owns project memory and authoritative documentation integration. Full CPU dependency/security/model/backend acceptance remains separate.

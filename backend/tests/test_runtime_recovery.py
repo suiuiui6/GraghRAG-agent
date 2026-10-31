@@ -258,6 +258,8 @@ def test_metrics_export_runtime_observability_metrics():
 
 def test_health_reports_runtime_recovery_components(monkeypatch):
     import routes.health as health
+    from services import document_runtime
+    monkeypatch.setattr(document_runtime, '_publication', None)
 
     async def fake_status():
         return await health.health_check()
@@ -277,7 +279,9 @@ def test_health_reports_runtime_recovery_components(monkeypatch):
     assert "runtime_recovery" in response.components
     assert "index_artifacts" in response.dependencies
     assert response.components["runtime_recovery"] == "degraded"
-    assert response.status == "degraded"
+    assert response.status == "unhealthy"
+    assert response.components['vector_store'] == 'down'
+    assert response.dependencies['vector_store']['code'] == 'compatibility_not_approved'
 
 
 def test_startup_restores_runtime_indexes(monkeypatch):
@@ -484,6 +488,8 @@ def test_lifespan_shuts_down_scheduler_on_exit(monkeypatch):
 
 def test_init_rag_pipeline_builds_bm25_from_vector_store_when_runtime_cache_is_missing(monkeypatch):
     import routes.rag_query as rag_query
+    import index_registry
+    real_builder = index_registry.build_bm25_from_chunks
 
     rag_query._rag_pipeline = None
     rag_query._embedding_client = None
@@ -511,6 +517,12 @@ def test_init_rag_pipeline_builds_bm25_from_vector_store_when_runtime_cache_is_m
 
     built = {}
 
+    def build(chunks):
+        result = real_builder(chunks)
+        assert result is not None
+        built['chunk_count'] = len(result[1])
+        return result
+
     monkeypatch.setattr("embedding.EmbeddingClient", DummyEmbeddingClient)
     monkeypatch.setattr("vector_store.VectorStore", DummyVectorStore)
     monkeypatch.setattr("routes.query._build_kg", lambda: nx.Graph())
@@ -520,10 +532,11 @@ def test_init_rag_pipeline_builds_bm25_from_vector_store_when_runtime_cache_is_m
     monkeypatch.setattr("retrieval.RetrievalPipeline", lambda **kwargs: DummyPipeline(**kwargs))
     monkeypatch.setattr(
         "index_registry.build_bm25_from_chunks",
-        lambda chunks: (built.setdefault("chunk_count", len(chunks)), "bm25")[1],
+        build,
     )
     monkeypatch.setattr("index_registry.set_bm25_index", lambda index: built.setdefault("index", index))
 
     assert rag_query._init_rag_pipeline() is True
     assert built["chunk_count"] == 1
-    assert built["index"] == "bm25"
+    assert built['index'][1][0].chunk_id == 'c00001'
+    assert rag_query._rag_pipeline.kwargs['bm25_index'] is built['index']

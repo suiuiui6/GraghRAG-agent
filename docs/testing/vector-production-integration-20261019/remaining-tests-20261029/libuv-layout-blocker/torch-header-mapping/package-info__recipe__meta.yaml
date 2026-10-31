@@ -1,0 +1,58 @@
+# This file created by conda-build 3.20.5
+# meta.yaml template originally from:
+# D:\a\1\s\recipe, last modified Fri Dec 18 14:43:38 2020
+# ------------------------------------------------
+
+package:
+    name: libuv
+    version: 1.40.0
+source:
+    patches:
+        - 0001-Use-Unix-install-logic-for-MSVC.patch
+    sha256: 70fe1c9ba4f2c509e8166c0ca2351000237da573bb6c82092339207a9715ba6b
+    url: https://github.com/libuv/libuv/archive/v1.40.0.tar.gz
+build:
+    number: '0'
+    string: h8ffe710_0
+requirements:
+    build:
+        - cmake 3.19.1 h39d44d4_0
+        - vs2015_runtime 14.16.27012 h30e32a0_2
+        - vs2017_win-64 19.16.27038 h2e3bad8_2
+        - vswhere 2.7.1 h21ff451_0
+    host:
+        - vc 14.1 h869be7e_1
+        - vs2015_runtime 14.16.27012 h30e32a0_2
+    run:
+        - vc >=14.1,<15.0a0
+        - vs2015_runtime >=14.16.27012
+test:
+    commands:
+        - if not exist %LIBRARY_INC%\uv.h (exit 1)
+        - if not exist %LIBRARY_LIB%\uv.lib (exit 1)
+        - if not exist %LIBRARY_BIN%\uv.dll (exit 1)
+        - if not exist %LIBRARY_LIB%\uv_a.lib (exit 1)
+        - if not exist %LIBRARY_LIB%\pkgconfig/libuv-static.pc (exit 1)
+        - if not exist %LIBRARY_LIB%\pkgconfig/libuv.pc (exit 1)
+about:
+    description: 'libuv is a multi-platform support library with a focus on asynchronous
+        I/O.
+
+        It was primarily developed for use by Node.js, but it''s also used by Luvit,
+
+        Julia, pyuv, and others.
+
+        '
+    dev_url: https://github.com/libuv/libuv
+    doc_url: http://docs.libuv.org/
+    home: http://libuv.org/
+    license: MIT
+    license_family: MIT
+    license_file: LICENSE
+    summary: Cross-platform asynchronous I/O
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - frol
+        - mariusvniekerk

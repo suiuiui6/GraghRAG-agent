@@ -1,0 +1,197 @@
+[
+  {
+    "file": "design/candidate.md",
+    "bytes": 11426,
+    "sha256": "298e652fbc95b87860a2120f6e54c04fb116ef0c5f568a4ffaf60fe7348096ea"
+  },
+  {
+    "file": "design/review-resolution.md",
+    "bytes": 2333,
+    "sha256": "494cf1602e56228f0f331e08048cf2a1c5c9bf7ab4212950e8aa089615d571ca"
+  },
+  {
+    "file": "design-review/REPORT.md",
+    "bytes": 6525,
+    "sha256": "6e45ec6ce1955aaaa11709a4bf7abe1fc21dc642e9d91a727f8cebdc5648d635"
+  },
+  {
+    "file": "design-review/receipt.json",
+    "bytes": 545,
+    "sha256": "83004431d899d13db499f078720a172517e3b4e8eb5c9385bc169b1353eaa5a9"
+  },
+  {
+    "file": "build-candidate/REPORT.md",
+    "bytes": 4381,
+    "sha256": "b03840c471fddaa747d36d93965cab494100131e271188649438a552ae442e74"
+  },
+  {
+    "file": "build-candidate/binding-receipt.json",
+    "bytes": 2799,
+    "sha256": "e7ba054f04272338f91ac522f001c50c9a9acdc2f1bbf1dfab79b58483fbc350"
+  },
+  {
+    "file": "build-candidate/build.py.diff",
+    "bytes": 9391,
+    "sha256": "5383193c382205524bfebdab14e992557235cd0decc3c5d34d1a54762fd036e6"
+  },
+  {
+    "file": "build-candidate/Dockerfile.builder",
+    "bytes": 291,
+    "sha256": "7fcbb93a472c9ae967298192b25751aaa0157ca6b6f180bc2009111c3eed1aa0"
+  },
+  {
+    "file": "build-candidate/real-build-r1/build-receipt.json",
+    "bytes": 855,
+    "sha256": "fe39164271cf024db7f2f9baeb36bd1cbd73cfca1e5835db924f439659ac7523"
+  },
+  {
+    "file": "build-candidate/real-build-r1/build-evidence.json",
+    "bytes": 37507,
+    "sha256": "6fe2698a908820729258f38237093aff87a0c2ed9ef06b999fd4f0a475ddc374"
+  },
+  {
+    "file": "build-candidate/real-build-r1/source-stability.json",
+    "bytes": 1148,
+    "sha256": "9d42ff1362cda903675678d3df538a838d76b4f09929b6e2bcd4ec53a6ed0bb4"
+  },
+  {
+    "file": "build-candidate/real-build-r1/commands.json",
+    "bytes": 1028,
+    "sha256": "571fe5400b4978a7df7a81a232fac7959a5e163a65d9d50147d866c92b821027"
+  },
+  {
+    "file": "build-candidate/green-final.log",
+    "bytes": 101,
+    "sha256": "612adffb744c12372cb443db995fceaa5189e446574f0ed5f2ef5c778eeafca0"
+  },
+  {
+    "file": "linux-original/REPORT.md",
+    "bytes": 7112,
+    "sha256": "efcd80a251b69feb291ea1fa6a882cdb5c1a4c0e07faf38d10e9a24cebbc5ceb"
+  },
+  {
+    "file": "linux-original/selection.json",
+    "bytes": 1013,
+    "sha256": "7db325216d72a8171647203bbfa84aa88771ce8aab924f4ccddf097517e13445"
+  },
+  {
+    "file": "linux-original/source-verification.json",
+    "bytes": 25012,
+    "sha256": "6f9b8cb0dd12e0c570802d5e6a6e5f7881d23be7ac0758e6a5d6f9e5c3ee906e"
+  },
+  {
+    "file": "linux-original/linux-bundle.json",
+    "bytes": 10454,
+    "sha256": "1d2d057e612b85d3fb79cc3347ab14677529fd95d7b4b83e0d1f45289f964dc6"
+  },
+  {
+    "file": "linux-original/gh-command.json",
+    "bytes": 654,
+    "sha256": "3c31657021482611258883437c82944059d92ce067397fa483d21c76f5d90c4d"
+  },
+  {
+    "file": "linux-original/gh-verification.json",
+    "bytes": 13351,
+    "sha256": "fd0a4926bad0df0dc3c4644dab515ff8ed7f9b4d5c789fcdc17088502162553f"
+  },
+  {
+    "file": "linux-original/final-verification.json",
+    "bytes": 2217,
+    "sha256": "1ab49beaf6f6c0b388bac472bd8116cd792e5402814f4c1c5ced35876a4b6ba8"
+  },
+  {
+    "file": "linux-original/resume-receipt.json",
+    "bytes": 1956,
+    "sha256": "3ea6aa6515dee75f2886aa58259a3276a41188ade19b98d593907fc4a22dcbe0"
+  },
+  {
+    "file": "linux-original/commands.json",
+    "bytes": 647,
+    "sha256": "245b6521f4aa9ad74d97c80a4efd374f4724845f02ce79135202248aada41465"
+  },
+  {
+    "file": "linux-original/commands-sandbox.json",
+    "bytes": 648,
+    "sha256": "3ba4b3f5bf24ae77500ae1fc48d9e16c5947e313956ea6cd89ddc9d903a405b2"
+  },
+  {
+    "file": "linux-original/verify_source.py",
+    "bytes": 4107,
+    "sha256": "c02c270b14b6eed940c5474fb24ee112adf2c6fb1302178097f1ce05459c581e"
+  },
+  {
+    "file": "linux-original/verify_signature_result.py",
+    "bytes": 1813,
+    "sha256": "dc0a9f845e72dd620c4c9f0c3e4acca58d34c195fb334ff7e8f3cf85b08e1339"
+  },
+  {
+    "file": "linux-original/archive-sha256.json",
+    "bytes": 2142,
+    "sha256": "cc4ce2eb8565b8f30e3e4dc5a3312b7cd6e82101a6917cf0c42f4ba0deb73de6"
+  },
+  {
+    "file": "independent/REPORT.md",
+    "bytes": 6271,
+    "sha256": "50a435e9e5f291d627002cb680db920fce27628734438e78dc11160c18828ef1"
+  },
+  {
+    "file": "independent/result.json",
+    "bytes": 250,
+    "sha256": "f1afea6e22f4e858d00ad44aa0be3b690d04bb899ae2d5d1985bb1d526c9caf0"
+  },
+  {
+    "file": "independent/review-manifest.json",
+    "bytes": 751,
+    "sha256": "a4e287d6b491ec486bc00d6ba3a383aefa6ffeb3921b97cce6e648c803dc5421"
+  },
+  {
+    "file": "independent/source-verification.json",
+    "bytes": 25012,
+    "sha256": "6f9b8cb0dd12e0c570802d5e6a6e5f7881d23be7ac0758e6a5d6f9e5c3ee906e"
+  },
+  {
+    "file": "independent/gh-verification.json",
+    "bytes": 13352,
+    "sha256": "61a8a30308cd614ea26e65df3d9bad91344d463cc772ddeafc920e23d45f5db2"
+  },
+  {
+    "file": "independent/test_additional.py",
+    "bytes": 1077,
+    "sha256": "7c84cceabfe0ed7ca0b1514ed0affa8de248e6d8526a451a9de46ad3633b532d"
+  },
+  {
+    "file": "independent/verify.py",
+    "bytes": 3622,
+    "sha256": "92db84d1e1c4d06d1e98c10a7affb6ebff5a91efd81a7043d41de5b1e192f40e"
+  },
+  {
+    "file": "windows-patch-preflight/REPORT.md",
+    "bytes": 8096,
+    "sha256": "7954373c8df9b685c36f05c57aa0fd0ba8a66c59f15a70906933e9074bac2994"
+  },
+  {
+    "file": "windows-patch-preflight/tools.json",
+    "bytes": 624,
+    "sha256": "12294f5a93da8ed5d7a08e5bec1da5fc1e35460dfc2363c698711815cef56b86"
+  },
+  {
+    "file": "windows-patch-preflight/pe-summary.json",
+    "bytes": 10964,
+    "sha256": "da5bd3a5e241b3288cf78d3a9f6013319c544a89d616d03eeecaf8802c812c45"
+  },
+  {
+    "file": "windows-patch-preflight/pe-import-export.json",
+    "bytes": 15207,
+    "sha256": "fb67bfcafec0125b3390ef965cac873c545cf9cbfb157a0a4a13de1e4cfdfd9f"
+  },
+  {
+    "file": "windows-patch-design-review/REPORT.md",
+    "bytes": 7765,
+    "sha256": "32f46a474461ba8fd43d57ebc0b2b6bd8f2bfeb17894895dcfe5331f404d8749"
+  },
+  {
+    "file": "windows-patch-design-review/receipt.json",
+    "bytes": 1271,
+    "sha256": "6bb546a7b22661bf1b8d770b64dde2fe6c710338d87337fbd5e891c94eb043c7"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "url": "https://api.github.com/repos/chroma-core/chroma/git/blobs/e7e464baf9d6caefcb0ecd7d6f6918442a564087",
+  "command": [
+    "curl.exe",
+    "--silent",
+    "--show-error",
+    "--location",
+    "--connect-timeout",
+    "8",
+    "--max-time",
+    "25",
+    "--output",
+    ".tmp\\chroma-build-provenance-20261027\\rust-action.api.json",
+    "--write-out",
+    "http=%{http_code} bytes=%{size_download}",
+    "https://api.github.com/repos/chroma-core/chroma/git/blobs/e7e464baf9d6caefcb0ecd7d6f6918442a564087"
+  ],
+  "exit": 0,
+  "stdout": "http=200 bytes=2034",
+  "stderr": "",
+  "time_utc": "2026-10-27T09:29:54.023738+00:00",
+  "sha256": "c0d17cff18f5f02097d51a6a43cef7312832ebe42de81ab6120420015754aded"
+}

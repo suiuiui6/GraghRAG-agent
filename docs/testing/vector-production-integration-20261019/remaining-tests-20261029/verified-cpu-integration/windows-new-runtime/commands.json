@@ -1,0 +1,69 @@
+[
+  {
+    "name": "create-venv",
+    "command": [
+      "uv",
+      "venv",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\python.exe",
+      "--no-project",
+      "--offline"
+    ],
+    "exit": 0,
+    "seconds": 0.5566959381103516
+  },
+  {
+    "name": "install-wheels",
+    "command": [
+      "uv",
+      "pip",
+      "install",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+      "--offline",
+      "--no-index",
+      "--no-deps",
+      "--require-hashes",
+      "-r",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\verified-wheels.txt"
+    ],
+    "exit": 0,
+    "seconds": 1.635178565979004
+  },
+  {
+    "name": "pip-check",
+    "command": [
+      "uv",
+      "pip",
+      "check",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+      "--offline"
+    ],
+    "exit": 0,
+    "seconds": 0.18935513496398926
+  },
+  {
+    "name": "normal-io",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+      "-B",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\normal_io.py"
+    ],
+    "exit": 0,
+    "seconds": 0.8165197372436523,
+    "pythonpath": "C:/Users/14156/.codex/worktrees/safe-checkpoint-20261014/graghRAG-agent/backend"
+  },
+  {
+    "name": "actual-imports",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+      "-B",
+      "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\probe.py"
+    ],
+    "exit": 0,
+    "seconds": 9.943957567214966,
+    "pythonpath": null
+  }
+]

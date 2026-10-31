@@ -1,0 +1,32 @@
+[
+  {
+    "file": "all-lock.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\security-audit-20261027\\all-lock.exit"
+  },
+  {
+    "file": "all-lock.json",
+    "sha256": "272bef31f9d238bf5d30319937d5a6856f1373fcf257d776989bd69d3abe1cce",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\security-audit-20261027\\all-lock.json"
+  },
+  {
+    "file": "all-lock.log",
+    "sha256": "e82148c0c30269ca5a2c35420ece6af011a4faf5a375325d750e243ffdb10625",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\security-audit-20261027\\all-lock.log"
+  },
+  {
+    "file": "installed.exit",
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\security-audit-20261027\\installed.exit"
+  },
+  {
+    "file": "installed.json",
+    "sha256": "b8255615d895a678b4b538edfe9c02c24c651f623b1c73a550c31e5e43f87cc5",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\security-audit-20261027\\installed.json"
+  },
+  {
+    "file": "installed.log",
+    "sha256": "4e4757ff226a44b5c448b1c4624619419c22d5272463dc19510b4754871a72f9",
+    "private_source": "D:\\graghRAG-agent\\.tmp\\security-audit-20261027\\installed.log"
+  }
+]

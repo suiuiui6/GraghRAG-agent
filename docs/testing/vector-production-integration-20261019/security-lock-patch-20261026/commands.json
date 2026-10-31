@@ -1,0 +1,162 @@
+[
+  {
+    "name": "lock-check",
+    "command": [
+      "uv",
+      "lock",
+      "--check",
+      "--project",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\backend"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 0.0992286205291748
+  },
+  {
+    "name": "venv",
+    "command": [
+      "uv",
+      "venv",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\vector-runtime-20261020\\derived\\python\\python.exe"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 0.06617116928100586
+  },
+  {
+    "name": "export",
+    "command": [
+      "uv",
+      "export",
+      "--project",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\backend",
+      "--frozen",
+      "--all-groups",
+      "--no-emit-project",
+      "--no-emit-package",
+      "langextract",
+      "--format",
+      "requirements-txt",
+      "--output-file",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\windows-requirements.txt"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 0.07683682441711426
+  },
+  {
+    "name": "install",
+    "command": [
+      "uv",
+      "pip",
+      "install",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Scripts\\python.exe",
+      "--require-hashes",
+      "-r",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\windows-requirements.txt"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 1,
+    "elapsed": 141.20902061462402
+  },
+  {
+    "name": "install-local",
+    "command": [
+      "uv",
+      "pip",
+      "install",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Scripts\\python.exe",
+      "--no-deps",
+      "-e",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\langextract"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 9.401167154312134
+  },
+  {
+    "name": "pip-check",
+    "command": [
+      "uv",
+      "pip",
+      "check",
+      "--python",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Scripts\\python.exe"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 0.1423490047454834
+  },
+  {
+    "name": "pip-audit-all-lock",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip_audit",
+      "-r",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\all-lock-requirements.txt",
+      "--disable-pip",
+      "--no-deps",
+      "--format",
+      "json",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-audit-all-lock.json",
+      "--cache-dir",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\audit-cache",
+      "--progress-spinner",
+      "off"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 60.75652289390564
+  },
+  {
+    "name": "pip-audit-installed",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pip_audit",
+      "--format",
+      "json",
+      "--output",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\pip-audit-installed.json",
+      "--cache-dir",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\audit-cache-installed",
+      "--progress-spinner",
+      "off"
+    ],
+    "cwd": "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026",
+    "exit": 0,
+    "elapsed": 50.5876579284668
+  },
+  {
+    "name": "filelock-real-regression",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-m",
+      "pytest",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_ingest_recovery.py",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_publication_backup.py",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_document_publication.py",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\test_vector_startup_recovery.py",
+      "-q",
+      "-ra",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\test-temp",
+      "--junitxml",
+      "D:\\graghRAG-agent\\.tmp\\security-lock-patch-20261026\\junit.xml"
+    ],
+    "cwd": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend",
+    "exit": 0,
+    "elapsed": 47.70697736740112
+  }
+]

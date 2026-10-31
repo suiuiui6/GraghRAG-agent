@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/pytorch/tensorpipe/tree/2b4cd91092d335a697416b2a3cb398283246849d/third_party",
+  "status": 200,
+  "matches": [
+    "/path\\u003e\\u003c/svg\\u003e\\u003c/a\\u003e\\u003c/div\\u003e\\n\\u003cul dir=\\\"auto\\\"\\u003e\\n\\u003cli\\u003e\\u003cstrong\\u003elibuv\\u003c/strong\\u003e is a multi-platform support library with a focus on asynchronous I/O.\\u003c/li\\u003e\\n\\u003c/ul\\u003e\\n\\u003cdiv class=\\\"markdown-heading\\\" dir=\\\"auto\\\"\\u003e\\u",
+    "<div class=\"overflow-hidden\"><div class=\"react-directory-filename-cell\"><div class=\"react-directory-truncate\"><a title=\"libuv\" aria-label=\"libuv, (Submodule)\" class=\"Link--primary\" href=\"/libuv/libuv/tree/5152db2cbfeb5582e9c27c5ea1dba2cd9e10759b\" data-discover=\"true\"><span style=\"color:var(--fgColor-acce",
+    "<li><strong>libuv</strong> is a multi-platform support library with a focus on asynchronous I/O.</li>",
+    "Url\":\"/google/libnop/tree/910b55815be16109f04f4180e9adee14fb4ce281\",\"submoduleDisplayName\":\"libnop @ 910b558\"},{\"name\":\"libuv\",\"path\":\"third_party/libuv\",\"contentType\":\"submodule\",\"submoduleUrl\":\"/libuv/libuv/tree/5152db2cbfeb5582e9c27c5ea1dba2cd9e10759b\",\"submoduleDisplayName\":\"libuv @ 5152db2\"},{\"name\"",
+    "nt, var(--color-accent-fg))\">libuv @ 5152db2</span></a></div></div></div></div></td><td class=\"react-directory-row-commit-cell\"><div class=\"Skeleton Skeleton--text\">\u00a0</div></td><td><div class=\"react-directory-commi",
+    "nt, var(--color-accent-fg))\">libuv @ 5152db2</span></a></div></div></div></div></td><td class=\"react-directory-row-name-cell-large-screen\" colSpan=\"1\"><div class=\"react-directory-filename-column\"><svg data-componen"
+  ]
+}

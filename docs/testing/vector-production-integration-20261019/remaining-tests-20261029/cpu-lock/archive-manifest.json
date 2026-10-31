@@ -1,0 +1,47 @@
+[
+  {
+    "file": "candidate/backend/pyproject.toml",
+    "bytes": 9998,
+    "sha256": "b48e98fe1109681a70f86f98732d0cf55bcc560d1ca1dfee23da2ed4e1a810fe"
+  },
+  {
+    "file": "candidate/backend/uv.lock",
+    "bytes": 175277,
+    "sha256": "d1434b9b8b46f3d9c061098e15ddaada44e8d0a2d3dfb55d4db4c425a8f60b36"
+  },
+  {
+    "file": "actual-graph-diff.json",
+    "bytes": 495677,
+    "sha256": "1427955187e33e1bc3b0780e86bdeed7f760db04d526559b786f465f14f51401"
+  },
+  {
+    "file": "raw-url-network-authorized.result.json",
+    "bytes": 159,
+    "sha256": "91e738da0581e137d1bfe8b71de0a6765d084b97da4535345b8ddbd7b29c89ef"
+  },
+  {
+    "file": "lock-check-offline.result.json",
+    "bytes": 161,
+    "sha256": "f3643355bf74165c73a247f26360c177a4d2d9986caad6d5a366860909ffc8cb"
+  },
+  {
+    "file": "root-lock-check-online-20261029.command.json",
+    "bytes": 9268,
+    "sha256": "030eb53c2bf0ac73cd53111f45e62f704a458818d211a7e74686fb5cfd9b9f96"
+  },
+  {
+    "file": "root-lock-check-online-20261029.result.json",
+    "bytes": 252,
+    "sha256": "2a60ecf7301386cffe7d6cfc0d43363ca8a164f2da4fbb8f69c796a29ccfa4c0"
+  },
+  {
+    "file": "root-lock-check-online-20261029.stderr",
+    "bytes": 135,
+    "sha256": "71ff3a792155c5082abb47dc7be80333a11c607ce0367b4db525967a071e8dc2"
+  },
+  {
+    "file": "root_check_online_20261029.py",
+    "bytes": 2053,
+    "sha256": "06507b68ca3ecadadffa588e2518a29795a19f07582859b8536a000b41f0544b"
+  }
+]

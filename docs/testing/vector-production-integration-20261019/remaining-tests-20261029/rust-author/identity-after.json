@@ -1,0 +1,104 @@
+{
+  "metadata_resolved_features": {
+    "itoa@1.0.11": [],
+    "memchr@2.7.4": [
+      "alloc",
+      "std"
+    ],
+    "serde_core@1.0.228": [
+      "result",
+      "std"
+    ],
+    "serde_json@1.0.149": [
+      "std"
+    ],
+    "vector-numeric-bridge@0.1.0": [],
+    "zmij@1.0.21": []
+  },
+  "metadata_matches_release": true,
+  "tools": [
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\rust-coverage-capability-20261028\\llvm-component\\llvm-tools-1.94.0-x86_64-unknown-linux-gnu\\llvm-tools-preview\\lib\\rustlib\\x86_64-unknown-linux-gnu\\bin\\llvm-profdata",
+      "sha256": "b7adef7cb04378425962ecdfb10b0cea02bb7cf44e1b05d5be01f64b2d221744",
+      "bytes": 667184
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\rust-coverage-capability-20261028\\llvm-component\\llvm-tools-1.94.0-x86_64-unknown-linux-gnu\\llvm-tools-preview\\lib\\rustlib\\x86_64-unknown-linux-gnu\\lib\\libLLVM.so.21.1-rust-1.94.0-stable",
+      "sha256": "bfa77bb35e70585603f775f9cd3868194f691e86986f3c13b1ef5ba08373014b",
+      "bytes": 186846192
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\rust-coverage-capability-20261028\\llvm-component\\llvm-tools-1.94.0-x86_64-unknown-linux-gnu\\llvm-tools-preview\\lib\\rustlib\\x86_64-unknown-linux-gnu\\lib\\libLLVM-21-rust-1.94.0-stable.so",
+      "sha256": "b4a799ff85bed1e7bf7801564389bd340306039eeda72b93622f904bc9a80e6e",
+      "bytes": 42
+    },
+    {
+      "path": "D:\\graghRAG-agent\\.tmp\\rust-coverage-capability-20261028\\llvm-component\\llvm-tools-1.94.0-x86_64-unknown-linux-gnu\\llvm-tools-preview\\lib\\rustlib\\x86_64-unknown-linux-gnu\\bin\\llvm-cov",
+      "sha256": "48a327856ee93a645e7efe2ace064a9412d0f42875d9d1b5f124d1939a9e48cb",
+      "bytes": 638376
+    }
+  ],
+  "source_after": {
+    "Cargo.toml": "02105d1df940431d92ff91bb536eb65aee8e2ba3a7fc19f21e9e0ee624842c2c",
+    "Cargo.lock": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+    "rust-toolchain.toml": "4cb550734bd94d0591c8a84b561c654dd58ddc3b0d67464c2ddeb2962a4cd826",
+    "src/main.rs": "eee79631cc3e7ee8acd2d48485be9a811374d7d04426a49f1368e7b260f65dfe"
+  },
+  "vendor_after": {
+    "itoa": {
+      "version": "1.0.11",
+      "package_sha256": "49f1f14873335454500d59611f1cf4a4b0f786f9ac11f4312a78e4cf2566695b",
+      "verified_files": 12
+    },
+    "memchr": {
+      "version": "2.7.4",
+      "package_sha256": "78ca9ab1a0babb1e7d5695e3530886289c18cf2f87ec19a575a0abdce112e3a3",
+      "verified_files": 55
+    },
+    "proc-macro2": {
+      "version": "1.0.86",
+      "package_sha256": "5e719e8df665df0d1c8fbfd238015744736151d4445ec0836b8e628aae103b77",
+      "verified_files": 26
+    },
+    "quote": {
+      "version": "1.0.36",
+      "package_sha256": "0fa76aaf39101c457836aec0ce2316dbdc3ab723cdda1c6bd4e6ad4208acaca7",
+      "verified_files": 32
+    },
+    "serde": {
+      "version": "1.0.228",
+      "package_sha256": "9a8e94ea7f378bd32cbbd37198a4a91436180c5bb472411e48b5ec2e2124ae9e",
+      "verified_files": 33
+    },
+    "serde_core": {
+      "version": "1.0.228",
+      "package_sha256": "41d385c7d4ca58e59fc732af25c3983b67ac852c1a25000afe1175de458b67ad",
+      "verified_files": 27
+    },
+    "serde_derive": {
+      "version": "1.0.228",
+      "package_sha256": "d540f220d3187173da220f885ab66608367b6574e925011a9353e4badda91d79",
+      "verified_files": 36
+    },
+    "serde_json": {
+      "version": "1.0.149",
+      "package_sha256": "83fc039473c5595ace860d8c4fafa220ff474b3fc6bfdb4293327f1a37e94d86",
+      "verified_files": 87
+    },
+    "syn": {
+      "version": "2.0.82",
+      "package_sha256": "83540f837a8afc019423a8edb95b52a8effe46957ee402287f4292fae35be021",
+      "verified_files": 100
+    },
+    "unicode-ident": {
+      "version": "1.0.12",
+      "package_sha256": "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b",
+      "verified_files": 22
+    },
+    "zmij": {
+      "version": "1.0.21",
+      "package_sha256": "b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa",
+      "verified_files": 17
+    }
+  }
+}

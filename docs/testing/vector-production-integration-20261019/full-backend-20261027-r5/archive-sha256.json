@@ -1,0 +1,47 @@
+[
+  {
+    "file": "summary.json",
+    "sha256": "85313b82383011368422f4852e9758c94d884e16ecc0a76d2a4c0d381d8ec860",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\summary.json"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "ddaf47cfaf2c02f329df0f0c74e880bfdc2635ff68edcf8bcc77720d5bef61eb",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\commands.json"
+  },
+  {
+    "file": "before.json",
+    "sha256": "b4199695ee3ae5004c76e8cf85a3b5204a5439ce3d96fcb487a5ea8f68008416",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\before.json"
+  },
+  {
+    "file": "after.json",
+    "sha256": "b4199695ee3ae5004c76e8cf85a3b5204a5439ce3d96fcb487a5ea8f68008416",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\after.json"
+  },
+  {
+    "file": "coverage.json",
+    "sha256": "e637d98944dc8762d902943af8b3ea8f750fb69ed3836def827a72494df31e96",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\coverage.json"
+  },
+  {
+    "file": "tests.log",
+    "sha256": "375be622b141684ee77110dfadd39423cd80a4b3eead1b67361fdaa505c1031d",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\tests.log"
+  },
+  {
+    "file": "export.log",
+    "sha256": "339df362b92df51ab8d3267e8a5a566f3ed56d39aa995f2542da85388d192fa0",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\export.log"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "dc0102a508809f244cd452d699870cc8af2a214ba3cd6c2c090eaf01e9c58251",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261027-r5\\junit.xml"
+  },
+  {
+    "file": "run_backend_20261027_r5.py",
+    "sha256": "c2e04edc8e125bc8f948487c93e80f01b9392b0777710972ef494a4b9863019a",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\run_backend_20261027_r5.py"
+  }
+]

@@ -234,7 +234,6 @@ def test_health_http_status_matrix(tmp_path, monkeypatch, status, token, expecte
                        ('AUTH_PROVIDER', 'oidc'), ('OIDC_ISSUER', 'https://oidc.invalid/'),
                        ('FEISHU_APP_ID', 'dummy'), ('FEISHU_APP_SECRET', 'dummy')]:
         monkeypatch.setenv(key, value)
-    monkeypatch.setattr(hc, 'CHROMADB_PATH', tmp_path)
     checker = hc.HealthChecker()
     result = checker.probe_all()
     assert checker.get_status() == result
@@ -250,7 +249,7 @@ def test_health_http_status_matrix(tmp_path, monkeypatch, status, token, expecte
     assert calls[-1][1]['headers'] == {}
 
 
-def test_health_missing_config_network_errors_and_real_sqlite(tmp_path, monkeypatch):
+def test_health_missing_config_network_errors_and_real_sqlite(tmp_path, monkeypatch, admitted_health_publication):
     import requests
     from services import health_checker as hc
     for key in ['LANGEXTRACT_API_KEY', 'MINERU_API_URL', 'OIDC_ISSUER', 'FEISHU_APP_ID']:
@@ -263,16 +262,22 @@ def test_health_missing_config_network_errors_and_real_sqlite(tmp_path, monkeypa
     assert checker._probe_feishu()['status'] == 'ok'
     monkeypatch.setenv('AUTH_PROVIDER', 'local')
     assert checker._probe_oauth2()['status'] == 'ok'
-    monkeypatch.setattr(hc, 'CHROMADB_PATH', tmp_path)
-    assert checker._probe_chromadb()['status'] == 'degraded'
-    db = tmp_path / 'chroma.sqlite3'
-    with sqlite3.connect(db) as connection:
-        connection.execute('CREATE TABLE embedding_metadata (id INTEGER)')
-        connection.execute('INSERT INTO embedding_metadata VALUES (1)')
-    assert checker._probe_chromadb()['documents'] == 1
-    with sqlite3.connect(db) as connection:
-        connection.execute('DROP TABLE embedding_metadata')
-    assert checker._probe_chromadb()['status'] == 'down'
+    assert checker._probe_vector_store()['status'] == 'ok'
+    assert checker._probe_vector_store()['chunks'] == 0
+    from doc_processor import Chunk
+    import hashlib
+    asset = admitted_health_publication.asset_root / 'fixture.txt'
+    asset.write_text('synthetic health fixture', encoding='utf-8')
+    admitted_health_publication.publish('health_task', 'health_doc', {'owner_id': 'owner'},
+        [Chunk('c' + str(i), 'public active text', 'text') for i in range(1)],
+        [[1., 0.]] * 1,
+        assets=[{'path': asset.name, 'sha256': hashlib.sha256(asset.read_bytes()).hexdigest()}])
+    assert checker._probe_vector_store()['chunks'] == 1
+    from contextlib import closing
+    with closing(sqlite3.connect(admitted_health_publication.store.path)) as connection, connection:
+        connection.execute('DROP TABLE payload')
+    assert checker._probe_vector_store()['status'] == 'down'
+    assert checker._probe_vector_store()['code'] == 'schema_mismatch'
     def unavailable(*args, **kwargs):
         raise requests.Timeout('x' * 300)
     monkeypatch.setattr(requests, 'get', unavailable)
@@ -287,14 +292,18 @@ def test_health_missing_config_network_errors_and_real_sqlite(tmp_path, monkeypa
     assert hc.get_health_checker() is hc.get_health_checker()
 
 
-def test_vector_empty_metadata_migration_and_mirror(tmp_path, monkeypatch):
+def test_vector_empty_metadata_and_explicit_model_migration(tmp_path, monkeypatch):
     import vector_store as vs
     from doc_processor import Chunk, ChunkMetadata
     monkeypatch.setenv('ANONYMIZED_TELEMETRY', 'FALSE')
-    store = vs.create_vector_store(persist_dir=str(tmp_path / 'vectors'), embedding_dim=2)
+    from vector_runtime import SyntheticIntegrationConfig
+    from vector_errors import VectorInputError, VectorStorageError
+    admission = SyntheticIntegrationConfig.create(tmp_path / 'synthetic')
+    store = vs.create_vector_store(persist_dir=str(admission.fixture_root / 'vectors'), embedding_dim=2, integration_config=admission)
     store.add_chunks([], [])
-    with pytest.raises(ValueError, match='Length mismatch'):
+    with pytest.raises(VectorInputError) as invalid:
         store.add_chunks([Chunk('x', 'pump', 'text')], [])
+    assert invalid.value.code == 'invalid_input'
     assert store.search([1., 0.], top_k=1) == []
     assert store.list_sources() == []
     assert store.get_by_ids([]) == []
@@ -310,36 +319,50 @@ def test_vector_empty_metadata_migration_and_mirror(tmp_path, monkeypatch):
     assert migration.embedding_dim == 3 and migration.count() == 0
     assert vs._parse_chroma_metadata({}) == {}
     assert vs._parse_chroma_metadata({'entity_ids': '{bad', 'entity_types': []}) == {'entity_ids': [], 'entity_types': []}
-    monkeypatch.setattr(vs.tempfile, 'gettempdir', lambda: str(tmp_path / 'mirrors'))
-    source = tmp_path / 'source'
-    source.mkdir()
-    (source / 'data').write_text('durable')
-    mirror = vs.Path(vs._prepare_sqlite_safe_mirror(str(source)))
-    assert (mirror / 'data').read_text() == 'durable'
-    (mirror / 'stale').write_text('stale')
-    assert not (vs.Path(vs._prepare_sqlite_safe_mirror(str(source))) / 'stale').exists()
-    empty = vs.Path(vs._prepare_sqlite_safe_mirror(str(tmp_path / 'missing')))
-    assert empty.is_dir() and list(empty.iterdir()) == []
-    monkeypatch.setattr(vs, 'HAS_CHROMADB', False)
-    with pytest.raises(ImportError, match='chromadb is required'):
-        vs.VectorStore(persist_dir=str(tmp_path / 'no-vendor'))
+    assert not hasattr(vs, '_prepare_sqlite_safe_mirror')
+    with pytest.raises(VectorStorageError) as blocked:
+        vs.VectorStore(persist_dir=str(tmp_path / 'no-admission'))
+    assert blocked.value.code == 'compatibility_not_approved'
+    assert not (tmp_path / 'no-admission').exists()
 
 
-def test_vector_client_constructor_recovers_to_real_temporary_mirror(tmp_path, monkeypatch):
+def test_vector_constructor_volume_failure_keeps_authoritative_path(tmp_path, monkeypatch):
     import vector_store as vs
-    real_client = vs.chromadb.PersistentClient
+    import sqlite_vector_store
+    from vector_runtime import SyntheticIntegrationConfig
+    from vector_errors import VectorStorageError
+    admission = SyntheticIntegrationConfig.create(tmp_path / 'synthetic')
     attempts = []
-    def client_boundary(*args, **kwargs):
-        attempts.append(kwargs['path'])
-        if len(attempts) == 1:
-            raise PermissionError('original sqlite volume locked')
-        return real_client(*args, **kwargs)
-    monkeypatch.setattr(vs.chromadb, 'PersistentClient', client_boundary)
-    monkeypatch.setattr(vs.tempfile, 'gettempdir', lambda: str(tmp_path / 'safe'))
-    original = tmp_path / 'locked'
+    def unavailable(path, *args, **kwargs):
+        attempts.append(path)
+        raise PermissionError('original sqlite volume locked')
+    monkeypatch.setattr(sqlite_vector_store, 'connect', unavailable)
+    original = admission.fixture_root / 'locked'
     original.mkdir()
     (original / 'marker').write_text('preserved')
-    store = vs.VectorStore(persist_dir=str(original), embedding_dim=2)
-    assert len(attempts) == 2 and store.persist_dir != str(original)
-    assert (vs.Path(store.persist_dir) / 'marker').read_text() == 'preserved'
-    assert store.count() == 0
+    with pytest.raises(VectorStorageError) as blocked:
+        vs.VectorStore(persist_dir=str(original), embedding_dim=2, integration_config=admission)
+    assert blocked.value.code == 'storage_unavailable'
+    assert len(attempts) == 1 and attempts[0] == original.resolve() / 'vectors.sqlite'
+    assert (original / 'marker').read_text() == 'preserved'
+    assert {path.name for path in original.iterdir()} == {'marker'}
+
+
+@pytest.fixture
+def admitted_health_publication():
+    from services.document_runtime import configure_publication
+    from services.document_publication import DocumentPublication
+    from vector_store import VectorStore
+    from vector_runtime import SyntheticStorageConfig
+    with SyntheticStorageConfig.create() as admission:
+        store = VectorStore(persist_dir=admission.root / 'database', embedding_dim=2,
+                            synthetic_config=admission)
+        profile = {'model': store.embedding_model, 'revision': 'health-fixture',
+                   'dimension': 2, 'normalize': True}
+        service = DocumentPublication(store, admission.root / 'assets', profile)
+        from types import SimpleNamespace
+        configure_publication(service, SimpleNamespace(model_profile=profile, model=profile['model'], dim=2))
+        try:
+            yield service
+        finally:
+            configure_publication(None)

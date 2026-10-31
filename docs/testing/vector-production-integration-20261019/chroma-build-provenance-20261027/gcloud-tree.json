@@ -1,0 +1,2915 @@
+{
+  "sha": "bd8ec9581e00034363befe7d38146084df018876",
+  "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/bd8ec9581e00034363befe7d38146084df018876",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d230f730da71db0c40347f527fa5f57cffcde2b0",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d230f730da71db0c40347f527fa5f57cffcde2b0"
+    },
+    {
+      "path": ".github/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "347778ca45374e9194a9b8af7c015e263a711b2b",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/347778ca45374e9194a9b8af7c015e263a711b2b"
+    },
+    {
+      "path": ".github/scripts/clippy.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "08e7f662b59f639b4b5bb09bad91b28cd18909b8",
+      "size": 61,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/08e7f662b59f639b4b5bb09bad91b28cd18909b8"
+    },
+    {
+      "path": ".github/scripts/fmt.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "90568a2d5602c367cc9c18cb285a7a89f0a37c97",
+      "size": 46,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/90568a2d5602c367cc9c18cb285a7a89f0a37c97"
+    },
+    {
+      "path": ".github/scripts/test-artifact-registry.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "679a6ee4faaa5d5331cc8be8a0c302255ab44964",
+      "size": 102,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/679a6ee4faaa5d5331cc8be8a0c302255ab44964"
+    },
+    {
+      "path": ".github/scripts/test-auth.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "65294f3c33d177735d3f3eea395c89157528e413",
+      "size": 225,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/65294f3c33d177735d3f3eea395c89157528e413"
+    },
+    {
+      "path": ".github/scripts/test-bigquery.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "314c3da555f6e77090ea8537dd2acafccaf0869d",
+      "size": 94,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/314c3da555f6e77090ea8537dd2acafccaf0869d"
+    },
+    {
+      "path": ".github/scripts/test-gax.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "93268e513f81f36dd238c4dc2d36b60a69185024",
+      "size": 97,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/93268e513f81f36dd238c4dc2d36b60a69185024"
+    },
+    {
+      "path": ".github/scripts/test-kms.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0ad64b5715ec0f9bfc421f2f4084b38f412d7a5d",
+      "size": 88,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0ad64b5715ec0f9bfc421f2f4084b38f412d7a5d"
+    },
+    {
+      "path": ".github/scripts/test-pubsub-gcp.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "df9ab8bb911ef9eff6d006479203e55674e3a59f",
+      "size": 104,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/df9ab8bb911ef9eff6d006479203e55674e3a59f"
+    },
+    {
+      "path": ".github/scripts/test-pubsub.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "40abd6c6eb8ed2bc6fd9731637a47dd7cced1441",
+      "size": 97,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/40abd6c6eb8ed2bc6fd9731637a47dd7cced1441"
+    },
+    {
+      "path": ".github/scripts/test-spanner-derive.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7a366e995236f1d185e5b4a68bbec97bf79cec23",
+      "size": 97,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7a366e995236f1d185e5b4a68bbec97bf79cec23"
+    },
+    {
+      "path": ".github/scripts/test-spanner.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "c50bcc047809554265af8c5a78364485a26f3e4b",
+      "size": 105,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c50bcc047809554265af8c5a78364485a26f3e4b"
+    },
+    {
+      "path": ".github/scripts/test-storage.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2e9c9dafc9d89ce554870d46af0c2c545c3e3687",
+      "size": 92,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2e9c9dafc9d89ce554870d46af0c2c545c3e3687"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9c14d92353bebc0ea1facb8f017a0491dc641bc9",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/9c14d92353bebc0ea1facb8f017a0491dc641bc9"
+    },
+    {
+      "path": ".github/workflows/ci.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8b0731ddfd9c044b1765c8dc91bff3951fbf13b",
+      "size": 8019,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f8b0731ddfd9c044b1765c8dc91bff3951fbf13b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e167925ba9f8b043d4dd21f2876c4c31391e7ed",
+      "size": 413,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6e167925ba9f8b043d4dd21f2876c4c31391e7ed"
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f733b88737dcc4791bd038997c340af1cc48e346",
+      "size": 114,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f733b88737dcc4791bd038997c340af1cc48e346"
+    },
+    {
+      "path": "Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41f36dbe75037399c6b68829530f13ef7111eac8",
+      "size": 278,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/41f36dbe75037399c6b68829530f13ef7111eac8"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf60c1d14a397413c668c89a6e7d03e3250ad28d",
+      "size": 1072,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/bf60c1d14a397413c668c89a6e7d03e3250ad28d"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86ce2011e9886d496addd3be35cff1144babc9ca",
+      "size": 1355,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/86ce2011e9886d496addd3be35cff1144babc9ca"
+    },
+    {
+      "path": "artifact-registry",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "580e371964f14b44952c1b082c61fde4c420ea98",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/580e371964f14b44952c1b082c61fde4c420ea98"
+    },
+    {
+      "path": "artifact-registry/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7912726d65a1c75e5aa9b6dec6db5bd94fff2ab8",
+      "size": 1766,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7912726d65a1c75e5aa9b6dec6db5bd94fff2ab8"
+    },
+    {
+      "path": "artifact-registry/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "artifact-registry/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52ca06bcd44147f61c3b10b6e1f877ca65eeb4ac",
+      "size": 9638,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/52ca06bcd44147f61c3b10b6e1f877ca65eeb4ac"
+    },
+    {
+      "path": "artifact-registry/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bdf27d573701674023c2d839449355eb9f964aee",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/bdf27d573701674023c2d839449355eb9f964aee"
+    },
+    {
+      "path": "artifact-registry/src/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cebcc052302157f767913566ae7dedb3faa7c81c",
+      "size": 7815,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cebcc052302157f767913566ae7dedb3faa7c81c"
+    },
+    {
+      "path": "artifact-registry/src/grpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4484aafadceef35f2737a043e0be7feb30ddf815",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/4484aafadceef35f2737a043e0be7feb30ddf815"
+    },
+    {
+      "path": "artifact-registry/src/grpc/apiv1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64cc0352fdfc10670d1a5f9b69829f65da837e69",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/64cc0352fdfc10670d1a5f9b69829f65da837e69"
+    },
+    {
+      "path": "artifact-registry/src/grpc/apiv1/artifact_registry_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff5380fee413307a302a05bbfe542b4049cac854",
+      "size": 37141,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ff5380fee413307a302a05bbfe542b4049cac854"
+    },
+    {
+      "path": "artifact-registry/src/grpc/apiv1/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8bcdf2863ec94b64f0d6204be31000f8eec21f0",
+      "size": 259,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e8bcdf2863ec94b64f0d6204be31000f8eec21f0"
+    },
+    {
+      "path": "artifact-registry/src/grpc/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07116678a7cf70fd050ba3dd61deed2efd7fa336",
+      "size": 15,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/07116678a7cf70fd050ba3dd61deed2efd7fa336"
+    },
+    {
+      "path": "artifact-registry/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b156815331b0042c4cbf65a6ef217c899c2a632a",
+      "size": 10115,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b156815331b0042c4cbf65a6ef217c899c2a632a"
+    },
+    {
+      "path": "bigquery",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d79b83573e078f5b8f3ba805bb731b44c25983a7",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d79b83573e078f5b8f3ba805bb731b44c25983a7"
+    },
+    {
+      "path": "bigquery/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44c948aa4896ed42621b2a8f332c4c4c026dd42f",
+      "size": 2440,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/44c948aa4896ed42621b2a8f332c4c4c026dd42f"
+    },
+    {
+      "path": "bigquery/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "bigquery/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5276676fb48d49165ab1d6849a11484274447995",
+      "size": 7067,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5276676fb48d49165ab1d6849a11484274447995"
+    },
+    {
+      "path": "bigquery/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c38c9888aee8191585554e43741e4d15eaaea695",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/c38c9888aee8191585554e43741e4d15eaaea695"
+    },
+    {
+      "path": "bigquery/src/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14f1ccf6fd17e03724ee11eedc9ddae3cec6cc24",
+      "size": 57274,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/14f1ccf6fd17e03724ee11eedc9ddae3cec6cc24"
+    },
+    {
+      "path": "bigquery/src/grpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ab132a2082af552584fdcb02c47482e38d993f47",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/ab132a2082af552584fdcb02c47482e38d993f47"
+    },
+    {
+      "path": "bigquery/src/grpc/apiv1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4d0280c0b745eb3a28cba7ebdb2e082fc407100",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/b4d0280c0b745eb3a28cba7ebdb2e082fc407100"
+    },
+    {
+      "path": "bigquery/src/grpc/apiv1/bigquery_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fce003a2dcdafe5d7d2151d3a3238aa2919445d",
+      "size": 8033,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0fce003a2dcdafe5d7d2151d3a3238aa2919445d"
+    },
+    {
+      "path": "bigquery/src/grpc/apiv1/conn_pool.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6faeb8e47aff2a0f25810cb03b8ffa50ac5ebdaa",
+      "size": 1314,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6faeb8e47aff2a0f25810cb03b8ffa50ac5ebdaa"
+    },
+    {
+      "path": "bigquery/src/grpc/apiv1/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0a11a652b386172c37c99dc2ced736bf452272f",
+      "size": 44,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c0a11a652b386172c37c99dc2ced736bf452272f"
+    },
+    {
+      "path": "bigquery/src/grpc/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07116678a7cf70fd050ba3dd61deed2efd7fa336",
+      "size": 15,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/07116678a7cf70fd050ba3dd61deed2efd7fa336"
+    },
+    {
+      "path": "bigquery/src/http",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25adc5d26ffdb09b268449c52d30bd433cbd1a82",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/25adc5d26ffdb09b268449c52d30bd433cbd1a82"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05172e48a1ffb40103dd2794e3e382041c9c631f",
+      "size": 13192,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/05172e48a1ffb40103dd2794e3e382041c9c631f"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_dataset_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0dd0950fc173465fe810e9460c3b58d5aa47b1f9",
+      "size": 7098,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0dd0950fc173465fe810e9460c3b58d5aa47b1f9"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_job_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "359c015de44dcb66aa5372b5aaf018944818a688",
+      "size": 18560,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/359c015de44dcb66aa5372b5aaf018944818a688"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_model_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52cdb14b2b9ef30126b10a16081ee7334f50a29e",
+      "size": 7240,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/52cdb14b2b9ef30126b10a16081ee7334f50a29e"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_routine_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c02a2caba298405ff4c4c39afecbbc9fc5ef3f89",
+      "size": 8034,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c02a2caba298405ff4c4c39afecbbc9fc5ef3f89"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_row_access_policy_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0abfad3a7ca58d476d480233ebf438089bca14a9",
+      "size": 5395,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0abfad3a7ca58d476d480233ebf438089bca14a9"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_table_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79adc52ca796a579508b4c08282e8ee7679a4782",
+      "size": 14661,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/79adc52ca796a579508b4c08282e8ee7679a4782"
+    },
+    {
+      "path": "bigquery/src/http/bigquery_tabledata_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26f866f2dcac14ab24b71cb8d03c4cfbbe7474a4",
+      "size": 6322,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/26f866f2dcac14ab24b71cb8d03c4cfbbe7474a4"
+    },
+    {
+      "path": "bigquery/src/http/dataset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a75a28e8948db78e63dd2a2dd578121c40266054",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/a75a28e8948db78e63dd2a2dd578121c40266054"
+    },
+    {
+      "path": "bigquery/src/http/dataset/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a9edf38b44970e04394a2bda7e272a22e0b4b6",
+      "size": 283,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/56a9edf38b44970e04394a2bda7e272a22e0b4b6"
+    },
+    {
+      "path": "bigquery/src/http/dataset/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b192a8ecdc4a22948201fbed63e30c790ca9d3fa",
+      "size": 280,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b192a8ecdc4a22948201fbed63e30c790ca9d3fa"
+    },
+    {
+      "path": "bigquery/src/http/dataset/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "812b08e3c167637c72bd33b88c17e315c2108591",
+      "size": 322,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/812b08e3c167637c72bd33b88c17e315c2108591"
+    },
+    {
+      "path": "bigquery/src/http/dataset/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049481126e86c7fc1afb1247d6030fbb00ba6d7e",
+      "size": 3389,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/049481126e86c7fc1afb1247d6030fbb00ba6d7e"
+    },
+    {
+      "path": "bigquery/src/http/dataset/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c10aa493be71039f5803bc5a913c694d67c38c9",
+      "size": 12438,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5c10aa493be71039f5803bc5a913c694d67c38c9"
+    },
+    {
+      "path": "bigquery/src/http/dataset/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b3002ab81111ae3d24c9264c240bf4971f14774",
+      "size": 550,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6b3002ab81111ae3d24c9264c240bf4971f14774"
+    },
+    {
+      "path": "bigquery/src/http/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2757db6cb1f5693330507294cb6378cc77467549",
+      "size": 2764,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2757db6cb1f5693330507294cb6378cc77467549"
+    },
+    {
+      "path": "bigquery/src/http/job",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a7154cc3e9fc70f14420fc82045a94f3e030c5a",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/1a7154cc3e9fc70f14420fc82045a94f3e030c5a"
+    },
+    {
+      "path": "bigquery/src/http/job/cancel.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0868095b87bda1b69c0aede8a990b0dab5036a1a",
+      "size": 1282,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0868095b87bda1b69c0aede8a990b0dab5036a1a"
+    },
+    {
+      "path": "bigquery/src/http/job/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca88a5897dc9ccd30158988f1557761c255f34ec",
+      "size": 271,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ca88a5897dc9ccd30158988f1557761c255f34ec"
+    },
+    {
+      "path": "bigquery/src/http/job/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8872eb130c124c52f324afa7bcb18042de60f924",
+      "size": 885,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8872eb130c124c52f324afa7bcb18042de60f924"
+    },
+    {
+      "path": "bigquery/src/http/job/get_query_results.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cad383be399131ab32ab6abd1e587e9ce880708",
+      "size": 5135,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/3cad383be399131ab32ab6abd1e587e9ce880708"
+    },
+    {
+      "path": "bigquery/src/http/job/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9742336f98e0d6abdc4ea97551488b6796317866",
+      "size": 302,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/9742336f98e0d6abdc4ea97551488b6796317866"
+    },
+    {
+      "path": "bigquery/src/http/job/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16b062733bc3266f4dfbf18fe10d335991519c8e",
+      "size": 3701,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/16b062733bc3266f4dfbf18fe10d335991519c8e"
+    },
+    {
+      "path": "bigquery/src/http/job/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "750072aa2e86390da111b8c81523616950bdde0a",
+      "size": 68878,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/750072aa2e86390da111b8c81523616950bdde0a"
+    },
+    {
+      "path": "bigquery/src/http/job/query.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9e64cb606ac2c658487994a99e7246b9a020cf8",
+      "size": 10218,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b9e64cb606ac2c658487994a99e7246b9a020cf8"
+    },
+    {
+      "path": "bigquery/src/http/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8e109befaea4ad617718013c8c519ea4f33362e",
+      "size": 3641,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c8e109befaea4ad617718013c8c519ea4f33362e"
+    },
+    {
+      "path": "bigquery/src/http/model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "edbefc02d343c4e53bb3c6ff7fd6300ecb4de58e",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/edbefc02d343c4e53bb3c6ff7fd6300ecb4de58e"
+    },
+    {
+      "path": "bigquery/src/http/model/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5994ddb0b6e7b60cec98069d796229fab2859fd2",
+      "size": 317,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5994ddb0b6e7b60cec98069d796229fab2859fd2"
+    },
+    {
+      "path": "bigquery/src/http/model/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f322d9db5545ef68898a1ec5b290b4bc6ed91126",
+      "size": 314,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f322d9db5545ef68898a1ec5b290b4bc6ed91126"
+    },
+    {
+      "path": "bigquery/src/http/model/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3823ce43eb91f7c6dcbd0619785650b90bbca6e",
+      "size": 2237,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a3823ce43eb91f7c6dcbd0619785650b90bbca6e"
+    },
+    {
+      "path": "bigquery/src/http/model/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b003ee2b47582e9b7349a4d706c7e627e94b0f2",
+      "size": 48495,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8b003ee2b47582e9b7349a4d706c7e627e94b0f2"
+    },
+    {
+      "path": "bigquery/src/http/model/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2c820f9c7b7ec089f6b2b93818ec4d9ab1ed3de",
+      "size": 465,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f2c820f9c7b7ec089f6b2b93818ec4d9ab1ed3de"
+    },
+    {
+      "path": "bigquery/src/http/query.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a3a4995975aca333668ab0416094861426df5bd",
+      "size": 8594,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2a3a4995975aca333668ab0416094861426df5bd"
+    },
+    {
+      "path": "bigquery/src/http/routine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "67b3362879423c65de26a5cb31e1ff3bbf928b2c",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/67b3362879423c65de26a5cb31e1ff3bbf928b2c"
+    },
+    {
+      "path": "bigquery/src/http/routine/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba29cbeb10e608798d1ff427b2c9d5f3b10f1cc8",
+      "size": 323,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ba29cbeb10e608798d1ff427b2c9d5f3b10f1cc8"
+    },
+    {
+      "path": "bigquery/src/http/routine/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "361f600391d529bdc48f33c5f962c4712496635c",
+      "size": 320,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/361f600391d529bdc48f33c5f962c4712496635c"
+    },
+    {
+      "path": "bigquery/src/http/routine/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6835680899effddbb1f5b9583d3c419c8000a407",
+      "size": 391,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6835680899effddbb1f5b9583d3c419c8000a407"
+    },
+    {
+      "path": "bigquery/src/http/routine/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14377bb59b6a09a44bc51d9752f2183417b3942c",
+      "size": 2768,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/14377bb59b6a09a44bc51d9752f2183417b3942c"
+    },
+    {
+      "path": "bigquery/src/http/routine/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1a1c4f50d7027785d62b73fd9352a07e07d833a",
+      "size": 10767,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b1a1c4f50d7027785d62b73fd9352a07e07d833a"
+    },
+    {
+      "path": "bigquery/src/http/routine/update.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71665c83e78967e12b7a026e4f078199783c4aa2",
+      "size": 479,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/71665c83e78967e12b7a026e4f078199783c4aa2"
+    },
+    {
+      "path": "bigquery/src/http/row_access_policy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d761c0612351cfa75ac86061eb2c3dc23a7742f1",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d761c0612351cfa75ac86061eb2c3dc23a7742f1"
+    },
+    {
+      "path": "bigquery/src/http/row_access_policy/get_iam_policy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a1d351e1af15a431ca5e47f5f99514de4f9bb53",
+      "size": 522,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1a1d351e1af15a431ca5e47f5f99514de4f9bb53"
+    },
+    {
+      "path": "bigquery/src/http/row_access_policy/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "259479bbb44845031390e709a084dc0293f0106c",
+      "size": 2605,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/259479bbb44845031390e709a084dc0293f0106c"
+    },
+    {
+      "path": "bigquery/src/http/row_access_policy/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fabf2b04a6f07384efd000bef92fb2fc7bde598",
+      "size": 1353,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2fabf2b04a6f07384efd000bef92fb2fc7bde598"
+    },
+    {
+      "path": "bigquery/src/http/row_access_policy/test_iam_permissions.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "280cf0b71c95b4cb05ee835bcd612840b531ba61",
+      "size": 546,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/280cf0b71c95b4cb05ee835bcd612840b531ba61"
+    },
+    {
+      "path": "bigquery/src/http/table",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ceb7096d9ef8a13fe77551ea61fa0ae1076f1d7e",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/ceb7096d9ef8a13fe77551ea61fa0ae1076f1d7e"
+    },
+    {
+      "path": "bigquery/src/http/table/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc2109069e65627c78ae201aaccbd6b1922243ca",
+      "size": 317,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/bc2109069e65627c78ae201aaccbd6b1922243ca"
+    },
+    {
+      "path": "bigquery/src/http/table/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "581454c73fc75490f3538f9aa2e6e1aece514ed9",
+      "size": 314,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/581454c73fc75490f3538f9aa2e6e1aece514ed9"
+    },
+    {
+      "path": "bigquery/src/http/table/get_iam_policy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cf222223744ce552646f527be8cdf14a839ca41",
+      "size": 734,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4cf222223744ce552646f527be8cdf14a839ca41"
+    },
+    {
+      "path": "bigquery/src/http/table/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86e8776b358162332c5a04efa9c630afd9f72324",
+      "size": 413,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/86e8776b358162332c5a04efa9c630afd9f72324"
+    },
+    {
+      "path": "bigquery/src/http/table/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f3b761842af506c0f2ce71e99451527d7fb2dd",
+      "size": 3914,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/50f3b761842af506c0f2ce71e99451527d7fb2dd"
+    },
+    {
+      "path": "bigquery/src/http/table/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0edc5899d29b2c2ab33e5816346c56fe6d80ca90",
+      "size": 43764,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0edc5899d29b2c2ab33e5816346c56fe6d80ca90"
+    },
+    {
+      "path": "bigquery/src/http/table/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a4016c6b5e67ab936cb71ac0794d83539e88b55",
+      "size": 598,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2a4016c6b5e67ab936cb71ac0794d83539e88b55"
+    },
+    {
+      "path": "bigquery/src/http/table/set_iam_policy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a057e87ececf4dbf2c4a80bb0a448ecedf29657",
+      "size": 1248,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8a057e87ececf4dbf2c4a80bb0a448ecedf29657"
+    },
+    {
+      "path": "bigquery/src/http/table/test_iam_permissions.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5856e8c8356a4af8d9f6e6373dca9e8921a7402b",
+      "size": 1072,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5856e8c8356a4af8d9f6e6373dca9e8921a7402b"
+    },
+    {
+      "path": "bigquery/src/http/tabledata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d64c57f25211f8b5a8195c39a75a3d97fa91364",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/9d64c57f25211f8b5a8195c39a75a3d97fa91364"
+    },
+    {
+      "path": "bigquery/src/http/tabledata/insert_all.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8965d3721d3447d9ab70dd345d25ee31f8ff3ad4",
+      "size": 3452,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8965d3721d3447d9ab70dd345d25ee31f8ff3ad4"
+    },
+    {
+      "path": "bigquery/src/http/tabledata/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dc4435f1c7015f82e6b7e710bdf9a06dde90d7a",
+      "size": 2523,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8dc4435f1c7015f82e6b7e710bdf9a06dde90d7a"
+    },
+    {
+      "path": "bigquery/src/http/tabledata/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21d6cd385f6a2ad0eff14f34645d2514402f4d01",
+      "size": 34,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/21d6cd385f6a2ad0eff14f34645d2514402f4d01"
+    },
+    {
+      "path": "bigquery/src/http/types.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5086756d428bdb71e1255fac59c07c0bab337216",
+      "size": 15806,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5086756d428bdb71e1255fac59c07c0bab337216"
+    },
+    {
+      "path": "bigquery/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3daaaf55f6eea2e1071c742a4eaf1a7cb8b17e9a",
+      "size": 7732,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/3daaaf55f6eea2e1071c742a4eaf1a7cb8b17e9a"
+    },
+    {
+      "path": "bigquery/src/query.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f244be19973f33c4b83a1703d60419aea6042919",
+      "size": 3271,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f244be19973f33c4b83a1703d60419aea6042919"
+    },
+    {
+      "path": "bigquery/src/storage.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bbdd7dbb466cf8bc0258ee92b9ae2eb4bea868f",
+      "size": 14764,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2bbdd7dbb466cf8bc0258ee92b9ae2eb4bea868f"
+    },
+    {
+      "path": "bigquery/src/storage_write",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f38ae9cae4167b283177b5174331bab74328e533",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/f38ae9cae4167b283177b5174331bab74328e533"
+    },
+    {
+      "path": "bigquery/src/storage_write/flow.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8205d73e549b8ffe6c6a0de36b1436de90716548",
+      "size": 458,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8205d73e549b8ffe6c6a0de36b1436de90716548"
+    },
+    {
+      "path": "bigquery/src/storage_write/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f218f32b7decd75dd7ed53fce6ae81be653df90",
+      "size": 2598,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1f218f32b7decd75dd7ed53fce6ae81be653df90"
+    },
+    {
+      "path": "bigquery/src/storage_write/stream",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0aea5ff1f1f399433af47a5e9133f8bdb69c5bfd",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/0aea5ff1f1f399433af47a5e9133f8bdb69c5bfd"
+    },
+    {
+      "path": "bigquery/src/storage_write/stream/buffered.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe9d34a14c7289893be871de4af7cc6c643b97c2",
+      "size": 6617,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fe9d34a14c7289893be871de4af7cc6c643b97c2"
+    },
+    {
+      "path": "bigquery/src/storage_write/stream/committed.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40c88667020d81022d541cc6e6e3883e75ebdead",
+      "size": 5978,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/40c88667020d81022d541cc6e6e3883e75ebdead"
+    },
+    {
+      "path": "bigquery/src/storage_write/stream/default.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e45b41a1c6a92d07e3518486a0cfbd1799fe705",
+      "size": 3813,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5e45b41a1c6a92d07e3518486a0cfbd1799fe705"
+    },
+    {
+      "path": "bigquery/src/storage_write/stream/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "278cb7904e9e1fec1e2de24e77151e1e718fc021",
+      "size": 4665,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/278cb7904e9e1fec1e2de24e77151e1e718fc021"
+    },
+    {
+      "path": "bigquery/src/storage_write/stream/pending.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31a6efb8c47abbdd3aa9dbe2987f587257c786d0",
+      "size": 7104,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/31a6efb8c47abbdd3aa9dbe2987f587257c786d0"
+    },
+    {
+      "path": "deny.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcc8dd91fac5df3bc42ece75eea7f4f366cd4e6a",
+      "size": 8938,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/dcc8dd91fac5df3bc42ece75eea7f4f366cd4e6a"
+    },
+    {
+      "path": "foundation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3b46eee951ec01369c80331000bc4851c501d16",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/b3b46eee951ec01369c80331000bc4851c501d16"
+    },
+    {
+      "path": "foundation/auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9256a12e8cf47346b5996f34a21235f038fc2642",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/9256a12e8cf47346b5996f34a21235f038fc2642"
+    },
+    {
+      "path": "foundation/auth/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8c191d9de02acd3133de59b085d0a1df2f63368",
+      "size": 1909,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b8c191d9de02acd3133de59b085d0a1df2f63368"
+    },
+    {
+      "path": "foundation/auth/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "30cff7403da04711c46979a06f6bf8eb10ee088a",
+      "size": 13,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/30cff7403da04711c46979a06f6bf8eb10ee088a"
+    },
+    {
+      "path": "foundation/auth/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e06e7857123cbdb600f883e4c23eed1dacad734b",
+      "size": 2588,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e06e7857123cbdb600f883e4c23eed1dacad734b"
+    },
+    {
+      "path": "foundation/auth/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b7f32c720ea975e9371d04687d6a6346bdfec32",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/5b7f32c720ea975e9371d04687d6a6346bdfec32"
+    },
+    {
+      "path": "foundation/auth/src/credentials.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d12d8bd405159d04a48fac9d1bf061e7761fff6",
+      "size": 10792,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8d12d8bd405159d04a48fac9d1bf061e7761fff6"
+    },
+    {
+      "path": "foundation/auth/src/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e951f1accbc156cc8dd5fb7e183a09fd4acceef",
+      "size": 1989,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1e951f1accbc156cc8dd5fb7e183a09fd4acceef"
+    },
+    {
+      "path": "foundation/auth/src/idtoken.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13cfb5dc570d4caefd2a3d4ae1be9f3c01ef941e",
+      "size": 3024,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/13cfb5dc570d4caefd2a3d4ae1be9f3c01ef941e"
+    },
+    {
+      "path": "foundation/auth/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6e224cac07aecc69c63963b9ff2e268e06d70e9",
+      "size": 419,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c6e224cac07aecc69c63963b9ff2e268e06d70e9"
+    },
+    {
+      "path": "foundation/auth/src/misc.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "247adcfc2d7b75bcf1c2bbfa83822d1ca6640d5d",
+      "size": 317,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/247adcfc2d7b75bcf1c2bbfa83822d1ca6640d5d"
+    },
+    {
+      "path": "foundation/auth/src/project.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9fa7a3242c7fab44be16253430c689a726a31bd",
+      "size": 7776,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c9fa7a3242c7fab44be16253430c689a726a31bd"
+    },
+    {
+      "path": "foundation/auth/src/token.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a7376841939a6e716b28961126b3738bd27c061",
+      "size": 3219,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2a7376841939a6e716b28961126b3738bd27c061"
+    },
+    {
+      "path": "foundation/auth/src/token_source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f505a342a353eaa1c84409188256571bb9b2584e",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/f505a342a353eaa1c84409188256571bb9b2584e"
+    },
+    {
+      "path": "foundation/auth/src/token_source/authorized_user_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e15dc459bebd002875f45e9abaf241b2965a466b",
+      "size": 2033,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e15dc459bebd002875f45e9abaf241b2965a466b"
+    },
+    {
+      "path": "foundation/auth/src/token_source/compute_identity_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f5699be9ee0ce57a1c938b7e654129b72ef4299",
+      "size": 2300,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7f5699be9ee0ce57a1c938b7e654129b72ef4299"
+    },
+    {
+      "path": "foundation/auth/src/token_source/compute_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b0530d322aef827436edab618d893e23a28d20f",
+      "size": 1393,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1b0530d322aef827436edab618d893e23a28d20f"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0803caaa4c278f538a1470a80a6841333ebbfb4a",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/0803caaa4c278f538a1470a80a6841333ebbfb4a"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source/aws_subject_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f1fc57abaf44aecc7f1198011cb23b9fcc8fbc",
+      "size": 16238,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b7f1fc57abaf44aecc7f1198011cb23b9fcc8fbc"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1ab8b10e004d79965470b53a2d7f012ab544b05",
+      "size": 2201,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e1ab8b10e004d79965470b53a2d7f012ab544b05"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source/file_credential_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21bce96208551c24a4e8d77febc733435b76cac8",
+      "size": 1394,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/21bce96208551c24a4e8d77febc733435b76cac8"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c902b694623fe650969b74342dde7fdae71babb",
+      "size": 4534,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6c902b694623fe650969b74342dde7fdae71babb"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source/subject_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b597862997267b581c006cf83eeafc7a6e35c08",
+      "size": 159,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5b597862997267b581c006cf83eeafc7a6e35c08"
+    },
+    {
+      "path": "foundation/auth/src/token_source/external_account_source/url_subject_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e774d18154382389f97485839f0962483d179ec",
+      "size": 2440,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1e774d18154382389f97485839f0962483d179ec"
+    },
+    {
+      "path": "foundation/auth/src/token_source/impersonate_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccd5201d36dc68866065e3d7fccff51bd1c7b8bb",
+      "size": 2412,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ccd5201d36dc68866065e3d7fccff51bd1c7b8bb"
+    },
+    {
+      "path": "foundation/auth/src/token_source/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "248ab2619e1687b1ae674a9ce2c66dc223d26316",
+      "size": 3149,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/248ab2619e1687b1ae674a9ce2c66dc223d26316"
+    },
+    {
+      "path": "foundation/auth/src/token_source/reuse_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf816e0b53e222f11880285c2587a3a2e3ab978e",
+      "size": 4180,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cf816e0b53e222f11880285c2587a3a2e3ab978e"
+    },
+    {
+      "path": "foundation/auth/src/token_source/service_account_token_source.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "588000ad393893fbb59b662b6ff040ad64e87f45",
+      "size": 8074,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/588000ad393893fbb59b662b6ff040ad64e87f45"
+    },
+    {
+      "path": "foundation/gax",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7546b9daf72fd4a3a3ea0076daada533e7f58823",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/7546b9daf72fd4a3a3ea0076daada533e7f58823"
+    },
+    {
+      "path": "foundation/gax/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49960191c96cca0e7e5192516de440d931e3cabe",
+      "size": 671,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/49960191c96cca0e7e5192516de440d931e3cabe"
+    },
+    {
+      "path": "foundation/gax/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "30cff7403da04711c46979a06f6bf8eb10ee088a",
+      "size": 13,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/30cff7403da04711c46979a06f6bf8eb10ee088a"
+    },
+    {
+      "path": "foundation/gax/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "574c60882dbf5278f029fdb5637bf963d550c605",
+      "size": 269,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/574c60882dbf5278f029fdb5637bf963d550c605"
+    },
+    {
+      "path": "foundation/gax/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b95fb721042ea3c7c36ef972e769a29693d57ba4",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/b95fb721042ea3c7c36ef972e769a29693d57ba4"
+    },
+    {
+      "path": "foundation/gax/src/conn.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81871213425009dd485d5089681f5698d370db42",
+      "size": 8010,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/81871213425009dd485d5089681f5698d370db42"
+    },
+    {
+      "path": "foundation/gax/src/grpc.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdfa764a7e9b2ba5423591a826bf2bc14e909f72",
+      "size": 18,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cdfa764a7e9b2ba5423591a826bf2bc14e909f72"
+    },
+    {
+      "path": "foundation/gax/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6121f27fe1f1c88d0987013a03a0b60b79ce053d",
+      "size": 379,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6121f27fe1f1c88d0987013a03a0b60b79ce053d"
+    },
+    {
+      "path": "foundation/gax/src/retry.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc1b4efeb6d3ac309c100904e087e9fcca05dbf1",
+      "size": 4102,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/dc1b4efeb6d3ac309c100904e087e9fcca05dbf1"
+    },
+    {
+      "path": "foundation/longrunning",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7712765b3fa2b2c2af64b2b2a6c6b742668a25d",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/e7712765b3fa2b2c2af64b2b2a6c6b742668a25d"
+    },
+    {
+      "path": "foundation/longrunning/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6121ff33e856d2b5f03b2734c85736b009ddbe9",
+      "size": 671,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c6121ff33e856d2b5f03b2734c85736b009ddbe9"
+    },
+    {
+      "path": "foundation/longrunning/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "30cff7403da04711c46979a06f6bf8eb10ee088a",
+      "size": 13,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/30cff7403da04711c46979a06f6bf8eb10ee088a"
+    },
+    {
+      "path": "foundation/longrunning/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7f693240d34a28958d217cab46b0a105cbaf8cf",
+      "size": 320,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d7f693240d34a28958d217cab46b0a105cbaf8cf"
+    },
+    {
+      "path": "foundation/longrunning/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a07f9b5b6680939305b096a3a071ee8b0b60c86e",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/a07f9b5b6680939305b096a3a071ee8b0b60c86e"
+    },
+    {
+      "path": "foundation/longrunning/src/autogen",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a3e1d289aac033837cf06c14c82487d2fb0fcce",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/1a3e1d289aac033837cf06c14c82487d2fb0fcce"
+    },
+    {
+      "path": "foundation/longrunning/src/autogen/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4be5e76fdc1cff40f1b280081ba6de47b870f784",
+      "size": 27,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4be5e76fdc1cff40f1b280081ba6de47b870f784"
+    },
+    {
+      "path": "foundation/longrunning/src/autogen/operations_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb4947bbbc924427cf9847e46ddb6d06637765c0",
+      "size": 4961,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/eb4947bbbc924427cf9847e46ddb6d06637765c0"
+    },
+    {
+      "path": "foundation/longrunning/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c2b9055f3625236c271a1e58f630a593bcdca9a",
+      "size": 38,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0c2b9055f3625236c271a1e58f630a593bcdca9a"
+    },
+    {
+      "path": "foundation/longrunning/src/longrunning.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d49099b4c9f9a54aefc020cd3a3c5884a988d102",
+      "size": 4759,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d49099b4c9f9a54aefc020cd3a3c5884a988d102"
+    },
+    {
+      "path": "foundation/metadata",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3173f67df43578f28f36d5102c61c72f9564263a",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/3173f67df43578f28f36d5102c61c72f9564263a"
+    },
+    {
+      "path": "foundation/metadata/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8bd5dfd944d1bf2a5cfc17725179d2b300a2308",
+      "size": 666,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f8bd5dfd944d1bf2a5cfc17725179d2b300a2308"
+    },
+    {
+      "path": "foundation/metadata/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "30cff7403da04711c46979a06f6bf8eb10ee088a",
+      "size": 13,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/30cff7403da04711c46979a06f6bf8eb10ee088a"
+    },
+    {
+      "path": "foundation/metadata/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e9bab38db5930cde657abc1642882e9b199ea6c",
+      "size": 513,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2e9bab38db5930cde657abc1642882e9b199ea6c"
+    },
+    {
+      "path": "foundation/metadata/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10d035dab1b4e9134f56bc0995cb9557326da347",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/10d035dab1b4e9134f56bc0995cb9557326da347"
+    },
+    {
+      "path": "foundation/metadata/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d12498effd914bcad5db7b4729a9eb65fb67e970",
+      "size": 3285,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d12498effd914bcad5db7b4729a9eb65fb67e970"
+    },
+    {
+      "path": "foundation/metadata/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07a1ba6e2b87fcb3ca6baee198aae5f2e4f64029",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/07a1ba6e2b87fcb3ca6baee198aae5f2e4f64029"
+    },
+    {
+      "path": "foundation/metadata/tests/test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d48af534cf84313b57ed6a7f973c1bdf7f3be65",
+      "size": 543,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0d48af534cf84313b57ed6a7f973c1bdf7f3be65"
+    },
+    {
+      "path": "googleapis",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52e958994d195999a9d80ea214d6f01a267d57cd",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/52e958994d195999a9d80ea214d6f01a267d57cd"
+    },
+    {
+      "path": "googleapis/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66c7617fec0d35495c886b31241928149f233c00",
+      "size": 899,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/66c7617fec0d35495c886b31241928149f233c00"
+    },
+    {
+      "path": "googleapis/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "googleapis/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e17c4da87dce54950fcd3de8f97e9b38a22ddf5b",
+      "size": 261,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e17c4da87dce54950fcd3de8f97e9b38a22ddf5b"
+    },
+    {
+      "path": "googleapis/build.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddd03464a90450a6e5e13282dcadcc10bf4b78c7",
+      "size": 2334,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ddd03464a90450a6e5e13282dcadcc10bf4b78c7"
+    },
+    {
+      "path": "googleapis/googleapis",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "da24f941319741abf7a9f6fc8451b636bcb61a20"
+    },
+    {
+      "path": "googleapis/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac366b7a4793de8fec67871a5248b096c51c975e",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/ac366b7a4793de8fec67871a5248b096c51c975e"
+    },
+    {
+      "path": "googleapis/src/bytes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed40d2dd0d8df1487c3fa9c5e004e2344407a651",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/ed40d2dd0d8df1487c3fa9c5e004e2344407a651"
+    },
+    {
+      "path": "googleapis/src/bytes/google.api.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d69ea51a5ffd30d1664f73e23a435995a057e93f",
+      "size": 70965,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d69ea51a5ffd30d1664f73e23a435995a057e93f"
+    },
+    {
+      "path": "googleapis/src/bytes/google.cloud.bigquery.storage.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5148e9026e731bf6423fbdd49ef5229f65bc1ad3",
+      "size": 89582,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5148e9026e731bf6423fbdd49ef5229f65bc1ad3"
+    },
+    {
+      "path": "googleapis/src/bytes/google.cloud.kms.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "962785ee771168bb8e56963285ab2a65793dbb0d",
+      "size": 241590,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/962785ee771168bb8e56963285ab2a65793dbb0d"
+    },
+    {
+      "path": "googleapis/src/bytes/google.devtools.artifactregistry.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6a90ef557eae89b77ba815ef948c34dbb757a78",
+      "size": 185593,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a6a90ef557eae89b77ba815ef948c34dbb757a78"
+    },
+    {
+      "path": "googleapis/src/bytes/google.iam.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f764d70839edfdf5ef5c10f36e4693ce3015d5b",
+      "size": 32013,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8f764d70839edfdf5ef5c10f36e4693ce3015d5b"
+    },
+    {
+      "path": "googleapis/src/bytes/google.longrunning.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9df0eccf9abef8b9ea633fb76861dcef3ecba768",
+      "size": 18083,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/9df0eccf9abef8b9ea633fb76861dcef3ecba768"
+    },
+    {
+      "path": "googleapis/src/bytes/google.pubsub.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4f13177dd5933486aa102f782e4dca90d24c715",
+      "size": 178210,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e4f13177dd5933486aa102f782e4dca90d24c715"
+    },
+    {
+      "path": "googleapis/src/bytes/google.r#type.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "993833f05c49218d9c3a11460e8f2708d0485cfd",
+      "size": 3559,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/993833f05c49218d9c3a11460e8f2708d0485cfd"
+    },
+    {
+      "path": "googleapis/src/bytes/google.rpc.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae89e92c637c33a195be4d363818ee7a83ded512",
+      "size": 1288,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ae89e92c637c33a195be4d363818ee7a83ded512"
+    },
+    {
+      "path": "googleapis/src/bytes/google.spanner.admin.database.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5282512107de2ce9642d006f0cf167ce65730ff1",
+      "size": 145388,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5282512107de2ce9642d006f0cf167ce65730ff1"
+    },
+    {
+      "path": "googleapis/src/bytes/google.spanner.admin.instance.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f119b42fe6bd4882c885c9380717c486d4f0799",
+      "size": 139249,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6f119b42fe6bd4882c885c9380717c486d4f0799"
+    },
+    {
+      "path": "googleapis/src/bytes/google.spanner.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9a6016b1d37ae61b4e9745ce01997968d2de01a",
+      "size": 167721,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d9a6016b1d37ae61b4e9745ce01997968d2de01a"
+    },
+    {
+      "path": "googleapis/src/bytes/google.storage.v2.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfb7617e42774c861f7b5d6c452c51a8ec1b522a",
+      "size": 172093,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/dfb7617e42774c861f7b5d6c452c51a8ec1b522a"
+    },
+    {
+      "path": "googleapis/src/google.api.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d69ea51a5ffd30d1664f73e23a435995a057e93f",
+      "size": 70965,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d69ea51a5ffd30d1664f73e23a435995a057e93f"
+    },
+    {
+      "path": "googleapis/src/google.cloud.bigquery.storage.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4058178a09b0c88486db42d98f15736192a65b3",
+      "size": 86688,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c4058178a09b0c88486db42d98f15736192a65b3"
+    },
+    {
+      "path": "googleapis/src/google.cloud.kms.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c78edb2cff9587f762a98eb649af2492fa650890",
+      "size": 232534,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c78edb2cff9587f762a98eb649af2492fa650890"
+    },
+    {
+      "path": "googleapis/src/google.devtools.artifactregistry.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f312dd8ce4349721d45b4a25ae6ed5cf65a48dcf",
+      "size": 173706,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f312dd8ce4349721d45b4a25ae6ed5cf65a48dcf"
+    },
+    {
+      "path": "googleapis/src/google.iam.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74145984e51d5acb4e3374b29a538d1a9ede9a0a",
+      "size": 31266,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/74145984e51d5acb4e3374b29a538d1a9ede9a0a"
+    },
+    {
+      "path": "googleapis/src/google.longrunning.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd6a30aaaa4aa2757aa43a246f32cd0f45dd1f83",
+      "size": 17173,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cd6a30aaaa4aa2757aa43a246f32cd0f45dd1f83"
+    },
+    {
+      "path": "googleapis/src/google.protobuf.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "googleapis/src/google.pubsub.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a0b724f51a53c960e18466ce3fbaeab0b479d5c",
+      "size": 178220,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8a0b724f51a53c960e18466ce3fbaeab0b479d5c"
+    },
+    {
+      "path": "googleapis/src/google.r#type.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "993833f05c49218d9c3a11460e8f2708d0485cfd",
+      "size": 3559,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/993833f05c49218d9c3a11460e8f2708d0485cfd"
+    },
+    {
+      "path": "googleapis/src/google.rpc.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae89e92c637c33a195be4d363818ee7a83ded512",
+      "size": 1288,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ae89e92c637c33a195be4d363818ee7a83ded512"
+    },
+    {
+      "path": "googleapis/src/google.spanner.admin.database.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63d4dd7845166330d65a6e738cfdb1db217954f3",
+      "size": 139462,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/63d4dd7845166330d65a6e738cfdb1db217954f3"
+    },
+    {
+      "path": "googleapis/src/google.spanner.admin.instance.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "845a5651fead01cfcbc41a9e651b241b897300f7",
+      "size": 134059,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/845a5651fead01cfcbc41a9e651b241b897300f7"
+    },
+    {
+      "path": "googleapis/src/google.spanner.v1.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48462659306ce4796ccf2a070d1b328079239d4b",
+      "size": 164657,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/48462659306ce4796ccf2a070d1b328079239d4b"
+    },
+    {
+      "path": "googleapis/src/google.storage.v2.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e0d09dab6e30e7e023a287e502768d81c558248",
+      "size": 167064,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2e0d09dab6e30e7e023a287e502768d81c558248"
+    },
+    {
+      "path": "googleapis/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bcfc0b07cbd35dd72ecec851083c7803c11b5cb",
+      "size": 1738,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7bcfc0b07cbd35dd72ecec851083c7803c11b5cb"
+    },
+    {
+      "path": "kms",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a4373c817fb13249326327380563d0c4ea6a8113",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/a4373c817fb13249326327380563d0c4ea6a8113"
+    },
+    {
+      "path": "kms/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f67fd803fd7ba55d5ef468e155d1767dcf6bf3e",
+      "size": 1548,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/9f67fd803fd7ba55d5ef468e155d1767dcf6bf3e"
+    },
+    {
+      "path": "kms/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "kms/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "082e763026d3b2363bc6d1765cb35543ecfa2c89",
+      "size": 4970,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/082e763026d3b2363bc6d1765cb35543ecfa2c89"
+    },
+    {
+      "path": "kms/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5705e39168e649b442ffcb8bd453c1d1a6ac65d8",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/5705e39168e649b442ffcb8bd453c1d1a6ac65d8"
+    },
+    {
+      "path": "kms/src/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bb763a5eb9758ba058a6108cdd7a35f47231289",
+      "size": 9298,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2bb763a5eb9758ba058a6108cdd7a35f47231289"
+    },
+    {
+      "path": "kms/src/grpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a6b7d0b9aae041f3f36a7d8131c20c3763b52cb",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/3a6b7d0b9aae041f3f36a7d8131c20c3763b52cb"
+    },
+    {
+      "path": "kms/src/grpc/apiv1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28b1dc002c5c81a38649b4c9f13a54c7f0d2f470",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/28b1dc002c5c81a38649b4c9f13a54c7f0d2f470"
+    },
+    {
+      "path": "kms/src/grpc/apiv1/conn_pool.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c5e6a8e7607485eff0e02600e5f48a916f15338",
+      "size": 1121,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8c5e6a8e7607485eff0e02600e5f48a916f15338"
+    },
+    {
+      "path": "kms/src/grpc/apiv1/kms_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55b56e4847c8f6e96cb774c88de88aa599b885bc",
+      "size": 14522,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/55b56e4847c8f6e96cb774c88de88aa599b885bc"
+    },
+    {
+      "path": "kms/src/grpc/apiv1/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9f9173802b2b8762f41b199ac7ce19532ce552a",
+      "size": 39,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e9f9173802b2b8762f41b199ac7ce19532ce552a"
+    },
+    {
+      "path": "kms/src/grpc/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe40023cb780f150840d1412ce787c7b42c09ae1",
+      "size": 60,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fe40023cb780f150840d1412ce787c7b42c09ae1"
+    },
+    {
+      "path": "kms/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61dd11c841c5e46eee8a8d9f4b7befc44eab1fba",
+      "size": 3708,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/61dd11c841c5e46eee8a8d9f4b7befc44eab1fba"
+    },
+    {
+      "path": "pubsub",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25a1a6bf6c71095321a7db7676c5e86b605fccf3",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/25a1a6bf6c71095321a7db7676c5e86b605fccf3"
+    },
+    {
+      "path": "pubsub/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a4aeb918c836e8a14b0391372c4c88cc69eab6a",
+      "size": 1688,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1a4aeb918c836e8a14b0391372c4c88cc69eab6a"
+    },
+    {
+      "path": "pubsub/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "pubsub/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6cd023808be4c3bf92d41d7d09f07ba8655ce84",
+      "size": 5936,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b6cd023808be4c3bf92d41d7d09f07ba8655ce84"
+    },
+    {
+      "path": "pubsub/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b34afc924f1b1338309ea796c881e2a23b3c430",
+      "size": 205,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/9b34afc924f1b1338309ea796c881e2a23b3c430"
+    },
+    {
+      "path": "pubsub/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e7c7962c7e50e15ffdc454b53ec464aff129dcc7",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/e7c7962c7e50e15ffdc454b53ec464aff129dcc7"
+    },
+    {
+      "path": "pubsub/src/apiv1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "485113dbb8a3c74e7c9e82c1ebb72f68e89105c4",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/485113dbb8a3c74e7c9e82c1ebb72f68e89105c4"
+    },
+    {
+      "path": "pubsub/src/apiv1/conn_pool.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e824f6c50594a7802906806fc98d32da8bd38400",
+      "size": 1236,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e824f6c50594a7802906806fc98d32da8bd38400"
+    },
+    {
+      "path": "pubsub/src/apiv1/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd3c20559ead943a0dddb8d1e55151d8f5215f4b",
+      "size": 484,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fd3c20559ead943a0dddb8d1e55151d8f5215f4b"
+    },
+    {
+      "path": "pubsub/src/apiv1/publisher_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8837135cefda9184c0b582b4337723149d5f0fd1",
+      "size": 9595,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8837135cefda9184c0b582b4337723149d5f0fd1"
+    },
+    {
+      "path": "pubsub/src/apiv1/schema_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b755475c15207f4157f4d1649c0b6a9e76152c8",
+      "size": 4576,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4b755475c15207f4157f4d1649c0b6a9e76152c8"
+    },
+    {
+      "path": "pubsub/src/apiv1/subscriber_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82b53846309224304b97b85d8da49da7ca404f11",
+      "size": 19712,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/82b53846309224304b97b85d8da49da7ca404f11"
+    },
+    {
+      "path": "pubsub/src/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e97a5160c110ad9b72f2d61afc398b6d85ac5106",
+      "size": 21780,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e97a5160c110ad9b72f2d61afc398b6d85ac5106"
+    },
+    {
+      "path": "pubsub/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbaee12a0ea2aa3fdd2ef3223edd8a3d09c0632c",
+      "size": 6780,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cbaee12a0ea2aa3fdd2ef3223edd8a3d09c0632c"
+    },
+    {
+      "path": "pubsub/src/publisher.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "897cd87a56c29a4cc0c182347ca49d1e8a177f2f",
+      "size": 13975,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/897cd87a56c29a4cc0c182347ca49d1e8a177f2f"
+    },
+    {
+      "path": "pubsub/src/subscriber.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05a3ba7aafbb2272489a4771fc3641e4787d2c4f",
+      "size": 12881,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/05a3ba7aafbb2272489a4771fc3641e4787d2c4f"
+    },
+    {
+      "path": "pubsub/src/subscription.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98bfc2d9df2ad2bf2c63d75e27f1207634d98df1",
+      "size": 39352,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/98bfc2d9df2ad2bf2c63d75e27f1207634d98df1"
+    },
+    {
+      "path": "pubsub/src/topic.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c997d926698d39d64931d8e51176a97af5d4213",
+      "size": 9832,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4c997d926698d39d64931d8e51176a97af5d4213"
+    },
+    {
+      "path": "pubsub/src/util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "304be40b06ae2cf934a2dc2a92f34b69b03667e4",
+      "size": 187,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/304be40b06ae2cf934a2dc2a92f34b69b03667e4"
+    },
+    {
+      "path": "rustfmt.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a74285395b423b9889f419861ce0edbb6601038a",
+      "size": 34,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a74285395b423b9889f419861ce0edbb6601038a"
+    },
+    {
+      "path": "spanner-derive",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50db6ea7c205f224e36be75c7947f03f007815ac",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/50db6ea7c205f224e36be75c7947f03f007815ac"
+    },
+    {
+      "path": "spanner-derive/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5354926011d0f1c0b635ff55fd9885afd04bec3",
+      "size": 847,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d5354926011d0f1c0b635ff55fd9885afd04bec3"
+    },
+    {
+      "path": "spanner-derive/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "spanner-derive/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b760a4db84a917e17e22ddd6ea126205bba440b",
+      "size": 4211,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4b760a4db84a917e17e22ddd6ea126205bba440b"
+    },
+    {
+      "path": "spanner-derive/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be7fed22ad24a284b4edeb60464ddfea50b5b5fa",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/be7fed22ad24a284b4edeb60464ddfea50b5b5fa"
+    },
+    {
+      "path": "spanner-derive/src/column.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f54eda2cd1cf24956bfc6a6b911318557684a63b",
+      "size": 1977,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f54eda2cd1cf24956bfc6a6b911318557684a63b"
+    },
+    {
+      "path": "spanner-derive/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25d5d9f2048a141ccd9746fcfe8bcdf44ede8820",
+      "size": 6609,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/25d5d9f2048a141ccd9746fcfe8bcdf44ede8820"
+    },
+    {
+      "path": "spanner-derive/src/query.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6c4801404f1d91b15281bfc46880dfa5925953a",
+      "size": 1181,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b6c4801404f1d91b15281bfc46880dfa5925953a"
+    },
+    {
+      "path": "spanner-derive/src/symbol.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a266017c6ebda75dc9d14ed8e49910301660a1e",
+      "size": 895,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5a266017c6ebda75dc9d14ed8e49910301660a1e"
+    },
+    {
+      "path": "spanner-derive/src/table.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb625fe860d8afdaf63fa6d033bb319906a575a6",
+      "size": 1476,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cb625fe860d8afdaf63fa6d033bb319906a575a6"
+    },
+    {
+      "path": "spanner-derive/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c931813d1911b1c50bdd7224361623dc88fb3b4",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/2c931813d1911b1c50bdd7224361623dc88fb3b4"
+    },
+    {
+      "path": "spanner-derive/tests/test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c1d5a3d5283b2b9455316fbed3eaf5a593b6b59",
+      "size": 6615,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1c1d5a3d5283b2b9455316fbed3eaf5a593b6b59"
+    },
+    {
+      "path": "spanner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0010df03349f038dba4c554e0da032e2a4554191",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/0010df03349f038dba4c554e0da032e2a4554191"
+    },
+    {
+      "path": "spanner/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1528e91c697c476af1e7a57240757074d18d0a2",
+      "size": 2093,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f1528e91c697c476af1e7a57240757074d18d0a2"
+    },
+    {
+      "path": "spanner/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "spanner/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44d10f3761d774013f33459ffcb3681c41683816",
+      "size": 2854,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/44d10f3761d774013f33459ffcb3681c41683816"
+    },
+    {
+      "path": "spanner/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "568c0d3230d35c9de22f33c61d50da04f0d9af5f",
+      "size": 1605,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/568c0d3230d35c9de22f33c61d50da04f0d9af5f"
+    },
+    {
+      "path": "spanner/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d873212e68281ef6f30de065fd875b1c9133a7ff",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d873212e68281ef6f30de065fd875b1c9133a7ff"
+    },
+    {
+      "path": "spanner/src/admin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3bb93cabbdf81d47f6728db5ae4de4ab8239862d",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/3bb93cabbdf81d47f6728db5ae4de4ab8239862d"
+    },
+    {
+      "path": "spanner/src/admin/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "038878999cd1370c8beaa1c91fbe0faa6ebd360f",
+      "size": 1742,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/038878999cd1370c8beaa1c91fbe0faa6ebd360f"
+    },
+    {
+      "path": "spanner/src/admin/database",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3340972932ebfea9134ef1d135c566e42ff8fa09",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/3340972932ebfea9134ef1d135c566e42ff8fa09"
+    },
+    {
+      "path": "spanner/src/admin/database/database_admin_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b98716cfe277c55f2d1d580edca29a117ec4ffad",
+      "size": 20170,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b98716cfe277c55f2d1d580edca29a117ec4ffad"
+    },
+    {
+      "path": "spanner/src/admin/database/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d344a09560d305e42c7cbeebb3dff31582f8ae5",
+      "size": 5019,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2d344a09560d305e42c7cbeebb3dff31582f8ae5"
+    },
+    {
+      "path": "spanner/src/admin/instance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c1463f154d29c0568dd0dd0b20cf2c67b060c02",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/2c1463f154d29c0568dd0dd0b20cf2c67b060c02"
+    },
+    {
+      "path": "spanner/src/admin/instance/instance_admin_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c161d66aaf87879a075889b4181bf941943447",
+      "size": 13758,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/98c161d66aaf87879a075889b4181bf941943447"
+    },
+    {
+      "path": "spanner/src/admin/instance/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "778dc4f5e8173dd4724316b9503a413b1862f409",
+      "size": 5449,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/778dc4f5e8173dd4724316b9503a413b1862f409"
+    },
+    {
+      "path": "spanner/src/admin/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f44ec19e2de228d2a712eca7e4851cefc7c4a20",
+      "size": 2929,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/1f44ec19e2de228d2a712eca7e4851cefc7c4a20"
+    },
+    {
+      "path": "spanner/src/apiv1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "65a5707ad63149927c74b88573febfbe2d773dcd",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/65a5707ad63149927c74b88573febfbe2d773dcd"
+    },
+    {
+      "path": "spanner/src/apiv1/conn_pool.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7666a7775cab56ae63e8b91f31e615e9ad6c4027",
+      "size": 1108,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7666a7775cab56ae63e8b91f31e615e9ad6c4027"
+    },
+    {
+      "path": "spanner/src/apiv1/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874b9bbca8464fd10f45ff07e2a69a3855c56c52",
+      "size": 20902,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/874b9bbca8464fd10f45ff07e2a69a3855c56c52"
+    },
+    {
+      "path": "spanner/src/apiv1/spanner_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f35013d489ca4779add1fa433bb786407262506",
+      "size": 24851,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/3f35013d489ca4779add1fa433bb786407262506"
+    },
+    {
+      "path": "spanner/src/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "280a83a517439b31d16431cb757be493f87eec18",
+      "size": 28594,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/280a83a517439b31d16431cb757be493f87eec18"
+    },
+    {
+      "path": "spanner/src/key.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "653258c8cba063caf7b84c721ba955362dc6952a",
+      "size": 12321,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/653258c8cba063caf7b84c721ba955362dc6952a"
+    },
+    {
+      "path": "spanner/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a0bf03c8bc57ca264e735fee386eb64b8fe71d4",
+      "size": 25715,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5a0bf03c8bc57ca264e735fee386eb64b8fe71d4"
+    },
+    {
+      "path": "spanner/src/metrics.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5dac6ba342751a5cadcc7a75eb8e8963ca51d8da",
+      "size": 18854,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5dac6ba342751a5cadcc7a75eb8e8963ca51d8da"
+    },
+    {
+      "path": "spanner/src/mutation.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38ff7b16ac0a8aacb4625b5589543ff910e077b1",
+      "size": 13098,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/38ff7b16ac0a8aacb4625b5589543ff910e077b1"
+    },
+    {
+      "path": "spanner/src/reader.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9694c4754e4e972380c25856003d620d03fcf35c",
+      "size": 33830,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/9694c4754e4e972380c25856003d620d03fcf35c"
+    },
+    {
+      "path": "spanner/src/retry.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "709397d1280ea655c3977657d76c0520c7ac7899",
+      "size": 6123,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/709397d1280ea655c3977657d76c0520c7ac7899"
+    },
+    {
+      "path": "spanner/src/row.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da5caf406cc023d177dd081c4e2e3960625e3696",
+      "size": 17634,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/da5caf406cc023d177dd081c4e2e3960625e3696"
+    },
+    {
+      "path": "spanner/src/session.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea9ac2d441877a4055153b21e88bdbe81e628d4",
+      "size": 44629,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4ea9ac2d441877a4055153b21e88bdbe81e628d4"
+    },
+    {
+      "path": "spanner/src/statement.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a07ee1bbc68e8ceff8adf5063e638bf98ae65c38",
+      "size": 8274,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a07ee1bbc68e8ceff8adf5063e638bf98ae65c38"
+    },
+    {
+      "path": "spanner/src/transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45ebec60555cd0f44903504ffe9072508903856d",
+      "size": 10215,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/45ebec60555cd0f44903504ffe9072508903856d"
+    },
+    {
+      "path": "spanner/src/transaction_ro.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df237a31edecb6c870ed2b86c62cc41a28d66c8a",
+      "size": 12794,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/df237a31edecb6c870ed2b86c62cc41a28d66c8a"
+    },
+    {
+      "path": "spanner/src/transaction_rw.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd6757d9f4e4a4f4c286332e76350753ff81b619",
+      "size": 15836,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fd6757d9f4e4a4f4c286332e76350753ff81b619"
+    },
+    {
+      "path": "spanner/src/value.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3ce60fd3812fa6b8ae7a850a32891a9149fc988",
+      "size": 2912,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a3ce60fd3812fa6b8ae7a850a32891a9149fc988"
+    },
+    {
+      "path": "spanner/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b526bd3602fc05ddf7563c083f73333b49c24b51",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/b526bd3602fc05ddf7563c083f73333b49c24b51"
+    },
+    {
+      "path": "spanner/tests/change_stream_test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63b06d98eba34acbbf76eee543c2b3d17e75cd32",
+      "size": 10075,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/63b06d98eba34acbbf76eee543c2b3d17e75cd32"
+    },
+    {
+      "path": "spanner/tests/client_test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fd125344db696e90010537d23752ae338bcc82d",
+      "size": 8490,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2fd125344db696e90010537d23752ae338bcc82d"
+    },
+    {
+      "path": "spanner/tests/common.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a59778f65e176351590b728a0997ad56aab6ee5b",
+      "size": 11257,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a59778f65e176351590b728a0997ad56aab6ee5b"
+    },
+    {
+      "path": "spanner/tests/ddl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d903b8a07dc2de66b21fb426f0d6e10c6cb00684",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d903b8a07dc2de66b21fb426f0d6e10c6cb00684"
+    },
+    {
+      "path": "spanner/tests/ddl/schema.sql",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e167659cda32694bb4a5e5e0d9cac8e889283944",
+      "size": 1663,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/e167659cda32694bb4a5e5e0d9cac8e889283944"
+    },
+    {
+      "path": "spanner/tests/transaction_ro_test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c94e83568f07044e93ad3272ce4dda1050f79cd8",
+      "size": 18576,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c94e83568f07044e93ad3272ce4dda1050f79cd8"
+    },
+    {
+      "path": "spanner/tests/transaction_rw_test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb0c7616f4e17c9b4cb8e77074e52ff8b55a82a2",
+      "size": 5860,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fb0c7616f4e17c9b4cb8e77074e52ff8b55a82a2"
+    },
+    {
+      "path": "storage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53f43aefe0c0d06a4c896e071d6fee93508aad61",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/53f43aefe0c0d06a4c896e071d6fee93508aad61"
+    },
+    {
+      "path": "storage/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c605ff2abdbba1f3c3e7a290044d7e7765d3bd47",
+      "size": 2262,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c605ff2abdbba1f3c3e7a290044d7e7765d3bd47"
+    },
+    {
+      "path": "storage/LICENSE",
+      "mode": "120000",
+      "type": "blob",
+      "sha": "ea5b60640b01f74e295037aa8a6b7d4ea278a739",
+      "size": 10,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5b60640b01f74e295037aa8a6b7d4ea278a739"
+    },
+    {
+      "path": "storage/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "604c7f489b6c74f424b755a604146075c4d12be4",
+      "size": 4677,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/604c7f489b6c74f424b755a604146075c4d12be4"
+    },
+    {
+      "path": "storage/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a19af1d9e826e76218b0a6b0ceea1b479b34bd9f",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/a19af1d9e826e76218b0a6b0ceea1b479b34bd9f"
+    },
+    {
+      "path": "storage/src/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d06eb1223e7ccdc1dd2f711c57ad8e44e864e60",
+      "size": 14959,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/9d06eb1223e7ccdc1dd2f711c57ad8e44e864e60"
+    },
+    {
+      "path": "storage/src/http",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2b1c1f7890a02bdc3226558ade34369688e2a533",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/2b1c1f7890a02bdc3226558ade34369688e2a533"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d761828fbbd803a1dfc7c41cbbc8cd1e392382f1",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d761828fbbd803a1dfc7c41cbbc8cd1e392382f1"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "986c8ef3060169a329373a0ba92d0d9a9fb1501c",
+      "size": 700,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/986c8ef3060169a329373a0ba92d0d9a9fb1501c"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd113faee6b1ba64644153da7bd159470ee9f5f0",
+      "size": 691,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cd113faee6b1ba64644153da7bd159470ee9f5f0"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95385a3322a35174af1908856c9a9281928d6e9",
+      "size": 984,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f95385a3322a35174af1908856c9a9281928d6e9"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2122ae41a673bbe62505a507309c6008d85e6c0e",
+      "size": 875,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2122ae41a673bbe62505a507309c6008d85e6c0e"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7bbbd878d07c8a8eb7da0e429329b576b37b03",
+      "size": 2582,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2c7bbbd878d07c8a8eb7da0e429329b576b37b03"
+    },
+    {
+      "path": "storage/src/http/bucket_access_controls/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b08256915a87b7f3d3ac475a175a4838746d23d9",
+      "size": 808,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b08256915a87b7f3d3ac475a175a4838746d23d9"
+    },
+    {
+      "path": "storage/src/http/buckets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6cf362cebda49948caaee93426b6ddf595c15676",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/6cf362cebda49948caaee93426b6ddf595c15676"
+    },
+    {
+      "path": "storage/src/http/buckets/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46a3060b4add5cdfa712f9eea778a7646eeed965",
+      "size": 1071,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/46a3060b4add5cdfa712f9eea778a7646eeed965"
+    },
+    {
+      "path": "storage/src/http/buckets/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a98377b4080fdd7db999c379f9f6e0741d61e9a9",
+      "size": 1000,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a98377b4080fdd7db999c379f9f6e0741d61e9a9"
+    },
+    {
+      "path": "storage/src/http/buckets/get_iam_policy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a81eb621ae027e43e279536bde18dd8be5afd728",
+      "size": 1655,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a81eb621ae027e43e279536bde18dd8be5afd728"
+    },
+    {
+      "path": "storage/src/http/buckets/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea66b17d26b273308e9caf2d07c7662603e0fcbb",
+      "size": 5263,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea66b17d26b273308e9caf2d07c7662603e0fcbb"
+    },
+    {
+      "path": "storage/src/http/buckets/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29fc7094f60cf4926b352c4718f39b8ae264fbca",
+      "size": 1685,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/29fc7094f60cf4926b352c4718f39b8ae264fbca"
+    },
+    {
+      "path": "storage/src/http/buckets/list_channels.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b68f9829db67b7ffa6ff55d503fbd5b27cc04e13",
+      "size": 883,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b68f9829db67b7ffa6ff55d503fbd5b27cc04e13"
+    },
+    {
+      "path": "storage/src/http/buckets/lock_retention_policy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b385d58a1df21e6c9289d68d06470f4b96ab79f6",
+      "size": 811,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b385d58a1df21e6c9289d68d06470f4b96ab79f6"
+    },
+    {
+      "path": "storage/src/http/buckets/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36d2e495d3cc3cf320c6c3c29ddad91c5d45e992",
+      "size": 24062,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/36d2e495d3cc3cf320c6c3c29ddad91c5d45e992"
+    },
+    {
+      "path": "storage/src/http/buckets/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49211f035a27da62d470cf2cca842d8761356401",
+      "size": 5333,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/49211f035a27da62d470cf2cca842d8761356401"
+    },
+    {
+      "path": "storage/src/http/buckets/set_iam_policy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7467c18b7ed9b619058a5f643e89f01e178de744",
+      "size": 1011,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7467c18b7ed9b619058a5f643e89f01e178de744"
+    },
+    {
+      "path": "storage/src/http/buckets/test_iam_permissions.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d58c65e0088598d2f93d62e9f8dc188f610e4193",
+      "size": 1454,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d58c65e0088598d2f93d62e9f8dc188f610e4193"
+    },
+    {
+      "path": "storage/src/http/channels",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4ed021adabd7767333845a0592ec19e1041413a",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/d4ed021adabd7767333845a0592ec19e1041413a"
+    },
+    {
+      "path": "storage/src/http/channels/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8272708cbc3b58eb28fde95c316212e345bb14f2",
+      "size": 2012,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8272708cbc3b58eb28fde95c316212e345bb14f2"
+    },
+    {
+      "path": "storage/src/http/channels/stop.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f478bac2f8d6304d79a089fb154611a81447c95b",
+      "size": 587,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f478bac2f8d6304d79a089fb154611a81447c95b"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "30c5b8c33a5d8c0271c687755c708d3d7d030264",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/30c5b8c33a5d8c0271c687755c708d3d7d030264"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62cd4be337b9f5d35b934399d1373852dbaed374",
+      "size": 942,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/62cd4be337b9f5d35b934399d1373852dbaed374"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fabac4dbcff579e73ededd1b0ab729d1feffafaf",
+      "size": 930,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fabac4dbcff579e73ededd1b0ab729d1feffafaf"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f63b3570fcdc4f0756b8b7fec396d25575a2475e",
+      "size": 859,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f63b3570fcdc4f0756b8b7fec396d25575a2475e"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3615ec3f42cd07c50379745737fd2132fbc221be",
+      "size": 1293,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/3615ec3f42cd07c50379745737fd2132fbc221be"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7266f6d143d3c263097437e5322793cf88634756",
+      "size": 74,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7266f6d143d3c263097437e5322793cf88634756"
+    },
+    {
+      "path": "storage/src/http/default_object_access_controls/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3a158cdeb14ae64fad4016c93766a7b1de60aa1",
+      "size": 1150,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b3a158cdeb14ae64fad4016c93766a7b1de60aa1"
+    },
+    {
+      "path": "storage/src/http/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e9e818b1bb2d3b7d504947fce6f80d369606ec8",
+      "size": 2739,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4e9e818b1bb2d3b7d504947fce6f80d369606ec8"
+    },
+    {
+      "path": "storage/src/http/hmac_keys",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b9e737c8b6b9aa2550d62780ef535b0fa05def97",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/b9e737c8b6b9aa2550d62780ef535b0fa05def97"
+    },
+    {
+      "path": "storage/src/http/hmac_keys/create.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da58420fb6de62cc1199643145fc6d39894ff4ee",
+      "size": 1252,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/da58420fb6de62cc1199643145fc6d39894ff4ee"
+    },
+    {
+      "path": "storage/src/http/hmac_keys/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c590537d542e17e08d9085665cfe5eb8d0e22759",
+      "size": 744,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c590537d542e17e08d9085665cfe5eb8d0e22759"
+    },
+    {
+      "path": "storage/src/http/hmac_keys/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c70ecd7c75c8733bdefd52d9f46e579276bd45b8",
+      "size": 736,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c70ecd7c75c8733bdefd52d9f46e579276bd45b8"
+    },
+    {
+      "path": "storage/src/http/hmac_keys/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b74e3203f0853cf0b274665618b6fff34b035ec",
+      "size": 1517,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6b74e3203f0853cf0b274665618b6fff34b035ec"
+    },
+    {
+      "path": "storage/src/http/hmac_keys/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fe036cde46290a3a22772db20f204e77d31f3bb",
+      "size": 1179,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/6fe036cde46290a3a22772db20f204e77d31f3bb"
+    },
+    {
+      "path": "storage/src/http/hmac_keys/update.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf5f10fcde32497ee19b5a9e7a7189ae28585062",
+      "size": 898,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/bf5f10fcde32497ee19b5a9e7a7189ae28585062"
+    },
+    {
+      "path": "storage/src/http/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5821eaa4e047629b7d0e14bc519a898dfb62c9f7",
+      "size": 4023,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/5821eaa4e047629b7d0e14bc519a898dfb62c9f7"
+    },
+    {
+      "path": "storage/src/http/notifications",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7bb8ea2ed1a86dc5f6a9f26ff0e09de61f8911e",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/a7bb8ea2ed1a86dc5f6a9f26ff0e09de61f8911e"
+    },
+    {
+      "path": "storage/src/http/notifications/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4039b89aeb7cf38fa56f0870b1889c9206f6e4c7",
+      "size": 745,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/4039b89aeb7cf38fa56f0870b1889c9206f6e4c7"
+    },
+    {
+      "path": "storage/src/http/notifications/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca1e4cd0560fbf4fd3db3b601769ef8eef7c4e49",
+      "size": 717,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ca1e4cd0560fbf4fd3db3b601769ef8eef7c4e49"
+    },
+    {
+      "path": "storage/src/http/notifications/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d25a352b6523daa162d0a2a7d3c072eec21d8534",
+      "size": 1743,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d25a352b6523daa162d0a2a7d3c072eec21d8534"
+    },
+    {
+      "path": "storage/src/http/notifications/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a19e1f1e5089bad4f026d170530fb0badcfe53d",
+      "size": 926,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/7a19e1f1e5089bad4f026d170530fb0badcfe53d"
+    },
+    {
+      "path": "storage/src/http/notifications/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2885be3111a84d3905e8df56ac17a674a54b917c",
+      "size": 2777,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2885be3111a84d3905e8df56ac17a674a54b917c"
+    },
+    {
+      "path": "storage/src/http/object_access_controls",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5568e6cead353e7400f6197130f254b5365c27bc",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/5568e6cead353e7400f6197130f254b5365c27bc"
+    },
+    {
+      "path": "storage/src/http/object_access_controls/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc051070926f59a977b43c5701b98c4ed22af31e",
+      "size": 1169,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cc051070926f59a977b43c5701b98c4ed22af31e"
+    },
+    {
+      "path": "storage/src/http/object_access_controls/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3883e865ed178aca8b0c207a8b0c99fd4b439ac7",
+      "size": 1160,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/3883e865ed178aca8b0c207a8b0c99fd4b439ac7"
+    },
+    {
+      "path": "storage/src/http/object_access_controls/insert.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73696b6d8207a6f08390a1200d0e1d1d00b132ba",
+      "size": 1141,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/73696b6d8207a6f08390a1200d0e1d1d00b132ba"
+    },
+    {
+      "path": "storage/src/http/object_access_controls/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8867a4d1fe406b548d132b5e7ca48f3389885ca4",
+      "size": 1096,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/8867a4d1fe406b548d132b5e7ca48f3389885ca4"
+    },
+    {
+      "path": "storage/src/http/object_access_controls/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03358b501165e16f3632c65f27ba1f1b5a53fae8",
+      "size": 2566,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/03358b501165e16f3632c65f27ba1f1b5a53fae8"
+    },
+    {
+      "path": "storage/src/http/object_access_controls/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea5ad3ba7ea6dafd579bc2294744b17812343757",
+      "size": 1375,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/ea5ad3ba7ea6dafd579bc2294744b17812343757"
+    },
+    {
+      "path": "storage/src/http/objects",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dec1a9850a3033df9dc9f221a81b63893f1cd72f",
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/trees/dec1a9850a3033df9dc9f221a81b63893f1cd72f"
+    },
+    {
+      "path": "storage/src/http/objects/compose.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e1ba7f70c2e3ece8ecc56c61177232bf88f02ac",
+      "size": 2601,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/2e1ba7f70c2e3ece8ecc56c61177232bf88f02ac"
+    },
+    {
+      "path": "storage/src/http/objects/copy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aec8a1e718c805627089b0cb1cbcd0e9f16ca55",
+      "size": 3877,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/0aec8a1e718c805627089b0cb1cbcd0e9f16ca55"
+    },
+    {
+      "path": "storage/src/http/objects/delete.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f919bb8445293abc03f106c4082aad787f4a5ce5",
+      "size": 1811,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f919bb8445293abc03f106c4082aad787f4a5ce5"
+    },
+    {
+      "path": "storage/src/http/objects/download.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deb623c9c4d3bc99ed684c7495ddf4fe74e431c3",
+      "size": 1269,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/deb623c9c4d3bc99ed684c7495ddf4fe74e431c3"
+    },
+    {
+      "path": "storage/src/http/objects/get.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0b45a37650c5f3e901f658b5f19c92ba6d0ee5a",
+      "size": 2265,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/d0b45a37650c5f3e901f658b5f19c92ba6d0ee5a"
+    },
+    {
+      "path": "storage/src/http/objects/list.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf9ba6c33edffe438888017b9638a80fb93a40fe",
+      "size": 4508,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/bf9ba6c33edffe438888017b9638a80fb93a40fe"
+    },
+    {
+      "path": "storage/src/http/objects/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8c3c448d64fc77731080a084e4d4943c47e2024",
+      "size": 13539,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/a8c3c448d64fc77731080a084e4d4943c47e2024"
+    },
+    {
+      "path": "storage/src/http/objects/move.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "438a94cae778922ee4fcf8413fd7b59c87de8607",
+      "size": 5096,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/438a94cae778922ee4fcf8413fd7b59c87de8607"
+    },
+    {
+      "path": "storage/src/http/objects/patch.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1efbd667f9a68f168b1cebc47bfde518b03fede",
+      "size": 2589,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/f1efbd667f9a68f168b1cebc47bfde518b03fede"
+    },
+    {
+      "path": "storage/src/http/objects/rewrite.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "953a0738f5407bca599daba3ee7333247985de98",
+      "size": 6906,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/953a0738f5407bca599daba3ee7333247985de98"
+    },
+    {
+      "path": "storage/src/http/objects/upload.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf74b117d908c664553b12a32a26346f3e65b9ef",
+      "size": 6250,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/cf74b117d908c664553b12a32a26346f3e65b9ef"
+    },
+    {
+      "path": "storage/src/http/objects/watch_all.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02ddb39188e89f8c8c53c38e0d2b2caa4f7ae9aa",
+      "size": 2404,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/02ddb39188e89f8c8c53c38e0d2b2caa4f7ae9aa"
+    },
+    {
+      "path": "storage/src/http/resumable_upload_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8201a38d32d97431ce0effa848a1cd5a6b85a48",
+      "size": 5644,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/c8201a38d32d97431ce0effa848a1cd5a6b85a48"
+    },
+    {
+      "path": "storage/src/http/service_account_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "538bff75f25a9e2dad551256b5d4f88895250db5",
+      "size": 4362,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/538bff75f25a9e2dad551256b5d4f88895250db5"
+    },
+    {
+      "path": "storage/src/http/storage_client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b74edfa2759585cd850fc00592fa55abe39a21e0",
+      "size": 96455,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/b74edfa2759585cd850fc00592fa55abe39a21e0"
+    },
+    {
+      "path": "storage/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcb83ab138278f4908dc06582a88ba1e175f29cd",
+      "size": 3844,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/fcb83ab138278f4908dc06582a88ba1e175f29cd"
+    },
+    {
+      "path": "storage/src/sign.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3509cd2e077fc84fadf17dd1bcec0059c3a19de4",
+      "size": 13297,
+      "url": "https://api.github.com/repos/yoshidan/google-cloud-rust/git/blobs/3509cd2e077fc84fadf17dd1bcec0059c3a19de4"
+    }
+  ],
+  "truncated": false
+}

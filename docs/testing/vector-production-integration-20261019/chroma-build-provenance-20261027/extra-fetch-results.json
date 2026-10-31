@@ -1,0 +1,77 @@
+[
+  {
+    "time_utc": "2026-10-27T09:29:18.564395+00:00",
+    "url": "https://api.github.com/repos/chroma-core/chroma/actions/runs/25357632446/artifacts",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "8",
+      "--max-time",
+      "25",
+      "--dump-header",
+      ".tmp\\chroma-build-provenance-20261027\\run-artifacts.json.headers",
+      "--output",
+      ".tmp\\chroma-build-provenance-20261027\\run-artifacts.json",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download}",
+      "https://api.github.com/repos/chroma-core/chroma/actions/runs/25357632446/artifacts"
+    ],
+    "exit": 0,
+    "stdout": "http=200 bytes=46",
+    "stderr": "",
+    "sha256": "cfd00a1615b82ab7c160002bdf84b7ff009ce8da119b4ec0385a7a382e09e7e3"
+  },
+  {
+    "time_utc": "2026-10-27T09:29:19.330056+00:00",
+    "url": "https://api.github.com/repos/chroma-core/chroma/actions/runs/25357632446/attempts/2/logs",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "8",
+      "--max-time",
+      "25",
+      "--dump-header",
+      ".tmp\\chroma-build-provenance-20261027\\run-logs.json.headers",
+      "--output",
+      ".tmp\\chroma-build-provenance-20261027\\run-logs.json",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download}",
+      "https://api.github.com/repos/chroma-core/chroma/actions/runs/25357632446/attempts/2/logs"
+    ],
+    "exit": 0,
+    "stdout": "http=403 bytes=188",
+    "stderr": "",
+    "sha256": "e2f3111ff69b383afba00d16e40de66bdcc571cd338d392acf172caf02fc6aad"
+  },
+  {
+    "time_utc": "2026-10-27T09:29:20.068129+00:00",
+    "url": "https://api.github.com/repos/chroma-core/chroma/contents/.github/actions/rust/action.yml?ref=11f3c7435e71024aa0a2b53710a28d3289d922d1",
+    "command": [
+      "curl.exe",
+      "--silent",
+      "--show-error",
+      "--location",
+      "--connect-timeout",
+      "8",
+      "--max-time",
+      "25",
+      "--dump-header",
+      ".tmp\\chroma-build-provenance-20261027\\rust-action.json.headers",
+      "--output",
+      ".tmp\\chroma-build-provenance-20261027\\rust-action.json",
+      "--write-out",
+      "http=%{http_code} bytes=%{size_download}",
+      "https://api.github.com/repos/chroma-core/chroma/contents/.github/actions/rust/action.yml?ref=11f3c7435e71024aa0a2b53710a28d3289d922d1"
+    ],
+    "exit": 0,
+    "stdout": "http=404 bytes=141",
+    "stderr": "",
+    "sha256": "0f74c8b9c1f03a2b9d2da1ebe4f7c027ecb616202d539401c259562157c5a216"
+  }
+]

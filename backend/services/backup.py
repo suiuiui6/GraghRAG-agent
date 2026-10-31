@@ -38,9 +38,45 @@ BACKUP_MANIFEST = {
 class BackupManager:
     """tar.gz backup, restore, and verification."""
 
-    def __init__(self, base_dir: Path | None = None):
+    def __init__(self, base_dir: Path | None = None, *, publication=None,
+                 restore_target=None, publication_resolver=None):
+        self.publication = publication
+        self.publication_resolver = publication_resolver
+        self.restore_target = restore_target
         self.base_dir = base_dir or BACKUP_DIR
         self.base_dir.mkdir(parents=True, exist_ok=True)
+
+    def _publication(self):
+        return self.publication_resolver() if self.publication_resolver else self.publication
+
+    def _extract_publication(self, tar_path, backup_id, target):
+        """Extract regular snapshot members into a private directory only."""
+        from services.vector_backup import _path
+        prefix = backup_id + '/publication/'
+        found = set()
+        with tarfile.open(tar_path, 'r:gz') as archive:
+            for member in archive.getmembers():
+                if not member.name.startswith(prefix):
+                    continue
+                relative = member.name[len(prefix):]
+                if not relative:
+                    continue
+                output = _path(target, relative)
+                if relative in found or not (member.isdir() or member.isfile()):
+                    raise ValueError('invalid_backup_archive')
+                found.add(relative)
+                if member.isdir():
+                    output.mkdir(parents=True, exist_ok=True)
+                else:
+                    output.parent.mkdir(parents=True, exist_ok=True)
+                    with archive.extractfile(member) as source, output.open('xb') as dest:
+                        shutil.copyfileobj(source, dest, 65536)
+        if not (target / 'publication.json').is_file():
+            raise ValueError('publication_backup_missing')
+
+    def _is_publication_archive(self, tar_path, backup_id):
+        with tarfile.open(tar_path, 'r:gz') as archive:
+            return f'{backup_id}/publication/publication.json' in archive.getnames()
 
     def _now(self) -> str:
         return datetime.now(timezone.utc).isoformat()
@@ -76,7 +112,8 @@ class BackupManager:
     # ── backup ──────────────────────────────────────────────────────────
 
     def create_backup(self, backup_type: str = "manual") -> BackupResult:
-        bid = f"{backup_type}_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}"
+        publication = self._publication()
+        bid = f"{backup_type}_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}_{uuid4().hex[:8]}"
         backup_dir = self.base_dir / bid
         backup_dir.mkdir(parents=True, exist_ok=True)
 
@@ -85,7 +122,17 @@ class BackupManager:
         dirs_backed_up: list[str] = []
 
         try:
+            if publication is not None:
+                from services.vector_backup import PublicationBackup
+                PublicationBackup(publication).create(backup_dir / 'publication')
+                dirs_backed_up.append('publication')
+                for item in (backup_dir / 'publication').rglob('*'):
+                    if item.is_file():
+                        total_files += 1
+                        total_size += item.stat().st_size
             for name, cfg in BACKUP_MANIFEST.items():
+                if publication is not None and name == 'vectordb':
+                    continue
                 if cfg["strategy"] == "skip":
                     continue
                 p = Path(cfg["path"])
@@ -142,8 +189,13 @@ class BackupManager:
                 manifest.model_dump_json(indent=2), encoding="utf-8")
 
             tar_path = self.base_dir / f"{bid}.tar.gz"
-            with tarfile.open(tar_path, "w:gz") as tar:
-                tar.add(backup_dir, arcname=bid)
+            partial_tar = self.base_dir / f'.{bid}.partial'
+            try:
+                with tarfile.open(partial_tar, "w:gz") as tar:
+                    tar.add(backup_dir, arcname=bid)
+                partial_tar.rename(tar_path)
+            finally:
+                partial_tar.unlink(missing_ok=True)
 
             checksum = hashlib.sha256(tar_path.read_bytes()).hexdigest()[:16]
             manifest.checksum = checksum
@@ -220,6 +272,23 @@ class BackupManager:
             return RestoreResult(status="failed", restored_from=backup_id,
                                 error="Backup not found")
 
+        try:
+            publication = self._publication()
+            managed_archive = self._is_publication_archive(tar_path, backup_id)
+            if publication is not None or managed_archive:
+                if publication is None or self.restore_target is None or not managed_archive:
+                    raise ValueError('isolated_publication_restore_required')
+                from services.vector_backup import PublicationBackup
+                import tempfile
+                with tempfile.TemporaryDirectory(prefix='.restore-extract-', dir=self.base_dir) as temporary:
+                    extracted = Path(temporary)
+                    self._extract_publication(tar_path, backup_id, extracted)
+                    PublicationBackup(publication).restore(extracted, self.restore_target)
+                return RestoreResult(status='completed', restored_from=backup_id)
+        except Exception:  # noqa: BLE001  # Public restore boundary reports validation failure without activating data.
+            return RestoreResult(status='failed', restored_from=backup_id,
+                                 error='Publication restore validation failed')
+
         snapshot_id = f".pre-restore-{uuid4().hex[:8]}"
         snapshot_dir = self.base_dir / snapshot_id
         snapshot_dir.mkdir(parents=True, exist_ok=True)
@@ -279,6 +348,18 @@ class BackupManager:
         try:
             with tarfile.open(tar_path, "r:gz") as tar:
                 names = tar.getnames()
+                if f'{backup_id}/publication/publication.json' in names or self._publication() is not None:
+                    publication = self._publication()
+                    if publication is None:
+                        raise ValueError('publication_runtime_unavailable')
+                    from services.vector_backup import PublicationBackup
+                    import tempfile
+                    with tempfile.TemporaryDirectory(prefix='.verify-extract-', dir=self.base_dir) as temporary:
+                        extracted = Path(temporary)
+                        self._extract_publication(tar_path, backup_id, extracted)
+                        manifest = PublicationBackup(publication).verify(extracted)
+                    return {'backup_id': backup_id, 'valid': True, 'has_manifest': True,
+                            'manifest': manifest, 'file_count': len(names)}
                 has_manifest = f"{backup_id}/manifest.json" in names
                 has_kg = any(f"{backup_id}/kg/" in n for n in names)
 
@@ -335,5 +416,6 @@ _manager: BackupManager | None = None
 def get_backup_manager() -> BackupManager:
     global _manager
     if _manager is None:
-        _manager = BackupManager()
+        from services.document_runtime import get_publication
+        _manager = BackupManager(publication_resolver=get_publication)
     return _manager

@@ -1,0 +1,240 @@
+{
+  "source_before_after_equal": true,
+  "runtime_before_after_equal": true,
+  "source_count": 258,
+  "source_current_mismatch": [],
+  "recomputed_totals": {
+    "covered_lines": 16624,
+    "num_statements": 17802,
+    "covered_branches": 5481,
+    "num_branches": 6086
+  },
+  "totals_equal_report": true,
+  "line_gate": true,
+  "branch_gate": true,
+  "production_count": 120,
+  "missing_production": [],
+  "extra_production": [],
+  "zero_covered_files": [
+    "backend\\middleware\\__init__.py",
+    "backend\\oss_uploader.py",
+    "backend\\scripts\\check_imports.py",
+    "backend\\services\\__init__.py"
+  ],
+  "junit_counts": {
+    "cases": 2201,
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "baseline_count": 2201,
+  "missing_baseline": [],
+  "extra_baseline": [],
+  "collection_raw_equal": true,
+  "collection_counter_equal": true,
+  "collection_unique": true,
+  "commands": [
+    {
+      "name": "collect",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "backend/tests",
+        "backend/research/test_deepseek_scope_pilot.py",
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 35.28100000000268
+    },
+    {
+      "name": "tests",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "run",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261029-r11\\backend.coverage",
+        "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\model_dependency_bootstrap.py",
+        "backend/tests",
+        "backend/research/test_deepseek_scope_pilot.py",
+        "-vv",
+        "-ra",
+        "--tb=short",
+        "--durations=20",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261029-r11\\test-temp",
+        "--junitxml=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261029-r11\\junit.xml"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 580.9529999999941
+    },
+    {
+      "name": "export",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "json",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261029-r11\\backend.coverage",
+        "-o",
+        "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261029-r11\\coverage.json"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 3.2810000000026776
+    }
+  ],
+  "real_case_identities": [
+    {
+      "classname": "tests.test_retrieval_generation_readiness",
+      "name": "test_bm25_real_model_handles_unwrapped_and_missing_chunks",
+      "time": "0.033"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_revision_wire_contract",
+      "time": "0.009"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_catalog_authority_and_owner_filter",
+      "time": "0.177"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data0]",
+      "time": "0.105"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data1]",
+      "time": "0.122"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data2]",
+      "time": "0.126"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data3]",
+      "time": "0.116"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_update_requires_exact_pair[data4]",
+      "time": "0.106"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_http_stale_update_and_cross_owner_are_rejected_before_processing",
+      "time": "0.182"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_authenticated_vector_update_delete_and_reopen",
+      "time": "0.957"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_legacy_deleted_catalog_tombstone_survives_retained_json",
+      "time": "0.091"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_vector_embedding_revision_mismatch_is_unavailable",
+      "time": "0.543"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_real_docx_upload_update_publish_receipt_and_download",
+      "time": "1.434"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_completed_receipt_replay_skips_worker_providers",
+      "time": "0.825"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_background_cas_conflict_is_failed_status_200_with_409_detail",
+      "time": "0.869"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_generation_final_check_discards_changed_scope[delete-404]",
+      "time": "0.679"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_generation_final_check_discards_changed_scope[update-200]",
+      "time": "0.761"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_generation_final_check_discards_changed_scope[revoke-404]",
+      "time": "0.640"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_fresh_process_http_reopen_after_update_and_after_delete",
+      "time": "9.911"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_catalog_storage_corruption_returns_503_not_success_empty",
+      "time": "0.167"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_status_recovers_committed_receipt_when_task_json_lags",
+      "time": "0.848"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_embedding_failure_never_publishes_done",
+      "time": "0.555"
+    },
+    {
+      "classname": "tests.test_vector_http_lifecycle",
+      "name": "test_fixed_local_model_http_upload_update_delete_restart",
+      "time": "44.479"
+    }
+  ],
+  "runtime_count": 36682,
+  "runtime_enumeration_missing": [],
+  "runtime_enumeration_extra": [],
+  "runtime_current_mismatch": [],
+  "runtime_hash_seconds": 9.275193691253662,
+  "metadata_count": 159,
+  "metadata_equal": true,
+  "patched_versions": {
+    "langgraph": "1.2.14",
+    "langgraph-sdk": "0.4.6",
+    "msgpack": "1.2.3"
+  },
+  "audit_pairs_equal": true,
+  "audit_count": 158,
+  "audit_vulnerabilities": 0,
+  "audit_skips": [],
+  "attempt0_preserved": true,
+  "finished_utc": "2026-10-29T08:16:29.201710+00:00",
+  "model_current_hash_mismatch": [],
+  "model_files": 11,
+  "model_revision": "7999e1d3359715c523056ef9478215996d62a620",
+  "git_head": "b1e300f1445c48f9f838bcc0d7b91cb39c1171b2",
+  "git_branch": "codex/safe-snapshot-20261019",
+  "r10_inputs_changed_only": [
+    "backend/pyproject.toml",
+    "backend/requirements.txt",
+    "backend/uv.lock",
+    "docs/design/2026-10-19-vector-production-integration.md",
+    "docs/plans/2026-10-19-vector-production-integration.md"
+  ]
+}

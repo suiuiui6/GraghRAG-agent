@@ -1,0 +1,22 @@
+[
+  {
+    "sha256": "02105d1df940431d92ff91bb536eb65aee8e2ba3a7fc19f21e9e0ee624842c2c",
+    "relative": "Cargo.toml"
+  },
+  {
+    "sha256": "4029ef11d930d910cf4e403134d8f0ade519c144b43eee54fc7ee93cbd880018",
+    "relative": "Cargo.lock"
+  },
+  {
+    "sha256": "4cb550734bd94d0591c8a84b561c654dd58ddc3b0d67464c2ddeb2962a4cd826",
+    "relative": "rust-toolchain.toml"
+  },
+  {
+    "sha256": "eee79631cc3e7ee8acd2d48485be9a811374d7d04426a49f1368e7b260f65dfe",
+    "relative": "src/main.rs"
+  },
+  {
+    "sha256": "0f3c30dc5d983473716fa94c50adef353c650081b9d67014900ca8ca00628c41",
+    "relative": "build.py"
+  }
+]

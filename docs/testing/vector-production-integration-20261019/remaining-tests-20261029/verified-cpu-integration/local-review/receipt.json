@@ -1,0 +1,70 @@
+{
+  "status": "PASS_LOCAL_LANGEXTRACT_WHEEL_INTEGRITY",
+  "source_manifest_sha256": "d49efe7782cfd2becddfe0be7cc8bed09dc81e06c30bba86703c590d108af02f",
+  "source_files": 49,
+  "package_python_modules_byte_identical": 45,
+  "wheel_sha256": "c91f2345b54de57233d70709c3649ac414252a478a6910ed0bfbe5bf9287bc72",
+  "wheel_bytes": 143060,
+  "RECORD_hashed": 51,
+  "RECORD_total": 52,
+  "WHEEL": "Wheel-Version: 1.0\nGenerator: setuptools (84.1.0)\nRoot-Is-Purelib: true\nTag: py3-none-any\n\n",
+  "build_command_exits": [
+    {
+      "label": "venv",
+      "exit": 0
+    },
+    {
+      "label": "pip-version",
+      "exit": 0
+    },
+    {
+      "label": "tool-install",
+      "exit": 0
+    },
+    {
+      "label": "tool-visibility",
+      "exit": 0
+    },
+    {
+      "label": "langextract-build",
+      "exit": 0
+    }
+  ],
+  "author_container_exit": 0,
+  "actual_container_inspection": "historical auto-removed container unavailable; saved command and uid/log receipts only",
+  "tool_visibility": {
+    "before_setuptools_import": {
+      "setuptools": {
+        "version": "84.1.0",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools-84.1.0.dist-info"
+      },
+      "wheel": null,
+      "packaging": null
+    },
+    "after_setuptools_import": {
+      "setuptools": {
+        "version": "84.1.0",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools-84.1.0.dist-info"
+      },
+      "wheel": {
+        "version": "0.46.3",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel-0.46.3.dist-info"
+      },
+      "packaging": {
+        "version": "26.0",
+        "path": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging-26.0.dist-info"
+      }
+    },
+    "module_paths": {
+      "setuptools": "/work/venv/lib/python3.12/site-packages/setuptools/__init__.py",
+      "wheel": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/wheel/__init__.py",
+      "packaging": "/work/venv/lib/python3.12/site-packages/setuptools/_vendor/packaging/__init__.py"
+    },
+    "top_level_wheel_dist_info": []
+  },
+  "limitations": [
+    "no dependency installation or full package imports",
+    "no fresh recompile",
+    "vendored wheel dist-info is not independently installed wheel distribution"
+  ]
+}

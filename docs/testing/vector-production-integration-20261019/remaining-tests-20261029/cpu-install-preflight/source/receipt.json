@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-29T00:39:48.699429+00:00",
+  "lock_sha256": "d1434b9b8b46f3d9c061098e15ddaada44e8d0a2d3dfb55d4db4c425a8f60b36",
+  "artifacts": [
+    {
+      "name": "crcmod",
+      "command": [
+        "curl.exe",
+        "--fail",
+        "--location",
+        "--max-time",
+        "25",
+        "--retry",
+        "0",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-sdist-source-review-20261029\\crcmod-1.7.tar.gz",
+        "https://files.pythonhosted.org/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz"
+      ],
+      "exit": 0,
+      "elapsed": 6.063000000001921,
+      "expected": {
+        "url": "https://files.pythonhosted.org/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz",
+        "hash": "sha256:dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e",
+        "size": 89670,
+        "upload-time": "2010-06-27T14:35:29.538Z"
+      },
+      "actual_sha256": "dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e",
+      "bytes": 89670,
+      "members": 64,
+      "build_files": [
+        {
+          "archive_path": "crcmod-1.7/setup.py",
+          "file": "crcmod-setup.py.txt",
+          "sha256": "129c37991924b5950aa28a5f854cd44a3f5af1d3c92c616897409a05b0fce40b"
+        }
+      ]
+    },
+    {
+      "name": "oss2",
+      "command": [
+        "curl.exe",
+        "--fail",
+        "--location",
+        "--max-time",
+        "25",
+        "--retry",
+        "0",
+        "--output",
+        "D:\\graghRAG-agent\\.tmp\\linux-cpu-sdist-source-review-20261029\\oss2-2.19.1.tar.gz",
+        "https://files.pythonhosted.org/packages/df/b5/f2cb1950dda46ac2284d6c950489fdacd0e743c2d79a347924d3cc44b86f/oss2-2.19.1.tar.gz"
+      ],
+      "exit": 28,
+      "elapsed": 25.04699999999866,
+      "expected": {
+        "url": "https://files.pythonhosted.org/packages/df/b5/f2cb1950dda46ac2284d6c950489fdacd0e743c2d79a347924d3cc44b86f/oss2-2.19.1.tar.gz",
+        "hash": "sha256:a8ab9ee7eb99e88a7e1382edc6ea641d219d585a7e074e3776e9dec9473e59c1",
+        "size": 298845,
+        "upload-time": "2024-10-25T11:37:46.638Z"
+      }
+    }
+  ],
+  "build_hooks_executed": false,
+  "extraction": "Only named regular build metadata files read in memory; no extraction or code execution"
+}

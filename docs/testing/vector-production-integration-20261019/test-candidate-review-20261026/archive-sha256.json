@@ -1,0 +1,67 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "409191af7d097afbd9bcc03970485a4dcff24d9cdaa86ae81ee4d0c10af8967f",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\report.md"
+  },
+  {
+    "file": "before.json",
+    "sha256": "1ed7941f7b23d20d6f425bc55933f486eaf4629cb66e2cd129a799f5357e1e1f",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\before.json"
+  },
+  {
+    "file": "after.json",
+    "sha256": "1ed7941f7b23d20d6f425bc55933f486eaf4629cb66e2cd129a799f5357e1e1f",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\after.json"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "95cbde825991c4eb6c1e89e065b047e3691a176e24c3cdce387300e4fa26b3b4",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\commands.json"
+  },
+  {
+    "file": "historical.log",
+    "sha256": "5a35fe54d3b58b9e9b3cbd3665af2e371f63d6ec9b59ab2d280786184e95534b",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\historical.log"
+  },
+  {
+    "file": "historical.xml",
+    "sha256": "648c8874e1c2d9f179f1918bef20daca361f905d9f210ffaeef06b39cce6cb04",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\historical.xml"
+  },
+  {
+    "file": "backup.log",
+    "sha256": "4f9ab6c64787183d33c753e734e20b35ce0ce5418b0d5bd40263ebe71ebe99db",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\backup.log"
+  },
+  {
+    "file": "backup.xml",
+    "sha256": "e55e6599e96523f909cf14cdd580b3d138d53a5a2da344c77700eaa4bc1541ac",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\backup.xml"
+  },
+  {
+    "file": "helper.log",
+    "sha256": "d3326dd5d345ab83ada481955332ed66b48d76d3cd4f3c3e4cd6688910ca1a2e",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\helper.log"
+  },
+  {
+    "file": "helper.xml",
+    "sha256": "1e359fd45dddc32c6b7642bb37d72e559fecfdf3271f2cba9122ebab38223c33",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\helper.xml"
+  },
+  {
+    "file": "health-review.md",
+    "sha256": "ef19cfee78946a212a4faafb2255aa9b6dd023fb6092a1f1168da63572d86163",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\health-review.md"
+  },
+  {
+    "file": "health-hashes.json",
+    "sha256": "c2591ed8f47216447d9b6cff3e297227bb7666aa215633d82748bd5f67c0c0ac",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\health-hashes.json"
+  },
+  {
+    "file": "r3-production-scope.json",
+    "sha256": "54a58e8bcc12349a4f058700439ff7fbeafbfd049e74e3f247b7ef2f17e63e02",
+    "source": "D:\\graghRAG-agent\\.tmp\\test-candidate-review-20261026\\r3-production-scope.json"
+  }
+]

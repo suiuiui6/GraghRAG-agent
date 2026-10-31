@@ -1,0 +1,82 @@
+[
+  {
+    "file": "REPORT.md",
+    "bytes": 6059,
+    "sha256": "0616f72cba6de73fb274023ab87221e9e83438da634a83df00fa482a8fe50df5"
+  },
+  {
+    "file": "receipt.json",
+    "bytes": 653,
+    "sha256": "23a8f3bc2138689c9ab1c84efb7c8b4eb17e923f9a988fb6bcae50c16af93356"
+  },
+  {
+    "file": "runner.py",
+    "bytes": 3626,
+    "sha256": "9fcb3c931fe9c0c0e81ad9f14fa1bd9188c2139f33a37c0298600065a8ff38cc"
+  },
+  {
+    "file": "runtime-audit.py",
+    "bytes": 1487,
+    "sha256": "93bf490a1670fd87e4b85a5a025a01718020748b79a95bac5afff80c1aafdcc9"
+  },
+  {
+    "file": "run.ps1",
+    "bytes": 1892,
+    "sha256": "3fc6ac85af84bd8397017b34c376a253278a409c4aebf23039d4de6581b806d8"
+  },
+  {
+    "file": "audit.ps1",
+    "bytes": 1611,
+    "sha256": "8313387f0cb3edf512a4d4308e122cd4365e56ec862ae53975f87fa35918a762"
+  },
+  {
+    "file": "finalize.ps1",
+    "bytes": 2599,
+    "sha256": "47b6e56e3eeb5a8889608dd5e2272a1be92fa1204e5785694db6930036dc7e5f"
+  },
+  {
+    "file": "evidence-manifest.json",
+    "bytes": 4939,
+    "sha256": "fba05efb697b66b464187aed7e7788980f8b37ce68feab6dc512e4edfdba1fc9"
+  },
+  {
+    "file": "outputs/actual-lock-identity.json",
+    "bytes": 231,
+    "sha256": "c0f5d33f22449ebe84703502f00a0da21ace27d8481648da49e7edfed2bf81e9"
+  },
+  {
+    "file": "outputs/runtime-identity.json",
+    "bytes": 6066,
+    "sha256": "7e39d02c5ba546e129a1704324ee9167f530edf4c7f9ed55b050f880bd96da8d"
+  },
+  {
+    "file": "outputs/container-restrictions-receipt.json",
+    "bytes": 19352,
+    "sha256": "1c7eddb6f9740aa996220e7003c733086f78a84b9cab7bf13c8c9f1d71094882"
+  },
+  {
+    "file": "outputs/artifact-installed-and-prior-http-identity.json",
+    "bytes": 5263,
+    "sha256": "53bfb10f9049dacb06f5ca2430f1fa0080531350c4e054b6e8c923830de7b38e"
+  },
+  {
+    "file": "outputs/native-source-identity.json",
+    "bytes": 633,
+    "sha256": "cc594de6504e15f0e1226f19306886167fc986af2db849edc5e31a1d09f673cc"
+  },
+  {
+    "file": "outputs/phase-1.json",
+    "bytes": 7699,
+    "sha256": "c15a2cf8b75af4e8cdfb4df646a56ff3ec718de3176c466776a5166ca0cd6af1"
+  },
+  {
+    "file": "outputs/phase-2.json",
+    "bytes": 2068,
+    "sha256": "55a77438215dd0ba2d15b89799abb0e4040c1e332c46628f99af6d0e38dc4cfd"
+  },
+  {
+    "file": "outputs/phase-3.json",
+    "bytes": 1691,
+    "sha256": "8a472fa579e31a4b5fa1002f0908c555f7b004bb3ec858a830c959985d3b0b81"
+  }
+]

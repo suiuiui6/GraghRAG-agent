@@ -1,0 +1,40 @@
+[
+  {
+    "name": "tests",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+      "-m",
+      "coverage",
+      "run",
+      "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+      "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\backend.coverage",
+      "-m",
+      "pytest",
+      "backend/tests",
+      "backend/research/test_deepseek_scope_pilot.py",
+      "-vv",
+      "-ra",
+      "--tb=short",
+      "--durations=20",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\test-temp",
+      "--junitxml=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\junit.xml"
+    ],
+    "exit": 0
+  },
+  {
+    "name": "export",
+    "command": [
+      "D:\\graghRAG-agent\\.tmp\\runtime-lock-20261022\\.venv\\Scripts\\python.exe",
+      "-m",
+      "coverage",
+      "json",
+      "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+      "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\backend.coverage",
+      "-o",
+      "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261025-r2\\coverage.json"
+    ],
+    "exit": 0
+  }
+]

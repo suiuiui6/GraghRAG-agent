@@ -1,0 +1,43 @@
+{
+  "sealed_original_files": 43,
+  "sealed_original_drift": 0,
+  "C_R11_inputs": 258,
+  "C_R11_drift": 0,
+  "actual_runtime_source_hashes": {
+    "/app/vector_numeric.py": "2ad65375cf6727c2ac32bd18a07c7169896525a3f6c632b721319da5fbb1aad5",
+    "/app/native/vector_numeric/build.py": "083f7d8615163c926c0a04b2a3f1bcfde74c761bd399804d3bac09514dee29ed"
+  },
+  "source_probe_argv": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--read-only",
+    "--user",
+    "65534:65534",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--cpus",
+    "1",
+    "--memory",
+    "128m",
+    "--pids-limit",
+    "32",
+    "--entrypoint",
+    "/usr/local/bin/python3.12",
+    "sha256:c0ecd87f1987e9749a162d014e5e6ace0aac42845357c2ed28601685e1855ae8",
+    "-c",
+    "import hashlib,json,pathlib; print(json.dumps({str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [pathlib.Path(\"/app/vector_numeric.py\"),pathlib.Path(\"/app/native/vector_numeric/build.py\")]}))"
+  ],
+  "source_probe_exit": 0,
+  "private_build_identity_only": true,
+  "production_approval": false,
+  "runtime_probes": [
+    "good",
+    "noexec",
+    "missing"
+  ]
+}

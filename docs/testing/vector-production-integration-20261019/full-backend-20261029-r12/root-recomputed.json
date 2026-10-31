@@ -1,0 +1,20 @@
+{
+  "scope": "Root raw coverage/JUnit/pre-post mapping recomputation; current full hash reread delegated independently",
+  "source_inputs": 260,
+  "runtime_inputs": 36704,
+  "production_files": 120,
+  "covered_lines": 16669,
+  "num_statements": 17848,
+  "covered_branches": 5506,
+  "num_branches": 6114,
+  "junit_cases": 2223,
+  "old_cases_retained": 2201,
+  "new_cases": 22,
+  "exits": [
+    0,
+    0,
+    0
+  ],
+  "sanitized_identity_equal": true,
+  "native_admission": false
+}

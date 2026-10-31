@@ -1,0 +1,9 @@
+{
+  "version": "1.53.0",
+  "loop_equal": false,
+  "loop_old": 464,
+  "loop_new": 472,
+  "handle_differences": {},
+  "request_differences": {},
+  "no_abi_approval": true
+}

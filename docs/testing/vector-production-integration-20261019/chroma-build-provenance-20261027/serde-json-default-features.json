@@ -1,0 +1,25 @@
+{
+  "archive": ".tmp\\vector-formatter-20261020\\upstream\\serde_json-1.0.149.crate",
+  "archive_sha256": "83fc039473c5595ace860d8c4fafa220ff474b3fc6bfdb4293327f1a37e94d86",
+  "manifest_sha256": "65dabeea0112c066ff16c6d93142c4a08c01396f4e99a27d9255d19974eaeb73",
+  "features": {
+    "alloc": [
+      "serde_core/alloc"
+    ],
+    "arbitrary_precision": [],
+    "default": [
+      "std"
+    ],
+    "float_roundtrip": [],
+    "preserve_order": [
+      "indexmap",
+      "std"
+    ],
+    "raw_value": [],
+    "std": [
+      "memchr/std",
+      "serde_core/std"
+    ],
+    "unbounded_depth": []
+  }
+}

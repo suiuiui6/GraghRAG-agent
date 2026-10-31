@@ -1,0 +1,12 @@
+FROM graphrag-linux-mvp-numpy:20261028
+USER root
+COPY wheels/ /opt/graphrag-artifacts/wheels/
+COPY all158-hashed-requirements.txt expected-packages.json capture_runtime.py /opt/graphrag-artifacts/
+RUN ["python", "-m", "venv", "/opt/graphrag-cpu/venv"]
+RUN ["/opt/graphrag-cpu/venv/bin/python", "-m", "pip", "install", "--no-index", "--no-deps", "--require-hashes", "--find-links=/opt/graphrag-artifacts/wheels", "-r", "/opt/graphrag-artifacts/all158-hashed-requirements.txt"]
+RUN ["/opt/graphrag-cpu/venv/bin/python", "-m", "pip", "check"]
+RUN ["/opt/graphrag-cpu/venv/bin/python", "/opt/graphrag-artifacts/capture_runtime.py"]
+ENV PATH="/opt/graphrag-cpu/venv/bin:${PATH}"
+ENV PYTHONDONTWRITEBYTECODE=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+USER 65534:65534
+WORKDIR /app

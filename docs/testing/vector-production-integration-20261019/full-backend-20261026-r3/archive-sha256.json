@@ -1,0 +1,58 @@
+[
+  {
+    "file": "summary.json",
+    "sha256": "1b6e50569f1b7310312f00439363850fe53c61d9c9d214bca4f9f7dbfcb6f7c9",
+    "original_sha256": "1b6e50569f1b7310312f00439363850fe53c61d9c9d214bca4f9f7dbfcb6f7c9",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\summary.json"
+  },
+  {
+    "file": "commands.json",
+    "sha256": "606ed4ab0c1ccff2657c916895a44ed402535ee1ee8c04fcbac201435e48c0dd",
+    "original_sha256": "606ed4ab0c1ccff2657c916895a44ed402535ee1ee8c04fcbac201435e48c0dd",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\commands.json"
+  },
+  {
+    "file": "before.json",
+    "sha256": "abbb1df7e2d1d247a23bc0113b40a0f3af1dfeede23a6af7735db71b5f04de79",
+    "original_sha256": "abbb1df7e2d1d247a23bc0113b40a0f3af1dfeede23a6af7735db71b5f04de79",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\before.json"
+  },
+  {
+    "file": "after.json",
+    "sha256": "abbb1df7e2d1d247a23bc0113b40a0f3af1dfeede23a6af7735db71b5f04de79",
+    "original_sha256": "abbb1df7e2d1d247a23bc0113b40a0f3af1dfeede23a6af7735db71b5f04de79",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\after.json"
+  },
+  {
+    "file": "coverage.json",
+    "sha256": "16c3ee8d91abbf8fc99302c93947799ab12573cf98db62bc9543aabbfa15ba77",
+    "original_sha256": "16c3ee8d91abbf8fc99302c93947799ab12573cf98db62bc9543aabbfa15ba77",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\coverage.json"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "3ba373e690649460a8189661f7c37fa4e48a6944a120782030a983f137e86661",
+    "original_sha256": "3ba373e690649460a8189661f7c37fa4e48a6944a120782030a983f137e86661",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\junit.xml"
+  },
+  {
+    "file": "tests.log",
+    "sha256": "8dbe8e5a2fb08092f024cd592289a14ab661492943ba1f32f574a9d9c3f722a3",
+    "original_sha256": "8dbe8e5a2fb08092f024cd592289a14ab661492943ba1f32f574a9d9c3f722a3",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\tests.log"
+  },
+  {
+    "file": "export.log",
+    "sha256": "29b9f6c7082189e2d3c83ca690752e9bbb8812e25308cbe3438c5e7ae1cb6914",
+    "original_sha256": "29b9f6c7082189e2d3c83ca690752e9bbb8812e25308cbe3438c5e7ae1cb6914",
+    "redacted_synthetic_jwt_occurrences": 0,
+    "original_private_source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261026-r3\\export.log"
+  }
+]

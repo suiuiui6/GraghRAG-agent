@@ -24,6 +24,10 @@ class TaskStatus(str, Enum):
 
 
 class PipelineStage(str, Enum):
+    PARSE = "parse"
+    CHUNK = "chunk"
+    EMBED = "embed"
+    INDEX = "index"
     UPLOAD = "upload"
     MINERU = "mineru"
     BRIDGE = "bridge"
@@ -121,6 +125,7 @@ class StageProgress(BaseModel):
 
 
 class TaskResult(BaseModel):
+    active_revision: int | None = None
     document_id: str | None = None
     kg_nodes: int | None = None
     kg_edges: int | None = None
@@ -133,6 +138,7 @@ class TaskResult(BaseModel):
 
 
 class TaskError(BaseModel):
+    http_status: int | None = None
     code: str
     message: str
 
@@ -160,6 +166,7 @@ class StatusResponse(BaseModel):
 
 
 class DocumentItem(BaseModel):
+    active_revision: int | None = None
     document_id: str
     filename: str
     status: str
@@ -185,6 +192,8 @@ class HealthResponse(BaseModel):
 
 
 class DeleteResponse(BaseModel):
+    cleanup_status: str | None = None
+    cleanup_pending: bool = False
     document_id: str
     status: str
     deleted_at: datetime

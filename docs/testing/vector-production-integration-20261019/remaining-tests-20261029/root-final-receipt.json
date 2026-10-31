@@ -1,0 +1,10 @@
+{
+  "R10_inputs_checked": 258,
+  "changed_inputs": [
+    "docs/design/2026-10-19-vector-production-integration.md",
+    "docs/plans/2026-10-19-vector-production-integration.md"
+  ],
+  "explanation": "Only dated design/plan documentation appendix changed. All remaining R10 captured production/test/lock/config inputs byte-identical; R10 is snapshot-bound, not a fresh run for modified docs.",
+  "archived_entries_rehashed": 53,
+  "differences": []
+}

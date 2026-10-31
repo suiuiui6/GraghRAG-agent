@@ -1,0 +1,2070 @@
+{
+  "scope": "original49 explicit expected + same-source release differential, not binary identity",
+  "uid": 65534,
+  "timeout_per_process_seconds": 3,
+  "release_sha256": "20d2166cd218fdd0dff2914939c07e400fa38231f06139b91689ee45279418d0",
+  "instrumented_sha256": "19f638b1ed0595121a67e272be46b72fec0202a646c56df142bdc707d7c14666",
+  "cases": [
+    {
+      "case": {
+        "id": "author-i64-zero",
+        "input_hex": "7265636f72645f69363409300a",
+        "expected_stdout_hex": "6f6b0969363409300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:08.781271+00:00",
+          "elapsed_seconds": 0.019954428999881202,
+          "exit": 0,
+          "stdout_hex": "6f6b0969363409300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-i64-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:08.812980+00:00",
+          "elapsed_seconds": 0.05717102299990984,
+          "exit": 0,
+          "stdout_hex": "6f6b0969363409300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-i64-max",
+        "input_hex": "7265636f72645f69363409393232333337323033363835343737353830370a",
+        "expected_stdout_hex": "6f6b0969363409393232333337323033363835343737353830370a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:08.892693+00:00",
+          "elapsed_seconds": 0.013279435999947964,
+          "exit": 0,
+          "stdout_hex": "6f6b0969363409393232333337323033363835343737353830370a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-i64-max.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:08.922563+00:00",
+          "elapsed_seconds": 0.0562046749998899,
+          "exit": 0,
+          "stdout_hex": "6f6b0969363409393232333337323033363835343737353830370a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-i64-min",
+        "input_hex": "7265636f72645f693634092d393232333337323033363835343737353830380a",
+        "expected_stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.007276+00:00",
+          "elapsed_seconds": 0.012614798999948107,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-i64-min.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.036413+00:00",
+          "elapsed_seconds": 0.0527720180000415,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-i64-positive-overflow",
+        "input_hex": "7265636f72645f69363409393232333337323033363835343737353830380a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.131074+00:00",
+          "elapsed_seconds": 0.016611893999879612,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-i64-positive-overflow.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.156668+00:00",
+          "elapsed_seconds": 0.048323183000093195,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-i64-negative-overflow",
+        "input_hex": "7265636f72645f693634092d393232333337323033363835343737353830390a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.231644+00:00",
+          "elapsed_seconds": 0.01968994100002419,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-i64-negative-overflow.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.258395+00:00",
+          "elapsed_seconds": 0.059567494000020815,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-i64-noncanonical-zero",
+        "input_hex": "7265636f72645f693634092d300a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.337582+00:00",
+          "elapsed_seconds": 0.012997516999803338,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-i64-noncanonical-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.358553+00:00",
+          "elapsed_seconds": 0.04177349500014316,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-positive-zero",
+        "input_hex": "7265636f72645f66363409303030303030303030303030303030300a",
+        "expected_stdout_hex": "6f6b0966363409303030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.416767+00:00",
+          "elapsed_seconds": 0.023509053999987373,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-positive-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.444550+00:00",
+          "elapsed_seconds": 0.04202636300010454,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-raw-negative-zero",
+        "input_hex": "7265636f72645f66363409383030303030303030303030303030300a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.506742+00:00",
+          "elapsed_seconds": 0.022180951999871468,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-raw-negative-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.537780+00:00",
+          "elapsed_seconds": 0.04719793300000674,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-one",
+        "input_hex": "7265636f72645f66363409336666303030303030303030303030300a",
+        "expected_stdout_hex": "6f6b0966363409336666303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.607806+00:00",
+          "elapsed_seconds": 0.019263816999909977,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409336666303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-one.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.635718+00:00",
+          "elapsed_seconds": 0.03867077899985816,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409336666303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-negative-one",
+        "input_hex": "7265636f72645f66363409626666303030303030303030303030300a",
+        "expected_stdout_hex": "6f6b0966363409626666303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.689522+00:00",
+          "elapsed_seconds": 0.018926391999912084,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409626666303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-negative-one.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.716086+00:00",
+          "elapsed_seconds": 0.0390599629999997,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409626666303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-min-subnormal",
+        "input_hex": "7265636f72645f66363409303030303030303030303030303030310a",
+        "expected_stdout_hex": "6f6b0966363409303030303030303030303030303030310a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.778291+00:00",
+          "elapsed_seconds": 0.03179860700015524,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-min-subnormal.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.821910+00:00",
+          "elapsed_seconds": 0.0483168509999814,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-negative-min-subnormal",
+        "input_hex": "7265636f72645f66363409383030303030303030303030303030310a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030310a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.888905+00:00",
+          "elapsed_seconds": 0.023146648000192727,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-negative-min-subnormal.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.921134+00:00",
+          "elapsed_seconds": 0.03878329099984512,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-formatter-regression",
+        "input_hex": "7265636f72645f66363409343364666666666666666666666666660a",
+        "expected_stdout_hex": "6f6b0966363409343365303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:09.972010+00:00",
+          "elapsed_seconds": 0.018587858000046253,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343365303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-formatter-regression.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:09.997760+00:00",
+          "elapsed_seconds": 0.046723366999913196,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343365303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-max-finite",
+        "input_hex": "7265636f72645f66363409376665666666666666666666666666660a",
+        "expected_stdout_hex": "6f6b0966363409376665666666666666666666666666660a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.058393+00:00",
+          "elapsed_seconds": 0.01938543699998263,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409376665666666666666666666666666660a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-max-finite.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.084396+00:00",
+          "elapsed_seconds": 0.0339980020000894,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409376665666666666666666666666666660a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-positive-infinity",
+        "input_hex": "7265636f72645f66363409376666303030303030303030303030300a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.149543+00:00",
+          "elapsed_seconds": 0.023747424000021056,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-positive-infinity.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.189360+00:00",
+          "elapsed_seconds": 0.03477056800011269,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-record-f64-nan",
+        "input_hex": "7265636f72645f66363409376666383030303030303030303030300a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.243440+00:00",
+          "elapsed_seconds": 0.014754810000113139,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-record-f64-nan.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.269024+00:00",
+          "elapsed_seconds": 0.05071258500015574,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-negative-zero",
+        "input_hex": "7768657265092d302e300a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.338828+00:00",
+          "elapsed_seconds": 0.011047492000216153,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-negative-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.359550+00:00",
+          "elapsed_seconds": 0.037202293999826,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-positive-zero-float",
+        "input_hex": "776865726509302e300a",
+        "expected_stdout_hex": "6f6b0966363409303030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.423333+00:00",
+          "elapsed_seconds": 0.02192859199999475,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-positive-zero-float.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.452143+00:00",
+          "elapsed_seconds": 0.05601847499997348,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-positive-one-integer",
+        "input_hex": "776865726509310a",
+        "expected_stdout_hex": "6f6b0975363409310a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.525233+00:00",
+          "elapsed_seconds": 0.026040625999939948,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-positive-one-integer.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.559543+00:00",
+          "elapsed_seconds": 0.06802430900006584,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-negative-one-integer",
+        "input_hex": "7768657265092d310a",
+        "expected_stdout_hex": "6f6b09693634092d310a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.661467+00:00",
+          "elapsed_seconds": 0.027407471000060468,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-negative-one-integer.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.702280+00:00",
+          "elapsed_seconds": 0.03471728099998472,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-i64-positive-max-raw-u64",
+        "input_hex": "776865726509393232333337323033363835343737353830370a",
+        "expected_stdout_hex": "6f6b0975363409393232333337323033363835343737353830370a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.755958+00:00",
+          "elapsed_seconds": 0.10813011100003678,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409393232333337323033363835343737353830370a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-i64-positive-max-raw-u64.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.873298+00:00",
+          "elapsed_seconds": 0.04409184699989055,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409393232333337323033363835343737353830370a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-u64-over-i64",
+        "input_hex": "776865726509393232333337323033363835343737353830380a",
+        "expected_stdout_hex": "6f6b0975363409393232333337323033363835343737353830380a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:10.938318+00:00",
+          "elapsed_seconds": 0.03876563499989061,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-u64-over-i64.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:10.989072+00:00",
+          "elapsed_seconds": 0.05409340899996096,
+          "exit": 0,
+          "stdout_hex": "6f6b0975363409393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-u64-max",
+        "input_hex": "77686572650931383434363734343037333730393535313631350a",
+        "expected_stdout_hex": "6f6b097536340931383434363734343037333730393535313631350a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.088047+00:00",
+          "elapsed_seconds": 0.030756412000073396,
+          "exit": 0,
+          "stdout_hex": "6f6b097536340931383434363734343037333730393535313631350a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-u64-max.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.133367+00:00",
+          "elapsed_seconds": 0.048246996999978364,
+          "exit": 0,
+          "stdout_hex": "6f6b097536340931383434363734343037333730393535313631350a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-i64-min",
+        "input_hex": "7768657265092d393232333337323033363835343737353830380a",
+        "expected_stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.214792+00:00",
+          "elapsed_seconds": 0.04717831199991451,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-i64-min.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.281437+00:00",
+          "elapsed_seconds": 0.056607982000059565,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-negative-below-i64-to-f64",
+        "input_hex": "7768657265092d393232333337323033363835343737353830390a",
+        "expected_stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.369787+00:00",
+          "elapsed_seconds": 0.020049293000056423,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-negative-below-i64-to-f64.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.417806+00:00",
+          "elapsed_seconds": 0.08161296299999776,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-positive-over-u64-to-f64",
+        "input_hex": "77686572650931383434363734343037333730393535313631360a",
+        "expected_stdout_hex": "6f6b0966363409343366303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.523934+00:00",
+          "elapsed_seconds": 0.02616185800002313,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343366303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-positive-over-u64-to-f64.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.565876+00:00",
+          "elapsed_seconds": 0.07546161300001586,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343366303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-nonfinite",
+        "input_hex": "77686572650931653330390a",
+        "expected_stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.660378+00:00",
+          "elapsed_seconds": 0.016344450999895344,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-nonfinite.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.686907+00:00",
+          "elapsed_seconds": 0.043911116000117545,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-where-not-number",
+        "input_hex": "7768657265096e756c6c0a",
+        "expected_stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.749566+00:00",
+          "elapsed_seconds": 0.023312110000006214,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-where-not-number.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.785882+00:00",
+          "elapsed_seconds": 0.0581610520000595,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-invalid-operation",
+        "input_hex": "696e76616c696409310a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.868789+00:00",
+          "elapsed_seconds": 0.014422780999893803,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-invalid-operation.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:11.895519+00:00",
+          "elapsed_seconds": 0.05184311099992556,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "author-extra-tab",
+        "input_hex": "7768657265093109320a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:11.991927+00:00",
+          "elapsed_seconds": 0.023919097000089096,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/author-extra-tab.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.026584+00:00",
+          "elapsed_seconds": 0.06250569899998482,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-i64-min",
+        "input_hex": "7265636f72645f693634092d393232333337323033363835343737353830380a",
+        "expected_stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.115225+00:00",
+          "elapsed_seconds": 0.027772054000024582,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-i64-min.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.155916+00:00",
+          "elapsed_seconds": 0.046292549000099825,
+          "exit": 0,
+          "stdout_hex": "6f6b09693634092d393232333337323033363835343737353830380a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-i64-max",
+        "input_hex": "7265636f72645f69363409393232333337323033363835343737353830370a",
+        "expected_stdout_hex": "6f6b0969363409393232333337323033363835343737353830370a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.219666+00:00",
+          "elapsed_seconds": 0.009641093000027467,
+          "exit": 0,
+          "stdout_hex": "6f6b0969363409393232333337323033363835343737353830370a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-i64-max.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.245074+00:00",
+          "elapsed_seconds": 0.04664059700007783,
+          "exit": 0,
+          "stdout_hex": "6f6b0969363409393232333337323033363835343737353830370a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-i64-overflow",
+        "input_hex": "7265636f72645f69363409393232333337323033363835343737353830380a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.318969+00:00",
+          "elapsed_seconds": 0.01038456700007373,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-i64-overflow.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.352369+00:00",
+          "elapsed_seconds": 0.045709843999929944,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-negative-zero",
+        "input_hex": "7265636f72645f66363409383030303030303030303030303030300a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.428822+00:00",
+          "elapsed_seconds": 0.022554826000032335,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-negative-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.464542+00:00",
+          "elapsed_seconds": 0.05938142400009383,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-positive-regression",
+        "input_hex": "7265636f72645f66363409343364666666666666666666666666660a",
+        "expected_stdout_hex": "6f6b0966363409343365303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.548882+00:00",
+          "elapsed_seconds": 0.018601941000042643,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343365303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-positive-regression.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.578887+00:00",
+          "elapsed_seconds": 0.06732981300001484,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343365303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-negative-regression",
+        "input_hex": "7265636f72645f66363409633364666666666666666666666666660a",
+        "expected_stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.674622+00:00",
+          "elapsed_seconds": 0.019620979000137595,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-negative-regression.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.705896+00:00",
+          "elapsed_seconds": 0.04999772599990138,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-minimum-subnormal",
+        "input_hex": "7265636f72645f66363409303030303030303030303030303030310a",
+        "expected_stdout_hex": "6f6b0966363409303030303030303030303030303030310a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.780093+00:00",
+          "elapsed_seconds": 0.019041483999899356,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030310a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-minimum-subnormal.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.808672+00:00",
+          "elapsed_seconds": 0.04363873100010096,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409303030303030303030303030303030310a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-maximum-finite",
+        "input_hex": "7265636f72645f66363409376665666666666666666666666666660a",
+        "expected_stdout_hex": "6f6b0966363409376665666666666666666666666666660a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.873719+00:00",
+          "elapsed_seconds": 0.014244344999951863,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409376665666666666666666666666666660a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-maximum-finite.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.897749+00:00",
+          "elapsed_seconds": 0.03576161599994521,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409376665666666666666666666666666660a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-negative-zero",
+        "input_hex": "7768657265092d302e300a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:12.956187+00:00",
+          "elapsed_seconds": 0.022664216999828568,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-negative-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:12.983756+00:00",
+          "elapsed_seconds": 0.03163873799985595,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-negative-int-zero",
+        "input_hex": "7768657265092d300a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.031766+00:00",
+          "elapsed_seconds": 0.017293685999902664,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-negative-int-zero.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.054108+00:00",
+          "elapsed_seconds": 0.05681464999997843,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-u64-max",
+        "input_hex": "77686572650931383434363734343037333730393535313631350a",
+        "expected_stdout_hex": "6f6b097536340931383434363734343037333730393535313631350a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.138498+00:00",
+          "elapsed_seconds": 0.016600278999931106,
+          "exit": 0,
+          "stdout_hex": "6f6b097536340931383434363734343037333730393535313631350a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-u64-max.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.165429+00:00",
+          "elapsed_seconds": 0.052899202999924455,
+          "exit": 0,
+          "stdout_hex": "6f6b097536340931383434363734343037333730393535313631350a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-beyond-u64",
+        "input_hex": "77686572650931383434363734343037333730393535313631360a",
+        "expected_stdout_hex": "6f6b0966363409343366303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.245876+00:00",
+          "elapsed_seconds": 0.01232009399996059,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343366303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-beyond-u64.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.267369+00:00",
+          "elapsed_seconds": 0.06041769599983127,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409343366303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-below-i64",
+        "input_hex": "7768657265092d393232333337323033363835343737353830390a",
+        "expected_stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.346552+00:00",
+          "elapsed_seconds": 0.017070938999950158,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-below-i64.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.372710+00:00",
+          "elapsed_seconds": 0.03733573900012743,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409633365303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-underflow",
+        "input_hex": "7768657265092d31652d3939390a",
+        "expected_stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.443842+00:00",
+          "elapsed_seconds": 0.014848062000055506,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-underflow.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.474136+00:00",
+          "elapsed_seconds": 0.05328605299996525,
+          "exit": 0,
+          "stdout_hex": "6f6b0966363409383030303030303030303030303030300a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-overflow",
+        "input_hex": "77686572650931653330390a",
+        "expected_stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.558147+00:00",
+          "elapsed_seconds": 0.015461276999985785,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-overflow.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.584986+00:00",
+          "elapsed_seconds": 0.05153811699983635,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-where-bool",
+        "input_hex": "776865726509747275650a",
+        "expected_stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.661927+00:00",
+          "elapsed_seconds": 0.01437827799986735,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-where-bool.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.686053+00:00",
+          "elapsed_seconds": 0.10408281899981375,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f66696c746572092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-nonfinite-bits",
+        "input_hex": "7265636f72645f66363409666666303030303030303030303030300a",
+        "expected_stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.809661+00:00",
+          "elapsed_seconds": 0.032241593999970064,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-nonfinite-bits.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.856140+00:00",
+          "elapsed_seconds": 0.085842791999994,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f696e707574092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-multiple-requests",
+        "input_hex": "776865726509310a776865726509320a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:13.973037+00:00",
+          "elapsed_seconds": 0.01247302399997352,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-multiple-requests.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:13.995107+00:00",
+          "elapsed_seconds": 0.03164482700003646,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    },
+    {
+      "case": {
+        "id": "independent-oversize",
+        "input_hex": "776865726509313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131310a",
+        "expected_stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+        "expected_stderr_hex": "",
+        "expected_exit": 0
+      },
+      "executions": [
+        {
+          "kind": "release",
+          "argv": [
+            "/release/vector-numeric-bridge"
+          ],
+          "env": {},
+          "started_utc": "2026-10-28T13:19:14.046391+00:00",
+          "elapsed_seconds": 0.01639281200004916,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        },
+        {
+          "kind": "instrumented",
+          "argv": [
+            "/instrumented/vector-numeric-bridge"
+          ],
+          "env": {
+            "LLVM_PROFILE_FILE": "/out/profiles-original49/independent-oversize.profraw"
+          },
+          "started_utc": "2026-10-28T13:19:14.072116+00:00",
+          "elapsed_seconds": 0.04176418800011561,
+          "exit": 0,
+          "stdout_hex": "65727209696e76616c69645f72657175657374092d0a",
+          "stderr_hex": ""
+        }
+      ]
+    }
+  ],
+  "passed": 49,
+  "profiles": [
+    {
+      "name": "author-extra-tab.profraw",
+      "bytes": 56376,
+      "sha256": "bd32fd940fbf129d10e13b5a13e7dfbdcfcf31355b222c68b281e7ecf4febcbb"
+    },
+    {
+      "name": "author-i64-max.profraw",
+      "bytes": 56376,
+      "sha256": "53c2224a34bf6410bf4fcd951582975b77398eb010ba52ae6cc00799a583b396"
+    },
+    {
+      "name": "author-i64-min.profraw",
+      "bytes": 56376,
+      "sha256": "8f64f0358a75a5c6976e4e80fcde302899b7cae51ab0f49262f32989c8137189"
+    },
+    {
+      "name": "author-i64-negative-overflow.profraw",
+      "bytes": 56376,
+      "sha256": "24f3745c8d2a9425d63d417471b8fa5fe7b74ac7e087be81d167f74aa4e1aad8"
+    },
+    {
+      "name": "author-i64-noncanonical-zero.profraw",
+      "bytes": 56376,
+      "sha256": "26e8c08122b4f8a96034c9b5df4089ce0fae0aaa096f13b13edc90f720161036"
+    },
+    {
+      "name": "author-i64-positive-overflow.profraw",
+      "bytes": 56376,
+      "sha256": "6db050f8d601e26417304d5c8915a0104b6d177de97f6fc94d5da3028ac2f085"
+    },
+    {
+      "name": "author-i64-zero.profraw",
+      "bytes": 56376,
+      "sha256": "43920225e67f5f1fb9c84f962d22a83c6a5e55b93f80f45576cf22d77faacfc3"
+    },
+    {
+      "name": "author-invalid-operation.profraw",
+      "bytes": 56376,
+      "sha256": "b2fdf5aeaeed15495a1a4a015b18cc8271f455e61e89b6771660d01e5da41ed7"
+    },
+    {
+      "name": "author-record-f64-formatter-regression.profraw",
+      "bytes": 56376,
+      "sha256": "e6c808473c7a4b30012a8257ef0061393a34314965710c434aa0c9322b7cd71a"
+    },
+    {
+      "name": "author-record-f64-max-finite.profraw",
+      "bytes": 56376,
+      "sha256": "33bbfd2fde955ea8d56e7f7db4fb33c6d8626b528ab58c463fe34aafe2e39264"
+    },
+    {
+      "name": "author-record-f64-min-subnormal.profraw",
+      "bytes": 56376,
+      "sha256": "a1a73c228c888f590c195dba0fb881fa65380290f2108aef7316e930977f7a62"
+    },
+    {
+      "name": "author-record-f64-nan.profraw",
+      "bytes": 56376,
+      "sha256": "554511067e6ed0e216f789046806fa81d23368d79f26f6f2bfbd92659d5f6fce"
+    },
+    {
+      "name": "author-record-f64-negative-min-subnormal.profraw",
+      "bytes": 56376,
+      "sha256": "76a2993f184982a0d5308b54031eaea61712b62ca5e124125b97f344a6e7c1d1"
+    },
+    {
+      "name": "author-record-f64-negative-one.profraw",
+      "bytes": 56376,
+      "sha256": "6170a2afbf0d7b3b807c1e44fc1242617ebf9dfb7e040912ede5b5eefcb4e5f2"
+    },
+    {
+      "name": "author-record-f64-one.profraw",
+      "bytes": 56376,
+      "sha256": "f7b431bfccfd10ca74f7cd48d59962ef9acc1dc22b57d580b42240c61719a00c"
+    },
+    {
+      "name": "author-record-f64-positive-infinity.profraw",
+      "bytes": 56376,
+      "sha256": "b2ccb31d6ee1deea889bb22979e89da23e8e289e48712ec7c7766176f147a903"
+    },
+    {
+      "name": "author-record-f64-positive-zero.profraw",
+      "bytes": 56376,
+      "sha256": "aca4b7fd7259719ec2fab8460ac8bd002576295e6c93f642a42ca0a7f15d6060"
+    },
+    {
+      "name": "author-record-f64-raw-negative-zero.profraw",
+      "bytes": 56376,
+      "sha256": "aa6bc805b9e8f6ea8566e4c4295dd80bd81c1e8542a545a8761624dfbfa0b289"
+    },
+    {
+      "name": "author-where-i64-min.profraw",
+      "bytes": 56376,
+      "sha256": "075b412c48a3a58bde06854f00d2abd8885aca5a452901df972c5b9e0cd454db"
+    },
+    {
+      "name": "author-where-i64-positive-max-raw-u64.profraw",
+      "bytes": 56376,
+      "sha256": "1cc7c2e8e0936970a788ecaf951d59c57808794a5283d880922ca6fb5a06b17a"
+    },
+    {
+      "name": "author-where-negative-below-i64-to-f64.profraw",
+      "bytes": 56376,
+      "sha256": "b9d834da3fce43b494ca7fad69f848563025c8f36fef82a258e48f952e84d659"
+    },
+    {
+      "name": "author-where-negative-one-integer.profraw",
+      "bytes": 56376,
+      "sha256": "e08618a6814b59d224a2423e7e2b1886e3a293b7983e13c36eadea77d3c0cc47"
+    },
+    {
+      "name": "author-where-negative-zero.profraw",
+      "bytes": 56376,
+      "sha256": "7b238f42892c5af71f7421120d5c548f5732f4d12a60b6fa9c46034309787f25"
+    },
+    {
+      "name": "author-where-nonfinite.profraw",
+      "bytes": 56376,
+      "sha256": "ed0a3477e9ab650a50b4be2b56f271046494965de62833afa02465d772965e0f"
+    },
+    {
+      "name": "author-where-not-number.profraw",
+      "bytes": 56376,
+      "sha256": "844cfe35182d264dfd60507081acb7a8f53791f300154b61711273d15da5bf1a"
+    },
+    {
+      "name": "author-where-positive-one-integer.profraw",
+      "bytes": 56376,
+      "sha256": "239725bcf2d6b0c06a300147c3938e6ac138be75634798ee4194eb0f018f9515"
+    },
+    {
+      "name": "author-where-positive-over-u64-to-f64.profraw",
+      "bytes": 56376,
+      "sha256": "58041db60847f7026467a117143e132eee17ca93197c50d75661286381f49d82"
+    },
+    {
+      "name": "author-where-positive-zero-float.profraw",
+      "bytes": 56376,
+      "sha256": "72f41a2b47741beaa8af054215596b2fcabea0f0de0f0af0c68211c85bf68729"
+    },
+    {
+      "name": "author-where-u64-max.profraw",
+      "bytes": 56376,
+      "sha256": "c92a36ddb7aff826a12549893c8423e25dcf760d59c05066c061c5da76f3c7aa"
+    },
+    {
+      "name": "author-where-u64-over-i64.profraw",
+      "bytes": 56376,
+      "sha256": "7718baa4823b7cc14220775c86417245ee9a09b15b7ae2568297fff50a361a9d"
+    },
+    {
+      "name": "independent-i64-max.profraw",
+      "bytes": 56376,
+      "sha256": "2d78dc52f9816831b02a1d6755e8a2347411aa6e160c2b7c01fa85a1725be30a"
+    },
+    {
+      "name": "independent-i64-min.profraw",
+      "bytes": 56376,
+      "sha256": "ab4aacea56ca83e705bda76919f422998fb8bb471234789e44a84bf2594884e8"
+    },
+    {
+      "name": "independent-i64-overflow.profraw",
+      "bytes": 56376,
+      "sha256": "b128239512a01d8be867a98714d7e967f0c344cc1fc135b0fad373fc181101cf"
+    },
+    {
+      "name": "independent-maximum-finite.profraw",
+      "bytes": 56376,
+      "sha256": "8b037a581b54630133266379cc522f65d5101c3fb0d5d6d11f6de372a2c490ef"
+    },
+    {
+      "name": "independent-minimum-subnormal.profraw",
+      "bytes": 56376,
+      "sha256": "f980b63c84e0407a18a0dc67a1e10ad46b0ac035aab207d78143600f461872ad"
+    },
+    {
+      "name": "independent-multiple-requests.profraw",
+      "bytes": 56376,
+      "sha256": "910aae5d63c9ef800b2fd15dba9f8c2e67d042beffa828932feb7cf55df5134f"
+    },
+    {
+      "name": "independent-negative-regression.profraw",
+      "bytes": 56376,
+      "sha256": "eaf28683635c761438680a4d644eb677c2cb7e9dbbd398e8386466eea47c1537"
+    },
+    {
+      "name": "independent-negative-zero.profraw",
+      "bytes": 56376,
+      "sha256": "a80f1258069ec49f3c9e1316c13ccbbf4d72b6f163b120199eaed5e8112faba6"
+    },
+    {
+      "name": "independent-nonfinite-bits.profraw",
+      "bytes": 56376,
+      "sha256": "e89e7bd635e9c40c8f9e6f30f2c3a329d6b886555a0ec953771b761e1064a5d8"
+    },
+    {
+      "name": "independent-oversize.profraw",
+      "bytes": 56376,
+      "sha256": "3c10c876bd534dab9601411b94dee32b7193cf073eec24298f226b536950595f"
+    },
+    {
+      "name": "independent-positive-regression.profraw",
+      "bytes": 56376,
+      "sha256": "39735626f9f8bd7504f69a23120e54f6a53dae4d17b89a001227e6d991f21b3f"
+    },
+    {
+      "name": "independent-where-below-i64.profraw",
+      "bytes": 56376,
+      "sha256": "b03b385e20c67969b6409f777c4b6fa68a384862c13fc9eaf6d36dc15544eca2"
+    },
+    {
+      "name": "independent-where-beyond-u64.profraw",
+      "bytes": 56376,
+      "sha256": "491272166a3de39342a848d025a6071f7131f8ef3f8872e705eb833653c29366"
+    },
+    {
+      "name": "independent-where-bool.profraw",
+      "bytes": 56376,
+      "sha256": "837190f2bb95c640ddc7992d394ab5817fca48c2e683efbb99eb6fd3d2e709c8"
+    },
+    {
+      "name": "independent-where-negative-int-zero.profraw",
+      "bytes": 56376,
+      "sha256": "6b55e9076b84f0cd78e9d1794cc0a8d4d13def4a149f99eeecf35e4bd09e2d13"
+    },
+    {
+      "name": "independent-where-negative-zero.profraw",
+      "bytes": 56376,
+      "sha256": "7aad0141c9ae0747e911f780f0b921d9ef915bf7372682852917d5ab8482c133"
+    },
+    {
+      "name": "independent-where-overflow.profraw",
+      "bytes": 56376,
+      "sha256": "739dc6f56329fab6cfbb89778fb22f6c60d36e09030a859a1ad9524d77f325c1"
+    },
+    {
+      "name": "independent-where-u64-max.profraw",
+      "bytes": 56376,
+      "sha256": "ed986c15db14379b77a1f6c59eab87bdcbb8f575e1d905e1c3c17d6c2d7e2a0b"
+    },
+    {
+      "name": "independent-where-underflow.profraw",
+      "bytes": 56376,
+      "sha256": "41ca370036d265164abe82de39894679d2a35f9b876465c47d7dc2e92cf19428"
+    }
+  ]
+}

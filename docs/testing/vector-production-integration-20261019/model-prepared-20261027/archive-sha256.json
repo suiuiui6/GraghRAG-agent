@@ -1,0 +1,17 @@
+[
+  {
+    "file": "receipt.json",
+    "sha256": "9c2a9b2dc8076faaf9a77b1654913f9467e0d1ce6223b2213b9441b2774d2d59",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\model-prepared-20261027\\receipt.json"
+  },
+  {
+    "file": "tests.log",
+    "sha256": "9752ddc74b381e468a22941bbb314dfdbfd6c8ad00cc52702f669bc0384d363a",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\model-prepared-20261027\\tests.log"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "74592000e1683ef65256a19d0cb14e9a134ff3575b3fcdb3f1c609db4a53d248",
+    "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\model-prepared-20261027\\junit.xml"
+  }
+]

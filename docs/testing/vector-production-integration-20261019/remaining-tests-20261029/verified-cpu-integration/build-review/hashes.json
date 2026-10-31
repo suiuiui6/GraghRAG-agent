@@ -1,0 +1,107 @@
+[
+  {
+    "path": "builder-image-inspect.json",
+    "sha256": "30ce18a30c5ea8d92434160b93161364496474ccedc22b6da217c5325ace7e10",
+    "bytes": 2541
+  },
+  {
+    "path": "check.py",
+    "sha256": "f2a87d0a753c32a4658690af90bfada67d49aad7229581cc75ba6c5d13a8bc34",
+    "bytes": 2499
+  },
+  {
+    "path": "container-final-inspect.json",
+    "sha256": "9dc154d88d84103156e467cfad7f4786d3b3a50de16d399c9f7d3ca263185440",
+    "bytes": 9074
+  },
+  {
+    "path": "container-inspect.json",
+    "sha256": "87577ea853a6c9027171e6f10dfe8bf9726a1d229c2c024cbf7bed965e5787aa",
+    "bytes": 8527
+  },
+  {
+    "path": "finalize.py",
+    "sha256": "b88fc8b6cb79f60f4eaa5a0889fc379108f6ddbcee384fcec34ed1059f3a6a96",
+    "bytes": 2686
+  },
+  {
+    "path": "initial-exit.txt",
+    "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+    "bytes": 3
+  },
+  {
+    "path": "initial-python-comparator-failure.log",
+    "sha256": "b71b7b845a2f9bccf3282ec3b638bd0bcb13b22cedb593d6a9a7fd03907253dc",
+    "bytes": 417
+  },
+  {
+    "path": "initial-runtime-check-failure.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "install.log",
+    "sha256": "e5c63d0b25098fda997418ab39fcec537423aa5ea554f0a8dc2c7e71f8c7dba0",
+    "bytes": 176
+  },
+  {
+    "path": "integrity-receipt.json",
+    "sha256": "e228491a18a835c2c778b810022aca71cfd5edef41f310c095242a08cee4d04a",
+    "bytes": 3709
+  },
+  {
+    "path": "ldd.log",
+    "sha256": "9b120d249221f666321ccea012e26ab31e6c44763c4ad8795a7a664adefbc858",
+    "bytes": 19
+  },
+  {
+    "path": "native-before-comparator-fix.py",
+    "sha256": "18866c4064c4a76f0eb0844d8be9e23104f5925308f3058981557df219b193de",
+    "bytes": 2238
+  },
+  {
+    "path": "native-receipt.json",
+    "sha256": "d922ede13cf3a798a2de092051a0b25d0c4780e03bf6a049d3384d77e3fc584a",
+    "bytes": 4606
+  },
+  {
+    "path": "native.log",
+    "sha256": "b6ded43537f030d1febf2e00a854d00233c8f4c265fc15a0ab5fd1b56458e145",
+    "bytes": 511
+  },
+  {
+    "path": "native.py",
+    "sha256": "548aea9af55fd91b070da8c64fbe691502669be4c289215bd5700348c9e8b173",
+    "bytes": 2722
+  },
+  {
+    "path": "oss2-crc-consumer.txt",
+    "sha256": "da3275ef85b39347d600ba4ed356b625e60c276f027b31a5b6325419b75d0808",
+    "bytes": 1976
+  },
+  {
+    "path": "receipt.json",
+    "sha256": "a609ae18eb7e9331cc6157a8e25c93d5f11eadc23c5396927bcbb18f6d85e29b",
+    "bytes": 1264
+  },
+  {
+    "path": "REPORT.md",
+    "sha256": "7df6b9a25ca2f9b677c6700f5f1f680cfc83622f4355f8b9b7294f49319222b6",
+    "bytes": 4549
+  },
+  {
+    "path": "runner-receipt.json",
+    "sha256": "77cf3f6e37136eaa246669bc96f1429b0ef689dfe259b49c6a3072c446bd4301",
+    "bytes": 638
+  },
+  {
+    "path": "runtime-image-inspect.json",
+    "sha256": "d83d3d3fdb5cbc0083efa9e9d53ad897444b1bddac5a562c6bbedf02fe66d4c5",
+    "bytes": 2566
+  },
+  {
+    "path": "venv.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  }
+]

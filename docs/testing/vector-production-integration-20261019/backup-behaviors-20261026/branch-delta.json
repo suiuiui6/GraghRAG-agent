@@ -1,0 +1,80 @@
+{
+  "candidate_summary": {
+    "covered_lines": 220,
+    "num_statements": 248,
+    "percent_covered": 83.60655737704919,
+    "percent_covered_display": "84",
+    "missing_lines": 28,
+    "excluded_lines": 0,
+    "num_branches": 118,
+    "num_partial_branches": 20,
+    "covered_branches": 86,
+    "missing_branches": 32
+  },
+  "new_branches_vs_r2": [
+    [
+      79,
+      -54
+    ],
+    [
+      91,
+      94
+    ],
+    [
+      110,
+      111
+    ],
+    [
+      116,
+      119
+    ],
+    [
+      129,
+      130
+    ],
+    [
+      146,
+      147
+    ],
+    [
+      149,
+      150
+    ],
+    [
+      153,
+      155
+    ],
+    [
+      157,
+      158
+    ],
+    [
+      176,
+      177
+    ],
+    [
+      198,
+      199
+    ],
+    [
+      232,
+      236
+    ],
+    [
+      248,
+      249
+    ],
+    [
+      252,
+      253
+    ],
+    [
+      257,
+      258
+    ],
+    [
+      260,
+      261
+    ]
+  ]
+}

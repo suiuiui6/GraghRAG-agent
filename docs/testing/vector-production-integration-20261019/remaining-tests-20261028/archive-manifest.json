@@ -1,0 +1,216 @@
+{
+  "utc": "2026-10-28T07:29:06.192731+00:00",
+  "files": [
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\summary.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\summary.json",
+      "bytes": 2032,
+      "sha256": "db0b45263a3558a50fd7f2e9184c4b8f4b68e59efa49ffacd70532edf47935de"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\commands.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\commands.json",
+      "bytes": 1522,
+      "sha256": "08e31dc35f22e755ecf7b39675a561859f28a3e85b085644b6cba0a3f6507079"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\before.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\before.json",
+      "bytes": 28414,
+      "sha256": "744c91542439d248cc26de33877ddd3dd071bf2aeb4a880001a1b30a11dea044"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\after.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\after.json",
+      "bytes": 28414,
+      "sha256": "744c91542439d248cc26de33877ddd3dd071bf2aeb4a880001a1b30a11dea044"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\runtime-before.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\runtime-before.json",
+      "bytes": 647669,
+      "sha256": "f4ab58ca20c0d5383669f3fb795aa1ec166423e80670aa7a7158bfb7baa3e958"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\runtime-after.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\runtime-after.json",
+      "bytes": 647669,
+      "sha256": "f4ab58ca20c0d5383669f3fb795aa1ec166423e80670aa7a7158bfb7baa3e958"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\export.log",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\full-backend-r8-failed\\export.log",
+      "bytes": 20,
+      "sha256": "9dabc42e037e994dd58488c1e2a7121d07b05fa59e5afb58c9ccb387f804bdc8"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\receipt.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\receipt.json",
+      "bytes": 4993,
+      "sha256": "3b7dc12ad02943931b36556f1c71b5bcbaf3f8bb8a93880611cbae0be4f5b815"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\report.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\report.md",
+      "bytes": 1983,
+      "sha256": "64e6b934677549507e5dc2b04a1a6e54762558ad6cb1334914ae2644587147fe"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\commands.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\commands.json",
+      "bytes": 2694,
+      "sha256": "51fa9387e502e10815cdd2c50d91be515d5be50975b455e24dbdc64352e185cf"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\package-set.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\package-set.json",
+      "bytes": 9206,
+      "sha256": "cc53e29ac5be7d6bb9fba52a9e142c97c9e3c633daf23723615f30872e41a5fa"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\post-assembly-integrity.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\post-assembly-integrity.json",
+      "bytes": 395,
+      "sha256": "806308e8a6e34875d7ec01d2f4d0bda0f9af92d8edbde1e310528ab30a1b0bfa"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\normal-io.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\normal-io.json",
+      "bytes": 511,
+      "sha256": "e055016efdadaf86ebeddb586eee5e82bcedef06a5fa657497e165797b5a3c33"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-all-lock.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\audit-all-lock.json",
+      "bytes": 10460,
+      "sha256": "56954867e6eb11bd1365d329cd66f2fb4a209f414cbd32d27cd38ce03d0c8edb"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\audit-installed.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\audit-installed.json",
+      "bytes": 9191,
+      "sha256": "29174be4d1aa30cfe3a3576fb6efafdb847c83a6996e78df7b564f7007c83b01"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\normal_io.py",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\normal_io.py",
+      "bytes": 2186,
+      "sha256": "be92ab5207662f0330496be1c76f0f6e46e6ddd46e7e33f07691b2686311c55a"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\all-lock-requirements.txt",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime\\all-lock-requirements.txt",
+      "bytes": 3625,
+      "sha256": "3833d6ef63a84bc0661c681d6502d207cef32100bfa755a6e99aee5ee8da393c"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\windows-runtime-independent-review-20261028\\report.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime-review\\report.md",
+      "bytes": 5987,
+      "sha256": "85755e800ac573517694fbbdedc5525e699601d26a22753bfb088638ebe0fbb0"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\windows-runtime-independent-review-20261028\\independent-integrity.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime-review\\independent-integrity.json",
+      "bytes": 8712,
+      "sha256": "b60edaed10364f7672a426561ad0a155e4155988f390d611bde528c0cae69921"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\windows-runtime-independent-review-20261028\\independent-io.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime-review\\independent-io.json",
+      "bytes": 394,
+      "sha256": "fe010d3d325b8e512e57bec552aa7231e2ea983deb7bff3ea9a4e2745a88b2e2"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\windows-runtime-independent-review-20261028\\independent-wheel.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime-review\\independent-wheel.json",
+      "bytes": 500,
+      "sha256": "9e2f621ab083fe27d150045bf14855f6750430045a72340ce41b65f23e5e5c31"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\windows-runtime-independent-review-20261028\\r8-driver-static-review.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\windows-runtime-review\\r8-driver-static-review.md",
+      "bytes": 3293,
+      "sha256": "6bb83dd6e28583c95c350710e1c731d135bdb4fcbdad64fe6d373fb7cf51a442"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-runtime-mvp-20261027\\REPORT-20261028.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-runtime\\REPORT-20261028.md",
+      "bytes": 9860,
+      "sha256": "46c09802d12aecf62d42c659d66de5f18b3a2368545c0f5073830b6eaabc77fc"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-runtime-mvp-20261027\\evidence-manifest.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-runtime\\evidence-manifest.json",
+      "bytes": 49911,
+      "sha256": "897b7252e3a34d7186257b16f45c657e88959e54cec6c37f3eab9e05f8116d46"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-runtime-independent-review-20261028\\REVIEW.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-runtime-review\\REVIEW.md",
+      "bytes": 6423,
+      "sha256": "916b3d241b3134ee4f2d1b7ff23dfc21ed3f6f86667698692137329a53c0ef8d"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-runtime-independent-review-20261028\\review-manifest.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-runtime-review\\review-manifest.json",
+      "bytes": 5287,
+      "sha256": "455516cd8293d261787353c13a9ab8319a8bb90d64adda1f2c33ddd90b5c0471"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-vector-bridge-20261028\\REPORT.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-bridge\\REPORT.md",
+      "bytes": 7328,
+      "sha256": "001be93beda7587c427c7bd1f4d89fabf8b6716468975703e496326a8277cd6d"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-vector-bridge-20261028\\evidence-manifest.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-bridge\\evidence-manifest.json",
+      "bytes": 224457,
+      "sha256": "05553e4360ffeb8a05150f035681eb574847d0c5edef6b57df3260e734fd1234"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-vector-bridge-20261028\\COMMAND-ADDENDUM-20261028.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-bridge\\COMMAND-ADDENDUM-20261028.md",
+      "bytes": 3041,
+      "sha256": "e67d4d4d39b6af838849ec359985310d4037fa82ddaf59b171495f8cf678d1c2"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-vector-bridge-20261028\\COMMAND-ADDENDUM-20261028.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-bridge\\COMMAND-ADDENDUM-20261028.json",
+      "bytes": 2093,
+      "sha256": "ddbb19bfc8c436426e03ffc37b3dbfd9026f1755f007c592f65c591c9661ebd8"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\linux-bridge-independent-review-20261028\\REVIEW.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\linux-bridge-review\\REVIEW.md",
+      "bytes": 9836,
+      "sha256": "ababbd26dffaedce1fb1ef90b3a786ddeeb526ff524f1c21a65fac949a37f4ce"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\native-advisory-triage-20261027\\model-native-source-review.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\native-supplement\\model-native-source-review.md",
+      "bytes": 8336,
+      "sha256": "dd8a54477ae18aa94c4d9beffdd3aadc4dda9d67e862e6a117dcf7f68770e4e5"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\native-current-audit-20261028\\report.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\rust-current-audit\\report.md",
+      "bytes": 2860,
+      "sha256": "0bdae6a978f590560c7ddb58d834572a94a106304e24a84e604fe1314617e7f1"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\native-current-audit-20261028\\receipt.json",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\rust-current-audit\\receipt.json",
+      "bytes": 4271,
+      "sha256": "c23c4b67dd6ccfa38b745d0805f3b0e83cada672de98b1a3a94db005e682e07a"
+    },
+    {
+      "source": "D:\\graghRAG-agent\\.tmp\\git-identity-debug-20261028\\diagnosis.md",
+      "archived": "docs\\testing\\vector-production-integration-20261019\\remaining-tests-20261028\\git-timeout-diagnosis\\diagnosis.md",
+      "bytes": 6107,
+      "sha256": "444f99d76652ec6b1780eaf8ffcf95a486e0960509271674492d49773b7429a4"
+    }
+  ],
+  "not_found_not_claimed": []
+}

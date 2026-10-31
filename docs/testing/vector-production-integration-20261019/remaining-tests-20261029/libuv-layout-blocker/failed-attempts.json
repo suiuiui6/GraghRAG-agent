@@ -1,0 +1,15 @@
+[
+  {
+    "command": "python headers.py",
+    "exit": 1,
+    "phase": "before official header retrieval",
+    "error": "URLError caused by WinError 10013; escalated identical bounded fetch then exited 0"
+  },
+  {
+    "command": "python experiment.py",
+    "process_exit": 0,
+    "recorded_docker_exit": 1,
+    "error": "permission denied connecting dockerDesktopLinuxEngine; no container ran; identical experiment escalated then Docker exit 0",
+    "note": "initial run.json/stdout were superseded by successful retry; this record preserves observed failure, not a fabricated original log"
+  }
+]

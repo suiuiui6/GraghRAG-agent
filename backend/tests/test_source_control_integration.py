@@ -153,10 +153,10 @@ def test_real_api_trace_flag_is_strict_boolean(local_client):
     assert response.status_code == 422
 
 
-def test_real_chroma_adapter_and_bm25_share_long_evidence_identity(monkeypatch, sandbox_tmp_path):
-    from vector_store import VectorStore, HAS_CHROMADB
+def test_real_sqlite_adapter_and_bm25_share_long_evidence_identity(monkeypatch, sandbox_tmp_path):
+    from vector_store import VectorStore
+    from vector_runtime import SyntheticIntegrationConfig
     from doc_processor import ChunkMetadata
-    assert HAS_CHROMADB, "Existing local Chroma dependency required; do not install or skip silently"
     def no_network(*args, **kw):
         pytest.fail("TEST_ONLY vector integration may not access network")
     monkeypatch.setattr(socket, "create_connection", no_network)
@@ -164,7 +164,9 @@ def test_real_chroma_adapter_and_bm25_share_long_evidence_identity(monkeypatch, 
     text = "TEST_ONLY alpha retrieval passage " * 65
     metadata = ChunkMetadata(chunk_id="test_only_long", source_file="test_only.md", source_format="md", char_start=0, char_end=len(text))
     chunk = Chunk("test_only_long", text, "text", metadata=metadata)
-    store = VectorStore(collection_name="test_only_p2", persist_dir=str(sandbox_tmp_path / "chroma"), embedding_dim=2)
+    admission = SyntheticIntegrationConfig.create(sandbox_tmp_path / 'synthetic')
+    store = VectorStore(collection_name="test_only_p2", persist_dir=str(admission.fixture_root / "vectors"),
+                        embedding_dim=2, integration_config=admission)
     # Explicit software-test vectors: no embedding model or model download.
     store.add_chunks([chunk], [[1.0, 0.0]])
     config = RetrievalConfig(enable_cross_encoder=False)

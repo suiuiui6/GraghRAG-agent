@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "docker",
+    "build",
+    "--network",
+    "none",
+    "--pull=false",
+    "--no-cache",
+    "-t",
+    "windows-libuv-tools-authorized:20261029",
+    "--iidfile",
+    "D:\\graghRAG-agent\\.tmp\\windows-libuv-cross-mvp-20261029\\build-authorized\\image.id",
+    "D:\\graghRAG-agent\\.tmp\\windows-libuv-cross-mvp-20261029\\build-authorized\\context"
+  ],
+  "exit": 0,
+  "elapsed": 24.53562200000124
+}

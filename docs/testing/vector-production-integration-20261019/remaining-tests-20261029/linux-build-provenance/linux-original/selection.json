@@ -1,0 +1,24 @@
+{
+  "comment_text": null,
+  "core-metadata": {
+    "sha256": "f96872e3bd8de4a3a980589aa34249ab8bbf37c3f7cca5a8eeefe1eac25718f4"
+  },
+  "digests": {
+    "blake2b_256": "e6ec0c42039e80b9acc534f67b73b7a42471948042859b3a64867b50a4a77fa3",
+    "md5": "7880c3d57577a4b119a22cf1fd29a8e0",
+    "sha256": "cc09b3df76e5a5cb386aed2715a2eea152e3949f9e1ba93c7119505377749929"
+  },
+  "downloads": -1,
+  "filename": "chromadb-1.5.9-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+  "has_sig": false,
+  "md5_digest": "7880c3d57577a4b119a22cf1fd29a8e0",
+  "packagetype": "bdist_wheel",
+  "python_version": "cp39",
+  "requires_python": ">=3.9",
+  "size": 23316203,
+  "upload_time": "2026-05-05T05:54:41",
+  "upload_time_iso_8601": "2026-05-05T05:54:41.157648Z",
+  "url": "https://files.pythonhosted.org/packages/e6/ec/0c42039e80b9acc534f67b73b7a42471948042859b3a64867b50a4a77fa3/chromadb-1.5.9-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+  "yanked": false,
+  "yanked_reason": null
+}

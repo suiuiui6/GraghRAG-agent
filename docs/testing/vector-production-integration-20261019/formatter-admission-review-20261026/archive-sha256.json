@@ -1,0 +1,17 @@
+[
+  {
+    "file": "REVIEW.md",
+    "sha256": "5ce4b48facc01e64a79bec748434976ccb3e3d338726683a7ba3b3076b8e07c2",
+    "source": "D:\\graghRAG-agent\\.tmp\\formatter-admission-review-20261026\\REVIEW.md"
+  },
+  {
+    "file": "verification.json",
+    "sha256": "3ebfadba0e726c40dbc641e563cecdb8e98ca897e62801ef0fa29bbdddfc6408",
+    "source": "D:\\graghRAG-agent\\.tmp\\formatter-admission-review-20261026\\verification.json"
+  },
+  {
+    "file": "verify.py",
+    "sha256": "e4000111655096c409cc1d28b14989564d3b3fe7b2760301bcd3dc9986633526",
+    "source": "D:\\graghRAG-agent\\.tmp\\formatter-admission-review-20261026\\verify.py"
+  }
+]

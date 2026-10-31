@@ -1,0 +1,34 @@
+{
+  "review\\adapter-r2\\backend\\vector_store.py": {
+    "size": 25886,
+    "sha256": "ff84400e52da5a00f03110f2cf2faeeed222f77b89a2dd9e4bb746afda414f46"
+  },
+  "review\\adapter-r2\\backend\\vector_errors.py": {
+    "size": 1149,
+    "sha256": "b9a23b941eb84a7b50c866716e0c9dbcff3b1248be7c9daf2f9f594dc7ed4661"
+  },
+  "review\\adapter-r2\\backend\\sqlite_vector_payload.py": {
+    "size": 239,
+    "sha256": "e38deeb935a8dc6740b1719cebaa0baa3feee0bb5066f93c0b33e03f32c764b3"
+  },
+  "review\\adapter-r2\\backend\\parser_port.py": {
+    "size": 1195,
+    "sha256": "18a85b55345caa9ce4ac7ea2e344cedc9561cdda8c1c0eb6824499b3a629753d"
+  },
+  "differential-final\\candidate\\vector_store.py": {
+    "size": 25886,
+    "sha256": "ff84400e52da5a00f03110f2cf2faeeed222f77b89a2dd9e4bb746afda414f46"
+  },
+  "differential-final\\candidate\\vector_errors.py": {
+    "size": 1149,
+    "sha256": "b9a23b941eb84a7b50c866716e0c9dbcff3b1248be7c9daf2f9f594dc7ed4661"
+  },
+  "differential-final\\candidate\\sqlite_vector_payload.py": {
+    "size": 239,
+    "sha256": "e38deeb935a8dc6740b1719cebaa0baa3feee0bb5066f93c0b33e03f32c764b3"
+  },
+  "differential-final\\candidate\\parser_port.py": {
+    "size": 1195,
+    "sha256": "18a85b55345caa9ce4ac7ea2e344cedc9561cdda8c1c0eb6824499b3a629753d"
+  }
+}

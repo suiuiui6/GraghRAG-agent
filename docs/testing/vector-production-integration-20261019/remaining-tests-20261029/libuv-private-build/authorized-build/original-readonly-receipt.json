@@ -1,0 +1,89 @@
+{
+  "torch_cpu_sha_before": "0803ea116cd3e833b1b17515663734cbf7a78071ccd03dbcfa22d99517e1a134",
+  "torch_cpu_sha_after": "0803ea116cd3e833b1b17515663734cbf7a78071ccd03dbcfa22d99517e1a134",
+  "uv_sha_after": "fa569e682fc5fb7a8eb94c6829af9f30a569748dbbc6bce39735d48bc960bcf8",
+  "uv_imports": [
+    {
+      "dll": "uv.dll",
+      "symbols": [
+        {
+          "name": "uv_ip6_name"
+        },
+        {
+          "name": "uv_ip4_name"
+        },
+        {
+          "name": "uv_os_gethostname"
+        },
+        {
+          "name": "uv_free_interface_addresses"
+        },
+        {
+          "name": "uv_interface_addresses"
+        },
+        {
+          "name": "uv_timer_start"
+        },
+        {
+          "name": "uv_timer_init"
+        },
+        {
+          "name": "uv_async_send"
+        },
+        {
+          "name": "uv_async_init"
+        },
+        {
+          "name": "uv_tcp_connect"
+        },
+        {
+          "name": "uv_tcp_getsockname"
+        },
+        {
+          "name": "uv_read_stop"
+        },
+        {
+          "name": "uv_tcp_nodelay"
+        },
+        {
+          "name": "uv_tcp_init"
+        },
+        {
+          "name": "uv_is_closing"
+        },
+        {
+          "name": "uv_write"
+        },
+        {
+          "name": "uv_read_start"
+        },
+        {
+          "name": "uv_accept"
+        },
+        {
+          "name": "uv_listen"
+        },
+        {
+          "name": "uv_buf_init"
+        },
+        {
+          "name": "uv_close"
+        },
+        {
+          "name": "uv_strerror"
+        },
+        {
+          "name": "uv_run"
+        },
+        {
+          "name": "uv_loop_init"
+        },
+        {
+          "name": "uv_tcp_bind"
+        }
+      ]
+    }
+  ],
+  "torch_delay_imports": [],
+  "no_uv_ordinal_imports": true
+}

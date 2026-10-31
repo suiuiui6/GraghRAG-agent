@@ -1,0 +1,1164 @@
+{
+  "network_requests": 0,
+  "build_hooks_executed": false,
+  "inputs": {
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-install-preflight-20261029\\PLAN.md": "465a25134ed5d78ddff9fcb1310acdecd879d874c521d662d190e5f19c9132ad",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-install-preflight-20261029\\receipt.json": "00f08e5ea759588d8f6f39e64e3b063b77457a73b0341a267a73143fb3147ce5",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-sdist-source-review-20261029\\receipt.json": "6b6d5089b463222ba103472666afc52093c177edbdc3f73f18397d2ea11dc44c",
+    "D:\\graghRAG-agent\\.tmp\\linux-cpu-sdist-source-review-20261029\\oss2-retry1-receipt.json": "4d3db0a792f30cce16901e4fdb94bad3f6d9535dd3a778ec4bc96e8ae74fcc1b"
+  },
+  "artifacts": {
+    "crcmod": {
+      "path": "D:\\graghRAG-agent\\.tmp\\linux-cpu-sdist-source-review-20261029\\crcmod-1.7.tar.gz",
+      "sha256": "dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e",
+      "bytes": 89670,
+      "members": [
+        {
+          "path": "crcmod-1.7/setup.py",
+          "bytes": 1983,
+          "sha256": "129c37991924b5950aa28a5f854cd44a3f5af1d3c92c616897409a05b0fce40b"
+        },
+        {
+          "path": "crcmod-1.7/python2/src/_crcfunext.c",
+          "bytes": 13912,
+          "sha256": "3e6656646fbc527f3fcfbf61050a5d0a6755cfe2428aefd301a0321c64f78b9f"
+        },
+        {
+          "path": "crcmod-1.7/python2/crcmod/crcmod.py",
+          "bytes": 17092,
+          "sha256": "89b73b2d929139bceea00b04120a7cb72a561a7d9c5c0580ce6ecd415311e68b"
+        },
+        {
+          "path": "crcmod-1.7/python2/crcmod/predefined.py",
+          "bytes": 9600,
+          "sha256": "1171e025ea23bc58aec11beddce9d8ace3e91ed2f52d98561b56d719e4d32874"
+        },
+        {
+          "path": "crcmod-1.7/python2/crcmod/__init__.py",
+          "bytes": 194,
+          "sha256": "08f018091d5412443ea1d2a67aa374ac45b60d150dc8097de0eec318582fdd6a"
+        },
+        {
+          "path": "crcmod-1.7/python2/crcmod/_crcfunpy.py",
+          "bytes": 3073,
+          "sha256": "d27dfbac72db0f8acd8673be63ecfdd846254818dce54a04734da22d4e1b30e7"
+        },
+        {
+          "path": "crcmod-1.7/python2/crcmod/test.py",
+          "bytes": 17011,
+          "sha256": "432ab759a6a5ac78edd412699782e7bc7fda5037cb3487a9e7d3cdd13d8c1265"
+        },
+        {
+          "path": "crcmod-1.7/MANIFEST.in",
+          "bytes": 192,
+          "sha256": "3844ab581e351ceee531851aaba750d6b059b59aa49266c230efe8c2fb76595d"
+        },
+        {
+          "path": "crcmod-1.7/changelog",
+          "bytes": 910,
+          "sha256": "3bf940acf454d8168080fcef1cb42fc9a20df6229af5cc729eb3ad1518e9871a"
+        },
+        {
+          "path": "crcmod-1.7/PKG-INFO",
+          "bytes": 6232,
+          "sha256": "4730c9f761d7ec406225b237701af69a33c9c2b6b3d246943a6618e56947aefa"
+        },
+        {
+          "path": "crcmod-1.7/python3/src/_crcfunext.c",
+          "bytes": 16456,
+          "sha256": "0a4ff7fc7fed3663cd11bb4993d74fa8022c21e126af4db07f918542cac40e4e"
+        },
+        {
+          "path": "crcmod-1.7/python3/crcmod/crcmod.py",
+          "bytes": 16610,
+          "sha256": "2ce34d54bd210a16785161d5cae0b91894a4ba8545e8a6f047bb08209a6729db"
+        },
+        {
+          "path": "crcmod-1.7/python3/crcmod/predefined.py",
+          "bytes": 9606,
+          "sha256": "6957449a0d0d120463a2aadf33161a92991e814362a77f5ccc7a38a4d71a8f9e"
+        },
+        {
+          "path": "crcmod-1.7/python3/crcmod/__init__.py",
+          "bytes": 194,
+          "sha256": "08f018091d5412443ea1d2a67aa374ac45b60d150dc8097de0eec318582fdd6a"
+        },
+        {
+          "path": "crcmod-1.7/python3/crcmod/_crcfunpy.py",
+          "bytes": 3702,
+          "sha256": "046b8a0c3e34a39920235d878e5022ed6951df74031454adaf58bde4652eaa20"
+        },
+        {
+          "path": "crcmod-1.7/python3/crcmod/test.py",
+          "bytes": 18433,
+          "sha256": "0723d05a13a369a8261b65081358932a54e7905b6c50c4281a42a3510f7f191a"
+        },
+        {
+          "path": "crcmod-1.7/test/examples.py",
+          "bytes": 1656,
+          "sha256": "3eece5a52bca876755b72ec1e17b4a00ac605dce88eebbe1d4c4264094832587"
+        },
+        {
+          "path": "crcmod-1.7/test/test_crcmod.py",
+          "bytes": 72,
+          "sha256": "878d33bd83f14a20a99a0aa60c244bcb75cfc4cd59adf6415567303b26bce96b"
+        },
+        {
+          "path": "crcmod-1.7/LICENSE",
+          "bytes": 1249,
+          "sha256": "89480768826f408daea1f3caff0509c2cc9606e10f6bb0ccfd12a3d604842c35"
+        },
+        {
+          "path": "crcmod-1.7/README",
+          "bytes": 3904,
+          "sha256": "847603586485f69661a2578cc98c21aae0b8b51157a7957a37e0083fc53e706d"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/genindex.html",
+          "bytes": 6605,
+          "sha256": "db4007f1ce137237e4204217cd348ed545eba3446ebf1d97e8d23731ff0b9d18"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_sources/crcmod.txt",
+          "bytes": 8493,
+          "sha256": "11373de10e7a1e804d25b5ec79492a70d1bd9ff5bffc4796a88a8a191d00e716"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_sources/index.txt",
+          "bytes": 460,
+          "sha256": "cdb953a75df87f288ffd76b6782b9ce3a44541dbbf00732b3a2a2db1d4ac3d8e"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_sources/crcmod.predefined.txt",
+          "bytes": 9235,
+          "sha256": "0624b7e504305924c9a3da48fc9f75bd2789a0282e10ac47a9cd560f521bc2b5"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_sources/intro.txt",
+          "bytes": 4573,
+          "sha256": "81899d4ae4669db384fc6c3f70a1fd9185ce48d944944992275456a712e4360a"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/jquery.js",
+          "bytes": 55774,
+          "sha256": "d548530775a6286f49ba66e0715876b4ec5985966b0291c21568fecfc4178e8d"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/pygments.css",
+          "bytes": 3224,
+          "sha256": "ee364d87e758bae4e5e005ff03ab5fb0ccd0804cb920924e9b536888305300d4"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/plus.png",
+          "bytes": 199,
+          "sha256": "55fcc0d9d9d52070dae60f646ec56c0dd111be1c13459b06470c7ff5b6f2fbf7"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/default.css",
+          "bytes": 3492,
+          "sha256": "b88f1cc1f0c243e6cdf95f930bd665c47376083310a4f820d53bf54e3ff22a9f"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/basic.css",
+          "bytes": 6579,
+          "sha256": "7c22516558a80644726c694006944bb9e475a4e769759ef64f2a601bd835a74f"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/searchtools.js",
+          "bytes": 12609,
+          "sha256": "10c32f1cc8f580c776a004b1bef6759cad097df4efe4ccc900f0564af85cc760"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/minus.png",
+          "bytes": 199,
+          "sha256": "141ae2a6288687b83d817f7fc0daef577e43d1410871f2f9fd1ceff0af825faa"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/doctools.js",
+          "bytes": 6618,
+          "sha256": "37cab50413e451b596d1a872f54430c47077195a27a3aecf09ffbb6e15089238"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/_static/file.png",
+          "bytes": 392,
+          "sha256": "1834b8fc8c98c09f88cb2264011c3ef917fe651f2678721384c0aae346dfb062"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/objects.inv",
+          "bytes": 855,
+          "sha256": "a50dc0ceb00b81d79a3c23b94b6111dd4f842fc1e72b361590052f1457a56e34"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/searchindex.js",
+          "bytes": 5453,
+          "sha256": "c089547bb60fc54efeb00238ab68a263bd620f7d3b61fc29a65b8aef822666f6"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/.buildinfo",
+          "bytes": 230,
+          "sha256": "c0994e9f200602cfd8547a5fb83ab0e2382fa7216c6059f60b7e16db78bcedde"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/crcmod.predefined.html",
+          "bytes": 24883,
+          "sha256": "8b7bab90559d69fcd63285f21fe3b0db5beb4d0efdf4aff2d7beca2be5cb760d"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/index.html",
+          "bytes": 6507,
+          "sha256": "b40e904ff464dc80eb048ae33f8fd62de04eb454e6286e6d436a9bfe9e4e8feb"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/intro.html",
+          "bytes": 16054,
+          "sha256": "f69f89a63b90a282f010d572199af38dc793fff99bf49f69e5c5f47f7db4802a"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/modindex.html",
+          "bytes": 3829,
+          "sha256": "ef87f50755821972cc198307bff4b68b7956dfd23117b43683241b40327acc79"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/search.html",
+          "bytes": 3229,
+          "sha256": "c9dab48b5858641978fe1089b7b45e5680af82d58b8913dbcc1833ee70e33f07"
+        },
+        {
+          "path": "crcmod-1.7/docs/html/crcmod.html",
+          "bytes": 28407,
+          "sha256": "f55b308ded4efd48800c7722a127c3e69a40b54a89cafe9fbfe1358b25b8ad2e"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/intro.rst",
+          "bytes": 4573,
+          "sha256": "81899d4ae4669db384fc6c3f70a1fd9185ce48d944944992275456a712e4360a"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/make.bat",
+          "bytes": 3821,
+          "sha256": "80ef4de58cf21c8884afde580d02e7fb6487d4f068bd5d5092dfb3aa99c920b6"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/crcmod.rst",
+          "bytes": 8493,
+          "sha256": "11373de10e7a1e804d25b5ec79492a70d1bd9ff5bffc4796a88a8a191d00e716"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/conf.py",
+          "bytes": 7691,
+          "sha256": "b5c50bb046f9771844201419d3580dc240deee837b4c6128d39000d74932b20d"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/crcmod.predefined.rst",
+          "bytes": 9235,
+          "sha256": "0624b7e504305924c9a3da48fc9f75bd2789a0282e10ac47a9cd560f521bc2b5"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/make_predefined_table.py",
+          "bytes": 1410,
+          "sha256": "3ef6a8e082c8ac496e01fd63a713177380f0660e1f757e92e4629cbe8dd30be4"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/Makefile",
+          "bytes": 4280,
+          "sha256": "d4d411388546e6cff7743a518b2fd5ecfbfb2fc18795afbf4a286728ba9fc62f"
+        },
+        {
+          "path": "crcmod-1.7/docs/source/index.rst",
+          "bytes": 460,
+          "sha256": "cdb953a75df87f288ffd76b6782b9ce3a44541dbbf00732b3a2a2db1d4ac3d8e"
+        }
+      ],
+      "review_files": {
+        "setup.py": {
+          "file": "crcmod-setup.py.txt",
+          "sha256": "129c37991924b5950aa28a5f854cd44a3f5af1d3c92c616897409a05b0fce40b"
+        },
+        "python3/src/_crcfunext.c": {
+          "file": "crcmod-python3_src__crcfunext.c.txt",
+          "sha256": "0a4ff7fc7fed3663cd11bb4993d74fa8022c21e126af4db07f918542cac40e4e"
+        },
+        "python3/crcmod/crcmod.py": {
+          "file": "crcmod-python3_crcmod_crcmod.py.txt",
+          "sha256": "2ce34d54bd210a16785161d5cae0b91894a4ba8545e8a6f047bb08209a6729db"
+        },
+        "python3/crcmod/predefined.py": {
+          "file": "crcmod-python3_crcmod_predefined.py.txt",
+          "sha256": "6957449a0d0d120463a2aadf33161a92991e814362a77f5ccc7a38a4d71a8f9e"
+        }
+      },
+      "pyproject_present": false
+    },
+    "oss2": {
+      "path": "D:\\graghRAG-agent\\.tmp\\linux-cpu-sdist-source-review-20261029\\oss2-2.19.1-retry1.tar.gz",
+      "sha256": "a8ab9ee7eb99e88a7e1382edc6ea641d219d585a7e074e3776e9dec9473e59c1",
+      "bytes": 298845,
+      "members": [
+        {
+          "path": "oss2-2.19.1/CHANGELOG.rst",
+          "bytes": 10149,
+          "sha256": "5ee7307c21beb39e603e83b583ec2486049d63b7c7f64cdbcca5609cfa8d488d"
+        },
+        {
+          "path": "oss2-2.19.1/LICENSE",
+          "bytes": 1053,
+          "sha256": "2c10901365cafb8d9cd0258f197bcb21932c16d9faf42aa51c5bd8a8393947fe"
+        },
+        {
+          "path": "oss2-2.19.1/MANIFEST.in",
+          "bytes": 134,
+          "sha256": "88ca0c1817b74b28c3ec2e77425336cd1d0a533d6043a7c76ac62dc98620058d"
+        },
+        {
+          "path": "oss2-2.19.1/PKG-INFO",
+          "bytes": 5963,
+          "sha256": "726c2bb507e68201730b194b6c1868ade1b28e02059bdb4d4b764a12978c9f5b"
+        },
+        {
+          "path": "oss2-2.19.1/README.rst",
+          "bytes": 4869,
+          "sha256": "35bb17f63ab0bda41288c8e0685dc10aded2d168d5c009788c0ba95dc7c1073c"
+        },
+        {
+          "path": "oss2-2.19.1/examples/async_fetch_task.py",
+          "bytes": 2278,
+          "sha256": "7263d64955f6c9fccf0bedd22ed76ec95f327333f2cd17e051bef78d37c5999a"
+        },
+        {
+          "path": "oss2-2.19.1/examples/async_process_object.py",
+          "bytes": 2645,
+          "sha256": "d7f7adb0d09cb1003a4a456150b0c38882a93dc3e59883c25faf8da6d9b543cb"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket.py",
+          "bytes": 4880,
+          "sha256": "7bcec79e2d0859d584d5ffc5028cb537246e24362e3ad08e7f1f6e445075c886"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_access_monitor.py",
+          "bytes": 1511,
+          "sha256": "79496b683fb7ee0c200915275d5893c92ae3899e35393d9f24dbbed16c802ed6"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_access_point.py",
+          "bytes": 3335,
+          "sha256": "2ff815de46cc936f2f0fe8b7b4c35d4f1a81c0d36d96341dcc54d6630a6f392e"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_access_point_policy.py",
+          "bytes": 1991,
+          "sha256": "ac721d89b97de61386af01b2711694b467919303661be092a477cca52838f6fc"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_archive_direct_read.py",
+          "bytes": 1355,
+          "sha256": "658a4fccb2450c34b8cf053d9b332052118f39095f70e16b304b075a7745abf2"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_callback_policy.py",
+          "bytes": 2781,
+          "sha256": "f96051266dc67b626a00969e0cfd6dbb968ea8b16b8710ae73f3f2dbc9941ee4"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_cname.py",
+          "bytes": 2330,
+          "sha256": "e4663cd0bd5b385a2ce105e558066e4fccfd1589fba8e46a63e2e6426a48266d"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_cors.py",
+          "bytes": 1958,
+          "sha256": "1d00e2d475d7183ecfbc9d0a45869bb8a48332ee9438a83d01d2fa30dc0f44fb"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_data_redundancy_transition.py",
+          "bytes": 3876,
+          "sha256": "b0d31e5d8b826e7cd81a22eb0a8eb417acb5365bc5d6fac6eddd89234fda8f53"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_https_config.py",
+          "bytes": 1890,
+          "sha256": "6d0342337944fbe4b2fec7ad289498c669a2a6a3e2a64169fd4ec9bb9ce94678"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_inventory.py",
+          "bytes": 6045,
+          "sha256": "07bbda1a1d7dfcbe3b0530521863f14d9677b8f85a20b6ab91f6bd7351e2beaa"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_logging.py",
+          "bytes": 1908,
+          "sha256": "6bf5299ff87794255a159e6b78dac75185819f465fcb6830aa36ba29898dd1b0"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_meta_query.py",
+          "bytes": 2025,
+          "sha256": "7dbae379bdfd15291302595555d5d8b69885d4742e914fc90a6e6e16df1e4341"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_policy.py",
+          "bytes": 2016,
+          "sha256": "da2617299dd28ef46b1d0a0a78dd0904b255e2e593870307a8ae3b2d00a0446b"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_referer.py",
+          "bytes": 1897,
+          "sha256": "b3d9595e6f3e006740fe87433279d7b32778420e28841e22bba6231608cf0ab5"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_replication.py",
+          "bytes": 3296,
+          "sha256": "a8f60d4536ebc552947ff495e97a722b23f89f8ace7f4b4d8c7c7dc8eacabedb"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_resource_group.py",
+          "bytes": 1481,
+          "sha256": "3510450a0cf5f8f3894d7df0578ec651223640398bda53f4ccbfcfcc698e4f62"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_style.py",
+          "bytes": 1796,
+          "sha256": "8a4df468c0a64cf0897cbf919123e519e108f2a4c6f96cd16e0ed27244f71f60"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_symlink.py",
+          "bytes": 1622,
+          "sha256": "8a6a2e1b048f6efade4f04e5335ce02b2b1dfcff900ff91da1c91ff5bc54de8f"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_tagging.py",
+          "bytes": 1809,
+          "sha256": "0ce2234ca3c1f578ec73f09d960c1808f7de048899b70d8da37956b3c20bc1cb"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_transfer_acceleration.py",
+          "bytes": 1753,
+          "sha256": "332ed4df637e2aa47486a6fddc03ad312221e1c527b31963334e02dca1becf85"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_user_qos.py",
+          "bytes": 1176,
+          "sha256": "5cd19fd6e22703ea3aff714118f09a5da92f07cad2b6b90bdb874fbaa11be3b3"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_versioning.py",
+          "bytes": 1826,
+          "sha256": "c9615c2e0ddfd94fdc8d13711cfd0179a155d58b079b172a6718142691645630"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_website.py",
+          "bytes": 6202,
+          "sha256": "c918dc38bb335d8d5562790b82c48492256323440ad107b5f97753e171c7bb89"
+        },
+        {
+          "path": "oss2-2.19.1/examples/bucket_worm.py",
+          "bytes": 2004,
+          "sha256": "d13065e09273b7600abaeeecd6e2c3e40653251e14101d0bcc0400c2d1bda277"
+        },
+        {
+          "path": "oss2-2.19.1/examples/custom_crypto.py",
+          "bytes": 7966,
+          "sha256": "5be46a03076918b3af8717a80662c7d01171ebb3e41abeef1a1fd1c32172859e"
+        },
+        {
+          "path": "oss2-2.19.1/examples/describe_regions.py",
+          "bytes": 1733,
+          "sha256": "6eb728a142d679c2d2dc4d8891e51ffd06e10995f282d9fe0a90d3f95749b7c6"
+        },
+        {
+          "path": "oss2-2.19.1/examples/download.py",
+          "bytes": 2517,
+          "sha256": "21635a5d713b51dadd2f6de0b61a4bfe7db52aff15d0115aa0ee7601e89ed63b"
+        },
+        {
+          "path": "oss2-2.19.1/examples/environment_variable_credentials_provider.py",
+          "bytes": 848,
+          "sha256": "a6d31a34cd6940b2bacd73ee953f468f5888e978d339eaa6e229bb6adc569d74"
+        },
+        {
+          "path": "oss2-2.19.1/examples/image.py",
+          "bytes": 3330,
+          "sha256": "d4410409150712de79d016e09d136a654278f26488b3423e33868338684508cf"
+        },
+        {
+          "path": "oss2-2.19.1/examples/live_channel.py",
+          "bytes": 5726,
+          "sha256": "192a1b0bce8bb7b1a71ff61a4ed0731fcbec9adf46d87bbfb77736728d6f2e5d"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_basic.py",
+          "bytes": 3268,
+          "sha256": "183887aad9f69192a44cca900ba7b41b0c30d8018fdb69ba052e5beb7c978517"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_callback.py",
+          "bytes": 3369,
+          "sha256": "f2abeac3fc1edcb84e798961a1899771eeb1c3fb1bb3d7292ad9d073bcdb50ca"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_check.py",
+          "bytes": 6069,
+          "sha256": "12e732f1c83f06eff9a76fe6448d439739110a1983366821dd6440940e53eabb"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_crypto.py",
+          "bytes": 6400,
+          "sha256": "487aa79f6cad68e505b6ac69354e34f0764d2aba53d67144cdf610c1588a1af3"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_extra.py",
+          "bytes": 2944,
+          "sha256": "fee0bdbd931da9147ec2353ef000a41403f3318d8d63758aa2c09dba7cd3ee0a"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_forbid_overwrite.py",
+          "bytes": 7441,
+          "sha256": "16e1220bf5d33cc57decd4530dcb06d831372e3dea07a269bcf4ff92b3b564d4"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_operation.py",
+          "bytes": 1694,
+          "sha256": "f3bd3ce1c8ca5cf6e4ef5aeb1388db0835d3e88a5745da29b4d78e5e8c4c99b3"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_post.py",
+          "bytes": 7112,
+          "sha256": "ef004223ab8dc8cf7b9cf071b544dd26f9a435d97c8cea675d9ebe53f91330c8"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_progress.py",
+          "bytes": 3974,
+          "sha256": "474e6a79b292df69f730eec6a9e5a4a34ec78a27710cfe4f7a5f229404e0fbcb"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_request_payment.py",
+          "bytes": 1506,
+          "sha256": "6fe5ae04784e20e1fbe825a9d22bba5a265c316614015331c5dac98bb7759e72"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_restore.py",
+          "bytes": 2693,
+          "sha256": "95064154f55bcd83c97163eec977dc4960c2fc502c60d059d5ba840a578c71ac"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_server_crypto.py",
+          "bytes": 1881,
+          "sha256": "7e86ca0cf612981aeabf658a6fef8c7ce0d2d3a9c824d27a98c53e77e043d220"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_storage_type.py",
+          "bytes": 2545,
+          "sha256": "d17783a4d7b49f532bca163c7c4e25e731fb9d47f9eb3335ea08d5d116c3bb85"
+        },
+        {
+          "path": "oss2-2.19.1/examples/object_tagging.py",
+          "bytes": 22158,
+          "sha256": "519af1b7232e325205a0add9202b084fcdac7bfa65ce11dfcfddbf34a36a0f16"
+        },
+        {
+          "path": "oss2-2.19.1/examples/public_access_block.py",
+          "bytes": 3031,
+          "sha256": "2a21c3f8dfda683d78027a04f573a83bd4286b32a0b1540e69d542fcb4e483d5"
+        },
+        {
+          "path": "oss2-2.19.1/examples/qos_and_resource_pool.py",
+          "bytes": 6389,
+          "sha256": "34ec5f9bcdc2dc994f2d84f9c0243f29aeb6a70354e5b910a9a95e7b573ef13e"
+        },
+        {
+          "path": "oss2-2.19.1/examples/qos_info.py",
+          "bytes": 3263,
+          "sha256": "be54a50bb25aee393d4ec9fea38982265f4411d076a7a5ba164d84d3eccad714"
+        },
+        {
+          "path": "oss2-2.19.1/examples/sdk_logging.py",
+          "bytes": 2453,
+          "sha256": "1d448be786e5f8601ef23f5b399ef211a75cf073475bc8de9e3ab1c8fdbebcdd"
+        },
+        {
+          "path": "oss2-2.19.1/examples/select_csv.py",
+          "bytes": 2016,
+          "sha256": "3b52880d2c9a9f8d0ee58d798c613859106a63f4df08af54c8530e10867ea8d8"
+        },
+        {
+          "path": "oss2-2.19.1/examples/server_side_encryption.py",
+          "bytes": 4414,
+          "sha256": "f180ff22b4d59fd38d8bbc5399524b80f583a3a85f999b1a4617793cf23ae983"
+        },
+        {
+          "path": "oss2-2.19.1/examples/set_tls.py",
+          "bytes": 1575,
+          "sha256": "3a2cd81513eacaf50178d7f101f04f969381f99482ed663aee759d801e4b1019"
+        },
+        {
+          "path": "oss2-2.19.1/examples/sign_v2.py",
+          "bytes": 3178,
+          "sha256": "176d9f654fe86f3796c1230f2239a09b96f0cc412dfcbfec0e1ab68a902123f2"
+        },
+        {
+          "path": "oss2-2.19.1/examples/sign_v4.py",
+          "bytes": 1915,
+          "sha256": "6c9776f33017efcb69b8c1c9e09f432dae1c48cd598c0dc027902c006e9e0a21"
+        },
+        {
+          "path": "oss2-2.19.1/examples/sts.py",
+          "bytes": 3710,
+          "sha256": "66e83b37bf23a427febcdedf9124616e8b01a3a6431ae7c0e6e07badeae41de4"
+        },
+        {
+          "path": "oss2-2.19.1/examples/traffic_limit.py",
+          "bytes": 2220,
+          "sha256": "2ee0c398ad69c4535102ba69ed71eaca3bca59dccb8ba32bffe21c5753000cd9"
+        },
+        {
+          "path": "oss2-2.19.1/examples/upload.py",
+          "bytes": 3341,
+          "sha256": "5f9c7ba9484c342b4eaea1060fc27d55be6a198b305094a7a364420a030812c8"
+        },
+        {
+          "path": "oss2-2.19.1/examples/write_get_object_response.py",
+          "bytes": 2142,
+          "sha256": "b299c798d7f4c439d591dc4b33d528ceb220ffd0ce757ae004bb0e23b2b44be8"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/__init__.py",
+          "bytes": 2904,
+          "sha256": "83f9f9e6e505d9e566a983cba42b6d09f3042c9791c96529a3fa93641bac0dfb"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/api.py",
+          "bytes": 179280,
+          "sha256": "dae275ee2909a11d7148e738606e7954a2591eaaf2d82bafc67109a89a167c12"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/auth.py",
+          "bytes": 32967,
+          "sha256": "3d8851416c8a61c1f656377ddfded6c4286443ebae7164bd2f069fc83ec43ee3"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/compat.py",
+          "bytes": 2283,
+          "sha256": "b7b5fbb37fa8769569a8411aa6f2faf1d773a8c2e7d780fdddc4b01caad5e59d"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/crc64_combine.py",
+          "bytes": 4913,
+          "sha256": "e916a48cf5b141ecaea303c23786220c1697617c30cf5b28231b995f2449b08b"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/credentials.py",
+          "bytes": 5648,
+          "sha256": "cc6d63f6745ae4f1de9ab62535785109db84d5ba7f631632f48e4c89b867c8b3"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/crypto.py",
+          "bytes": 15091,
+          "sha256": "2b98426ca0fcfa3182cedff4f57090be21f294ce2d62057ff4d9468801e6e436"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/crypto_bucket.py",
+          "bytes": 17963,
+          "sha256": "395bd3c781782538ca69572b90bd36a0a5c064717badbb0a40f043a39a3c7c46"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/defaults.py",
+          "bytes": 985,
+          "sha256": "1b370f62ddbc7546677cc0908150dd1804a483a8c9dd8fd63a3b30e9197b70dc"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/exceptions.py",
+          "bytes": 9375,
+          "sha256": "031299420c32de0870f737efdceb01d327cb30e69bc4303c377f7e1bc65bdd07"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/headers.py",
+          "bytes": 3654,
+          "sha256": "889f120a6207978f57ce5a9cf7ddcadeb0c817e51dc390e4ca1279703698ca0f"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/http.py",
+          "bytes": 5931,
+          "sha256": "2de15e519ae2bbd33327353c385ce0d010b301b92e358f97ea423280bb6e3292"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/iterators.py",
+          "bytes": 12793,
+          "sha256": "b176f6b2ed3fac5acf6ce42e39640178ff9a9c7e16ecd300434294a54c2c16d3"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/models.py",
+          "bytes": 120572,
+          "sha256": "53d591dd029bb74cc122c5988a6b0db80c8120f4e4a56dbb5f1e2bd790497e41"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/resumable.py",
+          "bytes": 37191,
+          "sha256": "692bf7ec28bb940f9ac9bbaae8c55371f05570d38e9fd725e2a25481dc2548df"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/select_params.py",
+          "bytes": 1210,
+          "sha256": "2425c081f085ad61b7cbc9af3afd349c1d86a92110d7a0c483b74df00a9aafd9"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/select_response.py",
+          "bytes": 10063,
+          "sha256": "e8f79a7ecf09a6f98f1165347ad6101fa039a76bdd491fb6118a60533a317da8"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/task_queue.py",
+          "bytes": 2311,
+          "sha256": "a773d956d982cbb6de4589f1bc4267dde9b7339194b0d16b4e8c0f8a11f97fc0"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/utils.py",
+          "bytes": 26048,
+          "sha256": "e3a59eb304af0e486c08bae9be29ce6c21c4ff2e1ed5dfb38b5462f9a2cfc420"
+        },
+        {
+          "path": "oss2-2.19.1/oss2/xml_utils.py",
+          "bytes": 109139,
+          "sha256": "0ba6478b2197baabab2085794c824b1b938f36bf3dc0d7cd9574661ca40d7b83"
+        },
+        {
+          "path": "oss2-2.19.1/oss2.egg-info/PKG-INFO",
+          "bytes": 5963,
+          "sha256": "726c2bb507e68201730b194b6c1868ade1b28e02059bdb4d4b764a12978c9f5b"
+        },
+        {
+          "path": "oss2-2.19.1/oss2.egg-info/SOURCES.txt",
+          "bytes": 4333,
+          "sha256": "1e583fb008ea97579840edd1d660003c3d20e1ca91ccaa1d20b3314422672250"
+        },
+        {
+          "path": "oss2-2.19.1/oss2.egg-info/dependency_links.txt",
+          "bytes": 1,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "path": "oss2-2.19.1/oss2.egg-info/requires.txt",
+          "bytes": 113,
+          "sha256": "79d706a8a5f190a29fa1db9b0abe459cd745682a32d55c1ca4216c949615dcc8"
+        },
+        {
+          "path": "oss2-2.19.1/oss2.egg-info/top_level.txt",
+          "bytes": 5,
+          "sha256": "43fa9c6606ff497ae4e3224a353501c3e16e0afb8e8d164bd3b26d0e1a1cdd2c"
+        },
+        {
+          "path": "oss2-2.19.1/setup.cfg",
+          "bytes": 38,
+          "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e"
+        },
+        {
+          "path": "oss2-2.19.1/setup.py",
+          "bytes": 1705,
+          "sha256": "21128b30e6138cc4fe03aca66c7ecb2936a164ed984abf6db27e0219a3d8688e"
+        },
+        {
+          "path": "oss2-2.19.1/tests/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "oss2-2.19.1/tests/common.py",
+          "bytes": 9645,
+          "sha256": "dcf33d2507f7d7071fb5054bb8b415ffd44f7642667cfe667ddc02e8225ab76d"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_access_point.py",
+          "bytes": 5445,
+          "sha256": "762996abd41bd3e08a4a030712bfbe3d82f2710764ba9a9d8e726b08edf69078"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_api_base.py",
+          "bytes": 5438,
+          "sha256": "56f5d51cfd0c116d1a01b0c3c250df3325b6391c40d579e8a792512e0df0bc6e"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_async_fetch_task.py",
+          "bytes": 8284,
+          "sha256": "d275ef67da5c14d78ea3a93e411abb39e73990103ece2f9685ffc958912311ab"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket.py",
+          "bytes": 61490,
+          "sha256": "9f06c61fe71dcefb0928ef02b2ded362d034e3f27d30582b76bc7b92e5fbd1ae"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_access_monitor.py",
+          "bytes": 5125,
+          "sha256": "64f4e0b2db58fec2aca9b47dd9dd0b304b0a785b934ffb7c84b3f9d091387033"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_archive_direct_read.py",
+          "bytes": 816,
+          "sha256": "72c3c2356c5ded9feb6aa250ede3936660a7d6867791d5fdc4524380d52a2179"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_callback_policy.py",
+          "bytes": 3013,
+          "sha256": "0288ae485a2185f287ed0d5eb7edf5203ab08ea2406a762ec01d35758576cf4d"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_cname.py",
+          "bytes": 4434,
+          "sha256": "f4096012f9c6328d93b98cc8535cdf2d45dcbb920a587649f91ed2790585d8f3"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_data_redundancy_transition.py",
+          "bytes": 2899,
+          "sha256": "161bbdab66a38dc830342104e1ae03484ea34fd4c216244e2e46860474662df3"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_describe_regions.py",
+          "bytes": 1079,
+          "sha256": "821409e4688f9d5f6f3b5ec0a6425aed61e07db22b0a95ec9b731c6969783dd8"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_https_config.py",
+          "bytes": 2047,
+          "sha256": "94f5334867b07937d67661d40ef7918fe6ede0861edb95b11647e2b7d17ff52d"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_inventory.py",
+          "bytes": 13850,
+          "sha256": "007559e6a657876644f73f61b5bb20a1996e01f31e401502d3c87f8030cb3d30"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_meta_query.py",
+          "bytes": 3877,
+          "sha256": "1760f1f6b9e4bb4eac5eb045e6868b727e72fb1f3cfa5d7329505b2f9a3e34d7"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_replication.py",
+          "bytes": 15910,
+          "sha256": "8b303c4f90210c26f8052a809bd5bf16d8797c6e2566cbd33874aab70dafca62"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_resource_group.py",
+          "bytes": 687,
+          "sha256": "032c72edf1a69db665424e2e3ccb21a9818ed71aafe57563ae894fc0eac3cd4f"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_style.py",
+          "bytes": 1940,
+          "sha256": "031784eecf80fe426d6f6a5994f2da714c5d6c4fb82d329216873d276ff77662"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_transfer_acceleration.py",
+          "bytes": 584,
+          "sha256": "add54e73c8867daff78582f02198950e0788d3c3ed62ac8f8fed25cdcd960826"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_versioning.py",
+          "bytes": 7216,
+          "sha256": "7c6c6dddf32968509c8dd0f40ef1a848440a296328d0e7caa656beb0071b9493"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_bucket_worm.py",
+          "bytes": 2199,
+          "sha256": "ea5ee0b43547531ec8c918c495a2d675b8b2747e2586a61263358552ca3981ed"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_chinese.py",
+          "bytes": 2512,
+          "sha256": "4729a46492de95d1030aa81a2881f31c997b682e3498fcae698a562b01c26511"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_crc64_combine.py",
+          "bytes": 2530,
+          "sha256": "252413f54ccd63410fbac4feda669820c99b6e549a7a807becf546fafece977c"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_credentials_provider.py",
+          "bytes": 9147,
+          "sha256": "057457160f0cea6e3a0a3933fc2f1caa7754eef6af1d0fc3d0b1e120bea5b381"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_crypto.py",
+          "bytes": 18138,
+          "sha256": "5b784efb411f7ea876e171970bc0d083c32a6beb7ede60093b35ea49ecb2b151"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_crypto_multipart.py",
+          "bytes": 16165,
+          "sha256": "7b5372f8bad7972f09003a3261b447d377249eec79dede121f0a8742998f4677"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_crypto_object.py",
+          "bytes": 19990,
+          "sha256": "1792ed01304dfd20ba3ad4dd27b44311fbc5e2a23a5c70913379c97a80fccdc2"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_download.py",
+          "bytes": 24572,
+          "sha256": "09f839b03e7bfa35de99a9997c611d204e4cae40739103d6108367743570e0b7"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_exception_ec.py",
+          "bytes": 1466,
+          "sha256": "4a37e61724d6da6e2bbff7502ce838953f49fc0f9cd6483816286ba3234838e2"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_headers.py",
+          "bytes": 1042,
+          "sha256": "24eafe26cbfd001858d7d5e7f46b6e65491a1efad39e32e5b1e07238f0ed33b2"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_image.py",
+          "bytes": 3899,
+          "sha256": "a99cc1cc606054b672dcfc56dd3e2ca7dc60a67bf1404501d93f643b8002d909"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_init.py",
+          "bytes": 825,
+          "sha256": "e9566425bf706dbd419a827eb2a5c9b44887dc3d0275db26f63f04f33ffdc8f9"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_iterator.py",
+          "bytes": 6820,
+          "sha256": "aeac95df0d3d59e37e713cf01e1ecb9a2934216235421204a884f49d1575dfbc"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_lifecycle_versioning.py",
+          "bytes": 5451,
+          "sha256": "0ed764500c0974ff42eb2d5d51aa51fc9c64c382a94ec826dd36fb90c8ca637a"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_list_objects_v2.py",
+          "bytes": 7322,
+          "sha256": "51c0aa15e8f392ddb0cb00c831e644bbec4dd993735bb92a1e2e6dad8b48511f"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_live_channel.py",
+          "bytes": 11727,
+          "sha256": "a9359040ed1a92274842de1d03c839c8305dc192baa96f049eef4ea9e2372394"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_mock_bucket.py",
+          "bytes": 50903,
+          "sha256": "85ad7b5d515ea3ff2b45632daa53c6d130bf1ef9e404fa4ed02d71ec42f7bb21"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_mock_multipart.py",
+          "bytes": 8176,
+          "sha256": "15f365106be6e6164574397751a9d1a815551965bdea48216d768a14702ad3ed"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_mock_object.py",
+          "bytes": 42618,
+          "sha256": "78b754e4242af144ae741ec8e9c01f4899ed857a4acb8c02a00403dbad7232e2"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_multipart.py",
+          "bytes": 9546,
+          "sha256": "9152f372a58eb518e92916781408c7eef9e0331fa9a61894984cc7051e28dc4a"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_object.py",
+          "bytes": 57770,
+          "sha256": "1f05cf4e7cf4be70488bd979a7285f29c603a33d04140f7b9c0cb834761261fc"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_object_request_payment.py",
+          "bytes": 31821,
+          "sha256": "839bbcd726a15d81c5d87f08888112e7093f1c013f882a8e5d7ff81fe15bad0c"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_object_request_payment_versions.py",
+          "bytes": 3226,
+          "sha256": "e0eec618cb83542acd68472c950465cf30fc9fbc2808c8976855b924614ecf6d"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_object_versioning.py",
+          "bytes": 39901,
+          "sha256": "83ff680c3dc46ff3ce91b4f98e3240cd93bb0ed914486ada8a97961a158ead05"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_proxy.py",
+          "bytes": 1536,
+          "sha256": "8e3f7a0df82fc4dc0545ed81ed4a348f9856e83ea9bc8ff9ebdc1c9065c12a9e"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_public_access_block.py",
+          "bytes": 3388,
+          "sha256": "665c6d79f9e3fae360bebc089ac3687a1310001fef5895408d8f7fd66c5a09ce"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_put_object_chunked.py",
+          "bytes": 1575,
+          "sha256": "354a8ba13b2bd14fd0b9c74c3e68015b07aa9f2fc6207ac4a68d41544b330b98"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_qos_and_resource_pool.py",
+          "bytes": 9384,
+          "sha256": "791003590e88146d3bcadb5cfc89dc2cf6693107e21149977e7f70c3bbe5fb2c"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_qos_info.py",
+          "bytes": 7307,
+          "sha256": "fb9f748ef5910867595c749afe0a3a827c5e30c0beb94c0d1e4bc3a01de6accf"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_request_payment.py",
+          "bytes": 689,
+          "sha256": "d19c445cb53e36a5e0ad48df0411c7d3e00dfbac1995ba66529dceee8e005113"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_select_csv_object.py",
+          "bytes": 23204,
+          "sha256": "8a2c5db76c73971b216b594a1a05bcbdbf8c944e5c0d9c70d9380f34770e8f6d"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_select_json_object.py",
+          "bytes": 18291,
+          "sha256": "55929d52d3b855a526c428a33dae67beb5c4a2e6b9ec7d2c3349a38f201b8a1f"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_server_side_encryotion.py",
+          "bytes": 19279,
+          "sha256": "b4b6f9e630d03dec569aa4bd8f7357e9b0cee94a0c419a27c86c9ba8b12b8dea"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_sign.py",
+          "bytes": 15761,
+          "sha256": "03abdb69587affc4bdaa9c9572c152ba62c12a6303838cfa1cc69f69ff2d37cf"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_sts.py",
+          "bytes": 4617,
+          "sha256": "4846cf2580a2a300cf8f23e2c1d1ce514783af84cb1de029008db51cc98bab01"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_traffic_limit.py",
+          "bytes": 10894,
+          "sha256": "528ffd5f39a8b9f5030a2097137e4099f6df62a510f4dcfc4d566b62729fdf8b"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_upload.py",
+          "bytes": 16830,
+          "sha256": "d20efc9dc93b429957758738e93b11f5ceb88e8e1e74cf1172b338d0fb4e54ec"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_utils.py",
+          "bytes": 14543,
+          "sha256": "65078b8d21d2ba76316d410bca2a13ad06cc93c6afa3288e2d561c528cc622b0"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_website.py",
+          "bytes": 25691,
+          "sha256": "2a496a0993f606f87cac0aa9ac093180d49ff2bf5379bcb301ef247db5235e15"
+        },
+        {
+          "path": "oss2-2.19.1/tests/test_write_get_object_response.py",
+          "bytes": 3367,
+          "sha256": "d258a9bcd1ce8f199a6e744cffac290ea14629dbdeab842aa802f5c457cff5e3"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/__init__.py",
+          "bytes": 32,
+          "sha256": "d759a0d52b3192716ef85005baf60930907a429f974a9123f9efec05ffb9c51b"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/common.py",
+          "bytes": 13443,
+          "sha256": "a26cc0ccecbdca28149a54cc6f10611f3378763650aeae0b98bfbaab89865b3c"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_auth.py",
+          "bytes": 1284,
+          "sha256": "49e832a2f87b5b7297dbdc000824f544f10b900454c6c0a993c37107a26b6ccd"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_bucket.py",
+          "bytes": 199226,
+          "sha256": "9e2ffa651217c86df5f6bea5c1755dd8c9f1798dedf1778acf62c630700b5356"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_iterator.py",
+          "bytes": 24023,
+          "sha256": "a33d35e327b8d9b68cef5541b5182ab15e46ded38d1f517a80ddffed4b057165"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_models.py",
+          "bytes": 459,
+          "sha256": "12953404828b5c1b626bcb461fb4a62a6184a224387db0dae7b3977043a0269b"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_multipart.py",
+          "bytes": 6783,
+          "sha256": "392e555cbb49c58c2296c2fbb0d5bb7d55c88c00fda8a243abd1540d60dc5b80"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_object.py",
+          "bytes": 23028,
+          "sha256": "a478acb7d15f2bfa534b0bc232475727722e7e3018324221a0a86d378b56e64e"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_resumable.py",
+          "bytes": 1209,
+          "sha256": "ec7d1db067c1482a46d389bf257cb3ba286d3f9eac1a1b147365a0066fb1d3b8"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_select_object.py",
+          "bytes": 18195,
+          "sha256": "b46acc67c63caa132f4a3dc7deb1d3c7c272b1cfa4f4fb66ace890d145050fa9"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_task_queue.py",
+          "bytes": 2723,
+          "sha256": "ea41a60aeffc8280e51df0ee315244d874efe1248cff08dc5ee305ce88ed0b2c"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_utils.py",
+          "bytes": 1877,
+          "sha256": "9a57e8d817975b2ef02989f13786fe8251597ec01be8aec8555e3a2adc3a26ae"
+        },
+        {
+          "path": "oss2-2.19.1/unittests/test_xml_utils.py",
+          "bytes": 12161,
+          "sha256": "5266905396ddea4bdfff14d46044b2a4f106d1ae928219c3cbb10f89c14778ec"
+        }
+      ],
+      "review_files": {
+        "oss2/__init__.py": {
+          "file": "oss2-oss2___init__.py.txt",
+          "sha256": "83f9f9e6e505d9e566a983cba42b6d09f3042c9791c96529a3fa93641bac0dfb"
+        },
+        "oss2/crc64_combine.py": {
+          "file": "oss2-oss2_crc64_combine.py.txt",
+          "sha256": "e916a48cf5b141ecaea303c23786220c1697617c30cf5b28231b995f2449b08b"
+        },
+        "setup.cfg": {
+          "file": "oss2-setup.cfg.txt",
+          "sha256": "1c473cbaee8da5fc46e7f0158794af5cea4414c34a3cf3f180c2001f5e38bd3e"
+        },
+        "setup.py": {
+          "file": "oss2-setup.py.txt",
+          "sha256": "21128b30e6138cc4fe03aca66c7ecb2936a164ed984abf6db27e0219a3d8688e"
+        }
+      },
+      "pyproject_present": false
+    }
+  },
+  "setuptools_runtime_lock": "84.1.0",
+  "wheel_in_runtime_lock": false,
+  "preflight_apt_archives_rehashed": 32,
+  "langextract_source_files_rehashed": 49,
+  "static_setuptools_version": "84.1.0",
+  "static_setuptools_files": {
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Lib\\site-packages\\setuptools-84.1.0.dist-info\\METADATA": "adc9c90a8475c9efce59d6dbe2bfdfc3a68a9806a83b7771245ac6e9bb0e8649",
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Lib\\site-packages\\setuptools\\__init__.py": "04d3cd11754df1af03e547cf9e930e8f46330c2c46772b43545b75993667978f",
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Lib\\site-packages\\setuptools\\command\\bdist_wheel.py": "01a4a09b8eee28489843418682fd640b72da58d6c89f044d0b02c08861789ee4",
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\wheelfile.py": "9bf83fed336c129fa3fb19ef4abe720cb1056f59e1c8e6ee7aaf50e7fd7f9410",
+    "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\__init__.py": "53078abe17b84b23fbcc5c83a18a3c04ebb04c0eaadfefd6a4c998d8d34ee787"
+  },
+  "vendored_wheel_version": "0.46.3",
+  "standalone_wheel_requirement": "not presumed mandatory: confirm backend capability with verified setuptools wheel in Linux; LangExtract explicit build-system wheel declaration still separately tracked",
+  "native_crcmod_required_probe": {
+    "extension_import": "crcmod._crcfunext",
+    "selection_flag": "crcmod.crcmod._usingExtension is True",
+    "known_vector": "crcmod.predefined.mkCrcFun(\"crc-32\")(b\"123456789\") == 0xCBF43926"
+  },
+  "next_step": "acquire/hash fixed setuptools84.1.0 wheel, then isolated Linux backend capability probe before legacy setup builds; no standalone wheel until capability/declaration handling establishes need"
+}

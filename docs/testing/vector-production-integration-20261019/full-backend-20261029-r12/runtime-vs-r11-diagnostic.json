@@ -1,0 +1,36 @@
+{
+  "baseline_count": 36682,
+  "current_count": 36704,
+  "added": [
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\argparse.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\bdb.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\cmd.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\code.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\codeop.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\difflib.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\pdb.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\pprint.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\encodings\\__pycache__\\unicode_escape.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\multiprocessing\\__pycache__\\__init__.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\multiprocessing\\__pycache__\\context.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\multiprocessing\\__pycache__\\process.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\multiprocessing\\__pycache__\\reduction.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\__init__.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\case.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\loader.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\main.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\result.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\runner.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\signals.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\suite.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\unittest\\__pycache__\\util.cpython-312.pyc",
+    "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\run_backend_20261029_r12.py"
+  ],
+  "removed": [
+    "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\run_backend_20261029_r11.py"
+  ],
+  "changed": [
+    "D:\\graghRAG-agent\\.tmp\\python-security-runtime-20261028\\derived\\python\\Lib\\__pycache__\\shlex.cpython-312.pyc"
+  ],
+  "added_pyc": 22
+}

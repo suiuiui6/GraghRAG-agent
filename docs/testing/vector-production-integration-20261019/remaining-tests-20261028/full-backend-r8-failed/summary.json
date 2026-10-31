@@ -1,0 +1,52 @@
+{
+  "time_utc": "2026-10-28T06:48:25.623375+00:00",
+  "commands": [
+    {
+      "name": "tests",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "run",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\backend.coverage",
+        "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-20261014\\graghRAG-agent\\backend\\tests\\model_dependency_bootstrap.py",
+        "backend/tests",
+        "backend/research/test_deepseek_scope_pilot.py",
+        "-vv",
+        "-ra",
+        "--tb=short",
+        "--durations=20",
+        "-p",
+        "no:cacheprovider",
+        "--basetemp=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\test-temp",
+        "--junitxml=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\junit.xml"
+      ],
+      "exit": 1,
+      "elapsed_seconds": 308.9529999999795
+    },
+    {
+      "name": "export",
+      "command": [
+        "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261028\\.venv\\Scripts\\python.exe",
+        "-m",
+        "coverage",
+        "json",
+        "--rcfile=docs/testing/coverage-backend-2026-10-12.ini",
+        "--data-file=D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\backend.coverage",
+        "-o",
+        "D:\\graghRAG-agent\\.tmp\\vector-resume-20261022\\full-backend-20261028-r8\\coverage.json"
+      ],
+      "exit": 1,
+      "elapsed_seconds": 0.7029999999795109
+    }
+  ],
+  "inputs_stable": true,
+  "runtime_inputs_stable": true,
+  "purpose": "full fixed-scope backend on Python3.12.16/SQLite3.54/msgpack1.2.3; dependency preparation inside coverage precedes pytest; test command budget 1200 seconds",
+  "coverage_gate": false,
+  "scope_gate": false,
+  "command_gate": false,
+  "test_gate": false,
+  "backend_gate": false
+}

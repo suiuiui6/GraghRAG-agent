@@ -1,0 +1,37 @@
+[
+  {
+    "file": "report.md",
+    "sha256": "0b884a5142f6b48032d8990bee2ea34d3e8cb3e7280e6bac892d12df716188d5",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\report.md"
+  },
+  {
+    "file": "candidate.diff",
+    "sha256": "f90a9dbd8d841dab52c45ec0fccd6bb5e01182494a39e3e8a82b1883c7c08790",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\candidate.diff"
+  },
+  {
+    "file": "hashes.json",
+    "sha256": "93d539ff56200705d1db8a40069f15c827b32f89c87a871f81243dd2da1343f7",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\hashes.json"
+  },
+  {
+    "file": "final.log",
+    "sha256": "c790f84666c84b6013aa79af347936563dbbc8c1d1c7293402d0bea5f10d019e",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\final.log"
+  },
+  {
+    "file": "helper-regression.log",
+    "sha256": "8632541fba99ed835e1e38b5a3f6b5a086908b3dc5aecb388493d8f982660774",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\helper-regression.log"
+  },
+  {
+    "file": "junit.xml",
+    "sha256": "25e35ac090e4805c72551b5ea1cb751931da395f5bc972723f9829ca00d2b3d2",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\junit.xml"
+  },
+  {
+    "file": "helper-junit.xml",
+    "sha256": "418b702adc272be5a272651ea4f4aa7b488b136698a8a910b87b28f6f313d7b7",
+    "source": "D:\\graghRAG-agent\\.tmp\\historical-skip-20261026\\helper-junit.xml"
+  }
+]

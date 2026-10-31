@@ -1,4 +1,4 @@
-from tests.request_helpers import admin_request
+from tests.request_helpers import admin_request, registered_compat_admin
 import asyncio
 
 import pytest
