@@ -1,0 +1,18 @@
+{
+  "public_dev": {
+    "snapshot_original_sha256": "f3f59076a62d11afa5acdb78335bc09a89341499d3c572107b3e1694a288446e",
+    "snapshot_restored_sha256": "f3f59076a62d11afa5acdb78335bc09a89341499d3c572107b3e1694a288446e",
+    "source_files": 145,
+    "registration_sha256": "6b71d22a58596fbc848e6d0780d7d3ece1ac5527a31bad4a0914d88be27946ac"
+  },
+  "simple_output": {
+    "runtime_snapshot_original_sha256": "69908e99312d958ca17c40b15a76b06c9ab71f54a692715ab17c922bb2fa3fc9",
+    "runtime_snapshot_restored_sha256": "69908e99312d958ca17c40b15a76b06c9ab71f54a692715ab17c922bb2fa3fc9",
+    "source_files": 146,
+    "registration_receipt_sha256": "32f5cb13cbe578e89df9375a80bb347fb4e69a4f3d99b095dd5afb85d916fedc",
+    "registration_restored_sha256": "32f5cb13cbe578e89df9375a80bb347fb4e69a4f3d99b095dd5afb85d916fedc",
+    "restored_from_historical_prepare_chain": true,
+    "byte_exact_match": true
+  },
+  "private_recovery_backup": "D:\\graghRAG-agent\\.tmp\\ra1105"
+}

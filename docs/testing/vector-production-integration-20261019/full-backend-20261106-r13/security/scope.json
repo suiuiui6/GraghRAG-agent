@@ -1,0 +1,16 @@
+{
+  "lock_sha256": "d17320959f38250916c8033e741d29ded4c8e61d299d28942d38f1d820df9a06",
+  "lock_unchanged": true,
+  "installed_distributions": 319,
+  "thirdparty_entries": 159,
+  "langextract_omitted": [
+    [
+      "langextract",
+      "1.5.0"
+    ],
+    [
+      "langextract",
+      "1.5.0"
+    ]
+  ]
+}

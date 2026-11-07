@@ -13,6 +13,8 @@ CLI_T20_EXEMPT = {
 # These research modules are also imported as libraries. Only their command
 # entrypoint bodies may print; their helpers have no file-wide exemption.
 RESEARCH_CLI_ENTRYPOINTS = {
+    # Local build CLI: only main/guard bodies own stdout; helpers remain silent.
+    "native/torch_libuv/build.py",
     "research/git_identity_worker.py",
     "research/common_evaluate_summary.py", "research/common_evaluation_packets.py",
     "research/common_protection.py", "research/common_resource_audit.py",

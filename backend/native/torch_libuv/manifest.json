@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "target": "x86_64-pc-windows-msvc",
+  "base_version": "1.40.0",
+  "base_commit": "4e69e333252693bd82d6338d6124f0416538dbfc",
+  "reference_sha256": "fa569e682fc5fb7a8eb94c6829af9f30a569748dbbc6bce39735d48bc960bcf8",
+  "upstream_commits": [
+    "b7466e31e4bee160d82a68fca11b1f61d46debae",
+    "0f2d7e784a256b54b2385043438848047bc2a629",
+    "3530bcc30350d4a6ccf35d2f7b33e23292b9de70",
+    "e0327e1d508b8207c9150b6e582f0adf26213c39"
+  ],
+  "patch": "patches/idna-backport.patch",
+  "patch_sha256": "a20128ca27cf079ae3ed8d449a4daecaed45b14f41a142a09592eada918444e1",
+  "changed_files": [
+    "src/idna.c",
+    "test/test-idna.c",
+    "test/test-list.h"
+  ],
+  "source": {
+    "kind": "git-checkout",
+    "network": "no-network-commands",
+    "base_commit": "4e69e333252693bd82d6338d6124f0416538dbfc"
+  },
+  "build": {
+    "generator": "NMake Makefiles",
+    "configuration": "Release",
+    "artifact": "uv.dll"
+  },
+  "test_contract": {
+    "dynamic": {"tests": 402},
+    "static": {"tests": 405}
+  },
+  "toolchain": {
+    "cmake": "4.2.3",
+    "msvc": "19.50.35728",
+    "vctools": "14.50.35717",
+    "generator": "NMake Makefiles"
+  }
+}

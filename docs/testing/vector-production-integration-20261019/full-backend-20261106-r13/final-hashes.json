@@ -1,0 +1,21 @@
+{
+  "code": {
+    "backend/native/torch_libuv/build.py": "b14ac93505a64b0fbff7e2583c3cde2c5be362a64f33d1ba2d35174b228541b3",
+    "backend/native/torch_libuv/manifest.json": "d1af25b81b416960306bebcc578e41e23f5300b42a6dce072d957f241cb8ad5b",
+    "backend/tests/test_torch_libuv_build_policy.py": "9b4e4bc5a92cabeaee01313b1aee0eb410d0d6f2dc878c7b57805d5529f61d17",
+    "backend/tests/test_error_handling_policy.py": "eb2e67f5c798c9bb9b15a02611b0baa76752f4d8921d4a6a8cba56e5b0953a1a",
+    "backend/pyproject.toml": "05284d715df1036af894be011b146a0c7bd19e7d5cec66c3581a105db6e1312b",
+    "backend/uv.lock": "d17320959f38250916c8033e741d29ded4c8e61d299d28942d38f1d820df9a06",
+    "docs/design/2026-10-19-vector-production-integration.md": "f4d40ef40b8f1243cd0c68c0b4a7c9ad535ee09ad13c76c9c4b1c0aeadf08404",
+    "docs/plans/2026-10-19-vector-production-integration.md": "e1621e8de9b3b2ef9dd26715147b4cf39ee2a56c1f1f63ee1c2e961a7ceb322b",
+    "docs/testing/vector-production-integration-20261019/DELIVERY-2026-11-06.md": "504dbb2b6e6ce0892dacad1fac20cb9c6c783eeb00b13fd0392971fa0605cfdf",
+    "docs/review/common-three-arm-20261015/registration.json": "6b71d22a58596fbc848e6d0780d7d3ece1ac5527a31bad4a0914d88be27946ac",
+    "docs/review/simple-output-20261016/registration-receipt.json": "1ba35da4f1722c391af573b868cc3b6a0f6cb34be7b522de71e80bb93ef48605"
+  },
+  "frozen": {
+    "D:\\graghRAG-agent\\.tmp\\public-dev-budget-20261015-r2\\snapshot.json": "f3f59076a62d11afa5acdb78335bc09a89341499d3c572107b3e1694a288446e",
+    "D:\\graghRAG-agent\\.tmp\\simple-output-20261016\\registration.json": "32f5cb13cbe578e89df9375a80bb347fb4e69a4f3d99b095dd5afb85d916fedc",
+    "D:\\graghRAG-agent\\.tmp\\simple-output-20261016\\registration.sha256.json": "4e4402ea79dc4d832b7e86c67cd70fdb5361b3ec3a720bc5edeb17d3915d82a8",
+    "D:\\graghRAG-agent\\.tmp\\simple-output-20261016\\runtime\\snapshot.json": "69908e99312d958ca17c40b15a76b06c9ab71f54a692715ab17c922bb2fa3fc9"
+  }
+}

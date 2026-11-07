@@ -1,0 +1,52 @@
+[
+  {
+    "name": "collect",
+    "argv": [
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r3\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "backend/tests",
+      "backend/research/test_deepseek_scope_pilot.py",
+      "--collect-only",
+      "-q",
+      "-p",
+      "no:cacheprovider"
+    ],
+    "exit": 0,
+    "seconds": 10.985000000044238
+  },
+  {
+    "name": "tests",
+    "argv": [
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r3\\.venv\\Scripts\\python.exe",
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r5\\coverage_driver.py",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-r12-recovery\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini",
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r5\\backend.coverage",
+      "backend/tests",
+      "backend/research/test_deepseek_scope_pilot.py",
+      "-q",
+      "--tb=short",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp=D:\\graghRAG-agent\\.tmp\\ra1105\\full-r5\\pytest-temp",
+      "--junitxml=D:\\graghRAG-agent\\.tmp\\ra1105\\full-r5\\junit.raw.xml"
+    ],
+    "exit": 0,
+    "seconds": 438.75
+  },
+  {
+    "name": "coverage-export",
+    "argv": [
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r3\\.venv\\Scripts\\python.exe",
+      "-m",
+      "coverage",
+      "json",
+      "--rcfile=C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-r12-recovery\\graghRAG-agent\\docs\\testing\\coverage-backend-2026-10-12.ini",
+      "--data-file=D:\\graghRAG-agent\\.tmp\\ra1105\\full-r5\\backend.coverage",
+      "-o",
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r5\\coverage.json"
+    ],
+    "exit": 0,
+    "seconds": 4.5
+  }
+]

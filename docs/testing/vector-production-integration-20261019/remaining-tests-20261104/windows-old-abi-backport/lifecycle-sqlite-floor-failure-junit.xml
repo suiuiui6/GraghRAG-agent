@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="2.091" timestamp="2026-11-04T16:45:24.011872+08:00" hostname="LAPTOP-GVOK4HA0"><testcase classname="tests.test_vector_http_lifecycle" name="test_fixed_local_model_http_upload_update_delete_restart" time="0.783"><error message="failed on setup with &quot;vector_errors.VectorStorageError: SQLite 运行库不满足安全要求&quot;">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001717ECDF710&gt;
+tmp_path = WindowsPath('C:/Users/14156/.codex/worktrees/safe-checkpoint-r12-recovery/graghRAG-agent/.tmp/libuv-backport-r3-20261104/project-lifecycle/pytest-tmp/test_fixed_local_model_http_up0')
+
+    @pytest.fixture
+    def http_env(monkeypatch, tmp_path):
+        import routes
+        from routes import ingest, documents, rag_query
+        from services.document_runtime import configure_publication
+        monkeypatch.setenv('JWT_SECRET_KEY', SECRET)
+        monkeypatch.setenv('APP_ENV', 'development')
+        monkeypatch.delenv('AUTH_ALLOW_ANONYMOUS', raising=False)
+        monkeypatch.delenv('ADMIN_API_KEY', raising=False)
+        monkeypatch.setattr(auth_service, 'USERS_DIR', tmp_path / 'users')
+        users = auth_service.AuthService()
+        monkeypatch.setattr(auth_service, '_service', users)
+        for name in ('alice', 'bob'):
+            users._save_user(User(user_id=name, username=name, email='', display_name=name,
+                                  roles=['viewer'], created_at=users._now()))
+        monkeypatch.setattr(routes, '_docs_store', [])
+        monkeypatch.setattr(routes, 'DOCS_JSON_PATH', str(tmp_path / 'legacy.json'))
+        monkeypatch.setattr(ingest, '_tasks', {})
+        monkeypatch.setattr(ingest, 'TASKS_STORE_PATH', str(tmp_path / 'tasks.json'))
+        monkeypatch.setattr(ingest, 'UPLOADS_DIR', str(tmp_path))
+        with SyntheticStorageConfig.create() as config:
+&gt;           store = VectorStore(persist_dir=str(config.root / 'database'), embedding_dim=2, embedding_model=PROFILE['model'], synthetic_config=config)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_vector_http_lifecycle.py:71: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+sqlite_vector_store.py:23: in call
+    try:return fn(*a,**kw)
+               ^^^^^^^^^^^
+sqlite_vector_store.py:296: in __init__
+    probe_runtime()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def probe_runtime():
+        if sqlite3.sqlite_version_info &lt; MIN_SQLITE_VERSION:
+&gt;           raise VectorStorageError('runtime_unsupported', 'open')
+E           vector_errors.VectorStorageError: SQLite 运行库不满足安全要求
+
+vector_runtime.py:90: VectorStorageError</error></testcase></testsuite></testsuites>

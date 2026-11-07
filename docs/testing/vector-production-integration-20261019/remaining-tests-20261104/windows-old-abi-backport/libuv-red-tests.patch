@@ -1,0 +1,65 @@
+diff --git a/test/test-idna.c b/test/test-idna.c
+index b76853cb..18b0a13a 100644
+--- a/test/test-idna.c
++++ b/test/test-idna.c
+@@ -96,6 +96,30 @@ TEST_IMPL(utf8_decode1) {
+   return 0;
+ }
+ 
++TEST_IMPL(utf8_decode1_overrun) {
++  const char* p;
++  char b[1];
++  char c[1];
++
++  /* Regression coverage from the upstream 2021 out-of-bounds fix. */
++  p = b;
++  b[0] = 0x7F;
++  ASSERT_EQ(0x7F, uv__utf8_decode1(&p, b + 1));
++  ASSERT_PTR_EQ(p, b + 1);
++
++  p = b;
++  b[0] = 0xC0;
++  ASSERT_EQ((unsigned) -1, uv__utf8_decode1(&p, b + 1));
++  ASSERT_PTR_EQ(p, b + 1);
++
++  /* Regression coverage from the upstream 2024 IDNA fixes. */
++  b[0] = 0x7F;
++  ASSERT_EQ(UV_EINVAL, uv__idna_toascii(b, b + 0, c, c + 1));
++  ASSERT_EQ(UV_EINVAL, uv__idna_toascii(b, b + 1, c, c + 1));
++
++  return 0;
++}
++
+ /* Doesn't work on z/OS because that platform uses EBCDIC, not ASCII. */
+ #ifndef __MVS__
+ 
+@@ -126,8 +150,8 @@ TEST_IMPL(idna_toascii) {
+   /* Illegal inputs. */
+   F("\xC0\x80\xC1\x80", UV_EINVAL);  /* Overlong UTF-8 sequence. */
+   F("\xC0\x80\xC1\x80.com", UV_EINVAL);  /* Overlong UTF-8 sequence. */
++  F("", UV_EINVAL);
+   /* No conversion. */
+-  T("", "");
+   T(".", ".");
+   T(".com", ".com");
+   T("example", "example");
+diff --git a/test/test-list.h b/test/test-list.h
+index 52b17a69..66e88a9f 100644
+--- a/test/test-list.h
++++ b/test/test-list.h
+@@ -521,6 +521,7 @@ TEST_DECLARE  (fork_threadpool_queue_work_simple)
+ 
+ TEST_DECLARE  (idna_toascii)
+ TEST_DECLARE  (utf8_decode1)
++TEST_DECLARE  (utf8_decode1_overrun)
+ TEST_DECLARE  (uname)
+ 
+ TEST_DECLARE  (metrics_idle_time)
+@@ -1108,6 +1109,7 @@ TASK_LIST_START
+ #endif
+ 
+   TEST_ENTRY  (utf8_decode1)
++  TEST_ENTRY  (utf8_decode1_overrun)
+   TEST_ENTRY  (uname)
+ 
+ /* Doesn't work on z/OS because that platform uses EBCDIC, not ASCII. */

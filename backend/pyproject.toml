@@ -62,7 +62,7 @@ dev = [
 
 [tool.uv]
 # 传递依赖安全下限；保持原依赖角色，防止重锁退回已知漏洞版本。
-constraint-dependencies = ["multidict>=6.9.1", "oauthlib>=4.0.0", "aiohttp>=3.14.4", "certifi>=2026.10.19", "opentelemetry-api>=1.45.1", "setuptools>=84.1.0", "msgpack>=1.2.3", "langgraph-sdk>=0.4.6"]
+constraint-dependencies = ["multidict>=6.9.1", "oauthlib>=4.0.0", "aiohttp>=3.14.4", "certifi>=2026.10.19", "opentelemetry-api>=1.45.1", "setuptools>=84.1.0", "msgpack>=1.2.3", "langgraph-sdk>=0.4.6", "pyasn1>=0.6.5"]
 
 [tool.uv.sources]
 langextract = { path = "../langextract", editable = true }

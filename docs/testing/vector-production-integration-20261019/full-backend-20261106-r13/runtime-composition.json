@@ -1,0 +1,7 @@
+{
+  "python_base": "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-r12-recovery\\graghRAG-agent\\.tmp\\python-runtime-31216-rebuild-20261104\\derived\\python\\python.exe",
+  "base_sha256": "246221b571e7a692a8b26818b628cac4c163e836de9897812eaebc2a8e1efa90",
+  "candidate_sha256": "7c6aa0dea69979c9e62af531d22094262dbbee5c9d47db967d2d95bc2b79a0de",
+  "private_candidate_sha256": "7c6aa0dea69979c9e62af531d22094262dbbee5c9d47db967d2d95bc2b79a0de",
+  "shared": "D:\\graghRAG-agent\\.tmp\\backend-runtime-20261029\\.venv\\Lib\\site-packages"
+}

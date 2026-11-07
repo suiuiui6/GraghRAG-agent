@@ -1,0 +1,32 @@
+{
+  "production_files": 121,
+  "measured_files": 121,
+  "missing": [],
+  "extra": [],
+  "scope_gate": true,
+  "baseline_cases": 2223,
+  "current_cases": 2290,
+  "new_cases": 67,
+  "missing_baseline_cases": [],
+  "baseline_gate": true,
+  "test_counts": {
+    "tests": 2290,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_gate": true,
+  "line": {
+    "covered": 16973,
+    "total": 18166,
+    "percent": 93.43278652427612,
+    "gate": true
+  },
+  "branch": {
+    "covered": 5599,
+    "total": 6220,
+    "percent": 90.016077170418,
+    "gate": true
+  },
+  "backend_gate": true
+}

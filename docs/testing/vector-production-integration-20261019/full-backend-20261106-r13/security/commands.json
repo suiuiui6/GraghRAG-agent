@@ -1,0 +1,67 @@
+[
+  {
+    "name": "lock-check",
+    "argv": [
+      "D:\\Python\\Scripts\\uv.exe",
+      "lock",
+      "--check",
+      "--offline",
+      "--no-python-downloads",
+      "--python",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-r12-recovery\\graghRAG-agent\\.tmp\\python-runtime-31216-rebuild-20261104\\derived\\python\\python.exe",
+      "--project",
+      "C:\\Users\\14156\\.codex\\worktrees\\safe-checkpoint-r12-recovery\\graghRAG-agent\\backend"
+    ],
+    "exit": 0,
+    "seconds": 5.045999999972992,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "d026f6607d52ef2ca98aa8df854502a28e31a3cb062ee4825a1d58ac2aaa0b01"
+  },
+  {
+    "name": "pip-check",
+    "argv": [
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r3\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exit": 0,
+    "seconds": 1.7339999999967404,
+    "stdout_sha256": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "metadata",
+    "argv": [
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\full-r3\\.venv\\Scripts\\python.exe",
+      "-c",
+      "import importlib.metadata as m,json; print(json.dumps(sorted([(d.metadata[\"Name\"],d.version) for d in m.distributions()])))"
+    ],
+    "exit": 0,
+    "seconds": 0.5160000000032596,
+    "stdout_sha256": "21a3f45a2d39a8932463b585b9274a65933c211525ce7658a36fc99e30a89a17",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "installed-audit",
+    "argv": [
+      "D:\\graghRAG-agent\\.tmp\\audit-tools-20261012\\Scripts\\python.exe",
+      "-m",
+      "pip_audit",
+      "-r",
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\security-patched\\installed-requirements.txt",
+      "--no-deps",
+      "--disable-pip",
+      "--progress-spinner",
+      "off",
+      "-f",
+      "json",
+      "-o",
+      "D:\\graghRAG-agent\\.tmp\\ra1105\\security-patched\\installed-audit.json"
+    ],
+    "exit": 0,
+    "seconds": 50.81300000002375,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e82148c0c30269ca5a2c35420ece6af011a4faf5a375325d750e243ffdb10625"
+  }
+]
